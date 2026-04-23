@@ -23,7 +23,7 @@ test("host and guest can finish a one-round match and return to the lobby", asyn
   await roundsInput.fill("1");
   await page.getByRole("button", { name: "Start Game" }).click();
 
-  await expect(page.getByText("Guess the hidden NFL player.")).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText("Guess the player.")).toBeVisible({ timeout: 10000 });
 
   const timelineLabels = await page.locator("article h3").allTextContents();
   const answer = starterCatalog.find((player) => {
@@ -43,7 +43,7 @@ test("host and guest can finish a one-round match and return to the lobby", asyn
   await page.getByRole("button", { name: "Continue to Leaderboard" }).click();
   await expect(page.getByText("Match complete.")).toBeVisible({ timeout: 10000 });
   await page.getByRole("button", { name: "Back to Lobby" }).click();
-  await expect(page.getByText("Set the match.")).toBeVisible({ timeout: 10000 });
+  await expect(page.getByText("Match settings")).toBeVisible({ timeout: 10000 });
 
   await guestContext.close();
 });

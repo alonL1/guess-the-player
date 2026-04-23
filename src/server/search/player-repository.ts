@@ -1,10 +1,22 @@
-import { asc, eq, ilike, inArray } from "drizzle-orm";
+import { asc, ilike } from "drizzle-orm";
 
 import { starterCatalog } from "@/lib/data/starter-catalog";
 import type { Difficulty, PlayerCatalogEntry } from "@/lib/types";
 import { normalizeSearchText } from "@/lib/utils";
 import { getDatabase } from "@/server/db/client";
 import { players, teamStints } from "@/server/db/schema";
+
+let warnedAboutDatabaseFallback = false;
+
+function warnDatabaseFallback(error: unknown) {
+  if (warnedAboutDatabaseFallback) {
+    return;
+  }
+
+  warnedAboutDatabaseFallback = true;
+  const message = error instanceof Error ? error.message : "Unknown database error";
+  console.warn(`[player-repository] Falling back to starter catalog because the database is unavailable: ${message}`);
+}
 
 function mapRowsToCatalog(rows: Array<typeof players.$inferSelect & { teamStints: typeof teamStints.$inferSelect[] }>) {
   return rows
@@ -32,16 +44,21 @@ async function loadFromDatabase() {
     return null;
   }
 
-  const playerRows = await database.db.query.players.findMany({
-    with: {
-      teamStints: {
-        orderBy: [asc(teamStints.stintOrder)]
-      }
-    },
-    orderBy: [asc(players.fullName)]
-  });
+  try {
+    const playerRows = await database.db.query.players.findMany({
+      with: {
+        teamStints: {
+          orderBy: [asc(teamStints.stintOrder)]
+        }
+      },
+      orderBy: [asc(players.fullName)]
+    });
 
-  return mapRowsToCatalog(playerRows);
+    return mapRowsToCatalog(playerRows);
+  } catch (error) {
+    warnDatabaseFallback(error);
+    return null;
+  }
 }
 
 let cachedCatalog: PlayerCatalogEntry[] | null = null;
@@ -77,27 +94,31 @@ export async function searchPlayers(query: string, limit = 8) {
 
   const database = getDatabase();
   if (database) {
-    const rows = await database.db
-      .select({
-        id: players.id,
-        fullName: players.fullName,
-        normalizedName: players.normalizedName
-      })
-      .from(players)
-      .where(ilike(players.normalizedName, `%${normalized}%`))
-      .limit(limit * 2);
+    try {
+      const rows = await database.db
+        .select({
+          id: players.id,
+          fullName: players.fullName,
+          normalizedName: players.normalizedName
+        })
+        .from(players)
+        .where(ilike(players.normalizedName, `%${normalized}%`))
+        .limit(limit * 2);
 
-    return rows
-      .sort((left, right) => {
-        const leftStarts = left.normalizedName.startsWith(normalized) ? 0 : 1;
-        const rightStarts = right.normalizedName.startsWith(normalized) ? 0 : 1;
-        if (leftStarts !== rightStarts) {
-          return leftStarts - rightStarts;
-        }
-        return left.fullName.localeCompare(right.fullName);
-      })
-      .slice(0, limit)
-      .map(({ id, fullName }) => ({ id, fullName }));
+      return rows
+        .sort((left, right) => {
+          const leftStarts = left.normalizedName.startsWith(normalized) ? 0 : 1;
+          const rightStarts = right.normalizedName.startsWith(normalized) ? 0 : 1;
+          if (leftStarts !== rightStarts) {
+            return leftStarts - rightStarts;
+          }
+          return left.fullName.localeCompare(right.fullName);
+        })
+        .slice(0, limit)
+        .map(({ id, fullName }) => ({ id, fullName }));
+    } catch (error) {
+      warnDatabaseFallback(error);
+    }
   }
 
   const catalog = await getCatalog();

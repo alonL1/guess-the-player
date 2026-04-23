@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fcfaf7;
-  --background-soft: rgba(255, 255, 255, 0.92);
-  --panel: rgba(255, 255, 255, 0.9);
-  --panel-strong: rgba(255, 255, 255, 0.98);
-  --line: rgba(120, 113, 108, 0.14);
-  --text: #1c1917;
-  --muted: #78716c;
-  --accent: #d97706;
-  --accent-2: #fbbf24;
+  --background: #f5f9ff;
+  --background-soft: #eef6ff;
+  --panel: #ffffff;
+  --panel-strong: #ffffff;
+  --line: rgba(148, 163, 184, 0.24);
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #60a5fa;
+  --accent-2: #dbeafe;
   --good: #059669;
   --bad: #dc2626;
-  --shadow: 0 24px 60px rgba(120, 113, 108, 0.12);
+  --shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
 }
 
 * {
@@ -21,26 +21,15 @@
 
 html {
   min-height: 100%;
-  background:
-    radial-gradient(circle at top left, rgba(245, 158, 11, 0.18), transparent 24%),
-    radial-gradient(circle at top right, rgba(251, 191, 36, 0.14), transparent 22%),
-    linear-gradient(180deg, #fffdf8 0%, #fbf6ee 48%, #f8f2e8 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
   color: var(--text);
-  font-family: var(--font-body), sans-serif;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.38), transparent 32%),
-    repeating-linear-gradient(
-      135deg,
-      rgba(120, 113, 108, 0.028) 0,
-      rgba(120, 113, 108, 0.028) 1px,
-      transparent 1px,
-      transparent 20px
-    );
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
 }
 
 a {
@@ -54,12 +43,11 @@ select {
 }
 
 .display-font {
-  font-family: var(--font-display), sans-serif;
+  font-family: inherit;
 }
 
 .glass-panel {
   background: var(--panel);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
 }

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 
 import { type ParticipantTokenPayload, verifySignedToken } from "@/lib/auth/tokens";
-import { RoomActionError, RoomManager } from "@/server/game/room-manager";
+import { RoomManager } from "@/server/game/room-manager";
 
 function createSession(nickname: string, sessionId: string) {
   return {

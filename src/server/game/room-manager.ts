@@ -790,7 +790,6 @@ export class RoomManager {
 }
 
 declare global {
-  // eslint-disable-next-line no-var
   var __guessThePlayerRoomManager: RoomManager | undefined;
 }
 

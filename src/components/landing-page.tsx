@@ -10,11 +10,11 @@ type JoinResponse = {
 };
 
 function roomTokenKey(roomCode: string) {
-  return `guess-the-player:token:${roomCode}`;
+  return `guess-the-player-production-09c4.up:token:${roomCode}`;
 }
 
 function roomParticipantKey(roomCode: string) {
-  return `guess-the-player:participant:${roomCode}`;
+  return `guess-the-player-production-09c4.up:participant:${roomCode}`;
 }
 
 async function createGuestSession(nickname: string) {
@@ -91,42 +91,25 @@ export function LandingPage({ initialMessage = null }: { initialMessage?: string
   }
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 px-4 py-4 sm:px-6 sm:py-6">
-      <section className="relative overflow-hidden rounded-[2rem] border border-amber-100 bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.22),_transparent_26%),linear-gradient(145deg,rgba(255,255,255,0.96),rgba(255,250,240,0.94))] p-6 shadow-[0_28px_80px_rgba(120,113,108,0.14)] sm:p-8 lg:p-12">
-        <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,_rgba(251,191,36,0.16),_transparent_58%)]" />
-        <div className="relative grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col justify-center px-4 py-4 sm:px-6 sm:py-6">
+      <section className="glass-panel rounded-[1.5rem] border border-sky-100 bg-white p-6 sm:p-8 lg:p-10">
+        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="max-w-3xl">
-            <p className="mb-3 inline-flex rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs uppercase tracking-[0.3em] text-amber-700">
-              Live PvP NFL Trivia
-            </p>
-            <h1 className="display-font text-4xl font-semibold leading-[0.95] text-stone-950 sm:text-5xl lg:text-6xl">
-              Guess the player from the career path before anyone else does.
+            <h1 className="text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl lg:text-6xl">
+              Guess the player from the career path before your friends do.
             </h1>
-            <p className="mt-5 max-w-2xl text-base text-stone-600 sm:text-lg">
-              Create a room, pull in friends, and race through hidden NFL players using only the ordered team timeline.
-            </p>
-            <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              {[
-                "Live room invites",
-                "Kahoot-style scoring",
-                "Difficulty filters + no-timer mode"
-              ].map((item) => (
-                <div key={item} className="rounded-[1.4rem] border border-stone-200 bg-white px-4 py-4 text-sm text-stone-700 shadow-[0_12px_28px_rgba(120,113,108,0.08)]">
-                  {item}
-                </div>
-              ))}
-            </div>
+            <p className="mt-4 max-w-2xl text-base text-slate-600 sm:text-lg">Create a room, pull in friends.</p>
           </div>
 
-          <div className="glass-panel rounded-[1.75rem] p-6 sm:p-7">
-            <p className="text-sm uppercase tracking-[0.28em] text-stone-500">Start playing</p>
-            <label className="mt-5 block text-sm text-stone-700">
+          <div className="rounded-[1.5rem] border border-sky-100 bg-sky-50/70 p-6 sm:p-7">
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Start playing</p>
+            <label className="mt-5 block text-sm text-slate-700">
               Nickname
               <input
                 value={nickname}
                 onChange={(event) => setNickname(event.target.value)}
                 placeholder="Gridiron Guru"
-                className="mt-2 w-full rounded-[1.2rem] border border-stone-200 bg-white px-4 py-3 text-base text-stone-950 outline-none transition focus:border-amber-400"
+                className="mt-2 w-full rounded-[1rem] border border-sky-100 bg-white px-4 py-3 text-base text-slate-950 outline-none transition focus:border-sky-300"
               />
             </label>
             <div className="mt-5 grid gap-3">
@@ -134,7 +117,7 @@ export function LandingPage({ initialMessage = null }: { initialMessage?: string
                 type="button"
                 disabled={pending}
                 onClick={() => handleAction("create")}
-                className="rounded-[1.2rem] bg-stone-950 px-4 py-3 font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-70"
+                className="rounded-[1rem] bg-slate-950 px-4 py-3 font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70"
               >
                 Create Room
               </button>
@@ -142,16 +125,13 @@ export function LandingPage({ initialMessage = null }: { initialMessage?: string
                 type="button"
                 disabled={pending}
                 onClick={() => handleAction("join")}
-                className="rounded-[1.2rem] border border-stone-200 bg-white px-4 py-3 font-semibold text-stone-800 transition hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-70"
+                className="rounded-[1rem] border border-sky-200 bg-white px-4 py-3 font-semibold text-slate-900 transition hover:bg-sky-50 disabled:cursor-not-allowed disabled:opacity-70"
               >
-                Join Fullest Room
+                Join a Room
               </button>
             </div>
-            <p className="mt-4 text-sm text-stone-500">
-              Join fills the fullest open public lobby. If no room exists, you can create one in a click.
-            </p>
             {message ? (
-              <div className="mt-4 rounded-[1.2rem] border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+              <div className="mt-4 rounded-[1rem] border border-sky-200 bg-white px-4 py-3 text-sm text-slate-900">
                 {message}
               </div>
             ) : null}
