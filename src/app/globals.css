@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09111f;
+  --background-soft: rgba(12, 26, 47, 0.8);
+  --panel: rgba(11, 21, 37, 0.88);
+  --panel-strong: rgba(17, 30, 52, 0.96);
+  --line: rgba(152, 179, 219, 0.18);
+  --text: #f5f7fb;
+  --muted: #a6b3c8;
+  --accent: #ff7a18;
+  --accent-2: #ffd166;
+  --good: #54d2a0;
+  --bad: #ff6b6b;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(255, 122, 24, 0.18), transparent 26%),
+    radial-gradient(circle at top right, rgba(84, 210, 160, 0.13), transparent 22%),
+    linear-gradient(180deg, #07101d 0%, #0c1629 52%, #08101c 100%);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-body), sans-serif;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.02), transparent 30%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.015) 0,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 1px,
+      transparent 16px
+    );
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.display-font {
+  font-family: var(--font-display), sans-serif;
+}
+
+.glass-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
