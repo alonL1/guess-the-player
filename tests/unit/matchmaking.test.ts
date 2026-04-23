@@ -42,7 +42,7 @@ describe("matchmaking and start validation", () => {
       roundCount: 10
     });
 
-    await expect(manager.startGame(room.roomCode, room.participantId)).rejects.toMatchObject<Partial<RoomActionError>>({
+    await expect(manager.startGame(room.roomCode, room.participantId)).rejects.toMatchObject({
       code: "VALIDATION_FAILED"
     });
   });

@@ -126,6 +126,22 @@ void app.prepare().then(() => {
       }
     );
 
+    socket.on(
+      "room:leave",
+      async (
+        payload: { roomCode: string; participantId: string; intent: "leave" | "end_room" },
+        callback?: (response: unknown) => void
+      ) => {
+        try {
+          const result = await manager.leaveRoom(payload.roomCode, payload.participantId, payload.intent);
+          socket.leave(payload.roomCode.toUpperCase());
+          callback?.({ ok: true, ...result });
+        } catch (error) {
+          callback?.({ ok: false, ...toSocketError(error) });
+        }
+      }
+    );
+
     socket.on("disconnect", () => {
       void manager.handleDisconnect(socket.id);
     });

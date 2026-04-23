@@ -2,6 +2,10 @@ export type Difficulty = "easy" | "medium" | "hard" | "impossible";
 
 export type GameMode = "kahoot" | "sudden_death";
 
+export type LeaveIntent = "leave" | "end_room";
+
+export type RoomClosedReason = "host_ended" | "room_empty";
+
 export type RoomStatus =
   | "lobby"
   | "countdown"

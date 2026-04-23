@@ -4,14 +4,16 @@ import { createSignedToken, type ParticipantTokenPayload, type PlayerSessionPayl
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/game/settings";
 import { calculateCurrentCap, calculateScore } from "@/lib/game/scoring";
 import type {
+  LeaveIntent,
   PlayerCatalogEntry,
   RoomPlayer,
+  RoomClosedReason,
   RoomSettings,
   RoomSnapshot,
   RoomStatus,
   RoundResult
 } from "@/lib/types";
-import { findPlayerById, getEligiblePlayers } from "@/server/search/player-repository";
+import { getEligiblePlayers } from "@/server/search/player-repository";
 import { getSocketServer } from "@/server/game/realtime";
 
 type RoomActionErrorCode =
@@ -76,6 +78,12 @@ type JoinResult = {
   participantId: string;
   participantToken: string;
   snapshot: RoomSnapshot;
+};
+
+type LeaveResult = {
+  closed: boolean;
+  reason: RoomClosedReason | null;
+  snapshot: RoomSnapshot | null;
 };
 
 function createRoomCode() {
@@ -392,6 +400,53 @@ export class RoomManager {
     throw new RoomActionError("INVALID_STATE", "Continue is not available right now.", 409);
   }
 
+  async leaveRoom(roomCode: string, participantId: string, intent: LeaveIntent): Promise<LeaveResult> {
+    const room = this.requireRoom(roomCode);
+    const participant = this.requireParticipant(room, participantId);
+
+    if (intent === "end_room") {
+      this.assertHost(room, participantId);
+      this.closeRoom(room, "host_ended");
+      return {
+        closed: true,
+        reason: "host_ended",
+        snapshot: null
+      };
+    }
+
+    this.removeParticipant(room, participant);
+
+    if (room.participants.size === 0) {
+      this.closeRoom(room, "room_empty", false);
+      return {
+        closed: true,
+        reason: "room_empty",
+        snapshot: null
+      };
+    }
+
+    if (room.hostParticipantId === participantId) {
+      this.promoteNextHost(room, participantId);
+    }
+
+    await this.refreshCanStart(room);
+
+    if (await this.resolvePostParticipantExit(room)) {
+      return {
+        closed: false,
+        reason: null,
+        snapshot: this.serializeRoom(room)
+      };
+    }
+
+    this.broadcastSnapshot(room);
+    return {
+      closed: false,
+      reason: null,
+      snapshot: this.serializeRoom(room)
+    };
+  }
+
   async handleDisconnect(socketId: string) {
     const match = this.socketIndex.get(socketId);
     if (!match) {
@@ -550,6 +605,48 @@ export class RoomManager {
   }
 
   private readonly cachedPlayers = new Map<string, PlayerCatalogEntry>();
+
+  private removeParticipant(room: RoomRecord, participant: ParticipantRecord) {
+    const io = getSocketServer();
+
+    for (const socketId of participant.socketIds) {
+      this.socketIndex.delete(socketId);
+      io?.sockets.sockets.get(socketId)?.leave(room.code);
+    }
+
+    room.participants.delete(participant.id);
+  }
+
+  private closeRoom(room: RoomRecord, reason: RoomClosedReason, notifyParticipants = true) {
+    if (notifyParticipants) {
+      this.emitRoom(room.code, "room:closed", {
+        roomCode: room.code,
+        reason
+      });
+    }
+
+    for (const participant of [...room.participants.values()]) {
+      this.removeParticipant(room, participant);
+    }
+
+    clearRoomTimeout(room);
+    this.rooms.delete(room.code);
+  }
+
+  private async resolvePostParticipantExit(room: RoomRecord) {
+    if (room.status === "round_active" && room.settings.mode === "kahoot") {
+      const connectedParticipants = [...room.participants.values()].filter((entry) => entry.connected);
+      const everyoneCorrect =
+        connectedParticipants.length > 0 && connectedParticipants.every((entry) => entry.answeredCorrectly);
+
+      if (everyoneCorrect) {
+        await this.endRound(room, "all_correct");
+        return true;
+      }
+    }
+
+    return false;
+  }
 
   private async beginCountdown(room: RoomRecord) {
     clearRoomTimeout(room);

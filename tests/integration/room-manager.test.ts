@@ -40,12 +40,58 @@ describe("room manager integration", () => {
 
     await manager.startGame(host.roomCode, host.participantId);
 
-    await expect(manager.joinRoom(host.roomCode, createSession("Late", "late-midgame"))).rejects.toMatchObject<Partial<RoomActionError>>({
+    await expect(manager.joinRoom(host.roomCode, createSession("Late", "late-midgame"))).rejects.toMatchObject({
       code: "ROOM_UNAVAILABLE"
     });
 
     const reconnected = await manager.reconnect(host.roomCode, guestToken!);
     expect(reconnected.participantId).toBe(guest.participantId);
+
+    vi.useRealTimers();
+  });
+
+  it("lets the host leave and pass host to the next remaining player", async () => {
+    const manager = new RoomManager();
+    const host = await manager.createRoom(createSession("Host", "host-pass"));
+    const guest = await manager.joinRoom(host.roomCode, createSession("Guest", "guest-pass"));
+
+    const result = await manager.leaveRoom(host.roomCode, host.participantId, "leave");
+
+    expect(result.closed).toBe(false);
+    expect(result.snapshot?.players).toHaveLength(1);
+    expect(result.snapshot?.players[0]?.participantId).toBe(guest.participantId);
+    expect(result.snapshot?.players[0]?.isHost).toBe(true);
+  });
+
+  it("closes the room when the host ends the game entirely", async () => {
+    const manager = new RoomManager();
+    const host = await manager.createRoom(createSession("Host", "host-close"));
+    await manager.joinRoom(host.roomCode, createSession("Guest", "guest-close"));
+
+    const result = await manager.leaveRoom(host.roomCode, host.participantId, "end_room");
+
+    expect(result.closed).toBe(true);
+    expect(result.reason).toBe("host_ended");
+    await expect(manager.joinRoom(host.roomCode, createSession("Late", "late-close"))).rejects.toMatchObject({
+      code: "NOT_FOUND"
+    });
+  });
+
+  it("keeps an active match running when one player leaves and one remains", async () => {
+    vi.useFakeTimers();
+    const manager = new RoomManager();
+    const host = await manager.createRoom(createSession("Host", "host-solo"));
+    const guest = await manager.joinRoom(host.roomCode, createSession("Guest", "guest-solo"));
+
+    await manager.startGame(host.roomCode, host.participantId);
+    await vi.advanceTimersByTimeAsync(3000);
+
+    const result = await manager.leaveRoom(host.roomCode, guest.participantId, "leave");
+
+    expect(result.closed).toBe(false);
+    expect(result.snapshot?.status).toBe("round_active");
+    expect(result.snapshot?.players).toHaveLength(1);
+    expect(result.snapshot?.players[0]?.participantId).toBe(host.participantId);
 
     vi.useRealTimers();
   });

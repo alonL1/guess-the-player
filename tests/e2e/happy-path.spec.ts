@@ -40,7 +40,7 @@ test("host and guest can finish a one-round match and return to the lobby", asyn
   await guestPage.getByRole("button", { name: answer!.fullName }).click();
 
   await expect(page.getByText(answer!.fullName)).toBeVisible({ timeout: 10000 });
-  await page.getByRole("button", { name: "Continue" }).click();
+  await page.getByRole("button", { name: "Continue to Leaderboard" }).click();
   await expect(page.getByText("Match complete.")).toBeVisible({ timeout: 10000 });
   await page.getByRole("button", { name: "Back to Lobby" }).click();
   await expect(page.getByText("Set the match.")).toBeVisible({ timeout: 10000 });

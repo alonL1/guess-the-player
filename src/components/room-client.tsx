@@ -3,11 +3,12 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useDeferredValue, useEffect, useRef, useState, useTransition } from "react";
 import { io, type Socket } from "socket.io-client";
 
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
-import type { Difficulty, RoomSettings, RoomSnapshot } from "@/lib/types";
+import type { Difficulty, LeaveIntent, RoomClosedReason, RoomPlayer, RoomSettings, RoomSnapshot } from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
 type JoinResponse = {
@@ -28,6 +29,20 @@ type GuessFeedback = {
   score?: number;
 };
 
+type SnapshotAck = {
+  ok: boolean;
+  error?: string;
+  snapshot?: RoomSnapshot;
+};
+
+type LeaveAck = {
+  ok: boolean;
+  error?: string;
+  closed?: boolean;
+  reason?: RoomClosedReason | null;
+  snapshot?: RoomSnapshot | null;
+};
+
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
 
 function roomTokenKey(roomCode: string) {
@@ -36,6 +51,11 @@ function roomTokenKey(roomCode: string) {
 
 function roomParticipantKey(roomCode: string) {
   return `guess-the-player:participant:${roomCode}`;
+}
+
+function clearRoomAuth(roomCode: string) {
+  localStorage.removeItem(roomTokenKey(roomCode));
+  localStorage.removeItem(roomParticipantKey(roomCode));
 }
 
 async function requestGuestSession(nickname: string) {
@@ -99,8 +119,7 @@ function getTimerLabel(room: RoomSnapshot | null, now: number) {
   }
 
   const remainingMs = new Date(room.round.endsAt).getTime() - now;
-  const remainingSeconds = Math.max(0, Math.ceil(remainingMs / 1000));
-  return remainingSeconds;
+  return Math.max(0, Math.ceil(remainingMs / 1000));
 }
 
 function getCountdownLabel(room: RoomSnapshot | null, now: number) {
@@ -121,12 +140,260 @@ function sortPlayersForBoard(room: RoomSnapshot | null) {
     if (right.score !== left.score) {
       return right.score - left.score;
     }
+
     return left.nickname.localeCompare(right.nickname);
   });
 }
 
+function formatDelta(points: number) {
+  return `${points >= 0 ? "+" : ""}${points}`;
+}
+
+function getRoomClosedMessage(reason: RoomClosedReason) {
+  if (reason === "host_ended") {
+    return "The host ended the game.";
+  }
+
+  return "The room closed.";
+}
+
+function getRosterStatus(player: RoomPlayer, roomStatus: RoomSnapshot["status"]) {
+  if (!player.connected) {
+    return "Disconnected";
+  }
+
+  if (roomStatus === "round_active") {
+    return player.answeredCorrectly ? "Solved" : "Guessing";
+  }
+
+  if (roomStatus === "countdown") {
+    return "Ready";
+  }
+
+  if (roomStatus === "round_reveal") {
+    return player.answeredCorrectly ? "Locked in" : "Waiting";
+  }
+
+  return "In room";
+}
+
+function PlayerRosterCard({
+  room,
+  participantId,
+  title,
+  subtitle
+}: {
+  room: RoomSnapshot;
+  participantId: string;
+  title: string;
+  subtitle: string;
+}) {
+  return (
+    <div className="glass-panel rounded-[1.75rem] p-5">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <p className="text-xs uppercase tracking-[0.28em] text-stone-500">{subtitle}</p>
+          <h2 className="display-font mt-2 text-2xl font-semibold text-stone-950">{title}</h2>
+        </div>
+        <div className="rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-sm font-medium text-stone-700">
+          {room.players.length}/{room.settings.maxPlayers}
+        </div>
+      </div>
+
+      <div className="mt-5 grid gap-3 sm:grid-cols-2">
+        {room.players.map((player) => (
+          <div
+            key={player.participantId}
+            className={clsx(
+              "rounded-[1.4rem] border px-4 py-4",
+              player.participantId === participantId ? "border-amber-300 bg-amber-50" : "border-stone-200 bg-white"
+            )}
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <p className="text-base font-semibold text-stone-950">{player.nickname}</p>
+                  {player.isHost ? (
+                    <span className="rounded-full bg-stone-900 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+                      Host
+                    </span>
+                  ) : null}
+                  {player.participantId === participantId ? (
+                    <span className="rounded-full bg-amber-500 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+                      You
+                    </span>
+                  ) : null}
+                </div>
+                <p className="mt-2 text-sm text-stone-600">{getRosterStatus(player, room.status)}</p>
+              </div>
+              {room.status === "round_active" && player.answeredCorrectly ? (
+                <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">
+                  Solved
+                </span>
+              ) : null}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function LeaderboardCard({
+  room,
+  participantId,
+  pending,
+  onContinue
+}: {
+  room: RoomSnapshot;
+  participantId: string;
+  pending: boolean;
+  onContinue: () => void;
+}) {
+  const scoreboard = sortPlayersForBoard(room);
+  const roundScores = room.round?.reveal?.roundScores ?? {};
+
+  return (
+    <div className="glass-panel rounded-[1.9rem] p-5 sm:p-6">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <p className="text-xs uppercase tracking-[0.28em] text-stone-500">
+            {room.status === "finished" ? "Final leaderboard" : "Leaderboard"}
+          </p>
+          <h2 className="display-font mt-2 text-3xl font-semibold text-stone-950">
+            {room.status === "finished" ? "Match complete." : "Round scores."}
+          </h2>
+          <p className="mt-2 text-sm text-stone-600">Total score is shown first. `+n` is what each player just earned this round.</p>
+        </div>
+        {room.players.find((player) => player.participantId === participantId)?.isHost ? (
+          <button
+            type="button"
+            disabled={pending}
+            onClick={onContinue}
+            className="rounded-full bg-stone-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {room.status === "finished" ? "Back to Lobby" : "Next Round"}
+          </button>
+        ) : (
+          <div className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2.5 text-sm text-stone-600">Waiting for the host.</div>
+        )}
+      </div>
+
+      <div className="mt-6 space-y-3">
+        {scoreboard.map((player, index) => {
+          const roundDelta = roundScores[player.participantId] ?? 0;
+
+          return (
+            <div
+              key={player.participantId}
+              className={clsx(
+                "rounded-[1.45rem] border px-4 py-4",
+                player.participantId === participantId ? "border-amber-300 bg-amber-50" : "border-stone-200 bg-white"
+              )}
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.22em] text-stone-500">#{index + 1}</p>
+                  <div className="mt-1 flex items-center gap-2">
+                    <p className="text-lg font-semibold text-stone-950">{player.nickname}</p>
+                    {player.isHost ? (
+                      <span className="rounded-full bg-stone-900 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+                        Host
+                      </span>
+                    ) : null}
+                  </div>
+                </div>
+                <div className="text-right">
+                  <p className="text-3xl font-semibold text-stone-950">{player.score}</p>
+                  <p className="mt-1 text-sm font-semibold text-emerald-700">{formatDelta(roundDelta)}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function LeaveDialog({
+  isHost,
+  pending,
+  onClose,
+  onLeave,
+  onEndRoom
+}: {
+  isHost: boolean;
+  pending: boolean;
+  onClose: () => void;
+  onLeave: () => void;
+  onEndRoom: () => void;
+}) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-stone-950/35 px-4 py-6 sm:items-center">
+      <div className="w-full max-w-md rounded-[1.9rem] bg-white p-5 shadow-[0_32px_80px_rgba(0,0,0,0.18)]">
+        <p className="text-xs uppercase tracking-[0.28em] text-stone-500">Leave Game</p>
+        <h2 className="display-font mt-2 text-3xl font-semibold text-stone-950">
+          {isHost ? "Leave or end the room?" : "Leave this room?"}
+        </h2>
+        <p className="mt-3 text-sm leading-6 text-stone-600">
+          {isHost
+            ? "If you leave, host permissions will pass to the longest-present remaining player. You can also end the room for everyone."
+            : "You will leave the room immediately and return to the home screen."}
+        </p>
+
+        <div className="mt-6 space-y-3">
+          {isHost ? (
+            <>
+              <button
+                type="button"
+                disabled={pending}
+                onClick={onLeave}
+                className="w-full rounded-[1.25rem] border border-stone-200 bg-stone-50 px-4 py-3 text-left transition hover:bg-stone-100 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                <span className="block font-semibold text-stone-950">Leave and pass host</span>
+                <span className="mt-1 block text-sm text-stone-600">The game stays open and the next host keeps control.</span>
+              </button>
+              <button
+                type="button"
+                disabled={pending}
+                onClick={onEndRoom}
+                className="w-full rounded-[1.25rem] bg-rose-600 px-4 py-3 text-left transition hover:bg-rose-700 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                <span className="block font-semibold text-white">End game entirely</span>
+                <span className="mt-1 block text-sm text-rose-100">Everyone is returned to the home screen.</span>
+              </button>
+            </>
+          ) : (
+            <button
+              type="button"
+              disabled={pending}
+              onClick={onLeave}
+              className="w-full rounded-[1.25rem] bg-rose-600 px-4 py-3 text-left transition hover:bg-rose-700 disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              <span className="block font-semibold text-white">Leave room</span>
+              <span className="mt-1 block text-sm text-rose-100">You can join again later if the room is still in the lobby.</span>
+            </button>
+          )}
+        </div>
+
+        <button
+          type="button"
+          disabled={pending}
+          onClick={onClose}
+          className="mt-4 w-full rounded-[1.25rem] border border-stone-200 px-4 py-3 text-sm font-semibold text-stone-700 transition hover:bg-stone-50 disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export function RoomClient({ roomCode }: { roomCode: string }) {
+  const router = useRouter();
   const socketRef = useRef<Socket | null>(null);
+  const redirectingRef = useRef(false);
   const [room, setRoom] = useState<RoomSnapshot | null>(null);
   const [participantId, setParticipantId] = useState("");
   const [participantToken, setParticipantToken] = useState("");
@@ -137,13 +404,14 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const deferredGuessQuery = useDeferredValue(guessQuery);
   const [searchResults, setSearchResults] = useState<Array<{ id: string; fullName: string }>>([]);
   const [guessFeedback, setGuessFeedback] = useState<GuessFeedback | null>(null);
+  const [leaveDialogOpen, setLeaveDialogOpen] = useState(false);
   const [now, setNow] = useState(Date.now());
   const [pending, startTransition] = useTransition();
 
   const timerLabel = getTimerLabel(room, now);
   const countdownLabel = getCountdownLabel(room, now);
   const self = room?.players.find((player) => player.participantId === participantId) ?? null;
-  const scoreboard = sortPlayersForBoard(room);
+  const correctCount = room?.players.filter((player) => player.answeredCorrectly).length ?? 0;
 
   useEffect(() => {
     const rememberedNickname = localStorage.getItem("guess-the-player:nickname");
@@ -161,6 +429,34 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
       window.clearInterval(handle);
     };
   }, []);
+
+  useEffect(() => {
+    if (room?.status !== "round_active") {
+      setGuessQuery("");
+      setSearchResults([]);
+      setGuessFeedback(null);
+    }
+  }, [room?.status]);
+
+  function goHome(nextMessage?: string) {
+    if (redirectingRef.current) {
+      return;
+    }
+
+    redirectingRef.current = true;
+    clearRoomAuth(roomCode);
+    socketRef.current?.disconnect();
+    setParticipantId("");
+    setParticipantToken("");
+    setRoom(null);
+
+    if (nextMessage) {
+      router.push(`/?message=${encodeURIComponent(nextMessage)}`);
+      return;
+    }
+
+    router.push("/");
+  }
 
   useEffect(() => {
     let cancelled = false;
@@ -188,8 +484,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
         }
 
         if (savedToken && savedParticipantId) {
-          localStorage.removeItem(roomTokenKey(roomCode));
-          localStorage.removeItem(roomParticipantKey(roomCode));
+          clearRoomAuth(roomCode);
         }
 
         const nextMessage = error instanceof Error ? error.message : "Unable to enter room.";
@@ -224,6 +519,10 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
       setRoom(snapshot);
     });
 
+    socket.on("room:closed", (payload: { reason: RoomClosedReason }) => {
+      goHome(getRoomClosedMessage(payload.reason));
+    });
+
     socket.on("round:guessResult", (feedback: GuessFeedback) => {
       setGuessFeedback(feedback);
       if (feedback.status === "correct") {
@@ -233,7 +532,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     });
 
     socket.on("connect", () => {
-      socket.emit("room:watch", { roomCode, participantToken }, (response: { ok: boolean; error?: string; snapshot?: RoomSnapshot }) => {
+      socket.emit("room:watch", { roomCode, participantToken }, (response: SnapshotAck) => {
         if (!response.ok) {
           setMessage(response.error ?? "Unable to watch room.");
           return;
@@ -281,6 +580,19 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     setNeedsNickname(false);
   }
 
+  async function emitWithAck<T extends { ok: boolean; error?: string }>(event: string, payload: unknown): Promise<T> {
+    return new Promise((resolve) => {
+      if (!socketRef.current) {
+        resolve({ ok: false, error: "Realtime connection unavailable." } as T);
+        return;
+      }
+
+      socketRef.current.emit(event, payload, (response: T) => {
+        resolve(response);
+      });
+    });
+  }
+
   function submitNicknameAndJoin() {
     setMessage(null);
     startTransition(async () => {
@@ -300,21 +612,13 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     });
   }
 
-  function emitWithAck(event: string, payload: unknown) {
-    return new Promise<{ ok: boolean; error?: string; snapshot?: RoomSnapshot }>((resolve) => {
-      socketRef.current?.emit(event, payload, (response: { ok: boolean; error?: string; snapshot?: RoomSnapshot }) => {
-        resolve(response);
-      });
-    });
-  }
-
   function updateSettings(nextSettings: Partial<RoomSettings>) {
     if (!participantId) {
       return;
     }
 
     startTransition(async () => {
-      const response = await emitWithAck("room:updateSettings", {
+      const response = await emitWithAck<SnapshotAck>("room:updateSettings", {
         roomCode,
         participantId,
         settings: nextSettings
@@ -332,7 +636,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     }
 
     startTransition(async () => {
-      const response = await emitWithAck("room:start", {
+      const response = await emitWithAck<SnapshotAck>("room:start", {
         roomCode,
         participantId
       });
@@ -355,7 +659,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
         participantId,
         playerId
       },
-      (response: { ok: boolean; error?: string; result?: GuessFeedback }) => {
+      (response: { ok: boolean; error?: string }) => {
         if (!response.ok) {
           setMessage(response.error ?? "Guess failed.");
         }
@@ -369,7 +673,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     }
 
     startTransition(async () => {
-      const response = await emitWithAck("round:continue", {
+      const response = await emitWithAck<SnapshotAck>("round:continue", {
         roomCode,
         participantId
       });
@@ -386,7 +690,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     }
 
     startTransition(async () => {
-      const response = await emitWithAck("round:endManual", {
+      const response = await emitWithAck<SnapshotAck>("round:endManual", {
         roomCode,
         participantId
       });
@@ -394,6 +698,29 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
       if (!response.ok) {
         setMessage(response.error ?? "Unable to end round.");
       }
+    });
+  }
+
+  function leaveGame(intent: LeaveIntent) {
+    if (!participantId) {
+      goHome();
+      return;
+    }
+
+    startTransition(async () => {
+      const response = await emitWithAck<LeaveAck>("room:leave", {
+        roomCode,
+        participantId,
+        intent
+      });
+
+      if (!response.ok) {
+        setMessage(response.error ?? "Unable to leave the room.");
+        return;
+      }
+
+      setLeaveDialogOpen(false);
+      goHome(intent === "end_room" ? "The host ended the game." : undefined);
     });
   }
 
@@ -419,49 +746,63 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   }
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-6 px-4 py-5 sm:px-6 lg:px-8">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <div>
-          <Link href="/" className="text-sm uppercase tracking-[0.28em] text-slate-300/70">
-            Guess The Player
-          </Link>
-          <h1 className="display-font mt-2 text-3xl font-semibold sm:text-4xl">Room {roomCode}</h1>
-        </div>
-        {room ? (
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="rounded-full border border-white/10 bg-white/6 px-4 py-2 text-sm text-slate-200/80">
-              {room.players.length}/{room.settings.maxPlayers} players
+    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-4 px-4 py-4 sm:px-6 sm:py-6">
+      <div className="glass-panel rounded-[1.75rem] px-4 py-4 sm:px-5">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <Link href="/" className="text-xs font-semibold uppercase tracking-[0.28em] text-amber-600">
+              Guess The Player
+            </Link>
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+              <h1 className="display-font text-3xl font-semibold text-stone-950 sm:text-4xl">Room {roomCode}</h1>
+              {room ? (
+                <span className="rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-sm font-medium text-stone-700">
+                  {room.players.length}/{room.settings.maxPlayers} players
+                </span>
+              ) : null}
             </div>
-            <button
-              type="button"
-              onClick={shareInvite}
-              className="rounded-full border border-white/12 bg-white/8 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/12"
-            >
-              Invite
-            </button>
           </div>
-        ) : null}
+
+          {room && !needsNickname ? (
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={shareInvite}
+                className="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-stone-700 transition hover:bg-stone-50"
+              >
+                Invite
+              </button>
+              <button
+                type="button"
+                onClick={() => setLeaveDialogOpen(true)}
+                className="rounded-full border border-rose-200 bg-rose-50 px-4 py-2 text-sm font-semibold text-rose-700 transition hover:bg-rose-100"
+              >
+                Leave Game
+              </button>
+            </div>
+          ) : null}
+        </div>
       </div>
 
       {message ? (
-        <div className="rounded-3xl border border-white/10 bg-white/6 px-4 py-3 text-sm text-slate-200/85">{message}</div>
+        <div className="rounded-[1.4rem] border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">{message}</div>
       ) : null}
 
       {needsNickname ? (
-        <section className="glass-panel mx-auto mt-8 w-full max-w-xl rounded-[1.8rem] p-6 sm:p-8">
-          <p className="text-sm uppercase tracking-[0.28em] text-slate-300/70">Join This Room</p>
-          <h2 className="display-font mt-2 text-3xl font-semibold">Pick a nickname to enter.</h2>
+        <section className="glass-panel mx-auto w-full max-w-xl rounded-[1.8rem] p-5 sm:p-7">
+          <p className="text-xs uppercase tracking-[0.28em] text-stone-500">Join This Room</p>
+          <h2 className="display-font mt-2 text-3xl font-semibold text-stone-950">Pick a nickname to enter.</h2>
           <input
             value={nickname}
             onChange={(event) => setNickname(event.target.value)}
             placeholder="Sunday Sniper"
-            className="mt-5 w-full rounded-2xl border border-white/10 bg-slate-950/55 px-4 py-3 outline-none transition focus:border-orange-300/55"
+            className="mt-5 w-full rounded-[1.2rem] border border-stone-200 bg-white px-4 py-3 text-stone-950 outline-none transition focus:border-amber-400"
           />
           <button
             type="button"
             disabled={pending}
             onClick={submitNicknameAndJoin}
-            className="mt-4 w-full rounded-2xl bg-[linear-gradient(135deg,#ff7a18,#ff9b47)] px-4 py-3 font-medium text-slate-950 disabled:cursor-not-allowed disabled:opacity-70"
+            className="mt-4 w-full rounded-[1.2rem] bg-stone-950 px-4 py-3 font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-70"
           >
             Join Room
           </button>
@@ -469,91 +810,24 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
       ) : null}
 
       {!needsNickname && !room ? (
-        <section className="glass-panel rounded-[1.8rem] p-8 text-center text-slate-300/80">Loading room...</section>
+        <section className="glass-panel rounded-[1.8rem] p-8 text-center text-stone-600">Loading room...</section>
       ) : null}
 
       {!needsNickname && room ? (
-        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <aside className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
-            <div className="flex items-center justify-between gap-3">
-              <div>
-                <p className="text-xs uppercase tracking-[0.28em] text-slate-400/70">Lobby + Scores</p>
-                <h2 className="display-font mt-1 text-2xl font-semibold">Standings</h2>
-              </div>
-              {room.status === "countdown" ? (
-                <span className="rounded-full bg-orange-400/15 px-3 py-1 text-sm font-medium text-orange-100">
-                  Starting in {countdownLabel}
-                </span>
-              ) : null}
-            </div>
-
-            <div className="mt-5 space-y-3">
-              {scoreboard.map((player, index) => (
-                <div
-                  key={player.participantId}
-                  className={clsx(
-                    "rounded-3xl border px-4 py-4 transition",
-                    player.participantId === participantId ? "border-orange-300/40 bg-orange-300/10" : "border-white/8 bg-white/5"
-                  )}
-                >
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.18em] text-slate-400/70">#{index + 1}</p>
-                      <div className="mt-1 flex items-center gap-2">
-                        <span className="text-lg font-medium">{player.nickname}</span>
-                        {player.isHost ? (
-                          <span className="rounded-full border border-white/12 bg-white/8 px-2 py-0.5 text-xs uppercase tracking-[0.2em] text-slate-100/85">
-                            Host
-                          </span>
-                        ) : null}
-                      </div>
-                      <p className="mt-1 text-sm text-slate-400/80">
-                        {player.connected ? "Connected" : "Disconnected"}
-                        {player.answeredCorrectly ? " • Correct this round" : ""}
-                      </p>
-                    </div>
-                    <div className="text-right">
-                      <p className="text-2xl font-semibold text-white">{player.score}</p>
-                      <p className="text-xs uppercase tracking-[0.2em] text-slate-400/70">Points</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {self ? (
-              <div className="mt-5 rounded-3xl border border-white/8 bg-white/4 px-4 py-4 text-sm text-slate-300/85">
-                {guessFeedback ? (
-                  <p>
-                    {guessFeedback.message}
-                    {typeof guessFeedback.currentCap === "number" ? ` Max remaining: ${guessFeedback.currentCap}` : ""}
-                    {typeof guessFeedback.score === "number" ? ` Score: ${guessFeedback.score}` : ""}
-                  </p>
-                ) : (
-                  <p>
-                    {room.status === "lobby"
-                      ? "Waiting in the lobby."
-                      : room.status === "round_active"
-                        ? "Track the timeline, search fast, and lock the answer."
-                        : "Watch the round flow from reveal to leaderboard."}
-                  </p>
-                )}
-              </div>
-            ) : null}
-          </aside>
-
-          <section className="space-y-6">
-            {room.status === "lobby" ? (
-              <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+        <section className="space-y-4">
+          {room.status === "lobby" ? (
+            <>
+              <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
                 <div className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
-                  <p className="text-xs uppercase tracking-[0.28em] text-slate-400/70">Room Controls</p>
-                  <h2 className="display-font mt-2 text-3xl font-semibold">Set the match.</h2>
-                  <p className="mt-3 max-w-2xl text-sm text-slate-300/75">
-                    The host controls rounds, timing, difficulty filters, sudden death, and year labels.
+                  <p className="text-xs uppercase tracking-[0.28em] text-stone-500">Lobby Controls</p>
+                  <h2 className="display-font mt-2 text-3xl font-semibold text-stone-950">Set the match.</h2>
+                  <p className="mt-3 text-sm leading-6 text-stone-600">
+                    The host controls rounds, timer, difficulty, sudden death, and whether years appear below team names.
                   </p>
+
                   <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                    <label className="rounded-3xl border border-white/8 bg-white/5 p-4 text-sm text-slate-200/85">
-                      <span className="block text-xs uppercase tracking-[0.22em] text-slate-400/70">Rounds</span>
+                    <label className="rounded-[1.5rem] border border-stone-200 bg-white p-4 text-sm text-stone-700">
+                      <span className="block text-xs uppercase tracking-[0.2em] text-stone-500">Rounds</span>
                       <input
                         type="number"
                         min={1}
@@ -561,12 +835,12 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                         value={room.settings.roundCount}
                         disabled={!self?.isHost}
                         onChange={(event) => updateSettings({ roundCount: Number(event.target.value) })}
-                        className="mt-3 w-full rounded-2xl border border-white/8 bg-slate-950/55 px-3 py-2 disabled:opacity-60"
+                        className="mt-3 w-full rounded-[1rem] border border-stone-200 bg-stone-50 px-3 py-2 outline-none focus:border-amber-400 disabled:opacity-60"
                       />
                     </label>
 
-                    <label className="rounded-3xl border border-white/8 bg-white/5 p-4 text-sm text-slate-200/85">
-                      <span className="block text-xs uppercase tracking-[0.22em] text-slate-400/70">Timer</span>
+                    <label className="rounded-[1.5rem] border border-stone-200 bg-white p-4 text-sm text-stone-700">
+                      <span className="block text-xs uppercase tracking-[0.2em] text-stone-500">Timer</span>
                       <select
                         value={room.settings.timePerRoundSeconds === null ? "none" : String(room.settings.timePerRoundSeconds)}
                         disabled={!self?.isHost}
@@ -575,7 +849,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                             timePerRoundSeconds: event.target.value === "none" ? null : Number(event.target.value)
                           })
                         }
-                        className="mt-3 w-full rounded-2xl border border-white/8 bg-slate-950/55 px-3 py-2 disabled:opacity-60"
+                        className="mt-3 w-full rounded-[1rem] border border-stone-200 bg-stone-50 px-3 py-2 outline-none focus:border-amber-400 disabled:opacity-60"
                       >
                         <option value="none">No timer</option>
                         <option value="15">15 seconds</option>
@@ -585,59 +859,58 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                       </select>
                     </label>
 
-                    <label className="rounded-3xl border border-white/8 bg-white/5 p-4 text-sm text-slate-200/85">
-                      <span className="block text-xs uppercase tracking-[0.22em] text-slate-400/70">Mode</span>
+                    <label className="rounded-[1.5rem] border border-stone-200 bg-white p-4 text-sm text-stone-700">
+                      <span className="block text-xs uppercase tracking-[0.2em] text-stone-500">Mode</span>
                       <select
                         value={room.settings.mode}
                         disabled={!self?.isHost}
                         onChange={(event) => updateSettings({ mode: event.target.value as RoomSettings["mode"] })}
-                        className="mt-3 w-full rounded-2xl border border-white/8 bg-slate-950/55 px-3 py-2 disabled:opacity-60"
+                        className="mt-3 w-full rounded-[1rem] border border-stone-200 bg-stone-50 px-3 py-2 outline-none focus:border-amber-400 disabled:opacity-60"
                       >
                         <option value="kahoot">Kahoot style</option>
                         <option value="sudden_death">Sudden death</option>
                       </select>
                     </label>
 
-                    <label className="rounded-3xl border border-white/8 bg-white/5 p-4 text-sm text-slate-200/85">
-                      <span className="block text-xs uppercase tracking-[0.22em] text-slate-400/70">Years under teams</span>
+                    <div className="rounded-[1.5rem] border border-stone-200 bg-white p-4 text-sm text-stone-700">
+                      <span className="block text-xs uppercase tracking-[0.2em] text-stone-500">Years under teams</span>
                       <button
                         type="button"
                         disabled={!self?.isHost}
                         onClick={() => updateSettings({ showYears: !room.settings.showYears })}
                         className={clsx(
-                          "mt-3 inline-flex w-full items-center justify-between rounded-2xl border px-3 py-2 text-left disabled:opacity-60",
+                          "mt-3 inline-flex w-full items-center justify-between rounded-[1rem] border px-3 py-2 text-left transition disabled:opacity-60",
                           room.settings.showYears
-                            ? "border-emerald-300/35 bg-emerald-300/12 text-emerald-50"
-                            : "border-white/8 bg-slate-950/55 text-slate-200"
+                            ? "border-emerald-200 bg-emerald-50 text-emerald-700"
+                            : "border-stone-200 bg-stone-50 text-stone-700"
                         )}
                       >
-                        <span>{room.settings.showYears ? "Showing years" : "Hidden"}</span>
+                        <span>{room.settings.showYears ? "Showing years" : "Years hidden"}</span>
                         <span>{room.settings.showYears ? "On" : "Off"}</span>
                       </button>
-                    </label>
+                    </div>
                   </div>
 
-                  <div className="mt-4 rounded-[1.5rem] border border-white/8 bg-white/4 p-4">
-                    <p className="text-xs uppercase tracking-[0.22em] text-slate-400/70">Difficulty</p>
+                  <div className="mt-4 rounded-[1.5rem] border border-stone-200 bg-white p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Difficulty</p>
                     <div className="mt-3 flex flex-wrap gap-2">
                       {DIFFICULTY_OPTIONS.map((difficulty) => {
                         const active = room.settings.difficulty.includes(difficulty);
+
                         return (
                           <button
                             key={difficulty}
                             type="button"
                             disabled={!self?.isHost}
                             onClick={() => {
-                              const next = active
+                              const nextDifficulty = active
                                 ? room.settings.difficulty.filter((value) => value !== difficulty)
                                 : [...room.settings.difficulty, difficulty];
-                              updateSettings({ difficulty: next });
+                              updateSettings({ difficulty: nextDifficulty });
                             }}
                             className={clsx(
-                              "rounded-full border px-3 py-2 text-sm font-medium capitalize transition disabled:opacity-60",
-                              active
-                                ? "border-orange-300/40 bg-orange-300/14 text-orange-50"
-                                : "border-white/10 bg-white/4 text-slate-200"
+                              "rounded-full border px-3 py-2 text-sm font-semibold capitalize transition disabled:opacity-60",
+                              active ? "border-amber-300 bg-amber-100 text-amber-900" : "border-stone-200 bg-stone-50 text-stone-700"
                             )}
                           >
                             {difficulty}
@@ -647,110 +920,118 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     </div>
                   </div>
 
-                  <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
-                    <div className="text-sm text-slate-300/75">
+                  <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <p className="text-sm text-stone-600">
                       {room.canStart ? "Ready to start." : "Need 2+ players and enough eligible players for the chosen settings."}
-                    </div>
+                    </p>
                     {self?.isHost ? (
                       <button
                         type="button"
                         disabled={!room.canStart || pending}
                         onClick={startGame}
-                        className="rounded-2xl bg-[linear-gradient(135deg,#ff7a18,#ff9b47)] px-5 py-3 font-medium text-slate-950 disabled:cursor-not-allowed disabled:opacity-60"
+                        className="rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
                       >
                         Start Game
                       </button>
                     ) : (
-                      <div className="rounded-2xl border border-white/8 bg-white/6 px-4 py-3 text-sm text-slate-200/80">
+                      <div className="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm text-stone-600">
                         Waiting for the host to start.
                       </div>
                     )}
                   </div>
                 </div>
 
-                <div className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
-                  <p className="text-xs uppercase tracking-[0.28em] text-slate-400/70">How It Works</p>
-                  <h2 className="display-font mt-2 text-3xl font-semibold">Race the timeline.</h2>
-                  <ol className="mt-5 space-y-4 text-sm text-slate-200/85">
-                    <li className="rounded-3xl border border-white/8 bg-white/5 px-4 py-4">
-                      1. A hidden NFL player is picked from the filtered difficulty pool.
-                    </li>
-                    <li className="rounded-3xl border border-white/8 bg-white/5 px-4 py-4">
-                      2. Everyone sees the ordered list of teams the player has been on.
-                    </li>
-                    <li className="rounded-3xl border border-white/8 bg-white/5 px-4 py-4">
-                      3. Search and select the player name. Wrong guesses lower only your round ceiling.
-                    </li>
-                    <li className="rounded-3xl border border-white/8 bg-white/5 px-4 py-4">
-                      4. After reveal, the leaderboard updates and the host drives the next round.
-                    </li>
-                  </ol>
+                <PlayerRosterCard room={room} participantId={participantId} title="Players in room" subtitle="Roster" />
+              </div>
+
+              <div className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
+                <p className="text-xs uppercase tracking-[0.28em] text-stone-500">How It Works</p>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+                  {[
+                    "A hidden NFL player is chosen from the allowed difficulty pool.",
+                    "Everyone sees the ordered list of NFL teams that player has been on.",
+                    "Wrong guesses lower only your max round score, not your total score.",
+                    "After reveal, the leaderboard shows total score and the +n just earned."
+                  ].map((item, index) => (
+                    <div key={item} className="rounded-[1.4rem] border border-stone-200 bg-white px-4 py-4">
+                      <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Step {index + 1}</p>
+                      <p className="mt-2 text-sm leading-6 text-stone-700">{item}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ) : null}
+            </>
+          ) : null}
 
-            {room.status === "countdown" ? (
-              <div className="glass-panel rounded-[2rem] p-8 text-center sm:p-12">
-                <p className="text-xs uppercase tracking-[0.3em] text-slate-300/70">Round {room.round?.roundNumber}</p>
-                <div className="display-font mt-6 text-[7rem] font-semibold leading-none text-white sm:text-[9rem]">{countdownLabel}</div>
-                <p className="mt-5 text-lg text-slate-200/80">Memorize the order. Everyone sees the teams at the same moment.</p>
+          {room.status === "countdown" ? (
+            <>
+              <div className="glass-panel rounded-[1.9rem] px-5 py-8 text-center sm:px-8 sm:py-10">
+                <p className="text-xs uppercase tracking-[0.28em] text-stone-500">Round {room.round?.roundNumber}</p>
+                <div className="display-font mt-5 text-7xl font-semibold leading-none text-stone-950 sm:text-8xl">{countdownLabel}</div>
+                <p className="mt-4 text-base text-stone-600">Memorize the order. Everyone sees the timeline at the same moment.</p>
               </div>
-            ) : null}
+              <PlayerRosterCard room={room} participantId={participantId} title="Players" subtitle="Countdown" />
+            </>
+          ) : null}
 
-            {room.status === "round_active" ? (
-              <div className="space-y-6">
-                <div className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
-                  <div className="flex flex-wrap items-center justify-between gap-4">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.28em] text-slate-400/70">
-                        Round {room.round?.roundNumber} of {room.round?.totalRounds}
-                      </p>
-                      <h2 className="display-font mt-2 text-3xl font-semibold">Guess the hidden NFL player.</h2>
-                    </div>
-                    <div className="rounded-full border border-white/10 bg-white/6 px-4 py-2 text-lg font-semibold">
+          {room.status === "round_active" ? (
+            <>
+              <div className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.28em] text-stone-500">
+                      Round {room.round?.roundNumber} of {room.round?.totalRounds}
+                    </p>
+                    <h2 className="display-font mt-2 text-3xl font-semibold text-stone-950">Guess the hidden NFL player.</h2>
+                    <p className="mt-2 text-sm text-stone-600">
+                      {correctCount}/{room.players.length} players solved so far.
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <div className="rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-semibold text-stone-700">
                       {timerLabel === null ? "No timer" : `${timerLabel}s`}
-                    </div>
-                  </div>
-
-                  <div className="mt-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-                    {room.round?.teamStints.map((stint, index) => {
-                      const team = NFL_TEAMS[stint.teamId];
-                      return (
-                        <article
-                          key={`${stint.teamId}-${index}-${stint.startYear}`}
-                          className="rounded-[1.5rem] border border-white/8 p-4"
-                          style={{
-                            background: `linear-gradient(145deg, ${team.primary}55, ${team.secondary}26)`
-                          }}
-                        >
-                          <p className="text-xs uppercase tracking-[0.24em] text-white/70">Stop {index + 1}</p>
-                          <h3 className="mt-2 text-xl font-semibold text-white">{formatTeamLabel(stint.teamId)}</h3>
-                          <p className="mt-1 text-sm text-white/80">{stint.teamId}</p>
-                          {room.settings.showYears ? (
-                            <p className="mt-4 text-sm font-medium text-white/90">{formatYearRange(stint.startYear, stint.endYear)}</p>
-                          ) : null}
-                        </article>
-                      );
-                    })}
-                  </div>
-                </div>
-
-                <div className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.28em] text-slate-400/70">Search</p>
-                      <h3 className="display-font mt-2 text-2xl font-semibold">Lock your answer.</h3>
                     </div>
                     {room.settings.timePerRoundSeconds === null && self?.isHost ? (
                       <button
                         type="button"
                         onClick={endNoTimerRound}
-                        className="rounded-full border border-amber-300/30 bg-amber-300/12 px-4 py-2 text-sm font-medium text-amber-50"
+                        className="rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-800"
                       >
                         Reveal Answer
                       </button>
                     ) : null}
                   </div>
+                </div>
+
+                <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                  {room.round?.teamStints.map((stint, index) => {
+                    const team = NFL_TEAMS[stint.teamId];
+
+                    return (
+                      <article
+                        key={`${stint.teamId}-${index}-${stint.startYear}`}
+                        className="rounded-[1.45rem] border border-stone-200 bg-white p-4 shadow-[0_14px_32px_rgba(15,23,42,0.06)]"
+                      >
+                        <p className="text-xs uppercase tracking-[0.2em] text-stone-500">Stop {index + 1}</p>
+                        <h3 className="mt-2 text-xl font-semibold text-stone-950">{formatTeamLabel(stint.teamId)}</h3>
+                        <p className="mt-1 text-sm text-stone-600">{stint.teamId}</p>
+                        {room.settings.showYears ? (
+                          <p className="mt-4 text-sm font-medium text-stone-800">{formatYearRange(stint.startYear, stint.endYear)}</p>
+                        ) : null}
+                        <div className="mt-4 h-2 rounded-full" style={{ backgroundColor: team.primary }} />
+                      </article>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="grid gap-4 lg:grid-cols-[0.78fr_1.22fr]">
+                <PlayerRosterCard room={room} participantId={participantId} title="Players" subtitle="Live status" />
+
+                <div className="glass-panel rounded-[1.8rem] p-5 sm:p-6">
+                  <p className="text-xs uppercase tracking-[0.28em] text-stone-500">Answer Search</p>
+                  <h3 className="display-font mt-2 text-2xl font-semibold text-stone-950">Lock your answer.</h3>
+                  <p className="mt-2 text-sm text-stone-600">Search the NFL player database and tap the correct name.</p>
 
                   <div className="mt-5">
                     <input
@@ -758,15 +1039,33 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                       onChange={(event) => setGuessQuery(event.target.value)}
                       disabled={self?.answeredCorrectly}
                       placeholder={self?.answeredCorrectly ? "You already solved it." : "Search player names"}
-                      className="w-full rounded-2xl border border-white/10 bg-slate-950/55 px-4 py-3 outline-none transition focus:border-orange-300/55 disabled:opacity-60"
+                      className="w-full rounded-[1.2rem] border border-stone-200 bg-white px-4 py-3 text-stone-950 outline-none transition focus:border-amber-400 disabled:bg-stone-100 disabled:text-stone-500"
                     />
+
+                    {guessFeedback ? (
+                      <div
+                        className={clsx(
+                          "mt-3 rounded-[1.15rem] border px-4 py-3 text-sm",
+                          guessFeedback.status === "wrong"
+                            ? "border-rose-200 bg-rose-50 text-rose-800"
+                            : guessFeedback.status === "correct"
+                              ? "border-emerald-200 bg-emerald-50 text-emerald-800"
+                              : "border-stone-200 bg-stone-50 text-stone-700"
+                        )}
+                      >
+                        {guessFeedback.message}
+                        {typeof guessFeedback.currentCap === "number" ? ` Max remaining: ${guessFeedback.currentCap}` : ""}
+                        {typeof guessFeedback.score === "number" ? ` Score: ${guessFeedback.score}` : ""}
+                      </div>
+                    ) : null}
+
                     <div className="mt-3 grid gap-2">
                       {searchResults.map((result) => (
                         <button
                           key={result.id}
                           type="button"
                           onClick={() => submitGuess(result.id)}
-                          className="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-left text-sm text-slate-100 transition hover:bg-white/10"
+                          className="rounded-[1.1rem] border border-stone-200 bg-white px-4 py-3 text-left text-sm font-medium text-stone-800 transition hover:bg-stone-50"
                         >
                           {result.fullName}
                         </button>
@@ -775,111 +1074,76 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                   </div>
                 </div>
               </div>
-            ) : null}
+            </>
+          ) : null}
 
-            {(room.status === "round_reveal" || room.status === "round_leaderboard" || room.status === "finished") && room.round?.reveal ? (
-              <div className="space-y-6">
-                {room.status === "round_reveal" ? (
-                  <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
-                    <p className="text-xs uppercase tracking-[0.28em] text-slate-400/70">Reveal</p>
-                    <div className="mt-5 grid gap-6 lg:grid-cols-[280px_1fr] lg:items-start">
-                      <div className="overflow-hidden rounded-[1.7rem] border border-white/10 bg-white/5">
-                        <Image
-                          src={room.round.reveal.player.headshotUrl}
-                          alt={room.round.reveal.player.fullName}
-                          width={280}
-                          height={280}
-                          className="h-auto w-full object-cover"
-                          unoptimized
-                        />
-                      </div>
-                      <div>
-                        <p className="text-sm uppercase tracking-[0.28em] text-orange-200/75">Hidden player</p>
-                        <h2 className="display-font mt-2 text-4xl font-semibold">{room.round.reveal.player.fullName}</h2>
-                        <div className="mt-5 grid gap-3 sm:grid-cols-2">
-                          {room.round.reveal.player.teamStints.map((stint, index) => {
-                            const team = NFL_TEAMS[stint.teamId];
-                            return (
-                              <div key={`${stint.teamId}-${index}-${stint.startYear}`} className="rounded-3xl border border-white/8 bg-white/5 p-4">
-                                <p className="font-medium text-white">{formatTeamLabel(stint.teamId)}</p>
-                                <p className="mt-1 text-sm text-slate-300/75">
-                                  {formatYearRange(stint.startYear, stint.endYear)}
-                                </p>
-                                <div className="mt-3 h-2 rounded-full" style={{ backgroundColor: team.primary }} />
-                              </div>
-                            );
-                          })}
+          {room.status === "round_reveal" && room.round?.reveal ? (
+            <div className="glass-panel rounded-[1.95rem] p-5 sm:p-6">
+              <p className="text-xs uppercase tracking-[0.28em] text-stone-500">Reveal</p>
+              <div className="mt-5 grid gap-6 lg:grid-cols-[240px_1fr] lg:items-start">
+                <div className="overflow-hidden rounded-[1.7rem] border border-stone-200 bg-stone-50">
+                  <Image
+                    src={room.round.reveal.player.headshotUrl}
+                    alt={room.round.reveal.player.fullName}
+                    width={320}
+                    height={320}
+                    className="h-auto w-full object-cover"
+                    unoptimized
+                  />
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-700">Hidden player</p>
+                  <h2 className="display-font mt-2 text-4xl font-semibold text-stone-950">{room.round.reveal.player.fullName}</h2>
+                  <div className="mt-5 grid gap-3 md:grid-cols-2">
+                    {room.round.reveal.player.teamStints.map((stint, index) => {
+                      const team = NFL_TEAMS[stint.teamId];
+
+                      return (
+                        <div key={`${stint.teamId}-${index}-${stint.startYear}`} className="rounded-[1.35rem] border border-stone-200 bg-white p-4">
+                          <p className="font-semibold text-stone-950">{formatTeamLabel(stint.teamId)}</p>
+                          <p className="mt-1 text-sm text-stone-600">{formatYearRange(stint.startYear, stint.endYear)}</p>
+                          <div className="mt-3 h-2 rounded-full" style={{ backgroundColor: team.primary }} />
                         </div>
-                        <div className="mt-6">
-                          {self?.isHost ? (
-                            <button
-                              type="button"
-                              disabled={pending}
-                              onClick={continueFlow}
-                              className="rounded-2xl bg-[linear-gradient(135deg,#ff7a18,#ff9b47)] px-5 py-3 font-medium text-slate-950 disabled:cursor-not-allowed disabled:opacity-60"
-                            >
-                              Continue
-                            </button>
-                          ) : (
-                            <div className="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-slate-200/80">
-                              Waiting for the host to continue.
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </div>
-                ) : null}
 
-                {room.status === "round_leaderboard" || room.status === "finished" ? (
-                  <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
-                    <div className="flex flex-wrap items-center justify-between gap-4">
-                      <div>
-                        <p className="text-xs uppercase tracking-[0.28em] text-slate-400/70">
-                          {room.status === "finished" ? "Final leaderboard" : "Leaderboard"}
-                        </p>
-                        <h2 className="display-font mt-2 text-4xl font-semibold">
-                          {room.status === "finished" ? "Match complete." : "Round results."}
-                        </h2>
+                  <div className="mt-6">
+                    {self?.isHost ? (
+                      <button
+                        type="button"
+                        disabled={pending}
+                        onClick={continueFlow}
+                        className="rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-60"
+                      >
+                        Continue to Leaderboard
+                      </button>
+                    ) : (
+                      <div className="rounded-full border border-stone-200 bg-stone-50 px-4 py-2 text-sm text-stone-600">
+                        Waiting for the host to open the leaderboard.
                       </div>
-                      {self?.isHost ? (
-                        <button
-                          type="button"
-                          disabled={pending}
-                          onClick={continueFlow}
-                          className="rounded-2xl bg-[linear-gradient(135deg,#ff7a18,#ff9b47)] px-5 py-3 font-medium text-slate-950 disabled:cursor-not-allowed disabled:opacity-60"
-                        >
-                          {room.status === "finished" ? "Back to Lobby" : "Next Round"}
-                        </button>
-                      ) : (
-                        <div className="rounded-2xl border border-white/8 bg-white/5 px-4 py-3 text-sm text-slate-200/80">
-                          Waiting for the host.
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="mt-6 space-y-3">
-                      {scoreboard.map((player, index) => (
-                        <div key={player.participantId} className="rounded-3xl border border-white/8 bg-white/5 px-4 py-4">
-                          <div className="flex items-center justify-between gap-4">
-                            <div>
-                              <p className="text-xs uppercase tracking-[0.22em] text-slate-400/70">#{index + 1}</p>
-                              <p className="mt-1 text-xl font-semibold">{player.nickname}</p>
-                              <p className="mt-1 text-sm text-slate-300/70">
-                                Round score: {room.round?.reveal?.roundScores[player.participantId] ?? 0}
-                              </p>
-                            </div>
-                            <p className="text-3xl font-semibold">{player.score}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+                    )}
                   </div>
-                ) : null}
+                </div>
               </div>
-            ) : null}
-          </section>
-        </div>
+            </div>
+          ) : null}
+
+          {(room.status === "round_leaderboard" || room.status === "finished") && room.round?.reveal ? (
+            <LeaderboardCard room={room} participantId={participantId} pending={pending} onContinue={continueFlow} />
+          ) : null}
+        </section>
+      ) : null}
+
+      {leaveDialogOpen && self ? (
+        <LeaveDialog
+          isHost={self.isHost}
+          pending={pending}
+          onClose={() => setLeaveDialogOpen(false)}
+          onLeave={() => leaveGame("leave")}
+          onEndRoom={() => leaveGame("end_room")}
+        />
       ) : null}
     </main>
   );
