@@ -91,7 +91,24 @@ function createRoomCode() {
 }
 
 function getAppUrl() {
-  return process.env.APP_URL ?? "http://localhost:3000";
+  const fallback = "http://localhost:3000";
+  const rawAppUrl = process.env.APP_URL?.trim();
+
+  if (!rawAppUrl) {
+    return fallback;
+  }
+
+  const normalizedUrl = /^[a-zA-Z][a-zA-Z\d+\-.]*:\/\//.test(rawAppUrl) ? rawAppUrl : `https://${rawAppUrl}`;
+
+  try {
+    return new URL(normalizedUrl).origin;
+  } catch {
+    return fallback;
+  }
+}
+
+function createInviteUrl(roomCode: string) {
+  return new URL(`/rooms/${roomCode}`, getAppUrl()).toString();
 }
 
 function createParticipantToken(payload: ParticipantTokenPayload) {
@@ -555,7 +572,7 @@ export class RoomManager {
       roomCode: room.code,
       status: room.status,
       settings: room.settings,
-      inviteUrl: `${getAppUrl()}/rooms/${room.code}`,
+      inviteUrl: createInviteUrl(room.code),
       players: sortParticipantsByJoinOrder(room.participants.values()).map((participant) => createPlayerView(room, participant)),
       round: room.currentRound
         ? {
