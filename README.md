@@ -10,6 +10,10 @@ Realtime NFL player guessing battles. Built with Vite + React on the client and 
 
 The default `VITE_PARTYKIT_HOST` points at `127.0.0.1:1999` if not set, so local dev works without any env file.
 
+## Player catalog
+
+The player pool is generated from nflverse roster and regular-season player stat CSV releases instead of being hand-curated. `npm run generate:catalog` writes `src/lib/generated-player-catalog.ts`; `npm run build` and `npm run deploy:party` refresh it automatically before building/deploying.
+
 ## Deployment
 
 **One-time setup:**

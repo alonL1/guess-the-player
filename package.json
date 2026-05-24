@@ -8,8 +8,11 @@
   },
   "scripts": {
     "dev": "concurrently -k -n vite,party -c cyan,magenta \"vite\" \"partykit dev\"",
+    "generate:catalog": "node scripts/generate-player-catalog.mjs",
+    "prebuild": "npm run generate:catalog",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "predeploy:party": "npm run generate:catalog",
     "deploy:party": "partykit deploy",
     "deploy:client": "wrangler pages deploy dist"
   },

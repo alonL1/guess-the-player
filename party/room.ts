@@ -96,7 +96,7 @@ export default class RoomParty implements Party.Server {
     // Rehydrate state from storage on wake from hibernation
     const saved = await this.room.storage.get<SerializedState>("state");
     if (saved) {
-      this.settings = saved.settings;
+      this.settings = { ...DEFAULT_ROOM_SETTINGS, ...saved.settings };
       this.status = saved.status;
       this.hostParticipantId = saved.hostParticipantId;
       this.usedPlayerIds = saved.usedPlayerIds;
@@ -335,6 +335,7 @@ export default class RoomParty implements Party.Server {
       throw new RoomActionError("INVALID_STATE", "Settings can only be changed in the lobby");
     }
     const merged: RoomSettings = {
+      ...DEFAULT_ROOM_SETTINGS,
       ...this.settings,
       ...next,
       difficulty: next.difficulty ?? this.settings.difficulty
@@ -547,7 +548,7 @@ export default class RoomParty implements Party.Server {
 
   private async startRound() {
     if (!this.currentRound) return;
-    const candidates = getEligiblePlayers(this.settings.difficulty, this.usedPlayerIds);
+    const candidates = getEligiblePlayers(this.settings.difficulty, this.usedPlayerIds, this.settings.currentPlayersOnly);
     if (candidates.length === 0) {
       this.status = "finished";
       this.broadcastSnapshot();
@@ -632,7 +633,7 @@ export default class RoomParty implements Party.Server {
       this.canStart = false;
       return;
     }
-    const eligible = getEligiblePlayers(this.settings.difficulty, []);
+    const eligible = getEligiblePlayers(this.settings.difficulty, [], this.settings.currentPlayersOnly);
     this.canStart = eligible.length >= this.settings.roundCount;
   }
 
@@ -736,6 +737,10 @@ export default class RoomParty implements Party.Server {
               : null,
             startedAt: this.currentRound.startedAt ? new Date(this.currentRound.startedAt).toISOString() : null,
             endsAt: this.currentRound.endsAt ? new Date(this.currentRound.endsAt).toISOString() : null,
+            position:
+              this.currentRound.playerId && this.settings.showPosition && this.status !== "countdown"
+                ? this.cachedPlayers.get(this.currentRound.playerId)?.position ?? null
+                : null,
             teamStints:
               this.currentRound.playerId && this.status !== "countdown"
                 ? this.cachedPlayers.get(this.currentRound.playerId)?.teamStints ?? []

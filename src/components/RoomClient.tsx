@@ -444,8 +444,8 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   // Local instant search
   useEffect(() => {
     if (!deferredGuessQuery.trim() || room?.status !== "round_active") return;
-    setSearchResults(searchPlayersLocal(deferredGuessQuery.trim()));
-  }, [deferredGuessQuery, room?.status]);
+    setSearchResults(searchPlayersLocal(deferredGuessQuery.trim(), 8, room.settings.currentPlayersOnly));
+  }, [deferredGuessQuery, room?.settings.currentPlayersOnly, room?.status]);
 
   function send(message: ClientMessage): Promise<AckResponse> {
     return new Promise((resolve) => {
@@ -732,6 +732,42 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                           <span>{room.settings.showYears ? "On" : "Off"}</span>
                         </button>
                       </div>
+
+                      <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
+                        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Position hint</span>
+                        <button
+                          type="button"
+                          disabled={!self?.isHost}
+                          onClick={() => updateSettings({ showPosition: !room.settings.showPosition })}
+                          className={clsx(
+                            "mt-3 inline-flex w-full items-center justify-between rounded-[0.9rem] border px-3 py-2 text-left transition disabled:opacity-60",
+                            room.settings.showPosition
+                              ? "border-sky-200 bg-sky-50 text-sky-700"
+                              : "border-slate-200 bg-slate-50 text-slate-700"
+                          )}
+                        >
+                          <span>{room.settings.showPosition ? "Showing position" : "Position hidden"}</span>
+                          <span>{room.settings.showPosition ? "On" : "Off"}</span>
+                        </button>
+                      </div>
+
+                      <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
+                        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Current players</span>
+                        <button
+                          type="button"
+                          disabled={!self?.isHost}
+                          onClick={() => updateSettings({ currentPlayersOnly: !room.settings.currentPlayersOnly })}
+                          className={clsx(
+                            "mt-3 inline-flex w-full items-center justify-between rounded-[0.9rem] border px-3 py-2 text-left transition disabled:opacity-60",
+                            room.settings.currentPlayersOnly
+                              ? "border-sky-200 bg-sky-50 text-sky-700"
+                              : "border-slate-200 bg-slate-50 text-slate-700"
+                          )}
+                        >
+                          <span>{room.settings.currentPlayersOnly ? "Current only" : "All eras"}</span>
+                          <span>{room.settings.currentPlayersOnly ? "On" : "Off"}</span>
+                        </button>
+                      </div>
                     </div>
 
                     <div className="mt-4 rounded-[1.25rem] border border-slate-200 bg-white p-4">
@@ -818,6 +854,11 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     <span className="text-[11px] text-slate-500 sm:text-xs">
                       {correctCount}/{room.players.length} solved
                     </span>
+                    {room.round?.position ? (
+                      <span className="rounded-full border border-sky-100 bg-sky-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800 sm:text-xs">
+                        {room.round.position}
+                      </span>
+                    ) : null}
                   </div>
                   {room.settings.timePerRoundSeconds === null && self?.isHost ? (
                     <button
@@ -840,10 +881,21 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                         key={`${stint.teamId}-${index}-${stint.startYear}`}
                         className="rounded-[1rem] border border-slate-200 bg-white p-2.5 sm:rounded-[1.1rem] sm:p-3"
                       >
-                        <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400">Stop {index + 1}</p>
-                        <h3 className="mt-1 text-sm font-semibold leading-tight text-slate-950 sm:mt-1.5 sm:text-base">
-                          {formatTeamLabel(stint.teamId)}
-                        </h3>
+                        <div className="flex items-start gap-2">
+                          <img
+                            src={team.logoUrl}
+                            alt=""
+                            width={40}
+                            height={40}
+                            className="h-9 w-9 shrink-0 object-contain sm:h-10 sm:w-10"
+                          />
+                          <div className="min-w-0">
+                            <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400">Stop {index + 1}</p>
+                            <h3 className="mt-1 text-sm font-semibold leading-tight text-slate-950 sm:mt-1.5 sm:text-base">
+                              {formatTeamLabel(stint.teamId)}
+                            </h3>
+                          </div>
+                        </div>
                         <p className="mt-0.5 text-[11px] text-slate-500 sm:text-xs">{stint.teamId}</p>
                         {room.settings.showYears ? (
                           <p className="mt-1.5 text-[11px] font-medium text-slate-700 sm:mt-2 sm:text-xs">
@@ -962,6 +1014,16 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                   <h2 className="mt-1.5 break-words text-2xl font-semibold text-slate-950 sm:mt-2 sm:text-3xl lg:text-4xl">
                     {room.round.reveal.player.fullName}
                   </h2>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {room.settings.showPosition ? (
+                      <span className="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-sky-800 sm:text-sm">
+                        {room.round.reveal.player.position}
+                      </span>
+                    ) : null}
+                    <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold capitalize tracking-[0.08em] text-slate-700 sm:text-sm">
+                      {room.round.reveal.player.difficulty}
+                    </span>
+                  </div>
                   <div className="mt-4 grid gap-2.5 sm:mt-5 sm:gap-3 sm:grid-cols-2">
                     {room.round.reveal.player.teamStints.map((stint, index) => {
                       const team = NFL_TEAMS[stint.teamId];
@@ -970,7 +1032,16 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                           key={`${stint.teamId}-${index}-${stint.startYear}`}
                           className="rounded-[1.1rem] border border-slate-200 bg-white p-3 sm:p-4"
                         >
-                          <p className="text-sm font-semibold text-slate-950 sm:text-base">{formatTeamLabel(stint.teamId)}</p>
+                          <div className="flex items-center gap-2.5">
+                            <img
+                              src={team.logoUrl}
+                              alt=""
+                              width={44}
+                              height={44}
+                              className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
+                            />
+                            <p className="text-sm font-semibold text-slate-950 sm:text-base">{formatTeamLabel(stint.teamId)}</p>
+                          </div>
                           <p className="mt-0.5 text-xs text-slate-600 sm:mt-1 sm:text-sm">
                             {formatYearRange(stint.startYear, stint.endYear)}
                           </p>

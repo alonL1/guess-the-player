@@ -57,6 +57,7 @@ export interface TeamStint {
 export interface PlayerCatalogEntry {
   id: string;
   fullName: string;
+  position: string;
   normalizedName: string;
   difficulty: Difficulty;
   headshotUrl: string;
@@ -70,6 +71,8 @@ export interface RoomSettings {
   difficulty: Difficulty[];
   mode: GameMode;
   showYears: boolean;
+  showPosition: boolean;
+  currentPlayersOnly: boolean;
   maxPlayers: number;
   isPublic: boolean;
 }
@@ -100,6 +103,7 @@ export interface RoundState {
   countdownEndsAt: string | null;
   startedAt: string | null;
   endsAt: string | null;
+  position: string | null;
   teamStints: TeamStint[];
   reveal: RoundResult | null;
 }
