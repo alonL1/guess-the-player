@@ -1,147 +1,54 @@
-"use client";
-
 import clsx from "clsx";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useCallback, useDeferredValue, useEffect, useRef, useState, useTransition } from "react";
-import { io, type Socket } from "socket.io-client";
+import { Link, useNavigate } from "react-router-dom";
+import PartySocket from "partysocket";
 
+import { searchPlayers as searchPlayersLocal } from "@/lib/catalog";
+import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "@/lib/messages";
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
-import type { Difficulty, LeaveIntent, RoomClosedReason, RoomPlayer, RoomSettings, RoomSnapshot } from "@/lib/types";
+import {
+  clearRoomMembership,
+  getNickname,
+  getOrCreateSessionId,
+  getParticipantId,
+  setNickname as persistNickname,
+  setParticipantId
+} from "@/lib/session";
+import type {
+  Difficulty,
+  LeaveIntent,
+  RoomClosedReason,
+  RoomPlayer,
+  RoomSettings,
+  RoomSnapshot
+} from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
-type JoinResponse = {
-  roomCode: string;
-  participantId: string;
-  participantToken: string;
-  snapshot: RoomSnapshot;
-};
-
-type SearchResultsResponse = {
-  results: Array<{ id: string; fullName: string }>;
-};
-
-type GuessFeedback = {
-  status: "wrong" | "correct" | "duplicate";
-  message: string;
-  currentCap?: number;
-  score?: number;
-};
-
-type SnapshotAck = {
-  ok: boolean;
-  error?: string;
-  snapshot?: RoomSnapshot;
-};
-
-type LeaveAck = {
-  ok: boolean;
-  error?: string;
-  closed?: boolean;
-  reason?: RoomClosedReason | null;
-  snapshot?: RoomSnapshot | null;
-};
-
+const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || "127.0.0.1:1999";
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
 
-function roomTokenKey(roomCode: string) {
-  return `guess-the-player-production-09c4.up:token:${roomCode}`;
-}
-
-function roomParticipantKey(roomCode: string) {
-  return `guess-the-player-production-09c4.up:participant:${roomCode}`;
-}
-
-function clearRoomAuth(roomCode: string) {
-  localStorage.removeItem(roomTokenKey(roomCode));
-  localStorage.removeItem(roomParticipantKey(roomCode));
-}
-
-async function requestGuestSession(nickname: string) {
-  const response = await fetch("/api/session/guest", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ nickname })
-  });
-
-  const body = (await response.json().catch(() => null)) as { error?: string } | null;
-  if (!response.ok) {
-    throw new Error(body?.error ?? "Unable to create session.");
-  }
-}
-
-async function joinRoom(roomCode: string) {
-  const response = await fetch(`/api/rooms/${roomCode}/join`, {
-    method: "POST"
-  });
-
-  const body = (await response.json().catch(() => null)) as JoinResponse & { error?: string };
-  if (!response.ok) {
-    throw new Error(body.error ?? "Unable to join room.");
-  }
-
-  return body;
-}
-
-async function reconnectRoom(roomCode: string, participantToken: string) {
-  const response = await fetch(`/api/rooms/${roomCode}/reconnect`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ participantToken })
-  });
-
-  const body = (await response.json().catch(() => null)) as JoinResponse & { error?: string };
-  if (!response.ok) {
-    throw new Error(body.error ?? "Unable to reconnect.");
-  }
-
-  return body;
-}
-
-async function searchPlayers(query: string) {
-  const response = await fetch(`/api/players/search?q=${encodeURIComponent(query)}`);
-  if (!response.ok) {
-    return [];
-  }
-
-  const body = (await response.json().catch(() => null)) as SearchResultsResponse | null;
-  return body?.results ?? [];
+function buildInviteUrl(roomCode: string) {
+  if (typeof window === "undefined") return `/rooms/${roomCode}`;
+  return `${window.location.origin}/rooms/${roomCode}`;
 }
 
 function getTimerLabel(room: RoomSnapshot | null, now: number | null) {
-  if (now === null || !room?.round?.endsAt) {
-    return null;
-  }
-
+  if (now === null || !room?.round?.endsAt) return null;
   const remainingMs = new Date(room.round.endsAt).getTime() - now;
   return Math.max(0, Math.ceil(remainingMs / 1000));
 }
 
 function getCountdownLabel(room: RoomSnapshot | null, now: number | null) {
-  if (now === null || !room?.round?.countdownEndsAt) {
-    return null;
-  }
-
+  if (now === null || !room?.round?.countdownEndsAt) return null;
   const remainingMs = new Date(room.round.countdownEndsAt).getTime() - now;
   return Math.max(1, Math.ceil(remainingMs / 1000));
 }
 
 function sortPlayersForBoard(room: RoomSnapshot | null) {
-  if (!room) {
-    return [];
-  }
-
-  return [...room.players].sort((left, right) => {
-    if (right.score !== left.score) {
-      return right.score - left.score;
-    }
-
-    return left.nickname.localeCompare(right.nickname);
+  if (!room) return [];
+  return [...room.players].sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    return a.nickname.localeCompare(b.nickname);
   });
 }
 
@@ -150,30 +57,17 @@ function formatDelta(points: number) {
 }
 
 function getRoomClosedMessage(reason: RoomClosedReason) {
-  if (reason === "host_ended") {
-    return "The host ended the game.";
-  }
-
-  return "The room closed.";
+  if (reason === "host_ended") return "The host ended the game";
+  if (reason === "idle_timeout") return "The room was closed for inactivity";
+  if (reason === "max_lifetime") return "The room reached its maximum session length";
+  return "The room closed";
 }
 
 function getRosterStatus(player: RoomPlayer, roomStatus: RoomSnapshot["status"]) {
-  if (!player.connected) {
-    return "Disconnected";
-  }
-
-  if (roomStatus === "round_active") {
-    return player.answeredCorrectly ? "Solved" : "Guessing";
-  }
-
-  if (roomStatus === "countdown") {
-    return "Ready";
-  }
-
-  if (roomStatus === "round_reveal") {
-    return player.answeredCorrectly ? "Locked in" : "Waiting";
-  }
-
+  if (!player.connected) return "Disconnected";
+  if (roomStatus === "round_active") return player.answeredCorrectly ? "Solved" : "Guessing";
+  if (roomStatus === "countdown") return "Ready";
+  if (roomStatus === "round_reveal") return player.answeredCorrectly ? "Locked in" : "Waiting";
   return "In room";
 }
 
@@ -203,45 +97,45 @@ function PlayerRosterCard({
   subtitle: string;
 }) {
   return (
-    <div className="glass-panel rounded-[1.5rem] p-4 sm:p-5">
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <p className="text-xs uppercase tracking-[0.24em] text-slate-500">{subtitle}</p>
-          <h2 className="mt-2 text-2xl font-semibold text-slate-950">{title}</h2>
+    <div className="glass-panel rounded-[1.5rem] p-3 sm:p-5">
+      <div className="flex items-start justify-between gap-2 sm:gap-3">
+        <div className="min-w-0">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">{subtitle}</p>
+          <h2 className="mt-1 text-xl font-semibold text-slate-950 sm:mt-2 sm:text-2xl">{title}</h2>
         </div>
-        <div className="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-sm font-medium text-slate-700">
+        <div className="shrink-0 rounded-full border border-sky-100 bg-sky-50 px-2.5 py-1 text-xs font-medium text-slate-700 sm:px-3 sm:text-sm">
           {room.players.length}/{room.settings.maxPlayers}
         </div>
       </div>
 
-      <div className="mt-5 grid gap-3 sm:grid-cols-2">
+      <div className="mt-4 grid gap-2.5 sm:mt-5 sm:gap-3 sm:grid-cols-2">
         {room.players.map((player) => (
           <div
             key={player.participantId}
             className={clsx(
-              "rounded-[1.4rem] border px-4 py-4",
+              "rounded-[1.25rem] border px-3 py-3 sm:rounded-[1.4rem] sm:px-4 sm:py-4",
               player.participantId === participantId ? "border-sky-300 bg-sky-50" : "border-slate-200 bg-white"
             )}
           >
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <div className="flex flex-wrap items-center gap-2">
-                  <p className="text-base font-semibold text-slate-950">{player.nickname}</p>
+            <div className="flex items-start justify-between gap-2 sm:gap-3">
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                  <p className="truncate text-sm font-semibold text-slate-950 sm:text-base">{player.nickname}</p>
                   {player.isHost ? (
-                    <span className="rounded-full bg-slate-950 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+                    <span className="rounded-full bg-slate-950 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white sm:px-2.5 sm:py-1 sm:text-[11px]">
                       Host
                     </span>
                   ) : null}
                   {player.participantId === participantId ? (
-                    <span className="rounded-full bg-sky-500 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+                    <span className="rounded-full bg-sky-500 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white sm:px-2.5 sm:py-1 sm:text-[11px]">
                       You
                     </span>
                   ) : null}
                 </div>
-                <p className="mt-2 text-sm text-slate-600">{getRosterStatus(player, room.status)}</p>
+                <p className="mt-1 text-xs text-slate-600 sm:mt-2 sm:text-sm">{getRosterStatus(player, room.status)}</p>
               </div>
               {room.status === "round_active" && player.answeredCorrectly ? (
-                <span className="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
+                <span className="shrink-0 rounded-full bg-sky-100 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-sky-700 sm:px-3 sm:py-1 sm:text-xs">
                   Solved
                 </span>
               ) : null}
@@ -268,14 +162,16 @@ function LeaderboardCard({
   const roundScores = room.round?.reveal?.roundScores ?? {};
 
   return (
-    <div className="glass-panel rounded-[1.5rem] p-5 sm:p-6">
-      <div className="flex flex-wrap items-start justify-between gap-4">
+    <div className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
+      <div className="flex flex-wrap items-start justify-between gap-3 sm:gap-4">
         <div>
-          <p className="text-xs uppercase tracking-[0.24em] text-slate-500">
-            {room.status === "finished" ? "Final scores" : "Leaderboard"}
+          <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">
+            {room.status === "finished"
+              ? "Final scores"
+              : `Round ${room.round?.roundNumber ?? room.roundsPlayed}/${room.round?.totalRounds ?? room.settings.roundCount} · Leaderboard`}
           </p>
-          <h2 className="mt-2 text-3xl font-semibold text-slate-950">
-            {room.status === "finished" ? "Match complete." : "Round scores."}
+          <h2 className="mt-1.5 text-2xl font-semibold text-slate-950 sm:mt-2 sm:text-3xl">
+            {room.status === "finished" ? "Match complete" : "Round scores"}
           </h2>
         </div>
         {room.players.find((player) => player.participantId === participantId)?.isHost ? (
@@ -288,11 +184,11 @@ function LeaderboardCard({
             {room.status === "finished" ? "Back to Lobby" : "Next Round"}
           </button>
         ) : (
-          <div className="rounded-full border border-sky-100 bg-sky-50 px-4 py-2.5 text-sm text-slate-600">Waiting for the host.</div>
+          <div className="rounded-full border border-sky-100 bg-sky-50 px-4 py-2.5 text-sm text-slate-600">Waiting for the host</div>
         )}
       </div>
 
-      <div className="mt-6 space-y-3">
+      <div className="mt-5 space-y-2.5 sm:mt-6 sm:space-y-3">
         {scoreboard.map((player, index) => {
           const roundDelta = roundScores[player.participantId] ?? 0;
 
@@ -300,25 +196,25 @@ function LeaderboardCard({
             <div
               key={player.participantId}
               className={clsx(
-                "rounded-[1.45rem] border px-4 py-4",
+                "rounded-[1.25rem] border px-3 py-3 sm:rounded-[1.45rem] sm:px-4 sm:py-4",
                 player.participantId === participantId ? "border-sky-300 bg-sky-50" : "border-slate-200 bg-white"
               )}
             >
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.22em] text-slate-500">#{index + 1}</p>
-                  <div className="mt-1 flex items-center gap-2">
-                    <p className="text-lg font-semibold text-slate-950">{player.nickname}</p>
+              <div className="flex items-center justify-between gap-3 sm:gap-4">
+                <div className="min-w-0">
+                  <p className="text-[11px] uppercase tracking-[0.22em] text-slate-500 sm:text-xs">#{index + 1}</p>
+                  <div className="mt-1 flex flex-wrap items-center gap-2">
+                    <p className="truncate text-base font-semibold text-slate-950 sm:text-lg">{player.nickname}</p>
                     {player.isHost ? (
-                      <span className="rounded-full bg-slate-950 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">
+                      <span className="rounded-full bg-slate-950 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-white sm:px-2.5 sm:py-1 sm:text-[11px]">
                         Host
                       </span>
                     ) : null}
                   </div>
                 </div>
-                <div className="text-right">
-                  <p className="text-3xl font-semibold text-slate-950">{player.score}</p>
-                  <p className="mt-1 text-sm font-semibold text-sky-700">{formatDelta(roundDelta)}</p>
+                <div className="shrink-0 text-right">
+                  <p className="text-2xl font-semibold text-slate-950 sm:text-3xl">{player.score}</p>
+                  <p className="mt-0.5 text-xs font-semibold text-sky-700 sm:mt-1 sm:text-sm">{formatDelta(roundDelta)}</p>
                 </div>
               </div>
             </div>
@@ -348,21 +244,21 @@ function LeaveDialog({
   const heading = inLobby ? "Leave this room?" : isHost ? "Leave or end the game?" : "Leave this game?";
   const description = inLobby
     ? isHost
-      ? "Host will be passed to the next player. The room stays open."
-      : "You will return home. You can rejoin if the room is still open."
+      ? "Host will be passed to the next player. The room stays open"
+      : "You will return home. You can rejoin if the room is still open"
     : isHost
-      ? "Leaving passes host to the next player. Ending the game sends everyone home."
-      : "You will leave the game and return home.";
+      ? "Leaving passes host to the next player. Ending the game sends everyone home"
+      : "You will leave the game and return home";
   const leaveLabel = inLobby && isHost ? "Leave and pass host" : inLobby ? "Leave room" : "Leave game";
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-slate-950/30 px-4 py-6 sm:items-center">
-      <div className="w-full max-w-md rounded-[1.5rem] bg-white p-5 shadow-[0_24px_64px_rgba(15,23,42,0.18)]">
-        <p className="text-xs uppercase tracking-[0.24em] text-slate-500">{eyebrow}</p>
-        <h2 className="mt-2 text-3xl font-semibold text-slate-950">{heading}</h2>
-        <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
+      <div className="w-full max-w-md rounded-[1.5rem] bg-white p-4 shadow-[0_24px_64px_rgba(15,23,42,0.18)] sm:p-5">
+        <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">{eyebrow}</p>
+        <h2 className="mt-1.5 text-xl font-semibold text-slate-950 sm:mt-2 sm:text-3xl">{heading}</h2>
+        <p className="mt-2 text-sm leading-6 text-slate-600 sm:mt-3">{description}</p>
 
-        <div className="mt-6 space-y-3">
+        <div className="mt-5 space-y-2.5 sm:mt-6 sm:space-y-3">
           {!inLobby && isHost ? (
             <>
               <button
@@ -372,7 +268,7 @@ function LeaveDialog({
                 className="w-full rounded-[1.1rem] border border-sky-200 bg-sky-50 px-4 py-3 text-left transition hover:bg-sky-100 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 <span className="block font-semibold text-slate-950">Leave and pass host</span>
-                <span className="mt-1 block text-sm text-slate-600">The game continues.</span>
+                <span className="mt-1 block text-sm text-slate-600">The game continues</span>
               </button>
               <button
                 type="button"
@@ -381,7 +277,7 @@ function LeaveDialog({
                 className="w-full rounded-[1.1rem] bg-slate-950 px-4 py-3 text-left transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 <span className="block font-semibold text-white">End game entirely</span>
-                <span className="mt-1 block text-sm text-slate-200">Everyone is returned home.</span>
+                <span className="mt-1 block text-sm text-slate-200">Everyone is returned home</span>
               </button>
             </>
           ) : (
@@ -392,7 +288,7 @@ function LeaveDialog({
               className="w-full rounded-[1.1rem] bg-slate-950 px-4 py-3 text-left transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
             >
               <span className="block font-semibold text-white">{leaveLabel}</span>
-              <span className="mt-1 block text-sm text-slate-200">You can rejoin if the room is still open.</span>
+              <span className="mt-1 block text-sm text-slate-200">You can rejoin if the room is still open</span>
             </button>
           )}
         </div>
@@ -410,22 +306,23 @@ function LeaveDialog({
   );
 }
 
+type PendingAck = (response: AckResponse) => void;
+
 export function RoomClient({ roomCode }: { roomCode: string }) {
-  const router = useRouter();
-  const socketRef = useRef<Socket | null>(null);
+  const navigate = useNavigate();
+  const socketRef = useRef<PartySocket | null>(null);
+  const pendingAcks = useRef(new Map<string, PendingAck>());
   const redirectingRef = useRef(false);
+
   const [room, setRoom] = useState<RoomSnapshot | null>(null);
-  const [participantId, setParticipantId] = useState("");
-  const [participantToken, setParticipantToken] = useState("");
-  const [nickname, setNickname] = useState(() =>
-    typeof window === "undefined" ? "" : localStorage.getItem("guess-the-player:nickname") ?? ""
-  );
-  const [needsNickname, setNeedsNickname] = useState(false);
+  const [participantId, setParticipantIdState] = useState("");
+  const [nickname, setNicknameState] = useState(() => getNickname());
+  const [needsNickname, setNeedsNickname] = useState(() => !getNickname());
   const [message, setMessage] = useState<string | null>(null);
   const [guessQuery, setGuessQuery] = useState("");
   const deferredGuessQuery = useDeferredValue(guessQuery);
   const [searchResults, setSearchResults] = useState<Array<{ id: string; fullName: string }>>([]);
-  const [guessFeedback, setGuessFeedback] = useState<GuessFeedback | null>(null);
+  const [guessFeedback, setGuessFeedback] = useState<GuessResult | null>(null);
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false);
   const [now, setNow] = useState<number | null>(null);
   const [settingsExpanded, setSettingsExpanded] = useState(false);
@@ -439,16 +336,11 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const visibleSearchResults = room?.status === "round_active" && deferredGuessQuery.trim() ? searchResults : [];
 
   useEffect(() => {
-    const handle = window.setInterval(() => {
-      setNow(Date.now());
-    }, 250);
-
-    return () => {
-      window.clearInterval(handle);
-    };
+    const handle = window.setInterval(() => setNow(Date.now()), 250);
+    return () => window.clearInterval(handle);
   }, []);
 
-  const applyRoomSnapshot = useCallback((snapshot: RoomSnapshot) => {
+  const applySnapshot = useCallback((snapshot: RoomSnapshot) => {
     setRoom(snapshot);
     if (snapshot.status !== "round_active") {
       setGuessQuery("");
@@ -457,343 +349,239 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     }
   }, []);
 
-  const goHome = useCallback((nextMessage?: string) => {
-    if (redirectingRef.current) {
-      return;
-    }
+  const goHome = useCallback(
+    (nextMessage?: string) => {
+      if (redirectingRef.current) return;
+      redirectingRef.current = true;
+      clearRoomMembership(roomCode);
+      socketRef.current?.close();
+      socketRef.current = null;
+      setParticipantIdState("");
+      setRoom(null);
+      navigate(nextMessage ? `/?message=${encodeURIComponent(nextMessage)}` : "/");
+    },
+    [navigate, roomCode]
+  );
 
-    redirectingRef.current = true;
-    clearRoomAuth(roomCode);
-    socketRef.current?.disconnect();
-    setParticipantId("");
-    setParticipantToken("");
-    setRoom(null);
-
-    if (nextMessage) {
-      router.push(`/?message=${encodeURIComponent(nextMessage)}`);
-      return;
-    }
-
-    router.push("/");
-  }, [roomCode, router]);
-
+  // Open the WebSocket once a nickname exists
   useEffect(() => {
-    let cancelled = false;
+    if (needsNickname) return;
 
-    async function bootstrap() {
-      setMessage(null);
-      const savedToken = localStorage.getItem(roomTokenKey(roomCode));
-      const savedParticipantId = localStorage.getItem(roomParticipantKey(roomCode));
+    const sessionId = getOrCreateSessionId();
+    const existingParticipantId = getParticipantId(roomCode) ?? "";
 
-      try {
-        const result = savedToken ? await reconnectRoom(roomCode, savedToken) : await joinRoom(roomCode);
-        if (cancelled) {
-          return;
-        }
-
-        localStorage.setItem(roomTokenKey(roomCode), result.participantToken);
-        localStorage.setItem(roomParticipantKey(roomCode), result.participantId);
-        setParticipantToken(result.participantToken);
-        setParticipantId(result.participantId);
-        applyRoomSnapshot(result.snapshot);
-        setNeedsNickname(false);
-      } catch (error) {
-        if (cancelled) {
-          return;
-        }
-
-        if (savedToken && savedParticipantId) {
-          clearRoomAuth(roomCode);
-        }
-
-        const nextMessage = error instanceof Error ? error.message : "Unable to enter room.";
-        if (nextMessage.toLowerCase().includes("guest session")) {
-          setNeedsNickname(true);
-        } else {
-          goHome(nextMessage);
-        }
+    const socket = new PartySocket({
+      host: PARTYKIT_HOST,
+      room: roomCode,
+      query: {
+        sessionId,
+        nickname,
+        participantId: existingParticipantId
       }
-    }
-
-    void bootstrap();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [applyRoomSnapshot, goHome, roomCode]);
-
-  useEffect(() => {
-    if (!participantToken) {
-      return;
-    }
-
-    const socket = io({
-      transports: ["websocket"]
     });
 
     socketRef.current = socket;
 
-    socket.on("room:snapshot", (snapshot: RoomSnapshot) => {
-      applyRoomSnapshot(snapshot);
-    });
-
-    socket.on("room:closed", (payload: { reason: RoomClosedReason }) => {
-      goHome(getRoomClosedMessage(payload.reason));
-    });
-
-    socket.on("round:guessResult", (feedback: GuessFeedback) => {
-      setGuessFeedback(feedback);
-      if (feedback.status === "correct") {
-        setGuessQuery("");
-        setSearchResults([]);
-      }
-    });
-
-    socket.on("connect", () => {
-      socket.emit("room:watch", { roomCode, participantToken }, (response: SnapshotAck) => {
-        if (!response.ok) {
-          setMessage(response.error ?? "Unable to watch room.");
-          return;
-        }
-
-        if (response.snapshot) {
-          applyRoomSnapshot(response.snapshot);
-        }
-      });
-    });
-
-    return () => {
-      socket.disconnect();
-      socketRef.current = null;
-    };
-  }, [applyRoomSnapshot, goHome, participantToken, roomCode]);
-
-  useEffect(() => {
-    setMessage(null);
-    if (room?.status === "round_active") {
-      setRosterExpanded(false);
-    }
-  }, [room?.status]);
-
-  useEffect(() => {
-    let cancelled = false;
-
-    if (!deferredGuessQuery.trim() || room?.status !== "round_active") {
-      return;
-    }
-
-    const handle = window.setTimeout(async () => {
-      const results = await searchPlayers(deferredGuessQuery.trim());
-      if (!cancelled) {
-        setSearchResults(results);
-      }
-    }, 150);
-
-    return () => {
-      cancelled = true;
-      window.clearTimeout(handle);
-    };
-  }, [deferredGuessQuery, room?.status]);
-
-  function saveRoomAuth(result: JoinResponse) {
-    localStorage.setItem(roomTokenKey(roomCode), result.participantToken);
-    localStorage.setItem(roomParticipantKey(roomCode), result.participantId);
-    setParticipantToken(result.participantToken);
-    setParticipantId(result.participantId);
-    applyRoomSnapshot(result.snapshot);
-    setNeedsNickname(false);
-  }
-
-  async function emitWithAck<T extends { ok: boolean; error?: string }>(event: string, payload: unknown): Promise<T> {
-    return new Promise((resolve) => {
-      if (!socketRef.current) {
-        resolve({ ok: false, error: "Realtime connection unavailable." } as T);
+    socket.addEventListener("message", (event: MessageEvent<string>) => {
+      let msg: ServerMessage | { type: "hello"; participantId: string };
+      try {
+        msg = JSON.parse(event.data);
+      } catch {
         return;
       }
 
-      socketRef.current.emit(event, payload, (response: T) => {
-        resolve(response);
-      });
+      if (msg.type === "hello") {
+        setParticipantIdState(msg.participantId);
+        setParticipantId(roomCode, msg.participantId);
+        return;
+      }
+      if (msg.type === "snapshot") {
+        applySnapshot(msg.snapshot);
+        return;
+      }
+      if (msg.type === "guessResult") {
+        setGuessFeedback(msg.result);
+        if (msg.result.status === "correct") {
+          setGuessQuery("");
+          setSearchResults([]);
+        }
+        return;
+      }
+      if (msg.type === "closed") {
+        goHome(getRoomClosedMessage(msg.reason));
+        return;
+      }
+      if (msg.type === "ack") {
+        const pending = pendingAcks.current.get(msg.requestId);
+        if (pending) {
+          pendingAcks.current.delete(msg.requestId);
+          pending(msg.response);
+        }
+        return;
+      }
+      if (msg.type === "error") {
+        setMessage(msg.error);
+      }
+    });
+
+    socket.addEventListener("close", () => {
+      // Server-initiated close (e.g. room rejected join) — let user back out
+      if (redirectingRef.current) return;
+    });
+
+    return () => {
+      socket.close();
+      socketRef.current = null;
+      pendingAcks.current.clear();
+    };
+  }, [applySnapshot, goHome, needsNickname, nickname, roomCode]);
+
+  useEffect(() => {
+    setMessage(null);
+    if (room?.status === "round_active") setRosterExpanded(false);
+  }, [room?.status]);
+
+  // Local instant search
+  useEffect(() => {
+    if (!deferredGuessQuery.trim() || room?.status !== "round_active") return;
+    setSearchResults(searchPlayersLocal(deferredGuessQuery.trim()));
+  }, [deferredGuessQuery, room?.status]);
+
+  function send(message: ClientMessage): Promise<AckResponse> {
+    return new Promise((resolve) => {
+      const socket = socketRef.current;
+      if (!socket) {
+        resolve({ ok: false, error: "Realtime connection unavailable" });
+        return;
+      }
+      const requestId = crypto.randomUUID();
+      pendingAcks.current.set(requestId, resolve);
+      socket.send(JSON.stringify({ ...message, requestId }));
+      // Safety timeout — never leak pending acks
+      setTimeout(() => {
+        if (pendingAcks.current.has(requestId)) {
+          pendingAcks.current.delete(requestId);
+          resolve({ ok: false, error: "Request timed out" });
+        }
+      }, 10_000);
     });
   }
 
   function submitNicknameAndJoin() {
     setMessage(null);
-    startTransition(async () => {
-      try {
-        const trimmed = nickname.trim();
-        if (trimmed.length < 2) {
-          throw new Error("Nickname must be at least 2 characters.");
-        }
-
-        localStorage.setItem("guess-the-player:nickname", trimmed);
-        await requestGuestSession(trimmed);
-        const result = await joinRoom(roomCode);
-        saveRoomAuth(result);
-      } catch (error) {
-        setMessage(error instanceof Error ? error.message : "Unable to join room.");
-      }
-    });
+    const trimmed = nickname.trim();
+    if (trimmed.length < 2) {
+      setMessage("Nickname must be at least 2 characters");
+      return;
+    }
+    if (trimmed.length > 20) {
+      setMessage("Nickname must be at most 20 characters");
+      return;
+    }
+    persistNickname(trimmed);
+    setNicknameState(trimmed);
+    setNeedsNickname(false);
   }
 
   function updateSettings(nextSettings: Partial<RoomSettings>) {
-    if (!participantId) {
-      return;
-    }
-
+    if (!participantId) return;
     startTransition(async () => {
-      const response = await emitWithAck<SnapshotAck>("room:updateSettings", {
-        roomCode,
-        participantId,
-        settings: nextSettings
-      });
-
-      if (!response.ok) {
-        setMessage(response.error ?? "Unable to update settings.");
-      }
+      const response = await send({ type: "updateSettings", settings: nextSettings });
+      if (!response.ok) setMessage(response.error);
     });
   }
 
   function startGame() {
-    if (!participantId) {
-      return;
-    }
-
+    if (!participantId) return;
     startTransition(async () => {
-      const response = await emitWithAck<SnapshotAck>("room:start", {
-        roomCode,
-        participantId
-      });
-
-      if (!response.ok) {
-        setMessage(response.error ?? "Unable to start game.");
-      }
+      const response = await send({ type: "start" });
+      if (!response.ok) setMessage(response.error);
     });
   }
 
   function submitGuess(playerId: string) {
-    if (!participantId) {
-      return;
-    }
-
-    socketRef.current?.emit(
-      "round:guess",
-      {
-        roomCode,
-        participantId,
-        playerId
-      },
-      (response: { ok: boolean; error?: string }) => {
-        if (!response.ok) {
-          setMessage(response.error ?? "Guess failed.");
-        }
-      }
-    );
+    if (!participantId) return;
+    void send({ type: "guess", playerId }).then((response) => {
+      if (!response.ok) setMessage(response.error);
+    });
   }
 
   function continueFlow() {
-    if (!participantId) {
-      return;
-    }
-
+    if (!participantId) return;
     startTransition(async () => {
-      const response = await emitWithAck<SnapshotAck>("round:continue", {
-        roomCode,
-        participantId
-      });
-
-      if (!response.ok) {
-        setMessage(response.error ?? "Unable to continue.");
-      }
+      const response = await send({ type: "continue" });
+      if (!response.ok) setMessage(response.error);
     });
   }
 
   function endNoTimerRound() {
-    if (!participantId) {
-      return;
-    }
-
+    if (!participantId) return;
     startTransition(async () => {
-      const response = await emitWithAck<SnapshotAck>("round:endManual", {
-        roomCode,
-        participantId
-      });
-
-      if (!response.ok) {
-        setMessage(response.error ?? "Unable to end round.");
-      }
+      const response = await send({ type: "endManual" });
+      if (!response.ok) setMessage(response.error);
     });
   }
 
   function leaveGame(intent: LeaveIntent) {
-    if (!participantId) {
-      goHome();
-      return;
-    }
-
-    startTransition(async () => {
-      const response = await emitWithAck<LeaveAck>("room:leave", {
-        roomCode,
-        participantId,
-        intent
-      });
-
-      if (!response.ok) {
-        goHome(response.error ?? "Unable to leave the room.");
-        return;
+    // Optimistic: fire the leave message and navigate home immediately. If the
+    // socket has already disconnected, the server's onClose handler + empty-room
+    // sweep clean up either way — the user shouldn't wait for an ack.
+    const socket = socketRef.current;
+    if (socket && socket.readyState === WebSocket.OPEN) {
+      try {
+        socket.send(JSON.stringify({ type: "leave", intent }));
+      } catch {
+        // ignore — we're leaving regardless
       }
-
-      setLeaveDialogOpen(false);
-      goHome(intent === "end_room" ? "The host ended the game." : undefined);
-    });
+    }
+    setLeaveDialogOpen(false);
+    goHome(intent === "end_room" ? "The host ended the game" : undefined);
   }
 
   async function shareInvite() {
-    if (!room) {
-      return;
-    }
-
+    if (!room) return;
+    const url = buildInviteUrl(roomCode);
     try {
-      if (navigator.share) {
-        await navigator.share({
-          title: "Guess the Player",
-          text: "Join my NFL guessing room.",
-          url: room.inviteUrl
-        });
+      const nav = navigator as Navigator & { share?: (data: ShareData) => Promise<void> };
+      if (nav.share) {
+        await nav.share({ title: "NFL Path Guesser", text: "Join my NFL guessing room", url });
       } else {
-        await navigator.clipboard.writeText(room.inviteUrl);
-        setMessage("Invite link copied to clipboard.");
+        await navigator.clipboard.writeText(url);
+        setMessage("Invite link copied to clipboard");
       }
     } catch {
-      setMessage("Unable to share link.");
+      setMessage("Unable to share link");
     }
   }
 
   const inLobby = room?.status === "lobby";
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-4 px-4 py-4 sm:px-6 sm:py-6">
-      <div className="glass-panel rounded-[1.5rem] px-4 py-3 sm:px-5 sm:py-4">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-3">
-            <Link href="/" className="text-xs font-semibold uppercase tracking-[0.24em] text-sky-700">
-              Guess The Player
+    <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-3 px-3 py-3 sm:gap-4 sm:px-6 sm:py-6">
+      <div className="glass-panel rounded-[1.5rem] px-3 py-2.5 sm:px-5 sm:py-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
+          <div className="flex min-w-0 flex-wrap items-center gap-2 sm:gap-3">
+            <Link
+              to="/"
+              className="text-[10px] font-semibold uppercase tracking-[0.22em] text-sky-700 sm:text-xs sm:tracking-[0.24em]"
+            >
+              NFL Path Guesser
             </Link>
-            <span className="text-slate-300">·</span>
-            <h1 className="text-xl font-semibold text-slate-950 sm:text-2xl">Room {roomCode}</h1>
+            <span className="hidden text-slate-300 sm:inline">·</span>
+            <h1 className="text-base font-semibold text-slate-950 sm:text-2xl">Room {roomCode}</h1>
             {room ? (
-              <span className="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-xs font-medium text-slate-700">
+              <span className="rounded-full border border-sky-100 bg-sky-50 px-2 py-0.5 text-[11px] font-medium text-slate-700 sm:px-3 sm:py-1 sm:text-xs">
                 {room.players.length}/{room.settings.maxPlayers}
               </span>
             ) : null}
           </div>
 
           {room && !needsNickname ? (
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2">
               <button
                 type="button"
                 onClick={shareInvite}
-                className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-semibold text-slate-900 transition hover:bg-sky-100"
+                className="rounded-full border border-sky-200 bg-sky-50 px-2.5 py-1 text-xs font-semibold text-slate-900 transition hover:bg-sky-100 sm:px-3 sm:py-1.5 sm:text-sm"
               >
                 Invite
               </button>
@@ -806,7 +594,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     setLeaveDialogOpen(true);
                   }
                 }}
-                className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+                className="rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-900 transition hover:bg-slate-50 sm:px-3 sm:py-1.5 sm:text-sm"
               >
                 {inLobby ? "Leave Room" : "Leave Game"}
               </button>
@@ -820,12 +608,12 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
       ) : null}
 
       {needsNickname ? (
-        <section className="glass-panel mx-auto w-full max-w-xl rounded-[1.5rem] p-5 sm:p-7">
-          <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Join This Room</p>
-          <h2 className="mt-2 text-3xl font-semibold text-slate-950">Pick a nickname.</h2>
+        <section className="glass-panel mx-auto w-full max-w-xl rounded-[1.5rem] p-4 sm:p-7">
+          <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">Join This Room</p>
+          <h2 className="mt-1.5 text-2xl font-semibold text-slate-950 sm:mt-2 sm:text-3xl">Pick a nickname</h2>
           <input
             value={nickname}
-            onChange={(event) => setNickname(event.target.value)}
+            onChange={(event) => setNicknameState(event.target.value)}
             placeholder="Sunday Sniper"
             className="mt-5 w-full rounded-[1rem] border border-sky-100 bg-white px-4 py-3 text-slate-950 outline-none transition focus:border-sky-300"
           />
@@ -848,11 +636,11 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
         <section className="space-y-4">
           {room.status === "lobby" ? (
             <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-              <div className="glass-panel rounded-[1.5rem] p-5 sm:p-6">
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Lobby</p>
-                    <h2 className="mt-1.5 text-2xl font-semibold text-slate-950 sm:text-3xl">Match settings</h2>
+              <div className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
+                <div className="flex items-start justify-between gap-2 sm:gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">Lobby</p>
+                    <h2 className="mt-1 text-xl font-semibold text-slate-950 sm:mt-1.5 sm:text-3xl">Match settings</h2>
                   </div>
                   <button
                     type="button"
@@ -951,7 +739,6 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                       <div className="mt-3 flex flex-wrap gap-2">
                         {DIFFICULTY_OPTIONS.map((difficulty) => {
                           const active = room.settings.difficulty.includes(difficulty);
-
                           return (
                             <button
                               key={difficulty}
@@ -979,7 +766,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm text-slate-600">
-                    {room.canStart ? "Ready to start." : "Need 2+ players and enough eligible players."}
+                    {room.canStart ? "Ready to start" : "Need 2+ players and enough eligible players"}
                   </p>
                   {self?.isHost ? (
                     <button
@@ -992,7 +779,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     </button>
                   ) : (
                     <div className="rounded-full border border-sky-100 bg-sky-50 px-4 py-2 text-sm text-slate-600">
-                      Waiting for the host to start.
+                      Waiting for the host to start
                     </div>
                   )}
                 </div>
@@ -1004,10 +791,14 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
           {room.status === "countdown" ? (
             <>
-              <div className="glass-panel rounded-[1.5rem] px-5 py-8 text-center sm:px-8 sm:py-10">
-                <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Round {room.round?.roundNumber}</p>
-                <div className="mt-5 text-7xl font-semibold leading-none text-slate-950 sm:text-8xl">{countdownLabel}</div>
-                <p className="mt-4 text-base text-slate-600">Get ready.</p>
+              <div className="glass-panel rounded-[1.5rem] px-4 py-6 text-center sm:px-8 sm:py-10">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">
+                  Round {room.round?.roundNumber}/{room.round?.totalRounds}
+                </p>
+                <div className="mt-4 text-6xl font-semibold leading-none text-slate-950 sm:mt-5 sm:text-7xl lg:text-8xl">
+                  {countdownLabel}
+                </div>
+                <p className="mt-3 text-sm text-slate-600 sm:mt-4 sm:text-base">Get ready</p>
               </div>
               <PlayerRosterCard room={room} participantId={participantId} title="Players" subtitle="Countdown" />
             </>
@@ -1015,16 +806,16 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
           {room.status === "round_active" ? (
             <>
-              <div className="glass-panel rounded-[1.5rem] px-4 py-3 sm:px-5">
+              <div className="glass-panel rounded-[1.5rem] px-3 py-2.5 sm:px-5 sm:py-3">
                 <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="text-xs uppercase tracking-[0.24em] text-slate-500">
+                  <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                    <span className="text-[10px] uppercase tracking-[0.22em] text-slate-500 sm:text-xs sm:tracking-[0.24em]">
                       Round {room.round?.roundNumber}/{room.round?.totalRounds}
                     </span>
                     <span className="text-sm font-semibold text-slate-700">
                       {timerLabel === null ? "No timer" : `${timerLabel}s`}
                     </span>
-                    <span className="text-xs text-slate-500">
+                    <span className="text-[11px] text-slate-500 sm:text-xs">
                       {correctCount}/{room.players.length} solved
                     </span>
                   </div>
@@ -1040,23 +831,26 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                 </div>
               </div>
 
-              <div className="glass-panel rounded-[1.5rem] p-4 sm:p-5">
+              <div className="glass-panel rounded-[1.5rem] p-3 sm:p-5">
                 <div className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-3 xl:grid-cols-4">
                   {room.round?.teamStints.map((stint, index) => {
                     const team = NFL_TEAMS[stint.teamId];
-
                     return (
                       <article
                         key={`${stint.teamId}-${index}-${stint.startYear}`}
-                        className="rounded-[1.1rem] border border-slate-200 bg-white p-3"
+                        className="rounded-[1rem] border border-slate-200 bg-white p-2.5 sm:rounded-[1.1rem] sm:p-3"
                       >
                         <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400">Stop {index + 1}</p>
-                        <h3 className="mt-1.5 text-base font-semibold leading-tight text-slate-950">{formatTeamLabel(stint.teamId)}</h3>
-                        <p className="mt-0.5 text-xs text-slate-500">{stint.teamId}</p>
+                        <h3 className="mt-1 text-sm font-semibold leading-tight text-slate-950 sm:mt-1.5 sm:text-base">
+                          {formatTeamLabel(stint.teamId)}
+                        </h3>
+                        <p className="mt-0.5 text-[11px] text-slate-500 sm:text-xs">{stint.teamId}</p>
                         {room.settings.showYears ? (
-                          <p className="mt-2 text-xs font-medium text-slate-700">{formatYearRange(stint.startYear, stint.endYear)}</p>
+                          <p className="mt-1.5 text-[11px] font-medium text-slate-700 sm:mt-2 sm:text-xs">
+                            {formatYearRange(stint.startYear, stint.endYear)}
+                          </p>
                         ) : null}
-                        <div className="mt-3 h-1.5 rounded-full" style={{ backgroundColor: team.primary }} />
+                        <div className="mt-2 h-1 rounded-full sm:mt-3 sm:h-1.5" style={{ backgroundColor: team.primary }} />
                       </article>
                     );
                   })}
@@ -1064,18 +858,28 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
               </div>
 
               <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-                <div className="glass-panel rounded-[1.5rem] p-4 sm:p-5">
+                <div className="glass-panel rounded-[1.5rem] p-3 sm:p-5">
                   <input
                     value={guessQuery}
                     onChange={(event) => {
                       const nextValue = event.target.value;
                       setGuessQuery(nextValue);
-                      if (!nextValue.trim()) {
-                        setSearchResults([]);
+                      if (!nextValue.trim()) setSearchResults([]);
+                    }}
+                    onKeyDown={(event) => {
+                      if (event.key !== "Enter") return;
+                      const normalized = guessQuery.trim().toLowerCase();
+                      if (!normalized) return;
+                      const exactMatch = searchResults.find(
+                        (result) => result.fullName.toLowerCase() === normalized
+                      );
+                      if (exactMatch) {
+                        event.preventDefault();
+                        submitGuess(exactMatch.id);
                       }
                     }}
                     disabled={self?.answeredCorrectly}
-                    placeholder={self?.answeredCorrectly ? "You already solved it." : "Search player names"}
+                    placeholder={self?.answeredCorrectly ? "You already solved it" : "Search player names"}
                     autoComplete="off"
                     autoCorrect="off"
                     autoCapitalize="none"
@@ -1138,50 +942,57 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
           ) : null}
 
           {room.status === "round_reveal" && room.round?.reveal ? (
-            <div className="glass-panel rounded-[1.5rem] p-5 sm:p-6">
-              <p className="text-xs uppercase tracking-[0.24em] text-slate-500">Reveal</p>
-              <div className="mt-5 grid gap-6 lg:grid-cols-[240px_1fr] lg:items-start">
-                <div className="overflow-hidden rounded-[1.4rem] border border-slate-200 bg-slate-50">
-                  <Image
+            <div className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
+              <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">
+                Round {room.round?.roundNumber}/{room.round?.totalRounds} · Reveal
+              </p>
+              <div className="mt-4 grid gap-4 sm:mt-5 sm:gap-6 lg:grid-cols-[240px_1fr] lg:items-start">
+                <div className="mx-auto w-40 overflow-hidden rounded-[1.4rem] border border-slate-200 bg-slate-50 sm:w-56 lg:mx-0 lg:w-auto">
+                  <img
                     src={room.round.reveal.player.headshotUrl}
                     alt={room.round.reveal.player.fullName}
                     width={320}
                     height={320}
                     className="h-auto w-full object-cover"
-                    unoptimized
                   />
                 </div>
 
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-700">Answer</p>
-                  <h2 className="mt-2 text-4xl font-semibold text-slate-950">{room.round.reveal.player.fullName}</h2>
-                  <div className="mt-5 grid gap-3 md:grid-cols-2">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 sm:text-sm">Answer</p>
+                  <h2 className="mt-1.5 break-words text-2xl font-semibold text-slate-950 sm:mt-2 sm:text-3xl lg:text-4xl">
+                    {room.round.reveal.player.fullName}
+                  </h2>
+                  <div className="mt-4 grid gap-2.5 sm:mt-5 sm:gap-3 sm:grid-cols-2">
                     {room.round.reveal.player.teamStints.map((stint, index) => {
                       const team = NFL_TEAMS[stint.teamId];
-
                       return (
-                        <div key={`${stint.teamId}-${index}-${stint.startYear}`} className="rounded-[1.1rem] border border-slate-200 bg-white p-4">
-                          <p className="font-semibold text-slate-950">{formatTeamLabel(stint.teamId)}</p>
-                          <p className="mt-1 text-sm text-slate-600">{formatYearRange(stint.startYear, stint.endYear)}</p>
-                          <div className="mt-3 h-2 rounded-full" style={{ backgroundColor: team.primary }} />
+                        <div
+                          key={`${stint.teamId}-${index}-${stint.startYear}`}
+                          className="rounded-[1.1rem] border border-slate-200 bg-white p-3 sm:p-4"
+                        >
+                          <p className="text-sm font-semibold text-slate-950 sm:text-base">{formatTeamLabel(stint.teamId)}</p>
+                          <p className="mt-0.5 text-xs text-slate-600 sm:mt-1 sm:text-sm">
+                            {formatYearRange(stint.startYear, stint.endYear)}
+                          </p>
+                          <div className="mt-2.5 h-1.5 rounded-full sm:mt-3 sm:h-2" style={{ backgroundColor: team.primary }} />
                         </div>
                       );
                     })}
                   </div>
 
-                  <div className="mt-6">
+                  <div className="mt-5 sm:mt-6">
                     {self?.isHost ? (
                       <button
                         type="button"
                         disabled={pending}
                         onClick={continueFlow}
-                        className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
+                        className="w-full rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
                       >
                         Continue to Leaderboard
                       </button>
                     ) : (
-                      <div className="rounded-full border border-sky-100 bg-sky-50 px-4 py-2 text-sm text-slate-600">
-                        Waiting for the host.
+                      <div className="rounded-full border border-sky-100 bg-sky-50 px-4 py-2 text-center text-sm text-slate-600 sm:text-left">
+                        Waiting for the host
                       </div>
                     )}
                   </div>
@@ -1199,7 +1010,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
       {leaveDialogOpen && self ? (
         <LeaveDialog
           isHost={self.isHost}
-          inLobby={inLobby}
+          inLobby={Boolean(inLobby)}
           pending={pending}
           onClose={() => setLeaveDialogOpen(false)}
           onLeave={() => leaveGame("leave")}

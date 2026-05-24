@@ -1,76 +1,35 @@
-# Guess The Player
+# NFL Path Guesser
 
-Realtime NFL player guessing battles built with `Next.js`, `Socket.IO`, `Drizzle ORM`, and `Postgres`.
+Realtime NFL player guessing battles. Built with Vite + React on the client and PartyKit (Cloudflare Durable Objects) on the backend.
 
-## What is implemented
+## Local development
 
-- Guest nickname flow with signed session cookies
-- Public room creation, invite links, and join-fullest matchmaking
-- Lobby settings for:
-  - round count
-  - timer or no timer
-  - difficulty filters
-  - kahoot vs sudden death
-  - year labels under teams
-- Server-authoritative realtime room state
-- Synced `3, 2, 1` countdown before each round
-- Multi-guess player search with score penalties for wrong answers
-- Reveal screen, leaderboard screen, and return-to-lobby flow
-- Postgres schema + seed script for a starter NFL player catalog
-- Unit, integration, and browser tests
+1. `npm install`
+2. `npm run dev` — runs Vite (http://localhost:5173) and `partykit dev` (http://localhost:1999) concurrently
+3. Open http://localhost:5173
 
-## Stack
+The default `VITE_PARTYKIT_HOST` points at `127.0.0.1:1999` if not set, so local dev works without any env file.
 
-- `Next.js` App Router + `TypeScript`
-- `Tailwind CSS`
-- `Socket.IO`
-- `Drizzle ORM`
-- `Postgres` with a local starter-catalog fallback when `DATABASE_URL` is not set
+## Deployment
 
-## Getting started
+**One-time setup:**
+1. Create a Cloudflare account.
+2. Enable the **Workers Paid plan** ($5/mo — required for Durable Objects). In the Cloudflare dashboard, **set the spend cap to $5** so billing can never exceed the plan base.
+3. `npx partykit login` — authenticates the CLI with Cloudflare.
 
-1. Install dependencies:
+**Each deploy:**
+- `npm run deploy:party` — pushes party code, prints the host URL (e.g. `nfl-path-guesser.<user>.partykit.dev`)
+- Set `VITE_PARTYKIT_HOST` to that URL in your Cloudflare Pages env vars
+- `npm run build && npm run deploy:client` — uploads the static build to Pages (or use the Pages GitHub integration for auto-deploy on push)
 
-```bash
-npm install
-```
+## Cost & safety
 
-2. Copy env vars:
-
-```bash
-cp .env.example .env
-```
-
-3. Optional: create the Postgres schema and seed it:
-
-```bash
-npm run db:migrate
-npm run db:seed
-```
-
-4. Start the app:
-
-```bash
-npm run dev
-```
-
-5. Open `http://localhost:3000`
-
-Use one runtime environment consistently. If you install dependencies from Windows `cmd`/PowerShell, run the scripts from Windows too. If you want to work from WSL, install Linux Node inside WSL, delete `node_modules` and `package-lock.json`, then reinstall there.
+Rooms auto-close when empty for 60 s, when idle in lobby for 30 minutes, or after 4 hours total lifetime — so a forgotten room cannot accrue charges indefinitely. Hibernated Durable Objects cost $0. Worst-case billing is capped at $5/mo via the Cloudflare dashboard setting above.
 
 ## Scripts
 
-- `npm run dev` starts the custom Next.js + Socket.IO server
-- `npm run build` builds the Next.js app with Webpack for broader Windows compatibility
-- `npm run start` runs the production server
-- `npm run test` runs Vitest
-- `npm run test:e2e` runs Playwright
-- `npm run db:migrate` creates the Postgres tables
-- `npm run db:seed` seeds the starter player catalog
-
-## Notes
-
-- The app is built for a single Node process, which matches the intended Railway deployment for this MVP.
-- Room state is server-authoritative and stored in memory.
-- Player catalog data is curated in-repo and can be promoted into Postgres with the included scripts.
-- This repo intentionally uses direct migration/seed scripts instead of `drizzle-kit`.
+- `npm run dev` — Vite + PartyKit dev servers
+- `npm run build` — typecheck + Vite production build
+- `npm run preview` — preview the built client locally
+- `npm run deploy:party` — deploy PartyKit code to Cloudflare
+- `npm run deploy:client` — deploy the static client to Cloudflare Pages

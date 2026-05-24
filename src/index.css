@@ -42,10 +42,6 @@ select {
   font: inherit;
 }
 
-.display-font {
-  font-family: inherit;
-}
-
 .glass-panel {
   background: var(--panel);
   border: 1px solid var(--line);

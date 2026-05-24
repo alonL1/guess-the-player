@@ -145,3 +145,8 @@ vite.config.ts.timestamp-*
 # Playwright output
 playwright-report/
 test-results/
+
+# PartyKit local dev state
+.partykit/
+.wrangler/
+dist/

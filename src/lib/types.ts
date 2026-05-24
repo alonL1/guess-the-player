@@ -4,7 +4,7 @@ export type GameMode = "kahoot" | "sudden_death";
 
 export type LeaveIntent = "leave" | "end_room";
 
-export type RoomClosedReason = "host_ended" | "room_empty";
+export type RoomClosedReason = "host_ended" | "room_empty" | "idle_timeout" | "max_lifetime";
 
 export type RoomStatus =
   | "lobby"

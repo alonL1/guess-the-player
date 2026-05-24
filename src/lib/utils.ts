@@ -1,8 +1,10 @@
+const COMBINING_MARKS_RANGE = /[̀-ͯ]/g;
+
 export function normalizeSearchText(input: string) {
   return input
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+    .replace(COMBINING_MARKS_RANGE, "")
     .replace(/[^a-z0-9\s]/g, " ")
     .replace(/\s+/g, " ")
     .trim();

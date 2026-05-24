@@ -44,7 +44,7 @@ function countUniqueTeams(teamStints: TeamStint[]) {
   return new Set(teamStints.map((team) => team.teamId)).size;
 }
 
-export const starterCatalog: PlayerCatalogEntry[] = STARTER_PLAYERS.map((player) => ({
+export const CATALOG: PlayerCatalogEntry[] = STARTER_PLAYERS.map((player) => ({
   id: createSlug(player.fullName),
   fullName: player.fullName,
   normalizedName: normalizeSearchText(player.fullName),
@@ -53,3 +53,33 @@ export const starterCatalog: PlayerCatalogEntry[] = STARTER_PLAYERS.map((player)
   teamStints: player.teamStints,
   uniqueTeamCount: countUniqueTeams(player.teamStints)
 })).filter((player) => player.uniqueTeamCount > 1);
+
+export function getEligiblePlayers(difficulties: Difficulty[], usedIds: string[]) {
+  const used = new Set(usedIds);
+  return CATALOG.filter(
+    (player) => difficulties.includes(player.difficulty) && !used.has(player.id) && player.uniqueTeamCount > 1
+  );
+}
+
+export function findPlayerById(playerId: string) {
+  return CATALOG.find((player) => player.id === playerId) ?? null;
+}
+
+export function searchPlayers(query: string, limit = 8) {
+  const normalized = normalizeSearchText(query);
+  if (!normalized) {
+    return [];
+  }
+
+  return CATALOG.filter((player) => player.normalizedName.includes(normalized))
+    .sort((left, right) => {
+      const leftStarts = left.normalizedName.startsWith(normalized) ? 0 : 1;
+      const rightStarts = right.normalizedName.startsWith(normalized) ? 0 : 1;
+      if (leftStarts !== rightStarts) {
+        return leftStarts - rightStarts;
+      }
+      return left.fullName.localeCompare(right.fullName);
+    })
+    .slice(0, limit)
+    .map(({ id, fullName }) => ({ id, fullName }));
+}
