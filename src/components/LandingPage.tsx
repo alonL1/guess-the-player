@@ -100,12 +100,20 @@ export function LandingPage() {
               Guess the player from the career path before your friends do
             </h1>
             <p className="mt-3 max-w-2xl text-sm text-slate-600 sm:mt-4 sm:text-base lg:text-lg">
-              Create a room, pull in friends
+              Create a room, pull in friends, or take a fast solo score run.
             </p>
           </div>
 
           <div className="rounded-[1.5rem] border border-sky-100 bg-sky-50/70 p-4 sm:p-6 lg:p-7">
             <p className="text-sm uppercase tracking-[0.24em] text-slate-500">Start playing</p>
+            <button
+              type="button"
+              onClick={() => navigate("/solo")}
+              className="mt-5 w-full rounded-[1rem] bg-slate-950 px-4 py-3 font-semibold text-white transition hover:bg-slate-800"
+            >
+              Quick Solo Play
+            </button>
+            <div className="my-5 h-px bg-sky-100" />
             <label className="mt-5 block text-sm text-slate-700">
               Nickname
               <input
@@ -120,7 +128,7 @@ export function LandingPage() {
                 type="button"
                 disabled={pending}
                 onClick={() => handleAction("create")}
-                className="rounded-[1rem] bg-slate-950 px-4 py-3 font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70"
+                className="rounded-[1rem] border border-sky-200 bg-white px-4 py-3 font-semibold text-slate-900 transition hover:bg-sky-50 disabled:cursor-not-allowed disabled:opacity-70"
               >
                 Create Room
               </button>

@@ -74,7 +74,8 @@ function getRosterStatus(player: RoomPlayer, roomStatus: RoomSnapshot["status"])
 function formatSettingsSummary(settings: RoomSettings): string {
   const timer = settings.timePerRoundSeconds === null ? "No timer" : `${settings.timePerRoundSeconds}s`;
   const difficulties = settings.difficulty.map((d) => d.charAt(0).toUpperCase() + d.slice(1)).join(", ");
-  return `${settings.roundCount} rounds · ${timer} · ${difficulties}`;
+  const scoring = settings.mode === "sudden_death" ? "Sudden Death" : "Time Based";
+  return `${settings.roundCount} rounds · ${timer} · ${scoring} · ${difficulties}`;
 }
 
 function ChevronIcon({ className }: { className?: string }) {
@@ -703,15 +704,15 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                       </label>
 
                       <label className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
-                        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Mode</span>
+                        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Scoring</span>
                         <select
                           value={room.settings.mode}
                           disabled={!self?.isHost}
                           onChange={(event) => updateSettings({ mode: event.target.value as RoomSettings["mode"] })}
                           className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300 disabled:opacity-60"
                         >
-                          <option value="kahoot">Kahoot style</option>
-                          <option value="sudden_death">Sudden death</option>
+                          <option value="kahoot">Time Based</option>
+                          <option value="sudden_death">Sudden Death</option>
                         </select>
                       </label>
 

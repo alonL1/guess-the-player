@@ -33,6 +33,44 @@ export function getEligiblePlayers(difficulties: Difficulty[], usedIds: string[]
   );
 }
 
+function shuffle<T>(items: T[]) {
+  const next = [...items];
+  for (let index = next.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [next[index], next[swapIndex]] = [next[swapIndex], next[index]];
+  }
+  return next;
+}
+
+export function buildBalancedPlayerDeck(difficulties: Difficulty[], count: number, currentPlayersOnly = false, usedIds: string[] = []) {
+  const uniqueDifficulties = [...new Set(difficulties)];
+  const pools = new Map(
+    uniqueDifficulties.map((difficulty) => [
+      difficulty,
+      shuffle(getEligiblePlayers([difficulty], usedIds, currentPlayersOnly))
+    ])
+  );
+  const difficultyOrder = shuffle(uniqueDifficulties);
+  const deck: PlayerCatalogEntry[] = [];
+
+  while (deck.length < count) {
+    let pickedThisPass = false;
+
+    for (const difficulty of difficultyOrder) {
+      if (deck.length >= count) break;
+      const pool = pools.get(difficulty);
+      const next = pool?.shift();
+      if (!next) continue;
+      deck.push(next);
+      pickedThisPass = true;
+    }
+
+    if (!pickedThisPass) break;
+  }
+
+  return shuffle(deck);
+}
+
 export function findPlayerById(playerId: string) {
   return CATALOG.find((player) => player.id === playerId) ?? null;
 }

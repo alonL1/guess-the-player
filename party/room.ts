@@ -1,6 +1,6 @@
 import type * as Party from "partykit/server";
 
-import { CATALOG, findPlayerById, getEligiblePlayers } from "../src/lib/catalog";
+import { CATALOG, buildBalancedPlayerDeck, findPlayerById, getEligiblePlayers } from "../src/lib/catalog";
 import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "../src/lib/messages";
 import { calculateCurrentCap, calculateScore } from "../src/lib/scoring";
 import { DEFAULT_ROOM_SETTINGS } from "../src/lib/settings";
@@ -79,6 +79,7 @@ export default class RoomParty implements Party.Server {
   hostParticipantId: string | null = null;
   participants = new Map<string, ParticipantRecord>();
   usedPlayerIds: string[] = [];
+  playerDeckIds: string[] = [];
   roundsPlayed = 0;
   currentRound: ActiveRoundRecord | null = null;
   cachedPlayers = new Map<string, PlayerCatalogEntry>();
@@ -100,6 +101,7 @@ export default class RoomParty implements Party.Server {
       this.status = saved.status;
       this.hostParticipantId = saved.hostParticipantId;
       this.usedPlayerIds = saved.usedPlayerIds;
+      this.playerDeckIds = saved.playerDeckIds ?? [];
       this.roundsPlayed = saved.roundsPlayed;
       this.currentRound = saved.currentRound;
       this.canStart = saved.canStart;
@@ -378,6 +380,11 @@ export default class RoomParty implements Party.Server {
     }
 
     this.usedPlayerIds = [];
+    this.playerDeckIds = buildBalancedPlayerDeck(
+      this.settings.difficulty,
+      this.settings.roundCount,
+      this.settings.currentPlayersOnly
+    ).map((player) => player.id);
     this.roundsPlayed = 0;
     this.currentRound = null;
     for (const p of this.participants.values()) {
@@ -548,7 +555,11 @@ export default class RoomParty implements Party.Server {
 
   private async startRound() {
     if (!this.currentRound) return;
-    const candidates = getEligiblePlayers(this.settings.difficulty, this.usedPlayerIds, this.settings.currentPlayersOnly);
+    const plannedPlayerId = this.playerDeckIds[this.currentRound.roundNumber - 1];
+    const plannedPlayer = plannedPlayerId ? findPlayerById(plannedPlayerId) : null;
+    const candidates = plannedPlayer
+      ? [plannedPlayer]
+      : getEligiblePlayers(this.settings.difficulty, this.usedPlayerIds, this.settings.currentPlayersOnly);
     if (candidates.length === 0) {
       this.status = "finished";
       this.broadcastSnapshot();
@@ -589,6 +600,7 @@ export default class RoomParty implements Party.Server {
     this.status = "lobby";
     this.roundsPlayed = 0;
     this.usedPlayerIds = [];
+    this.playerDeckIds = [];
     this.currentRound = null;
     for (const p of this.participants.values()) {
       p.score = 0;
@@ -633,8 +645,8 @@ export default class RoomParty implements Party.Server {
       this.canStart = false;
       return;
     }
-    const eligible = getEligiblePlayers(this.settings.difficulty, [], this.settings.currentPlayersOnly);
-    this.canStart = eligible.length >= this.settings.roundCount;
+    const deck = buildBalancedPlayerDeck(this.settings.difficulty, this.settings.roundCount, this.settings.currentPlayersOnly);
+    this.canStart = deck.length >= this.settings.roundCount;
   }
 
   // ---- alarm queue ----
@@ -701,6 +713,7 @@ export default class RoomParty implements Party.Server {
     this.status = "lobby";
     this.currentRound = null;
     this.usedPlayerIds = [];
+    this.playerDeckIds = [];
     this.roundsPlayed = 0;
     // Don't close connections server-side — clients react to the "closed" event
     // (or the leave-ack) and close their own sockets via goHome(). Server-side
@@ -840,6 +853,7 @@ export default class RoomParty implements Party.Server {
         roundScore: p.roundScore
       })),
       usedPlayerIds: this.usedPlayerIds,
+      playerDeckIds: this.playerDeckIds,
       roundsPlayed: this.roundsPlayed,
       currentRound: this.currentRound,
       cachedPlayerIds: [...this.cachedPlayers.keys()],
@@ -868,6 +882,7 @@ type SerializedState = {
   hostParticipantId: string | null;
   participants: SerializedParticipant[];
   usedPlayerIds: string[];
+  playerDeckIds?: string[];
   roundsPlayed: number;
   currentRound: ActiveRoundRecord | null;
   cachedPlayerIds: string[];
