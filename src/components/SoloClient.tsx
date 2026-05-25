@@ -6,8 +6,8 @@ import { CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, getEligiblePlayers, search
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
 import { calculateCurrentCap, calculateScore } from "@/lib/scoring";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
-import type { CareerYearMode, Difficulty, PlayerCatalogEntry, PlayerSearchResult, RoomSettings, TeamId, TeamStint } from "@/lib/types";
-import { formatYearRange } from "@/lib/utils";
+import type { CareerYearMode, Difficulty, PlayerCatalogEntry, PlayerSearchResult, RoomSettings, TeamId } from "@/lib/types";
+import { TeamPath } from "@/components/TeamPath";
 
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
 const COUNTDOWN_MS = 3000;
@@ -82,6 +82,21 @@ function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "caree
   };
 }
 
+function SettingCard({
+  label,
+  children
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="pixel-panel-flat p-3 sm:p-4">
+      <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">{label}</p>
+      <div className="mt-3">{children}</div>
+    </div>
+  );
+}
+
 function YearRangeSlider({
   mode,
   startYear,
@@ -109,20 +124,20 @@ function YearRangeSlider({
     mode === "current"
       ? "Only active players in the current catalog are eligible."
       : mode === "entered"
-      ? "Only players who entered the league inside this range are eligible."
-      : mode === "retired"
-        ? "Only players whose final catalog season is inside this range are eligible."
-        : "Only players whose full career fits inside this range are eligible.";
+        ? "Only players who entered the league inside this range are eligible."
+        : mode === "retired"
+          ? "Only players whose final catalog season is inside this range are eligible."
+          : "Only players whose full career fits inside this range are eligible.";
 
   return (
-    <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
+    <div className="pixel-panel-flat p-3 sm:p-4">
       <div className="flex items-center justify-between gap-3">
-        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Career years</span>
+        <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Career years</p>
         <button
           type="button"
           disabled={disabled}
           onClick={onReset}
-          className="rounded-full border border-slate-200 px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-50 disabled:opacity-60"
+          className="pixel-button pixel-button-ghost min-h-0 px-2 py-1 text-[0.5rem]"
         >
           Reset
         </button>
@@ -131,7 +146,7 @@ function YearRangeSlider({
         value={mode}
         disabled={disabled}
         onChange={(event) => onModeChange(event.target.value as CareerYearMode)}
-        className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300 disabled:opacity-60"
+        className="pixel-select mt-3"
       >
         <option value="entered">Year Entering League</option>
         <option value="retired">Year Retired</option>
@@ -140,11 +155,11 @@ function YearRangeSlider({
       </select>
       {mode !== "current" ? (
         <>
-          <p className="mt-3 text-xs font-semibold text-slate-700">{yearLabel}</p>
+          <p className="font-pixel text-chalk mt-3 text-[0.5rem] sm:text-[0.625rem]">{yearLabel}</p>
           <div className="year-range-field mt-3">
-            <div className="absolute left-0 right-0 top-1/2 h-1.5 -translate-y-1/2 rounded-full bg-slate-200" />
+            <div className="absolute left-0 right-0 top-1/2 h-2 -translate-y-1/2 border-2 border-yardline bg-endzone" />
             <div
-              className="absolute top-1/2 h-1.5 -translate-y-1/2 rounded-full bg-sky-500"
+              className="absolute top-1/2 h-2 -translate-y-1/2 bg-helmet"
               style={{ left: `${startPercent}%`, right: `${100 - endPercent}%` }}
             />
             <input
@@ -176,40 +191,7 @@ function YearRangeSlider({
           </div>
         </>
       ) : null}
-      <p className="mt-3 text-xs leading-5 text-slate-500">{description}</p>
-    </div>
-  );
-}
-
-function TeamPathCards({ teamStints, showYears }: { teamStints: TeamStint[]; showYears: boolean }) {
-  return (
-    <div className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-3 xl:grid-cols-4">
-      {teamStints.map((stint, index) => {
-        const team = NFL_TEAMS[stint.teamId];
-        return (
-          <article
-            key={`${stint.teamId}-${index}-${stint.startYear}`}
-            className="rounded-[1rem] border border-slate-200 bg-white p-2.5 sm:rounded-[1.1rem] sm:p-3"
-          >
-            <div className="flex items-start gap-2">
-              <img src={team.logoUrl} alt="" width={40} height={40} className="h-9 w-9 shrink-0 object-contain sm:h-10 sm:w-10" />
-              <div className="min-w-0">
-                <p className="text-[10px] uppercase tracking-[0.2em] text-slate-400">Stop {index + 1}</p>
-                <h3 className="mt-1 text-sm font-semibold leading-tight text-slate-950 sm:mt-1.5 sm:text-base">
-                  {formatTeamLabel(stint.teamId)}
-                </h3>
-              </div>
-            </div>
-            <p className="mt-0.5 text-[11px] text-slate-500 sm:text-xs">{stint.teamId}</p>
-            {showYears ? (
-              <p className="mt-1.5 text-[11px] font-medium text-slate-700 sm:mt-2 sm:text-xs">
-                {formatYearRange(stint.startYear, stint.endYear)}
-              </p>
-            ) : null}
-            <div className="mt-2 h-1 rounded-full sm:mt-3 sm:h-1.5" style={{ backgroundColor: team.primary }} />
-          </article>
-        );
-      })}
+      <p className="font-readable text-chalk-dim mt-3 text-base leading-tight">{description}</p>
     </div>
   );
 }
@@ -228,20 +210,19 @@ function SettingToggle({
   onClick: () => void;
 }) {
   return (
-    <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
-      <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">{label}</span>
+    <SettingCard label={label}>
       <button
         type="button"
         onClick={onClick}
         className={clsx(
-          "mt-3 inline-flex w-full items-center justify-between rounded-[0.9rem] border px-3 py-2 text-left transition",
-          active ? "border-sky-200 bg-sky-50 text-sky-700" : "border-slate-200 bg-slate-50 text-slate-700"
+          "pixel-button w-full justify-between",
+          active ? "pixel-button-accent" : "pixel-button-ghost"
         )}
       >
-        <span>{active ? activeLabel : inactiveLabel}</span>
-        <span>{active ? "On" : "Off"}</span>
+        <span className="text-left">{active ? activeLabel : inactiveLabel}</span>
+        <span>{active ? "ON" : "OFF"}</span>
       </button>
-    </div>
+    </SettingCard>
   );
 }
 
@@ -273,6 +254,7 @@ export function SoloClient() {
   const countdownLabel = getCountdownLabel(round, now);
   const currentCap = round && settings.mode === "kahoot" ? calculateCurrentCap(round.wrongGuessCount) : 1000;
   const visibleSearchResults = status === "active" && deferredGuessQuery.trim() ? searchResults : [];
+  const isFinalCountdown = countdownLabel === 1;
 
   useEffect(() => {
     const handle = window.setInterval(() => setNow(Date.now()), 250);
@@ -365,7 +347,7 @@ export function SoloClient() {
     if (!round || status !== "active") return;
     if (playerId !== round.player.id) {
       setRound((current) => (current ? { ...current, wrongGuessCount: current.wrongGuessCount + 1 } : current));
-      setFeedback(`Wrong guess. Max remaining: ${calculateCurrentCap(round.wrongGuessCount + 1)}`);
+      setFeedback(`Wrong. Max remaining: ${calculateCurrentCap(round.wrongGuessCount + 1)}`);
       return;
     }
 
@@ -378,7 +360,7 @@ export function SoloClient() {
           : undefined,
       correctOrder: 1
     });
-    setFeedback(`Correct. Score: ${score}`);
+    setFeedback(`Correct! +${score}`);
     revealRound("correct", score);
   }
 
@@ -403,47 +385,44 @@ export function SoloClient() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-3 px-3 py-3 sm:gap-4 sm:px-6 sm:py-6">
-      <div className="glass-panel rounded-[1.5rem] px-3 py-2.5 sm:px-5 sm:py-4">
+      <div className="scoreboard px-3 py-3 sm:px-5 sm:py-4">
         <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
           <div className="min-w-0">
-            <Link
-              to="/"
-              className="text-[10px] font-semibold uppercase tracking-[0.22em] text-sky-700 sm:text-xs sm:tracking-[0.24em]"
-            >
-              NFL Path Guesser
+            <Link to="/" className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">
+              ◀ NFL Path Guesser
             </Link>
-            <h1 className="mt-1 text-base font-semibold text-slate-950 sm:text-2xl">Quick Solo Play</h1>
+            <h1 className="font-pixel text-helmet mt-2 text-xs sm:text-lg">SOLO RUN</h1>
           </div>
           <Link
             to="/"
-            className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-900 transition hover:bg-slate-50 sm:text-sm"
+            className="pixel-button pixel-button-ghost min-h-0 px-3 py-2 text-[0.5rem] sm:text-[0.625rem]"
           >
-            Back Home
+            ↩ Home
           </Link>
         </div>
       </div>
 
       {status === "setup" ? (
         <section className="grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
-            <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">Quick Solo Play</p>
-            <h2 className="mt-1.5 text-2xl font-semibold text-slate-950 sm:mt-2 sm:text-4xl">Build a solo run</h2>
-            <p className="mt-3 text-sm leading-6 text-slate-600 sm:text-base">
+          <div className="pixel-panel-accent p-4 sm:p-5">
+            <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Quick Solo Play</p>
+            <h2 className="font-pixel text-chalk mt-3 text-base sm:text-2xl">Build a solo run</h2>
+            <p className="font-readable text-chalk-dim mt-3 text-base leading-snug">
               Tune the pool, race the timer, and chase a clean score without creating a room.
             </p>
 
-            <div className="mt-5 grid grid-cols-3 gap-2">
-              <div className="rounded-[1.1rem] border border-slate-200 bg-white p-3">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Pool</p>
-                <p className="mt-1 text-xl font-semibold text-slate-950">{eligiblePlayers.length}</p>
+            <div className="mt-5 grid grid-cols-3 gap-2 sm:gap-3">
+              <div className="pixel-panel-flat p-3 text-center">
+                <p className="font-pixel text-helmet text-[0.45rem] sm:text-[0.55rem]">Pool</p>
+                <p className="font-pixel text-chalk mt-2 text-sm sm:text-lg">{eligiblePlayers.length}</p>
               </div>
-              <div className="rounded-[1.1rem] border border-slate-200 bg-white p-3">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Rounds</p>
-                <p className="mt-1 text-xl font-semibold text-slate-950">{settings.roundCount}</p>
+              <div className="pixel-panel-flat p-3 text-center">
+                <p className="font-pixel text-helmet text-[0.45rem] sm:text-[0.55rem]">Rounds</p>
+                <p className="font-pixel text-chalk mt-2 text-sm sm:text-lg">{settings.roundCount}</p>
               </div>
-              <div className="rounded-[1.1rem] border border-slate-200 bg-white p-3">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Timer</p>
-                <p className="mt-1 text-xl font-semibold text-slate-950">
+              <div className="pixel-panel-flat p-3 text-center">
+                <p className="font-pixel text-helmet text-[0.45rem] sm:text-[0.55rem]">Timer</p>
+                <p className="font-pixel text-chalk mt-2 text-sm sm:text-lg">
                   {settings.timePerRoundSeconds === null ? "Off" : `${settings.timePerRoundSeconds}s`}
                 </p>
               </div>
@@ -453,19 +432,20 @@ export function SoloClient() {
               type="button"
               disabled={!canStart}
               onClick={startRun}
-              className="mt-5 w-full rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
+              className="pixel-button pixel-button-primary mt-5 w-full"
             >
-              Start Solo Run
+              ▶ Start Solo Run
             </button>
             {!canStart ? (
-              <p className="mt-3 text-sm text-rose-700">Select at least one difficulty with enough eligible players.</p>
+              <p className="font-readable text-jersey-red mt-3 text-base">
+                Select at least one difficulty with enough eligible players.
+              </p>
             ) : null}
           </div>
 
-          <div className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
-                <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Rounds</span>
+          <div className="pixel-panel p-4 sm:p-5">
+            <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
+              <SettingCard label="Rounds">
                 <input
                   type="number"
                   min={1}
@@ -475,18 +455,17 @@ export function SoloClient() {
                     const parsed = Number(event.target.value);
                     updateSettings({ roundCount: Math.min(20, Math.max(1, Number.isNaN(parsed) ? 1 : parsed)) });
                   }}
-                  className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300"
+                  className="pixel-input"
                 />
-              </label>
+              </SettingCard>
 
-              <label className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
-                <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Timer</span>
+              <SettingCard label="Timer">
                 <select
                   value={settings.timePerRoundSeconds === null ? "none" : String(settings.timePerRoundSeconds)}
                   onChange={(event) =>
                     updateSettings({ timePerRoundSeconds: event.target.value === "none" ? null : Number(event.target.value) })
                   }
-                  className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300"
+                  className="pixel-select"
                 >
                   <option value="none">No timer</option>
                   <option value="15">15 seconds</option>
@@ -494,40 +473,38 @@ export function SoloClient() {
                   <option value="45">45 seconds</option>
                   <option value="60">60 seconds</option>
                 </select>
-              </label>
+              </SettingCard>
 
-              <label className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
-                <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Scoring</span>
+              <SettingCard label="Scoring">
                 <select
                   value={settings.mode}
                   onChange={(event) => updateSettings({ mode: event.target.value as SoloSettings["mode"] })}
-                  className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300"
+                  className="pixel-select"
                 >
                   <option value="kahoot">Time Based</option>
                   <option value="sudden_death">Sudden Death</option>
                 </select>
-              </label>
+              </SettingCard>
 
               <SettingToggle
-                label="Years under teams"
+                label="Years Under Teams"
                 activeLabel="Showing years"
                 inactiveLabel="Years hidden"
                 active={settings.showYears}
                 onClick={() => updateSettings({ showYears: !settings.showYears })}
               />
               <SettingToggle
-                label="Position hint"
+                label="Position Hint"
                 activeLabel="Showing position"
                 inactiveLabel="Position hidden"
                 active={settings.showPosition}
                 onClick={() => updateSettings({ showPosition: !settings.showPosition })}
               />
-              <label className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
-                <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Team</span>
+              <SettingCard label="Team">
                 <select
                   value={settings.teamId}
                   onChange={(event) => updateSettings({ teamId: event.target.value as TeamId | "all" })}
-                  className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300"
+                  className="pixel-select"
                 >
                   <option value="all">All teams</option>
                   {(Object.keys(NFL_TEAMS) as TeamId[]).map((teamId) => (
@@ -536,7 +513,7 @@ export function SoloClient() {
                     </option>
                   ))}
                 </select>
-              </label>
+              </SettingCard>
             </div>
 
             <div className="mt-4">
@@ -556,8 +533,8 @@ export function SoloClient() {
               />
             </div>
 
-            <div className="mt-4 rounded-[1.25rem] border border-slate-200 bg-white p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Difficulty</p>
+            <div className="pixel-panel-flat mt-4 p-3 sm:p-4">
+              <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Difficulty</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {DIFFICULTY_OPTIONS.map((difficulty) => {
                   const active = settings.difficulty.includes(difficulty);
@@ -572,8 +549,8 @@ export function SoloClient() {
                         updateSettings({ difficulty: nextDifficulty });
                       }}
                       className={clsx(
-                        "rounded-full border px-3 py-2 text-sm font-semibold capitalize transition",
-                        active ? "border-sky-300 bg-sky-100 text-sky-900" : "border-slate-200 bg-slate-50 text-slate-700"
+                        "pixel-button min-h-0 px-3 py-2 text-[0.55rem] capitalize",
+                        active ? "pixel-button-accent" : "pixel-button-ghost"
                       )}
                     >
                       {difficulty}
@@ -581,55 +558,65 @@ export function SoloClient() {
                   );
                 })}
               </div>
-              <p className="mt-3 text-sm text-slate-500">{formatDifficulties(settings.difficulty)}</p>
+              <p className="font-readable text-chalk-dim mt-3 text-base">{formatDifficulties(settings.difficulty)}</p>
             </div>
           </div>
         </section>
       ) : null}
 
       {status === "countdown" ? (
-        <section className="glass-panel rounded-[1.5rem] px-4 py-10 text-center sm:px-8 sm:py-14">
-          <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">
-            Round {round?.roundNumber}/{settings.roundCount}
+        <section className="scoreboard scanline px-4 py-10 text-center sm:px-8 sm:py-14">
+          <p className="font-pixel text-helmet text-[0.625rem] sm:text-sm">
+            ROUND {round?.roundNumber}/{settings.roundCount}
           </p>
-          <div className="mt-5 text-7xl font-semibold leading-none text-slate-950 sm:text-8xl">{countdownLabel}</div>
-          <p className="mt-4 text-sm text-slate-600 sm:text-base">Lock in. Read the path fast.</p>
+          <div
+            className={clsx("font-pixel text-helmet mt-6 leading-none", isFinalCountdown && "blink")}
+            style={{ fontSize: "var(--fs-display)" }}
+          >
+            {countdownLabel}
+          </div>
+          <p className="font-pixel text-chalk mt-6 text-[0.55rem] sm:text-xs">LOCK IN. READ THE PATH FAST.</p>
         </section>
       ) : null}
 
       {status === "active" && round ? (
         <section className="space-y-4">
-          <div className="glass-panel rounded-[1.5rem] p-3 sm:p-5">
-            <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="scoreboard px-3 py-3 sm:px-5 sm:py-3">
+            <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
               <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                <span className="text-[10px] uppercase tracking-[0.22em] text-slate-500 sm:text-xs">
-                  Round {round.roundNumber}/{settings.roundCount}
+                <span className="font-pixel text-helmet text-[0.55rem] sm:text-xs">
+                  RND {round.roundNumber}/{settings.roundCount}
                 </span>
-                <span className="text-sm font-semibold text-slate-700">{timerLabel === null ? "No timer" : `${timerLabel}s`}</span>
-                <span className="text-sm font-semibold text-sky-700">{totalScore} pts</span>
-                <span className="text-[11px] text-slate-500 sm:text-xs">Max {currentCap}</span>
+                <span
+                  className={clsx(
+                    "font-pixel text-[0.625rem] sm:text-sm",
+                    typeof timerLabel === "number" && timerLabel <= 5 ? "text-jersey-red blink" : "text-chalk"
+                  )}
+                >
+                  {timerLabel === null ? "NO TIMER" : `${timerLabel}s`}
+                </span>
+                <span className="font-pixel text-good text-[0.55rem] sm:text-xs">{totalScore} PTS</span>
+                <span className="font-pixel text-chalk-dim text-[0.5rem] sm:text-[0.625rem]">MAX {currentCap}</span>
                 {settings.showPosition ? (
-                  <span className="rounded-full border border-sky-100 bg-sky-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-sky-800 sm:text-xs">
-                    {round.player.position}
-                  </span>
+                  <span className="pixel-tag pixel-tag-yellow">{round.player.position}</span>
                 ) : null}
               </div>
               <button
                 type="button"
                 onClick={() => revealRound("revealed")}
-                className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-semibold text-sky-800"
+                className="pixel-button pixel-button-accent min-h-0 px-3 py-2 text-[0.55rem]"
               >
                 Reveal
               </button>
             </div>
           </div>
 
-          <div className="glass-panel rounded-[1.5rem] p-3 sm:p-5">
-            <TeamPathCards teamStints={round.player.teamStints} showYears={settings.showYears} />
+          <div className="pixel-panel p-3 sm:p-4">
+            <TeamPath teamStints={round.player.teamStints} showYears={settings.showYears} />
           </div>
 
           <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="glass-panel rounded-[1.5rem] p-3 sm:p-5">
+            <div className="pixel-panel p-3 sm:p-4">
               <input
                 value={guessQuery}
                 onChange={(event) => {
@@ -646,18 +633,30 @@ export function SoloClient() {
                     submitGuess(exactMatch.id);
                   }
                 }}
-                placeholder="Search player names"
+                placeholder="TYPE PLAYER NAME"
                 autoComplete="off"
                 autoCorrect="off"
                 autoCapitalize="none"
                 spellCheck={false}
                 inputMode="search"
-                className="w-full rounded-[1rem] border border-slate-200 bg-white px-4 py-3 text-slate-950 outline-none transition focus:border-sky-300"
+                className="pixel-input"
               />
 
               {feedback ? (
-                <div className="mt-3 rounded-[1.15rem] border border-sky-200 bg-sky-50 px-4 py-3 text-sm text-sky-800">
-                  {feedback}
+                <div
+                  className={clsx(
+                    "mt-3 border-4 p-3",
+                    feedback.startsWith("Wrong") ? "border-jersey-red bg-endzone" : "border-good bg-endzone"
+                  )}
+                >
+                  <p
+                    className={clsx(
+                      "font-pixel text-[0.55rem] sm:text-xs",
+                      feedback.startsWith("Wrong") ? "text-jersey-red" : "text-good"
+                    )}
+                  >
+                    {feedback}
+                  </p>
                 </div>
               ) : null}
 
@@ -668,18 +667,18 @@ export function SoloClient() {
                       key={result.id}
                       type="button"
                       onClick={() => submitGuess(result.id)}
-                      className="flex items-center gap-3 rounded-[1rem] border border-slate-200 bg-white px-3 py-2.5 text-left text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+                      className="flex items-center gap-3 border-4 border-yardline bg-endzone p-2 text-left hover:border-helmet"
                     >
                       <img
                         src={result.headshotUrl}
                         alt=""
                         width={40}
                         height={40}
-                        className="h-10 w-10 shrink-0 rounded-full border border-slate-200 bg-slate-50 object-cover"
+                        className="h-10 w-10 shrink-0 border-2 border-yardline bg-endzone object-cover"
                       />
                       <span className="min-w-0">
-                        <span className="block truncate">{result.fullName}</span>
-                        <span className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">{result.position}</span>
+                        <span className="font-readable text-chalk block truncate text-base sm:text-lg">{result.fullName}</span>
+                        <span className="font-pixel text-helmet text-[0.5rem] sm:text-[0.55rem]">{result.position}</span>
                       </span>
                     </button>
                   ))}
@@ -687,22 +686,22 @@ export function SoloClient() {
               ) : null}
             </div>
 
-            <div className="glass-panel rounded-[1.5rem] p-4 sm:p-5">
-              <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">Run status</p>
-              <div className="mt-4 grid grid-cols-2 gap-2">
-                <div className="rounded-[1rem] border border-slate-200 bg-white p-3">
-                  <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Wrong</p>
-                  <p className="mt-1 text-2xl font-semibold text-slate-950">{round.wrongGuessCount}</p>
+            <div className="pixel-panel p-4 sm:p-5">
+              <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Run Status</p>
+              <div className="mt-4 grid grid-cols-2 gap-2 sm:gap-3">
+                <div className="pixel-panel-flat p-3 text-center">
+                  <p className="font-pixel text-jersey-red text-[0.45rem] sm:text-[0.55rem]">Wrong</p>
+                  <p className="font-pixel text-chalk mt-2 text-lg sm:text-xl">{round.wrongGuessCount}</p>
                 </div>
-                <div className="rounded-[1rem] border border-slate-200 bg-white p-3">
-                  <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Correct</p>
-                  <p className="mt-1 text-2xl font-semibold text-slate-950">{correctCount}</p>
+                <div className="pixel-panel-flat p-3 text-center">
+                  <p className="font-pixel text-good text-[0.45rem] sm:text-[0.55rem]">Correct</p>
+                  <p className="font-pixel text-chalk mt-2 text-lg sm:text-xl">{correctCount}</p>
                 </div>
               </div>
               <button
                 type="button"
                 onClick={resetRun}
-                className="mt-4 w-full rounded-full border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+                className="pixel-button pixel-button-ghost mt-4 w-full"
               >
                 End Run
               </button>
@@ -712,41 +711,43 @@ export function SoloClient() {
       ) : null}
 
       {status === "reveal" && round ? (
-        <section className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
-          <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">
-            Round {round.roundNumber}/{settings.roundCount} · Reveal
+        <section className="pixel-panel-accent p-4 sm:p-6">
+          <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">
+            ▼ Round {round.roundNumber}/{settings.roundCount} · Reveal
           </p>
           <div className="mt-4 grid gap-4 sm:mt-5 sm:gap-6 lg:grid-cols-[240px_1fr] lg:items-start">
-            <div className="mx-auto w-40 overflow-hidden rounded-[1.4rem] border border-slate-200 bg-slate-50 sm:w-56 lg:mx-0 lg:w-auto">
-              <img src={round.player.headshotUrl} alt={round.player.fullName} width={320} height={320} className="h-auto w-full object-cover" />
+            <div className="mx-auto w-40 overflow-hidden border-4 border-helmet bg-endzone sm:w-56 lg:mx-0 lg:w-auto">
+              <img
+                src={round.player.headshotUrl}
+                alt={round.player.fullName}
+                width={320}
+                height={320}
+                className="h-auto w-full object-cover"
+              />
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 sm:text-sm">Answer</p>
-              <h2 className="mt-1.5 break-words text-2xl font-semibold text-slate-950 sm:mt-2 sm:text-3xl lg:text-4xl">
+              <p className="font-pixel text-good text-[0.55rem] sm:text-xs">▼ ANSWER</p>
+              <h2 className="font-pixel text-chalk mt-2 break-words text-base sm:text-xl lg:text-2xl">
                 {round.player.fullName}
               </h2>
-              <div className="mt-2 flex flex-wrap gap-2">
+              <div className="mt-3 flex flex-wrap gap-2">
                 {settings.showPosition ? (
-                  <span className="rounded-full border border-sky-100 bg-sky-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-sky-800 sm:text-sm">
-                    {round.player.position}
-                  </span>
+                  <span className="pixel-tag pixel-tag-yellow">{round.player.position}</span>
                 ) : null}
-                <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold capitalize tracking-[0.08em] text-slate-700 sm:text-sm">
-                  {round.player.difficulty}
-                </span>
-                <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-700 sm:text-sm">
+                <span className="pixel-tag pixel-tag-blue capitalize">{round.player.difficulty}</span>
+                <span className="pixel-tag pixel-tag-green">
                   +{results.find((result) => result.roundNumber === round.roundNumber)?.score ?? 0}
                 </span>
               </div>
               <div className="mt-4 sm:mt-5">
-                <TeamPathCards teamStints={round.player.teamStints} showYears />
+                <TeamPath teamStints={round.player.teamStints} showYears />
               </div>
               <button
                 type="button"
                 onClick={continueRun}
-                className="mt-5 w-full rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 sm:w-auto"
+                className="pixel-button pixel-button-primary mt-5 w-full sm:w-auto"
               >
-                {round.roundNumber >= settings.roundCount ? "See Summary" : "Next Round"}
+                {round.roundNumber >= settings.roundCount ? "See Summary ▶" : "Next Round ▶"}
               </button>
             </div>
           </div>
@@ -755,50 +756,61 @@ export function SoloClient() {
 
       {status === "summary" ? (
         <section className="grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">
-          <div className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
-            <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">Final score</p>
-            <h2 className="mt-2 text-5xl font-semibold text-slate-950">{totalScore}</h2>
-            <div className="mt-5 grid grid-cols-2 gap-2">
-              <div className="rounded-[1rem] border border-slate-200 bg-white p-3">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Correct</p>
-                <p className="mt-1 text-2xl font-semibold text-slate-950">{correctCount}</p>
+          <div className="pixel-panel-accent p-4 sm:p-6">
+            <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Final Score</p>
+            <h2 className="font-pixel text-helmet mt-3 text-3xl sm:text-5xl">{totalScore}</h2>
+            <div className="mt-5 grid grid-cols-2 gap-2 sm:gap-3">
+              <div className="pixel-panel-flat p-3 text-center">
+                <p className="font-pixel text-good text-[0.45rem] sm:text-[0.55rem]">Correct</p>
+                <p className="font-pixel text-chalk mt-2 text-lg sm:text-xl">{correctCount}</p>
               </div>
-              <div className="rounded-[1rem] border border-slate-200 bg-white p-3">
-                <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Missed</p>
-                <p className="mt-1 text-2xl font-semibold text-slate-950">{missedCount}</p>
+              <div className="pixel-panel-flat p-3 text-center">
+                <p className="font-pixel text-jersey-red text-[0.45rem] sm:text-[0.55rem]">Missed</p>
+                <p className="font-pixel text-chalk mt-2 text-lg sm:text-xl">{missedCount}</p>
               </div>
             </div>
-            <div className="mt-5 grid gap-2">
+            <div className="mt-5 grid gap-3">
               <button
                 type="button"
                 onClick={startRun}
-                className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                className="pixel-button pixel-button-primary"
               >
-                Run It Back
+                ▶ Run It Back
               </button>
               <button
                 type="button"
                 onClick={resetRun}
-                className="rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+                className="pixel-button pixel-button-ghost"
               >
                 Change Settings
               </button>
             </div>
           </div>
 
-          <div className="glass-panel rounded-[1.5rem] p-4 sm:p-6">
-            <p className="text-[11px] uppercase tracking-[0.24em] text-slate-500 sm:text-xs">Round breakdown</p>
-            <div className="mt-4 grid gap-2.5">
+          <div className="pixel-panel p-4 sm:p-6">
+            <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Round Breakdown</p>
+            <div className="mt-4 grid gap-2">
               {results.map((result) => (
-                <div key={result.roundNumber} className="rounded-[1.1rem] border border-slate-200 bg-white p-3">
+                <div key={result.roundNumber} className="border-4 border-yardline bg-endzone p-3">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div>
-                      <p className="text-xs text-slate-500">Round {result.roundNumber}</p>
-                      <p className="font-semibold text-slate-950">{result.player.fullName}</p>
+                    <div className="min-w-0">
+                      <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.55rem]">RND {result.roundNumber}</p>
+                      <p className="font-readable text-chalk mt-1 truncate text-base sm:text-lg">{result.player.fullName}</p>
                     </div>
-                    <div className="text-right">
-                      <p className="text-lg font-semibold text-slate-950">+{result.score}</p>
-                      <p className="text-xs capitalize text-slate-500">{result.outcome}</p>
+                    <div className="shrink-0 text-right">
+                      <p className="font-pixel text-helmet text-sm sm:text-lg">+{result.score}</p>
+                      <p
+                        className={clsx(
+                          "font-pixel mt-1 text-[0.45rem] capitalize sm:text-[0.55rem]",
+                          result.outcome === "correct"
+                            ? "text-good"
+                            : result.outcome === "revealed"
+                              ? "text-helmet"
+                              : "text-jersey-red"
+                        )}
+                      >
+                        {result.outcome}
+                      </p>
                     </div>
                   </div>
                 </div>

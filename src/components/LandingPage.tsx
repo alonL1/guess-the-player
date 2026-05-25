@@ -46,8 +46,6 @@ async function fetchOpenRooms(): Promise<LobbyEntry[]> {
 function pickBestOpenRoom(rooms: LobbyEntry[]): LobbyEntry | null {
   const open = rooms.filter((r) => r.playerCount < r.maxPlayers);
   if (open.length === 0) return null;
-  // Prefer rooms with a connected host; fall back to host-disconnected rooms
-  // only if there are no host-connected options available.
   const withHost = open.filter((r) => r.hostConnected);
   const pool = withHost.length > 0 ? withHost : open;
   pool.sort((a, b) => {
@@ -73,7 +71,6 @@ export function LandingPage() {
   const roomCodeHasValidFormat = ROOM_CODE_PATTERN.test(normalizedRoomCode);
 
   useEffect(() => {
-    // Make sure a sessionId exists for this browser
     getOrCreateSessionId();
   }, []);
 
@@ -141,27 +138,47 @@ export function LandingPage() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-3xl flex-col justify-center px-4 py-8 sm:px-6">
-      <section className="py-8 sm:py-12">
-        <h1 className="text-4xl font-semibold leading-tight text-slate-950 sm:text-6xl">NFL Path Guesser</h1>
-        <p className="mt-3 text-lg text-slate-600 sm:text-2xl">Guess the player from the career path</p>
+      <section className="py-6 sm:py-10">
+        <h1
+          className="font-pixel text-helmet uppercase leading-tight"
+          style={{
+            fontSize: "var(--fs-hero)",
+            textShadow: "4px 4px 0 #0a2a14, 8px 8px 0 #0f3d1d"
+          }}
+        >
+          NFL Path Guesser
+        </h1>
+        <p
+          className="font-readable text-helmet mt-4"
+          style={{
+            fontSize: "var(--fs-body)",
+            textShadow:
+              "-2px 0 0 #0a2a14, 2px 0 0 #0a2a14, 0 -2px 0 #0a2a14, 0 2px 0 #0a2a14, -2px -2px 0 #0a2a14, 2px -2px 0 #0a2a14, -2px 2px 0 #0a2a14, 2px 2px 0 #0a2a14"
+          }}
+        >
+          Guess the player from the career path
+        </p>
+        <p className="font-pixel text-helmet blink mt-3 text-[0.55rem] sm:text-xs">
+          ▶ Test your ball knowledge!
+        </p>
 
         <button
           type="button"
           onClick={() => navigate("/solo")}
-          className="mt-8 rounded-full bg-slate-950 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800"
+          className="pixel-button pixel-button-primary mt-8 w-full sm:w-auto"
         >
-          Quick Solo Play
+          ▶ Quick Solo Play
         </button>
 
-        <div className="mt-12 max-w-md">
-          <h2 className="text-2xl font-semibold text-slate-950 sm:text-3xl">Compete with friends!</h2>
-          <label className="mt-5 block text-sm font-medium text-slate-700">
+        <div className="pixel-panel mt-10 max-w-md p-4 sm:p-5">
+          <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Compete with friends</p>
+          <label className="font-pixel text-chalk mt-4 block text-[0.5rem] sm:text-[0.65rem]">
             Nickname
             <input
               value={nickname}
               onChange={(event) => setNicknameState(event.target.value)}
-              placeholder="Gridiron Guru"
-              className="mt-2 w-full rounded-[1rem] border border-slate-200 bg-white/80 px-4 py-3 text-base text-slate-950 outline-none transition focus:border-sky-300"
+              placeholder="GRIDIRON GURU"
+              className="pixel-input mt-2"
             />
           </label>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -169,7 +186,7 @@ export function LandingPage() {
               type="button"
               disabled={pending}
               onClick={createRoom}
-              className="rounded-full border border-slate-200 bg-white/80 px-4 py-3 font-semibold text-slate-900 transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-70"
+              className="pixel-button pixel-button-primary"
             >
               Create Room
             </button>
@@ -182,45 +199,45 @@ export function LandingPage() {
                 setJoinMode("choices");
                 setJoinDialogOpen(true);
               }}
-              className="rounded-full border border-slate-200 bg-white/80 px-4 py-3 font-semibold text-slate-900 transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-70"
+              className="pixel-button pixel-button-secondary"
             >
               Join a Room
             </button>
           </div>
 
           {message ? (
-            <div className="mt-4 rounded-[1rem] border border-sky-200 bg-white/80 px-4 py-3 text-sm text-slate-900">
-              {message}
+            <div className="pixel-panel-flat mt-4 border-jersey-red p-3">
+              <p className="font-readable text-chalk text-base">{message}</p>
             </div>
           ) : null}
 
           {showLocalTools ? (
             <Link
               to="/catalog"
-              className="mt-4 inline-flex rounded-full border border-dashed border-slate-300 bg-white/60 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-white"
+              className="pixel-button pixel-button-ghost mt-4 inline-flex text-[0.5rem] sm:text-[0.625rem]"
             >
-              Local Player Inspector
+              ⚙ Local Player Inspector
             </Link>
           ) : null}
         </div>
       </section>
 
       {joinDialogOpen ? (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/45 px-4">
-          <div className="w-full max-w-md rounded-[1.5rem] bg-white p-5 shadow-2xl">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-endzone/80 px-4">
+          <div className="pixel-panel-accent w-full max-w-md p-4 sm:p-5">
             <div className="flex items-start justify-between gap-3">
-              <div>
-                <p className="text-sm font-semibold text-sky-700">Join a Room</p>
-                <h2 className="mt-1 text-2xl font-semibold text-slate-950">
+              <div className="min-w-0">
+                <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Join a Room</p>
+                <h2 className="font-pixel text-chalk mt-2 text-sm sm:text-lg">
                   {joinMode === "choices" ? "How do you want to join?" : "Enter room code"}
                 </h2>
               </div>
               <button
                 type="button"
                 onClick={() => setJoinDialogOpen(false)}
-                className="rounded-full border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-600 transition hover:bg-slate-50"
+                className="pixel-button pixel-button-ghost shrink-0 px-3 py-2 text-[0.55rem]"
               >
-                Close
+                ✕
               </button>
             </div>
 
@@ -230,9 +247,9 @@ export function LandingPage() {
                   type="button"
                   disabled={pending}
                   onClick={findRoom}
-                  className="rounded-[1rem] bg-slate-950 px-4 py-3 font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70"
+                  className="pixel-button pixel-button-primary"
                 >
-                  Find Me a Room
+                  ▶ Find Me a Room
                 </button>
                 <button
                   type="button"
@@ -241,14 +258,14 @@ export function LandingPage() {
                     setJoinMessage(null);
                     setJoinMode("code");
                   }}
-                  className="rounded-[1rem] border border-slate-200 px-4 py-3 font-semibold text-slate-900 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-70"
+                  className="pixel-button pixel-button-secondary"
                 >
-                  Join With a Room Code
+                  ▶ Join With a Room Code
                 </button>
               </div>
             ) : (
               <div className="mt-5">
-                <label className="block text-sm font-medium text-slate-700">
+                <label className="font-pixel text-chalk block text-[0.55rem] sm:text-[0.65rem]">
                   Room code
                   <input
                     value={roomCode}
@@ -257,11 +274,11 @@ export function LandingPage() {
                       setRoomCode(normalizeRoomCode(event.target.value));
                     }}
                     placeholder="ABC123"
-                    className="mt-2 w-full rounded-[1rem] border border-slate-200 px-4 py-3 text-base font-semibold tracking-[0.12em] text-slate-950 outline-none transition focus:border-sky-300"
+                    className="pixel-input mt-2 text-center font-pixel text-base tracking-[0.3em] uppercase"
                   />
                 </label>
                 {!roomCodeHasValidFormat && roomCode ? (
-                  <p className="mt-2 text-sm text-slate-500">Room codes are 6 letters or numbers.</p>
+                  <p className="font-readable text-chalk-dim mt-2 text-base">Room codes are 6 letters or numbers.</p>
                 ) : null}
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   <button
@@ -270,24 +287,24 @@ export function LandingPage() {
                       setJoinMessage(null);
                       setJoinMode("choices");
                     }}
-                    className="rounded-full border border-slate-200 px-4 py-3 font-semibold text-slate-700 transition hover:bg-slate-50"
+                    className="pixel-button pixel-button-ghost"
                   >
-                    Back
+                    ◀ Back
                   </button>
                   <button
                     type="button"
                     disabled={pending || !roomCodeHasValidFormat}
                     onClick={joinRoomWithCode}
-                    className="rounded-full bg-slate-950 px-4 py-3 font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70"
+                    className="pixel-button pixel-button-primary"
                   >
-                    Continue
+                    Continue ▶
                   </button>
                 </div>
               </div>
             )}
             {joinMessage ? (
-              <div className="mt-4 rounded-[1rem] border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-800">
-                {joinMessage}
+              <div className="pixel-panel-flat mt-4 border-jersey-red p-3">
+                <p className="font-readable text-chalk text-base">{joinMessage}</p>
               </div>
             ) : null}
           </div>
