@@ -1,11 +1,12 @@
 import clsx from "clsx";
-import { useCallback, useDeferredValue, useEffect, useRef, useState, useTransition } from "react";
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PartySocket from "partysocket";
 
-import { searchPlayers as searchPlayersLocal } from "@/lib/catalog";
+import { CATALOG_YEAR_RANGE, getEligiblePlayers, searchPlayers as searchPlayersLocal } from "@/lib/catalog";
 import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "@/lib/messages";
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
+import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
 import {
   clearRoomMembership,
   getNickname,
@@ -16,11 +17,14 @@ import {
 } from "@/lib/session";
 import type {
   Difficulty,
+  CareerYearMode,
   LeaveIntent,
   RoomClosedReason,
   RoomPlayer,
+  PlayerSearchResult,
   RoomSettings,
-  RoomSnapshot
+  RoomSnapshot,
+  TeamId
 } from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
@@ -75,7 +79,125 @@ function formatSettingsSummary(settings: RoomSettings): string {
   const timer = settings.timePerRoundSeconds === null ? "No timer" : `${settings.timePerRoundSeconds}s`;
   const difficulties = settings.difficulty.map((d) => d.charAt(0).toUpperCase() + d.slice(1)).join(", ");
   const scoring = settings.mode === "sudden_death" ? "Sudden Death" : "Time Based";
-  return `${settings.roundCount} rounds · ${timer} · ${scoring} · ${difficulties}`;
+  const team = settings.teamId === "all" ? "All teams" : settings.teamId;
+  const yearMode =
+    settings.careerYearMode === "entered"
+      ? "Entered"
+      : settings.careerYearMode === "retired"
+        ? "Retired"
+        : settings.careerYearMode === "current"
+          ? "Current players"
+          : "Full career";
+  const years = settings.careerYearMode === "current" ? "" : ` ${settings.careerStartYear}-${settings.careerEndYear}`;
+  return `${settings.roundCount} rounds · ${timer} · ${scoring} · ${difficulties} · ${yearMode}${years} · ${team}`;
+}
+
+function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId">) {
+  return {
+    careerYearMode: settings.careerYearMode,
+    careerStartYear: settings.careerStartYear,
+    careerEndYear: settings.careerEndYear,
+    teamId: settings.teamId
+  };
+}
+
+function YearRangeSlider({
+  mode,
+  startYear,
+  endYear,
+  disabled,
+  onModeChange,
+  onReset,
+  onChange
+}: {
+  mode: CareerYearMode;
+  startYear: number;
+  endYear: number;
+  disabled?: boolean;
+  onModeChange: (mode: CareerYearMode) => void;
+  onReset: () => void;
+  onChange: (next: { careerStartYear: number; careerEndYear: number }) => void;
+}) {
+  const minYear = CATALOG_YEAR_RANGE.min;
+  const maxYear = CATALOG_YEAR_RANGE.max;
+  const range = maxYear - minYear;
+  const startPercent = ((startYear - minYear) / range) * 100;
+  const endPercent = ((endYear - minYear) / range) * 100;
+  const yearLabel = `${startYear}-${endYear === maxYear ? "Current" : endYear}`;
+  const description =
+    mode === "current"
+      ? "Only active players in the current catalog are eligible."
+      : mode === "entered"
+      ? "Only players who entered the league inside this range are eligible."
+      : mode === "retired"
+        ? "Only players whose final catalog season is inside this range are eligible."
+        : "Only players whose full career fits inside this range are eligible.";
+
+  return (
+    <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
+      <div className="flex items-center justify-between gap-3">
+        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Career years</span>
+        <button
+          type="button"
+          disabled={disabled}
+          onClick={onReset}
+          className="rounded-full border border-slate-200 px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-50 disabled:opacity-60"
+        >
+          Reset
+        </button>
+      </div>
+      <select
+        value={mode}
+        disabled={disabled}
+        onChange={(event) => onModeChange(event.target.value as CareerYearMode)}
+        className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300 disabled:opacity-60"
+      >
+        <option value="entered">Year Entering League</option>
+        <option value="retired">Year Retired</option>
+        <option value="full_career">Full Career</option>
+        <option value="current">Current Players Only</option>
+      </select>
+      {mode !== "current" ? (
+        <>
+          <p className="mt-3 text-xs font-semibold text-slate-700">{yearLabel}</p>
+          <div className="year-range-field mt-3">
+            <div className="absolute left-0 right-0 top-1/2 h-1.5 -translate-y-1/2 rounded-full bg-slate-200" />
+            <div
+              className="absolute top-1/2 h-1.5 -translate-y-1/2 rounded-full bg-sky-500"
+              style={{ left: `${startPercent}%`, right: `${100 - endPercent}%` }}
+            />
+            <input
+              type="range"
+              min={minYear}
+              max={maxYear}
+              value={startYear}
+              disabled={disabled}
+              onChange={(event) => {
+                const nextStart = Math.min(Number(event.target.value), endYear);
+                onChange({ careerStartYear: nextStart, careerEndYear: endYear });
+              }}
+              className="year-range-input"
+              aria-label="Career start year"
+            />
+            <input
+              type="range"
+              min={minYear}
+              max={maxYear}
+              value={endYear}
+              disabled={disabled}
+              onChange={(event) => {
+                const nextEnd = Math.max(Number(event.target.value), startYear);
+                onChange({ careerStartYear: startYear, careerEndYear: nextEnd });
+              }}
+              className="year-range-input"
+              aria-label="Career end year"
+            />
+          </div>
+        </>
+      ) : null}
+      <p className="mt-3 text-xs leading-5 text-slate-500">{description}</p>
+    </div>
+  );
 }
 
 function ChevronIcon({ className }: { className?: string }) {
@@ -322,9 +444,10 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const [message, setMessage] = useState<string | null>(null);
   const [guessQuery, setGuessQuery] = useState("");
   const deferredGuessQuery = useDeferredValue(guessQuery);
-  const [searchResults, setSearchResults] = useState<Array<{ id: string; fullName: string }>>([]);
+  const [searchResults, setSearchResults] = useState<PlayerSearchResult[]>([]);
   const [guessFeedback, setGuessFeedback] = useState<GuessResult | null>(null);
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false);
+  const [startBlockerMessage, setStartBlockerMessage] = useState<string | null>(null);
   const [now, setNow] = useState<number | null>(null);
   const [settingsExpanded, setSettingsExpanded] = useState(false);
   const [rosterExpanded, setRosterExpanded] = useState(false);
@@ -335,6 +458,14 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const self = room?.players.find((player) => player.participantId === participantId) ?? null;
   const correctCount = room?.players.filter((player) => player.answeredCorrectly).length ?? 0;
   const visibleSearchResults = room?.status === "round_active" && deferredGuessQuery.trim() ? searchResults : [];
+  const playerFilters = useMemo(
+    () => (room ? getPlayerFilters(room.settings) : null),
+    [room?.settings.careerEndYear, room?.settings.careerStartYear, room?.settings.careerYearMode, room?.settings.teamId]
+  );
+  const eligiblePlayers = useMemo(
+    () => (room && playerFilters ? getEligiblePlayers(room.settings.difficulty, [], playerFilters) : []),
+    [playerFilters, room?.settings.difficulty, room]
+  );
 
   useEffect(() => {
     const handle = window.setInterval(() => setNow(Date.now()), 250);
@@ -444,9 +575,9 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
   // Local instant search
   useEffect(() => {
-    if (!deferredGuessQuery.trim() || room?.status !== "round_active") return;
-    setSearchResults(searchPlayersLocal(deferredGuessQuery.trim(), 8, room.settings.currentPlayersOnly));
-  }, [deferredGuessQuery, room?.settings.currentPlayersOnly, room?.status]);
+    if (!deferredGuessQuery.trim() || room?.status !== "round_active" || !playerFilters) return;
+    setSearchResults(searchPlayersLocal(deferredGuessQuery.trim(), 8, playerFilters));
+  }, [deferredGuessQuery, playerFilters, room?.status]);
 
   function send(message: ClientMessage): Promise<AckResponse> {
     return new Promise((resolve) => {
@@ -494,6 +625,16 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
   function startGame() {
     if (!participantId) return;
+    if (room && eligiblePlayers.length < room.settings.roundCount) {
+      setStartBlockerMessage(
+        `This setup only has ${eligiblePlayers.length} eligible players, but the match needs ${room.settings.roundCount} rounds. Widen the career years, choose more difficulties, switch Team back to All teams, or lower the round count.`
+      );
+      return;
+    }
+    if (room && room.players.length < 2) {
+      setStartBlockerMessage("You need at least 2 players in the room before starting.");
+      return;
+    }
     startTransition(async () => {
       const response = await send({ type: "start" });
       if (!response.ok) setMessage(response.error);
@@ -752,23 +893,40 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                         </button>
                       </div>
 
-                      <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
-                        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Current players</span>
-                        <button
-                          type="button"
+                      <label className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
+                        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Team</span>
+                        <select
+                          value={room.settings.teamId}
                           disabled={!self?.isHost}
-                          onClick={() => updateSettings({ currentPlayersOnly: !room.settings.currentPlayersOnly })}
-                          className={clsx(
-                            "mt-3 inline-flex w-full items-center justify-between rounded-[0.9rem] border px-3 py-2 text-left transition disabled:opacity-60",
-                            room.settings.currentPlayersOnly
-                              ? "border-sky-200 bg-sky-50 text-sky-700"
-                              : "border-slate-200 bg-slate-50 text-slate-700"
-                          )}
+                          onChange={(event) => updateSettings({ teamId: event.target.value as TeamId | "all" })}
+                          className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300 disabled:opacity-60"
                         >
-                          <span>{room.settings.currentPlayersOnly ? "Current only" : "All eras"}</span>
-                          <span>{room.settings.currentPlayersOnly ? "On" : "Off"}</span>
-                        </button>
-                      </div>
+                          <option value="all">All teams</option>
+                          {(Object.keys(NFL_TEAMS) as TeamId[]).map((teamId) => (
+                            <option key={teamId} value={teamId}>
+                              {formatTeamLabel(teamId)}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    </div>
+
+                    <div className="mt-4">
+                      <YearRangeSlider
+                        mode={room.settings.careerYearMode}
+                        startYear={room.settings.careerStartYear}
+                        endYear={room.settings.careerEndYear}
+                        disabled={!self?.isHost}
+                        onModeChange={(careerYearMode) => updateSettings({ careerYearMode })}
+                        onReset={() =>
+                          updateSettings({
+                            careerYearMode: DEFAULT_ROOM_SETTINGS.careerYearMode,
+                            careerStartYear: DEFAULT_ROOM_SETTINGS.careerStartYear,
+                            careerEndYear: DEFAULT_ROOM_SETTINGS.careerEndYear
+                          })
+                        }
+                        onChange={updateSettings}
+                      />
                     </div>
 
                     <div className="mt-4 rounded-[1.25rem] border border-slate-200 bg-white p-4">
@@ -798,6 +956,21 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                         })}
                       </div>
                     </div>
+
+                    <div className="mt-4 grid grid-cols-3 gap-2">
+                      <div className="rounded-[1.1rem] border border-slate-200 bg-white p-3">
+                        <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Pool</p>
+                        <p className="mt-1 text-xl font-semibold text-slate-950">{eligiblePlayers.length}</p>
+                      </div>
+                      <div className="rounded-[1.1rem] border border-slate-200 bg-white p-3">
+                        <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Rounds</p>
+                        <p className="mt-1 text-xl font-semibold text-slate-950">{room.settings.roundCount}</p>
+                      </div>
+                      <div className="rounded-[1.1rem] border border-slate-200 bg-white p-3">
+                        <p className="text-[10px] uppercase tracking-[0.18em] text-slate-400">Team</p>
+                        <p className="mt-1 text-xl font-semibold text-slate-950">{room.settings.teamId === "all" ? "All" : room.settings.teamId}</p>
+                      </div>
+                    </div>
                   </>
                 ) : null}
 
@@ -808,7 +981,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                   {self?.isHost ? (
                     <button
                       type="button"
-                      disabled={!room.canStart || pending}
+                      disabled={pending}
                       onClick={startGame}
                       className="rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-60"
                     >
@@ -965,9 +1138,19 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                           key={result.id}
                           type="button"
                           onClick={() => submitGuess(result.id)}
-                          className="rounded-[1rem] border border-slate-200 bg-white px-4 py-3 text-left text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+                          className="flex items-center gap-3 rounded-[1rem] border border-slate-200 bg-white px-3 py-2.5 text-left text-sm font-medium text-slate-800 transition hover:bg-slate-50"
                         >
-                          {result.fullName}
+                          <img
+                            src={result.headshotUrl}
+                            alt=""
+                            width={40}
+                            height={40}
+                            className="h-10 w-10 shrink-0 rounded-full border border-slate-200 bg-slate-50 object-cover"
+                          />
+                          <span className="min-w-0">
+                            <span className="block truncate">{result.fullName}</span>
+                            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">{result.position}</span>
+                          </span>
                         </button>
                       ))}
                     </div>
@@ -1088,6 +1271,23 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
           onLeave={() => leaveGame("leave")}
           onEndRoom={() => leaveGame("end_room")}
         />
+      ) : null}
+
+      {startBlockerMessage ? (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/45 px-4">
+          <div className="w-full max-w-md rounded-[1.5rem] bg-white p-5 shadow-2xl">
+            <p className="text-xs uppercase tracking-[0.22em] text-rose-500">Can’t start yet</p>
+            <h2 className="mt-2 text-xl font-semibold text-slate-950">Player pool is too small</h2>
+            <p className="mt-3 text-sm leading-6 text-slate-600">{startBlockerMessage}</p>
+            <button
+              type="button"
+              onClick={() => setStartBlockerMessage(null)}
+              className="mt-5 w-full rounded-full bg-slate-950 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+            >
+              Adjust Settings
+            </button>
+          </div>
+        </div>
       ) : null}
     </main>
   );

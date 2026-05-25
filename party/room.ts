@@ -1,6 +1,6 @@
 import type * as Party from "partykit/server";
 
-import { CATALOG, buildBalancedPlayerDeck, findPlayerById, getEligiblePlayers } from "../src/lib/catalog";
+import { CATALOG, CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, findPlayerById, getEligiblePlayers } from "../src/lib/catalog";
 import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "../src/lib/messages";
 import { calculateCurrentCap, calculateScore } from "../src/lib/scoring";
 import { DEFAULT_ROOM_SETTINGS } from "../src/lib/settings";
@@ -12,13 +12,48 @@ import type {
   RoomSettings,
   RoomSnapshot,
   RoomStatus,
-  RoundResult
+  RoundResult,
+  TeamId
 } from "../src/lib/types";
 
 const COUNTDOWN_MS = 3000;
 const EMPTY_ROOM_SWEEP_MS = 60_000;
 const STALE_LOBBY_SWEEP_MS = 30 * 60_000;
 const MAX_LIFETIME_MS = 4 * 60 * 60_000;
+const VALID_TEAM_IDS = new Set<TeamId>([
+  "ARI",
+  "ATL",
+  "BAL",
+  "BUF",
+  "CAR",
+  "CHI",
+  "CIN",
+  "CLE",
+  "DAL",
+  "DEN",
+  "DET",
+  "GB",
+  "HOU",
+  "IND",
+  "JAX",
+  "KC",
+  "LAC",
+  "LAR",
+  "LV",
+  "MIA",
+  "MIN",
+  "NE",
+  "NO",
+  "NYG",
+  "NYJ",
+  "PHI",
+  "PIT",
+  "SEA",
+  "SF",
+  "TB",
+  "TEN",
+  "WAS"
+]);
 
 type ParticipantRecord = {
   id: string;
@@ -70,6 +105,15 @@ function normalizeRoomCode(id: string) {
 
 function sortByJoin(participants: Iterable<ParticipantRecord>) {
   return [...participants].sort((a, b) => a.joinedAt - b.joinedAt);
+}
+
+function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId">) {
+  return {
+    careerYearMode: settings.careerYearMode,
+    careerStartYear: settings.careerStartYear,
+    careerEndYear: settings.careerEndYear,
+    teamId: settings.teamId
+  };
 }
 
 export default class RoomParty implements Party.Server {
@@ -354,6 +398,18 @@ export default class RoomParty implements Party.Server {
     if (merged.difficulty.length === 0) {
       throw new RoomActionError("VALIDATION_FAILED", "Select at least one difficulty");
     }
+    if (!["entered", "retired", "full_career", "current"].includes(merged.careerYearMode)) {
+      throw new RoomActionError("VALIDATION_FAILED", "Select a valid year filter");
+    }
+    if (merged.careerStartYear < CATALOG_YEAR_RANGE.min || merged.careerEndYear > CATALOG_YEAR_RANGE.max) {
+      throw new RoomActionError("VALIDATION_FAILED", "Career years are outside the available player catalog");
+    }
+    if (merged.careerStartYear > merged.careerEndYear) {
+      throw new RoomActionError("VALIDATION_FAILED", "Career start year must be before career end year");
+    }
+    if (merged.teamId !== "all" && !VALID_TEAM_IDS.has(merged.teamId)) {
+      throw new RoomActionError("VALIDATION_FAILED", "Select a valid team");
+    }
     if (this.participants.size > merged.maxPlayers) {
       throw new RoomActionError("VALIDATION_FAILED", "Current player count exceeds the selected max player limit");
     }
@@ -383,7 +439,7 @@ export default class RoomParty implements Party.Server {
     this.playerDeckIds = buildBalancedPlayerDeck(
       this.settings.difficulty,
       this.settings.roundCount,
-      this.settings.currentPlayersOnly
+      getPlayerFilters(this.settings)
     ).map((player) => player.id);
     this.roundsPlayed = 0;
     this.currentRound = null;
@@ -559,7 +615,7 @@ export default class RoomParty implements Party.Server {
     const plannedPlayer = plannedPlayerId ? findPlayerById(plannedPlayerId) : null;
     const candidates = plannedPlayer
       ? [plannedPlayer]
-      : getEligiblePlayers(this.settings.difficulty, this.usedPlayerIds, this.settings.currentPlayersOnly);
+      : getEligiblePlayers(this.settings.difficulty, this.usedPlayerIds, getPlayerFilters(this.settings));
     if (candidates.length === 0) {
       this.status = "finished";
       this.broadcastSnapshot();
@@ -645,7 +701,7 @@ export default class RoomParty implements Party.Server {
       this.canStart = false;
       return;
     }
-    const deck = buildBalancedPlayerDeck(this.settings.difficulty, this.settings.roundCount, this.settings.currentPlayersOnly);
+    const deck = buildBalancedPlayerDeck(this.settings.difficulty, this.settings.roundCount, getPlayerFilters(this.settings));
     this.canStart = deck.length >= this.settings.roundCount;
   }
 

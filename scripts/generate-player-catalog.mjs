@@ -6,11 +6,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 const outputPath = path.join(repoRoot, "src/lib/generated-player-catalog.ts");
 
-const START_SEASON = 1999;
+const START_SEASON = 1970;
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const OFFENSIVE_POSITIONS = new Set(["QB", "RB", "FB", "WR", "TE"]);
 const DEFENSIVE_POSITIONS = new Set(["DL", "DE", "DT", "NT", "EDGE", "LB", "ILB", "OLB", "MLB", "CB", "DB", "S", "FS", "SS"]);
-const POSITIONS = new Set([...OFFENSIVE_POSITIONS, ...DEFENSIVE_POSITIONS]);
+const SPECIAL_TEAMS_POSITIONS = new Set(["K", "P"]);
+const POSITIONS = new Set([...OFFENSIVE_POSITIONS, ...DEFENSIVE_POSITIONS, ...SPECIAL_TEAMS_POSITIONS]);
 const VALID_TEAM_IDS = new Set([
   "ARI",
   "ATL",
@@ -172,7 +173,10 @@ function prominenceFromStats(stat) {
     stat.defTds * 12 +
     stat.defQbHits * 1.5;
 
-  return offense + defense;
+  const kicking = stat.fgMade * 4 + stat.fgMade50 * 3 + stat.patMade / 8 + stat.gwfgMade * 8;
+  const returning = stat.puntReturnYards / 150 + stat.kickoffReturnYards / 220 + stat.specialTeamsTds * 8;
+
+  return offense + defense + kicking + returning;
 }
 
 function getLastSeason(seasonTeams) {
@@ -193,6 +197,14 @@ function isDefensivePosition(position) {
   return DEFENSIVE_POSITIONS.has(position);
 }
 
+function isOffensivePosition(position) {
+  return OFFENSIVE_POSITIONS.has(position);
+}
+
+function isSpecialTeamsPosition(position) {
+  return SPECIAL_TEAMS_POSITIONS.has(position);
+}
+
 function increaseDifficulty(difficulty) {
   if (difficulty === "easy") return "medium";
   if (difficulty === "medium") return "hard";
@@ -200,10 +212,39 @@ function increaseDifficulty(difficulty) {
   return "impossible";
 }
 
-function classifyDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeason, latestRosterSeason, position }) {
+function classifyKickerDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeason, latestRosterSeason }) {
   const yearsAgo = latestRosterSeason - lastSeason;
+
+  if (
+    prominence >= 1700 ||
+    (prominence >= 1600 && yearsAgo <= 6)
+  ) {
+    return "medium";
+  }
+
+  if (
+    prominence >= 750 ||
+    (prominence >= 450 && yearsAgo <= 6) ||
+    seasonCount >= 9 ||
+    uniqueTeamCount >= 5
+  ) {
+    return "hard";
+  }
+
+  return "impossible";
+}
+
+function classifyDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeason, latestRosterSeason, position, usedLongevityFallback }) {
+  if (position === "K") {
+    return classifyKickerDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeason, latestRosterSeason });
+  }
+
+  const yearsAgo = latestRosterSeason - lastSeason;
+  const offensivePlayer = isOffensivePosition(position);
   const defensivePlayer = isDefensivePosition(position);
+  const specialTeamsPlayer = isSpecialTeamsPosition(position);
   const defensivePenalty = defensivePlayer ? 35 : 0;
+  const specialTeamsPenalty = specialTeamsPlayer ? 70 : 0;
   const positionAdjustedProminence = position === "QB" ? prominence * 0.45 : prominence;
   const adjustedProminence = defensivePlayer ? positionAdjustedProminence * 0.86 : positionAdjustedProminence;
   const familiarity =
@@ -211,20 +252,23 @@ function classifyDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeas
     getRecencyBoost(lastSeason, latestRosterSeason) +
     Math.min(seasonCount, 10) * 3 +
     Math.min(uniqueTeamCount, 5) * 4 -
-    defensivePenalty;
+    defensivePenalty -
+    specialTeamsPenalty;
 
   let difficulty;
   if (
-    adjustedProminence >= 700 ||
+    (position === "QB" && adjustedProminence >= 700 && seasonCount >= 10) ||
+    (adjustedProminence >= 900 && yearsAgo <= 10) ||
     (adjustedProminence >= 450 && yearsAgo <= 6) ||
-    (adjustedProminence >= 550 && yearsAgo <= 10 && familiarity >= 600)
+    (adjustedProminence >= 600 && yearsAgo <= 10 && familiarity >= 650)
   ) {
     difficulty = "easy";
   } else if (
     adjustedProminence >= 250 ||
     (adjustedProminence >= 105 && yearsAgo <= 6) ||
     (adjustedProminence >= 145 && yearsAgo <= 10) ||
-    (adjustedProminence >= 125 && familiarity >= 220)
+    (adjustedProminence >= 125 && familiarity >= 220) ||
+    (usedLongevityFallback && offensivePlayer && seasonCount >= 10 && uniqueTeamCount >= 2)
   ) {
     difficulty = "medium";
   } else if (
@@ -241,7 +285,10 @@ function classifyDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeas
   if (defensivePlayer) {
     difficulty = increaseDifficulty(difficulty);
   }
-  if (yearsAgo > 10 && adjustedProminence < 420) {
+  if (specialTeamsPlayer) {
+    difficulty = increaseDifficulty(difficulty);
+  }
+  if (yearsAgo > 10 && adjustedProminence < 180 && !(offensivePlayer && seasonCount >= 10)) {
     difficulty = increaseDifficulty(difficulty);
   }
 
@@ -312,7 +359,14 @@ async function main() {
         defForcedFumbles: 0,
         defFumbleRecoveries: 0,
         defTds: 0,
-        defQbHits: 0
+        defQbHits: 0,
+        fgMade: 0,
+        fgMade50: 0,
+        patMade: 0,
+        gwfgMade: 0,
+        puntReturnYards: 0,
+        kickoffReturnYards: 0,
+        specialTeamsTds: 0
       };
       current.passingYards += toNumber(row.passing_yards);
       current.passingTds += toNumber(row.passing_tds);
@@ -321,14 +375,25 @@ async function main() {
       current.receivingYards += toNumber(row.receiving_yards);
       current.receivingTds += toNumber(row.receiving_tds);
       current.receptions += toNumber(row.receptions);
-      current.defTackles += toNumber(row.def_tackles) + toNumber(row.def_tackles_with_assist);
+      current.defTackles +=
+        toNumber(row.def_tackles) +
+        toNumber(row.def_tackles_solo) +
+        toNumber(row.def_tackles_with_assist) +
+        toNumber(row.def_tackle_assists);
       current.defSacks += toNumber(row.def_sacks);
       current.defInterceptions += toNumber(row.def_interceptions);
       current.defPassesDefended += toNumber(row.def_pass_defended);
-      current.defForcedFumbles += toNumber(row.def_forced_fumbles);
-      current.defFumbleRecoveries += toNumber(row.def_fumble_recoveries);
+      current.defForcedFumbles += toNumber(row.def_forced_fumbles) + toNumber(row.def_fumbles_forced);
+      current.defFumbleRecoveries += toNumber(row.def_fumble_recoveries) + toNumber(row.fumble_recovery_opp);
       current.defTds += toNumber(row.def_tds);
       current.defQbHits += toNumber(row.def_qb_hits);
+      current.fgMade += toNumber(row.fg_made);
+      current.fgMade50 += toNumber(row.fg_made_50_59) + toNumber(row.fg_made_60_);
+      current.patMade += toNumber(row.pat_made);
+      current.gwfgMade += toNumber(row.gwfg_made);
+      current.puntReturnYards += toNumber(row.punt_return_yards);
+      current.kickoffReturnYards += toNumber(row.kickoff_return_yards);
+      current.specialTeamsTds += toNumber(row.special_teams_tds);
       stats.set(key, current);
     }
   }
@@ -364,12 +429,25 @@ async function main() {
     const teamStints = buildStints(player.seasonTeams, latestRosterSeason);
     const uniqueTeamCount = new Set(teamStints.map((stint) => stint.teamId)).size;
     const stat = stats.get(player.key);
-    const prominence = stat ? prominenceFromStats(stat) : 0;
     const seasonCount = player.seasonTeams.size;
     const lastSeason = getLastSeason(player.seasonTeams);
+    let prominence = stat ? prominenceFromStats(stat) : 0;
+    let usedLongevityFallback = false;
+
+    // nflverse's player stat files do not include punting volume, and pre-1999
+    // stat files are unavailable. Use longevity as a conservative proxy so
+    // multi-team punters and notable older players can still enter hard pools.
+    if (player.position === "P") {
+      prominence = Math.max(prominence, seasonCount * 8 + uniqueTeamCount * 6);
+    } else if (!stat && seasonCount >= 6) {
+      usedLongevityFallback = true;
+      const seasonWeight = OFFENSIVE_POSITIONS.has(player.position) ? 16 : 10;
+      const teamWeight = OFFENSIVE_POSITIONS.has(player.position) ? 14 : 8;
+      prominence = seasonCount * seasonWeight + uniqueTeamCount * teamWeight;
+    }
 
     if (uniqueTeamCount < 2) continue;
-    if (!stat || prominence < 12) continue;
+    if (prominence < 12) continue;
 
     generated.push({
       fullName: player.fullName,
@@ -380,7 +458,8 @@ async function main() {
         uniqueTeamCount,
         lastSeason,
         latestRosterSeason,
-        position: player.position
+        position: player.position,
+        usedLongevityFallback
       }),
       headshotUrl: player.headshotUrl || undefined,
       teamStints,

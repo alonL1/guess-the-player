@@ -2,11 +2,11 @@ import clsx from "clsx";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { buildBalancedPlayerDeck, getEligiblePlayers, searchPlayers } from "@/lib/catalog";
+import { CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, getEligiblePlayers, searchPlayers } from "@/lib/catalog";
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
 import { calculateCurrentCap, calculateScore } from "@/lib/scoring";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
-import type { Difficulty, PlayerCatalogEntry, RoomSettings, TeamStint } from "@/lib/types";
+import type { CareerYearMode, Difficulty, PlayerCatalogEntry, PlayerSearchResult, RoomSettings, TeamId, TeamStint } from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
@@ -16,7 +16,16 @@ type SoloStatus = "setup" | "countdown" | "active" | "reveal" | "summary";
 
 type SoloSettings = Pick<
   RoomSettings,
-  "roundCount" | "timePerRoundSeconds" | "difficulty" | "mode" | "showYears" | "showPosition" | "currentPlayersOnly"
+  | "roundCount"
+  | "timePerRoundSeconds"
+  | "difficulty"
+  | "mode"
+  | "showYears"
+  | "showPosition"
+  | "careerYearMode"
+  | "careerStartYear"
+  | "careerEndYear"
+  | "teamId"
 >;
 
 type SoloRound = {
@@ -43,7 +52,10 @@ const INITIAL_SETTINGS: SoloSettings = {
   mode: DEFAULT_ROOM_SETTINGS.mode,
   showYears: DEFAULT_ROOM_SETTINGS.showYears,
   showPosition: DEFAULT_ROOM_SETTINGS.showPosition,
-  currentPlayersOnly: DEFAULT_ROOM_SETTINGS.currentPlayersOnly
+  careerYearMode: DEFAULT_ROOM_SETTINGS.careerYearMode,
+  careerStartYear: DEFAULT_ROOM_SETTINGS.careerStartYear,
+  careerEndYear: DEFAULT_ROOM_SETTINGS.careerEndYear,
+  teamId: DEFAULT_ROOM_SETTINGS.teamId
 };
 
 function getTimerLabel(round: SoloRound | null, now: number | null) {
@@ -59,6 +71,114 @@ function getCountdownLabel(round: SoloRound | null, now: number | null) {
 function formatDifficulties(difficulties: Difficulty[]) {
   if (difficulties.length === 0) return "No difficulties";
   return difficulties.map((difficulty) => difficulty.charAt(0).toUpperCase() + difficulty.slice(1)).join(", ");
+}
+
+function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId">) {
+  return {
+    careerYearMode: settings.careerYearMode,
+    careerStartYear: settings.careerStartYear,
+    careerEndYear: settings.careerEndYear,
+    teamId: settings.teamId
+  };
+}
+
+function YearRangeSlider({
+  mode,
+  startYear,
+  endYear,
+  disabled,
+  onModeChange,
+  onReset,
+  onChange
+}: {
+  mode: CareerYearMode;
+  startYear: number;
+  endYear: number;
+  disabled?: boolean;
+  onModeChange: (mode: CareerYearMode) => void;
+  onReset: () => void;
+  onChange: (next: { careerStartYear: number; careerEndYear: number }) => void;
+}) {
+  const minYear = CATALOG_YEAR_RANGE.min;
+  const maxYear = CATALOG_YEAR_RANGE.max;
+  const range = maxYear - minYear;
+  const startPercent = ((startYear - minYear) / range) * 100;
+  const endPercent = ((endYear - minYear) / range) * 100;
+  const yearLabel = `${startYear}-${endYear === maxYear ? "Current" : endYear}`;
+  const description =
+    mode === "current"
+      ? "Only active players in the current catalog are eligible."
+      : mode === "entered"
+      ? "Only players who entered the league inside this range are eligible."
+      : mode === "retired"
+        ? "Only players whose final catalog season is inside this range are eligible."
+        : "Only players whose full career fits inside this range are eligible.";
+
+  return (
+    <div className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
+      <div className="flex items-center justify-between gap-3">
+        <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Career years</span>
+        <button
+          type="button"
+          disabled={disabled}
+          onClick={onReset}
+          className="rounded-full border border-slate-200 px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-50 disabled:opacity-60"
+        >
+          Reset
+        </button>
+      </div>
+      <select
+        value={mode}
+        disabled={disabled}
+        onChange={(event) => onModeChange(event.target.value as CareerYearMode)}
+        className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300 disabled:opacity-60"
+      >
+        <option value="entered">Year Entering League</option>
+        <option value="retired">Year Retired</option>
+        <option value="full_career">Full Career</option>
+        <option value="current">Current Players Only</option>
+      </select>
+      {mode !== "current" ? (
+        <>
+          <p className="mt-3 text-xs font-semibold text-slate-700">{yearLabel}</p>
+          <div className="year-range-field mt-3">
+            <div className="absolute left-0 right-0 top-1/2 h-1.5 -translate-y-1/2 rounded-full bg-slate-200" />
+            <div
+              className="absolute top-1/2 h-1.5 -translate-y-1/2 rounded-full bg-sky-500"
+              style={{ left: `${startPercent}%`, right: `${100 - endPercent}%` }}
+            />
+            <input
+              type="range"
+              min={minYear}
+              max={maxYear}
+              value={startYear}
+              disabled={disabled}
+              onChange={(event) => {
+                const nextStart = Math.min(Number(event.target.value), endYear);
+                onChange({ careerStartYear: nextStart, careerEndYear: endYear });
+              }}
+              className="year-range-input"
+              aria-label="Career start year"
+            />
+            <input
+              type="range"
+              min={minYear}
+              max={maxYear}
+              value={endYear}
+              disabled={disabled}
+              onChange={(event) => {
+                const nextEnd = Math.max(Number(event.target.value), startYear);
+                onChange({ careerStartYear: startYear, careerEndYear: nextEnd });
+              }}
+              className="year-range-input"
+              aria-label="Career end year"
+            />
+          </div>
+        </>
+      ) : null}
+      <p className="mt-3 text-xs leading-5 text-slate-500">{description}</p>
+    </div>
+  );
 }
 
 function TeamPathCards({ teamStints, showYears }: { teamStints: TeamStint[]; showYears: boolean }) {
@@ -133,13 +253,17 @@ export function SoloClient() {
   const [results, setResults] = useState<SoloResult[]>([]);
   const [guessQuery, setGuessQuery] = useState("");
   const deferredGuessQuery = useDeferredValue(guessQuery);
-  const [searchResults, setSearchResults] = useState<Array<{ id: string; fullName: string }>>([]);
+  const [searchResults, setSearchResults] = useState<PlayerSearchResult[]>([]);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [now, setNow] = useState<number | null>(null);
+  const playerFilters = useMemo(
+    () => getPlayerFilters(settings),
+    [settings.careerEndYear, settings.careerStartYear, settings.careerYearMode, settings.teamId]
+  );
 
   const eligiblePlayers = useMemo(
-    () => getEligiblePlayers(settings.difficulty, [], settings.currentPlayersOnly),
-    [settings.currentPlayersOnly, settings.difficulty]
+    () => getEligiblePlayers(settings.difficulty, [], playerFilters),
+    [playerFilters, settings.difficulty]
   );
   const canStart = settings.difficulty.length > 0 && eligiblePlayers.length >= settings.roundCount;
   const totalScore = results.reduce((sum, result) => sum + result.score, 0);
@@ -182,8 +306,8 @@ export function SoloClient() {
 
   useEffect(() => {
     if (!deferredGuessQuery.trim() || status !== "active") return;
-    setSearchResults(searchPlayers(deferredGuessQuery.trim(), 8, settings.currentPlayersOnly));
-  }, [deferredGuessQuery, settings.currentPlayersOnly, status]);
+    setSearchResults(searchPlayers(deferredGuessQuery.trim(), 8, playerFilters));
+  }, [deferredGuessQuery, playerFilters, status]);
 
   function updateSettings(next: Partial<SoloSettings>) {
     setSettings((current) => ({ ...current, ...next }));
@@ -211,7 +335,7 @@ export function SoloClient() {
 
   function startRun() {
     if (!canStart) return;
-    const nextDeck = buildBalancedPlayerDeck(settings.difficulty, settings.roundCount, settings.currentPlayersOnly);
+    const nextDeck = buildBalancedPlayerDeck(settings.difficulty, settings.roundCount, playerFilters);
     setDeck(nextDeck);
     setResults([]);
     beginRound(1, nextDeck);
@@ -398,12 +522,37 @@ export function SoloClient() {
                 active={settings.showPosition}
                 onClick={() => updateSettings({ showPosition: !settings.showPosition })}
               />
-              <SettingToggle
-                label="Current players"
-                activeLabel="Current only"
-                inactiveLabel="All eras"
-                active={settings.currentPlayersOnly}
-                onClick={() => updateSettings({ currentPlayersOnly: !settings.currentPlayersOnly })}
+              <label className="rounded-[1.25rem] border border-slate-200 bg-white p-4 text-sm text-slate-700">
+                <span className="block text-xs uppercase tracking-[0.2em] text-slate-500">Team</span>
+                <select
+                  value={settings.teamId}
+                  onChange={(event) => updateSettings({ teamId: event.target.value as TeamId | "all" })}
+                  className="mt-3 w-full rounded-[0.9rem] border border-slate-200 bg-slate-50 px-3 py-2 outline-none focus:border-sky-300"
+                >
+                  <option value="all">All teams</option>
+                  {(Object.keys(NFL_TEAMS) as TeamId[]).map((teamId) => (
+                    <option key={teamId} value={teamId}>
+                      {formatTeamLabel(teamId)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
+
+            <div className="mt-4">
+              <YearRangeSlider
+                mode={settings.careerYearMode}
+                startYear={settings.careerStartYear}
+                endYear={settings.careerEndYear}
+                onModeChange={(careerYearMode) => updateSettings({ careerYearMode })}
+                onReset={() =>
+                  updateSettings({
+                    careerYearMode: DEFAULT_ROOM_SETTINGS.careerYearMode,
+                    careerStartYear: DEFAULT_ROOM_SETTINGS.careerStartYear,
+                    careerEndYear: DEFAULT_ROOM_SETTINGS.careerEndYear
+                  })
+                }
+                onChange={updateSettings}
               />
             </div>
 
@@ -519,9 +668,19 @@ export function SoloClient() {
                       key={result.id}
                       type="button"
                       onClick={() => submitGuess(result.id)}
-                      className="rounded-[1rem] border border-slate-200 bg-white px-4 py-3 text-left text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+                      className="flex items-center gap-3 rounded-[1rem] border border-slate-200 bg-white px-3 py-2.5 text-left text-sm font-medium text-slate-800 transition hover:bg-slate-50"
                     >
-                      {result.fullName}
+                      <img
+                        src={result.headshotUrl}
+                        alt=""
+                        width={40}
+                        height={40}
+                        className="h-10 w-10 shrink-0 rounded-full border border-slate-200 bg-slate-50 object-cover"
+                      />
+                      <span className="min-w-0">
+                        <span className="block truncate">{result.fullName}</span>
+                        <span className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">{result.position}</span>
+                      </span>
                     </button>
                   ))}
                 </div>

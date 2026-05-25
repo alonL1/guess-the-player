@@ -2,6 +2,8 @@ export type Difficulty = "easy" | "medium" | "hard" | "impossible";
 
 export type GameMode = "kahoot" | "sudden_death";
 
+export type CareerYearMode = "entered" | "retired" | "full_career" | "current";
+
 export type LeaveIntent = "leave" | "end_room";
 
 export type RoomClosedReason = "host_ended" | "room_empty" | "idle_timeout" | "max_lifetime";
@@ -72,7 +74,10 @@ export interface RoomSettings {
   mode: GameMode;
   showYears: boolean;
   showPosition: boolean;
-  currentPlayersOnly: boolean;
+  careerYearMode: CareerYearMode;
+  careerStartYear: number;
+  careerEndYear: number;
+  teamId: TeamId | "all";
   maxPlayers: number;
   isPublic: boolean;
 }
@@ -122,4 +127,6 @@ export interface RoomSnapshot {
 export interface PlayerSearchResult {
   id: string;
   fullName: string;
+  position: string;
+  headshotUrl: string;
 }
