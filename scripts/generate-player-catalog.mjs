@@ -7,6 +7,7 @@ const repoRoot = path.resolve(__dirname, "..");
 const outputPath = path.join(repoRoot, "src/lib/generated-player-catalog.ts");
 
 const START_SEASON = 1970;
+const WEEKLY_ROSTER_START_SEASON = 2011;
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const OFFENSIVE_POSITIONS = new Set(["QB", "RB", "FB", "WR", "TE"]);
 const DEFENSIVE_POSITIONS = new Set(["DL", "DE", "DT", "NT", "EDGE", "LB", "ILB", "OLB", "MLB", "CB", "DB", "S", "FS", "SS"]);
@@ -122,7 +123,9 @@ async function fetchSeasonRows(kind, season) {
   const url =
     kind === "rosters"
       ? `https://github.com/nflverse/nflverse-data/releases/download/rosters/roster_${season}.csv`
-      : `https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_${season}.csv`;
+      : kind === "weekly rosters"
+        ? `https://github.com/nflverse/nflverse-data/releases/download/weekly_rosters/roster_weekly_${season}.csv`
+        : `https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_reg_${season}.csv`;
 
   try {
     return await fetchCsv(url);
@@ -398,6 +401,23 @@ async function main() {
     }
   }
 
+  const statSeasonTeams = new Map();
+  for (const season of seasons.filter((candidate) => candidate >= WEEKLY_ROSTER_START_SEASON && candidate <= latestRosterSeason)) {
+    const rows = await fetchSeasonRows("weekly rosters", season);
+    for (const row of rows.sort((left, right) => toNumber(left.week) - toNumber(right.week))) {
+      const key = playerKey(row);
+      const season = toNumber(row.season);
+      const teamId = normalizeTeam(row.team);
+      if (!key || !season || !teamId) continue;
+
+      const playerSeasonTeams = statSeasonTeams.get(key) ?? new Map();
+      const teams = playerSeasonTeams.get(season) ?? [];
+      if (!teams.includes(teamId)) teams.push(teamId);
+      playerSeasonTeams.set(season, teams);
+      statSeasonTeams.set(key, playerSeasonTeams);
+    }
+  }
+
   const players = new Map();
   for (const rows of rosterRowsBySeason) {
     for (const row of rows) {
@@ -417,7 +437,9 @@ async function main() {
         seasonTeams: new Map()
       };
       if (!current.headshotUrl && row.headshot_url) current.headshotUrl = row.headshot_url;
-      if (!current.seasonTeams.has(season)) current.seasonTeams.set(season, []);
+      if (!current.seasonTeams.has(season)) {
+        current.seasonTeams.set(season, [...(statSeasonTeams.get(key)?.get(season) ?? [])]);
+      }
       const teams = current.seasonTeams.get(season);
       if (!teams.includes(teamId)) teams.push(teamId);
       players.set(key, current);

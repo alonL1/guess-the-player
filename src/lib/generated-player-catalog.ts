@@ -98,7 +98,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2005,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NYG",
@@ -226,6 +226,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "ARI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "KC",
         "startYear": 2019,
         "endYear": 2020
@@ -252,15 +257,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2014,
-        "endYear": 2014
-      },
-      {
-        "teamId": "CAR",
-        "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "CHI",
+        "teamId": "CAR",
         "startYear": 2015,
         "endYear": 2015
       }
@@ -277,6 +277,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2007,
         "endYear": 2022
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "NYG",
@@ -382,7 +387,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2011,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LAR",
@@ -627,7 +632,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2010,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "SEA",
@@ -755,6 +760,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "SEA",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "DET",
         "startYear": 2017,
         "endYear": 2017
@@ -840,6 +850,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "MIA",
@@ -943,6 +958,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "NO",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "MIA",
         "startYear": 2023,
         "endYear": 2023
@@ -994,6 +1014,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "GB",
@@ -1185,7 +1210,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "PHI",
@@ -1281,7 +1306,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2014,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "NE",
@@ -1343,12 +1368,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2014,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "CHI",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "TB",
@@ -1441,7 +1476,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -1522,7 +1557,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2011,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "MIN",
@@ -1571,6 +1606,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2010,
         "endYear": 2016
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "CHI",
@@ -1668,6 +1713,25 @@ export const GENERATED_PLAYERS = [
     "id": "mario-williams"
   },
   {
+    "fullName": "Harrison Butker",
+    "position": "K",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qzensuarteg6tehnbxab",
+    "teamStints": [
+      {
+        "teamId": "CAR",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2017,
+        "endYear": null
+      }
+    ],
+    "id": "harrison-butker"
+  },
+  {
     "fullName": "Shaun Phillips",
     "position": "OLB",
     "difficulty": "hard",
@@ -1730,6 +1794,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2010,
         "endYear": 2019
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DET",
@@ -1950,7 +2019,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2015,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LAC",
@@ -2017,6 +2086,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ndamukong-suh"
+  },
+  {
+    "fullName": "Daniel Carlson",
+    "position": "K",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cxxhoiw673eezmza1p1l",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2018,
+        "endYear": null
+      }
+    ],
+    "id": "daniel-carlson"
   },
   {
     "fullName": "Cliff Avril",
@@ -2291,7 +2379,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2019,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "PIT",
@@ -2321,6 +2409,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2016,
         "endYear": 2019
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -2377,6 +2470,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "deangelo-hall"
+  },
+  {
+    "fullName": "Jake Elliott",
+    "position": "K",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/t2adf84i6kkmjtxunfz3",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2017,
+        "endYear": null
+      }
+    ],
+    "id": "jake-elliott"
   },
   {
     "fullName": "Jadeveon Clowney",
@@ -2506,6 +2618,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "MIA",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "BUF",
         "startYear": 2025,
         "endYear": 2025
@@ -2523,6 +2640,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2015,
         "endYear": 2015
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "CIN",
@@ -2599,12 +2726,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2015,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NYG",
         "startYear": 2019,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "SEA",
@@ -2626,6 +2753,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "MIN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "BAL",
         "startYear": 2020,
         "endYear": 2020
@@ -2644,6 +2776,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NE",
@@ -2839,6 +2976,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "NE",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "DAL",
         "startYear": 2019,
         "endYear": 2020
@@ -2870,7 +3012,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "DET",
@@ -2981,6 +3123,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2020,
+        "endYear": 2020
       }
     ],
     "id": "tramon-williams"
@@ -3023,7 +3170,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CAR",
@@ -3114,7 +3261,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NE",
@@ -3233,9 +3380,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "NE",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "ATL",
         "startYear": 2019,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYG",
@@ -3259,6 +3411,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2019,
+        "endYear": 2023
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2024,
         "endYear": 2024
       }
     ],
@@ -3308,6 +3470,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2012,
         "endYear": 2020
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "KC",
@@ -3399,6 +3566,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2021,
         "endYear": 2022
       },
       {
@@ -3410,6 +3587,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CIN",
@@ -3624,21 +3806,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2008,
-        "endYear": 2011
-      },
-      {
-        "teamId": "NE",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "NE",
-        "startYear": 2013,
+        "startYear": 2012,
         "endYear": 2013
       },
       {
@@ -3649,7 +3821,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -3730,7 +3902,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "LAR",
@@ -3741,6 +3918,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "SF",
@@ -3779,7 +3961,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "LAC",
@@ -3876,7 +4058,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ATL",
@@ -3904,6 +4086,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "DET",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "MIA",
         "startYear": 2023,
         "endYear": 2023
@@ -3928,12 +4115,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
-        "teamId": "SF",
+        "teamId": "WAS",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "WAS",
+        "teamId": "SF",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -4050,15 +4237,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "IND",
+        "teamId": "WAS",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -4167,21 +4349,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "JAX",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "JAX",
-        "startYear": 2013,
+        "startYear": 2012,
         "endYear": 2013
       },
       {
@@ -4272,6 +4444,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "DEN",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "SEA",
         "startYear": 2023,
         "endYear": 2023
@@ -4289,6 +4466,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "WAS",
@@ -4432,7 +4619,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2019,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "CHI",
@@ -4528,7 +4715,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2017,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CAR",
@@ -4570,6 +4757,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "BUF",
         "startYear": 2025,
         "endYear": 2025
@@ -4584,9 +4776,34 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ctbuu0qw3xseox5wzw1n",
     "teamStints": [
       {
+        "teamId": "MIN",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "IND",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NYJ",
@@ -4678,7 +4895,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "LAR",
@@ -4823,7 +5040,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "BAL",
@@ -4953,7 +5170,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "GB",
@@ -5015,7 +5232,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NO",
@@ -5164,7 +5381,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2016,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "PHI",
@@ -5570,7 +5787,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -5599,7 +5816,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NYG",
@@ -5719,7 +5941,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "HOU",
@@ -6151,7 +6373,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "LAR",
@@ -6300,7 +6522,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "CLE",
@@ -6315,7 +6537,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "NE",
@@ -6392,7 +6614,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2019,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -6435,7 +6657,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2018,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "MIA",
@@ -6522,7 +6744,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "SF",
@@ -6566,6 +6788,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NYJ",
@@ -6817,6 +7044,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "ARI",
         "startYear": 2017,
         "endYear": 2017
@@ -6830,6 +7062,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "SEA",
@@ -7025,7 +7262,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NYJ",
@@ -7193,22 +7430,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2012,
-        "endYear": 2014
+        "endYear": 2015
       },
       {
         "teamId": "NO",
         "startYear": 2015,
-        "endYear": 2015
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "MIN",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "JAX",
@@ -7216,9 +7448,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "DAL",
+        "teamId": "NE",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "LAR",
@@ -7371,6 +7618,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2022,
+        "endYear": 2023
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2024,
         "endYear": 2024
       }
     ],
@@ -7450,6 +7707,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "MIN",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "CAR",
         "startYear": 2016,
         "endYear": 2016
@@ -7493,14 +7755,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kx72a5nmej6l8w1qq8vf",
     "teamStints": [
       {
+        "teamId": "NYJ",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NYG",
         "startYear": 2019,
         "endYear": 2019
       },
       {
         "teamId": "NYJ",
-        "startYear": 2019,
-        "endYear": 2024
+        "startYear": 2020,
+        "endYear": 2025
       },
       {
         "teamId": "DAL",
@@ -7549,6 +7816,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2018,
         "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "LAR",
@@ -7634,6 +7906,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "akiem-hicks"
+  },
+  {
+    "fullName": "Cameron Dicker",
+    "position": "P",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pxjdcxnyc1virgehftos",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2022,
+        "endYear": null
+      }
+    ],
+    "id": "cameron-dicker"
   },
   {
     "fullName": "Lawyer Milloy",
@@ -7928,12 +8224,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "JAX",
         "startYear": 2017,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "PIT",
@@ -8364,9 +8660,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rs6c8i0zlo68szxxcdne",
     "teamStints": [
       {
-        "teamId": "CLE",
+        "teamId": "MIA",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "TEN",
@@ -8382,6 +8688,26 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NYJ",
@@ -8723,7 +9049,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "TB",
@@ -8822,9 +9148,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "GB",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "BUF",
@@ -8849,6 +9180,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2010,
         "endYear": 2018
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "NE",
@@ -8902,6 +9238,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "CAR",
@@ -9070,12 +9411,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CAR",
@@ -9238,7 +9584,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2017,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "SF",
@@ -9442,6 +9788,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "WAS",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "ARI",
         "startYear": 2020,
         "endYear": 2020
@@ -9492,7 +9848,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -9521,7 +9877,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "KC",
@@ -9545,7 +9901,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2016,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "CLE",
@@ -9556,6 +9912,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TB",
@@ -9722,6 +10083,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "SEA",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "NO",
         "startYear": 2018,
         "endYear": 2018
@@ -9834,7 +10200,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2018,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "BAL",
@@ -9988,7 +10354,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "CLE",
@@ -10033,6 +10399,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2019,
         "endYear": 2023
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "HOU",
@@ -10171,7 +10542,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "PIT",
@@ -10349,7 +10720,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2018,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "PHI",
@@ -10513,7 +10884,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CAR",
@@ -10552,6 +10923,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2018,
         "endYear": 2023
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TEN",
@@ -10615,6 +10991,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "ARI",
@@ -10920,6 +11301,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "MIA",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "IND",
         "startYear": 2025,
         "endYear": 2025
@@ -11037,7 +11423,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "PHI",
@@ -11109,7 +11495,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2017,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "WAS",
@@ -11134,6 +11520,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BAL",
@@ -11181,7 +11572,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2015,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "SEA",
@@ -11191,7 +11582,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "SEA",
@@ -11295,6 +11686,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "LAR",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "BAL",
         "startYear": 2024,
         "endYear": 2024
@@ -11345,7 +11741,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "ATL",
@@ -11449,18 +11845,23 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
-        "teamId": "CIN",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
         "teamId": "TB",
         "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "CIN",
-        "startYear": 2013,
+        "startYear": 2012,
+        "endYear": 2015
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2016,
         "endYear": 2017
       }
     ],
@@ -11651,9 +12052,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yy3g85gi5xflpnllkizb",
     "teamStints": [
       {
+        "teamId": "IND",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "LAC",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "IND",
@@ -11661,9 +12072,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DET",
         "startYear": 2022,
         "endYear": 2024
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BUF",
@@ -11917,7 +12338,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2017,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -11944,6 +12365,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "LV",
         "startYear": 2021,
         "endYear": 2021
@@ -11961,6 +12387,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2014,
         "endYear": 2015
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "DAL",
@@ -12000,6 +12431,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2015,
         "endYear": 2019
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "LV",
@@ -12067,6 +12503,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2020,
         "endYear": 2023
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "DET",
@@ -12277,6 +12718,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "HOU",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "CHI",
         "startYear": 2025,
         "endYear": 2025
@@ -12322,7 +12773,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NO",
@@ -12338,6 +12789,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "DET",
@@ -12445,6 +12901,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "DAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "LAC",
         "startYear": 2024,
         "endYear": 2024
@@ -12461,7 +12922,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2011,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "JAX",
@@ -12499,7 +12960,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "SF",
@@ -12723,12 +13184,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
-        "teamId": "TB",
+        "teamId": "NE",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "NE",
+        "teamId": "TB",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -13067,6 +13528,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2014,
         "endYear": 2017
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2017,
+        "endYear": 2017
       }
     ],
     "id": "lamarr-houston"
@@ -13170,6 +13636,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "CLE",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "WAS",
         "startYear": 2016,
         "endYear": 2016
@@ -13263,7 +13734,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "NE",
@@ -13374,6 +13845,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TEN",
@@ -14256,6 +14732,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "BAL",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "CLE",
         "startYear": 2023,
         "endYear": 2023
@@ -14358,6 +14844,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "LAR",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "LV",
         "startYear": 2021,
         "endYear": 2021
@@ -14419,6 +14910,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DAL",
@@ -14573,6 +15069,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2015,
         "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "LV",
@@ -14775,6 +15276,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2019,
+        "endYear": 2019
       }
     ],
     "id": "zach-brown"
@@ -14875,6 +15381,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2017,
         "endYear": 2023
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "LAC",
@@ -15205,7 +15716,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "LAC",
@@ -15256,9 +15767,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "CLE",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "SEA",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "WAS",
@@ -15282,6 +15798,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2017,
         "endYear": 2019
       },
       {
@@ -15303,6 +15829,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "BUF",
@@ -15369,7 +15900,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2020,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "GB",
@@ -15444,6 +15975,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "NO",
         "startYear": 2021,
         "endYear": 2022
@@ -15506,9 +16042,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "BUF",
+        "teamId": "LV",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2019,
+        "endYear": 2020
       },
       {
         "teamId": "HOU",
@@ -15762,7 +16303,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "LV",
@@ -15940,7 +16481,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "BAL",
@@ -15989,7 +16530,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "BAL",
@@ -16030,6 +16571,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fnnlwnogehdndgjcczgc",
     "teamStints": [
       {
+        "teamId": "NE",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "DET",
         "startYear": 2021,
         "endYear": 2021
@@ -16040,12 +16586,32 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "DET",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "CLE",
         "startYear": 2023,
         "endYear": 2023
       },
       {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "ATL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CLE",
         "startYear": 2024,
         "endYear": 2024
       },
@@ -16200,7 +16766,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "IND",
@@ -16473,7 +17039,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TEN",
@@ -16483,7 +17049,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
+        "endYear": 2022
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2024
       },
       {
         "teamId": "BAL",
@@ -16588,7 +17164,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "PHI",
@@ -16736,7 +17312,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "BUF",
@@ -16751,6 +17327,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2022,
+        "endYear": 2023
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
         "endYear": null
       }
     ],
@@ -16862,6 +17448,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "PIT",
@@ -16981,7 +17572,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "DAL",
@@ -16991,7 +17582,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "BUF",
@@ -17289,12 +17880,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2010,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "HOU",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "NYJ",
@@ -17334,6 +17930,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BUF",
@@ -17550,12 +18151,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "NO",
@@ -17712,22 +18318,22 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qhgkk3fclxl23xmpchjl",
     "teamStints": [
       {
-        "teamId": "SEA",
-        "startYear": 2011,
-        "endYear": 2011
-      },
-      {
         "teamId": "LV",
         "startYear": 2011,
         "endYear": 2011
       },
       {
         "teamId": "SEA",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "CAR",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "CAR",
+        "teamId": "SEA",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -17786,7 +18392,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2014,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "WAS",
@@ -17802,6 +18408,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "DEN",
@@ -17917,7 +18533,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -18103,9 +18719,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "HOU",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "SF",
@@ -18287,6 +18913,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2014,
+        "endYear": 2017
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2018,
         "endYear": 2018
       }
     ],
@@ -18373,7 +19009,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "KC",
@@ -18718,6 +19354,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "JAX",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "TEN",
         "startYear": 2022,
         "endYear": 2022
@@ -18749,6 +19390,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2017,
+        "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2021,
         "endYear": 2021
       },
       {
@@ -18773,12 +19424,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2013,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "ARI",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "DET",
@@ -19028,7 +19679,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2019,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "MIN",
@@ -19215,6 +19866,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DEN",
         "startYear": 2022,
         "endYear": 2022
@@ -19316,6 +19972,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "BAL",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "PHI",
         "startYear": 2025,
         "endYear": 2025
@@ -19375,7 +20036,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2014,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "SF",
@@ -19479,6 +20140,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/amgdgnzecelhl0lmmjrb",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "LAR",
         "startYear": 2018,
         "endYear": 2021
@@ -19529,7 +20195,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LAR",
@@ -19678,7 +20344,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "SF",
@@ -19755,6 +20421,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2020,
+        "endYear": 2021
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2022,
         "endYear": 2023
       }
     ],
@@ -19928,7 +20609,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -20011,6 +20692,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAR",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NO",
@@ -20164,7 +20855,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "HOU",
@@ -20255,7 +20946,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TEN",
@@ -20277,9 +20968,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "PHI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "HOU",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "GB",
@@ -20518,6 +21219,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "HOU",
         "startYear": 2017,
         "endYear": 2017
@@ -20614,6 +21320,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "BUF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "TB",
         "startYear": 2019,
         "endYear": 2020
@@ -20641,6 +21352,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "CAR",
@@ -20898,12 +21614,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hfbgygdlksglcnvifoaq",
     "teamStints": [
       {
-        "teamId": "DET",
+        "teamId": "LV",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "LV",
+        "teamId": "DET",
         "startYear": 2012,
         "endYear": 2012
       }
@@ -20985,6 +21701,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "DET",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "JAX",
         "startYear": 2019,
         "endYear": 2019
@@ -21062,6 +21783,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "PIT",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2023,
         "endYear": 2023
@@ -21083,7 +21814,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "ARI",
@@ -21136,7 +21867,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SEA",
@@ -21180,6 +21911,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2014,
         "endYear": 2015
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "SEA",
@@ -21246,12 +21982,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NE",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "PIT",
@@ -21330,6 +22071,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "MIA",
         "startYear": 2024,
         "endYear": 2024
@@ -21375,7 +22121,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2020,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "DAL",
@@ -21394,7 +22140,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "SF",
@@ -21612,7 +22358,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "PIT",
@@ -21789,6 +22535,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "DAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "DET",
         "startYear": 2024,
         "endYear": 2025
@@ -21804,7 +22555,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Aldrick Rosas",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/euhk29yxaruyak313bjp",
     "teamStints": [
       {
@@ -21821,6 +22572,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "DET",
@@ -22112,9 +22868,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
-        "teamId": "SEA",
+        "teamId": "LV",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2020,
+        "endYear": 2021
       },
       {
         "teamId": "LAR",
@@ -22248,6 +23009,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "NE",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "TEN",
         "startYear": 2022,
         "endYear": 2022
@@ -22351,7 +23117,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "PIT",
@@ -22360,6 +23126,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "DEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
         "startYear": 2021,
         "endYear": 2021
       }
@@ -22416,6 +23187,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "LV",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "IND",
         "startYear": 2025,
         "endYear": null
@@ -22461,7 +23237,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2020,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "PIT",
@@ -22501,6 +23277,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DEN",
@@ -22558,7 +23339,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2011,
-        "endYear": 2013
+        "endYear": 2014
       },
       {
         "teamId": "NE",
@@ -22566,14 +23347,9 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "TEN",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
         "teamId": "IND",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "NYG",
@@ -22676,6 +23452,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2023,
+        "endYear": 2023
       }
     ],
     "id": "cory-littleton"
@@ -22699,7 +23480,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2018,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "DAL",
@@ -22829,7 +23610,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "SF",
@@ -23124,6 +23910,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "HOU",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "NE",
         "startYear": 2025,
         "endYear": 2025
@@ -23250,21 +24041,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2008,
-        "endYear": 2013
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
-        "teamId": "CAR",
-        "startYear": 2014,
         "endYear": 2014
       },
       {
         "teamId": "ATL",
-        "startYear": 2015,
+        "startYear": 2014,
         "endYear": 2015
       }
     ],
@@ -23442,7 +24223,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2014,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "PHI",
@@ -23553,15 +24334,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2009,
-        "endYear": 2010
-      },
-      {
-        "teamId": "KC",
-        "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "DEN",
+        "teamId": "KC",
         "startYear": 2011,
         "endYear": 2011
       },
@@ -23677,9 +24453,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "NYG",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "DET",
@@ -23708,7 +24494,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "DAL",
@@ -23838,21 +24629,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2007,
-        "endYear": 2012
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
-        "teamId": "CAR",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "NYG",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2015
       }
     ],
@@ -23934,12 +24715,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "KC",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TB",
@@ -24006,7 +24792,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "SEA",
@@ -24150,7 +24936,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CIN",
@@ -24166,6 +24952,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "WAS",
@@ -24266,12 +25062,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "LV",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "PIT",
@@ -24351,6 +25152,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "CAR",
         "startYear": 2023,
         "endYear": 2023
@@ -24375,12 +25181,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vik2frhpjrnqqcwg3kqh",
     "teamStints": [
       {
-        "teamId": "NE",
+        "teamId": "CIN",
         "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "CIN",
+        "teamId": "NE",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -24402,7 +25208,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "TB",
@@ -24426,7 +25232,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -24453,17 +25259,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "TEN",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "ATL",
         "startYear": 2014,
         "endYear": 2014
       },
       {
         "teamId": "DAL",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
-        "teamId": "TEN",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -24484,7 +25290,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2014,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SF",
@@ -24552,7 +25358,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "SF",
@@ -24606,6 +25412,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2015,
         "endYear": 2017
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -24796,6 +25607,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "DEN",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "LV",
         "startYear": 2018,
         "endYear": 2018
@@ -24967,7 +25783,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -25280,7 +26096,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "WAS",
@@ -25323,7 +26144,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2016,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "DEN",
@@ -25828,6 +26649,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "CLE",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "DET",
         "startYear": 2025,
         "endYear": 2025
@@ -26112,6 +26938,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "GB",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "CAR",
         "startYear": 2025,
         "endYear": null
@@ -26372,6 +27203,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "ATL",
         "startYear": 2021,
         "endYear": 2021
@@ -26389,6 +27225,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2017,
         "endYear": 2022
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "BAL",
@@ -26478,9 +27319,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "ARI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "TEN",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DET",
@@ -26510,6 +27361,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "PHI",
@@ -26575,12 +27431,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
-        "teamId": "BUF",
+        "teamId": "LV",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "LV",
+        "teamId": "BUF",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -26596,12 +27452,27 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2016,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NYG",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "PIT",
@@ -26691,18 +27562,13 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y0wvutgow5rcldezmrsz",
     "teamStints": [
       {
-        "teamId": "TB",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
         "teamId": "KC",
         "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "TB",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -26714,6 +27580,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -26845,6 +27716,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "TEN",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "SEA",
         "startYear": 2024,
         "endYear": null
@@ -26874,14 +27750,69 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "PIT",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "CAR",
         "startYear": 2023,
         "endYear": 2023
       },
       {
+        "teamId": "PIT",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "TEN",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BUF",
@@ -27228,7 +28159,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NO",
@@ -27399,6 +28330,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ghhbqw66c4ulq5tdr8da",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "HOU",
         "startYear": 2020,
         "endYear": 2020
@@ -27507,7 +28443,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2014,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "BUF",
@@ -27612,7 +28553,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "ATL",
@@ -27642,6 +28588,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "IND",
@@ -28324,7 +29280,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "LV",
@@ -28335,6 +29296,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DAL",
@@ -28421,7 +29392,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BUF",
@@ -28559,6 +29535,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "PIT",
         "startYear": 2023,
         "endYear": 2024
@@ -28623,7 +29604,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CLE",
@@ -28650,6 +29631,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "MIA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "LAC",
         "startYear": 2024,
         "endYear": 2025
@@ -28664,6 +29650,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/havdl5u1wctwfphxivr0",
     "teamStints": [
       {
+        "teamId": "LAC",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "SEA",
         "startYear": 2016,
         "endYear": 2016
@@ -28672,6 +29663,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2017,
         "endYear": 2019
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "BAL",
@@ -28909,6 +29905,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ARI",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "SF",
@@ -29220,6 +30221,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "DEN",
         "startYear": 2019,
         "endYear": 2020
@@ -29227,7 +30233,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "LAC",
@@ -29266,6 +30277,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2020,
         "endYear": 2023
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "LV",
@@ -29345,12 +30361,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
-        "teamId": "MIN",
+        "teamId": "PHI",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "PHI",
+        "teamId": "MIN",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -29568,15 +30584,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2009,
-        "endYear": 2012
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "TB",
+        "teamId": "MIN",
         "startYear": 2013,
         "endYear": 2013
       },
@@ -30411,7 +31422,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2012,
-        "endYear": 2012
+        "endYear": 2013
       },
       {
         "teamId": "SEA",
@@ -30420,7 +31431,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "SF",
-        "startYear": 2013,
+        "startYear": 2014,
         "endYear": 2014
       },
       {
@@ -30597,6 +31608,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bqgcimpldsnhs89s0pcl",
     "teamStints": [
       {
+        "teamId": "DAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "DET",
         "startYear": 2019,
         "endYear": 2019
@@ -30682,6 +31698,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "LV",
@@ -30863,7 +31884,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "SF",
@@ -30897,7 +31918,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2010,
-        "endYear": 2013
+        "endYear": 2012
       },
       {
         "teamId": "DAL",
@@ -30906,7 +31927,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "PIT",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2016
       }
     ],
@@ -30922,6 +31943,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2016,
         "endYear": 2020
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NYG",
@@ -31094,6 +32120,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2023,
         "endYear": 2023
       }
     ],
@@ -31270,6 +32306,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "CHI",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "IND",
         "startYear": 2025,
         "endYear": 2025
@@ -31366,9 +32407,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "TEN",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "LAC",
@@ -31397,7 +32453,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2020,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TB",
@@ -31479,7 +32540,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2020,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "KC",
@@ -31723,7 +32784,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2017,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "TEN",
@@ -31767,6 +32828,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2011,
+        "endYear": 2018
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2019,
         "endYear": 2019
       },
       {
@@ -32027,6 +33098,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2024,
         "endYear": 2024
       }
     ],
@@ -32065,7 +33146,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "LV",
@@ -32143,6 +33224,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2019,
         "endYear": 2023
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "MIA",
@@ -32556,7 +33642,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TB",
@@ -32746,6 +33832,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2022,
+        "endYear": 2022
       }
     ],
     "id": "anthony-harris"
@@ -32836,6 +33927,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "DEN",
         "startYear": 2020,
         "endYear": 2020
       }
@@ -33048,7 +34144,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "ARI",
@@ -33063,7 +34159,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "GB",
@@ -33248,6 +34349,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NE",
         "startYear": 2019,
         "endYear": 2021
@@ -33325,12 +34431,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
-        "teamId": "NYJ",
+        "teamId": "SEA",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "SEA",
+        "teamId": "NYJ",
         "startYear": 2012,
         "endYear": 2012
       }
@@ -33347,6 +34453,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2016,
         "endYear": 2019
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "BAL",
@@ -33376,6 +34487,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2016,
         "endYear": 2019
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "WAS",
@@ -33471,7 +34592,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "LV",
@@ -33630,15 +34751,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2013,
-        "endYear": 2013
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "SEA",
+        "teamId": "NYJ",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -33852,7 +34968,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "LAC",
@@ -34063,6 +35179,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2019,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2022,
         "endYear": 2022
       },
       {
@@ -34148,6 +35274,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "DET",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "NYG",
         "startYear": 2022,
         "endYear": 2023
@@ -34210,18 +35341,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "TEN",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
         "teamId": "NE",
         "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "TEN",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2014
       }
     ],
@@ -34361,7 +35487,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "PHI",
@@ -34576,6 +35702,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "CHI",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "SF",
         "startYear": 2016,
         "endYear": 2021
@@ -34773,9 +35904,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "TB",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NYG",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "TB",
@@ -35089,7 +36230,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "MIA",
@@ -35294,6 +36435,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
       }
     ],
     "id": "malik-reed"
@@ -35414,12 +36560,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "DET",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "GB",
@@ -35439,6 +36590,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2011,
         "endYear": 2015
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "MIA",
@@ -35494,6 +36650,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "GB",
         "startYear": 2021,
         "endYear": 2021
@@ -35525,7 +36686,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "LAC",
@@ -35583,15 +36744,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2010,
-        "endYear": 2010
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "MIA",
+        "teamId": "MIN",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -36117,6 +37273,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "IND",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "TB",
         "startYear": 2025,
         "endYear": 2025
@@ -36134,6 +37295,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2014,
         "endYear": 2017
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "JAX",
@@ -36338,6 +37504,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "CLE",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "CHI",
         "startYear": 2025,
         "endYear": 2025
@@ -36369,7 +37540,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "BUF",
@@ -36399,6 +37570,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TB",
@@ -36585,12 +37766,37 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "BAL",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "TEN",
@@ -36792,7 +37998,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2012,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "DAL",
@@ -36985,6 +38191,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -37204,7 +38415,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "ARI",
@@ -37574,6 +38785,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2022,
         "endYear": 2022
       }
     ],
@@ -37703,7 +38924,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2016,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TB",
@@ -37722,7 +38943,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2020,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "BAL",
@@ -37944,12 +39165,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2014,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "CHI",
@@ -38034,6 +39265,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "PIT",
         "startYear": 2024,
         "endYear": 2024
@@ -38089,7 +39325,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "PIT",
@@ -38111,6 +39347,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "NE",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "SF",
         "startYear": 2017,
         "endYear": 2018
@@ -38121,9 +39362,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
-        "teamId": "PIT",
+        "teamId": "JAX",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2020,
+        "endYear": 2021
       },
       {
         "teamId": "CHI",
@@ -38309,6 +39560,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "JAX",
         "startYear": 2025,
         "endYear": 2025
@@ -38474,7 +39730,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NYJ",
@@ -38484,7 +39740,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "TEN",
@@ -38571,6 +39827,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "SF",
         "startYear": 2017,
         "endYear": 2017
       }
@@ -38799,6 +40060,30 @@ export const GENERATED_PLAYERS = [
     "id": "kurt-schulz"
   },
   {
+    "fullName": "Wes Horton",
+    "position": "DE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/btyxwowk3klyrjqvw90o",
+    "teamStints": [
+      {
+        "teamId": "CAR",
+        "startYear": 2013,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2019,
+        "endYear": 2020
+      }
+    ],
+    "id": "wes-horton"
+  },
+  {
     "fullName": "BenJarvus Green-Ellis",
     "position": "RB",
     "difficulty": "medium",
@@ -38920,12 +40205,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yhjtycrpq7jtfarxkhcx",
     "teamStints": [
       {
-        "teamId": "PIT",
+        "teamId": "LAC",
         "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "LAC",
+        "teamId": "PIT",
         "startYear": 2015,
         "endYear": 2015
       }
@@ -38961,6 +40246,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2012,
         "endYear": 2015
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "KC",
@@ -39018,7 +40308,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "JAX",
@@ -39061,7 +40356,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -39428,12 +40723,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NE",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DET",
@@ -39473,6 +40773,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "ARI",
@@ -39795,6 +41100,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2020,
         "endYear": 2021
       },
       {
@@ -40365,7 +41680,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "SF",
@@ -41129,6 +42444,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "CLE",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NE",
         "startYear": 2017,
         "endYear": 2018
@@ -41372,6 +42692,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "LAC",
@@ -41811,7 +43136,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -42085,6 +43410,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "HOU",
         "startYear": 2024,
         "endYear": 2024
@@ -42117,6 +43452,21 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TB",
@@ -42497,12 +43847,32 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2018,
         "endYear": 2020
       },
       {
         "teamId": "CLE",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "TB",
@@ -42593,7 +43963,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -42604,6 +43974,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "WAS",
@@ -42622,7 +43997,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NYJ",
@@ -42641,12 +44021,27 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "TB",
         "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2019,
         "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "TEN",
@@ -42825,7 +44220,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "DET",
@@ -42883,6 +44278,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2017,
         "endYear": 2017
       }
     ],
@@ -43055,6 +44460,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "GB",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NE",
         "startYear": 2017,
         "endYear": 2017
@@ -43221,12 +44631,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2014,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "DET",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "LV",
@@ -43332,7 +44747,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "JAX",
@@ -43352,6 +44767,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2019,
         "endYear": 2024
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -43392,6 +44812,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "NYG",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "JAX",
         "startYear": 2023,
         "endYear": 2023
@@ -43400,6 +44825,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BAL",
@@ -43515,15 +44945,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2013,
-        "endYear": 2013
-      },
-      {
-        "teamId": "NE",
-        "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "TB",
+        "teamId": "NE",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -43544,7 +44969,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "ARI",
@@ -43669,6 +45094,21 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "SF",
@@ -43800,6 +45240,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "SF",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "GB",
         "startYear": 2020,
         "endYear": 2020
@@ -43879,7 +45324,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "IND",
@@ -43901,6 +45346,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "IND",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2019,
         "endYear": 2020
@@ -43914,6 +45364,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "DET",
@@ -44017,9 +45472,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "DEN",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "ATL",
@@ -44474,7 +45939,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "JAX",
@@ -44536,7 +46001,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "LAC",
@@ -44813,6 +46278,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "TB",
@@ -45236,6 +46706,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CAR",
@@ -46503,15 +47978,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2013,
-        "endYear": 2014
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "NYG",
+        "teamId": "MIA",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -46893,6 +48363,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "DAL",
         "startYear": 2023,
         "endYear": 2023
@@ -46983,6 +48458,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BAL",
@@ -47712,6 +49192,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DAL",
         "startYear": 2022,
         "endYear": 2022
@@ -47733,7 +49218,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -47941,7 +49426,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "MIN",
@@ -48076,6 +49561,21 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2013,
         "endYear": 2016
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "DAL",
@@ -48474,7 +49974,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CLE",
@@ -48645,6 +50145,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "NE",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "HOU",
         "startYear": 2017,
         "endYear": 2019
@@ -48665,6 +50170,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "DEN",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "ARI",
         "startYear": 2024,
         "endYear": 2024
@@ -48682,6 +50192,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 2016,
         "endYear": 2018
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "CHI",
@@ -48871,6 +50386,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "ATL",
         "startYear": 2021,
         "endYear": 2021
@@ -48954,6 +50474,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "SF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NE",
         "startYear": 2017,
         "endYear": 2018
@@ -48990,7 +50515,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "NYJ",
@@ -49014,7 +50544,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "LV",
@@ -49046,6 +50576,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "DEN",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "IND",
         "startYear": 2018,
         "endYear": 2018
@@ -49058,6 +50598,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
         "endYear": 2024
       }
     ],
@@ -49393,6 +50943,50 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "doug-williams"
+  },
+  {
+    "fullName": "Dustin Colquitt",
+    "position": "P",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v1aymd6o0vpg73ytxzhu",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 2005,
+        "endYear": 2019
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2021,
+        "endYear": 2021
+      }
+    ],
+    "id": "dustin-colquitt"
   },
   {
     "fullName": "E.J. Gaines",
@@ -49987,6 +51581,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2019,
         "endYear": 2020
@@ -50375,17 +51974,27 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
-        "teamId": "JAX",
+        "teamId": "PHI",
         "startYear": 2019,
         "endYear": 2019
       },
       {
+        "teamId": "JAX",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
         "teamId": "NE",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "DEN",
@@ -50412,6 +52021,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "LAR",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "NYG",
         "startYear": 2016,
         "endYear": 2016
@@ -50420,6 +52034,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "WAS",
@@ -50553,7 +52172,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CIN",
@@ -50566,9 +52185,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "IND",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "PIT",
@@ -51962,12 +53596,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "HOU",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CIN",
@@ -52093,6 +53727,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "ATL",
@@ -52265,7 +53904,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NE",
@@ -52489,9 +54128,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "KC",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "LAR",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "NYJ",
@@ -52813,6 +54462,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "BAL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "HOU",
         "startYear": 2021,
         "endYear": 2021
@@ -52888,6 +54542,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "MIA",
@@ -53082,6 +54741,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "IND",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "NE",
         "startYear": 2021,
         "endYear": 2021
@@ -53098,7 +54767,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -53114,6 +54783,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "JAX",
@@ -53248,6 +54927,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2015,
         "endYear": 2016
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "NYJ",
@@ -53670,9 +55354,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "TEN",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "NYG",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "CIN",
@@ -54028,6 +55722,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "LV",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "HOU",
         "startYear": 2018,
         "endYear": 2018
@@ -54049,7 +55748,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "ARI",
@@ -54060,6 +55759,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CIN",
@@ -54083,6 +55792,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2019,
+        "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2023,
         "endYear": 2023
       }
     ],
@@ -54140,7 +55859,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2018,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "BUF",
@@ -54151,6 +55870,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NO",
@@ -54172,6 +55896,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "NYG",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "NO",
         "startYear": 2024,
         "endYear": 2024
@@ -54190,6 +55919,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fzrgvzkdrlwgludqfsqk",
     "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2018,
+        "endYear": 2018
+      },
       {
         "teamId": "GB",
         "startYear": 2018,
@@ -54395,7 +56129,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "SF",
@@ -54572,7 +56306,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2016,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -54597,6 +56331,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "WAS",
@@ -54698,6 +56437,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "NO",
@@ -54941,6 +56685,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "NE",
         "startYear": 2025,
         "endYear": 2025
@@ -54955,19 +56704,14 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bpmc5benk1peaabkuvoe",
     "teamStints": [
       {
-        "teamId": "DEN",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
         "teamId": "NO",
         "startYear": 2014,
         "endYear": 2014
       },
       {
         "teamId": "DEN",
-        "startYear": 2015,
-        "endYear": 2019
+        "startYear": 2014,
+        "endYear": 2020
       },
       {
         "teamId": "MIN",
@@ -55563,17 +57307,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NYJ",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "SF",
         "startYear": 2020,
         "endYear": 2022
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "NO",
@@ -55864,6 +57613,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lisxjuyoo7hiux1ac4jb",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "NE",
         "startYear": 2016,
         "endYear": 2016
@@ -55872,6 +57626,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "WAS",
@@ -56461,6 +58220,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "SEA",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "ARI",
         "startYear": 2018,
         "endYear": 2018
@@ -56468,6 +58237,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2020,
         "endYear": 2022
       }
     ],
@@ -56569,6 +58348,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2017,
         "endYear": 2019
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "CIN",
@@ -56732,6 +58516,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2013,
         "endYear": 2017
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "LAR",
@@ -57367,7 +59161,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2012,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ATL",
@@ -57717,12 +59511,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "MIN",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CAR",
@@ -57756,7 +59550,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "GB",
@@ -57767,6 +59566,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "LV",
@@ -57795,7 +59599,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TEN",
@@ -58234,7 +60043,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "SEA",
@@ -58527,6 +60336,35 @@ export const GENERATED_PLAYERS = [
     "id": "sammy-johnson"
   },
   {
+    "fullName": "Scotty Washington",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wmux5yyxvrtmkudkqod9",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2020,
+        "endYear": 2022
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2022,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2023,
+        "endYear": 2025
+      }
+    ],
+    "id": "scotty-washington"
+  },
+  {
     "fullName": "Steve DeOssie",
     "position": "LB",
     "difficulty": "impossible",
@@ -58604,6 +60442,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "LAC",
@@ -58709,7 +60552,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "BUF",
@@ -58949,11 +60792,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "CLE",
         "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2019,
         "endYear": 2019
       },
       {
@@ -59266,6 +61114,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "BAL",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "DEN",
         "startYear": 2016,
         "endYear": 2016
@@ -59353,6 +61211,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tyler-eifert"
+  },
+  {
+    "fullName": "Armonty Bryant",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/phevxwxhlwxv2ngufopj",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2016,
+        "endYear": 2017
+      }
+    ],
+    "id": "armonty-bryant"
   },
   {
     "fullName": "Blaine Bishop",
@@ -59456,25 +61333,6 @@ export const GENERATED_PLAYERS = [
     "id": "dion-lewis"
   },
   {
-    "fullName": "Dustin Colquitt",
-    "position": "P",
-    "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v1aymd6o0vpg73ytxzhu",
-    "teamStints": [
-      {
-        "teamId": "KC",
-        "startYear": 2005,
-        "endYear": 2020
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 2021,
-        "endYear": 2021
-      }
-    ],
-    "id": "dustin-colquitt"
-  },
-  {
     "fullName": "E.J. Speed",
     "position": "LB",
     "difficulty": "hard",
@@ -59502,12 +61360,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NYJ",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "LV",
@@ -59984,6 +61852,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "IND",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "TB",
         "startYear": 2018,
         "endYear": 2022
@@ -60104,9 +61977,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "IND",
+        "teamId": "HOU",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2019,
+        "endYear": 2020
       },
       {
         "teamId": "SF",
@@ -60172,6 +62050,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "ARI",
         "startYear": 2023,
         "endYear": 2023
@@ -60193,12 +62076,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "GB",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "LAC",
@@ -60222,7 +62110,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "SF",
@@ -60290,6 +62178,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2015,
         "endYear": 2019
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DEN",
@@ -60487,7 +62380,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TEN",
@@ -60789,6 +62687,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "TB",
         "startYear": 2018,
         "endYear": 2021
@@ -60968,7 +62871,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -61431,7 +63334,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "PHI",
@@ -61538,12 +63441,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "SEA",
@@ -61662,6 +63565,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "CHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "PIT",
         "startYear": 2023,
         "endYear": 2023
@@ -61730,6 +63643,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "TEN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "NO",
         "startYear": 2020,
         "endYear": 2021
@@ -61738,6 +63656,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "NYJ",
@@ -61814,7 +63737,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "SEA",
@@ -62507,7 +64435,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "LAR",
@@ -62791,6 +64719,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "IND",
         "startYear": 2018,
         "endYear": 2018
@@ -62931,17 +64864,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "LAR",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "DEN",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "NO",
@@ -63160,7 +65098,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "MIA",
@@ -63685,6 +65623,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "LV",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "NYG",
         "startYear": 2022,
         "endYear": 2023
@@ -63800,18 +65743,23 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
-        "teamId": "DET",
-        "startYear": 2011,
-        "endYear": 2011
-      },
-      {
         "teamId": "NO",
         "startYear": 2011,
         "endYear": 2011
       },
       {
         "teamId": "DET",
-        "startYear": 2012,
+        "startYear": 2011,
+        "endYear": 2015
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2016,
         "endYear": 2016
       }
     ],
@@ -63831,7 +65779,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "SEA",
@@ -63878,6 +65826,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "NE",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "PHI",
         "startYear": 2018,
         "endYear": 2018
@@ -63885,6 +65838,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2020,
         "endYear": 2022
       },
       {
@@ -63923,7 +65886,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2019,
+        "endYear": 2022
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BUF",
@@ -63943,6 +65921,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -63981,7 +65964,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -64020,7 +66008,27 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2016,
+        "endYear": 2019
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NYJ",
@@ -64266,7 +66274,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2009,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "PHI",
@@ -64615,12 +66623,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
-        "teamId": "NYJ",
+        "teamId": "MIA",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "MIA",
+        "teamId": "NYJ",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -64920,12 +66928,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "CHI",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -65013,6 +67026,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -65449,7 +67467,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "LAR",
@@ -65588,30 +67606,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "scottie-graham"
-  },
-  {
-    "fullName": "Scotty Washington",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wmux5yyxvrtmkudkqod9",
-    "teamStints": [
-      {
-        "teamId": "CIN",
-        "startYear": 2020,
-        "endYear": 2021
-      },
-      {
-        "teamId": "NE",
-        "startYear": 2022,
-        "endYear": 2022
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 2023,
-        "endYear": 2025
-      }
-    ],
-    "id": "scotty-washington"
   },
   {
     "fullName": "Stephen Starring",
@@ -65878,12 +67872,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NO",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "CLE",
@@ -65941,22 +67940,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2013,
-        "endYear": 2014
-      },
-      {
-        "teamId": "SF",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "SF",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "NO",
@@ -66223,6 +68217,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "DET",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "TEN",
         "startYear": 2023,
         "endYear": 2023
@@ -66259,6 +68258,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2016,
         "endYear": 2022
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -66303,6 +68307,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "SEA",
@@ -66555,6 +68564,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "ATL",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "WAS",
         "startYear": 2025,
         "endYear": 2025
@@ -66571,6 +68585,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2020,
+        "endYear": 2023
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2024,
         "endYear": 2025
       },
       {
@@ -67540,6 +69564,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "ATL",
         "startYear": 2023,
         "endYear": 2025
@@ -67598,9 +69627,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "BUF",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "NO",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "PIT",
@@ -67648,7 +69687,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "PHI",
@@ -67850,7 +69889,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "LV",
@@ -67904,6 +69943,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "LV",
@@ -68183,7 +70227,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "HOU",
@@ -68293,6 +70337,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kyle-wilson"
+  },
+  {
+    "fullName": "Marcus Sherels",
+    "position": "DB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qgwd89z8jxh5o9ln6cmp",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2010,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2020,
+        "endYear": 2020
+      }
+    ],
+    "id": "marcus-sherels"
   },
   {
     "fullName": "Mark Thomas",
@@ -68543,6 +70621,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DAL",
         "startYear": 2022,
         "endYear": 2022
@@ -68569,7 +70652,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "WAS",
@@ -68665,7 +70748,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "CHI",
@@ -68689,6 +70777,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2017,
+        "endYear": 2018
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2019,
         "endYear": 2020
       }
     ],
@@ -68718,6 +70816,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2017,
         "endYear": 2017
       },
       {
@@ -68800,7 +70908,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NYJ",
@@ -69270,7 +71378,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "SEA",
@@ -69295,6 +71403,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "DEN",
@@ -69353,6 +71466,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ARI",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "DAL",
@@ -69466,9 +71584,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "DET",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "JAX",
@@ -69497,7 +71625,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "DET",
@@ -69697,6 +71825,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CLE",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "LV",
         "startYear": 2022,
         "endYear": 2023
@@ -69827,6 +71960,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "JAX",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2025,
         "endYear": null
@@ -69868,6 +72006,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2017,
         "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DEN",
@@ -70044,6 +72192,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ukdhu6us5kidh3d0hd24",
     "teamStints": [
       {
+        "teamId": "PHI",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "WAS",
         "startYear": 2020,
         "endYear": 2023
@@ -70100,6 +72253,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2014,
         "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CIN",
@@ -70311,12 +72474,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "ATL",
         "startYear": 2016,
         "endYear": 2020
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TB",
@@ -70622,7 +72790,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "TB",
@@ -70769,12 +72937,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
-        "teamId": "TB",
+        "teamId": "DET",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "DET",
+        "teamId": "TB",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -70938,7 +73106,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ATL",
@@ -71082,7 +73250,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "ARI",
@@ -71133,9 +73306,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "IND",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "ATL",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "PIT",
@@ -71235,7 +73423,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "LV",
@@ -71275,6 +73463,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NYG",
@@ -71351,21 +73544,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2010,
-        "endYear": 2011
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "MIN",
-        "startYear": 2013,
+        "startYear": 2012,
         "endYear": 2013
       },
       {
@@ -71376,7 +73559,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "NO",
@@ -72263,9 +74451,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "PIT",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "CAR",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NE",
@@ -72685,12 +74883,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "NYJ",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "NO",
@@ -72733,7 +74941,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2018,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "MIA",
@@ -72902,6 +75110,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "LAC",
@@ -73752,6 +75965,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "ARI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "LV",
         "startYear": 2019,
         "endYear": 2019
@@ -73926,6 +76149,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2021,
         "endYear": 2024
       },
       {
@@ -74001,18 +76234,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
-        "teamId": "KC",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
         "teamId": "CAR",
         "startYear": 2014,
         "endYear": 2014
       },
       {
         "teamId": "KC",
-        "startYear": 2015,
+        "startYear": 2014,
         "endYear": 2016
       }
     ],
@@ -74027,7 +76255,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "HOU",
@@ -74100,12 +76328,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "KC",
@@ -74167,12 +76395,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "NE",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CIN",
@@ -74413,12 +76641,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CAR",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "PIT",
@@ -74474,9 +76707,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "DET",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "PHI",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NE",
@@ -74505,7 +76748,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "LAC",
@@ -75128,7 +77371,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "JAX",
@@ -75157,7 +77405,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -75176,12 +77424,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NO",
@@ -75211,6 +77464,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2015,
         "endYear": 2018
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "BAL",
@@ -75311,7 +77569,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2016,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CHI",
@@ -75386,12 +77644,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2007
       },
       {
-        "teamId": "IND",
+        "teamId": "JAX",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "JAX",
+        "teamId": "IND",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -75569,6 +77827,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "CAR",
         "startYear": 2021,
         "endYear": 2021
@@ -75638,22 +77901,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2013,
-        "endYear": 2013
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 2014,
         "endYear": 2014
       },
       {
         "teamId": "BUF",
-        "startYear": 2015,
-        "endYear": 2015
+        "startYear": 2014,
+        "endYear": 2016
       },
       {
         "teamId": "MIA",
@@ -75687,7 +77940,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "GB",
@@ -75926,6 +78179,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "NE",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "GB",
         "startYear": 2018,
         "endYear": 2018
@@ -75974,9 +78237,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
-        "teamId": "NYG",
+        "teamId": "NYJ",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2017,
+        "endYear": 2018
       },
       {
         "teamId": "TEN",
@@ -76054,7 +78322,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -76151,7 +78419,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "KC",
@@ -76159,14 +78432,34 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "WAS",
+        "teamId": "MIA",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "TEN",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "WAS",
@@ -76295,7 +78588,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "IND",
@@ -76486,6 +78779,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qpvqrogwyf5p5chlzvkl",
     "teamStints": [
       {
+        "teamId": "PIT",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "DEN",
         "startYear": 2019,
         "endYear": 2025
@@ -76508,6 +78806,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "MIA",
@@ -77649,7 +79952,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "NO",
@@ -78015,6 +80323,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "BAL",
         "startYear": 2021,
         "endYear": 2021
@@ -78081,6 +80394,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lfqiuwnp2ss18cw3zicd",
     "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2019,
+        "endYear": 2019
+      },
       {
         "teamId": "PHI",
         "startYear": 2019,
@@ -78656,7 +80974,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NO",
@@ -78754,6 +81072,55 @@ export const GENERATED_PLAYERS = [
     "id": "lonnie-young"
   },
   {
+    "fullName": "Matt Haack",
+    "position": "P",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jzdvzdxyltgqt7dt7x2y",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 2017,
+        "endYear": 2020
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2025,
+        "endYear": 2025
+      }
+    ],
+    "id": "matt-haack"
+  },
+  {
     "fullName": "Mike Curtis",
     "position": "LB",
     "difficulty": "impossible",
@@ -78842,9 +81209,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "NE",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "KC",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "ATL",
@@ -78859,6 +81236,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2023,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2025,
         "endYear": null
       }
     ],
@@ -79232,6 +81619,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DEN",
         "startYear": 2022,
         "endYear": 2022
@@ -79264,6 +81656,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CHI",
@@ -79442,6 +81839,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "CAR",
@@ -80186,6 +82588,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pkyqyt82xidjauze3rei",
     "teamStints": [
       {
+        "teamId": "SF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "DEN",
         "startYear": 2017,
         "endYear": 2023
@@ -80220,6 +82627,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "TEN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "KC",
         "startYear": 2022,
         "endYear": 2022
@@ -80246,7 +82658,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "KC",
@@ -80309,6 +82726,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "bobby-abrams"
+  },
+  {
+    "fullName": "Cameron Johnston",
+    "position": "P",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ykfz7wzi8lm0orizho0j",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2017,
+        "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2024,
+        "endYear": 2025
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "cameron-johnston"
   },
   {
     "fullName": "Cameron Sample",
@@ -80511,12 +82967,27 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "HOU",
         "startYear": 2021,
         "endYear": 2021
       },
       {
+        "teamId": "NO",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
         "startYear": 2022,
         "endYear": 2022
       },
@@ -80642,12 +83113,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
-        "teamId": "SEA",
+        "teamId": "NE",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "NE",
+        "teamId": "SEA",
         "startYear": 2011,
         "endYear": 2011
       },
@@ -80760,7 +83231,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SF",
@@ -80768,9 +83239,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "IND",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "CLE",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "MIN",
@@ -80902,6 +83378,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2019,
         "endYear": 2021
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "LAC",
@@ -81064,7 +83545,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -81136,7 +83617,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2002,
-        "endYear": 2011
+        "endYear": 2012
       },
       {
         "teamId": "DAL",
@@ -81145,7 +83626,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BUF",
-        "startYear": 2012,
+        "startYear": 2013,
         "endYear": 2013
       }
     ],
@@ -81161,6 +83642,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2020,
         "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "NO",
@@ -81182,19 +83668,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vvjxh6a7wca6lhyiscad",
     "teamStints": [
       {
-        "teamId": "NE",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
         "teamId": "TB",
         "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "NE",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2014
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "SF",
@@ -81269,6 +83755,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "DET",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "TB",
         "startYear": 2021,
         "endYear": 2021
@@ -81285,7 +83776,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "BUF",
@@ -81296,6 +83787,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "MIA",
@@ -81413,13 +83909,28 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Matt Ammendola",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rlkhhx2jkjxrftwju1hb",
     "teamStints": [
       {
         "teamId": "NYJ",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "GB",
@@ -81684,7 +84195,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CHI",
@@ -81722,7 +84233,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NYJ",
@@ -81846,7 +84357,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2020,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NO",
@@ -82146,7 +84657,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "MIA",
@@ -82156,7 +84667,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "GB",
@@ -83050,7 +85566,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "TEN",
@@ -83075,6 +85596,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2015,
         "endYear": 2018
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "HOU",
@@ -83165,37 +85691,32 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2014,
-        "endYear": 2014
-      },
-      {
-        "teamId": "SF",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
-        "teamId": "LV",
-        "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "SF",
-        "startYear": 2016,
-        "endYear": 2016
+        "startYear": 2015,
+        "endYear": 2017
       },
       {
         "teamId": "NYG",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "DAL",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "SEA",
@@ -83386,40 +85907,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brian-washington"
-  },
-  {
-    "fullName": "Cameron Johnston",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ykfz7wzi8lm0orizho0j",
-    "teamStints": [
-      {
-        "teamId": "PHI",
-        "startYear": 2017,
-        "endYear": 2020
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 2021,
-        "endYear": 2023
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 2024,
-        "endYear": 2024
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2025,
-        "endYear": 2025
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 2026,
-        "endYear": null
-      }
-    ],
-    "id": "cameron-johnston"
   },
   {
     "fullName": "Casey Merrill",
@@ -83712,6 +86199,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "KC",
         "startYear": 2016,
         "endYear": 2018
@@ -83799,7 +86291,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "John Parker Romo",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mivdxwexvns77evfhtgj",
     "teamStints": [
       {
@@ -83813,9 +86305,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
-        "teamId": "NE",
+        "teamId": "MIN",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2024,
+        "endYear": 2025
       },
       {
         "teamId": "ATL",
@@ -84040,7 +86537,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2008,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "SEA",
@@ -84550,7 +87047,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "JAX",
@@ -84644,6 +87141,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "NYG",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "BUF",
         "startYear": 2016,
         "endYear": 2018
@@ -84704,7 +87206,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NE",
@@ -84752,7 +87254,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "TEN",
@@ -85153,12 +87655,42 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2014,
+        "endYear": 2016
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "CIN",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "LV",
@@ -85201,45 +87733,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "larry-marshall"
-  },
-  {
-    "fullName": "Matt Haack",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jzdvzdxyltgqt7dt7x2y",
-    "teamStints": [
-      {
-        "teamId": "MIA",
-        "startYear": 2017,
-        "endYear": 2020
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 2021,
-        "endYear": 2021
-      },
-      {
-        "teamId": "IND",
-        "startYear": 2022,
-        "endYear": 2022
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 2023,
-        "endYear": 2023
-      },
-      {
-        "teamId": "JAX",
-        "startYear": 2024,
-        "endYear": 2024
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 2025,
-        "endYear": 2025
-      }
-    ],
-    "id": "matt-haack"
   },
   {
     "fullName": "Matt Vanderbeek",
@@ -85486,9 +87979,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "HOU",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "LAR",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "LAC",
@@ -85633,22 +88136,47 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
         "endYear": 2019
       },
       {
         "teamId": "PHI",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
-        "teamId": "MIN",
+        "teamId": "WAS",
         "startYear": 2021,
         "endYear": 2021
       },
       {
+        "teamId": "MIN",
+        "startYear": 2021,
+        "endYear": 2022
+      },
+      {
         "teamId": "SF",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CLE",
@@ -85781,6 +88309,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "MIN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "LV",
         "startYear": 2022,
         "endYear": 2022
@@ -85807,7 +88340,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "DEN",
@@ -85831,12 +88364,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "SF",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NO",
@@ -86065,6 +88603,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "BAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "SF",
         "startYear": 2024,
         "endYear": 2025
@@ -86081,12 +88624,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "ARI",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "PIT",
@@ -86284,7 +88837,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "DAL",
@@ -86294,7 +88847,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "SEA",
@@ -86437,13 +88995,18 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Roberto Aguayo",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hpstdltdmw7f6qqi7roa",
     "teamStints": [
       {
         "teamId": "TB",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "CAR",
@@ -86472,7 +89035,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
@@ -86526,6 +89089,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "BUF",
@@ -86621,7 +89189,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2014,
-        "endYear": 2014
+        "endYear": 2015
       },
       {
         "teamId": "DET",
@@ -86629,9 +89197,9 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
-        "teamId": "LV",
-        "startYear": 2015,
-        "endYear": 2015
+        "teamId": "NO",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "CHI",
@@ -86650,12 +89218,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "CHI",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "MIA",
@@ -86726,6 +89294,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "PIT",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "MIN",
         "startYear": 2020,
         "endYear": 2020
@@ -86767,6 +89345,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2016,
         "endYear": 2020
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "SF",
@@ -87030,7 +89613,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "LAC",
@@ -87116,12 +89699,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "PIT",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "TEN",
@@ -87164,7 +89752,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2018,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "DEN",
@@ -87239,6 +89827,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "PIT",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "HOU",
         "startYear": 2024,
         "endYear": 2024
@@ -87271,6 +89864,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w9geuwsrzbaycdjkwgxw",
     "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2018,
+        "endYear": 2018
+      },
       {
         "teamId": "PHI",
         "startYear": 2018,
@@ -87322,6 +89920,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
         "endYear": 2021
       },
       {
@@ -87428,7 +90036,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NO",
@@ -87477,6 +90085,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -87537,6 +90150,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "LV",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CLE",
         "startYear": 2022,
         "endYear": 2022
@@ -87580,14 +90198,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "DET",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "MIA",
         "startYear": 2018,
         "endYear": 2018
       },
       {
-        "teamId": "LAC",
+        "teamId": "NO",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2019,
+        "endYear": 2020
       },
       {
         "teamId": "DEN",
@@ -87854,7 +90482,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "CLE",
@@ -87870,6 +90498,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TB",
@@ -87969,12 +90602,32 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "MIN",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "SEA",
@@ -88620,9 +91273,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
-        "teamId": "WAS",
+        "teamId": "NE",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2024,
+        "endYear": 2025
       },
       {
         "teamId": "ATL",
@@ -88929,15 +91587,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "NE",
+        "teamId": "DEN",
         "startYear": 2013,
         "endYear": 2013
       }
@@ -89368,7 +92021,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ATL",
@@ -89663,6 +92316,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "GB",
         "startYear": 2021,
         "endYear": 2021
@@ -89755,17 +92418,36 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "PIT",
+        "teamId": "BUF",
         "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "BUF",
+        "teamId": "PIT",
         "startYear": 2013,
         "endYear": 2013
       }
     ],
     "id": "jamaal-westerman"
+  },
+  {
+    "fullName": "Jeremy Reaves",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zuhgmkvtbmbimlvjnehg",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2018,
+        "endYear": null
+      }
+    ],
+    "id": "jeremy-reaves"
   },
   {
     "fullName": "Justin Miller",
@@ -89898,6 +92580,26 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2014,
         "endYear": 2016
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "KC",
@@ -90274,6 +92976,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "WAS",
@@ -91113,6 +93820,40 @@ export const GENERATED_PLAYERS = [
     "id": "melvin-jenkins"
   },
   {
+    "fullName": "Michael Palardy",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vvi2q0cetjssx2hjetdm",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2016,
+        "endYear": 2020
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "michael-palardy"
+  },
+  {
     "fullName": "Mike Tilleman",
     "position": "DL",
     "difficulty": "impossible",
@@ -91220,6 +93961,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sivgqm2tcwgvxljmi5zi",
     "teamStints": [
       {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "GB",
         "startYear": 2017,
         "endYear": 2022
@@ -91228,6 +93974,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "KC",
@@ -91424,7 +94175,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "SF",
@@ -91449,6 +94200,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "GB",
@@ -91488,6 +94244,16 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/upp3pqputetd0coa07ms",
     "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2024,
+        "endYear": 2024
+      },
       {
         "teamId": "KC",
         "startYear": 2024,
@@ -91768,6 +94534,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "WAS",
         "startYear": 2019,
         "endYear": 2020
@@ -91785,6 +94556,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2020,
         "endYear": 2022
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "DET",
@@ -91931,6 +94712,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "IND",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "PIT",
         "startYear": 2017,
         "endYear": 2017
@@ -91977,6 +94763,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NO",
@@ -92053,7 +94844,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -92172,22 +94963,22 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pbz66e4tqzrncl1vucyf",
     "teamStints": [
       {
-        "teamId": "LV",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
         "teamId": "GB",
         "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "LV",
-        "startYear": 2013,
-        "endYear": 2014
+        "startYear": 2012,
+        "endYear": 2013
       },
       {
         "teamId": "MIA",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "LV",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -92349,6 +95140,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2011,
+        "endYear": 2017
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2018,
         "endYear": 2018
       }
     ],
@@ -92363,7 +95164,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "PHI",
@@ -92776,6 +95582,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "NYG",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "LV",
         "startYear": 2019,
         "endYear": 2020
@@ -92850,7 +95661,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "ATL",
@@ -93427,6 +96238,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q5frdajyzvjj7icsbzbf",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "TB",
         "startYear": 2016,
         "endYear": 2016
@@ -93556,6 +96372,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "KC",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "CLE",
         "startYear": 2024,
         "endYear": 2025
@@ -93649,7 +96470,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -93676,6 +96497,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NYG",
         "startYear": 2019,
         "endYear": 2020
@@ -93693,6 +96519,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2013,
         "endYear": 2016
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -93769,7 +96605,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "BAL",
@@ -93869,6 +96705,21 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "BUF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "SF",
         "startYear": 2025,
         "endYear": null
@@ -93885,7 +96736,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2014,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "CHI",
@@ -93895,6 +96746,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2019,
         "endYear": 2019
       },
       {
@@ -93967,7 +96828,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -94072,7 +96933,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "WAS",
@@ -94183,7 +97044,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -94202,12 +97063,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "CHI",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "NO",
@@ -94255,7 +97116,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "PHI",
@@ -94334,6 +97200,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAR",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "NO",
@@ -94429,7 +97300,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "DAL",
@@ -94459,6 +97335,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2016,
         "endYear": 2017
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "NYJ",
@@ -94540,7 +97421,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "JAX",
@@ -94553,9 +97434,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CLE",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "TEN",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "MIN",
@@ -94639,9 +97535,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qrpgrvert4l7zh8ghcks",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "LAR",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "BUF",
@@ -94674,35 +97580,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mekhi-blackmon"
-  },
-  {
-    "fullName": "Michael Palardy",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vvi2q0cetjssx2hjetdm",
-    "teamStints": [
-      {
-        "teamId": "CAR",
-        "startYear": 2016,
-        "endYear": 2020
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 2021,
-        "endYear": 2021
-      },
-      {
-        "teamId": "NE",
-        "startYear": 2022,
-        "endYear": 2022
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 2024,
-        "endYear": 2024
-      }
-    ],
-    "id": "michael-palardy"
   },
   {
     "fullName": "Mike Dumas",
@@ -94742,12 +97619,27 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "HOU",
@@ -94780,6 +97672,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "rickey-dudley"
+  },
+  {
+    "fullName": "Ryan Allen",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zjzneh4hbafefnduix4t",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 2013,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2020,
+        "endYear": 2020
+      }
+    ],
+    "id": "ryan-allen"
   },
   {
     "fullName": "Billy Miller",
@@ -95134,7 +98055,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "LAC",
@@ -95255,6 +98176,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "LAR",
@@ -95392,7 +98318,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2021
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2022,
+        "endYear": 2023
       },
       {
         "teamId": "NE",
@@ -95420,6 +98356,55 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "cliff-thrift"
+  },
+  {
+    "fullName": "Corliss Waitman",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wdovcclcrrlur2fqsrl1",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2024,
+        "endYear": 2025
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "corliss-waitman"
   },
   {
     "fullName": "Curtis McGriff",
@@ -95582,6 +98567,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2022,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2025,
         "endYear": 2025
       },
       {
@@ -95823,6 +98818,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c1zpafvz0qf5trkiaos5",
     "teamStints": [
       {
+        "teamId": "ATL",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "SEA",
         "startYear": 2016,
         "endYear": 2018
@@ -95930,7 +98930,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "PHI",
@@ -96676,6 +99676,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "LAC",
         "startYear": 2022,
         "endYear": 2022
@@ -96782,6 +99787,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "russell-gary"
+  },
+  {
+    "fullName": "Ryan Quigley",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x4iusmtkekesjjq4rcvn",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2013,
+        "endYear": 2015
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2017,
+        "endYear": 2018
+      }
+    ],
+    "id": "ryan-quigley"
   },
   {
     "fullName": "Sam Hunt",
@@ -97083,7 +100122,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "BUF",
@@ -97094,6 +100133,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "BUF",
@@ -97117,7 +100161,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "PHI",
@@ -97230,6 +100274,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "GB",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "PIT",
         "startYear": 2017,
         "endYear": 2017
@@ -97293,12 +100342,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
-        "teamId": "JAX",
+        "teamId": "IND",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "IND",
+        "teamId": "JAX",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -97341,9 +100390,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
-        "teamId": "ATL",
+        "teamId": "JAX",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2023,
+        "endYear": 2024
       },
       {
         "teamId": "HOU",
@@ -97362,7 +100421,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ATL",
@@ -97699,7 +100758,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "MIA",
@@ -99029,9 +102088,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
-        "teamId": "CLE",
+        "teamId": "BUF",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2018,
+        "endYear": 2019
       },
       {
         "teamId": "HOU",
@@ -99531,7 +102595,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NE",
@@ -99555,7 +102619,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LV",
@@ -99603,12 +102667,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "TB",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "LV",
@@ -99662,6 +102726,16 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/amguunwoi0t2witqj95b",
     "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2019,
+        "endYear": 2019
+      },
       {
         "teamId": "LAR",
         "startYear": 2019,
@@ -99848,12 +102922,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DEN",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -99986,6 +103070,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "BUF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "DEN",
         "startYear": 2025,
         "endYear": 2025
@@ -100031,7 +103120,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "BUF",
@@ -100124,28 +103213,28 @@ export const GENERATED_PLAYERS = [
     "id": "mike-gillislee"
   },
   {
-    "fullName": "Ryan Allen",
+    "fullName": "Mitch Wishnowsky",
     "position": "P",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zjzneh4hbafefnduix4t",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ze185rk7esznvfyontgq",
     "teamStints": [
       {
-        "teamId": "NE",
-        "startYear": 2013,
-        "endYear": 2018
-      },
-      {
-        "teamId": "ATL",
+        "teamId": "SF",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2024
       },
       {
-        "teamId": "IND",
-        "startYear": 2020,
-        "endYear": 2020
+        "teamId": "WAS",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2025,
+        "endYear": null
       }
     ],
-    "id": "ryan-allen"
+    "id": "mitch-wishnowsky"
   },
   {
     "fullName": "Spike Jones",
@@ -100449,7 +103538,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "MIN",
@@ -100487,40 +103576,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brandon-myers"
-  },
-  {
-    "fullName": "Corliss Waitman",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wdovcclcrrlur2fqsrl1",
-    "teamStints": [
-      {
-        "teamId": "PIT",
-        "startYear": 2020,
-        "endYear": 2021
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 2022,
-        "endYear": 2022
-      },
-      {
-        "teamId": "NE",
-        "startYear": 2023,
-        "endYear": 2023
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 2024,
-        "endYear": 2025
-      },
-      {
-        "teamId": "SF",
-        "startYear": 2026,
-        "endYear": null
-      }
-    ],
-    "id": "corliss-waitman"
   },
   {
     "fullName": "Dede Westbrook",
@@ -100726,6 +103781,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/n2pv9nadvjo5lhkhqqxd",
     "teamStints": [
       {
+        "teamId": "CIN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "BUF",
         "startYear": 2021,
         "endYear": 2021
@@ -100733,7 +103793,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "SF",
@@ -100776,35 +103836,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "richard-huntley"
-  },
-  {
-    "fullName": "Ryan Quigley",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x4iusmtkekesjjq4rcvn",
-    "teamStints": [
-      {
-        "teamId": "CHI",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 2013,
-        "endYear": 2015
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 2016,
-        "endYear": 2016
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 2017,
-        "endYear": 2018
-      }
-    ],
-    "id": "ryan-quigley"
   },
   {
     "fullName": "Sam Eguavoen",
@@ -100996,9 +104027,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "PHI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "HOU",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CHI",
@@ -101125,6 +104161,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "LV",
@@ -101352,6 +104393,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "MIN",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "LAC",
         "startYear": 2016,
         "endYear": 2016
@@ -101379,6 +104425,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "TB",
@@ -101414,12 +104465,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gbzujchd1dvqnefznflk",
     "teamStints": [
       {
-        "teamId": "CHI",
+        "teamId": "MIA",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "MIA",
+        "teamId": "CHI",
         "startYear": 2012,
         "endYear": 2012
       }
@@ -101435,7 +104486,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2014,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SF",
@@ -101451,6 +104502,16 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/twwwuticotuolt25lro6",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2017,
+        "endYear": 2017
+      },
       {
         "teamId": "WAS",
         "startYear": 2017,
@@ -101578,12 +104639,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "DAL",
+        "teamId": "DET",
         "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "DET",
+        "teamId": "DAL",
         "startYear": 2013,
         "endYear": 2013
       },
@@ -101631,9 +104692,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "LAR",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "JAX",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "SEA",
@@ -101689,6 +104765,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "HOU",
         "startYear": 2021,
         "endYear": 2022
@@ -101696,7 +104782,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "ATL",
@@ -101720,7 +104806,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "NYJ",
@@ -101755,6 +104841,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -101813,6 +104904,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2021,
         "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -101906,6 +105007,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "MIA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "DET",
         "startYear": 2025,
         "endYear": 2025
@@ -101922,12 +105028,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NO",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "ARI",
@@ -102004,7 +105110,27 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2020,
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2022,
         "endYear": 2023
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "DET",
@@ -102148,7 +105274,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2015,
+        "endYear": 2018
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2020
       },
       {
         "teamId": "CHI",
@@ -102167,7 +105303,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NYG",
@@ -102365,9 +105501,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "PIT",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "KC",
@@ -102497,6 +105648,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "LV",
@@ -103107,6 +106263,25 @@ export const GENERATED_PLAYERS = [
     "id": "horace-jones"
   },
   {
+    "fullName": "Jack Fox",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cu7wk5amr6jesgk0jdbb",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2019,
+        "endYear": null
+      }
+    ],
+    "id": "jack-fox"
+  },
+  {
     "fullName": "James Washington",
     "position": "DB",
     "difficulty": "impossible",
@@ -103406,7 +106581,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "PIT",
@@ -103598,6 +106773,50 @@ export const GENERATED_PLAYERS = [
     "id": "matt-darby"
   },
   {
+    "fullName": "Matt Wile",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kc49fupygehdcflcbuv3",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2016,
+        "endYear": 2017
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2020,
+        "endYear": 2020
+      }
+    ],
+    "id": "matt-wile"
+  },
+  {
     "fullName": "Mel Tom",
     "position": "DL",
     "difficulty": "impossible",
@@ -103682,25 +106901,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-thomas-2"
-  },
-  {
-    "fullName": "Mitch Wishnowsky",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ze185rk7esznvfyontgq",
-    "teamStints": [
-      {
-        "teamId": "SF",
-        "startYear": 2019,
-        "endYear": 2024
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 2025,
-        "endYear": null
-      }
-    ],
-    "id": "mitch-wishnowsky"
   },
   {
     "fullName": "Nemiah Wilson",
@@ -104034,6 +107234,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "SEA",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "TB",
         "startYear": 2016,
         "endYear": 2017
@@ -104332,7 +107537,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NYG",
@@ -104342,7 +107547,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NO",
@@ -104385,7 +107590,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "ARI",
@@ -104471,7 +107676,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
@@ -104641,15 +107846,49 @@ export const GENERATED_PLAYERS = [
     "id": "troy-walters"
   },
   {
+    "fullName": "Braden Mann",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wlu2hexio73a6ujddl97",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 2020,
+        "endYear": 2022
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": null
+      }
+    ],
+    "id": "braden-mann"
+  },
+  {
     "fullName": "Chris Lammons",
     "position": "DB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hsvo9haoilqskbcoclox",
     "teamStints": [
       {
-        "teamId": "MIA",
+        "teamId": "ATL",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2018,
+        "endYear": 2019
       },
       {
         "teamId": "KC",
@@ -104733,9 +107972,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "ARI",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "LV",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "GB",
@@ -104872,6 +108126,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "LAC",
         "startYear": 2024,
         "endYear": 2024
@@ -104934,12 +108193,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qpptamzmljqkzqvndhyr",
     "teamStints": [
       {
-        "teamId": "JAX",
+        "teamId": "SF",
         "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "SF",
+        "teamId": "JAX",
         "startYear": 2013,
         "endYear": 2013
       },
@@ -104999,7 +108258,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -105098,6 +108362,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "SF",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "HOU",
         "startYear": 2020,
         "endYear": 2020
@@ -105119,7 +108388,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2008,
-        "endYear": 2012
+        "endYear": 2011
       },
       {
         "teamId": "MIA",
@@ -105128,11 +108397,16 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "DET",
-        "startYear": 2013,
-        "endYear": 2015
+        "startYear": 2012,
+        "endYear": 2014
       },
       {
         "teamId": "BUF",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "DET",
         "startYear": 2015,
         "endYear": 2015
       }
@@ -105296,12 +108570,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CIN",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -105326,6 +108610,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "HOU",
@@ -105402,15 +108691,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2011,
-        "endYear": 2012
-      },
-      {
-        "teamId": "LV",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "NO",
+        "teamId": "LV",
         "startYear": 2013,
         "endYear": 2013
       },
@@ -105556,6 +108840,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2014,
+        "endYear": 2017
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2018,
         "endYear": 2018
       },
       {
@@ -105619,7 +108913,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TB",
@@ -105628,6 +108922,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "drew-stanton"
+  },
+  {
+    "fullName": "Jeff Locke",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ehxspsqfck3sz2ju7t6x",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2013,
+        "endYear": 2016
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2018,
+        "endYear": 2018
+      }
+    ],
+    "id": "jeff-locke"
   },
   {
     "fullName": "Justin King",
@@ -105710,6 +109033,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kellen-davis"
+  },
+  {
+    "fullName": "Lac Edwards",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uodzbflbpzpfcksmmchs",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 2016,
+        "endYear": 2020
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
+      }
+    ],
+    "id": "lac-edwards"
   },
   {
     "fullName": "Lorenzo Neal",
@@ -105834,6 +109186,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "PIT",
         "startYear": 2021,
         "endYear": 2024
@@ -105882,9 +109239,29 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "KC",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "HOU",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "SF",
@@ -105966,7 +109343,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NO",
@@ -106055,6 +109432,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "CAR",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "JAX",
         "startYear": 2025,
         "endYear": null
@@ -106071,7 +109453,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "DET",
@@ -106165,6 +109547,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "MIA",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "BUF",
         "startYear": 2016,
         "endYear": 2016
@@ -106237,6 +109624,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "HOU",
         "startYear": 2021,
         "endYear": 2022
@@ -106244,7 +109636,32 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "LAC",
@@ -106269,6 +109686,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "KC",
@@ -106298,6 +109720,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2018,
         "endYear": 2019
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "CIN",
@@ -106562,6 +109989,55 @@ export const GENERATED_PLAYERS = [
     "id": "pete-hunter"
   },
   {
+    "fullName": "Ryan Santoso",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iifjlwrnkdopawd1ve0e",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2022
+      }
+    ],
+    "id": "ryan-santoso"
+  },
+  {
     "fullName": "Sean Harris",
     "position": "LB",
     "difficulty": "impossible",
@@ -106593,6 +110069,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LAR",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "LAC",
         "startYear": 2016,
         "endYear": 2016
       }
@@ -106627,7 +110108,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2008,
-        "endYear": 2010
+        "endYear": 2011
       },
       {
         "teamId": "WAS",
@@ -106637,25 +110118,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "IND",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "BUF",
+        "teamId": "IND",
         "startYear": 2013,
         "endYear": 2013
       }
@@ -106685,6 +110151,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "taylor-mays"
+  },
+  {
+    "fullName": "Theo Jackson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mv5djthxcl8tnzdc7xhi",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2022,
+        "endYear": null
+      }
+    ],
+    "id": "theo-jackson"
   },
   {
     "fullName": "Brian Williams",
@@ -106876,6 +110361,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "SF",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "BUF",
         "startYear": 2020,
         "endYear": 2020
@@ -107032,7 +110522,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "TEN",
@@ -107092,19 +110582,49 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/evg4gksrlpyjegvfrk0m",
     "teamStints": [
       {
+        "teamId": "KC",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "LV",
         "startYear": 2016,
         "endYear": 2017
       },
       {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "HOU",
         "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "IND",
@@ -107126,9 +110646,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "ATL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "MIN",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "SEA",
@@ -107180,25 +110710,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "benny-cunningham"
-  },
-  {
-    "fullName": "Braden Mann",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wlu2hexio73a6ujddl97",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 2020,
-        "endYear": 2022
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2023,
-        "endYear": null
-      }
-    ],
-    "id": "braden-mann"
   },
   {
     "fullName": "Darrel Young",
@@ -107284,6 +110795,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "BUF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "LAR",
         "startYear": 2021,
         "endYear": 2021
@@ -107291,7 +110807,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NYG",
@@ -107313,6 +110829,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "DAL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "NYG",
         "startYear": 2022,
         "endYear": 2022
@@ -107324,6 +110845,55 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "james-washington-2"
+  },
+  {
+    "fullName": "Johnny Townsend",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mot4paecc8mni8fjzk3c",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2021,
+        "endYear": 2021
+      }
+    ],
+    "id": "johnny-townsend"
   },
   {
     "fullName": "Richie James",
@@ -107348,6 +110918,50 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "richie-james"
+  },
+  {
+    "fullName": "Ryan Winslow",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ohgcqyo1cadcdmpdwu66",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      }
+    ],
+    "id": "ryan-winslow"
   },
   {
     "fullName": "Saverio Rocca",
@@ -107411,7 +111025,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2020,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "MIA",
@@ -107517,7 +111131,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "IND",
@@ -107530,6 +111154,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "IND",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "ARI",
         "startYear": 2019,
         "endYear": 2019
@@ -107538,6 +111167,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "LAC",
@@ -107556,7 +111190,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "KC",
@@ -107720,7 +111354,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "IND",
@@ -107816,7 +111450,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "MIN",
@@ -108008,7 +111647,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2014,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "BAL",
@@ -108046,7 +111685,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "IND",
@@ -108084,7 +111723,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CAR",
@@ -108093,30 +111737,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jacob-tuioti-mariner"
-  },
-  {
-    "fullName": "Jeff Locke",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ehxspsqfck3sz2ju7t6x",
-    "teamStints": [
-      {
-        "teamId": "MIN",
-        "startYear": 2013,
-        "endYear": 2016
-      },
-      {
-        "teamId": "DET",
-        "startYear": 2017,
-        "endYear": 2017
-      },
-      {
-        "teamId": "SF",
-        "startYear": 2018,
-        "endYear": 2018
-      }
-    ],
-    "id": "jeff-locke"
   },
   {
     "fullName": "Kellen Clemens",
@@ -108138,30 +111758,6 @@ export const GENERATED_PLAYERS = [
     "id": "kellen-clemens"
   },
   {
-    "fullName": "Lac Edwards",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uodzbflbpzpfcksmmchs",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 2016,
-        "endYear": 2019
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 2020,
-        "endYear": 2020
-      },
-      {
-        "teamId": "CAR",
-        "startYear": 2021,
-        "endYear": 2021
-      }
-    ],
-    "id": "lac-edwards"
-  },
-  {
     "fullName": "Luke Willson",
     "position": "TE",
     "difficulty": "hard",
@@ -108178,8 +111774,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "SEA",
         "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2020,
         "endYear": 2020
       }
     ],
@@ -108194,7 +111800,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "CHI",
@@ -108202,9 +111808,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
-        "teamId": "HOU",
+        "teamId": "BUF",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2017,
+        "endYear": 2018
       },
       {
         "teamId": "TEN",
@@ -108243,7 +111854,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "CLE",
@@ -108262,7 +111873,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NO",
@@ -108554,21 +112165,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2010,
-        "endYear": 2010
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "IND",
-        "startYear": 2011,
         "endYear": 2011
       },
       {
         "teamId": "NYG",
-        "startYear": 2012,
+        "startYear": 2011,
         "endYear": 2012
       }
     ],
@@ -108639,6 +112240,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "JAX",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "CAR",
         "startYear": 2019,
         "endYear": 2019
@@ -108655,7 +112266,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "MIA",
@@ -108663,9 +112274,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "NO",
+        "teamId": "NYJ",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -108682,9 +112298,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jdctffinrrvlsrrih5sa",
     "teamStints": [
       {
+        "teamId": "NYJ",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "LAC",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "JAX",
@@ -108714,6 +112340,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "WAS",
@@ -108751,7 +112382,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CAR",
@@ -108797,6 +112428,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "CLE",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2016,
         "endYear": 2017
@@ -108833,7 +112474,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -108862,7 +112503,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "NYG",
@@ -108976,7 +112617,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -109075,6 +112716,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "PHI",
         "startYear": 2021,
         "endYear": 2021
@@ -109144,35 +112790,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "marcus-burley"
-  },
-  {
-    "fullName": "Matt Wile",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kc49fupygehdcflcbuv3",
-    "teamStints": [
-      {
-        "teamId": "ARI",
-        "startYear": 2016,
-        "endYear": 2017
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 2018,
-        "endYear": 2018
-      },
-      {
-        "teamId": "DET",
-        "startYear": 2019,
-        "endYear": 2019
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2020,
-        "endYear": 2020
-      }
-    ],
-    "id": "matt-wile"
   },
   {
     "fullName": "Mike Wells",
@@ -109261,40 +112878,6 @@ export const GENERATED_PLAYERS = [
     "id": "reggie-white"
   },
   {
-    "fullName": "Ryan Santoso",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iifjlwrnkdopawd1ve0e",
-    "teamStints": [
-      {
-        "teamId": "DET",
-        "startYear": 2018,
-        "endYear": 2018
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 2019,
-        "endYear": 2019
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2020,
-        "endYear": 2020
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 2021,
-        "endYear": 2021
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2022,
-        "endYear": 2022
-      }
-    ],
-    "id": "ryan-santoso"
-  },
-  {
     "fullName": "Spencer Paysinger",
     "position": "OLB",
     "difficulty": "impossible",
@@ -109309,6 +112892,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2015,
         "endYear": 2016
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "CAR",
@@ -109332,7 +112920,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LV",
@@ -109380,7 +112968,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NYJ",
@@ -109508,13 +113096,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "LV",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
         "teamId": "BUF",
         "startYear": 2011,
         "endYear": 2011
       },
       {
         "teamId": "LV",
-        "startYear": 2011,
+        "startYear": 2012,
         "endYear": 2012
       },
       {
@@ -109590,6 +113183,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CHI",
         "startYear": 2022,
         "endYear": 2022
@@ -109597,7 +113195,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "WAS",
@@ -109616,7 +113214,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "DET",
@@ -109634,6 +113232,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "ARI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "CLE",
         "startYear": 2023,
         "endYear": 2023
@@ -109641,6 +113244,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2025,
         "endYear": null
       }
     ],
@@ -109727,6 +113345,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2019,
         "endYear": 2019
       },
       {
@@ -109742,7 +113370,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYG",
@@ -109840,6 +113468,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "KC",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "CLE",
         "startYear": 2020,
         "endYear": 2021
@@ -109877,6 +113510,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NE",
@@ -110073,7 +113716,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CIN",
@@ -110117,6 +113760,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2022,
         "endYear": 2024
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "TEN",
@@ -110265,6 +113913,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2024,
         "endYear": 2024
       }
     ],
@@ -110306,14 +113964,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "NYJ",
+        "teamId": "PHI",
         "startYear": 2019,
         "endYear": 2019
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
         "teamId": "PHI",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "LAR",
@@ -110332,22 +114000,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2013,
-        "endYear": 2014
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
-        "teamId": "LV",
-        "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "DAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "MIA",
@@ -110366,6 +114034,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2017,
+        "endYear": 2019
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2020,
         "endYear": 2024
       },
       {
@@ -110658,7 +114336,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
@@ -110715,15 +114393,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2011,
-        "endYear": 2013
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "JAX",
+        "teamId": "PHI",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -110874,7 +114547,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TEN",
@@ -110912,7 +114585,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LV",
@@ -110922,7 +114595,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "KC",
@@ -110941,7 +114614,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "HOU",
@@ -110979,7 +114652,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -111406,9 +115079,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "IND",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NYJ",
@@ -111557,7 +115240,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -111644,6 +115342,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NYJ",
@@ -111830,7 +115533,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "PHI",
@@ -111855,6 +115558,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "ARI",
@@ -111990,7 +115698,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "CIN",
@@ -112079,6 +115792,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bjwxl8bgghmzepitopga",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "IND",
         "startYear": 2022,
         "endYear": 2023
@@ -112140,6 +115858,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "HOU",
@@ -112247,9 +115970,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "BAL",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "ATL",
@@ -112480,12 +116213,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2016,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TEN",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "CLE",
@@ -112504,12 +116242,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NYJ",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "DET",
@@ -112517,9 +116255,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "GB",
         "startYear": 2022,
         "endYear": 2024
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "DAL",
@@ -112678,7 +116426,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "TEN",
@@ -112707,12 +116455,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "PIT",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "LAR",
@@ -112722,7 +116480,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "SF",
@@ -112763,12 +116521,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "NE",
+        "teamId": "ATL",
         "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "ATL",
+        "teamId": "NE",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -112857,12 +116615,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "BAL",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "ARI",
@@ -112969,6 +116732,40 @@ export const GENERATED_PLAYERS = [
     "id": "andre-brown"
   },
   {
+    "fullName": "Cameron Nizialek",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p3yj7bwxc0fyipklbgeh",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2022
+      }
+    ],
+    "id": "cameron-nizialek"
+  },
+  {
     "fullName": "Charles Johnson",
     "position": "WR",
     "difficulty": "impossible",
@@ -113026,6 +116823,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2016,
         "endYear": 2019
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "MIA",
@@ -113095,6 +116897,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "KC",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "NE",
         "startYear": 2025,
         "endYear": null
@@ -113114,6 +116921,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "LAR",
         "startYear": 2025,
         "endYear": null
@@ -113131,6 +116943,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CIN",
@@ -113160,47 +116982,18 @@ export const GENERATED_PLAYERS = [
     "id": "jason-bell"
   },
   {
-    "fullName": "Johnny Townsend",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mot4paecc8mni8fjzk3c",
-    "teamStints": [
-      {
-        "teamId": "LV",
-        "startYear": 2018,
-        "endYear": 2018
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2019,
-        "endYear": 2019
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 2020,
-        "endYear": 2020
-      },
-      {
-        "teamId": "KC",
-        "startYear": 2021,
-        "endYear": 2021
-      }
-    ],
-    "id": "johnny-townsend"
-  },
-  {
     "fullName": "Jordan Todman",
     "position": "RB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lhoxroo20gf8a3mbiczr",
     "teamStints": [
       {
-        "teamId": "MIN",
+        "teamId": "LAC",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "LAC",
+        "teamId": "MIN",
         "startYear": 2011,
         "endYear": 2011
       },
@@ -113239,12 +117032,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
-        "teamId": "NYJ",
+        "teamId": "SEA",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "SEA",
+        "teamId": "NYJ",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -113391,35 +117184,6 @@ export const GENERATED_PLAYERS = [
     "id": "noah-brown"
   },
   {
-    "fullName": "Ryan Winslow",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ohgcqyo1cadcdmpdwu66",
-    "teamStints": [
-      {
-        "teamId": "CHI",
-        "startYear": 2018,
-        "endYear": 2018
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 2019,
-        "endYear": 2019
-      },
-      {
-        "teamId": "GB",
-        "startYear": 2020,
-        "endYear": 2020
-      },
-      {
-        "teamId": "SF",
-        "startYear": 2021,
-        "endYear": 2021
-      }
-    ],
-    "id": "ryan-winslow"
-  },
-  {
     "fullName": "Sam Paulescu",
     "position": "P",
     "difficulty": "impossible",
@@ -113486,6 +117250,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2012,
+        "endYear": 2014
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2015,
         "endYear": 2015
       },
       {
@@ -113494,19 +117263,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
-        "teamId": "NE",
+        "teamId": "NO",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2017
       },
       {
-        "teamId": "NO",
-        "startYear": 2016,
-        "endYear": 2016
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "CAR",
@@ -113515,6 +117284,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "travaris-cadet"
+  },
+  {
+    "fullName": "Trenton Gill",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ihzhc60zpmcx31ujp43f",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2023
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2025,
+        "endYear": 2025
+      }
+    ],
+    "id": "trenton-gill"
   },
   {
     "fullName": "Vernon Fox",
@@ -113667,18 +117465,13 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tuarj8tj0cyrqr70cfga",
     "teamStints": [
       {
-        "teamId": "TB",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
         "teamId": "SEA",
         "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "TB",
-        "startYear": 2013,
+        "startYear": 2012,
         "endYear": 2013
       },
       {
@@ -113775,7 +117568,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "LAC",
@@ -113831,19 +117624,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "BUF",
+        "teamId": "IND",
         "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "IND",
+        "teamId": "BUF",
         "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -113866,9 +117659,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "BAL",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "SF",
@@ -113905,6 +117708,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "ARI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "TEN",
         "startYear": 2023,
         "endYear": 2023
@@ -113913,6 +117721,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "HOU",
@@ -114036,18 +117849,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
-        "teamId": "GB",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
         "teamId": "BUF",
         "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "GB",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2014
       },
       {
@@ -114287,15 +118095,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "NO",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "WAS",
+        "teamId": "NO",
         "startYear": 2013,
         "endYear": 2013
       }
@@ -114316,6 +118119,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2021,
+        "endYear": 2022
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2023,
         "endYear": 2023
       },
       {
@@ -114335,7 +118148,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "SF",
@@ -114378,7 +118191,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -114397,7 +118210,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "PIT",
@@ -114412,7 +118225,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "NYG",
@@ -114428,6 +118241,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "LAR",
@@ -114540,6 +118358,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "MIN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "KC",
         "startYear": 2020,
         "endYear": 2020
@@ -114548,6 +118371,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "SF",
@@ -114574,6 +118402,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "NE",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "DET",
         "startYear": 2016,
         "endYear": 2016
@@ -114593,9 +118426,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wp2h4aiwa4dlebv35kw8",
     "teamStints": [
       {
+        "teamId": "JAX",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "MIA",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "WAS",
@@ -114606,6 +118449,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "DAL",
@@ -114624,7 +118472,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "HOU",
@@ -114651,6 +118499,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NE",
         "startYear": 2017,
         "endYear": 2017
@@ -114658,7 +118511,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NE",
@@ -114677,7 +118530,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "PHI",
@@ -114790,9 +118648,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/jmwlrbcsuzckrohnwgdu",
     "teamStints": [
       {
-        "teamId": "WAS",
+        "teamId": "SEA",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2023,
+        "endYear": 2024
       },
       {
         "teamId": "LV",
@@ -114812,6 +118680,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2020,
         "endYear": 2022
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "TEN",
@@ -114835,7 +118708,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2020,
+        "endYear": 2022
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TB",
@@ -114904,6 +118792,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dn1pbjkr2j0u5i098jsl",
     "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2023,
+        "endYear": 2023
+      },
       {
         "teamId": "ARI",
         "startYear": 2023,
@@ -115007,6 +118900,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "NE",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "HOU",
         "startYear": 2024,
         "endYear": 2024
@@ -115024,6 +118922,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2015,
         "endYear": 2017
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "NYG",
@@ -115063,6 +118966,30 @@ export const GENERATED_PLAYERS = [
     "id": "brad-wing"
   },
   {
+    "fullName": "Brian Johnson",
+    "position": "K",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/chpdthcaocrvpj7b6i3a",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2021,
+        "endYear": 2022
+      }
+    ],
+    "id": "brian-johnson"
+  },
+  {
     "fullName": "Corwin Brown",
     "position": "DB",
     "difficulty": "impossible",
@@ -115095,7 +119022,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "HOU",
@@ -115270,6 +119197,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "MIA",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NO",
         "startYear": 2019,
         "endYear": 2020
@@ -115351,22 +119283,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
-        "teamId": "BUF",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
         "teamId": "TB",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "LV",
-        "startYear": 2015,
+        "teamId": "BUF",
+        "startYear": 2014,
         "endYear": 2015
       },
       {
-        "teamId": "BUF",
+        "teamId": "LV",
         "startYear": 2015,
         "endYear": 2015
       }
@@ -115497,12 +119424,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NYJ",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NO",
@@ -115522,6 +119459,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2020,
         "endYear": 2022
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "CLE",
@@ -115603,7 +119545,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CAR",
@@ -115633,6 +119575,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2015,
         "endYear": 2015
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "ARI",
@@ -115823,6 +119770,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "JAX",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "TEN",
         "startYear": 2023,
         "endYear": 2023
@@ -115914,6 +119871,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tme9lcxq2t6juw3jbzvg",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "TEN",
         "startYear": 2020,
         "endYear": 2020
@@ -115965,6 +119927,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2015,
         "endYear": 2015
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "SF",
@@ -116041,7 +120008,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SEA",
@@ -116052,28 +120019,23 @@ export const GENERATED_PLAYERS = [
     "id": "branden-jackson"
   },
   {
-    "fullName": "Cameron Nizialek",
-    "position": "P",
+    "fullName": "Brayden Narveson",
+    "position": "K",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p3yj7bwxc0fyipklbgeh",
+    "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/pqzbcchxxgyks1wphxaq",
     "teamStints": [
       {
-        "teamId": "BAL",
-        "startYear": 2019,
-        "endYear": 2019
+        "teamId": "GB",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
-        "teamId": "JAX",
-        "startYear": 2020,
-        "endYear": 2020
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 2021,
-        "endYear": 2022
+        "teamId": "TEN",
+        "startYear": 2024,
+        "endYear": 2024
       }
     ],
-    "id": "cameron-nizialek"
+    "id": "brayden-narveson"
   },
   {
     "fullName": "Carlos Polk",
@@ -116147,6 +120109,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2022,
         "endYear": 2024
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CAR",
@@ -116237,12 +120204,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "GB",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "SF",
@@ -116319,7 +120291,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "NYG",
@@ -116384,12 +120356,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g3hlqbn08gzx7cneob5i",
     "teamStints": [
       {
-        "teamId": "TEN",
+        "teamId": "SF",
         "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "SF",
+        "teamId": "TEN",
         "startYear": 2013,
         "endYear": 2013
       }
@@ -116408,9 +120380,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NYG",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "KC",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -116432,18 +120414,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "NYJ",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
         "teamId": "TB",
         "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "NYJ",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -116481,7 +120458,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Nick Rose",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/chmmra7hpcnoibks3uwu",
     "teamStints": [
       {
@@ -116490,8 +120467,28 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "SF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "LAC",
         "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2018,
         "endYear": 2018
       }
     ],
@@ -116605,36 +120602,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "GB",
         "startYear": 2019,
         "endYear": 2020
       }
     ],
     "id": "ryan-grant-2"
-  },
-  {
-    "fullName": "Trenton Gill",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ihzhc60zpmcx31ujp43f",
-    "teamStints": [
-      {
-        "teamId": "CHI",
-        "startYear": 2022,
-        "endYear": 2023
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2024,
-        "endYear": 2024
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 2025,
-        "endYear": 2025
-      }
-    ],
-    "id": "trenton-gill"
   },
   {
     "fullName": "Zoltan Mesko",
@@ -116717,7 +120695,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -116728,6 +120706,21 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "KC",
@@ -116775,7 +120768,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "DET",
@@ -116981,7 +120974,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "NO",
@@ -117056,6 +121054,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "IND",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "SEA",
         "startYear": 2016,
         "endYear": 2020
@@ -117075,9 +121078,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "NYG",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "PIT",
@@ -117096,7 +121109,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2016,
+        "endYear": 2017
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "LAR",
@@ -117199,9 +121227,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
-        "teamId": "TEN",
+        "teamId": "IND",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "JAX",
@@ -117240,7 +121283,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "CLE",
@@ -117249,6 +121292,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jermaine-whitehead"
+  },
+  {
+    "fullName": "Joseph Charlton",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfkwyjmsjc28dm2oosbe",
+    "teamStints": [
+      {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2021
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2022,
+        "endYear": 2022
+      }
+    ],
+    "id": "joseph-charlton"
   },
   {
     "fullName": "Josh Doctson",
@@ -117330,6 +121402,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "DET",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "WAS",
         "startYear": 2018,
         "endYear": 2019
@@ -117409,6 +121486,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
         "endYear": 2017
       }
     ],
@@ -117481,6 +121568,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2015,
         "endYear": 2017
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "CIN",
@@ -117569,6 +121661,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "SF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2017,
         "endYear": 2018
@@ -117585,12 +121682,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "LV",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "ARI",
@@ -117668,6 +121765,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "MIA",
@@ -117765,6 +121867,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pzy5s5lmyruhy2rsn9nk",
     "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
       {
         "teamId": "BUF",
         "startYear": 2019,
@@ -118044,7 +122151,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "TB",
@@ -118167,6 +122274,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oyuxbmwa3ciatwk6days",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NE",
         "startYear": 2017,
         "endYear": 2017
@@ -118175,6 +122287,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -118278,9 +122400,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
-        "teamId": "LAR",
+        "teamId": "MIN",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2024,
+        "endYear": 2025
       },
       {
         "teamId": "MIA",
@@ -118305,6 +122432,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2015,
         "endYear": 2016
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "CAR",
@@ -118379,6 +122511,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "LAR",
         "startYear": 2021,
         "endYear": 2022
@@ -118419,12 +122556,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "ARI",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -118572,6 +122714,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "LV",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "SEA",
         "startYear": 2022,
         "endYear": 2022
@@ -118684,7 +122836,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "WAS",
@@ -118708,6 +122860,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2025,
         "endYear": 2025
       }
     ],
@@ -118775,7 +122937,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "BAL",
@@ -118810,6 +122972,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "SEA",
@@ -118848,6 +123020,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2023,
+        "endYear": 2024
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2025,
         "endYear": null
       }
     ],
@@ -118862,12 +123044,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "CHI",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "LAR",
@@ -119006,13 +123188,23 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Tristan Vizcaino",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zlx15hqrvxgwndds1dwz",
     "teamStints": [
       {
         "teamId": "CIN",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "BUF",
@@ -119023,6 +123215,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DAL",
@@ -119077,6 +123279,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rw5les3fauylkih12alw",
     "teamStints": [
       {
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "KC",
         "startYear": 2017,
         "endYear": 2017
@@ -119092,9 +123299,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "NE",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "DET",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "KC",
@@ -119171,7 +123388,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "GB",
@@ -119217,9 +123434,29 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x41bejite2v9y7bbjunk",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "DAL",
         "startYear": 2017,
         "endYear": 2019
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -119377,7 +123614,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "CAR",
@@ -119564,7 +123801,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "LAR",
@@ -119745,21 +123982,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2014,
-        "endYear": 2014
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "SEA",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -120019,11 +124246,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "BUF",
         "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2018,
         "endYear": 2018
       },
       {
@@ -120125,12 +124362,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NO",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LAR",
@@ -120149,11 +124386,26 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "NYG",
         "startYear": 2022,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2025,
         "endYear": null
       }
     ],
@@ -120165,6 +124417,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k8pwu68vsixcs5d6uoww",
     "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
       {
         "teamId": "LAC",
         "startYear": 2019,
@@ -120618,7 +124875,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "PHI",
@@ -120697,12 +124954,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
-        "teamId": "SF",
+        "teamId": "TB",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "TB",
+        "teamId": "SF",
         "startYear": 2014,
         "endYear": 2014
       }
@@ -120737,7 +124994,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "KC",
@@ -120780,7 +125037,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2015,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -120818,7 +125085,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -120831,9 +125103,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "CLE",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "CHI",
@@ -120970,6 +125252,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "PHI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "ATL",
         "startYear": 2018,
         "endYear": 2018
@@ -121066,6 +125353,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "BAL",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "TB",
         "startYear": 2025,
         "endYear": 2025
@@ -121117,6 +125414,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "NYJ",
@@ -121270,7 +125572,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "LAR",
@@ -121404,7 +125706,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "BAL",
@@ -121477,6 +125779,30 @@ export const GENERATED_PLAYERS = [
     "id": "arrelious-benn"
   },
   {
+    "fullName": "Brad Robbins",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dksax39lmz9o8d72tatl",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2023,
+        "endYear": 2024
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2025,
+        "endYear": 2025
+      }
+    ],
+    "id": "brad-robbins"
+  },
+  {
     "fullName": "Carl Davis",
     "position": "DL",
     "difficulty": "impossible",
@@ -121490,12 +125816,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "JAX",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NE",
@@ -121503,9 +125834,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
-        "teamId": "DAL",
+        "teamId": "SEA",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2023,
+        "endYear": 2024
       },
       {
         "teamId": "WAS",
@@ -121527,9 +125863,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
-        "teamId": "DET",
+        "teamId": "CIN",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2018
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "CIN",
@@ -121539,7 +125885,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "BAL",
@@ -121691,6 +126037,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "KC",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CLE",
         "startYear": 2022,
         "endYear": 2022
@@ -121713,6 +126064,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2015,
         "endYear": 2015
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "SEA",
@@ -121744,8 +126100,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "NE",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "ATL",
         "startYear": 2016,
+        "endYear": 2017
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2017,
         "endYear": 2017
       }
     ],
@@ -121768,36 +126134,22 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "BAL",
         "startYear": 2019,
         "endYear": 2021
       }
     ],
     "id": "jordan-richards"
-  },
-  {
-    "fullName": "Joseph Charlton",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfkwyjmsjc28dm2oosbe",
-    "teamStints": [
-      {
-        "teamId": "CAR",
-        "startYear": 2020,
-        "endYear": 2020
-      },
-      {
-        "teamId": "JAX",
-        "startYear": 2021,
-        "endYear": 2021
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 2022,
-        "endYear": 2022
-      }
-    ],
-    "id": "joseph-charlton"
   },
   {
     "fullName": "Josh Shaw",
@@ -121808,7 +126160,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "TB",
@@ -121856,7 +126213,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2014,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "BAL",
@@ -121885,7 +126242,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "PIT",
@@ -122024,7 +126381,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NYJ",
@@ -122141,6 +126498,35 @@ export const GENERATED_PLAYERS = [
     "id": "mike-wood"
   },
   {
+    "fullName": "Nolan Cooney",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wu3omhleeh9heanwbu1o",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "nolan-cooney"
+  },
+  {
     "fullName": "Patrick Pass",
     "position": "RB",
     "difficulty": "impossible",
@@ -122168,17 +126554,32 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
         "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2019,
         "endYear": 2019
       },
       {
         "teamId": "CAR",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NYG",
@@ -122340,6 +126741,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "IND",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "SF",
         "startYear": 2018,
         "endYear": 2018
@@ -122495,6 +126901,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "KC",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "CLE",
         "startYear": 2024,
         "endYear": 2025
@@ -122520,6 +126931,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "DET",
         "startYear": 2024,
         "endYear": 2024
       },
@@ -122612,6 +127028,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2025,
         "endYear": 2025
       },
       {
@@ -122631,7 +127057,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "KC",
@@ -122650,7 +127076,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NYJ",
@@ -122860,6 +127286,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "MIN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "DAL",
         "startYear": 2021,
         "endYear": 2021
@@ -122877,6 +127308,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2016,
         "endYear": 2018
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "DET",
@@ -122927,9 +127363,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "DEN",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "NO",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -122999,6 +127440,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "MIA",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "WAS",
         "startYear": 2023,
         "endYear": 2023
@@ -123034,7 +127480,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "LAC",
@@ -123085,6 +127536,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "MIN",
         "startYear": 2022,
         "endYear": 2023
@@ -123116,12 +127572,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "BUF",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "DEN",
@@ -123178,9 +127639,19 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Matt McCrane",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hjhlqbsu7f8sas7ozzar",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2018,
+        "endYear": 2018
+      },
       {
         "teamId": "PIT",
         "startYear": 2018,
@@ -123190,6 +127661,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "PHI",
@@ -123328,7 +127804,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "TEN",
@@ -123438,7 +127914,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "IND",
@@ -123539,7 +128015,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "LAR",
@@ -123549,7 +128025,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "IND",
@@ -123648,6 +128124,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "TB",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "SF",
         "startYear": 2020,
         "endYear": 2020
@@ -123656,6 +128137,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "MIN",
@@ -123684,7 +128170,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "CLE",
@@ -123694,7 +128180,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "MIA",
@@ -123737,15 +128223,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "DET",
+        "teamId": "WAS",
         "startYear": 2012,
         "endYear": 2012
       }
@@ -123761,7 +128242,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "KC",
@@ -123799,7 +128280,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2011,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "TEN",
@@ -123810,6 +128291,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "MIN",
@@ -123922,9 +128408,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "GB",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "PHI",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CAR",
@@ -123933,6 +128429,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "treyvon-hester"
+  },
+  {
+    "fullName": "Ty Zentner",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/rmprz572lgnxuojnxh5p",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2023,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "ty-zentner"
   },
   {
     "fullName": "Ben Banogu",
@@ -123962,12 +128487,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DAL",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "BUF",
@@ -124015,6 +128545,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "NO",
         "startYear": 2022,
         "endYear": 2022
       }
@@ -124163,9 +128698,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DEN",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "MIA",
@@ -124199,7 +128744,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NE",
@@ -124261,7 +128806,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "NE",
@@ -124328,17 +128873,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2012,
-        "endYear": 2013
+        "endYear": 2014
       },
       {
         "teamId": "DEN",
         "startYear": 2014,
-        "endYear": 2014
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 2014,
-        "endYear": 2014
+        "endYear": 2015
       },
       {
         "teamId": "BUF",
@@ -124347,7 +128887,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "DEN",
-        "startYear": 2015,
+        "startYear": 2016,
         "endYear": 2016
       }
     ],
@@ -124405,15 +128945,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2013,
-        "endYear": 2014
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "JAX",
+        "teamId": "CHI",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -124428,6 +128963,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "SF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "CIN",
         "startYear": 2019,
         "endYear": 2019
@@ -124436,6 +128976,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "NE",
@@ -124462,14 +129007,34 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "SF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "ARI",
         "startYear": 2017,
         "endYear": 2017
       },
       {
+        "teamId": "CIN",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "BUF",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "ATL",
@@ -124479,7 +129044,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "JAX",
@@ -124588,19 +129158,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zmhmhduytwid1kjim5rp",
     "teamStints": [
       {
-        "teamId": "DAL",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
         "teamId": "SEA",
         "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "DAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "LV",
@@ -124624,7 +129199,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "TB",
@@ -124648,12 +129223,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CAR",
         "startYear": 2020,
         "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "WAS",
@@ -124792,12 +129372,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "SF",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "CAR",
@@ -124821,6 +129401,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2024,
         "endYear": 2024
       },
       {
@@ -124846,6 +129436,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2015,
         "endYear": 2015
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "TB",
@@ -124907,7 +129502,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -125015,6 +129615,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "GB",
         "startYear": 2023,
         "endYear": 2023
@@ -125022,7 +129632,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CAR",
@@ -125125,6 +129735,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "KC",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "BAL",
         "startYear": 2017,
         "endYear": 2017
@@ -125146,7 +129761,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -125214,7 +129834,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NYG",
@@ -125238,10 +129863,25 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2015,
+        "endYear": 2016
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2017,
         "endYear": 2017
       },
       {
         "teamId": "CAR",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NE",
         "startYear": 2018,
         "endYear": 2018
       },
@@ -125268,6 +129908,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2019,
         "endYear": 2022
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -125428,6 +130073,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "DET",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "CAR",
         "startYear": 2025,
         "endYear": 2025
@@ -125447,18 +130097,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "TB",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
         "teamId": "NYJ",
         "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "TB",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2014
       },
       {
@@ -125595,14 +130240,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mkcydvu7hqltequid7ow",
     "teamStints": [
       {
-        "teamId": "BUF",
+        "teamId": "LV",
         "startYear": 2017,
         "endYear": 2017
       },
       {
-        "teamId": "JAX",
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2018
+      },
+      {
+        "teamId": "HOU",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2018,
+        "endYear": 2019
       },
       {
         "teamId": "WAS",
@@ -125610,19 +130265,29 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
-        "teamId": "TEN",
+        "teamId": "MIA",
         "startYear": 2020,
         "endYear": 2020
       },
       {
+        "teamId": "TEN",
+        "startYear": 2020,
+        "endYear": 2021
+      },
+      {
         "teamId": "ARI",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "CHI",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "NE",
@@ -125658,12 +130323,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/asbf4eskpit7fggsiazo",
     "teamStints": [
       {
-        "teamId": "NYG",
+        "teamId": "CAR",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "CAR",
+        "teamId": "NYG",
         "startYear": 2014,
         "endYear": 2014
       }
@@ -125683,6 +130348,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "IND",
         "startYear": 2018,
         "endYear": 2018
       },
@@ -125722,7 +130392,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2014,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CHI",
@@ -125787,14 +130457,29 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/csf8rb08skqkabg13aeg",
     "teamStints": [
       {
+        "teamId": "MIN",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "SF",
         "startYear": 2017,
         "endYear": 2019
       },
       {
+        "teamId": "DET",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "CLE",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "CHI",
@@ -125854,6 +130539,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "KC",
         "startYear": 2022,
         "endYear": 2022
@@ -125861,7 +130551,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NYG",
@@ -126005,7 +130695,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "IND",
@@ -126112,6 +130802,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2022,
         "endYear": 2023
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "SEA",
@@ -126313,7 +131008,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "MIN",
@@ -126322,6 +131017,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "GB",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
         "startYear": 2021,
         "endYear": 2021
       },
@@ -126513,25 +131213,6 @@ export const GENERATED_PLAYERS = [
     "id": "billy-joe-tolliver"
   },
   {
-    "fullName": "Brad Robbins",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dksax39lmz9o8d72tatl",
-    "teamStints": [
-      {
-        "teamId": "CIN",
-        "startYear": 2023,
-        "endYear": 2024
-      },
-      {
-        "teamId": "LV",
-        "startYear": 2025,
-        "endYear": 2025
-      }
-    ],
-    "id": "brad-robbins"
-  },
-  {
     "fullName": "Bryan Barker",
     "position": "P",
     "difficulty": "impossible",
@@ -126549,6 +131230,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "bryan-barker"
+  },
+  {
+    "fullName": "Bryan Braman",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kqmagzpldnz3zwvkes8l",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2014,
+        "endYear": 2016
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2017,
+        "endYear": 2017
+      }
+    ],
+    "id": "bryan-braman"
   },
   {
     "fullName": "Bucky Dilts",
@@ -126642,6 +131347,25 @@ export const GENERATED_PLAYERS = [
     "id": "colby-wadman"
   },
   {
+    "fullName": "Cory Carter",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kilmdibxsfsmgj3aezfv",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2019
+      }
+    ],
+    "id": "cory-carter"
+  },
+  {
     "fullName": "Courtney Anderson",
     "position": "TE",
     "difficulty": "impossible",
@@ -126704,6 +131428,30 @@ export const GENERATED_PLAYERS = [
     "id": "dezmon-briscoe"
   },
   {
+    "fullName": "Drue Chrisman",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ggvcxfrya89lky9aezkh",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2022,
+        "endYear": 2023
+      }
+    ],
+    "id": "drue-chrisman"
+  },
+  {
     "fullName": "Elijah McGuire",
     "position": "RB",
     "difficulty": "hard",
@@ -126715,8 +131463,28 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "CLE",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "KC",
         "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2020,
         "endYear": 2021
       }
     ],
@@ -126769,7 +131537,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "BUF",
@@ -126796,6 +131564,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "MIN",
         "startYear": 2022,
         "endYear": 2022
@@ -126813,6 +131586,21 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "ATL",
@@ -126841,7 +131629,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "HOU",
@@ -126928,7 +131716,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DET",
@@ -126971,10 +131764,15 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2010,
-        "endYear": 2013
+        "endYear": 2012
       },
       {
         "teamId": "SF",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
+        "teamId": "MIA",
         "startYear": 2013,
         "endYear": 2013
       },
@@ -127049,25 +131847,6 @@ export const GENERATED_PLAYERS = [
     "id": "michael-waddell"
   },
   {
-    "fullName": "Nolan Cooney",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wu3omhleeh9heanwbu1o",
-    "teamStints": [
-      {
-        "teamId": "ARI",
-        "startYear": 2022,
-        "endYear": 2023
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2024,
-        "endYear": 2024
-      }
-    ],
-    "id": "nolan-cooney"
-  },
-  {
     "fullName": "Obum Gwacham",
     "position": "DE",
     "difficulty": "impossible",
@@ -127077,6 +131856,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2015,
         "endYear": 2016
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "NYJ",
@@ -127097,6 +131881,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ewvl85wxyrtkl1pevg93",
     "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
       {
         "teamId": "TB",
         "startYear": 2017,
@@ -127120,6 +131909,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "MIN",
@@ -127270,7 +132064,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "T.J. Yates",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h8x0pbhc1s5dwjuzipsb",
     "teamStints": [
       {
@@ -127279,9 +132073,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "HOU",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "MIA",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -127343,6 +132147,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2020,
+        "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2022,
         "endYear": 2022
       },
       {
@@ -127449,7 +132263,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NYJ",
@@ -127471,6 +132285,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ypgn9r59rqqev6qv45ns",
     "teamStints": [
       {
+        "teamId": "ATL",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "CIN",
         "startYear": 2017,
         "endYear": 2017
@@ -127479,6 +132298,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2018,
         "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "SF",
@@ -127599,6 +132428,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2016,
         "endYear": 2017
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "NYG",
@@ -127735,6 +132574,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xbabvurdiqjrj1g0xtqw",
     "teamStints": [
       {
+        "teamId": "PHI",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "NE",
         "startYear": 2017,
         "endYear": 2018
@@ -127762,6 +132606,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TEN",
@@ -127802,9 +132656,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DAL",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "TEN",
@@ -127980,9 +132844,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "SEA",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "GB",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CAR",
@@ -128035,7 +132914,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2020,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "IND",
@@ -128086,14 +132970,29 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
-        "teamId": "DAL",
+        "teamId": "MIN",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2020,
+        "endYear": 2021
       },
       {
         "teamId": "NYG",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "SEA",
@@ -128112,7 +133011,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -128120,9 +133019,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
-        "teamId": "NE",
+        "teamId": "CLE",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2023,
+        "endYear": 2024
       },
       {
         "teamId": "IND",
@@ -128303,6 +133207,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "BAL",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "NE",
         "startYear": 2025,
         "endYear": 2025
@@ -128445,7 +133359,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "IND",
@@ -128454,6 +133368,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jordan-lucas"
+  },
+  {
+    "fullName": "Kasey Redfern",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qzsdkkx3dm0clxc7vmkm",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2019,
+        "endYear": 2019
+      }
+    ],
+    "id": "kasey-redfern"
   },
   {
     "fullName": "LaJuan Ramsey",
@@ -128534,12 +133472,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
-        "teamId": "DET",
+        "teamId": "LV",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "LV",
+        "teamId": "DET",
         "startYear": 2012,
         "endYear": 2012
       }
@@ -128574,7 +133512,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "CLE",
@@ -128587,9 +133525,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "LV",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CLE",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "CAR",
@@ -128619,6 +133567,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "SF",
@@ -128690,12 +133643,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "SF",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CLE",
@@ -128743,7 +133701,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "HOU",
@@ -128778,6 +133736,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/num9gzspcpa0ed52k4zj",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
       {
         "teamId": "NE",
         "startYear": 2023,
@@ -128874,6 +133837,30 @@ export const GENERATED_PLAYERS = [
     "id": "antwaun-molden"
   },
   {
+    "fullName": "Ben Sauls",
+    "position": "K",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ert4wflttmvtssck1qz4",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2025,
+        "endYear": null
+      }
+    ],
+    "id": "ben-sauls"
+  },
+  {
     "fullName": "Brandon Dixon",
     "position": "CB",
     "difficulty": "impossible",
@@ -128885,9 +133872,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "PIT",
+        "teamId": "NO",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2016,
+        "endYear": 2017
       },
       {
         "teamId": "NYG",
@@ -128906,7 +133898,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2016,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NYJ",
@@ -128966,6 +133958,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "IND",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "NE",
         "startYear": 2025,
         "endYear": null
@@ -129006,7 +134003,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "DEN",
@@ -129025,6 +134022,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2019,
+        "endYear": 2022
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2023,
         "endYear": 2023
       },
       {
@@ -129131,7 +134138,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "LAC",
@@ -129141,7 +134148,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "LAC",
@@ -129192,12 +134199,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "MIA",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
-        "teamId": "DET",
+        "teamId": "TB",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -129207,13 +134209,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
-        "teamId": "TB",
+        "teamId": "DET",
         "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "MIA",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -129270,7 +134272,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Kapri Bibbs",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yvqplagyljhiso4imgiq",
     "teamStints": [
       {
@@ -129279,9 +134281,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
-        "teamId": "WAS",
+        "teamId": "SF",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2017,
+        "endYear": 2018
       },
       {
         "teamId": "GB",
@@ -129348,7 +134355,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SF",
@@ -129377,7 +134384,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CLE",
@@ -129424,13 +134431,18 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Matthew McGloin",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zwrox2g1yauaa1csdhrw",
     "teamStints": [
       {
         "teamId": "LV",
         "startYear": 2013,
         "endYear": 2016
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
@@ -129473,7 +134485,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NYJ",
@@ -129488,7 +134500,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CAR",
@@ -129644,6 +134661,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "MIA",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "KC",
         "startYear": 2020,
         "endYear": 2020
@@ -129704,6 +134726,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2021,
         "endYear": 2024
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -129823,21 +134850,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "CIN",
-        "startYear": 2013,
+        "startYear": 2012,
         "endYear": 2014
       }
     ],
@@ -129933,11 +134950,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "MIN",
         "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2021,
         "endYear": 2021
       }
     ],
@@ -129950,6 +134977,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i17gtgvmbknnjb41exop",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DEN",
         "startYear": 2022,
         "endYear": 2023
@@ -129957,7 +134989,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "ATL",
@@ -129976,7 +135008,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NYG",
@@ -130012,19 +135044,34 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i3c6tl0jkjtdhs8thccf",
     "teamStints": [
       {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "SF",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "CIN",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TEN",
@@ -130185,6 +135232,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "NO",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "CLE",
         "startYear": 2024,
         "endYear": 2024
@@ -130225,7 +135277,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "JAX",
@@ -130254,7 +135311,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "SEA",
@@ -130377,7 +135434,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Will Tye",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dv5nojtrswp6cprkwn2y",
     "teamStints": [
       {
@@ -130386,9 +135443,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
-        "teamId": "NE",
+        "teamId": "NYJ",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2017,
+        "endYear": 2018
       },
       {
         "teamId": "PHI",
@@ -130407,11 +135469,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYG",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -130484,12 +135556,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
@@ -130498,8 +135570,18 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "NE",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIA",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2022,
+        "endYear": 2023
       },
       {
         "teamId": "MIA",
@@ -130523,7 +135605,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -130531,14 +135613,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "WAS",
         "startYear": 2019,
         "endYear": 2019
       },
       {
-        "teamId": "CLE",
+        "teamId": "SF",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2020,
+        "endYear": 2021
       },
       {
         "teamId": "PHI",
@@ -130786,7 +135878,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NE",
@@ -130794,9 +135886,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
-        "teamId": "BAL",
+        "teamId": "DEN",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2021,
+        "endYear": 2022
       },
       {
         "teamId": "SEA",
@@ -130902,12 +136004,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "TEN",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "IND",
@@ -130931,7 +136038,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "DET",
@@ -130963,6 +136070,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "CIN",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "PHI",
         "startYear": 2024,
         "endYear": 2024
@@ -130973,8 +136090,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2025
       },
       {
+        "teamId": "PHI",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "PIT",
-        "startYear": 2026,
+        "startYear": 2025,
         "endYear": null
       }
     ],
@@ -130989,12 +136111,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "KC",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CLE",
@@ -131013,7 +136135,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NYJ",
@@ -131051,6 +136173,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "khadarel-hodge"
+  },
+  {
+    "fullName": "Leterrius Walton",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/aprvdxjwsglfbvtxsrim",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2015,
+        "endYear": 2018
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2019,
+        "endYear": 2020
+      }
+    ],
+    "id": "leterrius-walton"
   },
   {
     "fullName": "Luke McCown",
@@ -131100,7 +136246,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "TEN",
@@ -131127,6 +136273,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "JAX",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "MIN",
         "startYear": 2023,
         "endYear": 2023
@@ -131149,6 +136305,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "CAR",
@@ -131367,6 +136528,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CIN",
         "startYear": 2022,
         "endYear": null
@@ -131455,12 +136621,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "NE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "BAL",
@@ -131476,6 +136647,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/n5s8mzyulix9qjqvp3i1",
     "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 2017,
+        "endYear": 2017
+      },
       {
         "teamId": "CLE",
         "startYear": 2017,
@@ -131500,6 +136676,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "LV",
@@ -131799,6 +136980,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "LV",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "TB",
         "startYear": 2023,
         "endYear": 2023
@@ -131820,6 +137006,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2018,
+        "endYear": 2019
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2020,
         "endYear": 2020
       }
     ],
@@ -131880,18 +137076,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "WAS",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
         "teamId": "DET",
         "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "WAS",
-        "startYear": 2013,
+        "startYear": 2012,
         "endYear": 2013
       }
     ],
@@ -131910,6 +137101,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "MIN",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "CHI",
         "startYear": 2023,
         "endYear": 2023
       },
@@ -131935,7 +137131,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CHI",
@@ -131952,9 +137148,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vaulix3ehe7onuxogori",
     "teamStints": [
       {
+        "teamId": "CHI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "DEN",
         "startYear": 2019,
         "endYear": 2023
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "MIN",
@@ -132011,15 +137222,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2013,
-        "endYear": 2013
-      },
-      {
-        "teamId": "LV",
-        "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "NE",
+        "teamId": "LV",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -132112,7 +137318,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -132153,12 +137359,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
-        "teamId": "TB",
+        "teamId": "CHI",
         "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "CHI",
+        "teamId": "TB",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -132174,12 +137380,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NYG",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NE",
@@ -132198,7 +137409,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "TEN",
@@ -132263,14 +137474,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jcxnfazx1zqpngrclbaa",
     "teamStints": [
       {
+        "teamId": "MIA",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "CIN",
         "startYear": 2019,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CAR",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -132577,7 +137798,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "CLE",
@@ -132585,13 +137806,48 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "IND",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "DAL",
         "startYear": 2020,
         "endYear": 2020
       },
       {
+        "teamId": "ATL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "BUF",
         "startYear": 2021,
+        "endYear": 2023
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
         "endYear": 2024
       }
     ],
@@ -132628,8 +137884,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "IND",
         "startYear": 2022,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2023,
         "endYear": 2023
       },
       {
@@ -132724,6 +137990,21 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "NE",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "CLE",
         "startYear": 2025,
         "endYear": 2025
@@ -132775,6 +138056,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "WAS",
@@ -132864,9 +138150,14 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xmfgeuyzam3ivzzwrbqy",
     "teamStints": [
       {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "SEA",
         "startYear": 2020,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "DET",
@@ -132957,7 +138248,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "CLE",
@@ -132979,9 +138270,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
-        "teamId": "MIA",
+        "teamId": "NYJ",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2022
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DAL",
@@ -133065,9 +138371,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w67kl2ggryy7j939endz",
     "teamStints": [
       {
-        "teamId": "LAC",
+        "teamId": "SEA",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2016,
+        "endYear": 2017
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "SF",
@@ -133170,6 +138486,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eq3kp4pcztnrveuixshn",
     "teamStints": [
       {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CLE",
         "startYear": 2022,
         "endYear": 2022
@@ -133177,7 +138498,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "ATL",
@@ -133186,6 +138522,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ben-stille"
+  },
+  {
+    "fullName": "Brandon Wright",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yxyh6qdht0aoyns8abib",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2023,
+        "endYear": 2023
+      }
+    ],
+    "id": "brandon-wright"
   },
   {
     "fullName": "Brian Allen",
@@ -133228,7 +138588,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Cody Kessler",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gkvutiyutml2atftmu09",
     "teamStints": [
       {
@@ -133240,6 +138600,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "NE",
@@ -133548,6 +138913,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CHI",
         "startYear": 2022,
         "endYear": 2022
@@ -133598,12 +138968,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "HOU",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "GB",
@@ -133627,15 +139007,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2013,
-        "endYear": 2013
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "CHI",
+        "teamId": "TB",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -133654,9 +139029,14 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/yoarwrtz1qrxlek5ou8j",
     "teamStints": [
       {
-        "teamId": "CIN",
+        "teamId": "DET",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2024,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -133751,7 +139131,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
@@ -133804,7 +139184,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "NO",
@@ -133826,18 +139206,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
-        "teamId": "MIN",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
         "teamId": "NYG",
         "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "MIN",
-        "startYear": 2014,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -133885,25 +139260,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kai-kroeger"
-  },
-  {
-    "fullName": "Kasey Redfern",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qzsdkkx3dm0clxc7vmkm",
-    "teamStints": [
-      {
-        "teamId": "DET",
-        "startYear": 2017,
-        "endYear": 2017
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 2019,
-        "endYear": 2019
-      }
-    ],
-    "id": "kasey-redfern"
   },
   {
     "fullName": "Kyle Richardson",
@@ -133957,7 +139313,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2013,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "JAX",
@@ -134129,15 +139485,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2009,
-        "endYear": 2010
-      },
-      {
-        "teamId": "CAR",
-        "startYear": 2011,
         "endYear": 2011
       },
       {
-        "teamId": "LAC",
+        "teamId": "CAR",
         "startYear": 2011,
         "endYear": 2011
       },
@@ -134214,6 +139565,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "ARI",
         "startYear": 2020,
         "endYear": 2020
@@ -134268,15 +139624,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "BUF",
+        "teamId": "CIN",
         "startYear": 2013,
         "endYear": 2013
       }
@@ -134384,7 +139735,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "NYG",
@@ -134398,25 +139749,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "trent-harris"
-  },
-  {
-    "fullName": "Ty Zentner",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/rmprz572lgnxuojnxh5p",
-    "teamStints": [
-      {
-        "teamId": "TEN",
-        "startYear": 2023,
-        "endYear": 2023
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 2024,
-        "endYear": 2024
-      }
-    ],
-    "id": "ty-zentner"
   },
   {
     "fullName": "Will Monday",
@@ -134559,6 +139891,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "KC",
         "startYear": 2022,
         "endYear": 2022
@@ -134575,12 +139912,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "ARI",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "DAL",
@@ -134589,6 +139931,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "c-j-goodwin"
+  },
+  {
+    "fullName": "C.J. Moore",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xfkasqf2gkppknun7m9n",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2019,
+        "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "c-j-moore"
   },
   {
     "fullName": "Curtis Fuller",
@@ -134631,6 +139997,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "TEN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "LAC",
         "startYear": 2022,
         "endYear": 2022
@@ -134666,7 +140037,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "NYJ",
@@ -134698,6 +140069,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "MIA",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "NE",
         "startYear": 2016,
         "endYear": 2016
@@ -134724,7 +140105,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "JAX",
@@ -134732,9 +140113,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "CAR",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "TB",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -134773,7 +140159,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "JAX",
@@ -134802,7 +140193,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "KC",
@@ -134865,6 +140256,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "JAX",
@@ -134992,19 +140388,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "BUF",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
         "teamId": "CHI",
         "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "IND",
+        "teamId": "BUF",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "CAR",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2016,
+        "endYear": 2017
       },
       {
         "teamId": "CLE",
@@ -135023,7 +140424,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NE",
@@ -135084,6 +140485,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "SF",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "HOU",
         "startYear": 2022,
         "endYear": 2022
@@ -135113,9 +140524,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CAR",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "PHI",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NYJ",
@@ -135280,6 +140701,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q3i6q1f4ph8b0nmlc31z",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2019,
         "endYear": 2019
@@ -135293,6 +140724,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DEN",
@@ -135316,7 +140752,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "DET",
@@ -135345,7 +140781,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "IND",
@@ -135604,7 +141040,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2017,
+        "endYear": 2018
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "MIA",
@@ -135645,9 +141096,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "CHI",
+        "teamId": "LV",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2019,
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -135658,6 +141114,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
@@ -135710,7 +141176,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2010,
-        "endYear": 2012
+        "endYear": 2011
       },
       {
         "teamId": "PHI",
@@ -135719,16 +141185,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CAR",
-        "startYear": 2013,
-        "endYear": 2013
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2014,
+        "startYear": 2012,
         "endYear": 2014
       },
       {
-        "teamId": "CAR",
+        "teamId": "TB",
         "startYear": 2014,
         "endYear": 2014
       }
@@ -135887,9 +141348,29 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "CAR",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "PHI",
         "startYear": 2018,
         "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DET",
@@ -136076,12 +141557,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "MIA",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "JAX",
@@ -136105,17 +141586,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "HOU",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "CLE",
@@ -136133,6 +141614,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "MIA",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "ARI",
         "startYear": 2025,
         "endYear": 2025
@@ -136146,6 +141632,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mwkkr5xco4npohnbncek",
     "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2019,
+        "endYear": 2019
+      },
       {
         "teamId": "CLE",
         "startYear": 2019,
@@ -136166,9 +141657,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mzzwqnu6q0jthsi7nanq",
     "teamStints": [
       {
+        "teamId": "BUF",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "CAR",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -136192,12 +141698,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "DET",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "ARI",
@@ -136409,7 +141920,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "TEN",
@@ -136443,7 +141954,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "DEN",
@@ -136487,6 +142003,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2018,
         "endYear": 2022
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "CAR",
@@ -136652,6 +142178,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "KC",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "PHI",
         "startYear": 2017,
         "endYear": 2018
@@ -136659,6 +142190,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2020,
         "endYear": 2020
       },
       {
@@ -136678,12 +142214,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "LAC",
@@ -136746,6 +142282,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2025,
         "endYear": 2025
       }
     ],
@@ -136770,11 +142316,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2013,
-        "endYear": 2014
+        "endYear": 2013
       },
       {
         "teamId": "IND",
         "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -136813,12 +142369,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "CAR",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "HOU",
@@ -136843,6 +142399,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2022,
         "endYear": 2024
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -136907,6 +142468,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "SEA",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "JAX",
         "startYear": 2017,
         "endYear": 2017
@@ -136940,9 +142506,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kxcnbw0m8v75awywa2ir",
     "teamStints": [
       {
+        "teamId": "BUF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "HOU",
         "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "ARI",
@@ -136985,7 +142561,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "GB",
@@ -137009,7 +142585,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "LAC",
@@ -137038,7 +142614,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "SEA",
@@ -137046,14 +142622,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
-        "teamId": "CAR",
+        "teamId": "NO",
         "startYear": 2019,
         "endYear": 2019
       },
       {
+        "teamId": "CAR",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
         "teamId": "ATL",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "HOU",
@@ -137080,12 +142661,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "JAX",
+        "teamId": "CHI",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "CHI",
+        "teamId": "JAX",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -137135,12 +142716,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "GB",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "SEA",
@@ -137183,7 +142764,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "BUF",
@@ -137239,13 +142825,18 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "A.J. Derby",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c2bqxdpyb4kn75l4qj1c",
     "teamStints": [
       {
-        "teamId": "DEN",
+        "teamId": "NE",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2016,
+        "endYear": 2017
       },
       {
         "teamId": "MIA",
@@ -137312,15 +142903,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "DET",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "JAX",
+        "teamId": "DET",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -137341,7 +142927,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "CLE",
@@ -137435,6 +143021,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "MIN",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "ARI",
         "startYear": 2022,
         "endYear": 2022
@@ -137522,18 +143113,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
-        "teamId": "SF",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
         "teamId": "SEA",
         "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "SF",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -137611,7 +143197,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NYG",
@@ -137727,6 +143313,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "HOU",
         "startYear": 2018,
         "endYear": 2019
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "IND",
@@ -137913,17 +143509,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "IND",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "HOU",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "TEN",
@@ -137947,7 +143548,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "JAX",
@@ -137974,6 +143575,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "HOU",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "LAR",
         "startYear": 2024,
         "endYear": 2024
@@ -137993,6 +143599,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ak1inllyyw7pcmibqurn",
     "teamStints": [
       {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "TB",
         "startYear": 2019,
         "endYear": 2020
@@ -138001,6 +143612,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "MIA",
@@ -138043,7 +143659,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "WAS",
@@ -138086,7 +143702,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "DEN",
@@ -138146,14 +143767,34 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hyaj12jnajphdapkudu0",
     "teamStints": [
       {
+        "teamId": "BUF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "LAC",
         "startYear": 2019,
         "endYear": 2020
       },
       {
-        "teamId": "LV",
+        "teamId": "JAX",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "CIN",
@@ -138340,7 +143981,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "NYJ",
@@ -138421,7 +144062,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NE",
@@ -138456,6 +144097,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p8pyujltnfdj3qnbh7yi",
     "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 2016,
+        "endYear": 2016
+      },
       {
         "teamId": "SF",
         "startYear": 2016,
@@ -138515,6 +144161,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "DET",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "HOU",
         "startYear": 2025,
         "endYear": null
@@ -138553,6 +144209,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xjrtaguv0juf0q1a9lnn",
     "teamStints": [
       {
+        "teamId": "PIT",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "TEN",
         "startYear": 2018,
         "endYear": 2018
@@ -138560,12 +144221,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "BUF",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
@@ -138814,7 +144475,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "PHI",
@@ -138849,6 +144510,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NO",
@@ -138896,7 +144562,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2022,
+        "endYear": 2023
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CLE",
@@ -138915,12 +144596,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2017,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NE",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "MIN",
@@ -138992,7 +144673,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "LV",
@@ -139000,8 +144681,23 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "PHI",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "SEA",
         "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2025,
         "endYear": null
       }
     ],
@@ -139162,6 +144858,25 @@ export const GENERATED_PLAYERS = [
     "id": "blaine-mcelmurry"
   },
   {
+    "fullName": "Bo Melton",
+    "position": "WR",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kivbnhcdmnsy6vo8w35u",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2022,
+        "endYear": null
+      }
+    ],
+    "id": "bo-melton"
+  },
+  {
     "fullName": "C.J. Prosise",
     "position": "RB",
     "difficulty": "hard",
@@ -139171,6 +144886,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2016,
         "endYear": 2019
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "TB",
@@ -139189,7 +144909,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "MIN",
@@ -139286,6 +145011,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2016,
         "endYear": 2017
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2017,
+        "endYear": 2017
       }
     ],
     "id": "deji-olatoye"
@@ -139300,6 +145030,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2013,
         "endYear": 2016
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "LV",
@@ -139318,7 +145053,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DEN",
@@ -139361,12 +145101,32 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "JAX",
         "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "SF",
@@ -139385,7 +145145,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "NO",
@@ -139482,6 +145247,30 @@ export const GENERATED_PLAYERS = [
     "id": "hayden-epstein"
   },
   {
+    "fullName": "Jacoby Windmon",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/hpwxupqieiogll8yxyzn",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2025,
+        "endYear": 2025
+      }
+    ],
+    "id": "jacoby-windmon"
+  },
+  {
     "fullName": "Janarius Robinson",
     "position": "DL",
     "difficulty": "impossible",
@@ -139490,7 +145279,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "PHI",
@@ -139562,7 +145351,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2015,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -139613,6 +145402,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "IND",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "BUF",
         "startYear": 2023,
         "endYear": 2025
@@ -139623,13 +145417,18 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Kaelin Clay",
     "position": "WR",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/u1beu9elu48ry0b1rzjl",
     "teamStints": [
       {
         "teamId": "BAL",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "CAR",
@@ -139709,6 +145508,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "BUF",
         "startYear": 2017,
         "endYear": 2020
@@ -139768,7 +145577,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "DEN",
@@ -139840,7 +145649,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "BAL",
@@ -139992,9 +145801,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "GB",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "MIA",
@@ -140128,12 +145947,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "MIA",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "WAS",
@@ -140208,6 +146032,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "HOU",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "DET",
         "startYear": 2024,
         "endYear": null
@@ -140258,7 +146092,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "KC",
@@ -140368,7 +146202,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "MIN",
@@ -140392,12 +146226,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "ATL",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "LV",
@@ -140512,7 +146346,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "LAR",
@@ -140525,18 +146359,28 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Elliott Fry",
     "position": "K",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dp7kivxa74nvwsdqap6g",
     "teamStints": [
       {
         "teamId": "BAL",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "ATL",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "CIN",
@@ -140574,7 +146418,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "JAX",
@@ -140639,6 +146483,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uashkoz2rfyz4erjqnx4",
     "teamStints": [
       {
+        "teamId": "DAL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "WAS",
         "startYear": 2022,
         "endYear": 2023
@@ -140682,9 +146531,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
-        "teamId": "NO",
+        "teamId": "DEN",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2017,
+        "endYear": 2018
       },
       {
         "teamId": "IND",
@@ -140692,8 +146546,23 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "DET",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "WAS",
         "startYear": 2020,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2022,
         "endYear": 2023
       }
     ],
@@ -140805,11 +146674,6 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2011,
-        "endYear": 2011
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
@@ -140818,7 +146682,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "NYG",
+        "teamId": "DAL",
         "startYear": 2012,
         "endYear": 2012
       }
@@ -140890,14 +146754,29 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "GB",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "WAS",
         "startYear": 2020,
         "endYear": 2020
       },
       {
+        "teamId": "MIA",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "DAL",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "IND",
@@ -140936,6 +146815,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2013,
         "endYear": 2015
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "NO",
@@ -141012,7 +146896,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "ARI",
@@ -141079,7 +146963,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "WAS",
@@ -141098,7 +146982,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "WAS",
@@ -141117,7 +147001,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "BAL",
@@ -141127,7 +147011,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "PIT",
@@ -141138,15 +147022,59 @@ export const GENERATED_PLAYERS = [
     "id": "andy-isabella"
   },
   {
+    "fullName": "Anthony Pittman",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wcdhfzie3j2z4zmffmeo",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2019,
+        "endYear": 2023
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2024,
+        "endYear": 2025
+      }
+    ],
+    "id": "anthony-pittman"
+  },
+  {
     "fullName": "Anthony Rush",
     "position": "DL",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yvyh1geebqh7km1uzhsc",
     "teamStints": [
       {
+        "teamId": "LV",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "PHI",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "GB",
@@ -141154,9 +147082,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
-        "teamId": "ATL",
+        "teamId": "TEN",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2021,
+        "endYear": 2022
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "DAL",
@@ -141176,6 +147114,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2018,
         "endYear": 2021
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "ARI",
@@ -141199,7 +147142,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "JAX",
@@ -141343,7 +147286,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "WAS",
@@ -141367,7 +147310,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "DEN",
@@ -141391,7 +147334,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DEN",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "BAL",
@@ -141399,9 +147342,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "SF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "LAC",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "TEN",
@@ -141444,12 +147397,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "KC",
         "startYear": 2019,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "WAS",
@@ -141540,7 +147493,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "NYJ",
@@ -141550,7 +147503,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "LV",
@@ -141569,7 +147527,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "ARI",
@@ -141607,6 +147570,24 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "j-j-mccleskey"
+  },
+  {
+    "fullName": "Jack Browning",
+    "position": "P",
+    "difficulty": "impossible",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "jack-browning"
   },
   {
     "fullName": "Jacoby Shepherd",
@@ -141768,6 +147749,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uwbpt63x0kk2x5okijow",
     "teamStints": [
       {
+        "teamId": "SF",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "NYG",
         "startYear": 2019,
         "endYear": 2021
@@ -141813,7 +147799,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "NYG",
@@ -141851,12 +147837,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "NO",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NE",
@@ -141980,7 +147971,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYG",
@@ -141991,6 +147982,24 @@ export const GENERATED_PLAYERS = [
     "id": "ryan-miller"
   },
   {
+    "fullName": "Ryan Sanborn",
+    "position": "P",
+    "difficulty": "impossible",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "ryan-sanborn"
+  },
+  {
     "fullName": "Ryder Anderson",
     "position": "DL",
     "difficulty": "impossible",
@@ -141999,7 +148008,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NO",
@@ -142034,6 +148043,25 @@ export const GENERATED_PLAYERS = [
     "id": "scott-turner"
   },
   {
+    "fullName": "Sean Smith",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xn2cc6regqjkbinc8ing",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2019,
+        "endYear": 2019
+      }
+    ],
+    "id": "sean-smith-2"
+  },
+  {
     "fullName": "Senorise Perry",
     "position": "RB",
     "difficulty": "hard",
@@ -142043,6 +148071,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2014,
         "endYear": 2014
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "MIA",
@@ -142095,7 +148128,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "DEN",
@@ -142229,7 +148267,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "IND",
@@ -142282,7 +148320,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "DEN",
@@ -142306,7 +148344,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NYJ",
@@ -142326,6 +148364,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2017,
         "endYear": 2020
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "WAS",
@@ -142364,6 +148407,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "NO",
@@ -142498,7 +148546,27 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2017,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2019,
         "endYear": 2020
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "WAS",
@@ -142517,7 +148585,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "IND",
@@ -142525,9 +148593,29 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "WAS",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "DAL",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "LV",
@@ -142546,12 +148634,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "TB",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CHI",
@@ -142612,6 +148705,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "IND",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "WAS",
         "startYear": 2024,
         "endYear": 2025
@@ -142628,7 +148731,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "NYG",
@@ -142698,12 +148806,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
-        "teamId": "DAL",
+        "teamId": "LAC",
         "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "LAC",
+        "teamId": "DAL",
         "startYear": 2013,
         "endYear": 2013
       },
@@ -142818,12 +148926,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/khz5y6n8bjartzhpz1pm",
     "teamStints": [
       {
-        "teamId": "PHI",
+        "teamId": "NE",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "NE",
+        "teamId": "PHI",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -142873,6 +148981,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2017,
+        "endYear": 2020
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2021,
         "endYear": 2021
       },
       {
@@ -142892,12 +149010,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "GB",
         "startYear": 2017,
         "endYear": 2019
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "NO",
@@ -142921,12 +149049,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SEA",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "TEN",
@@ -142949,7 +149082,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LAC",
-        "startYear": 2024,
+        "startYear": 2023,
         "endYear": null
       }
     ],
@@ -142998,12 +149131,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "MIA",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "LV",
@@ -143017,6 +149155,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jeremiah-valoaga"
+  },
+  {
+    "fullName": "Jody Fortson",
+    "position": "TE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/swxozwigfu05fr7voszh",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2023
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "jody-fortson"
   },
   {
     "fullName": "Joe Gaziano",
@@ -143097,9 +149259,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "NYG",
         "startYear": 2021,
         "endYear": 2021
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "MIA",
@@ -143109,6 +149286,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2024,
         "endYear": 2024
       }
     ],
@@ -143121,6 +149308,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cotnsrtoyssltjhhftti",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "LAR",
         "startYear": 2016,
         "endYear": 2019
@@ -143128,6 +149320,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2021,
         "endYear": 2021
       }
     ],
@@ -143198,6 +149400,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "BUF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "NE",
         "startYear": 2025,
         "endYear": null
@@ -143233,7 +149440,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "HOU",
@@ -143372,12 +149589,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "NE",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "TEN",
@@ -143435,6 +149652,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2024,
         "endYear": 2024
       },
       {
@@ -143454,7 +149681,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "HOU",
@@ -143473,7 +149700,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2012,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "BAL",
@@ -143546,6 +149773,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -143634,14 +149866,34 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/orb9dnxnymipz40nmjlh",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2016,
         "endYear": 2018
       },
       {
+        "teamId": "NYG",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "LV",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "BAL",
@@ -143652,6 +149904,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "IND",
@@ -143699,7 +149961,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "WAS",
@@ -143803,9 +150065,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
-        "teamId": "KC",
+        "teamId": "MIA",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2023,
+        "endYear": 2024
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "MIN",
@@ -143891,7 +150168,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "SF",
@@ -143899,9 +150176,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
-        "teamId": "CHI",
+        "teamId": "TEN",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2023,
+        "endYear": 2024
       },
       {
         "teamId": "CLE",
@@ -144031,12 +150318,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "NO",
         "startYear": 2016,
         "endYear": 2016
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "CIN",
@@ -144092,13 +150384,23 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Tom Savage",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ovqvn8ei0thwn7si83n8",
     "teamStints": [
       {
         "teamId": "HOU",
         "startYear": 2016,
         "endYear": 2017
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "CIN",
@@ -144159,6 +150461,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "NO",
         "startYear": 2020,
         "endYear": 2020
@@ -144188,6 +150495,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "BAL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "SF",
         "startYear": 2021,
         "endYear": 2021
@@ -144209,12 +150521,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "MIA",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "NE",
@@ -144233,12 +150545,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "CAR",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "SEA",
@@ -144404,6 +150726,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "NYG",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "HOU",
         "startYear": 2020,
         "endYear": 2020
@@ -144423,6 +150750,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "LV",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "CIN",
         "startYear": 2025,
         "endYear": null
@@ -144437,22 +150769,17 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yah2mx1id6l7wf4xtq26",
     "teamStints": [
       {
-        "teamId": "GB",
-        "startYear": 2014,
-        "endYear": 2014
-      },
-      {
         "teamId": "MIA",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "CHI",
-        "startYear": 2015,
+        "teamId": "GB",
+        "startYear": 2014,
         "endYear": 2015
       },
       {
-        "teamId": "GB",
+        "teamId": "CHI",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -144557,6 +150884,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yakoctr2ba4d4evswpkm",
     "teamStints": [
       {
+        "teamId": "NO",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "CAR",
         "startYear": 2016,
         "endYear": 2020
@@ -144629,9 +150961,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
+        "teamId": "SF",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "PHI",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "SF",
@@ -144644,9 +150991,14 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Daniel Brown",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o9i0xejsk3ywrq0sk88j",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2016,
+        "endYear": 2016
+      },
       {
         "teamId": "CHI",
         "startYear": 2016,
@@ -144655,6 +151007,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2019,
+        "endYear": 2021
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2021,
         "endYear": 2021
       }
     ],
@@ -144670,6 +151027,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2015,
         "endYear": 2017
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "GB",
@@ -144956,7 +151318,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
@@ -144967,6 +151329,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "ARI",
@@ -145004,7 +151371,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2020,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "NE",
@@ -145033,7 +151400,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "NO",
@@ -145055,14 +151422,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iffqqvnak44rrmhl152h",
     "teamStints": [
       {
+        "teamId": "KC",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "CIN",
         "startYear": 2016,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "LAC",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "GB",
@@ -145101,6 +151478,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2022,
         "endYear": 2022
       }
     ],
@@ -145124,6 +151511,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "labryan-ray"
+  },
+  {
+    "fullName": "Lirim Hajrullahu",
+    "position": "K",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vwi5fdt8i8omc6yiepay",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
+      }
+    ],
+    "id": "lirim-hajrullahu"
   },
   {
     "fullName": "Lousaka Polite",
@@ -145168,7 +151589,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "ATL",
@@ -145187,7 +151608,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "LV",
@@ -145216,7 +151637,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CHI",
@@ -145302,7 +151723,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "BAL",
@@ -145377,6 +151808,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "SF",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "NO",
         "startYear": 2023,
         "endYear": 2024
@@ -145392,13 +151828,23 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Tanner McEvoy",
     "position": "WR",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sllikin2krzlnyo7cdvt",
     "teamStints": [
       {
         "teamId": "SEA",
         "startYear": 2016,
         "endYear": 2017
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "BUF",
@@ -145427,7 +151873,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "GB",
@@ -145446,12 +151892,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "SEA",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
@@ -145473,6 +151924,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "JAX",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "NO",
         "startYear": 2022,
         "endYear": 2023
@@ -145481,6 +151937,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "CHI",
@@ -145499,7 +151960,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2021,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "JAX",
@@ -145619,7 +152080,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2014,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "ARI",
@@ -145693,6 +152154,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2014,
         "endYear": 2015
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2016,
+        "endYear": 2016
       },
       {
         "teamId": "IND",
@@ -145776,9 +152242,14 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bq3rri2votzpxxoqqkif",
     "teamStints": [
       {
-        "teamId": "ATL",
+        "teamId": "WAS",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2019,
+        "endYear": 2020
       },
       {
         "teamId": "JAX",
@@ -145788,7 +152259,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2021,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "NE",
@@ -145801,12 +152272,22 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Darwin Thompson",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vc51lpxgi2oivxtydwah",
     "teamStints": [
       {
         "teamId": "KC",
         "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2021,
         "endYear": 2021
       },
       {
@@ -145831,7 +152312,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2022,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "CAR",
@@ -145859,6 +152340,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CAR",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "HOU",
         "startYear": 2021,
         "endYear": 2021
       },
@@ -145961,12 +152447,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "TEN",
         "startYear": 2023,
         "endYear": 2024
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "SF",
@@ -146155,12 +152646,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rpe8lix0twmwjxft36nu",
     "teamStints": [
       {
-        "teamId": "TB",
+        "teamId": "DAL",
         "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "DAL",
+        "teamId": "TB",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -146244,6 +152735,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CLE",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "TEN",
@@ -146380,6 +152876,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "BUF",
         "startYear": 2017,
         "endYear": 2017
@@ -146402,6 +152903,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2021,
         "endYear": 2023
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "SF",
@@ -146457,6 +152968,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "SF",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "LV",
         "startYear": 2024,
         "endYear": 2024
@@ -146483,7 +152999,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "NYG",
@@ -146546,7 +153062,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "CHI",
@@ -146554,9 +153070,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "NYJ",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "HOU",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "NYG",
@@ -146598,13 +153124,18 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Tre McBride",
     "position": "WR",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gxiebdueieuygbu3b14z",
     "teamStints": [
       {
         "teamId": "TEN",
         "startYear": 2015,
         "endYear": 2016
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2017,
+        "endYear": 2017
       },
       {
         "teamId": "NYJ",
@@ -146698,6 +153229,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "IND",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "BAL",
         "startYear": 2020,
         "endYear": 2020
@@ -146714,11 +153250,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "WAS",
         "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2017,
         "endYear": 2018
       }
     ],
@@ -146750,9 +153296,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/puhvsmj14w1c5vvhuq71",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "PHI",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DET",
@@ -146829,6 +153385,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "antoine-wesley"
+  },
+  {
+    "fullName": "Arthur Brown",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vkdjou1tnrmctxq703rw",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "arthur-brown"
   },
   {
     "fullName": "Bear Pascoe",
@@ -146911,7 +153486,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "DET",
@@ -147001,12 +153576,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
-        "teamId": "PIT",
+        "teamId": "WAS",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "WAS",
+        "teamId": "PIT",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -147132,7 +153707,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2019,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "JAX",
@@ -147151,7 +153726,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "IND",
@@ -147235,6 +153810,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "CLE",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
         "teamId": "CIN",
         "startYear": 2024,
         "endYear": null
@@ -147290,6 +153870,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2020,
         "endYear": 2021
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "NO",
@@ -147380,15 +153965,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2010,
-        "endYear": 2011
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 2012,
         "endYear": 2012
       },
       {
-        "teamId": "NYJ",
+        "teamId": "CIN",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -147505,7 +154085,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CAR",
@@ -147553,7 +154133,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "DEN",
@@ -147681,6 +154261,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2023
       },
       {
+        "teamId": "NE",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "SF",
         "startYear": 2024,
         "endYear": null
@@ -147783,7 +154368,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "KC",
@@ -147831,6 +154421,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2017,
         "endYear": 2019
       },
       {
@@ -147851,6 +154451,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "CIN",
@@ -147874,7 +154479,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "IND",
@@ -147906,6 +154511,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "TEN",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "LV",
         "startYear": 2019,
         "endYear": 2020
@@ -147922,7 +154537,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2022,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "ARI",
@@ -147964,18 +154579,23 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Vyncint Smith",
     "position": "WR",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vebligiwne4az0afjfzw",
     "teamStints": [
       {
         "teamId": "HOU",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
       },
       {
         "teamId": "NYJ",
         "startYear": 2019,
         "endYear": 2021
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "IND",
@@ -148042,12 +154662,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2015,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "SEA",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "MIA",
@@ -148066,7 +154686,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2018,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "HOU",
@@ -148074,14 +154694,29 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "IND",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "LAC",
         "startYear": 2021,
         "endYear": 2021
       },
       {
-        "teamId": "CHI",
+        "teamId": "ARI",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2023
       },
       {
         "teamId": "BUF",
@@ -148175,6 +154810,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2016
       },
       {
+        "teamId": "NYG",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "BUF",
         "startYear": 2017,
         "endYear": 2017
@@ -148239,7 +154879,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "CHI",
@@ -148295,6 +154935,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "NE",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "DEN",
         "startYear": 2019,
         "endYear": 2020
@@ -148333,6 +154983,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "CHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "ARI",
         "startYear": 2023,
         "endYear": 2023
@@ -148349,12 +155004,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2015,
-        "endYear": 2015
+        "endYear": 2016
       },
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "IND",
@@ -148362,9 +155017,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2017
       },
       {
-        "teamId": "BUF",
+        "teamId": "CLE",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2018,
+        "endYear": 2019
       },
       {
         "teamId": "BAL",
@@ -148512,7 +155172,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2021,
+        "endYear": 2021
       },
       {
         "teamId": "ARI",
@@ -148707,6 +155377,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2020
       },
       {
+        "teamId": "LV",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
         "teamId": "ARI",
         "startYear": 2021,
         "endYear": 2021
@@ -148719,7 +155394,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "MIA",
@@ -148768,6 +155443,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2015,
         "endYear": 2017
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "LAR",
@@ -148957,14 +155637,34 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ybly9uc25qbmjuiep4dj",
     "teamStints": [
       {
+        "teamId": "NO",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "CLE",
         "startYear": 2016,
         "endYear": 2016
       },
       {
+        "teamId": "BUF",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2017,
+        "endYear": 2017
+      },
+      {
         "teamId": "MIA",
         "startYear": 2017,
         "endYear": 2018
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "NO",
@@ -149040,18 +155740,23 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Tyler Ervin",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/u7okyks3ewl7lo4xhuie",
     "teamStints": [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "BAL",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "GB",
@@ -149094,22 +155799,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2016,
-        "endYear": 2016
+        "endYear": 2017
       },
       {
         "teamId": "KC",
         "startYear": 2017,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "GB",
         "startYear": 2018,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "IND",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "HOU",
@@ -149128,7 +155833,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2021,
-        "endYear": 2022
+        "endYear": 2023
       },
       {
         "teamId": "MIA",
@@ -149145,6 +155850,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xsllahfd4ilqlozs2ngd",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "DET",
         "startYear": 2016,
         "endYear": 2016
@@ -149160,18 +155875,23 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Braxton Miller",
     "position": "WR",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ya38kjppomtdyqbq5cyg",
     "teamStints": [
       {
         "teamId": "HOU",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "PHI",
         "startYear": 2018,
         "endYear": 2018
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "CAR",
@@ -149193,6 +155913,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2022
       },
       {
+        "teamId": "LAR",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2023,
         "endYear": 2023
@@ -149200,6 +155930,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2025,
         "endYear": null
       }
     ],
@@ -149267,15 +156012,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "LV",
+        "teamId": "CIN",
         "startYear": 2013,
         "endYear": 2013
       }
@@ -149371,9 +156111,14 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "HOU",
         "startYear": 2022,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CLE",
@@ -149450,6 +156195,16 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CHI",
+        "startYear": 2023,
+        "endYear": 2023
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2024,
+        "endYear": 2024
+      },
+      {
+        "teamId": "CHI",
         "startYear": 2024,
         "endYear": 2024
       },
@@ -149499,12 +156254,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2018,
-        "endYear": 2018
+        "endYear": 2019
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2019,
+        "endYear": 2019
       },
       {
         "teamId": "KC",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "HOU",
@@ -149528,7 +156288,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2020,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CIN",
@@ -149550,6 +156310,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ruxt88bqlscii1g4hwu3",
     "teamStints": [
       {
+        "teamId": "TB",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
         "teamId": "SF",
         "startYear": 2018,
         "endYear": 2018
@@ -149562,12 +156327,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "SEA",
         "startYear": 2022,
         "endYear": 2022
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "PIT",
@@ -149584,14 +156354,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xxlz2amqwgukf0pj14yl",
     "teamStints": [
       {
+        "teamId": "KC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "TB",
         "startYear": 2019,
-        "endYear": 2020
+        "endYear": 2021
       },
       {
         "teamId": "CLE",
         "startYear": 2021,
         "endYear": 2022
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2023
       },
       {
         "teamId": "BUF",
@@ -149733,6 +156513,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CLE",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "ARI",
         "startYear": 2022,
         "endYear": 2022
@@ -149843,6 +156628,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2024
       },
       {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
         "teamId": "CIN",
         "startYear": 2025,
         "endYear": null
@@ -149900,9 +156690,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gi97kjfafja9ykayiunr",
     "teamStints": [
       {
+        "teamId": "LAC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "MIN",
         "startYear": 2019,
         "endYear": 2019
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2020,
+        "endYear": 2020
       },
       {
         "teamId": "DAL",
@@ -149922,7 +156722,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2024,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "TEN",
@@ -150002,6 +156802,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DET",
         "startYear": 2022,
         "endYear": null
@@ -150012,7 +156817,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Kristian Wilkerson",
     "position": "WR",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pgabncytt4zpzetju13j",
     "teamStints": [
       {
@@ -150029,6 +156834,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
       }
     ],
     "id": "kristian-wilkerson"
@@ -150036,7 +156846,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "La'Mical Perine",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rwyeph1ojfmkryt2egzk",
     "teamStints": [
       {
@@ -150045,9 +156855,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "PHI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "KC",
         "startYear": 2022,
         "endYear": 2023
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "PIT",
@@ -150069,14 +156894,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2021
       },
       {
+        "teamId": "CHI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "DEN",
         "startYear": 2022,
         "endYear": 2022
       },
       {
-        "teamId": "CAR",
+        "teamId": "KC",
         "startYear": 2023,
         "endYear": 2023
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2023,
+        "endYear": 2024
       },
       {
         "teamId": "ATL",
@@ -150208,6 +157043,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2018
       },
       {
+        "teamId": "SEA",
+        "startYear": 2019,
+        "endYear": 2019
+      },
+      {
         "teamId": "PIT",
         "startYear": 2019,
         "endYear": 2020
@@ -150253,7 +157093,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2023,
-        "endYear": 2023
+        "endYear": 2024
       },
       {
         "teamId": "LAR",
@@ -150374,6 +157214,35 @@ export const GENERATED_PLAYERS = [
     "id": "ryan-neufeld"
   },
   {
+    "fullName": "Ryquell Armstead",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wxwcezpaakgifjnqjsva",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2021,
+        "endYear": 2022
+      }
+    ],
+    "id": "ryquell-armstead"
+  },
+  {
     "fullName": "Sam Roberts",
     "position": "DL",
     "difficulty": "impossible",
@@ -150383,6 +157252,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2022,
         "endYear": 2023
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2024,
+        "endYear": 2024
       },
       {
         "teamId": "CAR",
@@ -150479,15 +157353,20 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2013,
-        "endYear": 2015
+        "endYear": 2014
       },
       {
-        "teamId": "DEN",
+        "teamId": "IND",
         "startYear": 2015,
         "endYear": 2015
       },
       {
-        "teamId": "IND",
+        "teamId": "MIN",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "DEN",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -150530,9 +157409,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2019
       },
       {
+        "teamId": "CAR",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "MIN",
         "startYear": 2020,
         "endYear": 2020
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "LAC",
@@ -150589,11 +157478,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
       },
       {
         "teamId": "ARI",
         "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2018,
+        "endYear": 2018
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2019,
         "endYear": 2019
       }
     ],
@@ -150646,7 +157545,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2016,
-        "endYear": 2017
+        "endYear": 2018
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "DEN",
@@ -150694,7 +157598,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2021,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "TEN",
@@ -150765,6 +157669,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "chad-hall"
+  },
+  {
+    "fullName": "Chandler Wooten",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/angqnvilysrybiosrwgk",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2022,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2024,
+        "endYear": 2024
+      }
+    ],
+    "id": "chandler-wooten"
   },
   {
     "fullName": "Chris Gragg",
@@ -150884,18 +157812,13 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lkeqxbrwrnukjmrfxfdq",
     "teamStints": [
       {
-        "teamId": "IND",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
         "teamId": "BUF",
         "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "IND",
-        "startYear": 2013,
+        "startYear": 2012,
         "endYear": 2013
       }
     ],
@@ -150904,18 +157827,28 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Derrick Gore",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dlhpixyjhf2p2wshn2kf",
     "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 2019,
+        "endYear": 2019
+      },
       {
         "teamId": "WAS",
         "startYear": 2019,
         "endYear": 2019
       },
       {
+        "teamId": "LAC",
+        "startYear": 2020,
+        "endYear": 2020
+      },
+      {
         "teamId": "KC",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
       },
       {
         "teamId": "NO",
@@ -150966,18 +157899,13 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c5yrxmqc8c5ty1rw0j0v",
     "teamStints": [
       {
-        "teamId": "NYJ",
-        "startYear": 2015,
-        "endYear": 2015
-      },
-      {
         "teamId": "SEA",
         "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "NYJ",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -151021,7 +157949,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2023,
-        "endYear": 2024
+        "endYear": 2025
       },
       {
         "teamId": "CIN",
@@ -151064,7 +157992,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2017,
-        "endYear": 2019
+        "endYear": 2020
       },
       {
         "teamId": "PHI",
@@ -151102,7 +158030,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2020,
-        "endYear": 2021
+        "endYear": 2022
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2022,
+        "endYear": 2022
       },
       {
         "teamId": "TEN",
@@ -151113,6 +158046,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "teamId": "BAL",
@@ -151168,12 +158111,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
-        "teamId": "CHI",
+        "teamId": "DAL",
         "startYear": 2013,
         "endYear": 2013
       },
       {
-        "teamId": "DAL",
+        "teamId": "CHI",
         "startYear": 2013,
         "endYear": 2013
       },
@@ -151259,12 +158202,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
-        "teamId": "SF",
+        "teamId": "BUF",
         "startYear": 2014,
         "endYear": 2014
       },
       {
-        "teamId": "BUF",
+        "teamId": "SF",
         "startYear": 2014,
         "endYear": 2014
       }
@@ -151359,6 +158302,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/piiixupzy97ha2mnhhe4",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
         "teamId": "PHI",
         "startYear": 2022,
         "endYear": 2024
@@ -151378,14 +158326,29 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qgwjblnzedbxfulfhltu",
     "teamStints": [
       {
+        "teamId": "NYJ",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
         "teamId": "SEA",
         "startYear": 2016,
         "endYear": 2016
       },
       {
-        "teamId": "HOU",
+        "teamId": "IND",
         "startYear": 2017,
         "endYear": 2017
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2017,
+        "endYear": 2018
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2018,
+        "endYear": 2018
       },
       {
         "teamId": "LAC",
