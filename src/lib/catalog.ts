@@ -163,3 +163,26 @@ export function searchPlayers(query: string, limit = 8, filters: PlayerFilters):
     .slice(0, limit)
     .map(({ id, fullName, position, headshotUrl }) => ({ id, fullName, position, headshotUrl }));
 }
+
+export function searchAllPlayers(query: string, limit = 8): PlayerSearchResult[] {
+  const normalized = normalizeSearchText(query);
+  if (!normalized) {
+    return [];
+  }
+
+  return CATALOG.filter((player) => player.normalizedName.includes(normalized))
+    .sort((left, right) => {
+      const leftExact = left.normalizedName === normalized ? 0 : 1;
+      const rightExact = right.normalizedName === normalized ? 0 : 1;
+      if (leftExact !== rightExact) return leftExact - rightExact;
+
+      const leftStarts = left.normalizedName.startsWith(normalized) ? 0 : 1;
+      const rightStarts = right.normalizedName.startsWith(normalized) ? 0 : 1;
+      if (leftStarts !== rightStarts) {
+        return leftStarts - rightStarts;
+      }
+      return left.fullName.localeCompare(right.fullName);
+    })
+    .slice(0, limit)
+    .map(({ id, fullName, position, headshotUrl }) => ({ id, fullName, position, headshotUrl }));
+}

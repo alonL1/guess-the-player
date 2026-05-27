@@ -162,13 +162,22 @@ export function LandingPage() {
           ▶ Test your ball knowledge!
         </p>
 
-        <button
-          type="button"
-          onClick={() => navigate("/solo")}
-          className="pixel-button pixel-button-primary mt-8 w-full sm:w-auto"
-        >
-          ▶ Quick Solo Play
-        </button>
+        <div className="mt-8 grid gap-3 sm:inline-grid sm:grid-cols-2">
+          <button
+            type="button"
+            onClick={() => navigate("/daily")}
+            className="pixel-button pixel-button-accent w-full"
+          >
+            Daily Challenge
+          </button>
+          <button
+            type="button"
+            onClick={() => navigate("/solo")}
+            className="pixel-button pixel-button-primary w-full"
+          >
+            ▶ Quick Solo Play
+          </button>
+        </div>
 
         <div className="pixel-panel mt-10 max-w-md p-4 sm:p-5">
           <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Compete with friends</p>
