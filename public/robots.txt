@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /catalog
+Disallow: /rooms/
+
+Sitemap: https://pathguessr.app/sitemap.xml
