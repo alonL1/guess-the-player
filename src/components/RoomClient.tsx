@@ -137,7 +137,12 @@ function YearRangeSlider({
   const minYear = CATALOG_YEAR_RANGE.min;
   const maxYear = CATALOG_YEAR_RANGE.max;
   const safeStartYear = Math.min(Math.max(startYear, minYear), maxYear);
-  const safeEndYear = Math.min(Math.max(endYear, safeStartYear), maxYear);
+  const shouldDisplayLegacyDefaultAsCurrent =
+    mode === DEFAULT_ROOM_SETTINGS.careerYearMode &&
+    safeStartYear === DEFAULT_ROOM_SETTINGS.careerStartYear &&
+    endYear >= maxYear - 1;
+  const rawSafeEndYear = shouldDisplayLegacyDefaultAsCurrent ? maxYear : endYear;
+  const safeEndYear = Math.min(Math.max(rawSafeEndYear, safeStartYear), maxYear);
   const range = Math.max(maxYear - minYear, 1);
   const startPercent = ((safeStartYear - minYear) / range) * 100;
   const endPercent = ((safeEndYear - minYear) / range) * 100;

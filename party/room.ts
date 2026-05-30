@@ -118,7 +118,12 @@ function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "caree
 
 function normalizeSettings(settings: RoomSettings): RoomSettings {
   const careerStartYear = Math.min(Math.max(settings.careerStartYear, CATALOG_YEAR_RANGE.min), CATALOG_YEAR_RANGE.max);
-  const careerEndYear = Math.min(Math.max(settings.careerEndYear, careerStartYear), CATALOG_YEAR_RANGE.max);
+  const shouldMigrateDefaultCurrentYear =
+    settings.careerYearMode === DEFAULT_ROOM_SETTINGS.careerYearMode &&
+    careerStartYear === DEFAULT_ROOM_SETTINGS.careerStartYear &&
+    settings.careerEndYear >= CATALOG_YEAR_RANGE.max - 1;
+  const rawCareerEndYear = shouldMigrateDefaultCurrentYear ? CATALOG_YEAR_RANGE.max : settings.careerEndYear;
+  const careerEndYear = Math.min(Math.max(rawCareerEndYear, careerStartYear), CATALOG_YEAR_RANGE.max);
   return {
     ...settings,
     careerStartYear,
