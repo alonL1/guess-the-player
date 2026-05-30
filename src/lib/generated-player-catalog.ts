@@ -3393,6 +3393,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "younghoe-koo"
@@ -120190,6 +120195,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -122871,6 +122881,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "josh-tupou"
@@ -123093,7 +123108,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "parris-campbell"

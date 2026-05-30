@@ -116,6 +116,16 @@ function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "caree
   };
 }
 
+function normalizeSettings(settings: RoomSettings): RoomSettings {
+  const careerStartYear = Math.min(Math.max(settings.careerStartYear, CATALOG_YEAR_RANGE.min), CATALOG_YEAR_RANGE.max);
+  const careerEndYear = Math.min(Math.max(settings.careerEndYear, careerStartYear), CATALOG_YEAR_RANGE.max);
+  return {
+    ...settings,
+    careerStartYear,
+    careerEndYear
+  };
+}
+
 export default class RoomParty implements Party.Server {
   // Persisted to storage so the room survives hibernation
   settings: RoomSettings = { ...DEFAULT_ROOM_SETTINGS };
@@ -141,7 +151,7 @@ export default class RoomParty implements Party.Server {
     // Rehydrate state from storage on wake from hibernation
     const saved = await this.room.storage.get<SerializedState>("state");
     if (saved) {
-      this.settings = { ...DEFAULT_ROOM_SETTINGS, ...saved.settings };
+      this.settings = normalizeSettings({ ...DEFAULT_ROOM_SETTINGS, ...saved.settings });
       this.status = saved.status;
       this.hostParticipantId = saved.hostParticipantId;
       this.usedPlayerIds = saved.usedPlayerIds;
@@ -165,6 +175,8 @@ export default class RoomParty implements Party.Server {
         const player = findPlayerById(id);
         if (player) this.cachedPlayers.set(player.id, player);
       }
+    } else {
+      this.settings = normalizeSettings(this.settings);
     }
 
     // Ensure max-lifetime alarm is in the queue once we have a createdAt
@@ -386,6 +398,7 @@ export default class RoomParty implements Party.Server {
       ...next,
       difficulty: next.difficulty ?? this.settings.difficulty
     };
+    const normalized = normalizeSettings(merged);
     if (merged.roundCount < 1 || merged.roundCount > 20) {
       throw new RoomActionError("VALIDATION_FAILED", "Round count must be between 1 and 20");
     }
@@ -401,10 +414,7 @@ export default class RoomParty implements Party.Server {
     if (!["entered", "retired", "full_career", "current"].includes(merged.careerYearMode)) {
       throw new RoomActionError("VALIDATION_FAILED", "Select a valid year filter");
     }
-    if (merged.careerStartYear < CATALOG_YEAR_RANGE.min || merged.careerEndYear > CATALOG_YEAR_RANGE.max) {
-      throw new RoomActionError("VALIDATION_FAILED", "Career years are outside the available player catalog");
-    }
-    if (merged.careerStartYear > merged.careerEndYear) {
+    if (normalized.careerStartYear > normalized.careerEndYear) {
       throw new RoomActionError("VALIDATION_FAILED", "Career start year must be before career end year");
     }
     if (merged.teamId !== "all" && !VALID_TEAM_IDS.has(merged.teamId)) {
@@ -414,7 +424,7 @@ export default class RoomParty implements Party.Server {
       throw new RoomActionError("VALIDATION_FAILED", "Current player count exceeds the selected max player limit");
     }
 
-    this.settings = merged;
+    this.settings = normalized;
     await this.refreshCanStart();
     await this.scheduleStaleLobbySweep();
     this.broadcastSnapshot();

@@ -1,6 +1,5 @@
 import type { RoomSettings } from "@/lib/types";
-
-const CURRENT_YEAR = new Date().getUTCFullYear();
+import { CATALOG_YEAR_RANGE } from "@/lib/catalog";
 
 export const DEFAULT_ROOM_SETTINGS: RoomSettings = {
   roundCount: 5,
@@ -11,7 +10,7 @@ export const DEFAULT_ROOM_SETTINGS: RoomSettings = {
   showPosition: false,
   careerYearMode: "full_career",
   careerStartYear: 1999,
-  careerEndYear: CURRENT_YEAR,
+  careerEndYear: CATALOG_YEAR_RANGE.max,
   teamId: "all",
   maxPlayers: 8,
   isPublic: true

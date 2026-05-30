@@ -136,10 +136,12 @@ function YearRangeSlider({
 }) {
   const minYear = CATALOG_YEAR_RANGE.min;
   const maxYear = CATALOG_YEAR_RANGE.max;
-  const range = maxYear - minYear;
-  const startPercent = ((startYear - minYear) / range) * 100;
-  const endPercent = ((endYear - minYear) / range) * 100;
-  const yearLabel = `${startYear}-${endYear === maxYear ? "Current" : endYear}`;
+  const safeStartYear = Math.min(Math.max(startYear, minYear), maxYear);
+  const safeEndYear = Math.min(Math.max(endYear, safeStartYear), maxYear);
+  const range = Math.max(maxYear - minYear, 1);
+  const startPercent = ((safeStartYear - minYear) / range) * 100;
+  const endPercent = ((safeEndYear - minYear) / range) * 100;
+  const yearLabel = `${safeStartYear}-${safeEndYear === maxYear ? "Current" : safeEndYear}`;
   const description =
     mode === "current"
       ? "Only active players in the current catalog are eligible."
@@ -186,11 +188,11 @@ function YearRangeSlider({
               type="range"
               min={minYear}
               max={maxYear}
-              value={startYear}
+              value={safeStartYear}
               disabled={disabled}
               onChange={(event) => {
-                const nextStart = Math.min(Number(event.target.value), endYear);
-                onChange({ careerStartYear: nextStart, careerEndYear: endYear });
+                const nextStart = Math.min(Number(event.target.value), safeEndYear);
+                onChange({ careerStartYear: nextStart, careerEndYear: safeEndYear });
               }}
               className="year-range-input"
               aria-label="Career start year"
@@ -199,11 +201,11 @@ function YearRangeSlider({
               type="range"
               min={minYear}
               max={maxYear}
-              value={endYear}
+              value={safeEndYear}
               disabled={disabled}
               onChange={(event) => {
-                const nextEnd = Math.max(Number(event.target.value), startYear);
-                onChange({ careerStartYear: startYear, careerEndYear: nextEnd });
+                const nextEnd = Math.max(Number(event.target.value), safeStartYear);
+                onChange({ careerStartYear: safeStartYear, careerEndYear: nextEnd });
               }}
               className="year-range-input"
               aria-label="Career end year"
