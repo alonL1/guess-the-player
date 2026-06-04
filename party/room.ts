@@ -257,13 +257,16 @@ export default class RoomParty implements Party.Server {
     conn.setState({ participantId: participant.id });
 
     await this.refreshCanStart();
-    await this.scheduleStaleLobbySweep();
-    await this.persist();
 
-    // Send identity + initial snapshot to this connection
+    // Send identity + initial snapshot to this connection and update everyone
+    // else BEFORE the storage-backed work, so a joining/reconnecting client (and
+    // the rest of the room) sees current state without waiting on disk I/O.
     conn.send(JSON.stringify({ type: "hello", participantId: participant.id }));
     conn.send(this.encode({ type: "snapshot", snapshot: this.serialize() }));
     this.broadcastSnapshot();
+
+    await this.scheduleStaleLobbySweep();
+    await this.persist();
 
     if (this.status === "lobby") {
       void this.notifyLobby("upsert");
@@ -283,6 +286,18 @@ export default class RoomParty implements Party.Server {
     if (!participantId) return;
     const participant = this.participants.get(participantId);
     if (!participant) return;
+
+    // Lightweight catch-up: a client that suspects it's stale (reconnected or
+    // overran a countdown/round) asks for the current snapshot. No ack, no
+    // storage write — just re-send current state to this one connection.
+    if (msg.type === "sync") {
+      try {
+        conn.send(this.encode({ type: "snapshot", snapshot: this.serialize() }));
+      } catch {
+        // connection already closed
+      }
+      return;
+    }
 
     const requestId = msg.requestId;
     const ack = (response: AckResponse) => {
@@ -313,6 +328,9 @@ export default class RoomParty implements Party.Server {
           break;
         case "continue":
           ack({ ok: true, snapshot: await this.handleContinue(participantId) });
+          break;
+        case "endGame":
+          ack({ ok: true, snapshot: await this.handleEndGame(participantId) });
           break;
         case "leave":
           ack(await this.handleLeave(participantId, msg.intent, conn));
@@ -562,6 +580,20 @@ export default class RoomParty implements Party.Server {
     throw new RoomActionError("INVALID_STATE", "Continue is not available right now");
   }
 
+  // Host aborts the in-progress match and returns everyone to the lobby (room
+  // stays open). Distinct from "leave/end_room" which closes the room entirely.
+  private async handleEndGame(participantId: string): Promise<RoomSnapshot> {
+    this.assertHost(participantId);
+    if (this.status === "lobby") {
+      throw new RoomActionError("INVALID_STATE", "The game is not in progress");
+    }
+    await this.clearAlarm("countdownEnd");
+    await this.clearAlarm("roundEnd");
+    await this.resetToLobby();
+    void this.notifyLobby("upsert");
+    return this.serialize();
+  }
+
   private async handleLeave(
     participantId: string,
     intent: LeaveIntent,
@@ -663,8 +695,11 @@ export default class RoomParty implements Party.Server {
       if (p.roundScore === null) p.roundScore = 0;
     }
     this.status = "round_reveal";
-    await this.clearAlarm("roundEnd");
+    // Broadcast first so every client flips to the reveal immediately; the
+    // storage-backed alarm clear can happen after. A stray roundEnd alarm that
+    // fires before the clear lands is harmless — endRound re-runs idempotently.
     this.broadcastSnapshot();
+    await this.clearAlarm("roundEnd");
   }
 
   private async resetToLobby() {
@@ -678,8 +713,9 @@ export default class RoomParty implements Party.Server {
       this.resetParticipantRoundState(p);
     }
     await this.refreshCanStart();
-    await this.scheduleStaleLobbySweep();
+    // Broadcast the lobby reset first; the stale-lobby sweep (storage) can follow.
     this.broadcastSnapshot();
+    await this.scheduleStaleLobbySweep();
   }
 
   private resetParticipantRoundState(p: ParticipantRecord) {

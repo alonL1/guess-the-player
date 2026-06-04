@@ -3,7 +3,7 @@ import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState, us
 import { Link, useNavigate } from "react-router-dom";
 import PartySocket from "partysocket";
 
-import { CATALOG_YEAR_RANGE, getEligiblePlayers, searchPlayers as searchPlayersLocal } from "@/lib/catalog";
+import { CATALOG_YEAR_RANGE, findPlayerById, getEligiblePlayers, searchPlayers as searchPlayersLocal } from "@/lib/catalog";
 import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "@/lib/messages";
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
@@ -90,7 +90,9 @@ function formatSettingsSummary(settings: RoomSettings): string {
           ? "Current players"
           : "Full career";
   const years = settings.careerYearMode === "current" ? "" : ` ${settings.careerStartYear}-${settings.careerEndYear}`;
-  return `${settings.roundCount} rounds · ${timer} · ${scoring} · ${difficulties} · ${yearMode}${years} · ${team}`;
+  const showYears = settings.showYears ? "Years on" : "Years off";
+  const showPosition = settings.showPosition ? "Position on" : "Position off";
+  return `${settings.roundCount} rounds · ${timer} · ${scoring} · ${difficulties} · ${yearMode}${years} · ${team} · ${showYears} · ${showPosition}`;
 }
 
 function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId">) {
@@ -231,6 +233,19 @@ function ChevronIcon({ className }: { className?: string }) {
   );
 }
 
+type ConnStatus = "connecting" | "open" | "reconnecting";
+
+function InlineSpinner() {
+  return <span className="blink ml-2 inline-block">▮</span>;
+}
+
+function ConnIndicator({ status }: { status: ConnStatus }) {
+  if (status === "open") {
+    return <span className="pixel-tag pixel-tag-green">● Live</span>;
+  }
+  return <span className="pixel-tag pixel-tag-yellow blink">● Sync…</span>;
+}
+
 function PlayerRosterCard({
   room,
   participantId,
@@ -323,7 +338,16 @@ function LeaderboardCard({
             onClick={onContinue}
             className="pixel-button pixel-button-primary"
           >
-            {room.status === "finished" ? "↩ Back to Lobby" : "Next Round ▶"}
+            {pending ? (
+              <>
+                Loading
+                <InlineSpinner />
+              </>
+            ) : room.status === "finished" ? (
+              "↩ Back to Lobby"
+            ) : (
+              "Next Round ▶"
+            )}
           </button>
         ) : (
           <span className="pixel-tag pixel-tag-yellow">Waiting for the host</span>
@@ -461,7 +485,12 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const socketRef = useRef<PartySocket | null>(null);
   const pendingAcks = useRef(new Map<string, PendingAck>());
   const redirectingRef = useRef(false);
+  const hasConnectedRef = useRef(false);
+  const wasOpenRef = useRef(false);
+  const lastResyncRef = useRef(0);
+  const lastSnapshotAtRef = useRef(0);
 
+  const [connStatus, setConnStatus] = useState<ConnStatus>("connecting");
   const [room, setRoom] = useState<RoomSnapshot | null>(null);
   const [participantId, setParticipantIdState] = useState("");
   const [nickname, setNicknameState] = useState(() => getNickname());
@@ -471,6 +500,10 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const deferredGuessQuery = useDeferredValue(guessQuery);
   const [searchResults, setSearchResults] = useState<PlayerSearchResult[]>([]);
   const [guessFeedback, setGuessFeedback] = useState<GuessResult | null>(null);
+  // Players this client guessed incorrectly this round, in guess order, tracked
+  // locally (the server doesn't record which wrong players were guessed). Used to
+  // red-theme those search results and to show the last wrong guess on reveal.
+  const [myWrongGuessIds, setMyWrongGuessIds] = useState<string[]>([]);
   const [leaveDialogOpen, setLeaveDialogOpen] = useState(false);
   const [startBlocker, setStartBlocker] = useState<StartBlocker | null>(null);
   const [now, setNow] = useState<number | null>(null);
@@ -498,6 +531,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   }, []);
 
   const applySnapshot = useCallback((snapshot: RoomSnapshot) => {
+    lastSnapshotAtRef.current = Date.now();
     setRoom(snapshot);
     if (snapshot.status !== "round_active") {
       setGuessQuery("");
@@ -520,6 +554,22 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     [navigate, roomCode]
   );
 
+  // Ask the server to re-send the current snapshot. Used on reconnect and when
+  // the staleness watchdog detects we're stuck behind a transition. Throttled
+  // so the 250ms tick can't spam it; sent raw (no ack/requestId needed).
+  const requestResync = useCallback(() => {
+    const socket = socketRef.current;
+    if (!socket || socket.readyState !== WebSocket.OPEN) return;
+    const nowMs = Date.now();
+    if (nowMs - lastResyncRef.current < 2000) return;
+    lastResyncRef.current = nowMs;
+    try {
+      socket.send(JSON.stringify({ type: "sync" }));
+    } catch {
+      // socket not ready — watchdog will retry on the next tick
+    }
+  }, []);
+
   useEffect(() => {
     if (needsNickname) return;
 
@@ -533,7 +583,13 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
         sessionId,
         nickname,
         participantId: existingParticipantId
-      }
+      },
+      // Recover fast from blips (mobile screen-lock, backgrounded tabs) without
+      // the default backoff that can wait up to ~10s. Min is kept off the floor
+      // so a saturated link isn't hammered with sub-second handshake retries.
+      minReconnectionDelay: 600,
+      maxReconnectionDelay: 4000,
+      reconnectionDelayGrowFactor: 1.4
     });
 
     socketRef.current = socket;
@@ -580,10 +636,6 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
       }
     });
 
-    socket.addEventListener("close", () => {
-      if (redirectingRef.current) return;
-    });
-
     return () => {
       socket.close();
       socketRef.current = null;
@@ -591,15 +643,57 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     };
   }, [applySnapshot, goHome, needsNickname, nickname, roomCode]);
 
+  // Self-healing connection status. Derived from the socket's live readyState
+  // rather than from open/close/error events, which can desync (e.g. a spurious
+  // error leaving the banner stuck on "reconnecting" even after we're back).
+  // Polling means status always reflects reality within a tick, and we trigger a
+  // resync on the transition back to OPEN.
+  useEffect(() => {
+    if (needsNickname) return;
+    const handle = window.setInterval(() => {
+      if (redirectingRef.current) return;
+      const socket = socketRef.current;
+      if (!socket) return;
+      if (socket.readyState === WebSocket.OPEN) {
+        setConnStatus("open");
+        if (!wasOpenRef.current && hasConnectedRef.current) requestResync();
+        wasOpenRef.current = true;
+        hasConnectedRef.current = true;
+      } else {
+        setConnStatus(hasConnectedRef.current ? "reconnecting" : "connecting");
+        wasOpenRef.current = false;
+      }
+    }, 300);
+    return () => window.clearInterval(handle);
+  }, [needsNickname, requestResync]);
+
   useEffect(() => {
     setMessage(null);
     if (room?.status === "round_active") setRosterExpanded(false);
+    // Clear last round's wrong guesses as a new round spins up.
+    if (room?.status === "countdown") setMyWrongGuessIds([]);
   }, [room?.status]);
 
   useEffect(() => {
     if (!deferredGuessQuery.trim() || room?.status !== "round_active" || !playerFilters) return;
     setSearchResults(searchPlayersLocal(deferredGuessQuery.trim(), 8, playerFilters));
   }, [deferredGuessQuery, playerFilters, room?.status]);
+
+  // Staleness watchdog: if a transition snapshot never arrived AND no snapshot
+  // has landed for a few seconds (a genuine stall, not just a slow link still
+  // delivering), ask for a fresh one. Gating on "no recent snapshot" avoids
+  // piling resync traffic onto an already-congested connection between rounds.
+  useEffect(() => {
+    if (!room || now === null) return;
+    const stalled = now - lastSnapshotAtRef.current > 3000;
+    if (!stalled) return;
+    if (room.status === "countdown" && room.round?.countdownEndsAt) {
+      if (now > new Date(room.round.countdownEndsAt).getTime() + 1500) requestResync();
+    }
+    if (room.status === "round_active" && room.round?.endsAt) {
+      if (now > new Date(room.round.endsAt).getTime() + 2000) requestResync();
+    }
+  }, [now, room, requestResync]);
 
   function send(message: ClientMessage): Promise<AckResponse> {
     return new Promise((resolve) => {
@@ -669,7 +763,15 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   function submitGuess(playerId: string) {
     if (!participantId) return;
     void send({ type: "guess", playerId }).then((response) => {
-      if (!response.ok) setMessage(response.error);
+      if (!response.ok) {
+        setMessage(response.error);
+        return;
+      }
+      // Remember incorrect guesses so we can red-theme those search results and
+      // show the last wrong pick on the reveal screen.
+      if (response.result?.status === "wrong") {
+        setMyWrongGuessIds((prev) => (prev.includes(playerId) ? prev : [...prev, playerId]));
+      }
     });
   }
 
@@ -685,6 +787,16 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     if (!participantId) return;
     startTransition(async () => {
       const response = await send({ type: "endManual" });
+      if (!response.ok) setMessage(response.error);
+    });
+  }
+
+  // Host-only: abort the current match and send the room back to the lobby
+  // (everyone stays). The snapshot broadcast moves all clients to the lobby.
+  function endMatch() {
+    if (!participantId) return;
+    startTransition(async () => {
+      const response = await send({ type: "endGame" });
       if (!response.ok) setMessage(response.error);
     });
   }
@@ -720,6 +832,29 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
   const inLobby = room?.status === "lobby";
   const isFinalCountdown = countdownLabel === 1;
+  // We've overrun a server deadline AND nothing has arrived recently (a genuine
+  // stall, matching the watchdog's resync condition). Used to show a "Catching
+  // up…" hint so a stuck client knows what's happening — without flashing it on
+  // every merely-slow transition.
+  const isStalled = now !== null && now - lastSnapshotAtRef.current > 3000;
+  const isCatchingUp =
+    isStalled &&
+    now !== null &&
+    ((room?.status === "countdown" &&
+      !!room.round?.countdownEndsAt &&
+      now > new Date(room.round.countdownEndsAt).getTime() + 1500) ||
+      (room?.status === "round_active" &&
+        !!room.round?.endsAt &&
+        now > new Date(room.round.endsAt).getTime() + 2000));
+
+  // Reveal-screen outcome for this client.
+  const revealGotIt = self?.answeredCorrectly ?? false;
+  const revealPoints = self?.roundScore ?? 0;
+  const lastWrongGuessId = myWrongGuessIds.length > 0 ? myWrongGuessIds[myWrongGuessIds.length - 1] : null;
+  const wrongGuessPlayer =
+    room?.status === "round_reveal" && !revealGotIt && lastWrongGuessId
+      ? findPlayerById(lastWrongGuessId)
+      : null;
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col gap-3 px-3 py-3 sm:gap-4 sm:px-6 sm:py-6">
@@ -739,6 +874,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                 {room.players.length}/{room.settings.maxPlayers}
               </span>
             ) : null}
+            {!needsNickname ? <ConnIndicator status={connStatus} /> : null}
           </div>
 
           {room && !needsNickname ? (
@@ -750,6 +886,16 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
               >
                 Invite
               </button>
+              {self?.isHost && !inLobby ? (
+                <button
+                  type="button"
+                  disabled={pending}
+                  onClick={endMatch}
+                  className="pixel-button pixel-button-accent min-h-0 px-3 py-2 text-[0.5rem] sm:text-[0.625rem]"
+                >
+                  End Game
+                </button>
+              ) : null}
               <button
                 type="button"
                 onClick={() => {
@@ -770,6 +916,14 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
           ) : null}
         </div>
       </div>
+
+      {!needsNickname && connStatus === "reconnecting" ? (
+        <div className="pixel-panel-flat border-helmet p-3">
+          <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">
+            <span className="blink">⟳</span> Reconnecting…
+          </p>
+        </div>
+      ) : null}
 
       {message ? (
         <div className="pixel-panel-flat border-jersey-red p-3">
@@ -800,7 +954,9 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
       {!needsNickname && !room ? (
         <section className="pixel-panel p-8 text-center">
-          <p className="font-pixel text-helmet text-xs sm:text-sm blink">Loading...</p>
+          <p className="font-pixel text-helmet text-xs sm:text-sm blink">
+            {connStatus === "open" ? "Loading room…" : "Connecting to the field…"}
+          </p>
         </section>
       ) : null}
 
@@ -1007,7 +1163,14 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                       onClick={startGame}
                       className="pixel-button pixel-button-primary w-full sm:w-auto"
                     >
-                      ▶ START GAME
+                      {pending ? (
+                        <>
+                          Starting
+                          <InlineSpinner />
+                        </>
+                      ) : (
+                        "▶ START GAME"
+                      )}
                     </button>
                   ) : (
                     <span className="pixel-tag pixel-tag-yellow">Waiting for host</span>
@@ -1031,7 +1194,9 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                 >
                   {countdownLabel}
                 </div>
-                <p className="font-pixel text-chalk mt-6 text-[0.55rem] sm:text-xs">GET READY</p>
+                <p className="font-pixel text-chalk mt-6 text-[0.55rem] sm:text-xs">
+                  {isCatchingUp ? <span className="text-helmet blink">CATCHING UP…</span> : "GET READY"}
+                </p>
               </div>
               <PlayerRosterCard room={room} participantId={participantId} title="Participants" subtitle="Countdown" />
             </>
@@ -1056,9 +1221,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     <span className="font-pixel text-chalk-dim text-[0.5rem] sm:text-[0.625rem]">
                       {correctCount}/{room.players.length} solved
                     </span>
-                    {room.round?.position ? (
-                      <span className="pixel-tag pixel-tag-yellow">{room.round.position}</span>
-                    ) : null}
+                    {isCatchingUp ? <span className="pixel-tag pixel-tag-yellow blink">Catching up…</span> : null}
                   </div>
                   {room.settings.timePerRoundSeconds === null && self?.isHost ? (
                     <button
@@ -1073,6 +1236,12 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
               </div>
 
               <div className="pixel-panel p-3 sm:p-4">
+                {room.round?.position ? (
+                  <div className="mb-3 flex items-center justify-center gap-2 border-4 border-helmet bg-endzone px-3 py-2">
+                    <span className="font-pixel text-chalk-dim text-[0.5rem] sm:text-[0.625rem]">POSITION</span>
+                    <span className="font-pixel text-helmet text-sm sm:text-lg">{room.round.position}</span>
+                  </div>
+                ) : null}
                 <TeamPath teamStints={room.round?.teamStints ?? []} showYears={room.settings.showYears} />
               </div>
 
@@ -1137,30 +1306,51 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
                   {visibleSearchResults.length > 0 ? (
                     <div className="mt-3 grid gap-2">
-                      {visibleSearchResults.map((result) => (
-                        <button
-                          key={result.id}
-                          type="button"
-                          onClick={() => submitGuess(result.id)}
-                          className="flex items-center gap-3 border-4 border-yardline bg-endzone p-2 text-left hover:border-helmet"
-                        >
-                          <img
-                            src={result.headshotUrl}
-                            alt=""
-                            width={40}
-                            height={40}
-                            className="h-10 w-10 shrink-0 border-2 border-yardline bg-endzone object-cover"
-                          />
-                          <span className="min-w-0">
-                            <span className="font-readable text-chalk block truncate text-base sm:text-lg">
-                              {result.fullName}
+                      {visibleSearchResults.map((result) => {
+                        const wasWrong = myWrongGuessIds.includes(result.id);
+                        return (
+                          <button
+                            key={result.id}
+                            type="button"
+                            onClick={() => submitGuess(result.id)}
+                            className={clsx(
+                              "flex items-center gap-3 border-4 p-2 text-left",
+                              wasWrong
+                                ? "border-jersey-red bg-[#3a1416]"
+                                : "border-yardline bg-endzone hover:border-helmet"
+                            )}
+                          >
+                            <img
+                              src={result.headshotUrl}
+                              alt=""
+                              width={40}
+                              height={40}
+                              className={clsx(
+                                "h-10 w-10 shrink-0 border-2 object-cover",
+                                wasWrong ? "border-jersey-red bg-[#3a1416] opacity-70" : "border-yardline bg-endzone"
+                              )}
+                            />
+                            <span className="min-w-0">
+                              <span
+                                className={clsx(
+                                  "block truncate font-readable text-base sm:text-lg",
+                                  wasWrong ? "text-jersey-red line-through" : "text-chalk"
+                                )}
+                              >
+                                {result.fullName}
+                              </span>
+                              <span
+                                className={clsx(
+                                  "font-pixel text-[0.5rem] sm:text-[0.55rem]",
+                                  wasWrong ? "text-jersey-red" : "text-helmet"
+                                )}
+                              >
+                                {result.position}
+                              </span>
                             </span>
-                            <span className="font-pixel text-helmet text-[0.5rem] sm:text-[0.55rem]">
-                              {result.position}
-                            </span>
-                          </span>
-                        </button>
-                      ))}
+                          </button>
+                        );
+                      })}
                     </div>
                   ) : null}
                 </div>
@@ -1190,6 +1380,22 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
               <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">
                 ▼ Round {room.round?.roundNumber}/{room.round?.totalRounds} · Reveal
               </p>
+
+              {/* Outcome banner — did this client get it, and points if so */}
+              <div
+                className={clsx(
+                  "mt-3 flex flex-wrap items-center justify-between gap-2 border-4 px-3 py-2.5 sm:mt-4 sm:px-4 sm:py-3",
+                  revealGotIt ? "border-good bg-endzone" : "border-jersey-red bg-endzone"
+                )}
+              >
+                <p className={clsx("font-pixel text-xs sm:text-base", revealGotIt ? "text-good" : "text-jersey-red")}>
+                  {revealGotIt ? "✓ YOU GOT IT" : "✗ YOU MISSED IT"}
+                </p>
+                {revealGotIt ? (
+                  <span className="pixel-tag pixel-tag-green text-[0.6rem] sm:text-xs">+{revealPoints} PTS</span>
+                ) : null}
+              </div>
+
               <div className="mt-4 grid gap-4 sm:mt-5 sm:gap-6 lg:grid-cols-[240px_1fr] lg:items-start">
                 <div className="mx-auto w-40 overflow-hidden border-4 border-helmet bg-endzone sm:w-56 lg:mx-0 lg:w-auto">
                   <img
@@ -1207,30 +1413,49 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     {room.round.reveal.player.fullName}
                   </h2>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {room.settings.showPosition ? (
-                      <span className="pixel-tag pixel-tag-yellow">{room.round.reveal.player.position}</span>
-                    ) : null}
+                    <span className="pixel-tag pixel-tag-yellow">{room.round.reveal.player.position}</span>
                     <span className="pixel-tag pixel-tag-blue capitalize">{room.round.reveal.player.difficulty}</span>
                   </div>
                   <div className="mt-4 sm:mt-5">
                     <TeamPath teamStints={room.round.reveal.player.teamStints} showYears />
                   </div>
+                </div>
+              </div>
 
-                  <div className="mt-5 sm:mt-6">
-                    {self?.isHost ? (
-                      <button
-                        type="button"
-                        disabled={pending}
-                        onClick={continueFlow}
-                        className="pixel-button pixel-button-primary w-full sm:w-auto"
-                      >
-                        Continue ▶
-                      </button>
-                    ) : (
-                      <span className="pixel-tag pixel-tag-yellow">Waiting for the host</span>
-                    )}
+              {/* Your wrong guess (only if you missed and actually guessed someone) */}
+              {wrongGuessPlayer ? (
+                <div className="mt-4 border-4 border-jersey-red bg-endzone p-3 sm:mt-5 sm:p-4">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="font-pixel text-jersey-red text-[0.5rem] sm:text-[0.625rem]">✗ YOU GUESSED</p>
+                    <p className="font-readable text-chalk text-sm sm:text-base">{wrongGuessPlayer.fullName}</p>
+                    <span className="pixel-tag pixel-tag-blue capitalize text-[0.5rem]">{wrongGuessPlayer.position}</span>
+                  </div>
+                  <div className="mt-3">
+                    <TeamPath teamStints={wrongGuessPlayer.teamStints} showYears compact tone="danger" />
                   </div>
                 </div>
+              ) : null}
+
+              <div className="mt-5 sm:mt-6">
+                {self?.isHost ? (
+                  <button
+                    type="button"
+                    disabled={pending}
+                    onClick={continueFlow}
+                    className="pixel-button pixel-button-primary w-full sm:w-auto"
+                  >
+                    {pending ? (
+                      <>
+                        Loading
+                        <InlineSpinner />
+                      </>
+                    ) : (
+                      "Continue ▶"
+                    )}
+                  </button>
+                ) : (
+                  <span className="pixel-tag pixel-tag-yellow">Waiting for the host</span>
+                )}
               </div>
             </div>
           ) : null}

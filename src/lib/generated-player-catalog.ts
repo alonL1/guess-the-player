@@ -84,7 +84,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "matt-prater"
@@ -402,7 +402,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "von-miller"
@@ -666,7 +666,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2020,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "graham-gano"
@@ -694,6 +694,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "greg-zuerlein"
+  },
+  {
+    "fullName": "Myles Garrett",
+    "position": "DL",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wws0tkjdhz6xmo4cbxbc",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2017,
+        "endYear": 2025
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "myles-garrett"
   },
   {
     "fullName": "Chandler Jones",
@@ -1023,7 +1042,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "brandon-mcmanus"
@@ -1664,7 +1683,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "russell-wilson"
@@ -2101,7 +2120,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2018,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "daniel-carlson"
@@ -2149,7 +2168,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "bobby-wagner"
@@ -2360,7 +2379,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "joey-bosa"
@@ -2389,7 +2408,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "preston-smith"
@@ -2529,7 +2548,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jadeveon-clowney"
@@ -3075,7 +3094,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "leonard-floyd"
@@ -3200,25 +3219,6 @@ export const GENERATED_PLAYERS = [
     "id": "brian-orakpo"
   },
   {
-    "fullName": "Jason Sanders",
-    "position": "K",
-    "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ghqznsavihm7uuioqukw",
-    "teamStints": [
-      {
-        "teamId": "MIA",
-        "startYear": 2018,
-        "endYear": 2025
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2026,
-        "endYear": null
-      }
-    ],
-    "id": "jason-sanders"
-  },
-  {
     "fullName": "Chris Clemons",
     "position": "LB",
     "difficulty": "hard",
@@ -3286,7 +3286,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "kyle-van-noy"
@@ -3797,7 +3797,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "denico-autry"
@@ -4005,7 +4005,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "haason-reddick"
@@ -5565,7 +5565,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "emmanuel-ogbah"
@@ -6730,7 +6730,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jordan-poyer"
@@ -7013,7 +7013,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "eric-kendricks"
@@ -8991,7 +8991,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2022,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "tyreek-hill"
@@ -9170,7 +9170,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "rasul-douglas"
@@ -9892,7 +9892,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "deandre-hopkins"
@@ -9926,7 +9926,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "deion-jones"
@@ -10418,7 +10418,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "devin-white"
@@ -10942,7 +10942,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jerome-baker"
@@ -11505,7 +11505,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "marshon-lattimore"
@@ -11703,7 +11703,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "tre-davious-white"
@@ -12214,7 +12214,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "deatrich-wise"
@@ -12348,7 +12348,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "derek-barnett"
@@ -12522,7 +12522,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jamal-adams"
@@ -12575,7 +12575,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "keenan-allen"
@@ -13133,7 +13133,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "stefon-diggs"
@@ -15083,7 +15083,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "tyler-lockett"
@@ -15910,7 +15910,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "trevon-diggs"
@@ -16511,7 +16511,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jihad-ward"
@@ -16757,7 +16757,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "austin-ekeler"
@@ -16776,7 +16776,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "blake-grupe"
@@ -17303,7 +17303,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "joe-mixon"
@@ -17342,7 +17342,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jordan-phillips"
@@ -17645,7 +17645,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "larry-ogunjobi"
@@ -17674,7 +17674,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "xavier-woods"
@@ -17847,7 +17847,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "dawuane-smoot"
@@ -17944,7 +17944,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "brandin-cooks"
@@ -18364,7 +18364,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "bobby-okereke"
@@ -19115,7 +19115,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "kareem-hunt"
@@ -19327,7 +19327,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jimmie-ward"
@@ -19376,7 +19376,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "mario-edwards"
@@ -19444,7 +19444,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "zach-ertz"
@@ -20104,7 +20104,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "marcus-davenport"
@@ -20216,6 +20216,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2024,
         "endYear": 2024
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "odell-beckham"
@@ -20768,7 +20773,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "shaq-thompson"
@@ -21645,6 +21650,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2022,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NE",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -21848,7 +21858,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2022,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "daquan-jones"
@@ -22368,7 +22378,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jabrill-peppers"
@@ -22489,7 +22499,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "rayshawn-jenkins"
@@ -22663,7 +22673,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "l-jarius-sneed"
@@ -23199,7 +23209,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "germaine-pratt"
@@ -23625,7 +23635,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "clelin-ferrell"
@@ -23692,7 +23702,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "adoree-jackson"
@@ -24475,7 +24485,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jalen-mills"
@@ -24620,7 +24630,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "elandon-roberts"
@@ -24778,7 +24788,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "michael-davis"
@@ -24927,7 +24937,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "nick-chubb"
@@ -25310,7 +25320,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jimmy-garoppolo"
@@ -26781,7 +26791,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "taylor-rapp"
@@ -27704,7 +27714,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "deebo-samuel"
@@ -29407,6 +29417,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -32439,7 +32454,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "terrell-edmunds"
@@ -32809,7 +32824,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "zach-cunningham"
@@ -34395,7 +34410,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "neville-hewitt"
@@ -34737,7 +34752,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "obo-okoronkwo"
@@ -35165,7 +35180,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "yetur-gross-matos"
@@ -35617,6 +35632,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2024,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -35724,7 +35744,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "raheem-mostert"
@@ -36362,7 +36382,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "isaiah-oliver"
@@ -36788,7 +36808,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "fabian-moreau"
@@ -37594,7 +37614,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "mike-edwards"
@@ -37889,6 +37909,25 @@ export const GENERATED_PLAYERS = [
     "id": "jaquan-brisker"
   },
   {
+    "fullName": "Jared Verse",
+    "position": "LB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/e3xx2ckk3vruyn34xb8m",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2024,
+        "endYear": 2025
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "jared-verse"
+  },
+  {
     "fullName": "John Parrella",
     "position": "DL",
     "difficulty": "impossible",
@@ -37955,7 +37994,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "kenneth-murray"
@@ -38886,7 +38925,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2021,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jahlani-tavai"
@@ -41216,6 +41255,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -41724,7 +41768,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "JAX",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "austin-johnson"
@@ -43766,7 +43810,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "najee-harris"
@@ -44080,7 +44124,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "curtis-samuel"
@@ -44356,7 +44400,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "antonio-gibson"
@@ -44897,7 +44941,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "greg-gaines"
@@ -45378,7 +45422,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "arthur-maulet"
@@ -45557,7 +45601,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jonnu-smith"
@@ -47839,7 +47883,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "sterling-shepard"
@@ -47940,7 +47984,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "chris-wormley"
@@ -48472,7 +48516,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "taven-bryan"
@@ -49393,7 +49437,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "eddie-goldman"
@@ -49643,7 +49687,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "miles-sanders"
@@ -50216,7 +50260,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2022,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "brent-urban"
@@ -50380,45 +50424,6 @@ export const GENERATED_PLAYERS = [
     "id": "steve-mcmichael"
   },
   {
-    "fullName": "Thomas Morstead",
-    "position": "P",
-    "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p409gqqycwejqpolv89t",
-    "teamStints": [
-      {
-        "teamId": "NO",
-        "startYear": 2009,
-        "endYear": 2020
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 2021,
-        "endYear": 2021
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 2021,
-        "endYear": 2021
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 2022,
-        "endYear": 2022
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 2023,
-        "endYear": 2024
-      },
-      {
-        "teamId": "SF",
-        "startYear": 2025,
-        "endYear": null
-      }
-    ],
-    "id": "thomas-morstead"
-  },
-  {
     "fullName": "Blaine Gabbert",
     "position": "QB",
     "difficulty": "hard",
@@ -50564,7 +50569,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "darren-waller"
@@ -53885,7 +53890,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "artie-burns"
@@ -54198,6 +54203,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "sam-wyche"
+  },
+  {
+    "fullName": "Thomas Morstead",
+    "position": "P",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p409gqqycwejqpolv89t",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2009,
+        "endYear": 2020
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2022,
+        "endYear": 2022
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2023,
+        "endYear": 2024
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2025,
+        "endYear": 2025
+      }
+    ],
+    "id": "thomas-morstead"
   },
   {
     "fullName": "Zachary Dixon",
@@ -54984,7 +55028,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "gabriel-davis"
@@ -61385,7 +61429,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LV",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jamin-davis"
@@ -62168,7 +62212,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "troy-reeder"
@@ -62607,7 +62651,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "ifeatu-melifonwu"
@@ -68994,7 +69038,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "foley-fatukasi"
@@ -69311,7 +69355,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BUF",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "dane-jackson"
@@ -70686,7 +70730,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "alexander-mattison"
@@ -71611,7 +71655,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "josh-reynolds"
@@ -71972,7 +72016,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "khalen-saunders"
@@ -71996,7 +72040,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "krys-barnes"
@@ -81251,7 +81295,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "mike-pennel"
@@ -81641,7 +81685,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "chase-edmonds"
@@ -82644,7 +82688,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "ugo-amadi"
@@ -83261,7 +83305,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "sheldon-day"
@@ -84209,25 +84253,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "manti-te-o"
-  },
-  {
-    "fullName": "Nasir Adderley",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/skxighbf1g5mwg3hgum7",
-    "teamStints": [
-      {
-        "teamId": "LAC",
-        "startYear": 2019,
-        "endYear": 2022
-      },
-      {
-        "teamId": "IND",
-        "startYear": 2026,
-        "endYear": null
-      }
-    ],
-    "id": "nasir-adderley"
   },
   {
     "fullName": "Ty Johnson",
@@ -88263,7 +88288,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "will-dissly"
@@ -88461,7 +88486,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "george-odum"
@@ -90637,7 +90662,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "cam-akers"
@@ -92401,7 +92426,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jalen-reeves-maybin"
@@ -92990,7 +93015,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "chris-moore"
@@ -93988,7 +94013,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "robert-tonyan"
@@ -94488,6 +94513,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -95324,7 +95354,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jeff-okudah"
@@ -97471,7 +97501,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "joshua-dobbs"
@@ -103117,30 +103147,6 @@ export const GENERATED_PLAYERS = [
     "id": "jake-bailey"
   },
   {
-    "fullName": "Jamie Gillan",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jdlgspxnte3gouqopcx8",
-    "teamStints": [
-      {
-        "teamId": "CLE",
-        "startYear": 2019,
-        "endYear": 2021
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 2021,
-        "endYear": 2021
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2022,
-        "endYear": null
-      }
-    ],
-    "id": "jamie-gillan"
-  },
-  {
     "fullName": "Josh Bidwell",
     "position": "P",
     "difficulty": "impossible",
@@ -103356,7 +103362,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "daniel-ekuale"
@@ -103399,7 +103405,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2022,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "deon-bush"
@@ -103808,7 +103814,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "nick-mccloud"
@@ -104069,7 +104075,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "deandre-carter"
@@ -104535,7 +104541,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "HOU",
         "startYear": 2022,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "dare-ogunbowale"
@@ -105077,7 +105083,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "chris-board"
@@ -105337,7 +105343,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "victor-dimukeje"
@@ -107557,7 +107563,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "dante-pettis"
@@ -107903,7 +107909,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "chris-lammons"
@@ -107999,7 +108005,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "GB",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "desmond-ridder"
@@ -108022,6 +108028,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jalen-nailor"
+  },
+  {
+    "fullName": "Jamie Gillan",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jdlgspxnte3gouqopcx8",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2019,
+        "endYear": 2021
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2021,
+        "endYear": 2021
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2022,
+        "endYear": 2025
+      }
+    ],
+    "id": "jamie-gillan"
   },
   {
     "fullName": "Jordan Mason",
@@ -108595,7 +108625,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "khalil-herbert"
@@ -113205,7 +113235,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jalyn-holmes"
@@ -113264,7 +113294,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jeff-driskel"
@@ -114054,7 +114084,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "cooper-rush"
@@ -116885,7 +116915,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "donald-parham"
@@ -116909,6 +116939,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -117183,7 +117218,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "WAS",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "noah-brown"
@@ -117579,6 +117614,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2024,
         "endYear": 2025
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "jalen-reagor"
@@ -118255,7 +118295,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "nick-vannett"
@@ -120330,7 +120370,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "IND",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jacob-phillips"
@@ -123336,6 +123376,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -129937,7 +129982,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "kris-boyd"
@@ -130024,11 +130069,6 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2024,
         "endYear": 2025
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2026,
-        "endYear": null
       }
     ],
     "id": "marlon-tuipulotu"
@@ -130243,7 +130283,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "amen-ogbongbemiga"
@@ -133702,7 +133742,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "trent-taylor"
@@ -135750,7 +135790,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CAR",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "damarri-mathis"
@@ -136068,7 +136108,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "josh-woods"
@@ -136184,7 +136224,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2022,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "khadarel-hodge"
@@ -138533,7 +138573,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "ben-stille"
@@ -139942,7 +139982,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2018,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "c-j-goodwin"
@@ -141007,25 +141047,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "darryl-johnson"
-  },
-  {
-    "fullName": "DeMarvin Leal",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nz84kgacxkkgtc9ahvwm",
-    "teamStints": [
-      {
-        "teamId": "PIT",
-        "startYear": 2022,
-        "endYear": 2025
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2026,
-        "endYear": null
-      }
-    ],
-    "id": "demarvin-leal"
   },
   {
     "fullName": "Derrick Johnson",
@@ -143636,7 +143657,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2023,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "quinton-bell"
@@ -144082,7 +144103,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NE",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jaquelin-roy"
@@ -144597,7 +144618,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "sam-webb"
@@ -144713,7 +144734,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SEA",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "tyler-hall"
@@ -145237,7 +145258,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "hassan-haskins"
@@ -145309,7 +145330,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "janarius-robinson"
@@ -146059,7 +146080,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "zeke-turner"
@@ -150772,7 +150793,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CIN",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "brian-asamoah"
@@ -151609,7 +151630,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "malik-heath"
@@ -152337,7 +152358,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "deven-thompkins"
@@ -152404,6 +152425,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ATL",
         "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2026,
         "endYear": null
       }
     ],
@@ -152717,25 +152743,6 @@ export const GENERATED_PLAYERS = [
     "id": "manny-martin"
   },
   {
-    "fullName": "Markees Watts",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sgjq0qaxgmoysi9pfkj1",
-    "teamStints": [
-      {
-        "teamId": "TB",
-        "startYear": 2023,
-        "endYear": 2025
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 2026,
-        "endYear": null
-      }
-    ],
-    "id": "markees-watts"
-  },
-  {
     "fullName": "Mike Jordan",
     "position": "DB",
     "difficulty": "impossible",
@@ -152932,7 +152939,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "tarron-jackson"
@@ -153660,7 +153667,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIA",
         "startYear": 2024,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "d-wayne-eskridge"
@@ -153937,7 +153944,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TEN",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "jalyn-armour-davis"
@@ -155960,7 +155967,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "MIN",
         "startYear": 2025,
-        "endYear": null
+        "endYear": 2025
       }
     ],
     "id": "brett-rypien"

@@ -13,7 +13,9 @@ export type ClientMessage =
   | { type: "guess"; requestId?: string; playerId: string }
   | { type: "endManual"; requestId?: string }
   | { type: "continue"; requestId?: string }
-  | { type: "leave"; requestId?: string; intent: "leave" | "end_room" };
+  | { type: "endGame"; requestId?: string }
+  | { type: "leave"; requestId?: string; intent: "leave" | "end_room" }
+  | { type: "sync" };
 
 export type AckResponse =
   | { ok: true; snapshot?: RoomSnapshot; result?: GuessResult; closed?: boolean; reason?: RoomClosedReason | null }
