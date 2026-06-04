@@ -55,11 +55,11 @@ This file summarizes the main changes made during the buildout of NFL Path Guess
 - Added a dropdown for how the year range is interpreted:
   - Year Entering League
   - Year Retired
-  - Full Career
+  - Full career must fit
   - Current Players Only
 - Hid the slider when Current Players Only is selected.
 - Added a Reset button that restores the year filter defaults.
-- Set the default year filter to Full Career, 1999 to Current.
+- Set the default year filter to Full career must fit, 1999 to Current.
 - Added team selection as a dropdown.
 - Applied the same filters consistently to solo play, room play, search results, and PartyKit backend validation.
 

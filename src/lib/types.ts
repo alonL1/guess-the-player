@@ -4,6 +4,8 @@ export type GameMode = "kahoot" | "sudden_death";
 
 export type CareerYearMode = "entered" | "retired" | "full_career" | "current";
 
+export type PositionGroup = "all" | "offense" | "defense" | "special_teams";
+
 export type LeaveIntent = "leave" | "end_room";
 
 export type RoomClosedReason = "host_ended" | "room_empty" | "idle_timeout" | "max_lifetime";
@@ -78,6 +80,7 @@ export interface RoomSettings {
   careerStartYear: number;
   careerEndYear: number;
   teamId: TeamId | "all";
+  positionGroup: PositionGroup;
   maxPlayers: number;
   isPublic: boolean;
 }

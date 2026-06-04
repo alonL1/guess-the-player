@@ -6,6 +6,7 @@ import PartySocket from "partysocket";
 import { CATALOG_YEAR_RANGE, findPlayerById, getEligiblePlayers, searchPlayers as searchPlayersLocal } from "@/lib/catalog";
 import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "@/lib/messages";
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
+import { formatPositionGroup, POSITION_GROUP_OPTIONS } from "@/lib/positions";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
 import { TeamPath } from "@/components/TeamPath";
 import {
@@ -23,6 +24,7 @@ import type {
   RoomClosedReason,
   RoomPlayer,
   PlayerSearchResult,
+  PositionGroup,
   RoomSettings,
   RoomSnapshot,
   TeamId
@@ -81,6 +83,7 @@ function formatSettingsSummary(settings: RoomSettings): string {
   const difficulties = settings.difficulty.map((d) => d.charAt(0).toUpperCase() + d.slice(1)).join(", ");
   const scoring = settings.mode === "sudden_death" ? "Sudden Death" : "Time Based";
   const team = settings.teamId === "all" ? "All teams" : settings.teamId;
+  const positionGroup = formatPositionGroup(settings.positionGroup);
   const yearMode =
     settings.careerYearMode === "entered"
       ? "Entered"
@@ -88,19 +91,22 @@ function formatSettingsSummary(settings: RoomSettings): string {
         ? "Retired"
         : settings.careerYearMode === "current"
           ? "Current players"
-          : "Full career";
+          : "Full career must fit";
   const years = settings.careerYearMode === "current" ? "" : ` ${settings.careerStartYear}-${settings.careerEndYear}`;
   const showYears = settings.showYears ? "Years on" : "Years off";
   const showPosition = settings.showPosition ? "Position on" : "Position off";
-  return `${settings.roundCount} rounds · ${timer} · ${scoring} · ${difficulties} · ${yearMode}${years} · ${team} · ${showYears} · ${showPosition}`;
+  return `${settings.roundCount} rounds · ${timer} · ${scoring} · ${difficulties} · ${yearMode}${years} · ${team} · ${positionGroup} · ${showYears} · ${showPosition}`;
 }
 
-function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId">) {
+function getPlayerFilters(
+  settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId" | "positionGroup">
+) {
   return {
     careerYearMode: settings.careerYearMode,
     careerStartYear: settings.careerStartYear,
     careerEndYear: settings.careerEndYear,
-    teamId: settings.teamId
+    teamId: settings.teamId,
+    positionGroup: settings.positionGroup
   };
 }
 
@@ -112,7 +118,7 @@ function SettingCard({
   children: React.ReactNode;
 }) {
   return (
-    <div className="pixel-panel-flat p-3 sm:p-4">
+    <div className="min-w-0 py-2">
       <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">{label}</p>
       <div className="mt-3">{children}</div>
     </div>
@@ -159,7 +165,7 @@ function YearRangeSlider({
           : "Only players whose full career fits inside this range are eligible.";
 
   return (
-    <div className="pixel-panel-flat p-3 sm:p-4">
+    <div className="py-2">
       <div className="flex items-center justify-between gap-3">
         <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Career years</p>
         <button
@@ -179,7 +185,7 @@ function YearRangeSlider({
       >
         <option value="entered">Year Entering League</option>
         <option value="retired">Year Retired</option>
-        <option value="full_career">Full Career</option>
+        <option value="full_career">Full career must fit</option>
         <option value="current">Current Players Only</option>
       </select>
       {mode !== "current" ? (
@@ -518,7 +524,13 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const visibleSearchResults = room?.status === "round_active" && deferredGuessQuery.trim() ? searchResults : [];
   const playerFilters = useMemo(
     () => (room ? getPlayerFilters(room.settings) : null),
-    [room?.settings.careerEndYear, room?.settings.careerStartYear, room?.settings.careerYearMode, room?.settings.teamId]
+    [
+      room?.settings.careerEndYear,
+      room?.settings.careerStartYear,
+      room?.settings.careerYearMode,
+      room?.settings.positionGroup,
+      room?.settings.teamId
+    ]
   );
   const eligiblePlayers = useMemo(
     () => (room && playerFilters ? getEligiblePlayers(room.settings.difficulty, [], playerFilters) : []),
@@ -750,7 +762,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     if (room && eligiblePlayers.length < room.settings.roundCount) {
       setStartBlocker({
         heading: "Player pool is too small",
-        message: `This setup only has ${eligiblePlayers.length} eligible NFL players, but the match needs ${room.settings.roundCount} rounds. Widen the career years, choose more difficulties, switch Team back to All teams, or lower the round count.`
+        message: `This setup only has ${eligiblePlayers.length} eligible NFL players, but the match needs ${room.settings.roundCount} rounds. Widen the career years, choose more difficulties, switch Team or Position Group back to All, or lower the round count.`
       });
       return;
     }
@@ -1085,6 +1097,21 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                           ))}
                         </select>
                       </SettingCard>
+
+                      <SettingCard label="Position Group">
+                        <select
+                          value={room.settings.positionGroup}
+                          disabled={!self?.isHost}
+                          onChange={(event) => updateSettings({ positionGroup: event.target.value as PositionGroup })}
+                          className="pixel-select"
+                        >
+                          {POSITION_GROUP_OPTIONS.map((positionGroup) => (
+                            <option key={positionGroup} value={positionGroup}>
+                              {formatPositionGroup(positionGroup)}
+                            </option>
+                          ))}
+                        </select>
+                      </SettingCard>
                     </div>
 
                     <div className="mt-4">
@@ -1105,7 +1132,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                       />
                     </div>
 
-                    <div className="pixel-panel-flat mt-4 p-3 sm:p-4">
+                    <div className="mt-4 py-2">
                       <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Difficulty</p>
                       <div className="mt-3 flex flex-wrap gap-2">
                         {DIFFICULTY_OPTIONS.map((difficulty) => {
@@ -1133,7 +1160,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                       </div>
                     </div>
 
-                    <div className="mt-4 grid grid-cols-3 gap-2 sm:gap-3">
+                    <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
                       <div className="pixel-panel-flat p-3 text-center">
                         <p className="font-pixel text-helmet text-[0.45rem] sm:text-[0.55rem]">Pool</p>
                         <p className="font-pixel text-chalk mt-2 text-sm sm:text-lg">{eligiblePlayers.length}</p>
@@ -1146,6 +1173,16 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                         <p className="font-pixel text-helmet text-[0.45rem] sm:text-[0.55rem]">Team</p>
                         <p className="font-pixel text-chalk mt-2 text-sm sm:text-lg">
                           {room.settings.teamId === "all" ? "All" : room.settings.teamId}
+                        </p>
+                      </div>
+                      <div className="pixel-panel-flat p-3 text-center">
+                        <p className="font-pixel text-helmet text-[0.45rem] sm:text-[0.55rem]">Positions</p>
+                        <p className="font-pixel text-chalk mt-2 text-sm sm:text-lg">
+                          {room.settings.positionGroup === "special_teams"
+                            ? "ST"
+                            : room.settings.positionGroup === "all"
+                              ? "All"
+                              : formatPositionGroup(room.settings.positionGroup)}
                         </p>
                       </div>
                     </div>

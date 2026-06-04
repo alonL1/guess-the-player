@@ -3,6 +3,7 @@ import type * as Party from "partykit/server";
 import { CATALOG, CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, findPlayerById, getEligiblePlayers } from "../src/lib/catalog";
 import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "../src/lib/messages";
 import { calculateCurrentCap, calculateScore } from "../src/lib/scoring";
+import { POSITION_GROUP_OPTIONS } from "../src/lib/positions";
 import { DEFAULT_ROOM_SETTINGS } from "../src/lib/settings";
 import type {
   LeaveIntent,
@@ -107,12 +108,15 @@ function sortByJoin(participants: Iterable<ParticipantRecord>) {
   return [...participants].sort((a, b) => a.joinedAt - b.joinedAt);
 }
 
-function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId">) {
+function getPlayerFilters(
+  settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId" | "positionGroup">
+) {
   return {
     careerYearMode: settings.careerYearMode,
     careerStartYear: settings.careerStartYear,
     careerEndYear: settings.careerEndYear,
-    teamId: settings.teamId
+    teamId: settings.teamId,
+    positionGroup: settings.positionGroup
   };
 }
 
@@ -442,6 +446,9 @@ export default class RoomParty implements Party.Server {
     }
     if (merged.teamId !== "all" && !VALID_TEAM_IDS.has(merged.teamId)) {
       throw new RoomActionError("VALIDATION_FAILED", "Select a valid team");
+    }
+    if (!POSITION_GROUP_OPTIONS.includes(merged.positionGroup)) {
+      throw new RoomActionError("VALIDATION_FAILED", "Select a valid position group");
     }
     if (this.participants.size > merged.maxPlayers) {
       throw new RoomActionError("VALIDATION_FAILED", "Current player count exceeds the selected max player limit");

@@ -6,7 +6,16 @@ import { CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, findPlayerById, getEligibl
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
 import { calculateCurrentCap, calculateScore } from "@/lib/scoring";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
-import type { CareerYearMode, Difficulty, PlayerCatalogEntry, PlayerSearchResult, RoomSettings, TeamId } from "@/lib/types";
+import { formatPositionGroup, POSITION_GROUP_OPTIONS } from "@/lib/positions";
+import type {
+  CareerYearMode,
+  Difficulty,
+  PlayerCatalogEntry,
+  PlayerSearchResult,
+  PositionGroup,
+  RoomSettings,
+  TeamId
+} from "@/lib/types";
 import { TeamPath } from "@/components/TeamPath";
 
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
@@ -26,6 +35,7 @@ type SoloSettings = Pick<
   | "careerStartYear"
   | "careerEndYear"
   | "teamId"
+  | "positionGroup"
 >;
 
 type SoloRound = {
@@ -55,7 +65,8 @@ const INITIAL_SETTINGS: SoloSettings = {
   careerYearMode: DEFAULT_ROOM_SETTINGS.careerYearMode,
   careerStartYear: DEFAULT_ROOM_SETTINGS.careerStartYear,
   careerEndYear: DEFAULT_ROOM_SETTINGS.careerEndYear,
-  teamId: DEFAULT_ROOM_SETTINGS.teamId
+  teamId: DEFAULT_ROOM_SETTINGS.teamId,
+  positionGroup: DEFAULT_ROOM_SETTINGS.positionGroup
 };
 
 function getTimerLabel(round: SoloRound | null, now: number | null) {
@@ -68,17 +79,15 @@ function getCountdownLabel(round: SoloRound | null, now: number | null) {
   return Math.max(1, Math.ceil((round.countdownEndsAt - now) / 1000));
 }
 
-function formatDifficulties(difficulties: Difficulty[]) {
-  if (difficulties.length === 0) return "No difficulties";
-  return difficulties.map((difficulty) => difficulty.charAt(0).toUpperCase() + difficulty.slice(1)).join(", ");
-}
-
-function getPlayerFilters(settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId">) {
+function getPlayerFilters(
+  settings: Pick<RoomSettings, "careerYearMode" | "careerStartYear" | "careerEndYear" | "teamId" | "positionGroup">
+) {
   return {
     careerYearMode: settings.careerYearMode,
     careerStartYear: settings.careerStartYear,
     careerEndYear: settings.careerEndYear,
-    teamId: settings.teamId
+    teamId: settings.teamId,
+    positionGroup: settings.positionGroup
   };
 }
 
@@ -90,7 +99,7 @@ function SettingCard({
   children: React.ReactNode;
 }) {
   return (
-    <div className="pixel-panel-flat p-3 sm:p-4">
+    <div className="min-w-0 py-2">
       <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">{label}</p>
       <div className="mt-3">{children}</div>
     </div>
@@ -132,7 +141,7 @@ function YearRangeSlider({
           : "Only players whose full career fits inside this range are eligible.";
 
   return (
-    <div className="pixel-panel-flat p-3 sm:p-4">
+    <div className="py-2">
       <div className="flex items-center justify-between gap-3">
         <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Career years</p>
         <button
@@ -152,7 +161,7 @@ function YearRangeSlider({
       >
         <option value="entered">Year Entering League</option>
         <option value="retired">Year Retired</option>
-        <option value="full_career">Full Career</option>
+        <option value="full_career">Full career must fit</option>
         <option value="current">Current Players Only</option>
       </select>
       {mode !== "current" ? (
@@ -244,7 +253,7 @@ export function SoloClient() {
   const [now, setNow] = useState<number | null>(null);
   const playerFilters = useMemo(
     () => getPlayerFilters(settings),
-    [settings.careerEndYear, settings.careerStartYear, settings.careerYearMode, settings.teamId]
+    [settings.careerEndYear, settings.careerStartYear, settings.careerYearMode, settings.positionGroup, settings.teamId]
   );
 
   const eligiblePlayers = useMemo(
@@ -521,6 +530,19 @@ export function SoloClient() {
                   ))}
                 </select>
               </SettingCard>
+              <SettingCard label="Position Group">
+                <select
+                  value={settings.positionGroup}
+                  onChange={(event) => updateSettings({ positionGroup: event.target.value as PositionGroup })}
+                  className="pixel-select"
+                >
+                  {POSITION_GROUP_OPTIONS.map((positionGroup) => (
+                    <option key={positionGroup} value={positionGroup}>
+                      {formatPositionGroup(positionGroup)}
+                    </option>
+                  ))}
+                </select>
+              </SettingCard>
             </div>
 
             <div className="mt-4">
@@ -540,7 +562,7 @@ export function SoloClient() {
               />
             </div>
 
-            <div className="pixel-panel-flat mt-4 p-3 sm:p-4">
+            <div className="mt-4 py-2">
               <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Difficulty</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {DIFFICULTY_OPTIONS.map((difficulty) => {
@@ -565,7 +587,6 @@ export function SoloClient() {
                   );
                 })}
               </div>
-              <p className="font-readable text-chalk-dim mt-3 text-base">{formatDifficulties(settings.difficulty)}</p>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import { GENERATED_PLAYERS } from "@/lib/generated-player-catalog";
-import type { CareerYearMode, Difficulty, PlayerCatalogEntry, PlayerSearchResult, TeamId } from "@/lib/types";
+import { isPositionInGroup } from "@/lib/positions";
+import type { CareerYearMode, Difficulty, PlayerCatalogEntry, PlayerSearchResult, PositionGroup, TeamId } from "@/lib/types";
 import { createUiAvatarUrl, normalizeSearchText } from "@/lib/utils";
 
 type GeneratedPlayer = Omit<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount"> &
@@ -13,6 +14,7 @@ export type PlayerFilters = {
   careerStartYear: number;
   careerEndYear: number;
   teamId: TeamId | "all";
+  positionGroup: PositionGroup;
 };
 
 function countUniqueTeams(player: Pick<PlayerCatalogEntry, "teamStints">) {
@@ -51,6 +53,10 @@ function isCurrentPlayer(player: PlayerCatalogEntry) {
 }
 
 function matchesFilters(player: PlayerCatalogEntry, filters: PlayerFilters) {
+  if (!isPositionInGroup(player.position, filters.positionGroup)) {
+    return false;
+  }
+
   if (filters.careerYearMode === "current") {
     const matchesTeam = filters.teamId === "all" || player.teamStints.some((stint) => stint.teamId === filters.teamId);
     return isCurrentPlayer(player) && matchesTeam;
