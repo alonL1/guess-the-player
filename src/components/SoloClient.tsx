@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, getEligiblePlayers, searchPlayers } from "@/lib/catalog";
+import { CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, findPlayerById, getEligiblePlayers, searchPlayers } from "@/lib/catalog";
 import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
 import { calculateCurrentCap, calculateScore } from "@/lib/scoring";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
@@ -238,6 +238,9 @@ export function SoloClient() {
   const deferredGuessQuery = useDeferredValue(guessQuery);
   const [searchResults, setSearchResults] = useState<PlayerSearchResult[]>([]);
   const [feedback, setFeedback] = useState<string | null>(null);
+  // Players guessed incorrectly this round (for red-theming search cards and
+  // showing the wrong pick on reveal).
+  const [myWrongGuessIds, setMyWrongGuessIds] = useState<string[]>([]);
   const [now, setNow] = useState<number | null>(null);
   const playerFilters = useMemo(
     () => getPlayerFilters(settings),
@@ -314,6 +317,7 @@ export function SoloClient() {
     setGuessQuery("");
     setSearchResults([]);
     setFeedback(null);
+    setMyWrongGuessIds([]);
     setStatus("countdown");
   }
 
@@ -350,6 +354,7 @@ export function SoloClient() {
     if (playerId !== round.player.id) {
       setRound((current) => (current ? { ...current, wrongGuessCount: current.wrongGuessCount + 1 } : current));
       setFeedback(`Wrong. Max remaining: ${calculateCurrentCap(round.wrongGuessCount + 1)}`);
+      setMyWrongGuessIds((prev) => (prev.includes(playerId) ? prev : [...prev, playerId]));
       return;
     }
 
@@ -599,9 +604,6 @@ export function SoloClient() {
                 </span>
                 <span className="font-pixel text-good text-[0.55rem] sm:text-xs">{totalScore} PTS</span>
                 <span className="font-pixel text-chalk-dim text-[0.5rem] sm:text-[0.625rem]">MAX {currentCap}</span>
-                {settings.showPosition ? (
-                  <span className="pixel-tag pixel-tag-yellow">{round.player.position}</span>
-                ) : null}
               </div>
               <button
                 type="button"
@@ -614,6 +616,12 @@ export function SoloClient() {
           </div>
 
           <div className="pixel-panel p-3 sm:p-4">
+            {settings.showPosition ? (
+              <div className="mb-3 flex items-center justify-center gap-2 border-4 border-helmet bg-endzone px-3 py-2">
+                <span className="font-pixel text-chalk-dim text-[0.5rem] sm:text-[0.625rem]">POSITION</span>
+                <span className="font-pixel text-helmet text-sm sm:text-lg">{round.player.position}</span>
+              </div>
+            ) : null}
             <TeamPath teamStints={round.player.teamStints} showYears={settings.showYears} />
           </div>
 
@@ -664,26 +672,51 @@ export function SoloClient() {
 
               {visibleSearchResults.length > 0 ? (
                 <div className="mt-3 grid gap-2">
-                  {visibleSearchResults.map((result) => (
-                    <button
-                      key={result.id}
-                      type="button"
-                      onClick={() => submitGuess(result.id)}
-                      className="flex items-center gap-3 border-4 border-yardline bg-endzone p-2 text-left hover:border-helmet"
-                    >
-                      <img
-                        src={result.headshotUrl}
-                        alt=""
-                        width={40}
-                        height={40}
-                        className="h-10 w-10 shrink-0 border-2 border-yardline bg-endzone object-cover"
-                      />
-                      <span className="min-w-0">
-                        <span className="font-readable text-chalk block truncate text-base sm:text-lg">{result.fullName}</span>
-                        <span className="font-pixel text-helmet text-[0.5rem] sm:text-[0.55rem]">{result.position}</span>
-                      </span>
-                    </button>
-                  ))}
+                  {visibleSearchResults.map((result) => {
+                    const wasWrong = myWrongGuessIds.includes(result.id);
+                    return (
+                      <button
+                        key={result.id}
+                        type="button"
+                        onClick={() => submitGuess(result.id)}
+                        className={clsx(
+                          "flex items-center gap-3 border-4 p-2 text-left",
+                          wasWrong
+                            ? "border-jersey-red bg-[#3a1416]"
+                            : "border-yardline bg-endzone hover:border-helmet"
+                        )}
+                      >
+                        <img
+                          src={result.headshotUrl}
+                          alt=""
+                          width={40}
+                          height={40}
+                          className={clsx(
+                            "h-10 w-10 shrink-0 border-2 object-cover",
+                            wasWrong ? "border-jersey-red bg-[#3a1416] opacity-70" : "border-yardline bg-endzone"
+                          )}
+                        />
+                        <span className="min-w-0">
+                          <span
+                            className={clsx(
+                              "block truncate font-readable text-base sm:text-lg",
+                              wasWrong ? "text-jersey-red line-through" : "text-chalk"
+                            )}
+                          >
+                            {result.fullName}
+                          </span>
+                          <span
+                            className={clsx(
+                              "font-pixel text-[0.5rem] sm:text-[0.55rem]",
+                              wasWrong ? "text-jersey-red" : "text-helmet"
+                            )}
+                          >
+                            {result.position}
+                          </span>
+                        </span>
+                      </button>
+                    );
+                  })}
                 </div>
               ) : null}
             </div>
@@ -712,49 +745,86 @@ export function SoloClient() {
         </section>
       ) : null}
 
-      {status === "reveal" && round ? (
-        <section className="pixel-panel-accent p-4 sm:p-6">
-          <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">
-            ▼ Round {round.roundNumber}/{settings.roundCount} · Reveal
-          </p>
-          <div className="mt-4 grid gap-4 sm:mt-5 sm:gap-6 lg:grid-cols-[240px_1fr] lg:items-start">
-            <div className="mx-auto w-40 overflow-hidden border-4 border-helmet bg-endzone sm:w-56 lg:mx-0 lg:w-auto">
-              <img
-                src={round.player.headshotUrl}
-                alt={round.player.fullName}
-                width={320}
-                height={320}
-                className="h-auto w-full object-cover"
-              />
-            </div>
-            <div>
-              <p className="font-pixel text-good text-[0.55rem] sm:text-xs">▼ ANSWER</p>
-              <h2 className="font-pixel text-chalk mt-2 break-words text-base sm:text-xl lg:text-2xl">
-                {round.player.fullName}
-              </h2>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {settings.showPosition ? (
-                  <span className="pixel-tag pixel-tag-yellow">{round.player.position}</span>
+      {status === "reveal" && round
+        ? (() => {
+            const revealResult = results.find((result) => result.roundNumber === round.roundNumber);
+            const gotIt = revealResult?.outcome === "correct";
+            const points = revealResult?.score ?? 0;
+            const lastWrongId = myWrongGuessIds.length > 0 ? myWrongGuessIds[myWrongGuessIds.length - 1] : null;
+            const wrongGuessPlayer = !gotIt && lastWrongId ? findPlayerById(lastWrongId) : null;
+            return (
+              <section className="pixel-panel-accent p-4 sm:p-6">
+                <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">
+                  ▼ Round {round.roundNumber}/{settings.roundCount} · Reveal
+                </p>
+
+                {/* Outcome banner — did you get it, and points if so */}
+                <div
+                  className={clsx(
+                    "mt-3 flex flex-wrap items-center justify-between gap-2 border-4 px-3 py-2.5 sm:mt-4 sm:px-4 sm:py-3",
+                    gotIt ? "border-good bg-endzone" : "border-jersey-red bg-endzone"
+                  )}
+                >
+                  <p className={clsx("font-pixel text-xs sm:text-base", gotIt ? "text-good" : "text-jersey-red")}>
+                    {gotIt ? "✓ YOU GOT IT" : "✗ YOU MISSED IT"}
+                  </p>
+                  {gotIt ? (
+                    <span className="pixel-tag pixel-tag-green text-[0.6rem] sm:text-xs">+{points} PTS</span>
+                  ) : null}
+                </div>
+
+                <div className="mt-4 grid gap-4 sm:mt-5 sm:gap-6 lg:grid-cols-[240px_1fr] lg:items-start">
+                  <div className="mx-auto w-40 overflow-hidden border-4 border-helmet bg-endzone sm:w-56 lg:mx-0 lg:w-auto">
+                    <img
+                      src={round.player.headshotUrl}
+                      alt={round.player.fullName}
+                      width={320}
+                      height={320}
+                      className="h-auto w-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-pixel text-good text-[0.55rem] sm:text-xs">▼ ANSWER</p>
+                    <h2 className="font-pixel text-chalk mt-2 break-words text-base sm:text-xl lg:text-2xl">
+                      {round.player.fullName}
+                    </h2>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <span className="pixel-tag pixel-tag-yellow">{round.player.position}</span>
+                      <span className="pixel-tag pixel-tag-blue capitalize">{round.player.difficulty}</span>
+                    </div>
+                    <div className="mt-4 sm:mt-5">
+                      <TeamPath teamStints={round.player.teamStints} showYears />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Your wrong guess (only if you missed and actually guessed someone) */}
+                {wrongGuessPlayer ? (
+                  <div className="mt-4 border-4 border-jersey-red bg-endzone p-3 sm:mt-5 sm:p-4">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <p className="font-pixel text-jersey-red text-[0.5rem] sm:text-[0.625rem]">✗ YOU GUESSED</p>
+                      <p className="font-readable text-chalk text-sm sm:text-base">{wrongGuessPlayer.fullName}</p>
+                      <span className="pixel-tag pixel-tag-blue capitalize text-[0.5rem]">{wrongGuessPlayer.position}</span>
+                    </div>
+                    <div className="mt-3">
+                      <TeamPath teamStints={wrongGuessPlayer.teamStints} showYears compact tone="danger" />
+                    </div>
+                  </div>
                 ) : null}
-                <span className="pixel-tag pixel-tag-blue capitalize">{round.player.difficulty}</span>
-                <span className="pixel-tag pixel-tag-green">
-                  +{results.find((result) => result.roundNumber === round.roundNumber)?.score ?? 0}
-                </span>
-              </div>
-              <div className="mt-4 sm:mt-5">
-                <TeamPath teamStints={round.player.teamStints} showYears />
-              </div>
-              <button
-                type="button"
-                onClick={continueRun}
-                className="pixel-button pixel-button-primary mt-5 w-full sm:w-auto"
-              >
-                {round.roundNumber >= settings.roundCount ? "See Summary ▶" : "Next Round ▶"}
-              </button>
-            </div>
-          </div>
-        </section>
-      ) : null}
+
+                <div className="mt-5 sm:mt-6">
+                  <button
+                    type="button"
+                    onClick={continueRun}
+                    className="pixel-button pixel-button-primary w-full sm:w-auto"
+                  >
+                    {round.roundNumber >= settings.roundCount ? "See Summary ▶" : "Next Round ▶"}
+                  </button>
+                </div>
+              </section>
+            );
+          })()
+        : null}
 
       {status === "summary" ? (
         <section className="grid gap-4 lg:grid-cols-[0.85fr_1.15fr]">

@@ -139,6 +139,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dypn7kf7fsaz30ey0ayc",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2012
+      },
+      {
         "teamId": "SF",
         "startYear": 2013,
         "endYear": 2016
@@ -216,13 +221,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Terrell Suggs",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s8bqh2tllr3pyz03fvrx",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2003,
         "endYear": 2018
       },
       {
@@ -327,13 +332,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "J.J. Watt",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ar9grdcger4wttznv1lk",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pooulgm7mdcx5x9gza7l",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2011,
         "endYear": 2020
       },
       {
@@ -447,13 +452,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Calais Campbell",
-    "position": "DL",
+    "position": "DT",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w2a7qadfbytmjs1t8lpj",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wbrve7zrrqiuknohpecm",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2008,
         "endYear": 2016
       },
       {
@@ -571,6 +576,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2006,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2014
       }
     ],
     "id": "john-abraham"
@@ -675,11 +685,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Greg Zuerlein",
     "position": "K",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qf59qe7oegvckgcryjll",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gzuks9rryzy90fecvi9l",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2019
       },
       {
@@ -774,6 +784,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "ARI",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "ATL",
         "startYear": 2016,
         "endYear": 2016
@@ -801,6 +816,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2003,
         "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2011
       },
       {
         "teamId": "CIN",
@@ -840,6 +860,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2008,
         "endYear": 2009
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2013
       },
       {
         "teamId": "CHI",
@@ -1096,6 +1121,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2007,
         "endYear": 2009
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2011
       }
     ],
     "id": "joey-porter"
@@ -1175,7 +1205,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -1207,13 +1237,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Robert Quinn",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xrwvkykzo526vdrgo055",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g8hslz6tb43l7xbmxzfh",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2011,
         "endYear": 2017
       },
       {
@@ -1240,6 +1270,30 @@ export const GENERATED_PLAYERS = [
     "id": "robert-quinn"
   },
   {
+    "fullName": "Ed Reed",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tag3f0fdrvjp14kl9t6m",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "ed-reed"
+  },
+  {
     "fullName": "Matthew Stafford",
     "position": "QB",
     "difficulty": "easy",
@@ -1257,6 +1311,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "matthew-stafford"
+  },
+  {
+    "fullName": "Matt Stover",
+    "position": "K",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/po28eupvc1y6rytcvtfs",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2008
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "matt-stover"
   },
   {
     "fullName": "John Kasay",
@@ -1454,6 +1527,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "PIT",
         "startYear": 2013,
         "endYear": 2013
@@ -1472,11 +1555,40 @@ export const GENERATED_PLAYERS = [
     "id": "shayne-graham"
   },
   {
+    "fullName": "Neil Rackers",
+    "position": "K",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wczge8w8yhljlfp4pq60",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2011
+      }
+    ],
+    "id": "neil-rackers"
+  },
+  {
     "fullName": "Steven Hauschka",
     "position": "K",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dx2dsdejdbqrjltnkstm",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2009
+      },
       {
         "teamId": "ATL",
         "startYear": 2009,
@@ -1622,6 +1734,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "CIN",
         "startYear": 2010,
         "endYear": 2016
@@ -1718,6 +1835,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rkr8vhlxprfgajyaqe0x",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2011
+      },
       {
         "teamId": "BUF",
         "startYear": 2012,
@@ -1873,6 +1995,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/klxeixm8x8hcbs42ql5a",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2009
+      },
+      {
         "teamId": "DAL",
         "startYear": 2010,
         "endYear": 2010
@@ -1925,14 +2052,29 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Karlos Dansby",
-    "position": "ILB",
+    "position": "OLB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lumuwuwq9kdemsw5uefz",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2009
+      },
+      {
         "teamId": "MIA",
         "startYear": 2010,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2015
       },
       {
         "teamId": "CIN",
@@ -2292,7 +2434,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "DET",
@@ -2426,7 +2568,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2011,
         "endYear": 2019
       },
       {
@@ -2511,13 +2653,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Jadeveon Clowney",
-    "position": "DL",
+    "position": "OLB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fe9eglg6o7tx0uvpegol",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rmuagbaye1s4hfevcqov",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -2655,6 +2797,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pim6xbwsdnk5xwhlwde8",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2015
+      },
       {
         "teamId": "NYJ",
         "startYear": 2015,
@@ -3009,13 +3156,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Za'Darius Smith",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/go23rugyophht4ytnse0",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xysjqfrdv1bvqocjyhsu",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -3058,7 +3205,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
         "teamId": "NYJ",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
         "startYear": 2010,
         "endYear": 2010
       }
@@ -3101,9 +3258,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Chris Long",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gcrtrlvxdigu2kzrhfnw",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2015
+      },
       {
         "teamId": "NE",
         "startYear": 2016,
@@ -3130,7 +3293,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -3341,13 +3504,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Tyrann Mathieu",
-    "position": "DB",
+    "position": "FS",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lbkxx0nityawgcbztuzu",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/raj6flw4d12jyl7ux7jn",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -3512,7 +3675,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       }
     ],
@@ -3556,11 +3719,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Joe Flacco",
     "position": "QB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/puq0loqhg0yeuhpdtykr",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zg6azyjniovtgb7vdssz",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2008,
         "endYear": 2018
       },
       {
@@ -3626,6 +3789,25 @@ export const GENERATED_PLAYERS = [
     "id": "darren-howard"
   },
   {
+    "fullName": "Calvin Pace",
+    "position": "DE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zvnfloe2zlayioxkmtsn",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2008,
+        "endYear": 2016
+      }
+    ],
+    "id": "calvin-pace"
+  },
+  {
     "fullName": "Adalius Thomas",
     "position": "DL",
     "difficulty": "hard",
@@ -3634,7 +3816,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2006
       },
       {
         "teamId": "NE",
@@ -3875,6 +4057,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2004,
         "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2010
       }
     ],
     "id": "adewale-ogunleye"
@@ -3943,11 +4130,35 @@ export const GENERATED_PLAYERS = [
     "id": "matt-gay"
   },
   {
+    "fullName": "Sheldon Brown",
+    "position": "CB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cq0plgxsjvpc9oxyitrg",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2002,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2012
+      }
+    ],
+    "id": "sheldon-brown"
+  },
+  {
     "fullName": "Nick Novak",
     "position": "K",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gdjujo9q9eniokxlygke",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      },
       {
         "teamId": "WAS",
         "startYear": 2005,
@@ -3965,7 +4176,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -4120,6 +4331,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
         "teamId": "WAS",
         "startYear": 2012,
         "endYear": 2012
@@ -4128,6 +4349,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2014
       },
       {
         "teamId": "BUF",
@@ -4187,13 +4413,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Patrick Peterson",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hvg7dw1gtbiplbflvssz",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hefuj7lvfmgvr4tme7te",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2011,
         "endYear": 2020
       },
       {
@@ -4274,6 +4500,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sjq1mh1dhbriamgcqoim",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
         "teamId": "PHI",
         "startYear": 2011,
         "endYear": 2012
@@ -4327,10 +4558,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Jason Babin",
-    "position": "DE",
+    "position": "OLB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rftscyovutjw3klj3wsm",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2004,
+        "endYear": 2006
+      },
       {
         "teamId": "SEA",
         "startYear": 2007,
@@ -4367,8 +4603,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -4376,13 +4617,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Joe Haden",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xzsmvwu7fec1yni46knj",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/caumqxwppfoakjvpqxej",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2010,
         "endYear": 2016
       },
       {
@@ -4408,6 +4649,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2004,
         "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2011
       },
       {
         "teamId": "DEN",
@@ -4593,10 +4839,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Connor Barwin",
-    "position": "OLB",
+    "position": "DE",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xtaqskqpspksh4krryfb",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2012
+      },
       {
         "teamId": "PHI",
         "startYear": 2013,
@@ -4662,7 +4913,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
       },
       {
         "teamId": "TEN",
@@ -4885,7 +5141,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -5003,6 +5259,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
       }
     ],
     "id": "vonnie-holliday"
@@ -5168,13 +5429,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Whitney Mercilus",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ersz2ffslunqcjvsdrrg",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ppap8wfihhya2o1ekket",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2021
       },
       {
@@ -5230,10 +5491,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Janoris Jenkins",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/whmuxp1f0hjhcwv7avhn",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qfjugbhul7ergngoqlyg",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "NYG",
         "startYear": 2016,
@@ -5288,6 +5554,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2015
+      },
+      {
         "teamId": "TB",
         "startYear": 2016,
         "endYear": 2016
@@ -5307,6 +5578,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
         "teamId": "PHI",
         "startYear": 2009,
         "endYear": 2009
@@ -5315,6 +5591,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2010,
         "endYear": 2012
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "will-witherspoon"
@@ -5376,6 +5657,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "connor-barth"
+  },
+  {
+    "fullName": "James Hall",
+    "position": "DL",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oqpfx75svtmjt7b3ffxv",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2000,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2011
+      }
+    ],
+    "id": "james-hall"
   },
   {
     "fullName": "Kevin Byard",
@@ -5523,6 +5823,25 @@ export const GENERATED_PLAYERS = [
     "id": "ryan-tannehill"
   },
   {
+    "fullName": "Willie McGinest",
+    "position": "LB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ezcdzlmecctflmtyn6rz",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1994,
+        "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2008
+      }
+    ],
+    "id": "willie-mcginest"
+  },
+  {
     "fullName": "Harold Landry",
     "position": "LB",
     "difficulty": "medium",
@@ -5611,6 +5930,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pkhhxwplsawnhln9rsun",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
         "teamId": "CIN",
         "startYear": 2007,
         "endYear": 2008
@@ -5624,6 +5948,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
       },
       {
         "teamId": "NYJ",
@@ -5668,6 +5997,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2002,
         "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2008
       }
     ],
     "id": "la-roi-glover"
@@ -5750,6 +6084,25 @@ export const GENERATED_PLAYERS = [
     "id": "deon-grant"
   },
   {
+    "fullName": "Samari Rolle",
+    "position": "DB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c3oee641fcgsiu1ynhip",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1998,
+        "endYear": 2004
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2008
+      }
+    ],
+    "id": "samari-rolle"
+  },
+  {
     "fullName": "Walt Harris",
     "position": "DB",
     "difficulty": "hard",
@@ -5782,11 +6135,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Markus Golden",
     "position": "LB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cd5otxiqweila6yup2gk",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bv5b0exlh4kuzwzs0fgg",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -5813,6 +6166,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lgti1akk6lj57zbfuobf",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "NE",
         "startYear": 2015,
@@ -5855,7 +6213,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2025,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "josh-sweat"
@@ -5934,10 +6292,20 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Antonio Smith",
-    "position": "DT",
-    "difficulty": "hard",
+    "position": "DE",
+    "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vn71m9jwu5uxmfllobfb",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2008
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2013
+      },
       {
         "teamId": "LV",
         "startYear": 2014,
@@ -6052,7 +6420,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2008
       },
       {
         "teamId": "NO",
@@ -6140,6 +6508,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b5exsauwnaoy6uu88jiv",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2009
+      },
       {
         "teamId": "LV",
         "startYear": 2010,
@@ -6304,6 +6677,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2015,
         "endYear": 2015
@@ -6407,7 +6785,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "DAL",
@@ -6514,6 +6892,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2001,
         "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2009
       }
     ],
     "id": "bertrand-berry"
@@ -6607,13 +6990,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Kareem Jackson",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/d3ahizmpmghudh71t1e0",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qisxobm5eszw2zeabvb2",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2010,
         "endYear": 2018
       },
       {
@@ -6714,7 +7097,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -6832,9 +7215,38 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2003,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2009
       }
     ],
     "id": "chike-okeafor"
+  },
+  {
+    "fullName": "Kerry Rhodes",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qc4ofipywnngkhltbjdn",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 2005,
+        "endYear": 2009
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2012
+      }
+    ],
+    "id": "kerry-rhodes"
   },
   {
     "fullName": "Al Harris",
@@ -6856,6 +7268,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "al-harris"
@@ -6918,6 +7335,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2000,
         "endYear": 2007
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2011
       },
       {
         "teamId": "SF",
@@ -7236,10 +7658,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Antrel Rolle",
-    "position": "FS",
+    "position": "CB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/issrtvdibba1d0c1msjb",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2009
+      },
       {
         "teamId": "NYG",
         "startYear": 2010,
@@ -7387,7 +7814,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1998,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "SEA",
@@ -7407,6 +7834,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 1994,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2004
       },
       {
         "teamId": "DAL",
@@ -7505,6 +7937,25 @@ export const GENERATED_PLAYERS = [
     "id": "todd-peterson"
   },
   {
+    "fullName": "Glover Quin",
+    "position": "CB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ei3tqugetowcz2ix3o2p",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2013,
+        "endYear": 2018
+      }
+    ],
+    "id": "glover-quin"
+  },
+  {
     "fullName": "Justin Simmons",
     "position": "DB",
     "difficulty": "medium",
@@ -7601,10 +8052,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Tashaun Gipson",
-    "position": "DB",
+    "position": "FS",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nsjpbbc8x4niqmearzwc",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mbniabicepxxcetygjhk",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "JAX",
         "startYear": 2016,
@@ -7663,6 +8119,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ga6ow47da8dsw0dcxct0",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2014
+      },
       {
         "teamId": "DET",
         "startYear": 2015,
@@ -7855,6 +8316,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2005,
         "endYear": 2011
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "juqua-parker"
@@ -8003,12 +8469,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1998,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "NYG",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2009
       }
     ],
     "id": "kurt-warner"
@@ -8026,7 +8497,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       }
     ],
@@ -8144,6 +8615,25 @@ export const GENERATED_PLAYERS = [
     "id": "raheem-brock"
   },
   {
+    "fullName": "D'Qwell Jackson",
+    "position": "ILB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sc9zntfdfwzwtxwi4vph",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2013
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2014,
+        "endYear": 2016
+      }
+    ],
+    "id": "d-qwell-jackson"
+  },
+  {
     "fullName": "Mike Evans",
     "position": "WR",
     "difficulty": "easy",
@@ -8192,6 +8682,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2007,
         "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
       }
     ],
     "id": "david-bowens"
@@ -8206,6 +8701,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2007,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2014
       },
       {
         "teamId": "LV",
@@ -8267,7 +8767,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -8275,13 +8775,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "C.J. Mosley",
-    "position": "LB",
+    "position": "ILB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/aafgfrfxx1sjdmh6hhhm",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cjje7blxkubjmrbtbp27",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -8448,6 +8948,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
         "teamId": "WAS",
         "startYear": 2011,
         "endYear": 2013
@@ -8477,6 +8982,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2007
       },
       {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
         "teamId": "NO",
         "startYear": 2011,
         "endYear": 2011
@@ -8499,6 +9009,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2006,
         "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2013
       },
       {
         "teamId": "MIA",
@@ -8569,6 +9084,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
         "teamId": "DET",
         "startYear": 2005,
         "endYear": 2005
@@ -8587,6 +9107,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "jeff-garcia"
@@ -8619,12 +9144,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1997,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "KC",
         "startYear": 2003,
         "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
       }
     ],
     "id": "dexter-mccleon"
@@ -8728,6 +9258,25 @@ export const GENERATED_PLAYERS = [
     "id": "greg-joseph"
   },
   {
+    "fullName": "Oshiomogho Atogwe",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/obuy1pa0gxwkszei9fxz",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2010
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "oshiomogho-atogwe"
+  },
+  {
     "fullName": "Mike Vick",
     "position": "QB",
     "difficulty": "medium",
@@ -8804,6 +9353,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2007,
         "endYear": 2011
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2012,
+        "endYear": 2012
       },
       {
         "teamId": "PIT",
@@ -8893,10 +9447,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Pernell McPhee",
-    "position": "OLB",
+    "position": "DE",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ybkcgchf6dxet313tmji",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "CHI",
         "startYear": 2015,
@@ -8944,6 +9503,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 1997,
         "endYear": 2001
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2005
       },
       {
         "teamId": "DEN",
@@ -9013,13 +9577,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
         "teamId": "IND",
         "startYear": 2012,
         "endYear": 2014
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -9074,6 +9643,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 1996,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2005
       },
       {
         "teamId": "DAL",
@@ -9232,11 +9806,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Chandler Catanzaro",
     "position": "K",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gyaimzi9hoipzzbj9oga",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tyz9chuwv2blrpqocdzo",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -9345,6 +9919,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "tommy-kelly"
@@ -9389,6 +9968,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pisfp6ftnv2jibnrnm6a",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2005
+      },
       {
         "teamId": "ATL",
         "startYear": 2006,
@@ -9525,8 +10109,23 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "TB",
         "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2007,
         "endYear": 2008
       },
       {
@@ -9552,6 +10151,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2003,
         "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2012
       },
       {
         "teamId": "CAR",
@@ -9832,6 +10436,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bh9ixckmlkifgebzefui",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2004,
+        "endYear": 2009
+      },
+      {
         "teamId": "ATL",
         "startYear": 2010,
         "endYear": 2012
@@ -9867,11 +10476,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "DeAndre Hopkins",
     "position": "WR",
     "difficulty": "easy",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/boialnvkpcs0uvlbnsfv",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kikfprn4t5ap1lju4a4k",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2019
       },
       {
@@ -9986,13 +10595,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Alec Ogletree",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/n2iknv0oqq5nqbbzjjrn",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -10113,7 +10722,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2016
       },
       {
@@ -10165,6 +10774,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
         "teamId": "MIA",
         "startYear": 2012,
         "endYear": 2012
@@ -10191,6 +10805,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "SF",
         "startYear": 2007,
+        "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2010,
         "endYear": 2010
       }
     ],
@@ -10264,6 +10888,30 @@ export const GENERATED_PLAYERS = [
     "id": "samson-ebukam"
   },
   {
+    "fullName": "Paul Kruger",
+    "position": "OLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ze3ytwhqq16uvenend3f",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2015
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "paul-kruger"
+  },
+  {
     "fullName": "Robert Ayers",
     "position": "OLB",
     "difficulty": "hard",
@@ -10298,6 +10946,16 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ajabgwxbliupgkwjbnut",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2009
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2012
+      },
       {
         "teamId": "SF",
         "startYear": 2013,
@@ -10425,10 +11083,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Rodney McLeod",
-    "position": "DB",
+    "position": "FS",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zuqx2mphzfqbg5u14mec",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fsspysj8zftqm5i5prar",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "PHI",
         "startYear": 2016,
@@ -10666,6 +11329,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2008
+      },
+      {
         "teamId": "SEA",
         "startYear": 2009,
         "endYear": 2009
@@ -10877,13 +11545,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Trumaine Johnson",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bmiv0rw74m5vsmbeqh4h",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2017
       },
       {
@@ -10914,6 +11582,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2004,
         "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2011
       }
     ],
     "id": "fred-robbins"
@@ -11011,6 +11684,25 @@ export const GENERATED_PLAYERS = [
     "id": "bashaud-breeland"
   },
   {
+    "fullName": "Bart Scott",
+    "position": "OLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/te8zmghjpnoamwsiee5v",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2008
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2009,
+        "endYear": 2012
+      }
+    ],
+    "id": "bart-scott"
+  },
+  {
     "fullName": "Carson Wentz",
     "position": "QB",
     "difficulty": "medium",
@@ -11085,14 +11777,14 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ywdddxsuykv3cuslv0xo",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1995,
-        "endYear": 1996
+        "endYear": 2005
       },
       {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 2005
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2007
       }
     ],
     "id": "steve-mcnair"
@@ -11107,6 +11799,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2007,
         "endYear": 2011
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2013
       },
       {
         "teamId": "BUF",
@@ -11131,6 +11828,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2006,
         "endYear": 2008
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2012
       },
       {
         "teamId": "TEN",
@@ -11386,6 +12093,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2010,
         "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "larry-foote"
@@ -11801,6 +12513,25 @@ export const GENERATED_PLAYERS = [
     "id": "kerry-collins"
   },
   {
+    "fullName": "DeMeco Ryans",
+    "position": "MLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/t6mvombf11q4vxmiunom",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2011
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2012,
+        "endYear": 2016
+      }
+    ],
+    "id": "demeco-ryans"
+  },
+  {
     "fullName": "D.J. Williams",
     "position": "OLB",
     "difficulty": "hard",
@@ -11905,7 +12636,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "LV",
@@ -11964,6 +12695,25 @@ export const GENERATED_PLAYERS = [
     "id": "eric-hicks"
   },
   {
+    "fullName": "Jarret Johnson",
+    "position": "DE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/udhutpnazjidw2rryn8k",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2011
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2012,
+        "endYear": 2014
+      }
+    ],
+    "id": "jarret-johnson"
+  },
+  {
     "fullName": "Jason Jones",
     "position": "DT",
     "difficulty": "hard",
@@ -12012,6 +12762,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "yeremiah-bell"
@@ -12220,6 +12975,25 @@ export const GENERATED_PLAYERS = [
     "id": "deatrich-wise"
   },
   {
+    "fullName": "James Laurinaitis",
+    "position": "MLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lz3jp6nftih9sk9sgcca",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2015
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "james-laurinaitis"
+  },
+  {
     "fullName": "Jimmy Graham",
     "position": "TE",
     "difficulty": "easy",
@@ -12279,6 +13053,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iavrftkbpw4bekzl7zfv",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2014
+      },
+      {
         "teamId": "IND",
         "startYear": 2015,
         "endYear": 2015
@@ -12306,6 +13085,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2002,
         "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2008
       }
     ],
     "id": "corey-chavous"
@@ -12316,6 +13100,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fdtdilrsvlbcj0zacjoa",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2007
+      },
       {
         "teamId": "DET",
         "startYear": 2008,
@@ -12465,6 +13254,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2006,
         "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "ben-leber"
@@ -12479,6 +13273,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 1998,
         "endYear": 2001
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
       },
       {
         "teamId": "NE",
@@ -12815,6 +13619,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/abl5wejuf448xw3jtphm",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2012
+      },
+      {
         "teamId": "ATL",
         "startYear": 2013,
         "endYear": 2014
@@ -12946,7 +13755,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2008
       },
       {
         "teamId": "JAX",
@@ -13062,6 +13871,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2006,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2012
       }
     ],
     "id": "scott-fujita"
@@ -13099,7 +13913,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "NYJ",
@@ -13326,7 +14140,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2005
       }
     ],
     "id": "marshall-faulk"
@@ -13367,7 +14181,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2010
+      },
+      {
         "teamId": "NYJ",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "HOU",
         "startYear": 2011,
         "endYear": 2011
       }
@@ -13642,7 +14466,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -13703,13 +14527,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Alex Okafor",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jcfrmgi1gn389dmklp2n",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/haacftqavtvq7dnvph1g",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -13758,6 +14582,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CHI",
         "startYear": 2006,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2010,
         "endYear": 2010
       },
       {
@@ -13828,6 +14662,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
         "teamId": "SEA",
         "startYear": 2005,
         "endYear": 2005
@@ -13841,6 +14680,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tqvazxnrbpe7kpsyuy2q",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "NYJ",
         "startYear": 2015,
@@ -13873,7 +14717,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "DEN",
@@ -14395,6 +15239,30 @@ export const GENERATED_PLAYERS = [
     "id": "reggie-tongue"
   },
   {
+    "fullName": "Robert Griffith",
+    "position": "DB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mgxxpzvauryexjhku7ee",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1994,
+        "endYear": 2001
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2006
+      }
+    ],
+    "id": "robert-griffith"
+  },
+  {
     "fullName": "Rocky Bernard",
     "position": "DT",
     "difficulty": "hard",
@@ -14468,6 +15336,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a8pomixtpmplyjbhbroq",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2010
+      },
+      {
         "teamId": "JAX",
         "startYear": 2011,
         "endYear": 2012
@@ -14498,6 +15371,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "santana-moss"
+  },
+  {
+    "fullName": "Bradie James",
+    "position": "OLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nw7yqpghr7yp3ojhe7ty",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2003,
+        "endYear": 2011
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "bradie-james"
   },
   {
     "fullName": "Byron Murphy",
@@ -14565,7 +15457,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 1997,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "DEN",
@@ -14790,13 +15682,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Christian Kirksey",
-    "position": "LB",
+    "position": "ILB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cqlotcusbrlpnien6lwa",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jnqtpfzsbs6xdljtbjst",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2019
       },
       {
@@ -14896,6 +15788,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
       }
     ],
     "id": "trent-green"
@@ -15004,9 +15901,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2008
+      },
+      {
         "teamId": "TEN",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "roderick-hood"
@@ -15103,6 +16010,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2004,
         "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
       }
     ],
     "id": "eric-barton"
@@ -15113,6 +16025,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jzwkai34i4ujy7wxy5pd",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2010
+      },
       {
         "teamId": "DET",
         "startYear": 2011,
@@ -15156,6 +16073,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2007,
         "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "ricky-williams"
@@ -15209,6 +16131,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2003,
         "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
       },
       {
         "teamId": "NYG",
@@ -15364,6 +16291,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
         "teamId": "DEN",
         "startYear": 2005,
         "endYear": 2006
@@ -15412,9 +16344,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2013
+      },
+      {
         "teamId": "LV",
         "startYear": 2014,
         "endYear": 2014
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "ATL",
@@ -15439,6 +16381,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2000,
         "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2008
       },
       {
         "teamId": "GB",
@@ -15520,6 +16467,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2004,
         "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2009
       },
       {
         "teamId": "DET",
@@ -15633,7 +16585,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "CAR",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "BAL",
         "startYear": 2014,
         "endYear": 2014
       }
@@ -15935,6 +16897,25 @@ export const GENERATED_PLAYERS = [
     "id": "xavier-mckinney"
   },
   {
+    "fullName": "Kailee Wong",
+    "position": "LB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mnpc5onvg9hah2lirf2f",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1998,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2006
+      }
+    ],
+    "id": "kailee-wong"
+  },
+  {
     "fullName": "Mark Barron",
     "position": "SS",
     "difficulty": "hard",
@@ -15947,7 +16928,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -16078,6 +17059,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2004,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2008,
         "endYear": 2008
       }
     ],
@@ -16093,6 +17084,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2009,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2015
       },
       {
         "teamId": "BAL",
@@ -16149,6 +17145,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ellis-johnson"
+  },
+  {
+    "fullName": "Garrett Hartley",
+    "position": "K",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wfp1lgubds4wo8kmgpsu",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2008,
+        "endYear": 2013
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
+      }
+    ],
+    "id": "garrett-hartley"
   },
   {
     "fullName": "Jordan Babineaux",
@@ -16359,6 +17374,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2012
+      },
+      {
         "teamId": "DEN",
         "startYear": 2013,
         "endYear": 2013
@@ -16447,7 +17472,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "TB",
@@ -16557,6 +17582,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2002
       },
       {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "TB",
         "startYear": 2004,
         "endYear": 2005
@@ -16634,6 +17664,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/r4vww4ic2ptpvqvo8fz4",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2013
+      },
       {
         "teamId": "DEN",
         "startYear": 2014,
@@ -16732,13 +17767,13 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1991,
         "endYear": 2000
       },
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       }
     ],
     "id": "aeneas-williams"
@@ -16886,7 +17921,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -16907,6 +17942,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2002,
         "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2008
       }
     ],
     "id": "fakhir-brown"
@@ -17105,6 +18145,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wxqh8viwzcfokvxboohy",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
         "teamId": "PHI",
         "startYear": 2009,
         "endYear": 2009
@@ -17199,9 +18244,38 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2003,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "jake-delhomme"
+  },
+  {
+    "fullName": "Marc Bulger",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vww6hwhkqzevfn6nsnhw",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2001,
+        "endYear": 2009
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "marc-bulger"
   },
   {
     "fullName": "Mike Daniels",
@@ -17250,11 +18324,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Todd Gurley",
     "position": "RB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cowureyhghi80oxpmvjq",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jkqn4zynfdfvu359ygtr",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2019
       },
       {
@@ -17272,19 +18346,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fi6einctunxdsg7lpvua",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1995,
         "endYear": 1998
       },
       {
         "teamId": "JAX",
         "startYear": 1999,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2005
       }
     ],
     "id": "gary-walker"
@@ -17349,13 +18423,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Michael Brockers",
-    "position": "DL",
+    "position": "DT",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gpjbjei7iq7jwa7gebb8",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qkh4jhodaog0uckpbzja",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2020
       },
       {
@@ -17405,6 +18479,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2000,
         "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2006
       },
       {
         "teamId": "WAS",
@@ -17533,8 +18612,8 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
-        "endYear": 2001
+        "startYear": 1994,
+        "endYear": 2007
       },
       {
         "teamId": "SF",
@@ -17554,6 +18633,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2004,
         "endYear": 2007
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2008
       },
       {
         "teamId": "SF",
@@ -17733,6 +18817,25 @@ export const GENERATED_PLAYERS = [
     "id": "steven-nelson"
   },
   {
+    "fullName": "Brodney Pool",
+    "position": "SS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qhlhbprdi2k25p9htzvy",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2009
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2010,
+        "endYear": 2011
+      }
+    ],
+    "id": "brodney-pool"
+  },
+  {
     "fullName": "Chris Harris",
     "position": "FS",
     "difficulty": "hard",
@@ -17786,6 +18889,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2010
       }
     ],
     "id": "ken-hamlin"
@@ -17827,6 +18935,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "antonio-pierce"
+  },
+  {
+    "fullName": "Danieal Manning",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lok4w7szxej5vwxfzvmm",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2006,
+        "endYear": 2010
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2014
+      }
+    ],
+    "id": "danieal-manning"
   },
   {
     "fullName": "Dawuane Smoot",
@@ -17950,6 +19077,25 @@ export const GENERATED_PLAYERS = [
     "id": "brandin-cooks"
   },
   {
+    "fullName": "Dexter Coakley",
+    "position": "LB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wqvh5kxsgz6ik7z1nirz",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1997,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2006
+      }
+    ],
+    "id": "dexter-coakley"
+  },
+  {
     "fullName": "Quintin Demps",
     "position": "FS",
     "difficulty": "hard",
@@ -17959,6 +19105,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2008,
         "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2012
       },
       {
         "teamId": "KC",
@@ -17972,7 +19123,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -17985,13 +19136,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "A.J. Bouye",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eqpswvpf220lqyu8pxsy",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cpgi2hbhnmvs1oczkzas",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -18053,8 +19204,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -18139,10 +19295,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "D.J. Swearinger",
-    "position": "SS",
+    "position": "FS",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ccwj8s59egpgmchmm3lq",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2014
+      },
       {
         "teamId": "TB",
         "startYear": 2015,
@@ -18150,7 +19311,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -18250,6 +19411,16 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/j0ilwh1cr5uzyg8z8qsy",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
+        "endYear": 2014
+      },
       {
         "teamId": "DEN",
         "startYear": 2015,
@@ -18473,6 +19644,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "LAC",
         "startYear": 2004,
         "endYear": 2005
@@ -18643,7 +19819,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -18663,7 +19839,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2021,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "james-conner"
@@ -18771,6 +19947,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2005,
         "endYear": 2007
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2010
       }
     ],
     "id": "bryan-robinson"
@@ -18842,6 +20023,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2001,
         "endYear": 2003
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2004
       },
       {
         "teamId": "CAR",
@@ -18951,7 +20137,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       }
     ],
@@ -19055,10 +20241,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Andra Davis",
-    "position": "ILB",
+    "position": "MLB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vk6sr3xglxd5tzqncfjw",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2008
+      },
       {
         "teamId": "DEN",
         "startYear": 2009,
@@ -19155,6 +20346,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2005,
         "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2008
       }
     ],
     "id": "terry-cousin"
@@ -19208,6 +20404,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2005,
         "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2008
       },
       {
         "teamId": "BUF",
@@ -19272,9 +20473,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2010
+      },
+      {
         "teamId": "DEN",
         "startYear": 2011,
         "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "willis-mcgahee"
@@ -19383,13 +20594,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Tony Jefferson",
-    "position": "DB",
+    "position": "SS",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/id2riwyadfiwpyqhwb4g",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -19498,6 +20709,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2005,
         "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2008
       }
     ],
     "id": "n-d-kalu"
@@ -19525,6 +20741,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jeff-burris"
+  },
+  {
+    "fullName": "Arian Foster",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b7zvp5go7e86i7wd1qyh",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2015
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "arian-foster"
   },
   {
     "fullName": "Greg Jennings",
@@ -19568,6 +20803,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "raylee-johnson"
+  },
+  {
+    "fullName": "Craig Robertson",
+    "position": "OLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o4futmewhqnhcb71pds2",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2015
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2016,
+        "endYear": 2020
+      }
+    ],
+    "id": "craig-robertson"
   },
   {
     "fullName": "Eric Reid",
@@ -19782,6 +21036,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "shawn-barber"
@@ -19904,6 +21163,25 @@ export const GENERATED_PLAYERS = [
     "id": "jake-martin"
   },
   {
+    "fullName": "Jamal Lewis",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mmsyfpojbxmisiujuwym",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2000,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2009
+      }
+    ],
+    "id": "jamal-lewis"
+  },
+  {
     "fullName": "Muhsin Muhammad",
     "position": "WR",
     "difficulty": "medium",
@@ -19940,7 +21218,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       }
     ],
@@ -20752,6 +22030,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "DEN",
         "startYear": 2013,
         "endYear": 2013
@@ -20787,7 +22070,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "NO",
@@ -20828,6 +22111,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qcauc37wqjdaxdbq1evu",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
         "teamId": "DET",
         "startYear": 2006,
         "endYear": 2006
@@ -20854,7 +22142,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -20884,7 +22172,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2005
       },
       {
         "teamId": "WAS",
@@ -20917,7 +22205,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       }
     ],
@@ -20943,11 +22231,35 @@ export const GENERATED_PLAYERS = [
     "id": "george-wilson"
   },
   {
+    "fullName": "Jarvis Green",
+    "position": "DE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hpuy0k0qdkhblob3ibya",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 2002,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "jarvis-green"
+  },
+  {
     "fullName": "Brooks Reed",
     "position": "OLB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hcnuqe5ulqoldxue1xjt",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "ATL",
         "startYear": 2015,
@@ -21017,6 +22329,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2007
       },
       {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2009,
         "endYear": 2011
@@ -21030,6 +22347,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "jim-leonhard"
@@ -21200,6 +22522,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vtar8sgktvvrutgkcntt",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "BUF",
         "startYear": 2010,
         "endYear": 2011
@@ -21222,6 +22554,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2008,
         "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2014
       },
       {
         "teamId": "IND",
@@ -21324,6 +22661,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sqoygt7fpqcakogjwk92",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "CHI",
         "startYear": 2015,
@@ -21547,12 +22889,22 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
         "teamId": "SEA",
         "startYear": 2007,
         "endYear": 2008
       },
       {
         "teamId": "JAX",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
         "startYear": 2009,
         "endYear": 2009
       }
@@ -21611,7 +22963,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -21623,6 +22975,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hfbgygdlksglcnvifoaq",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2011
+      },
       {
         "teamId": "LV",
         "startYear": 2012,
@@ -21759,7 +23116,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gaecgvwljow47cvhrdkh",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1993,
         "endYear": 1996
       },
@@ -21785,6 +23142,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "micheal-barrow"
+  },
+  {
+    "fullName": "Pisa Tinoisamoa",
+    "position": "OLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ma4xjq8bxf11tu87lkkm",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2008
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2009,
+        "endYear": 2010
+      }
+    ],
+    "id": "pisa-tinoisamoa"
   },
   {
     "fullName": "Anthony Brown",
@@ -21834,7 +23210,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2024,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "chad-ryland"
@@ -21985,13 +23361,18 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "John Simon",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/of08wb1lq5b27s8kjcw2",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cuhrkuo2cirudn1etvmz",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -22026,12 +23407,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 1995,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "LAC",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2004
       }
     ],
     "id": "kwamie-lassiter"
@@ -22126,6 +23512,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "bill-romanowski"
+  },
+  {
+    "fullName": "Bryant McFadden",
+    "position": "CB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bgoaiebtjvyqxram7cd3",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2010,
+        "endYear": 2011
+      }
+    ],
+    "id": "bryant-mcfadden"
   },
   {
     "fullName": "Logan Wilson",
@@ -22519,6 +23929,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2006,
         "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
       }
     ],
     "id": "ricky-manning"
@@ -22613,6 +24028,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
         "teamId": "PHI",
         "startYear": 2013,
         "endYear": 2014
@@ -22645,6 +24065,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2011,
         "endYear": 2011
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2013
       },
       {
         "teamId": "DET",
@@ -22690,6 +24115,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
         "teamId": "JAX",
         "startYear": 2011,
         "endYear": 2011
@@ -22714,6 +24144,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
         "teamId": "LAC",
         "startYear": 2011,
         "endYear": 2011
@@ -22735,7 +24170,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2007
       },
       {
         "teamId": "PIT",
@@ -22763,7 +24198,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -23167,6 +24602,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2003
       }
     ],
     "id": "brett-conway"
@@ -23346,6 +24786,25 @@ export const GENERATED_PLAYERS = [
     "id": "dalvin-tomlinson"
   },
   {
+    "fullName": "Rashad Johnson",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uhqzxihe7l5k8vsrjwsw",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2015
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "rashad-johnson"
+  },
+  {
     "fullName": "Akeem Ayers",
     "position": "OLB",
     "difficulty": "hard",
@@ -23360,6 +24819,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2014,
         "endYear": 2014
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "IND",
@@ -23423,6 +24887,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       },
       {
         "teamId": "CAR",
@@ -23572,7 +25041,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "GB",
@@ -23679,6 +25148,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2003,
         "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
       }
     ],
     "id": "stephen-davis"
@@ -23764,12 +25238,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2005
       },
       {
         "teamId": "CAR",
         "startYear": 2006,
         "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2010
       }
     ],
     "id": "damione-lewis"
@@ -23857,10 +25336,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Antwan Barnes",
-    "position": "DE",
+    "position": "OLB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dk8o27yvrpsubhzdiwg9",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2009
+      },
       {
         "teamId": "PHI",
         "startYear": 2010,
@@ -23999,7 +25483,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 1997,
-        "endYear": 2001
+        "endYear": 2002
       }
     ],
     "id": "michael-mccrary"
@@ -24014,6 +25498,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2011,
         "endYear": 2014
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "NO",
@@ -24086,6 +25575,59 @@ export const GENERATED_PLAYERS = [
     "id": "dennis-gardeck"
   },
   {
+    "fullName": "Eugene Wilson",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ndv34of5ywrhtv62bafz",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2010
+      }
+    ],
+    "id": "eugene-wilson"
+  },
+  {
+    "fullName": "James Lofton",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ligcazckfbdlmcd2ekqv",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 1978,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1989,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "james-lofton"
+  },
+  {
     "fullName": "Kyler Fackrell",
     "position": "LB",
     "difficulty": "hard",
@@ -24151,7 +25693,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1991,
         "endYear": 2000
       },
       {
@@ -24264,6 +25806,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fizwrxzfdaw7v2vzzpn6",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2013
+      },
       {
         "teamId": "PHI",
         "startYear": 2015,
@@ -24530,11 +26077,35 @@ export const GENERATED_PLAYERS = [
     "id": "malcolm-smith"
   },
   {
+    "fullName": "Ryan Denney",
+    "position": "DE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hcdia8wnrbpoubm9qb9p",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 2002,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "ryan-denney"
+  },
+  {
     "fullName": "Brice McCain",
     "position": "CB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wniws1imhuakghqrxols",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2013
+      },
       {
         "teamId": "PIT",
         "startYear": 2014,
@@ -24677,11 +26248,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "David Johnson",
     "position": "RB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ekmnsysofzigrqtetwmx",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y7dtsyyjnoafefkbylbb",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2019
       },
       {
@@ -24837,6 +26408,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "stanford-routt"
@@ -24847,6 +26423,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qx6t1lqmc9ws9ledobzn",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "BUF",
         "startYear": 2015,
@@ -25006,6 +26587,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "BUF",
@@ -25207,7 +26793,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2020
       },
       {
@@ -25327,10 +26913,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "K'Waun Williams",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/orzh1rcyohpaf7bonwgx",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o07uyyoj3nvtpni2ons7",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2015
+      },
       {
         "teamId": "CHI",
         "startYear": 2016,
@@ -25398,6 +26989,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2004
       },
       {
         "teamId": "SEA",
@@ -25506,7 +27102,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rvnwuud1omemquowcor7",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -25516,7 +27112,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1972,
         "endYear": 1972
       },
@@ -25543,6 +27139,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 1997,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
@@ -25596,6 +27197,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2000,
         "endYear": 2002
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
       }
     ],
     "id": "charlie-clemons"
@@ -25646,13 +27252,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/htepvetwtvjnl3viu9af",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1996,
         "endYear": 2003
       },
       {
@@ -25968,6 +27569,25 @@ export const GENERATED_PLAYERS = [
     "id": "kevin-mathis"
   },
   {
+    "fullName": "Chad Williams",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fry1xlzznn6jkz1hcs5l",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "chad-williams"
+  },
+  {
     "fullName": "Harold Jackson",
     "position": "WR",
     "difficulty": "medium",
@@ -26098,6 +27718,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "dallas-clark"
@@ -26259,7 +27884,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1991,
         "endYear": 1998
       },
       {
@@ -26338,12 +27963,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "MIA",
         "startYear": 2003,
         "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2009
       }
     ],
     "id": "jeff-zgonina"
@@ -26384,6 +28014,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
         "teamId": "LV",
         "startYear": 2011,
         "endYear": 2011
@@ -26411,6 +28046,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "barrett-ruud"
@@ -26424,7 +28064,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "DEN",
@@ -26473,7 +28113,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2025,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "jacoby-brissett"
@@ -26519,6 +28159,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fgotlhrhw2tr54bzfyhx",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "IND",
         "startYear": 2013,
         "endYear": 2015
@@ -26533,10 +28183,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Josh Bynes",
-    "position": "ILB",
+    "position": "LB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yki1iqv1tu8hvta68ypu",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2013
+      },
       {
         "teamId": "DET",
         "startYear": 2014,
@@ -26566,6 +28221,25 @@ export const GENERATED_PLAYERS = [
     "id": "josh-bynes"
   },
   {
+    "fullName": "Eric Brown",
+    "position": "DB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vqv7vfnfklyec7q956xr",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1998,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2004
+      }
+    ],
+    "id": "eric-brown"
+  },
+  {
     "fullName": "Tariq Woolen",
     "position": "DB",
     "difficulty": "hard",
@@ -26590,6 +28264,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hch25rxcmk5fdld5kux3",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2012
+      },
       {
         "teamId": "PHI",
         "startYear": 2013,
@@ -26719,12 +28398,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "SF",
         "startYear": 2005,
         "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2008
       },
       {
         "teamId": "NYJ",
@@ -26828,7 +28512,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Jason Campbell",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z8bqudw5oqygrc6wumbh",
     "teamStints": [
       {
@@ -26847,12 +28531,46 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "CIN",
         "startYear": 2014,
         "endYear": 2014
       }
     ],
     "id": "jason-campbell"
+  },
+  {
+    "fullName": "Robaire Smith",
+    "position": "DL",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p5ydlxpdcjlfchtwveoa",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 2000,
+        "endYear": 2003
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2010
+      }
+    ],
+    "id": "robaire-smith"
   },
   {
     "fullName": "Tony Brown",
@@ -27043,6 +28761,49 @@ export const GENERATED_PLAYERS = [
     "id": "don-strock"
   },
   {
+    "fullName": "Henry Ellard",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xvtbquqavblewrdgj4fn",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1994,
+        "endYear": 1998
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1998,
+        "endYear": 1998
+      }
+    ],
+    "id": "henry-ellard"
+  },
+  {
+    "fullName": "Jason Sehorn",
+    "position": "DB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uiozonf6wmaffwue19qe",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1994,
+        "endYear": 2002
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2003
+      }
+    ],
+    "id": "jason-sehorn"
+  },
+  {
     "fullName": "Jerome Bettis",
     "position": "RB",
     "difficulty": "medium",
@@ -27050,7 +28811,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1993,
         "endYear": 1995
       },
       {
@@ -27060,6 +28821,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jerome-bettis"
+  },
+  {
+    "fullName": "Jim Plunkett",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gnumm8kvsrqnvcs9ql6u",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1971,
+        "endYear": 1975
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1976,
+        "endYear": 1977
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1978,
+        "endYear": 1986
+      }
+    ],
+    "id": "jim-plunkett"
   },
   {
     "fullName": "Kamren Curl",
@@ -27404,6 +29189,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2004,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2009,
         "endYear": 2009
       }
     ],
@@ -27611,13 +29406,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Lamarcus Joyner",
-    "position": "DB",
+    "position": "FS",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/poormyuk5qvpvju7ypc6",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x57erxn3gxqfqdwx7of9",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -27672,6 +29467,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2003,
         "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
       }
     ],
     "id": "tony-bryant"
@@ -27943,7 +29743,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2004
       }
     ],
     "id": "corey-fuller"
@@ -27962,7 +29767,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2010
       },
       {
         "teamId": "KC",
@@ -28001,6 +29806,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2009,
         "endYear": 2012
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2013,
+        "endYear": 2015
       },
       {
         "teamId": "GB",
@@ -28097,7 +29907,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2024,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "sean-murphy-bunting"
@@ -28133,7 +29943,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1992
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1992,
         "endYear": 1992
       },
@@ -28240,6 +30050,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
         "teamId": "JAX",
         "startYear": 2005,
         "endYear": 2005
@@ -28248,6 +30063,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "kenny-wright"
@@ -28259,8 +30079,23 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pbmhrzsdp1arbzhfszmq",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
         "teamId": "BUF",
         "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2007,
         "endYear": 2007
       },
       {
@@ -28275,6 +30110,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tony-hargrove"
+  },
+  {
+    "fullName": "Will Demps",
+    "position": "FS",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hlri5cnxcejmzbyb8i6x",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2008
+      }
+    ],
+    "id": "will-demps"
   },
   {
     "fullName": "Boye Mafe",
@@ -28426,6 +30285,25 @@ export const GENERATED_PLAYERS = [
     "id": "adrian-phillips"
   },
   {
+    "fullName": "Anthony Weaver",
+    "position": "DE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zudoujixxo1zr1snrovh",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2008
+      }
+    ],
+    "id": "anthony-weaver"
+  },
+  {
     "fullName": "Dean Lowry",
     "position": "DL",
     "difficulty": "hard",
@@ -28541,6 +30419,25 @@ export const GENERATED_PLAYERS = [
     "id": "joselio-hanson"
   },
   {
+    "fullName": "Marcus Allen",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wy664ewj5sglsncnjakr",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1982,
+        "endYear": 1992
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1993,
+        "endYear": 1997
+      }
+    ],
+    "id": "marcus-allen"
+  },
+  {
     "fullName": "Paulson Adebo",
     "position": "DB",
     "difficulty": "hard",
@@ -28560,11 +30457,35 @@ export const GENERATED_PLAYERS = [
     "id": "paulson-adebo"
   },
   {
+    "fullName": "Vince Evans",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zfacengwqw596mxqdxgf",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1977,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1995
+      }
+    ],
+    "id": "vince-evans"
+  },
+  {
     "fullName": "Ahtyba Rubin",
-    "position": "DT",
+    "position": "NT",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ct4wy9zmgiatoubxgpc2",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2014
+      },
       {
         "teamId": "SEA",
         "startYear": 2015,
@@ -28677,8 +30598,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -28704,6 +30630,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2009,
         "endYear": 2014
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "NE",
@@ -28745,7 +30676,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -28792,12 +30723,41 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "TEN",
         "startYear": 2007,
         "endYear": 2007
       }
     ],
     "id": "eric-moulds"
+  },
+  {
+    "fullName": "Jeff Hostetler",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/apjisc45plyskzivcfqe",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1984,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1993,
+        "endYear": 1996
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1997,
+        "endYear": 1998
+      }
+    ],
+    "id": "jeff-hostetler"
   },
   {
     "fullName": "Justin Coleman",
@@ -28845,7 +30805,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1981
       },
@@ -29035,7 +30995,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 1996,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "NO",
@@ -29160,6 +31120,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2004,
         "endYear": 2005
       },
       {
@@ -29243,6 +31213,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2006,
         "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2012
       },
       {
         "teamId": "DET",
@@ -29369,6 +31344,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2004,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2012
       },
       {
         "teamId": "NO",
@@ -29665,10 +31645,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Pierre Desir",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/havdl5u1wctwfphxivr0",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hf93hyvfhwqp89z08vum",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2015
+      },
       {
         "teamId": "LAC",
         "startYear": 2016,
@@ -29721,7 +31706,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2005
       },
       {
         "teamId": "DET",
@@ -29735,11 +31720,26 @@ export const GENERATED_PLAYERS = [
     "fullName": "Case Keenum",
     "position": "QB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qnyuz76tdcsqxn1bzse1",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tymwoe3wpwzln78uzbvu",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -29830,6 +31830,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "LAR",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "KC",
         "startYear": 2016,
         "endYear": 2016
@@ -29889,7 +31894,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1994,
         "endYear": 1999
       },
       {
@@ -30058,6 +32063,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
         "teamId": "LAC",
         "startYear": 2012,
         "endYear": 2012
@@ -30110,10 +32120,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Barkevious Mingo",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qqig6b0pwlnfgnowzuba",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pirk5vkp0ugwl84rzxq0",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2015
+      },
       {
         "teamId": "NE",
         "startYear": 2016,
@@ -30276,7 +32291,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1993,
         "endYear": 2001
       },
       {
@@ -30424,7 +32439,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wk8ttd1noffeqk9sy9qt",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1983
       },
@@ -30573,7 +32588,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/soeuxhhf0s6dvclhnizc",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1992,
         "endYear": 1995
       },
@@ -30641,9 +32656,14 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Travis Fisher",
     "position": "CB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xs4bvfwntbaxo8vikwfw",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2006
+      },
       {
         "teamId": "DET",
         "startYear": 2007,
@@ -30693,7 +32713,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1982,
         "endYear": 1982
       },
@@ -30708,7 +32728,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1983
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1983,
         "endYear": 1983
       },
@@ -30727,7 +32747,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/th3wsugu08xgopwdevbl",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1974,
         "endYear": 1980
       },
@@ -30798,6 +32818,35 @@ export const GENERATED_PLAYERS = [
     "id": "davon-house"
   },
   {
+    "fullName": "Drew Hill",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/socupvhqhg0lvquxfn8p",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1979,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1985,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "drew-hill"
+  },
+  {
     "fullName": "Earnest Byner",
     "position": "RB",
     "difficulty": "medium",
@@ -30849,30 +32898,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ed-west"
-  },
-  {
-    "fullName": "James Lofton",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ligcazckfbdlmcd2ekqv",
-    "teamStints": [
-      {
-        "teamId": "GB",
-        "startYear": 1978,
-        "endYear": 1986
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1989,
-        "endYear": 1992
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1993,
-        "endYear": 1993
-      }
-    ],
-    "id": "james-lofton"
   },
   {
     "fullName": "Jeff Rutledge",
@@ -30954,13 +32979,28 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Jason Allen",
     "position": "FS",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/n590gh1djhpdbrfga3l4",
     "teamStints": [
       {
         "teamId": "MIA",
         "startYear": 2006,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
       },
       {
         "teamId": "CIN",
@@ -31022,6 +33062,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "roy-williams-2"
+  },
+  {
+    "fullName": "Todd Heap",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lfwhp1fevjrx1puoon94",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2001,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "todd-heap"
   },
   {
     "fullName": "William Thomas",
@@ -31096,6 +33155,35 @@ export const GENERATED_PLAYERS = [
     "id": "charle-young"
   },
   {
+    "fullName": "Cliff Stoudt",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lhkeihzoy2tletzrlfn9",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1977,
+        "endYear": 1983
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1986,
+        "endYear": 1988
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1990,
+        "endYear": 1991
+      }
+    ],
+    "id": "cliff-stoudt"
+  },
+  {
     "fullName": "D.J. Hayden",
     "position": "CB",
     "difficulty": "hard",
@@ -31131,7 +33219,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mu1zq5rtlvvdlaeb4sfa",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1971,
         "endYear": 1979
       },
@@ -31154,13 +33242,32 @@ export const GENERATED_PLAYERS = [
     "id": "dan-pastorini"
   },
   {
+    "fullName": "Gary Baxter",
+    "position": "DB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/enx6fdjajjvtdybuhixn",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2001,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2007
+      }
+    ],
+    "id": "gary-baxter"
+  },
+  {
     "fullName": "Jimmie Giles",
     "position": "TE",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/u8xh5oxykc5bnchgrmpq",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1977
       },
@@ -31248,7 +33355,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1978,
         "endYear": 1980
       },
@@ -31311,7 +33418,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Chris Johnson",
     "position": "CB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jctqayyyqjrxjzmj8zht",
     "teamStints": [
       {
@@ -31320,9 +33427,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "LV",
         "startYear": 2007,
         "endYear": 2011
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "chris-johnson-2"
@@ -31350,6 +33467,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "michael-green"
+  },
+  {
+    "fullName": "Stacey Mack",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yyuwqskm7g1a0ige62em",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 1999,
+        "endYear": 2002
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
+      }
+    ],
+    "id": "stacey-mack"
   },
   {
     "fullName": "Jevon Holland",
@@ -31395,38 +33531,23 @@ export const GENERATED_PLAYERS = [
     "id": "lance-moore"
   },
   {
-    "fullName": "Mel Gray",
-    "position": "RB",
+    "fullName": "Lee Evans",
+    "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfuw3dh4aah4l4eeuubp",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/stwolhzhyn9nyxqblwvl",
     "teamStints": [
       {
-        "teamId": "NO",
-        "startYear": 1986,
-        "endYear": 1988
+        "teamId": "BUF",
+        "startYear": 2004,
+        "endYear": 2010
       },
       {
-        "teamId": "DET",
-        "startYear": 1989,
-        "endYear": 1994
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1997,
-        "endYear": 1997
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 1997
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
-    "id": "mel-gray"
+    "id": "lee-evans"
   },
   {
     "fullName": "Perrish Cox",
@@ -31506,40 +33627,6 @@ export const GENERATED_PLAYERS = [
     "id": "rey-maualuga"
   },
   {
-    "fullName": "Ronnie Harmon",
-    "position": "RB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g8atj0voydgllzuzdch0",
-    "teamStints": [
-      {
-        "teamId": "BUF",
-        "startYear": 1986,
-        "endYear": 1989
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1990,
-        "endYear": 1995
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 1997,
-        "endYear": 1997
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 1997
-      }
-    ],
-    "id": "ronnie-harmon"
-  },
-  {
     "fullName": "Sam Garnes",
     "position": "DB",
     "difficulty": "impossible",
@@ -31599,7 +33686,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1991
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1992,
         "endYear": 1994
       },
@@ -31800,6 +33887,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2008,
         "endYear": 2008
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "domonique-foxworth"
@@ -31850,9 +33947,19 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Brandon McDonald",
     "position": "CB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gaihsousc3dyr8xgodha",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2010
+      },
       {
         "teamId": "DET",
         "startYear": 2010,
@@ -31955,13 +34062,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Benardrick McKinney",
-    "position": "LB",
+    "position": "ILB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nenhz6hr6nhle8cf2uer",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/j8fbugbheduwxwjrrswa",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2020
       },
       {
@@ -32038,6 +34145,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jerricho-cotchery"
+  },
+  {
+    "fullName": "Gerald Hayes",
+    "position": "MLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ejvbr0jntfewtwfwcawr",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2010
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "gerald-hayes"
   },
   {
     "fullName": "Jon McGraw",
@@ -32394,13 +34520,18 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Antuan Edwards",
     "position": "DB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfg4valless8iaz0efih",
     "teamStints": [
       {
         "teamId": "GB",
         "startYear": 1999,
         "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2004
       },
       {
         "teamId": "MIA",
@@ -32458,6 +34589,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "terrell-edmunds"
+  },
+  {
+    "fullName": "Wade Richey",
+    "position": "K",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yupbiv9afjgtjiirxtfv",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2004
+      }
+    ],
+    "id": "wade-richey"
   },
   {
     "fullName": "Adam Gotsis",
@@ -32686,13 +34836,32 @@ export const GENERATED_PLAYERS = [
     "id": "mickey-shuler"
   },
   {
+    "fullName": "Mosi Tatupu",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jge79vwu3wvwpixwpriy",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1978,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "mosi-tatupu"
+  },
+  {
     "fullName": "Ottis Anderson",
     "position": "RB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pwluez9civsa4xcuqskm",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1979,
         "endYear": 1985
       },
@@ -32702,7 +34871,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1986
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1986,
         "endYear": 1986
       },
@@ -32732,6 +34901,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "rodney-holman"
+  },
+  {
+    "fullName": "Roy Green",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wbzkqqfjj5t8l9yyrquc",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1979,
+        "endYear": 1990
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1991,
+        "endYear": 1992
+      }
+    ],
+    "id": "roy-green"
   },
   {
     "fullName": "Stanley Morgan",
@@ -32905,9 +35093,14 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "David Carr",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/raoec7zczzr8ooz0vutw",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2006
+      },
       {
         "teamId": "CAR",
         "startYear": 2007,
@@ -33063,7 +35256,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1979,
         "endYear": 1981
       },
@@ -33076,28 +35269,33 @@ export const GENERATED_PLAYERS = [
     "id": "greg-landry"
   },
   {
-    "fullName": "Jeff Hostetler",
-    "position": "QB",
+    "fullName": "J.T. Smith",
+    "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/apjisc45plyskzivcfqe",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xgkniyfyfqqk3ggehriy",
     "teamStints": [
       {
-        "teamId": "NYG",
-        "startYear": 1984,
-        "endYear": 1992
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1995,
-        "endYear": 1996
+        "teamId": "KC",
+        "startYear": 1978,
+        "endYear": 1978
       },
       {
         "teamId": "WAS",
-        "startYear": 1997,
-        "endYear": 1998
+        "startYear": 1978,
+        "endYear": 1978
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1979,
+        "endYear": 1984
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1985,
+        "endYear": 1990
       }
     ],
-    "id": "jeff-hostetler"
+    "id": "j-t-smith"
   },
   {
     "fullName": "Nicholas Morrow",
@@ -33229,6 +35427,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAC",
         "startYear": 2012,
+        "endYear": 2013
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2014,
         "endYear": 2014
       }
     ],
@@ -33259,35 +35467,6 @@ export const GENERATED_PLAYERS = [
     "id": "tyrel-dodson"
   },
   {
-    "fullName": "Cliff Stoudt",
-    "position": "QB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lhkeihzoy2tletzrlfn9",
-    "teamStints": [
-      {
-        "teamId": "PIT",
-        "startYear": 1977,
-        "endYear": 1983
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1986,
-        "endYear": 1987
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1989,
-        "endYear": 1989
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 1990,
-        "endYear": 1991
-      }
-    ],
-    "id": "cliff-stoudt"
-  },
-  {
     "fullName": "Danny Clark",
     "position": "LB",
     "difficulty": "hard",
@@ -33307,6 +35486,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2007
       },
       {
         "teamId": "NYG",
@@ -33395,15 +35579,146 @@ export const GENERATED_PLAYERS = [
     "id": "james-brooks"
   },
   {
+    "fullName": "Jamie Williams",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tfr9dcfdjybqjz5xhae5",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1984,
+        "endYear": 1988
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1989,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "jamie-williams"
+  },
+  {
+    "fullName": "Mark Herrmann",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e9dkru9lgdil7s65rqpi",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1981,
+        "endYear": 1982
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1983,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1985,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1990,
+        "endYear": 1992
+      }
+    ],
+    "id": "mark-herrmann"
+  },
+  {
+    "fullName": "Mel Gray",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfuw3dh4aah4l4eeuubp",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 1986,
+        "endYear": 1988
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1989,
+        "endYear": 1994
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1995,
+        "endYear": 1996
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1997,
+        "endYear": 1997
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "mel-gray"
+  },
+  {
+    "fullName": "Pete Holohan",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w1rijkq9trkk6khrmstx",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1981,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1990
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "pete-holohan"
+  },
+  {
     "fullName": "Ray Mickens",
     "position": "DB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fnxuo3vzbxtrrwoscjsf",
     "teamStints": [
       {
         "teamId": "NYJ",
         "startYear": 1996,
         "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
       },
       {
         "teamId": "NE",
@@ -33448,14 +35763,48 @@ export const GENERATED_PLAYERS = [
     "id": "reggie-rucker"
   },
   {
+    "fullName": "Ronnie Harmon",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g8atj0voydgllzuzdch0",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1986,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1990,
+        "endYear": 1995
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1996,
+        "endYear": 1996
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 1997,
+        "endYear": 1997
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "ronnie-harmon"
+  },
+  {
     "fullName": "T.J. McDonald",
-    "position": "DB",
+    "position": "SS",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jnxntrxxoeo7zcqaa0pv",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -33612,6 +35961,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2014
+      },
+      {
         "teamId": "NO",
         "startYear": 2016,
         "endYear": 2016
@@ -33702,6 +36056,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "bobby-hamilton"
@@ -33832,7 +36191,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2024,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "mack-wilson"
@@ -33893,6 +36252,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "TEN",
         "startYear": 2009,
         "endYear": 2010
@@ -33931,13 +36295,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Timmy Jernigan",
-    "position": "DL",
+    "position": "DT",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xanr5ubejzaqrwihwcct",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jvzky6sbzw8xuknjkxpq",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -34110,12 +36474,36 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
         "teamId": "DAL",
         "startYear": 2011,
         "endYear": 2012
       }
     ],
     "id": "kenyon-coleman"
+  },
+  {
+    "fullName": "Michael Boulware",
+    "position": "SS",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a3r6qsn7lds9mk1yniyp",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 2004,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2007
+      }
+    ],
+    "id": "michael-boulware"
   },
   {
     "fullName": "Ryan Pickett",
@@ -34126,12 +36514,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2005
       },
       {
         "teamId": "GB",
         "startYear": 2006,
         "endYear": 2013
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "ryan-pickett"
@@ -34148,12 +36541,55 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
         "teamId": "LV",
         "startYear": 2013,
         "endYear": 2014
       }
     ],
     "id": "usama-young"
+  },
+  {
+    "fullName": "Amobi Okoye",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/drzt1s6qqp6ojyzdltjw",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "amobi-okoye"
+  },
+  {
+    "fullName": "James Butler",
+    "position": "SS",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rrrrf2irptctscxoi50z",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2011
+      }
+    ],
+    "id": "james-butler"
   },
   {
     "fullName": "Kenyan Drake",
@@ -34203,7 +36639,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 1998,
+        "endYear": 2002
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
       },
       {
         "teamId": "DEN",
@@ -34262,6 +36713,55 @@ export const GENERATED_PLAYERS = [
     "id": "santonio-holmes"
   },
   {
+    "fullName": "Tony Baker",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ar93nieqpuev0syhuscs",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 1970,
+        "endYear": 1971
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1971,
+        "endYear": 1972
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1973,
+        "endYear": 1974
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1975,
+        "endYear": 1975
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "tony-baker"
+  },
+  {
     "fullName": "Trent McDuffie",
     "position": "DB",
     "difficulty": "hard",
@@ -34283,7 +36783,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Corey Ivy",
     "position": "DB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tjkdcsg3oitbyhwanvcs",
     "teamStints": [
       {
@@ -34295,6 +36795,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2001,
         "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2009
       },
       {
         "teamId": "PIT",
@@ -34354,13 +36864,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Justin Bethel",
-    "position": "DB",
+    "position": "FS",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fyns5sjntmnbdfbgbqsq",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ctqpivwrs2u9gwrohbce",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2017
       },
       {
@@ -34427,7 +36937,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1987
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1987,
         "endYear": 1987
       }
@@ -34440,6 +36950,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ryuel7mxiqtyhyqn4lyn",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2009
+      },
       {
         "teamId": "NYJ",
         "startYear": 2009,
@@ -34580,6 +37095,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2001,
         "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
       }
     ],
     "id": "eddie-kennison"
@@ -34599,6 +37119,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2011,
         "endYear": 2011
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "james-sanders"
@@ -34647,6 +37172,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2006,
         "endYear": 2013
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
       },
       {
         "teamId": "PHI",
@@ -34787,6 +37317,25 @@ export const GENERATED_PLAYERS = [
     "id": "percy-harvin"
   },
   {
+    "fullName": "Tommy Polley",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o6hcfdt5mvwvtyjjqxev",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2001,
+        "endYear": 2004
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "tommy-polley"
+  },
+  {
     "fullName": "Ellis Wyms",
     "position": "DL",
     "difficulty": "impossible",
@@ -34866,6 +37415,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
         "teamId": "NE",
         "startYear": 2012,
         "endYear": 2012
@@ -34887,7 +37441,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "IND",
@@ -34913,9 +37467,38 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "brandon-stokley"
+  },
+  {
+    "fullName": "Cullen Bryant",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mdok1lltawqo9jylcyyq",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1973,
+        "endYear": 1982
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1983,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "cullen-bryant"
   },
   {
     "fullName": "Franco Harris",
@@ -35053,12 +37636,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gwlwkc0uggwu94p260y5",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1971,
         "endYear": 1971
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1973,
         "endYear": 1975
       },
@@ -35154,7 +37737,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eommdtyypsuowoksvxuz",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1986
       },
@@ -35225,6 +37808,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/etz06w7s0ardf49mnayz",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2012
+      },
       {
         "teamId": "NE",
         "startYear": 2013,
@@ -35385,6 +37973,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2002
       },
       {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "MIN",
         "startYear": 2004,
         "endYear": 2006
@@ -35398,6 +37991,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sqvbn4ybxagyfwva3i51",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "SF",
         "startYear": 2015,
@@ -35426,6 +38024,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2003,
         "endYear": 2007
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2008
       },
       {
         "teamId": "CIN",
@@ -35495,10 +38098,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Dannell Ellerbe",
-    "position": "MLB",
+    "position": "ILB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dpz19d0krklh7n124i98",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2012
+      },
       {
         "teamId": "MIA",
         "startYear": 2013,
@@ -35535,30 +38143,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "drew-coleman"
-  },
-  {
-    "fullName": "Drew Hill",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/socupvhqhg0lvquxfn8p",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1979,
-        "endYear": 1981
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1985,
-        "endYear": 1991
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 1992,
-        "endYear": 1993
-      }
-    ],
-    "id": "drew-hill"
   },
   {
     "fullName": "Emery Moorehead",
@@ -35607,6 +38191,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "james-harris"
+  },
+  {
+    "fullName": "Jim Everett",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rxrnntjfowvwavdlfhrq",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1993
+      },
+      {
+        "teamId": "NO",
+        "startYear": 1994,
+        "endYear": 1996
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "jim-everett"
   },
   {
     "fullName": "JuJu Smith-Schuster",
@@ -35716,6 +38324,30 @@ export const GENERATED_PLAYERS = [
     "id": "mark-carrier"
   },
   {
+    "fullName": "Mike Pagel",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sjcjnlxuxwllgtthxkwm",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1982,
+        "endYear": 1985
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1986,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1993
+      }
+    ],
+    "id": "mike-pagel"
+  },
+  {
     "fullName": "Raheem Mostert",
     "position": "RB",
     "difficulty": "medium",
@@ -35723,6 +38355,16 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "MIA",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "CLE",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -35782,6 +38424,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "reggie-howard"
+  },
+  {
+    "fullName": "Steve Bartkowski",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vezswr0hfnk222ok87ju",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 1975,
+        "endYear": 1985
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1986
+      }
+    ],
+    "id": "steve-bartkowski"
   },
   {
     "fullName": "Tony Galbreath",
@@ -35889,6 +38555,25 @@ export const GENERATED_PLAYERS = [
     "id": "terry-glenn"
   },
   {
+    "fullName": "Antonio Cochran",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jtuz3z8fmfk8qlx1pufj",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 1999,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "antonio-cochran"
+  },
+  {
     "fullName": "Charlie Garner",
     "position": "RB",
     "difficulty": "medium",
@@ -35919,13 +38604,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Deone Bucannon",
-    "position": "LB",
+    "position": "SS",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ehinvbmtyznlpdgizxmi",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g19sbqyligpdkcsczrzk",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -35973,12 +38658,138 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
         "teamId": "MIA",
         "startYear": 2012,
         "endYear": 2013
       }
     ],
     "id": "dimitri-patterson"
+  },
+  {
+    "fullName": "Eric Dickerson",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jhnq2bvn8ryvxiwlfhk8",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1987
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1987,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "eric-dickerson"
+  },
+  {
+    "fullName": "Gary Hogeboom",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w9inwhfdml5yn7rxn8au",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1980,
+        "endYear": 1985
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1986,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "gary-hogeboom"
+  },
+  {
+    "fullName": "Jay Schroeder",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s7029osiaxseohwol3la",
+    "teamStints": [
+      {
+        "teamId": "WAS",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1988,
+        "endYear": 1992
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "jay-schroeder"
+  },
+  {
+    "fullName": "Jeff Kemp",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xg0jissqub74w1kdp8kz",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1981,
+        "endYear": 1985
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1987,
+        "endYear": 1990
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "jeff-kemp"
   },
   {
     "fullName": "Joe Washington",
@@ -35997,7 +38808,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1978,
         "endYear": 1980
       },
@@ -36056,7 +38867,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Kordell Stewart",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wyel70n1iopggkgtup2x",
     "teamStints": [
       {
@@ -36068,6 +38879,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2005
       }
     ],
     "id": "kordell-stewart"
@@ -36102,6 +38918,30 @@ export const GENERATED_PLAYERS = [
     "id": "marc-logan"
   },
   {
+    "fullName": "Owen Daniels",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ktxkz5tzddboxst5xfh8",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2013
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2015,
+        "endYear": 2016
+      }
+    ],
+    "id": "owen-daniels"
+  },
+  {
     "fullName": "Talanoa Hufanga",
     "position": "DB",
     "difficulty": "hard",
@@ -36134,7 +38974,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "CIN",
@@ -36194,7 +39034,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yeaqgecblizp0nljeug8",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1983,
         "endYear": 1986
       },
@@ -36271,6 +39111,25 @@ export const GENERATED_PLAYERS = [
     "id": "evander-hood"
   },
   {
+    "fullName": "Fabian Washington",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tqvnlpkmnkqoruoqfddp",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 2005,
+        "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2010
+      }
+    ],
+    "id": "fabian-washington"
+  },
+  {
     "fullName": "Gardner Minshew",
     "position": "QB",
     "difficulty": "hard",
@@ -36300,6 +39159,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "gardner-minshew"
@@ -36409,7 +39273,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1981,
         "endYear": 1981
       },
@@ -36427,6 +39291,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/biljapl7dpexygnojajq",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2012
+      },
       {
         "teamId": "NYJ",
         "startYear": 2013,
@@ -36468,6 +39337,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "malik-reed"
+  },
+  {
+    "fullName": "Ron Middleton",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bq85urwxvzlnaitqexrz",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 1986,
+        "endYear": 1987
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1990,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "ron-middleton"
   },
   {
     "fullName": "Ryan Mathews",
@@ -36659,6 +39567,44 @@ export const GENERATED_PLAYERS = [
     "id": "efe-obada"
   },
   {
+    "fullName": "Emmitt Smith",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ub78gyoyi3x1wlaow49n",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1990,
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2004
+      }
+    ],
+    "id": "emmitt-smith"
+  },
+  {
+    "fullName": "Morlon Greenwood",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gygcedoufknizvmzq2ud",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 2001,
+        "endYear": 2004
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2008
+      }
+    ],
+    "id": "morlon-greenwood"
+  },
+  {
     "fullName": "Quinton Dunbar",
     "position": "CB",
     "difficulty": "hard",
@@ -36780,6 +39726,25 @@ export const GENERATED_PLAYERS = [
     "id": "benny-sapp"
   },
   {
+    "fullName": "Brandon Chillar",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kmoqhjesfzfsppinffqh",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2007
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2008,
+        "endYear": 2010
+      }
+    ],
+    "id": "brandon-chillar"
+  },
+  {
     "fullName": "Fabian Moreau",
     "position": "DB",
     "difficulty": "hard",
@@ -36814,6 +39779,45 @@ export const GENERATED_PLAYERS = [
     "id": "fabian-moreau"
   },
   {
+    "fullName": "Hugh Millen",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zcr70xwyisnp7nmkinam",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1988,
+        "endYear": 1990
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1994,
+        "endYear": 1995
+      }
+    ],
+    "id": "hugh-millen"
+  },
+  {
     "fullName": "Nick Roach",
     "position": "LB",
     "difficulty": "impossible",
@@ -36834,10 +39838,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "O'Brien Schofield",
-    "position": "DE",
+    "position": "LB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/axofyctr34qh1vvceusj",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2012
+      },
       {
         "teamId": "SEA",
         "startYear": 2013,
@@ -36970,6 +39979,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
         "teamId": "DAL",
         "startYear": 2011,
         "endYear": 2011
@@ -36999,6 +40013,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "JAX",
         "startYear": 2010,
         "endYear": 2012
@@ -37023,6 +40042,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ay2c42ghmrgmxqcdsmdi",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
         "teamId": "MIN",
         "startYear": 2006,
         "endYear": 2009
@@ -37031,6 +40055,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "chester-taylor"
@@ -37094,6 +40123,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2000,
         "endYear": 2000
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2005
       }
     ],
     "id": "deion-sanders"
@@ -37113,6 +40147,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2009
       },
       {
         "teamId": "MIN",
@@ -37229,6 +40268,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2003,
         "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2009
       }
     ],
     "id": "nick-ferguson"
@@ -37270,6 +40314,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "SEA",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
         "startYear": 2004,
         "endYear": 2004
       }
@@ -37348,6 +40397,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "carlos-hyde"
+  },
+  {
+    "fullName": "Dante Hall",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kbnhi4dslz0xvp9iwz2y",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 2000,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2008
+      }
+    ],
+    "id": "dante-hall"
   },
   {
     "fullName": "George Iloka",
@@ -37446,16 +40514,26 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2011,
         "endYear": 2012
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "matt-giordano"
   },
   {
     "fullName": "Alan Branch",
-    "position": "DT",
+    "position": "NT",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p1vgxerrhwvr1eqqvbga",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2010
+      },
       {
         "teamId": "SEA",
         "startYear": 2011,
@@ -37473,6 +40551,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "alan-branch"
+  },
+  {
+    "fullName": "Antwan Peek",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fvgqugkjqvccqw74pe2r",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
+      }
+    ],
+    "id": "antwan-peek"
   },
   {
     "fullName": "Cam Taylor-Britt",
@@ -38110,7 +41207,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2003
       }
     ],
     "id": "brant-boyer"
@@ -38135,6 +41232,25 @@ export const GENERATED_PLAYERS = [
     "id": "darren-mcfadden"
   },
   {
+    "fullName": "Bob Chandler",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z2jen0feyqxavkzkszsc",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1971,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1982
+      }
+    ],
+    "id": "bob-chandler"
+  },
+  {
     "fullName": "Brandon Moore",
     "position": "ILB",
     "difficulty": "impossible",
@@ -38154,6 +41270,44 @@ export const GENERATED_PLAYERS = [
     "id": "brandon-moore"
   },
   {
+    "fullName": "David Hill",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cuasnlb47l6i9wqkyp4h",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 1976,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1987
+      }
+    ],
+    "id": "david-hill"
+  },
+  {
+    "fullName": "Greg Pruitt",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kcfhqaxhwtew8qinlxxu",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 1973,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1982,
+        "endYear": 1984
+      }
+    ],
+    "id": "greg-pruitt"
+  },
+  {
     "fullName": "Haven Moses",
     "position": "WR",
     "difficulty": "medium",
@@ -38171,6 +41325,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "haven-moses"
+  },
+  {
+    "fullName": "Jay Novacek",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/shhxhfbwqiknznsqqfr0",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1985,
+        "endYear": 1989
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1990,
+        "endYear": 1996
+      }
+    ],
+    "id": "jay-novacek"
   },
   {
     "fullName": "Jonathan Hayes",
@@ -38203,7 +41376,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1970
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1971,
         "endYear": 1981
       }
@@ -38248,6 +41421,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "leonard-johnson"
+  },
+  {
+    "fullName": "Mike Anderson",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/u233mhiu14upds1god2j",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 2000,
+        "endYear": 2003
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2007
+      }
+    ],
+    "id": "mike-anderson"
   },
   {
     "fullName": "Mike Phipps",
@@ -38299,7 +41496,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1973,
         "endYear": 1977
       },
@@ -38381,6 +41578,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2007
       },
       {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2009
+      },
+      {
         "teamId": "KC",
         "startYear": 2012,
         "endYear": 2012
@@ -38403,6 +41605,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2004,
         "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2009
       }
     ],
     "id": "ralph-brown"
@@ -38464,10 +41676,29 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2024,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "baron-browning"
+  },
+  {
+    "fullName": "Bernardo Harris",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/epwgdnbrkz3brfcxw9sc",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 1995,
+        "endYear": 2001
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2002
+      }
+    ],
+    "id": "bernardo-harris"
   },
   {
     "fullName": "Bill Brooks",
@@ -38595,52 +41826,67 @@ export const GENERATED_PLAYERS = [
     "id": "darrin-nelson"
   },
   {
-    "fullName": "Jamie Williams",
+    "fullName": "Dave Casper",
     "position": "TE",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tfr9dcfdjybqjz5xhae5",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/njpwjyzxtmgh7jt6oznj",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "LV",
+        "startYear": 1974,
+        "endYear": 1979
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1981,
+        "endYear": 1983
+      },
+      {
+        "teamId": "MIN",
         "startYear": 1983,
         "endYear": 1983
       },
       {
-        "teamId": "HOU",
+        "teamId": "LV",
         "startYear": 1984,
-        "endYear": 1988
-      },
-      {
-        "teamId": "SF",
-        "startYear": 1989,
-        "endYear": 1993
+        "endYear": 1984
       }
     ],
-    "id": "jamie-williams"
+    "id": "dave-casper"
   },
   {
-    "fullName": "Jim Plunkett",
-    "position": "QB",
+    "fullName": "Gary Clark",
+    "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gnumm8kvsrqnvcs9ql6u",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xrwtecojststjlvqazke",
     "teamStints": [
       {
-        "teamId": "NE",
-        "startYear": 1971,
-        "endYear": 1975
+        "teamId": "WAS",
+        "startYear": 1985,
+        "endYear": 1992
       },
       {
-        "teamId": "SF",
-        "startYear": 1976,
-        "endYear": 1977
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1994
       },
       {
-        "teamId": "LV",
-        "startYear": 1978,
-        "endYear": 1981
+        "teamId": "MIA",
+        "startYear": 1995,
+        "endYear": 1995
       }
     ],
-    "id": "jim-plunkett"
+    "id": "gary-clark"
   },
   {
     "fullName": "Jim Zorn",
@@ -38702,12 +41948,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1973,
         "endYear": 1976
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1977,
         "endYear": 1980
       }
@@ -38737,6 +41983,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-pruitt"
+  },
+  {
+    "fullName": "Pat Beach",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bjo4n1vhfcha2oitpso9",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1982,
+        "endYear": 1983
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1985,
+        "endYear": 1991
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "pat-beach"
   },
   {
     "fullName": "Paul Coffman",
@@ -38780,6 +42055,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ricardo-allen"
+  },
+  {
+    "fullName": "Roger Craig",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ewrcp7dcq0xaoaecjsqk",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1983,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "roger-craig"
   },
   {
     "fullName": "Ron Jessie",
@@ -38843,6 +42142,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "sammy-watkins"
+  },
+  {
+    "fullName": "Steve Dils",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ih0z25eoj7ommwssthmv",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1979,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "steve-dils"
   },
   {
     "fullName": "Steve Johnson",
@@ -39087,7 +42415,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1978,
         "endYear": 1979
       },
@@ -39098,6 +42426,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dwight-harrison"
+  },
+  {
+    "fullName": "Flipper Anderson",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wi8asapfckhlhtide0vz",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1994
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1995,
+        "endYear": 1995
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1996,
+        "endYear": 1996
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "flipper-anderson"
   },
   {
     "fullName": "Frank Zombo",
@@ -39117,6 +42474,64 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "frank-zombo"
+  },
+  {
+    "fullName": "George Farmer",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y9ntqvbqpby0tevrocqj",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1970,
+        "endYear": 1975
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1975,
+        "endYear": 1975
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1982,
+        "endYear": 1984
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "george-farmer"
+  },
+  {
+    "fullName": "Jessie Hester",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gq1tmzhuosz6woghskel",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1990,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1995
+      }
+    ],
+    "id": "jessie-hester"
   },
   {
     "fullName": "Jimmie Johnson",
@@ -39235,40 +42650,6 @@ export const GENERATED_PLAYERS = [
     "id": "marcus-williams-2"
   },
   {
-    "fullName": "Mark Herrmann",
-    "position": "QB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e9dkru9lgdil7s65rqpi",
-    "teamStints": [
-      {
-        "teamId": "DEN",
-        "startYear": 1981,
-        "endYear": 1982
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1985,
-        "endYear": 1987
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1990,
-        "endYear": 1992
-      }
-    ],
-    "id": "mark-herrmann"
-  },
-  {
     "fullName": "Mark Ingram",
     "position": "WR",
     "difficulty": "medium",
@@ -39325,6 +42706,69 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-williams"
+  },
+  {
+    "fullName": "Mike Young",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g7htzltcb2avfcpubhki",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1985,
+        "endYear": 1988
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1989,
+        "endYear": 1992
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "mike-young"
+  },
+  {
+    "fullName": "Pat Carter",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/brzbqtepswp00tunieub",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1989,
+        "endYear": 1993
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1995,
+        "endYear": 1995
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1996,
+        "endYear": 1997
+      }
+    ],
+    "id": "pat-carter"
   },
   {
     "fullName": "Tom Owen",
@@ -39450,6 +42894,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "CAR",
         "startYear": 2009,
         "endYear": 2009
@@ -39498,7 +42947,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cyztoewuydbgc2ixexls",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -39561,6 +43010,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
         "teamId": "CIN",
         "startYear": 2005,
         "endYear": 2005
@@ -39578,6 +43032,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 1996,
         "endYear": 2001
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "DET",
@@ -39624,7 +43083,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1988,
         "endYear": 2003
       },
       {
@@ -39703,6 +43162,25 @@ export const GENERATED_PLAYERS = [
     "id": "cole-holcomb"
   },
   {
+    "fullName": "Demarcus Faggins",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zylcbpwmdxqgpiuqpkz1",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2008
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "demarcus-faggins"
+  },
+  {
     "fullName": "Gus Frerotte",
     "position": "QB",
     "difficulty": "hard",
@@ -39739,6 +43217,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
         "teamId": "MIN",
         "startYear": 2008,
         "endYear": 2008
@@ -39755,7 +43238,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
       },
       {
         "teamId": "BUF",
@@ -39793,50 +43281,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tarell-basham"
-  },
-  {
-    "fullName": "Tony Baker",
-    "position": "RB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ar93nieqpuev0syhuscs",
-    "teamStints": [
-      {
-        "teamId": "NO",
-        "startYear": 1970,
-        "endYear": 1971
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1971,
-        "endYear": 1972
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1973,
-        "endYear": 1974
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1975,
-        "endYear": 1975
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 1986,
-        "endYear": 1986
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1986,
-        "endYear": 1986
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1988,
-        "endYear": 1988
-      }
-    ],
-    "id": "tony-baker"
   },
   {
     "fullName": "Tony McDaniel",
@@ -40000,6 +43444,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2007
       },
       {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
         "teamId": "WAS",
         "startYear": 2011,
         "endYear": 2011
@@ -40011,6 +43465,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "donte-stallworth"
+  },
+  {
+    "fullName": "Jared Crick",
+    "position": "DE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p83cvjhofpg0z82txycy",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2015
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2016,
+        "endYear": 2017
+      }
+    ],
+    "id": "jared-crick"
   },
   {
     "fullName": "Jerry Rice",
@@ -40061,6 +43534,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dzrfb0oh2ksyclyyldcs",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      },
       {
         "teamId": "CAR",
         "startYear": 2011,
@@ -40154,7 +43632,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1992,
         "endYear": 1997
       },
       {
@@ -40185,6 +43663,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2012
       },
       {
         "teamId": "SF",
@@ -40248,6 +43731,16 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yhjtycrpq7jtfarxkhcx",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2011
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2014
+      },
       {
         "teamId": "LAC",
         "startYear": 2015,
@@ -40375,7 +43868,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1994,
         "endYear": 1997
       },
       {
@@ -40386,7 +43879,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       }
     ],
     "id": "rob-fredrickson"
@@ -40526,6 +44019,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2007
       },
       {
         "teamId": "CIN",
@@ -40798,6 +44296,25 @@ export const GENERATED_PLAYERS = [
     "id": "mohamed-sanu"
   },
   {
+    "fullName": "Rashard Mendenhall",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hkk7loy0zbc6crlhkbmq",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2008,
+        "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "rashard-mendenhall"
+  },
+  {
     "fullName": "Alfred Morris",
     "position": "RB",
     "difficulty": "medium",
@@ -41022,6 +44539,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
         "teamId": "JAX",
         "startYear": 2011,
         "endYear": 2011
@@ -41083,6 +44605,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2014,
         "endYear": 2014
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "LAC",
@@ -41266,25 +44793,6 @@ export const GENERATED_PLAYERS = [
     "id": "ashtyn-davis"
   },
   {
-    "fullName": "Bob Chandler",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z2jen0feyqxavkzkszsc",
-    "teamStints": [
-      {
-        "teamId": "BUF",
-        "startYear": 1971,
-        "endYear": 1979
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1980,
-        "endYear": 1981
-      }
-    ],
-    "id": "bob-chandler"
-  },
-  {
     "fullName": "Bob Tucker",
     "position": "TE",
     "difficulty": "medium",
@@ -41336,25 +44844,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "bobby-hebert"
-  },
-  {
-    "fullName": "Cullen Bryant",
-    "position": "RB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mdok1lltawqo9jylcyyq",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1973,
-        "endYear": 1981
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1983,
-        "endYear": 1984
-      }
-    ],
-    "id": "cullen-bryant"
   },
   {
     "fullName": "Daryl Gardener",
@@ -41520,6 +45009,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2002,
         "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
       }
     ],
     "id": "jason-fisk"
@@ -41673,42 +45172,23 @@ export const GENERATED_PLAYERS = [
     "id": "richard-todd"
   },
   {
-    "fullName": "Roy Green",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wbzkqqfjj5t8l9yyrquc",
+    "fullName": "Seth Payne",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ishllzonioaljkofy1cn",
     "teamStints": [
       {
-        "teamId": "LAR",
-        "startYear": 1979,
-        "endYear": 1987
+        "teamId": "JAX",
+        "startYear": 1997,
+        "endYear": 2001
       },
       {
-        "teamId": "PHI",
-        "startYear": 1991,
-        "endYear": 1992
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2006
       }
     ],
-    "id": "roy-green"
-  },
-  {
-    "fullName": "Steve Bartkowski",
-    "position": "QB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vezswr0hfnk222ok87ju",
-    "teamStints": [
-      {
-        "teamId": "ATL",
-        "startYear": 1975,
-        "endYear": 1985
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1985,
-        "endYear": 1985
-      }
-    ],
-    "id": "steve-bartkowski"
+    "id": "seth-payne"
   },
   {
     "fullName": "Tevin Coleman",
@@ -41738,6 +45218,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tevin-coleman"
+  },
+  {
+    "fullName": "Willie Gault",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dpvqbhippy603k1skdtv",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1983,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1988,
+        "endYear": 1993
+      }
+    ],
+    "id": "willie-gault"
   },
   {
     "fullName": "Austin Johnson",
@@ -41841,6 +45340,26 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w191gsxivnqgdwgydka6",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2010
+      },
       {
         "teamId": "CAR",
         "startYear": 2011,
@@ -41972,13 +45491,18 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/biuxbpl5hymra8j9wg7i",
     "teamStints": [
       {
+        "teamId": "LV",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
         "teamId": "DAL",
         "startYear": 1991,
         "endYear": 1992
       },
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1993,
         "endYear": 1994
       },
       {
@@ -42006,7 +45530,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nule4ps4yn3fjjholgqe",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1972,
         "endYear": 1973
       },
@@ -42111,6 +45635,25 @@ export const GENERATED_PLAYERS = [
     "id": "anthony-pleasant"
   },
   {
+    "fullName": "Bill Gramatica",
+    "position": "K",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zlvia3nsxmjipcb1unmu",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2003
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "bill-gramatica"
+  },
+  {
     "fullName": "Bob Thomas",
     "position": "RB",
     "difficulty": "medium",
@@ -42135,38 +45678,23 @@ export const GENERATED_PLAYERS = [
     "id": "bob-thomas"
   },
   {
-    "fullName": "Dave Casper",
-    "position": "TE",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/njpwjyzxtmgh7jt6oznj",
+    "fullName": "Chris Gocong",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ywzizqmnpho31z1y9dpg",
     "teamStints": [
       {
-        "teamId": "LV",
-        "startYear": 1974,
-        "endYear": 1979
+        "teamId": "PHI",
+        "startYear": 2007,
+        "endYear": 2009
       },
       {
-        "teamId": "HOU",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1981,
-        "endYear": 1983
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1983,
-        "endYear": 1983
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2011
       }
     ],
-    "id": "dave-casper"
+    "id": "chris-gocong"
   },
   {
     "fullName": "Dave Meggett",
@@ -42193,6 +45721,35 @@ export const GENERATED_PLAYERS = [
     "id": "dave-meggett"
   },
   {
+    "fullName": "David Humm",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jmsabgyygnp8aig2qpfr",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1975,
+        "endYear": 1979
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1981,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1984
+      }
+    ],
+    "id": "david-humm"
+  },
+  {
     "fullName": "Dennis Northcutt",
     "position": "WR",
     "difficulty": "medium",
@@ -42201,7 +45758,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2006
       },
       {
         "teamId": "JAX",
@@ -42270,81 +45827,28 @@ export const GENERATED_PLAYERS = [
     "id": "duriel-harris"
   },
   {
-    "fullName": "Gary Clark",
-    "position": "WR",
+    "fullName": "Eric Sievers",
+    "position": "TE",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xrwtecojststjlvqazke",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wy2fwgtut1e5scsyb5ib",
     "teamStints": [
       {
-        "teamId": "WAS",
-        "startYear": 1985,
-        "endYear": 1992
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 1994,
-        "endYear": 1994
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "gary-clark"
-  },
-  {
-    "fullName": "Gary Hogeboom",
-    "position": "QB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w9inwhfdml5yn7rxn8au",
-    "teamStints": [
-      {
-        "teamId": "DAL",
-        "startYear": 1980,
-        "endYear": 1985
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1986,
+        "teamId": "LAC",
+        "startYear": 1981,
         "endYear": 1988
       },
       {
-        "teamId": "WAS",
-        "startYear": 1990,
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1989,
         "endYear": 1990
       }
     ],
-    "id": "gary-hogeboom"
-  },
-  {
-    "fullName": "J.T. Smith",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xgkniyfyfqqk3ggehriy",
-    "teamStints": [
-      {
-        "teamId": "KC",
-        "startYear": 1978,
-        "endYear": 1978
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1978,
-        "endYear": 1978
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1979,
-        "endYear": 1984
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1985,
-        "endYear": 1987
-      }
-    ],
-    "id": "j-t-smith"
+    "id": "eric-sievers"
   },
   {
     "fullName": "Jack Trudeau",
@@ -42393,6 +45897,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "james-wilder"
+  },
+  {
+    "fullName": "Jeff Chadwick",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ie0xdcrsm2lmoczh0bwy",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 1983,
+        "endYear": 1989
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "jeff-chadwick"
   },
   {
     "fullName": "John Spagnola",
@@ -42489,7 +46017,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -42549,13 +46077,37 @@ export const GENERATED_PLAYERS = [
     "id": "mark-malone"
   },
   {
+    "fullName": "Mike Barber",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/luyvmprztvgexjsvd5ol",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1976,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1982,
+        "endYear": 1985
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1985,
+        "endYear": 1985
+      }
+    ],
+    "id": "mike-barber"
+  },
+  {
     "fullName": "Norm Bulaich",
     "position": "RB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/umf47m42qwvzskoov8n6",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1972
       },
@@ -42571,30 +46123,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "norm-bulaich"
-  },
-  {
-    "fullName": "Pat Beach",
-    "position": "TE",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bjo4n1vhfcha2oitpso9",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1982,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1985,
-        "endYear": 1991
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1992,
-        "endYear": 1992
-      }
-    ],
-    "id": "pat-beach"
   },
   {
     "fullName": "Ricky Sanders",
@@ -42619,6 +46147,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ricky-sanders"
+  },
+  {
+    "fullName": "Rob Carpenter",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wqovk0zypgc7aecpff4q",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1977,
+        "endYear": 1981
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1981,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1986
+      }
+    ],
+    "id": "rob-carpenter"
   },
   {
     "fullName": "Robb Thomas",
@@ -42651,7 +46203,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hqmqcxmzrcolwumodd6u",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1974,
         "endYear": 1981
       },
@@ -42667,6 +46219,59 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "roger-carr"
+  },
+  {
+    "fullName": "Ron Wolfley",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sr3r7nwaw5u5r6prqkr0",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1985,
+        "endYear": 1991
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1992,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "ron-wolfley"
+  },
+  {
+    "fullName": "Sam Seale",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s5dmba2etzvrydzvvaby",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1988,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "sam-seale"
   },
   {
     "fullName": "Steve Zabel",
@@ -42685,7 +46290,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1979,
         "endYear": 1979
       }
@@ -42707,6 +46312,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "terry-fair"
@@ -42717,6 +46327,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hjoyjewh7knoafxt4k93",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2013
+      },
       {
         "teamId": "WAS",
         "startYear": 2014,
@@ -42769,7 +46384,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2002,
+        "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
       },
       {
         "teamId": "SF",
@@ -42833,6 +46463,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2000,
         "endYear": 2001
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2003
       },
       {
         "teamId": "PHI",
@@ -43046,6 +46686,35 @@ export const GENERATED_PLAYERS = [
     "id": "dominic-rhodes"
   },
   {
+    "fullName": "Don Hasselbeck",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x8etmam0wfxuyp6os5pk",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1977,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1985,
+        "endYear": 1985
+      }
+    ],
+    "id": "don-hasselbeck"
+  },
+  {
     "fullName": "Evan Engram",
     "position": "TE",
     "difficulty": "medium",
@@ -43134,7 +46803,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hspwiurchhz3ssgzfr98",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1976
       },
@@ -43298,6 +46967,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2000,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2003
       }
     ],
     "id": "matt-stevens"
@@ -43359,40 +47033,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ray-jarvis"
-  },
-  {
-    "fullName": "Ron Middleton",
-    "position": "TE",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bq85urwxvzlnaitqexrz",
-    "teamStints": [
-      {
-        "teamId": "ATL",
-        "startYear": 1986,
-        "endYear": 1987
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1988,
-        "endYear": 1988
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1989,
-        "endYear": 1989
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1990,
-        "endYear": 1993
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "ron-middleton"
   },
   {
     "fullName": "Scott Galbraith",
@@ -43485,11 +47125,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "John Brown",
     "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dozoxhu3uad5j1ik3pa0",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xwyc2a0qfdxbbct6lso6",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -43705,47 +47345,13 @@ export const GENERATED_PLAYERS = [
     "id": "carlos-hall"
   },
   {
-    "fullName": "Hugh Millen",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zcr70xwyisnp7nmkinam",
-    "teamStints": [
-      {
-        "teamId": "ATL",
-        "startYear": 1988,
-        "endYear": 1990
-      },
-      {
-        "teamId": "NE",
-        "startYear": 1991,
-        "endYear": 1992
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1994,
-        "endYear": 1995
-      }
-    ],
-    "id": "hugh-millen"
-  },
-  {
     "fullName": "John Gilliam",
     "position": "WR",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/j2pzoz8f0clmvglhf7oq",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -43814,6 +47420,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "najee-harris"
+  },
+  {
+    "fullName": "Sean Weatherspoon",
+    "position": "OLB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sijnwwbaybhvcyokvpup",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2016,
+        "endYear": 2017
+      }
+    ],
+    "id": "sean-weatherspoon"
   },
   {
     "fullName": "Brandon Marshall",
@@ -43951,6 +47581,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2001,
         "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2006
       }
     ],
     "id": "james-darling"
@@ -44251,6 +47886,25 @@ export const GENERATED_PLAYERS = [
     "id": "lamont-thompson"
   },
   {
+    "fullName": "Marcus Benard",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wrlav74iwh6c6m1hdymw",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2014
+      }
+    ],
+    "id": "marcus-benard"
+  },
+  {
     "fullName": "Marcus Cooper",
     "position": "CB",
     "difficulty": "hard",
@@ -44299,6 +47953,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2008,
         "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "mario-haggan"
@@ -44654,6 +48313,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "SF",
         "startYear": 2014,
         "endYear": 2014
@@ -44923,6 +48587,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2003
       }
     ],
     "id": "emmanuel-mcdaniel"
@@ -45023,7 +48692,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2025,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "joshua-karty"
@@ -45057,6 +48726,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2011,
         "endYear": 2014
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "CLE",
@@ -45257,7 +48931,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2005
       },
       {
         "teamId": "SEA",
@@ -45276,11 +48950,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Tavon Austin",
     "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zlldmz6p1kcwhrdvy5ob",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ulagxqgjnrft4wub0gus",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -45310,6 +48984,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tavon-austin"
+  },
+  {
+    "fullName": "Andrew Wingard",
+    "position": "DB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pnmohxloifrnlgb4isa4",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2019,
+        "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "andrew-wingard"
   },
   {
     "fullName": "DeVante Parker",
@@ -45363,6 +49056,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ernie-sims"
+  },
+  {
+    "fullName": "Jo-Lonn Dunbar",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kujiqgafk3tborj2dagz",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2008,
+        "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2015
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2015,
+        "endYear": 2015
+      }
+    ],
+    "id": "jo-lonn-dunbar"
   },
   {
     "fullName": "Ahmad Gardner",
@@ -45709,6 +49426,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "JAX",
         "startYear": 2013,
         "endYear": 2014
@@ -45725,6 +49447,44 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "alan-ball"
+  },
+  {
+    "fullName": "Anthony Edwards",
+    "position": "WR",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/chltcquj2mhn8mfylrgc",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 1989,
+        "endYear": 1990
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1998
+      }
+    ],
+    "id": "anthony-edwards"
+  },
+  {
+    "fullName": "Bert Jones",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yxv9nbawmjlhmsudaobo",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1973,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1982,
+        "endYear": 1982
+      }
+    ],
+    "id": "bert-jones"
   },
   {
     "fullName": "Bob Avellini",
@@ -45856,6 +49616,25 @@ export const GENERATED_PLAYERS = [
     "id": "chris-ivory"
   },
   {
+    "fullName": "Dan Land",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/csqwwdbggxfb7kh0uwbu",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1997
+      }
+    ],
+    "id": "dan-land"
+  },
+  {
     "fullName": "Dana Stubblefield",
     "position": "DL",
     "difficulty": "impossible",
@@ -45904,32 +49683,13 @@ export const GENERATED_PLAYERS = [
     "id": "eric-martin"
   },
   {
-    "fullName": "Eric Sievers",
-    "position": "TE",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wy2fwgtut1e5scsyb5ib",
-    "teamStints": [
-      {
-        "teamId": "LAC",
-        "startYear": 1981,
-        "endYear": 1988
-      },
-      {
-        "teamId": "NE",
-        "startYear": 1989,
-        "endYear": 1990
-      }
-    ],
-    "id": "eric-sievers"
-  },
-  {
     "fullName": "Ernest Givins",
     "position": "WR",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zkvwfhaul3crsorbnrdq",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1994
       },
@@ -45948,7 +49708,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cjlnwsp93zrxhzf9bixy",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1974,
         "endYear": 1977
       },
@@ -46010,7 +49770,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iyxknemwxdwc1sqe0xqe",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1995
       },
@@ -46021,25 +49781,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "haywood-jeffires"
-  },
-  {
-    "fullName": "Jay Novacek",
-    "position": "TE",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/shhxhfbwqiknznsqqfr0",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1985,
-        "endYear": 1987
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 1990,
-        "endYear": 1996
-      }
-    ],
-    "id": "jay-novacek"
   },
   {
     "fullName": "Jaylinn Hawkins",
@@ -46190,13 +49931,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k1qywfs4tmcnw287hnzx",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1995,
         "endYear": 2001
       },
       {
@@ -46230,6 +49966,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "julius-thomas"
+  },
+  {
+    "fullName": "Marc Wilson",
+    "position": "QB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ockryga7mbp25q7qpooc",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1987
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1989,
+        "endYear": 1990
+      }
+    ],
+    "id": "marc-wilson"
   },
   {
     "fullName": "Mark van Eeghen",
@@ -46281,7 +50036,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jsxmedvi9vlqhdvtcjmp",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1978,
         "endYear": 1983
       },
@@ -46342,25 +50097,6 @@ export const GENERATED_PLAYERS = [
     "id": "patrick-murray"
   },
   {
-    "fullName": "Roger Craig",
-    "position": "RB",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ewrcp7dcq0xaoaecjsqk",
-    "teamStints": [
-      {
-        "teamId": "SF",
-        "startYear": 1983,
-        "endYear": 1990
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1992,
-        "endYear": 1993
-      }
-    ],
-    "id": "roger-craig"
-  },
-  {
     "fullName": "Sam McCullum",
     "position": "WR",
     "difficulty": "medium",
@@ -46414,6 +50150,25 @@ export const GENERATED_PLAYERS = [
     "id": "shane-burton"
   },
   {
+    "fullName": "Stump Mitchell",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cxnaemm0sfhqixlmhemy",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1981,
+        "endYear": 1989
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "stump-mitchell"
+  },
+  {
     "fullName": "Tim McGee",
     "position": "WR",
     "difficulty": "medium",
@@ -46436,6 +50191,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tim-mcgee"
+  },
+  {
+    "fullName": "Todd Christensen",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ab7yhfyi0nbqfby476hm",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1979,
+        "endYear": 1988
+      }
+    ],
+    "id": "todd-christensen"
   },
   {
     "fullName": "Turk Schonert",
@@ -46473,12 +50247,36 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
         "teamId": "WAS",
         "startYear": 2005,
         "endYear": 2006
       }
     ],
     "id": "warrick-holdman"
+  },
+  {
+    "fullName": "Wendell Tyler",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wbmygxckjzlmkjjpxt1h",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1977,
+        "endYear": 1982
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1983,
+        "endYear": 1986
+      }
+    ],
+    "id": "wendell-tyler"
   },
   {
     "fullName": "Willard Harrell",
@@ -46492,7 +50290,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1978,
         "endYear": 1984
       }
@@ -46553,6 +50351,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vq43zahk2e2jepswmkmi",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2008
+      },
       {
         "teamId": "NYG",
         "startYear": 2009,
@@ -46670,6 +50473,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "ARI",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "TEN",
         "startYear": 2014,
         "endYear": 2014
@@ -46770,6 +50583,30 @@ export const GENERATED_PLAYERS = [
     "id": "trevis-gipson"
   },
   {
+    "fullName": "Barry Redden",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vhjzix2e1okqhigctwlo",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1982,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1989,
+        "endYear": 1990
+      }
+    ],
+    "id": "barry-redden"
+  },
+  {
     "fullName": "Brian Brennan",
     "position": "WR",
     "difficulty": "medium",
@@ -46792,6 +50629,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brian-brennan"
+  },
+  {
+    "fullName": "Buford McGee",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lyfvklpazdfgl1atc7tr",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1984,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1991
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "buford-mcgee"
   },
   {
     "fullName": "Christian Jones",
@@ -46871,6 +50732,40 @@ export const GENERATED_PLAYERS = [
     "id": "derrick-fenner"
   },
   {
+    "fullName": "Derrick Ramsey",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/aae8ytxqpwmqnh2gtaet",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1978,
+        "endYear": 1982
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1984,
+        "endYear": 1985
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "derrick-ramsey"
+  },
+  {
     "fullName": "Don Beebe",
     "position": "WR",
     "difficulty": "medium",
@@ -46919,30 +50814,6 @@ export const GENERATED_PLAYERS = [
     "id": "don-calhoun"
   },
   {
-    "fullName": "Don Hasselbeck",
-    "position": "TE",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x8etmam0wfxuyp6os5pk",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1977,
-        "endYear": 1983
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1985,
-        "endYear": 1985
-      }
-    ],
-    "id": "don-hasselbeck"
-  },
-  {
     "fullName": "Ed Williams",
     "position": "RB",
     "difficulty": "medium",
@@ -46970,6 +50841,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ed-williams"
+  },
+  {
+    "fullName": "Erik Wilhelm",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wxr77gux79rgylz8aw8f",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1993,
+        "endYear": 1995
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1995,
+        "endYear": 1995
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1996,
+        "endYear": 1997
+      }
+    ],
+    "id": "erik-wilhelm"
   },
   {
     "fullName": "Floyd Turner",
@@ -47031,7 +50936,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qpxvrcfvbexqwzgf0p3b",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1978,
         "endYear": 1980
       },
@@ -47084,7 +50989,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1973,
         "endYear": 1973
       },
@@ -47161,7 +51066,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1978
       }
@@ -47204,7 +51109,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1986
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1993
       },
@@ -47247,7 +51152,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qbzzibd7mw0rt8mzm2jj",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1972,
         "endYear": 1977
       },
@@ -47271,7 +51176,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mqvilpuwcfn0pkgniyip",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -47342,30 +51247,6 @@ export const GENERATED_PLAYERS = [
     "id": "mark-jackson"
   },
   {
-    "fullName": "Matt Bouza",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mk5g65a3rk6ljjjrboil",
-    "teamStints": [
-      {
-        "teamId": "SF",
-        "startYear": 1981,
-        "endYear": 1981
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 1982,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1989
-      }
-    ],
-    "id": "matt-bouza"
-  },
-  {
     "fullName": "Michael Pittman",
     "position": "WR",
     "difficulty": "medium",
@@ -47409,37 +51290,13 @@ export const GENERATED_PLAYERS = [
     "id": "michael-timpson"
   },
   {
-    "fullName": "Mike Pagel",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sjcjnlxuxwllgtthxkwm",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1982,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1985
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1986,
-        "endYear": 1990
-      }
-    ],
-    "id": "mike-pagel"
-  },
-  {
     "fullName": "Mike Richardson",
     "position": "RB",
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ibtexgl8e34azhuqmyxx",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -47479,54 +51336,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "pat-sims"
-  },
-  {
-    "fullName": "Pete Holohan",
-    "position": "TE",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w1rijkq9trkk6khrmstx",
-    "teamStints": [
-      {
-        "teamId": "LAC",
-        "startYear": 1981,
-        "endYear": 1987
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1991,
-        "endYear": 1991
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1992,
-        "endYear": 1992
-      }
-    ],
-    "id": "pete-holohan"
-  },
-  {
-    "fullName": "Ray Butler",
-    "position": "WR",
-    "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wzze65dbj1wp2w7c750h",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1980,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1985
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1985,
-        "endYear": 1988
-      }
-    ],
-    "id": "ray-butler"
   },
   {
     "fullName": "Regan Upshaw",
@@ -47574,12 +51383,46 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "WAS",
         "startYear": 2010,
         "endYear": 2013
       }
     ],
     "id": "rex-grossman"
+  },
+  {
+    "fullName": "Stan Gelbaugh",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vrwq2e2pfzkmjrllvi1w",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1992,
+        "endYear": 1996
+      }
+    ],
+    "id": "stan-gelbaugh"
   },
   {
     "fullName": "Stanford Jennings",
@@ -47671,6 +51514,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tony-paige"
+  },
+  {
+    "fullName": "Vince Ferragamo",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tc2qspexlyzkc3dqreog",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1977,
+        "endYear": 1980
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1982,
+        "endYear": 1984
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1985,
+        "endYear": 1986
+      }
+    ],
+    "id": "vince-ferragamo"
   },
   {
     "fullName": "Wayne Wilson",
@@ -47828,6 +51700,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jqsgaxs04w22z72svcxu",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
         "teamId": "NE",
         "startYear": 2006,
         "endYear": 2008
@@ -47895,6 +51772,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/azokebvu5bctrltqy38r",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
         "teamId": "WAS",
         "startYear": 2011,
         "endYear": 2011
@@ -47954,6 +51836,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "wali-rainer"
+  },
+  {
+    "fullName": "Carl Garrett",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sysqv2gqvikillhx9mdr",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1970,
+        "endYear": 1972
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 1973,
+        "endYear": 1974
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1975,
+        "endYear": 1975
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1976,
+        "endYear": 1977
+      }
+    ],
+    "id": "carl-garrett"
   },
   {
     "fullName": "Chris Wormley",
@@ -48068,6 +51979,35 @@ export const GENERATED_PLAYERS = [
     "id": "damontre-moore"
   },
   {
+    "fullName": "Dave Little",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y8hkwgqn6ctm4iu71t0d",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1985,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "dave-little"
+  },
+  {
     "fullName": "David Archer",
     "position": "QB",
     "difficulty": "impossible",
@@ -48108,7 +52048,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1974,
         "endYear": 1975
       },
@@ -48155,6 +52095,40 @@ export const GENERATED_PLAYERS = [
     "id": "dwight-scales"
   },
   {
+    "fullName": "Greg Baty",
+    "position": "TE",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wk7j3hpjkh9x0ybtxrac",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1990,
+        "endYear": 1994
+      }
+    ],
+    "id": "greg-baty"
+  },
+  {
     "fullName": "James Stewart",
     "position": "RB",
     "difficulty": "hard",
@@ -48183,6 +52157,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2010,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
       },
       {
         "teamId": "ATL",
@@ -48239,6 +52218,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jess-phillips"
+  },
+  {
+    "fullName": "Jessie Clark",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z1twtanvv7xjt7qu5gp8",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 1983,
+        "endYear": 1987
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "jessie-clark"
   },
   {
     "fullName": "Joe Cribbs",
@@ -48306,7 +52324,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1977
       }
@@ -48316,9 +52334,19 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Kellen Winslow",
     "position": "TE",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pw3hoatll5kkuc9v2gva",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2008
+      },
       {
         "teamId": "TB",
         "startYear": 2009,
@@ -48378,7 +52406,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1971
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1972,
         "endYear": 1975
       },
@@ -48528,7 +52556,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iztemgiw80p2d0i7f4h9",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1989,
         "endYear": 1989
       },
@@ -48591,7 +52619,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1982,
         "endYear": 1983
       },
@@ -48728,7 +52756,12 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2004
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2006
       },
       {
         "teamId": "ATL",
@@ -48918,6 +52951,35 @@ export const GENERATED_PLAYERS = [
     "id": "richard-dent"
   },
   {
+    "fullName": "Ronnie Lott",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/atxlkaso6zkduzfqa3h7",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1981,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1993,
+        "endYear": 1994
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "ronnie-lott"
+  },
+  {
     "fullName": "Walter Thurmond",
     "position": "CB",
     "difficulty": "impossible",
@@ -49038,6 +53100,30 @@ export const GENERATED_PLAYERS = [
     "id": "reggie-torbor"
   },
   {
+    "fullName": "Robert Tate",
+    "position": "WR",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ujukkzm8hr35yd1zbjhv",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1997,
+        "endYear": 2001
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2006
+      }
+    ],
+    "id": "robert-tate"
+  },
+  {
     "fullName": "Jermaine Gresham",
     "position": "TE",
     "difficulty": "medium",
@@ -49050,7 +53136,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       }
     ],
@@ -49068,9 +53154,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
         "teamId": "DEN",
         "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
       },
       {
         "teamId": "DEN",
@@ -49153,6 +53249,45 @@ export const GENERATED_PLAYERS = [
     "id": "omar-gaither"
   },
   {
+    "fullName": "Will Furrer",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/j6s3wtystta5cogq4r3r",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1995,
+        "endYear": 1995
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1997,
+        "endYear": 1997
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 1998,
+        "endYear": 1998
+      }
+    ],
+    "id": "will-furrer"
+  },
+  {
     "fullName": "Alphonso Smith",
     "position": "CB",
     "difficulty": "impossible",
@@ -49170,6 +53305,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "alphonso-smith"
+  },
+  {
+    "fullName": "Drew Bennett",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xztlttrhxqekjfl6xk93",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 2001,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2008
+      }
+    ],
+    "id": "drew-bennett"
   },
   {
     "fullName": "Jaquiski Tartt",
@@ -49254,6 +53408,25 @@ export const GENERATED_PLAYERS = [
     "id": "mackensie-alexander"
   },
   {
+    "fullName": "Marcus Spears",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h8qeiruegruwuxuqctjy",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2005,
+        "endYear": 2012
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "marcus-spears"
+  },
+  {
     "fullName": "Nevin Lawson",
     "position": "CB",
     "difficulty": "hard",
@@ -49287,6 +53460,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2013,
         "endYear": 2014
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
+        "endYear": 2015
       },
       {
         "teamId": "NE",
@@ -49385,6 +53563,25 @@ export const GENERATED_PLAYERS = [
     "id": "chandon-sullivan"
   },
   {
+    "fullName": "Chaun Thompson",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qkcatz5spgojkdxxbrli",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2009
+      }
+    ],
+    "id": "chaun-thompson"
+  },
+  {
     "fullName": "Chris Oldham",
     "position": "DB",
     "difficulty": "impossible",
@@ -49396,13 +53593,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 1990
       },
       {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
         "teamId": "BUF",
         "startYear": 1991,
         "endYear": 1991
       },
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1992,
         "endYear": 1994
       },
       {
@@ -49417,6 +53619,50 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "chris-oldham"
+  },
+  {
+    "fullName": "Dennis Johnson",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l5f0xyl4qyr93er8yv2r",
+    "teamStints": [
+      {
+        "teamId": "WAS",
+        "startYear": 1974,
+        "endYear": 1977
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1978,
+        "endYear": 1979
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1981,
+        "endYear": 1985
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "dennis-johnson"
   },
   {
     "fullName": "Eddie Goldman",
@@ -49507,7 +53753,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1992
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1993,
         "endYear": 1993
       },
@@ -49531,6 +53777,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l71yv51h5vb7tts5sseq",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
         "teamId": "NE",
         "startYear": 2005,
         "endYear": 2005
@@ -49539,6 +53790,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2009
       }
     ],
     "id": "andre-davis"
@@ -49564,13 +53820,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Brandon Williams",
-    "position": "DL",
+    "position": "DT",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mq2b2y109vcikmrknxjf",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fsifllhqsfavihjfs6eu",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2021
       },
       {
@@ -49583,10 +53839,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Courtney Upshaw",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bkkxvqrsgpuunchyqbk5",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "ATL",
         "startYear": 2016,
@@ -49712,6 +53973,54 @@ export const GENERATED_PLAYERS = [
     "id": "patrick-crayton"
   },
   {
+    "fullName": "Albert Lewis",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ugdxehxjdhtlt4ppp20t",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1983,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1994,
+        "endYear": 1998
+      }
+    ],
+    "id": "albert-lewis"
+  },
+  {
+    "fullName": "Andy Lee",
+    "position": "P",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bfozbs2h9jueavslvw3z",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 2004,
+        "endYear": 2014
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2016,
+        "endYear": 2016
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2017,
+        "endYear": 2022
+      }
+    ],
+    "id": "andy-lee"
+  },
+  {
     "fullName": "Dalton Schultz",
     "position": "TE",
     "difficulty": "medium",
@@ -49737,7 +54046,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fvcm2xjyodb6lrzjda5l",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1974
       },
@@ -49748,6 +54057,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dave-butz"
+  },
+  {
+    "fullName": "Jameel McClain",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/empafaldqhprhe5lh9un",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2013
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2014,
+        "endYear": 2014
+      }
+    ],
+    "id": "jameel-mcclain"
   },
   {
     "fullName": "Javon Kinlaw",
@@ -49776,7 +54104,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Joe Jurevicius",
     "position": "WR",
-    "difficulty": "impossible",
+    "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b9o3kktlagtklqzoq2f1",
     "teamStints": [
       {
@@ -49793,6 +54121,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2005,
         "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2007
       }
     ],
     "id": "joe-jurevicius"
@@ -49806,12 +54139,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2004
       },
       {
         "teamId": "DET",
@@ -49820,6 +54163,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kevin-johnson"
+  },
+  {
+    "fullName": "Kevin Walter",
+    "position": "WR",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yc4wxbkvjqddtgi2fisq",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2003,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2012
+      }
+    ],
+    "id": "kevin-walter"
   },
   {
     "fullName": "Reuben Droughns",
@@ -49836,6 +54198,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2002,
         "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2006
       },
       {
         "teamId": "NYG",
@@ -50132,6 +54499,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
         "teamId": "CHI",
         "startYear": 2008,
         "endYear": 2008
@@ -50148,8 +54520,13 @@ export const GENERATED_PLAYERS = [
     "fullName": "Travis Benjamin",
     "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i7zl582hvrp4vx3x69nh",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/io9silocxbywvisvcvpx",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "LAC",
         "startYear": 2016,
@@ -50233,13 +54610,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Brent Urban",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ghvhhwjcta66czsnkqh2",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/odvrnw4dkaiisojv15vn",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -50283,6 +54660,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "bubba-franks"
+  },
+  {
+    "fullName": "Carl Hairston",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cf39ss7rswxfi78tx2nd",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 1976,
+        "endYear": 1983
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1984,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "carl-hairston"
   },
   {
     "fullName": "Charlie Batch",
@@ -50354,7 +54755,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1989
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1990,
         "endYear": 1991
       }
@@ -50379,6 +54780,59 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kenneth-walker"
+  },
+  {
+    "fullName": "Lionel Washington",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qt1y6himlxnfozdekhvl",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1983,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1994
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1995,
+        "endYear": 1996
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "lionel-washington"
+  },
+  {
+    "fullName": "Lyle Alzado",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cqw7fny2wssmveq8m3rq",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1971,
+        "endYear": 1978
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1979,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1982,
+        "endYear": 1985
+      }
+    ],
+    "id": "lyle-alzado"
   },
   {
     "fullName": "Oliver Gibson",
@@ -50479,6 +54933,21 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "ARI",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2014
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "CHI",
         "startYear": 2016,
         "endYear": 2016
@@ -50547,13 +55016,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Darren Waller",
-    "position": "TE",
+    "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/avo1vfnndm2ickx907sj",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qqzht46a66zbi9xyylf4",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -50682,6 +55151,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2003
       }
     ],
     "id": "fred-weary"
@@ -51000,10 +55474,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "E.J. Gaines",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fodg8msxg2boaw03aud0",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2014,
+        "endYear": 2014
+      },
       {
         "teamId": "LAR",
         "startYear": 2016,
@@ -51139,6 +55618,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2007,
         "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
       }
     ],
     "id": "hank-poteat"
@@ -51150,7 +55634,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hzrh4o21xokexvn4h8yo",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1977
       },
@@ -51180,25 +55664,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jay-saldi"
-  },
-  {
-    "fullName": "Jeff Chadwick",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ie0xdcrsm2lmoczh0bwy",
-    "teamStints": [
-      {
-        "teamId": "DET",
-        "startYear": 1983,
-        "endYear": 1989
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1989,
-        "endYear": 1991
-      }
-    ],
-    "id": "jeff-chadwick"
   },
   {
     "fullName": "Jim Mandich",
@@ -51403,7 +55868,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1977,
         "endYear": 1980
       },
@@ -51414,6 +55879,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "lyle-blackwood"
+  },
+  {
+    "fullName": "Matt Bouza",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mk5g65a3rk6ljjjrboil",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1981,
+        "endYear": 1981
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1982,
+        "endYear": 1989
+      }
+    ],
+    "id": "matt-bouza"
   },
   {
     "fullName": "Mike McCoy",
@@ -51505,7 +55989,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1978,
         "endYear": 1980
       }
@@ -51606,7 +56090,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Randy McMichael",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s1ebauacar3ua1hlsa8a",
     "teamStints": [
       {
@@ -51615,12 +56099,36 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      {
         "teamId": "LAC",
         "startYear": 2010,
         "endYear": 2012
       }
     ],
     "id": "randy-mcmichael"
+  },
+  {
+    "fullName": "Ray Butler",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wzze65dbj1wp2w7c750h",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1980,
+        "endYear": 1985
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1985,
+        "endYear": 1988
+      }
+    ],
+    "id": "ray-butler"
   },
   {
     "fullName": "Reggie Langhorne",
@@ -51728,25 +56236,6 @@ export const GENERATED_PLAYERS = [
     "id": "ricky-feacher"
   },
   {
-    "fullName": "Rob Carpenter",
-    "position": "RB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wqovk0zypgc7aecpff4q",
-    "teamStints": [
-      {
-        "teamId": "HOU",
-        "startYear": 1977,
-        "endYear": 1981
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1981,
-        "endYear": 1985
-      }
-    ],
-    "id": "rob-carpenter"
-  },
-  {
     "fullName": "Rod Bernstine",
     "position": "RB",
     "difficulty": "impossible",
@@ -51791,7 +56280,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/brhnwc7y48c0ztjvvf7t",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1975,
         "endYear": 1979
       },
@@ -51823,6 +56312,25 @@ export const GENERATED_PLAYERS = [
     "id": "stan-humphries"
   },
   {
+    "fullName": "Steve Smith",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vv0ivi8ovgf1dtq2kqhm",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1993
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1994,
+        "endYear": 1995
+      }
+    ],
+    "id": "steve-smith-2"
+  },
+  {
     "fullName": "Theo Bell",
     "position": "WR",
     "difficulty": "impossible",
@@ -51845,6 +56353,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "theo-bell"
+  },
+  {
+    "fullName": "Tom Rathman",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x8me6wyueazg2asoz2us",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1986,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "tom-rathman"
   },
   {
     "fullName": "Wally Francis",
@@ -51891,7 +56418,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/umwehsy0v9ysvgqydbic",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1983
       },
@@ -51902,25 +56429,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "wayne-morris"
-  },
-  {
-    "fullName": "Wendell Tyler",
-    "position": "RB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wbmygxckjzlmkjjpxt1h",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1977,
-        "endYear": 1981
-      },
-      {
-        "teamId": "SF",
-        "startYear": 1983,
-        "endYear": 1986
-      }
-    ],
-    "id": "wendell-tyler"
   },
   {
     "fullName": "Wilbert Montgomery",
@@ -51948,7 +56456,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h5ywwatti4devmgnsfiv",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1988
       },
@@ -51958,7 +56466,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1992
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1993,
         "endYear": 1993
       }
@@ -52169,6 +56677,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2004,
         "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2007
       }
     ],
     "id": "ted-washington"
@@ -52374,7 +56887,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nagkdko7yzlsaj6lsrax",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1988,
         "endYear": 1996
       },
@@ -52395,30 +56908,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "cris-dishman"
-  },
-  {
-    "fullName": "David Humm",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jmsabgyygnp8aig2qpfr",
-    "teamStints": [
-      {
-        "teamId": "LV",
-        "startYear": 1975,
-        "endYear": 1979
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 1981,
-        "endYear": 1982
-      }
-    ],
-    "id": "david-humm"
   },
   {
     "fullName": "Delvin Williams",
@@ -52445,28 +56934,33 @@ export const GENERATED_PLAYERS = [
     "id": "delvin-williams"
   },
   {
-    "fullName": "Derrick Ramsey",
-    "position": "TE",
+    "fullName": "Ethan Horton",
+    "position": "RB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/aae8ytxqpwmqnh2gtaet",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h6hmzuszukaxxz9eumag",
     "teamStints": [
       {
-        "teamId": "LV",
-        "startYear": 1978,
-        "endYear": 1981
-      },
-      {
-        "teamId": "NE",
-        "startYear": 1983,
+        "teamId": "KC",
+        "startYear": 1985,
         "endYear": 1985
       },
       {
-        "teamId": "DET",
+        "teamId": "LV",
         "startYear": 1987,
         "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1994,
+        "endYear": 1994
       }
     ],
-    "id": "derrick-ramsey"
+    "id": "ethan-horton"
   },
   {
     "fullName": "Fred Banks",
@@ -52557,7 +57051,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1979,
         "endYear": 1980
       }
@@ -52589,30 +57083,6 @@ export const GENERATED_PLAYERS = [
     "id": "james-saxon"
   },
   {
-    "fullName": "Jessie Clark",
-    "position": "RB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z1twtanvv7xjt7qu5gp8",
-    "teamStints": [
-      {
-        "teamId": "GB",
-        "startYear": 1983,
-        "endYear": 1987
-      },
-      {
-        "teamId": "DET",
-        "startYear": 1988,
-        "endYear": 1988
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1989,
-        "endYear": 1990
-      }
-    ],
-    "id": "jessie-clark"
-  },
-  {
     "fullName": "Jim Thornton",
     "position": "TE",
     "difficulty": "impossible",
@@ -52629,7 +57099,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1994
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1995,
         "endYear": 1995
       }
@@ -52755,7 +57225,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1984
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1984,
         "endYear": 1984
       },
@@ -52788,6 +57258,25 @@ export const GENERATED_PLAYERS = [
     "id": "martin-bayless"
   },
   {
+    "fullName": "Matt Stewart",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wgntlqmwgamo5pv2lsia",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2001,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2006
+      }
+    ],
+    "id": "matt-stewart"
+  },
+  {
     "fullName": "Mike Moroski",
     "position": "QB",
     "difficulty": "impossible",
@@ -52799,7 +57288,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1984
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1985
       },
@@ -52836,28 +57325,96 @@ export const GENERATED_PLAYERS = [
     "id": "pete-johnson"
   },
   {
-    "fullName": "Tim Sherwin",
-    "position": "TE",
+    "fullName": "Preston Dennard",
+    "position": "WR",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bvlq1hohxmehwgral0qe",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mmv6szii4urtzxthplnw",
     "teamStints": [
       {
-        "teamId": "BAL",
-        "startYear": 1981,
+        "teamId": "LAR",
+        "startYear": 1978,
         "endYear": 1983
       },
       {
-        "teamId": "IND",
+        "teamId": "BUF",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1985,
+        "endYear": 1985
+      }
+    ],
+    "id": "preston-dennard"
+  },
+  {
+    "fullName": "Ron Brown",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tfk7vbcmipbbcv9gvg4f",
+    "teamStints": [
+      {
+        "teamId": "LAR",
         "startYear": 1984,
         "endYear": 1987
       },
       {
-        "teamId": "NYG",
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
         "startYear": 1988,
         "endYear": 1988
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1991
       }
     ],
-    "id": "tim-sherwin"
+    "id": "ron-brown"
+  },
+  {
+    "fullName": "Steve Fuller",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pwpriz9wpd0epedysmbl",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1979,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 1984,
+        "endYear": 1986
+      }
+    ],
+    "id": "steve-fuller"
   },
   {
     "fullName": "Tyree Wilson",
@@ -52879,28 +57436,52 @@ export const GENERATED_PLAYERS = [
     "id": "tyree-wilson"
   },
   {
-    "fullName": "Willie Davis",
-    "position": "WR",
+    "fullName": "Vai Sikahema",
+    "position": "RB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jg5pfp4lbm567houvlx2",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y7lwo59fjqtax5bamfzs",
     "teamStints": [
       {
-        "teamId": "KC",
+        "teamId": "ARI",
+        "startYear": 1986,
+        "endYear": 1990
+      },
+      {
+        "teamId": "GB",
         "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "vai-sikahema"
+  },
+  {
+    "fullName": "Walter Reeves",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rct8e2y47enj2vxuzr3a",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1993
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1994,
         "endYear": 1995
       },
       {
-        "teamId": "HOU",
+        "teamId": "LAC",
         "startYear": 1996,
         "endYear": 1996
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 1998
       }
     ],
-    "id": "willie-davis"
+    "id": "walter-reeves"
   },
   {
     "fullName": "James Trapp",
@@ -52910,13 +57491,13 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1993,
         "endYear": 1998
       },
       {
         "teamId": "BAL",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
@@ -52938,12 +57519,36 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2003
+      },
+      {
         "teamId": "ATL",
         "startYear": 2004,
         "endYear": 2004
       }
     ],
     "id": "jamie-duncan"
+  },
+  {
+    "fullName": "Kevin Dockery",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nblwnnqcfbgzoyrqrz31",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "kevin-dockery"
   },
   {
     "fullName": "Mario Edwards",
@@ -53063,7 +57668,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1982
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1983,
         "endYear": 1983
       }
@@ -53142,35 +57747,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "barry-word"
-  },
-  {
-    "fullName": "Carl Garrett",
-    "position": "RB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sysqv2gqvikillhx9mdr",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1971,
-        "endYear": 1972
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 1973,
-        "endYear": 1974
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1975,
-        "endYear": 1975
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1976,
-        "endYear": 1977
-      }
-    ],
-    "id": "carl-garrett"
   },
   {
     "fullName": "Cedric Smith",
@@ -53290,7 +57866,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1984
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1984,
         "endYear": 1984
       },
@@ -53311,40 +57887,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "glen-young"
-  },
-  {
-    "fullName": "Jeff Kemp",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xg0jissqub74w1kdp8kz",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1981,
-        "endYear": 1981
-      },
-      {
-        "teamId": "SF",
-        "startYear": 1986,
-        "endYear": 1986
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1987,
-        "endYear": 1990
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1991,
-        "endYear": 1991
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1991,
-        "endYear": 1991
-      }
-    ],
-    "id": "jeff-kemp"
   },
   {
     "fullName": "John Brandes",
@@ -53448,6 +57990,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2012,
         "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "michael-bush"
@@ -53504,6 +58051,55 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "norm-snead"
+  },
+  {
+    "fullName": "Randy Kirk",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ams2xeklm61hhc8a2pg8",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1992,
+        "endYear": 1993
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1994,
+        "endYear": 1995
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1996,
+        "endYear": 1998
+      }
+    ],
+    "id": "randy-kirk"
   },
   {
     "fullName": "Reggie Cobb",
@@ -53567,6 +58163,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "reggie-johnson"
+  },
+  {
+    "fullName": "Rusty Hilger",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/woyb5rnrjm9klblhks1k",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1987
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1990,
+        "endYear": 1991
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1991,
+        "endYear": 1992
+      }
+    ],
+    "id": "rusty-hilger"
   },
   {
     "fullName": "Tom Hodson",
@@ -53655,6 +58280,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2000,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "chris-carter"
@@ -53668,7 +58298,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "LAC",
@@ -53758,13 +58388,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Kyle Juszczyk",
-    "position": "RB",
+    "position": "FB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s1l15qz4uthww9ldhrqb",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eqb3lq4bip6oa5kiz1ze",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -53783,7 +58413,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1992,
         "endYear": 1995
       },
       {
@@ -53846,25 +58476,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tim-crowder"
-  },
-  {
-    "fullName": "Albert Lewis",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ugdxehxjdhtlt4ppp20t",
-    "teamStints": [
-      {
-        "teamId": "KC",
-        "startYear": 1983,
-        "endYear": 1993
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1995,
-        "endYear": 1998
-      }
-    ],
-    "id": "albert-lewis"
   },
   {
     "fullName": "Artie Burns",
@@ -53997,6 +58608,40 @@ export const GENERATED_PLAYERS = [
     "id": "jack-reynolds"
   },
   {
+    "fullName": "Jerry Golsteyn",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/aftjg1ig2ubhm54nv5gq",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1977,
+        "endYear": 1978
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1982,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1984,
+        "endYear": 1984
+      }
+    ],
+    "id": "jerry-golsteyn"
+  },
+  {
     "fullName": "Jim Jeffcoat",
     "position": "DL",
     "difficulty": "impossible",
@@ -54048,6 +58693,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kitrick-taylor"
+  },
+  {
+    "fullName": "Mike Quinn",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kuyy3jx1kxkpuyfkgkby",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1997,
+        "endYear": 1997
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1998,
+        "endYear": 1998
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1998,
+        "endYear": 1998
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1999,
+        "endYear": 1999
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2000,
+        "endYear": 2000
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2003
+      }
+    ],
+    "id": "mike-quinn"
   },
   {
     "fullName": "Randy Baldwin",
@@ -54197,7 +58881,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -54260,7 +58944,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1980,
         "endYear": 1980
       },
@@ -54270,7 +58954,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1980
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1981,
         "endYear": 1983
       },
@@ -54376,6 +59060,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "LAR",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "MIN",
         "startYear": 2015,
         "endYear": 2016
@@ -54405,6 +59094,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "SF",
         "startYear": 2006,
         "endYear": 2007
@@ -54425,11 +59119,35 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       }
     ],
     "id": "will-hill"
+  },
+  {
+    "fullName": "Bob Golic",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ot4eli9ohqljvdmzgfod",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1979,
+        "endYear": 1981
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1982,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1992
+      }
+    ],
+    "id": "bob-golic"
   },
   {
     "fullName": "Brad Jones",
@@ -54449,6 +59167,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brad-jones"
+  },
+  {
+    "fullName": "Brad Van Pelt",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mfnxwgcg8jpfws6ufyl4",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1973,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1984,
+        "endYear": 1985
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1986,
+        "endYear": 1986
+      }
+    ],
+    "id": "brad-van-pelt"
   },
   {
     "fullName": "Bryan Cox",
@@ -54580,11 +59322,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Duke Johnson",
     "position": "RB",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ak6cpi69otvths6uo21w",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hf7lxjjesduggqdfktsg",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -54619,7 +59361,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "ATL",
@@ -54726,30 +59468,6 @@ export const GENERATED_PLAYERS = [
     "id": "kevin-ross"
   },
   {
-    "fullName": "Nesby Glasgow",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/khvj2xrqxrimb274mfe7",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1979,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1987
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1988,
-        "endYear": 1992
-      }
-    ],
-    "id": "nesby-glasgow"
-  },
-  {
     "fullName": "Rich Owens",
     "position": "DL",
     "difficulty": "impossible",
@@ -54850,6 +59568,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "taco-charlton"
+  },
+  {
+    "fullName": "Ted Hendricks",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/evt0wnpbcfi1eu1xqi0i",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1970,
+        "endYear": 1973
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1974,
+        "endYear": 1974
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1975,
+        "endYear": 1983
+      }
+    ],
+    "id": "ted-hendricks"
   },
   {
     "fullName": "Tony McGee",
@@ -55107,6 +59849,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kdomohxuxnkxwnhnux8r",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1994
+      },
+      {
         "teamId": "DAL",
         "startYear": 1995,
         "endYear": 1995
@@ -55209,7 +59956,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1982
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1983,
         "endYear": 1986
       },
@@ -55286,30 +60033,6 @@ export const GENERATED_PLAYERS = [
     "id": "al-woods"
   },
   {
-    "fullName": "Andy Lee",
-    "position": "P",
-    "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bfozbs2h9jueavslvw3z",
-    "teamStints": [
-      {
-        "teamId": "SF",
-        "startYear": 2004,
-        "endYear": 2014
-      },
-      {
-        "teamId": "CAR",
-        "startYear": 2016,
-        "endYear": 2016
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 2017,
-        "endYear": 2022
-      }
-    ],
-    "id": "andy-lee"
-  },
-  {
     "fullName": "Bhawoh Jue",
     "position": "DB",
     "difficulty": "impossible",
@@ -55324,6 +60047,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2005,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "bhawoh-jue"
@@ -55452,7 +60185,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 1991
       },
       {
-        "teamId": "HOU",
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "TEN",
         "startYear": 1995,
         "endYear": 1996
       },
@@ -55465,38 +60208,14 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2002,
         "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2004
       }
     ],
     "id": "chris-chandler"
-  },
-  {
-    "fullName": "Cliff Odom",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zo3nufo8hzcsetle8u17",
-    "teamStints": [
-      {
-        "teamId": "CLE",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 1982,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1989
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1990,
-        "endYear": 1993
-      }
-    ],
-    "id": "cliff-odom"
   },
   {
     "fullName": "Corey White",
@@ -55511,6 +60230,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "DAL",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "ARI",
         "startYear": 2015,
         "endYear": 2015
       },
@@ -55557,6 +60281,35 @@ export const GENERATED_PLAYERS = [
     "id": "correll-buckhalter"
   },
   {
+    "fullName": "E.J. Junior",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gytb3lurrrsuoeugtweo",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1981,
+        "endYear": 1988
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "e-j-junior"
+  },
+  {
     "fullName": "Isaiah Crowell",
     "position": "RB",
     "difficulty": "medium",
@@ -55564,7 +60317,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -55619,6 +60372,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 1992,
         "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1994
       },
       {
         "teamId": "SF",
@@ -55762,7 +60520,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -55826,6 +60584,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "zach-kerr"
+  },
+  {
+    "fullName": "Gary Stills",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v2w9ijpmo27pxyryt6hb",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1999,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "gary-stills"
   },
   {
     "fullName": "Jason Verrett",
@@ -55987,6 +60769,45 @@ export const GENERATED_PLAYERS = [
     "id": "allen-lazard"
   },
   {
+    "fullName": "Bob Nelson",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/loy9jd7pzargeyex9oba",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1975,
+        "endYear": 1977
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1982,
+        "endYear": 1984
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1988,
+        "endYear": 1990
+      }
+    ],
+    "id": "bob-nelson"
+  },
+  {
     "fullName": "Chris Slade",
     "position": "LB",
     "difficulty": "impossible",
@@ -56057,45 +60878,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "david-patten"
-  },
-  {
-    "fullName": "Dennis Johnson",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l5f0xyl4qyr93er8yv2r",
-    "teamStints": [
-      {
-        "teamId": "WAS",
-        "startYear": 1974,
-        "endYear": 1977
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1978,
-        "endYear": 1979
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1981,
-        "endYear": 1985
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1985,
-        "endYear": 1985
-      }
-    ],
-    "id": "dennis-johnson"
   },
   {
     "fullName": "Idrees Bashir",
@@ -56184,6 +60966,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "kendrick-bourne"
@@ -56208,6 +60995,30 @@ export const GENERATED_PLAYERS = [
     "id": "martin-emerson"
   },
   {
+    "fullName": "Mike Furrey",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/patqamlgpnc1wqd2ijh8",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2005
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2006,
+        "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "mike-furrey"
+  },
+  {
     "fullName": "Wilber Marshall",
     "position": "LB",
     "difficulty": "impossible",
@@ -56224,7 +61035,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1992
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1993,
         "endYear": 1993
       },
@@ -56251,6 +61062,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 1998,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2005
       },
       {
         "teamId": "DET",
@@ -56291,6 +61107,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
         "teamId": "NYG",
         "startYear": 2005,
         "endYear": 2005
@@ -56328,6 +61149,30 @@ export const GENERATED_PLAYERS = [
     "id": "johnnie-morton"
   },
   {
+    "fullName": "Kyle Boller",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/olhzjv0wts7mf0yzw9vw",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2010,
+        "endYear": 2011
+      }
+    ],
+    "id": "kyle-boller"
+  },
+  {
     "fullName": "Nick Cross",
     "position": "DB",
     "difficulty": "hard",
@@ -56348,13 +61193,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Rodney Gunter",
-    "position": "DL",
+    "position": "NT",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xxph3vvs0s0itu2r5pb1",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h6nrizlzatpr8xjdjv5o",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2020
       },
       {
@@ -56411,6 +61256,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2013
+      },
+      {
         "teamId": "DAL",
         "startYear": 2014,
         "endYear": 2014
@@ -56428,6 +61278,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2009,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       },
       {
         "teamId": "IND",
@@ -56511,48 +61366,43 @@ export const GENERATED_PLAYERS = [
     "id": "isaac-yiadom"
   },
   {
-    "fullName": "Randy Kirk",
+    "fullName": "Joe Kelly",
     "position": "LB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ams2xeklm61hhc8a2pg8",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s0ouignpyda0jywoustu",
     "teamStints": [
       {
-        "teamId": "LAC",
-        "startYear": 1987,
-        "endYear": 1988
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1990,
-        "endYear": 1990
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1991,
-        "endYear": 1991
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1991,
-        "endYear": 1991
-      },
-      {
         "teamId": "CIN",
-        "startYear": 1992,
+        "startYear": 1986,
+        "endYear": 1989
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1990,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1993,
         "endYear": 1993
       },
       {
-        "teamId": "ARI",
+        "teamId": "LAR",
         "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1995,
         "endYear": 1995
       },
       {
-        "teamId": "SF",
+        "teamId": "PHI",
         "startYear": 1996,
-        "endYear": 1998
+        "endYear": 1996
       }
     ],
-    "id": "randy-kirk"
+    "id": "joe-kelly"
   },
   {
     "fullName": "Rex Burkhead",
@@ -56638,6 +61488,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2007
       },
       {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
         "teamId": "KC",
         "startYear": 2009,
         "endYear": 2012
@@ -56681,13 +61536,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jsflbwgeatumzfdgb9zj",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1994,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1994,
         "endYear": 2002
       },
       {
@@ -56859,7 +61709,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1979,
         "endYear": 1980
       }
@@ -56867,23 +61717,47 @@ export const GENERATED_PLAYERS = [
     "id": "boobie-clark"
   },
   {
-    "fullName": "Carl Hairston",
-    "position": "DL",
+    "fullName": "Butch Rolle",
+    "position": "TE",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cf39ss7rswxfi78tx2nd",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yshs7yimhn93jojnpaij",
     "teamStints": [
       {
-        "teamId": "PHI",
-        "startYear": 1976,
-        "endYear": 1983
+        "teamId": "BUF",
+        "startYear": 1986,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "butch-rolle"
+  },
+  {
+    "fullName": "Charles White",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nqtmdvvvyr0xu7t2rypf",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 1980,
+        "endYear": 1982
       },
       {
         "teamId": "CLE",
         "startYear": 1984,
-        "endYear": 1989
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1985,
+        "endYear": 1988
       }
     ],
-    "id": "carl-hairston"
+    "id": "charles-white"
   },
   {
     "fullName": "Chuck Foreman",
@@ -56905,6 +61779,74 @@ export const GENERATED_PLAYERS = [
     "id": "chuck-foreman"
   },
   {
+    "fullName": "Chuck Long",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v0dburnmc8qsown5ylbc",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 1986,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "chuck-long"
+  },
+  {
+    "fullName": "Clarence Scott",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hbcey6pa6exyl1peuguw",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1970,
+        "endYear": 1970
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1971,
+        "endYear": 1971
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1971,
+        "endYear": 1971
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1972,
+        "endYear": 1972
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1972,
+        "endYear": 1972
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1973,
+        "endYear": 1983
+      }
+    ],
+    "id": "clarence-scott"
+  },
+  {
     "fullName": "Clint Didier",
     "position": "TE",
     "difficulty": "impossible",
@@ -56922,6 +61864,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "clint-didier"
+  },
+  {
+    "fullName": "Curt Warner",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ixigsctdlqxfp14edflm",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 1983,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "curt-warner"
   },
   {
     "fullName": "Damon Moore",
@@ -57019,13 +61980,52 @@ export const GENERATED_PLAYERS = [
     "id": "don-herrmann"
   },
   {
+    "fullName": "Donnie Jones",
+    "position": "P",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qds7simibz6lt6ckf5yo",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2011
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2013,
+        "endYear": 2017
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2018,
+        "endYear": 2018
+      }
+    ],
+    "id": "donnie-jones"
+  },
+  {
     "fullName": "Earl Campbell",
     "position": "RB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/svozyfy3gco5j6seywed",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1978,
         "endYear": 1984
       },
@@ -57055,35 +62055,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "eric-lane"
-  },
-  {
-    "fullName": "Erik Wilhelm",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wxr77gux79rgylz8aw8f",
-    "teamStints": [
-      {
-        "teamId": "CIN",
-        "startYear": 1989,
-        "endYear": 1991
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 1993,
-        "endYear": 1995
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1995,
-        "endYear": 1995
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 1996,
-        "endYear": 1997
-      }
-    ],
-    "id": "erik-wilhelm"
   },
   {
     "fullName": "Eugene Daniel",
@@ -57135,7 +62106,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1977
       }
@@ -57160,6 +62131,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "gerald-carter"
+  },
+  {
+    "fullName": "Harvey Williams",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/n9ji0r2hesiujqxqtiul",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1994,
+        "endYear": 1998
+      }
+    ],
+    "id": "harvey-williams"
   },
   {
     "fullName": "Hassan Jones",
@@ -57335,7 +62325,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hb3vpzem5trph2f73pyt",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1974,
         "endYear": 1978
       },
@@ -57455,7 +62445,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1988
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1989,
         "endYear": 1989
       },
@@ -57466,6 +62456,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kenny-jackson"
+  },
+  {
+    "fullName": "Kevin House",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ytqmyq3n1nlhglmn9rlw",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1980,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "kevin-house"
   },
   {
     "fullName": "Kevin Jones",
@@ -57512,7 +62531,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dkcufokp7jdzee5fyl8s",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1988,
         "endYear": 1994
       },
@@ -57663,7 +62682,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2016
       },
       {
@@ -57733,6 +62752,44 @@ export const GENERATED_PLAYERS = [
     "id": "michael-jackson"
   },
   {
+    "fullName": "Mike Haynes",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ettsvjeegh7sxuajvy1m",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1976,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1989
+      }
+    ],
+    "id": "mike-haynes"
+  },
+  {
+    "fullName": "Nesby Glasgow",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/khvj2xrqxrimb274mfe7",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1979,
+        "endYear": 1987
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1988,
+        "endYear": 1992
+      }
+    ],
+    "id": "nesby-glasgow"
+  },
+  {
     "fullName": "Paul McDonald",
     "position": "QB",
     "difficulty": "impossible",
@@ -57796,7 +62853,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vvnawlnvtlcaqs04pako",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1978,
         "endYear": 1982
       },
@@ -57910,7 +62967,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jwvctrhyhhhaooepkyyd",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1988
       },
@@ -57920,36 +62977,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1991
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1992,
         "endYear": 1994
       }
     ],
     "id": "spencer-tillman"
-  },
-  {
-    "fullName": "Stan Gelbaugh",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vrwq2e2pfzkmjrllvi1w",
-    "teamStints": [
-      {
-        "teamId": "BUF",
-        "startYear": 1986,
-        "endYear": 1986
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1988,
-        "endYear": 1989
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1992,
-        "endYear": 1996
-      }
-    ],
-    "id": "stan-gelbaugh"
   },
   {
     "fullName": "Steve Pelluer",
@@ -57969,25 +63002,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "steve-pelluer"
-  },
-  {
-    "fullName": "Stump Mitchell",
-    "position": "RB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cxnaemm0sfhqixlmhemy",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1981,
-        "endYear": 1987
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1991,
-        "endYear": 1991
-      }
-    ],
-    "id": "stump-mitchell"
   },
   {
     "fullName": "Ted Kwalick",
@@ -58067,13 +63081,32 @@ export const GENERATED_PLAYERS = [
     "id": "terry-orr"
   },
   {
+    "fullName": "Tim Sherwin",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bvlq1hohxmehwgral0qe",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1981,
+        "endYear": 1987
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1988,
+        "endYear": 1988
+      }
+    ],
+    "id": "tim-sherwin"
+  },
+  {
     "fullName": "Tim Wilson",
     "position": "RB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v3qtcmrtmwzb2cmiaqy4",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1982
       },
@@ -58097,7 +63130,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1993
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1994,
         "endYear": 1995
       },
@@ -58116,7 +63149,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qq0n82srqowon8eqmdaa",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1973
       },
@@ -58167,25 +63200,6 @@ export const GENERATED_PLAYERS = [
     "id": "tony-eason"
   },
   {
-    "fullName": "Vince Evans",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zfacengwqw596mxqdxgf",
-    "teamStints": [
-      {
-        "teamId": "CHI",
-        "startYear": 1977,
-        "endYear": 1983
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "vince-evans"
-  },
-  {
     "fullName": "Wilbur Jackson",
     "position": "RB",
     "difficulty": "impossible",
@@ -58208,6 +63222,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "wilbur-jackson"
+  },
+  {
+    "fullName": "Willie Davis",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jg5pfp4lbm567houvlx2",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1991,
+        "endYear": 1995
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1996,
+        "endYear": 1998
+      }
+    ],
+    "id": "willie-davis"
   },
   {
     "fullName": "Willie Scott",
@@ -58256,6 +63289,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "zeke-mowatt"
+  },
+  {
+    "fullName": "Carnell Williams",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/izl4babukq5ucpbmcx5l",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 2005,
+        "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "carnell-williams"
   },
   {
     "fullName": "Dontae Johnson",
@@ -58443,7 +63495,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1991,
         "endYear": 1996
       },
       {
@@ -58484,9 +63536,53 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2011,
         "endYear": 2011
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "sean-considine"
+  },
+  {
+    "fullName": "Alexander Wright",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hh3piqouizuuu5cv2uwx",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1990,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1993,
+        "endYear": 1994
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1995,
+        "endYear": 1996
+      }
+    ],
+    "id": "alexander-wright"
   },
   {
     "fullName": "Barrett Green",
@@ -58543,7 +63639,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1984
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1986
       },
@@ -58625,6 +63721,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "MIA",
         "startYear": 2013,
         "endYear": 2013
@@ -58667,38 +63768,28 @@ export const GENERATED_PLAYERS = [
     "id": "clarence-williams"
   },
   {
-    "fullName": "Curtis Dickey",
-    "position": "RB",
+    "fullName": "Cliff Odom",
+    "position": "LB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e9wmuxaybikgvjnjgtik",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zo3nufo8hzcsetle8u17",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "CLE",
         "startYear": 1980,
-        "endYear": 1983
+        "endYear": 1980
       },
       {
         "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1984
+        "startYear": 1982,
+        "endYear": 1989
       },
       {
-        "teamId": "CLE",
-        "startYear": 1985,
-        "endYear": 1985
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1985,
-        "endYear": 1985
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1986,
-        "endYear": 1986
+        "teamId": "MIA",
+        "startYear": 1990,
+        "endYear": 1993
       }
     ],
-    "id": "curtis-dickey"
+    "id": "cliff-odom"
   },
   {
     "fullName": "Dan Ross",
@@ -58754,28 +63845,28 @@ export const GENERATED_PLAYERS = [
     "id": "dave-hampton"
   },
   {
-    "fullName": "Dave Little",
-    "position": "TE",
+    "fullName": "Dave Waymer",
+    "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y8hkwgqn6ctm4iu71t0d",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cru3vme0xcqkhu8wycqj",
     "teamStints": [
       {
-        "teamId": "KC",
-        "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1985,
+        "teamId": "NO",
+        "startYear": 1980,
         "endYear": 1989
       },
       {
-        "teamId": "DET",
-        "startYear": 1991,
+        "teamId": "SF",
+        "startYear": 1990,
         "endYear": 1991
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1992
       }
     ],
-    "id": "dave-little"
+    "id": "dave-waymer"
   },
   {
     "fullName": "Dennis McKinnon",
@@ -58807,37 +63898,13 @@ export const GENERATED_PLAYERS = [
     "id": "dennis-mckinnon"
   },
   {
-    "fullName": "Derek Russell",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/roiuhxxhqtxteudgplko",
-    "teamStints": [
-      {
-        "teamId": "DEN",
-        "startYear": 1991,
-        "endYear": 1994
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 1997
-      }
-    ],
-    "id": "derek-russell"
-  },
-  {
     "fullName": "Eason Ramson",
     "position": "TE",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ohbflu6qiu0lcpquot0k",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1978,
         "endYear": 1978
       },
@@ -58956,28 +64023,52 @@ export const GENERATED_PLAYERS = [
     "id": "gary-huff"
   },
   {
-    "fullName": "George Farmer",
-    "position": "WR",
+    "fullName": "Gary Jeter",
+    "position": "DL",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y9ntqvbqpby0tevrocqj",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i5txyjprureulz6gpasv",
     "teamStints": [
       {
-        "teamId": "CHI",
-        "startYear": 1970,
-        "endYear": 1975
+        "teamId": "NYG",
+        "startYear": 1977,
+        "endYear": 1982
       },
       {
-        "teamId": "DET",
-        "startYear": 1975,
-        "endYear": 1975
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1988
       },
       {
-        "teamId": "MIA",
-        "startYear": 1987,
-        "endYear": 1987
+        "teamId": "NE",
+        "startYear": 1989,
+        "endYear": 1989
       }
     ],
-    "id": "george-farmer"
+    "id": "gary-jeter"
+  },
+  {
+    "fullName": "Greg Bell",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i19vbfsodayvdrqt5b1p",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "greg-bell"
   },
   {
     "fullName": "Greg Kragen",
@@ -59039,7 +64130,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mkfph6p5laskjjyrpttd",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1979,
         "endYear": 1979
       },
@@ -59049,7 +64140,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1980
       },
@@ -59169,7 +64260,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/flekoru434xs5hltd6gu",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1970
       },
@@ -59179,7 +64270,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1971
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1971,
         "endYear": 1971
       },
@@ -59194,12 +64285,71 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       }
     ],
     "id": "joe-dawkins"
+  },
+  {
+    "fullName": "Karl Wilson",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/metzulr8c2hrguda3nx3",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "karl-wilson"
   },
   {
     "fullName": "Keith Tandy",
@@ -59309,7 +64459,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1994
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1995,
         "endYear": 1995
       }
@@ -59363,6 +64513,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-prior"
+  },
+  {
+    "fullName": "Randal Hill",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yvx89kpmxngoeaxl6sdd",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1994
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1995,
+        "endYear": 1996
+      },
+      {
+        "teamId": "NO",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "randal-hill"
   },
   {
     "fullName": "Rick Strom",
@@ -59419,7 +64603,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/noxkw9jggbzud8azo0oh",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1976,
         "endYear": 1977
       },
@@ -59429,7 +64613,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1982,
         "endYear": 1982
       }
@@ -59437,28 +64621,76 @@ export const GENERATED_PLAYERS = [
     "id": "ricky-thompson"
   },
   {
-    "fullName": "Ronnie Lott",
-    "position": "DB",
+    "fullName": "Rob Awalt",
+    "position": "TE",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/atxlkaso6zkduzfqa3h7",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/svwgiibzln1mi119msar",
     "teamStints": [
       {
-        "teamId": "SF",
-        "startYear": 1981,
-        "endYear": 1990
+        "teamId": "ARI",
+        "startYear": 1987,
+        "endYear": 1989
       },
       {
-        "teamId": "NYJ",
-        "startYear": 1993,
-        "endYear": 1994
+        "teamId": "DAL",
+        "startYear": 1990,
+        "endYear": 1991
       },
       {
-        "teamId": "KC",
-        "startYear": 1995,
-        "endYear": 1995
+        "teamId": "BUF",
+        "startYear": 1992,
+        "endYear": 1993
       }
     ],
-    "id": "ronnie-lott"
+    "id": "rob-awalt"
+  },
+  {
+    "fullName": "Sean Jones",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pzrfhrlxxlxvym6zssl2",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1988,
+        "endYear": 1993
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1994,
+        "endYear": 1996
+      }
+    ],
+    "id": "sean-jones-2"
+  },
+  {
+    "fullName": "Todd Kinchen",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ofzpgobbgutvslhy5rm9",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1995
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1996,
+        "endYear": 1996
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1997,
+        "endYear": 1998
+      }
+    ],
+    "id": "todd-kinchen"
   },
   {
     "fullName": "Tommie Agee",
@@ -59515,7 +64747,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1971
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1972,
         "endYear": 1973
       },
@@ -59534,7 +64766,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mccltbvra1wfn9rcnpwn",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1993
       },
@@ -59550,6 +64782,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "william-fuller"
+  },
+  {
+    "fullName": "Willie Miller",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/htokrpmb9tuhenpgkyy4",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 1975,
+        "endYear": 1976
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1976,
+        "endYear": 1976
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1978,
+        "endYear": 1982
+      }
+    ],
+    "id": "willie-miller"
   },
   {
     "fullName": "Ameer Abdullah",
@@ -59837,6 +65093,35 @@ export const GENERATED_PLAYERS = [
     "id": "bob-adams"
   },
   {
+    "fullName": "Chris Martin",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dtwwqjxqfx32untjxqyh",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1984,
+        "endYear": 1988
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1988,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1994
+      }
+    ],
+    "id": "chris-martin"
+  },
+  {
     "fullName": "Coby Fleener",
     "position": "TE",
     "difficulty": "medium",
@@ -59982,33 +65267,33 @@ export const GENERATED_PLAYERS = [
     "id": "derrick-moore"
   },
   {
-    "fullName": "E.J. Junior",
-    "position": "LB",
+    "fullName": "Eddie Ray",
+    "position": "RB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gytb3lurrrsuoeugtweo",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o3yvwifkxtgaws09gz4v",
     "teamStints": [
       {
-        "teamId": "LAR",
-        "startYear": 1981,
-        "endYear": 1987
+        "teamId": "NE",
+        "startYear": 1970,
+        "endYear": 1970
       },
       {
-        "teamId": "MIA",
-        "startYear": 1989,
-        "endYear": 1991
+        "teamId": "LAC",
+        "startYear": 1971,
+        "endYear": 1971
       },
       {
-        "teamId": "TB",
-        "startYear": 1992,
-        "endYear": 1992
+        "teamId": "ATL",
+        "startYear": 1972,
+        "endYear": 1974
       },
       {
-        "teamId": "SEA",
-        "startYear": 1992,
-        "endYear": 1993
+        "teamId": "BUF",
+        "startYear": 1976,
+        "endYear": 1976
       }
     ],
-    "id": "e-j-junior"
+    "id": "eddie-ray"
   },
   {
     "fullName": "Frank Pitts",
@@ -60173,7 +65458,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gxpi3zsrofyhmhx998nm",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1981,
         "endYear": 1981
       },
@@ -60283,6 +65568,40 @@ export const GENERATED_PLAYERS = [
     "id": "leroy-thompson"
   },
   {
+    "fullName": "Phil McConkey",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ha7ib4vdf1qtsdyvkpk9",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1984,
+        "endYear": 1985
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1986,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "phil-mcconkey"
+  },
+  {
     "fullName": "Randy Johnson",
     "position": "QB",
     "difficulty": "impossible",
@@ -60344,6 +65663,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "rob-carpenter-2"
+  },
+  {
+    "fullName": "Ronald Moore",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/waqedylf2x7jr4yyplq5",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1994
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1995,
+        "endYear": 1996
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1997,
+        "endYear": 1997
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1997,
+        "endYear": 1997
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1998,
+        "endYear": 1998
+      }
+    ],
+    "id": "ronald-moore"
   },
   {
     "fullName": "Sammy Johnson",
@@ -60489,7 +65842,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -60528,6 +65881,74 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "travis-kirschke"
+  },
+  {
+    "fullName": "Troy Stradford",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mb82fgilnwwzuehmkxgo",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 1987,
+        "endYear": 1990
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "troy-stradford"
+  },
+  {
+    "fullName": "Vernon Turner",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hs3lfwhbzxzqqczcfbkq",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "vernon-turner"
   },
   {
     "fullName": "Visanthe Shiancoe",
@@ -60660,6 +66081,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2005,
         "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2007
       }
     ],
     "id": "ron-dayne"
@@ -60833,6 +66259,55 @@ export const GENERATED_PLAYERS = [
     "id": "davon-godchaux"
   },
   {
+    "fullName": "Eric Williams",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hmw93sfpqa0wkqajksvv",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1977,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 1985,
+        "endYear": 1986
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "eric-williams"
+  },
+  {
     "fullName": "Juston Burris",
     "position": "DB",
     "difficulty": "hard",
@@ -60887,7 +66362,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xkn2xckwkpnpeqk2vvqz",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1979,
         "endYear": 1985
       },
@@ -60913,6 +66388,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-stensrud"
+  },
+  {
+    "fullName": "Paul Butcher",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yv4w2pdp8igxt1pk86vk",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 1986,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1989,
+        "endYear": 1992
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1993,
+        "endYear": 1994
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 1995,
+        "endYear": 1995
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1996,
+        "endYear": 1996
+      }
+    ],
+    "id": "paul-butcher"
   },
   {
     "fullName": "Paul Soliai",
@@ -60948,6 +66457,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2008,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2011
       },
       {
         "teamId": "KC",
@@ -61044,12 +66558,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "MIN",
         "startYear": 2005,
         "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
       },
       {
         "teamId": "CAR",
@@ -61126,7 +66645,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "TB",
@@ -61158,13 +66677,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "JAX",
         "startYear": 2013,
         "endYear": 2013
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -61263,13 +66787,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Armonty Bryant",
-    "position": "LB",
+    "position": "DE",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/phevxwxhlwxv2ngufopj",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -61287,13 +66811,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vzmxa3v4lfairjpgzoln",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1993,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1993,
         "endYear": 2001
       },
       {
@@ -61483,6 +67002,25 @@ export const GENERATED_PLAYERS = [
     "id": "ladell-betts"
   },
   {
+    "fullName": "Shane Lechler",
+    "position": "P",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/we3oe5jqnrb4ag3d4pqu",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 2002,
+        "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2018
+      }
+    ],
+    "id": "shane-lechler"
+  },
+  {
     "fullName": "Tarvaris Jackson",
     "position": "QB",
     "difficulty": "hard",
@@ -61544,7 +67082,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2006
       },
       {
         "teamId": "DEN",
@@ -61569,6 +67107,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2005,
         "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
       },
       {
         "teamId": "DAL",
@@ -61671,6 +67214,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/enhofhhqnwsca2o5qmrk",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
         "teamId": "DEN",
         "startYear": 1995,
         "endYear": 2000
@@ -61727,6 +67275,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2008
       }
     ],
     "id": "nick-greisen"
@@ -61749,40 +67302,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "bob-brudzinski"
-  },
-  {
-    "fullName": "Clarence Scott",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sykaaq1amlrepjcxfyfr",
-    "teamStints": [
-      {
-        "teamId": "CLE",
-        "startYear": 1971,
-        "endYear": 1971
-      },
-      {
-        "teamId": "NE",
-        "startYear": 1971,
-        "endYear": 1971
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1972,
-        "endYear": 1972
-      },
-      {
-        "teamId": "NE",
-        "startYear": 1972,
-        "endYear": 1972
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1973,
-        "endYear": 1983
-      }
-    ],
-    "id": "clarence-scott"
   },
   {
     "fullName": "Daniel Graham",
@@ -61833,6 +67352,30 @@ export const GENERATED_PLAYERS = [
     "id": "glenn-dorsey"
   },
   {
+    "fullName": "Greg Townsend",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hwnynib0tdt4x60kb2ox",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1993
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "greg-townsend"
+  },
+  {
     "fullName": "Jacob Green",
     "position": "DL",
     "difficulty": "impossible",
@@ -61850,6 +67393,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jacob-green"
+  },
+  {
+    "fullName": "Jerry Robinson",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/samlivayga2xdqulvxd3",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 1979,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1991
+      }
+    ],
+    "id": "jerry-robinson"
   },
   {
     "fullName": "Mike Hartenstine",
@@ -62176,6 +67738,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dd8nztoegrdznrpnbnqk",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2006
+      },
+      {
         "teamId": "PHI",
         "startYear": 2007,
         "endYear": 2009
@@ -62271,30 +67838,6 @@ export const GENERATED_PLAYERS = [
     "id": "antwon-blake"
   },
   {
-    "fullName": "Barry Krauss",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vvg6wjboszaytgpxfa37",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1979,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1988
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1989,
-        "endYear": 1990
-      }
-    ],
-    "id": "barry-krauss"
-  },
-  {
     "fullName": "Bryan Anger",
     "position": "P",
     "difficulty": "hard",
@@ -62369,9 +67912,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "SEA",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "chris-cooper"
@@ -62388,7 +67941,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1974,
         "endYear": 1974
       },
@@ -62398,7 +67951,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1979
       },
@@ -62408,7 +67961,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1980
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1980
       },
@@ -62590,6 +68143,30 @@ export const GENERATED_PLAYERS = [
     "id": "duane-bickett"
   },
   {
+    "fullName": "Ed Brady",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hbfzpnyv75clj09m88ff",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1984,
+        "endYear": 1985
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1986,
+        "endYear": 1991
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1992,
+        "endYear": 1995
+      }
+    ],
+    "id": "ed-brady"
+  },
+  {
     "fullName": "Elois Grooms",
     "position": "DL",
     "difficulty": "impossible",
@@ -62601,7 +68178,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1982,
         "endYear": 1985
       },
@@ -62720,14 +68297,43 @@ export const GENERATED_PLAYERS = [
     "id": "jimmy-williams"
   },
   {
-    "fullName": "Kevin Minter",
-    "position": "LB",
+    "fullName": "Johnny Hekker",
+    "position": "P",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tk8flpzu3ojodnrr9lmu",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rh1qt7cwusun5o56bwyh",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2021
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2022,
+        "endYear": 2024
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "johnny-hekker"
+  },
+  {
+    "fullName": "Kevin Minter",
+    "position": "ILB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qsgubsbwrrmfoqtdyz5d",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -62773,6 +68379,35 @@ export const GENERATED_PLAYERS = [
     "id": "leonard-marshall"
   },
   {
+    "fullName": "Lonnie Young",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/m4vszkenxbhgam3zrupi",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1985,
+        "endYear": 1990
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1995,
+        "endYear": 1996
+      }
+    ],
+    "id": "lonnie-young"
+  },
+  {
     "fullName": "Mark Lee",
     "position": "DB",
     "difficulty": "impossible",
@@ -62797,6 +68432,30 @@ export const GENERATED_PLAYERS = [
     "id": "mark-lee"
   },
   {
+    "fullName": "Matt Millen",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/smc0ujeksjw9cgflh5ja",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1988
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1989,
+        "endYear": 1990
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "matt-millen"
+  },
+  {
     "fullName": "Mike Pitts",
     "position": "DL",
     "difficulty": "impossible",
@@ -62819,6 +68478,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-pitts"
+  },
+  {
+    "fullName": "Mike Zordich",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bfaxgj0zhueeionkegjx",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1993
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1994,
+        "endYear": 1998
+      }
+    ],
+    "id": "mike-zordich"
   },
   {
     "fullName": "Nakobe Dean",
@@ -62936,30 +68619,6 @@ export const GENERATED_PLAYERS = [
     "id": "teair-tart"
   },
   {
-    "fullName": "Ted Hendricks",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/evt0wnpbcfi1eu1xqi0i",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1970,
-        "endYear": 1973
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1974,
-        "endYear": 1974
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1975,
-        "endYear": 1981
-      }
-    ],
-    "id": "ted-hendricks"
-  },
-  {
     "fullName": "Terrance Shaw",
     "position": "DB",
     "difficulty": "impossible",
@@ -63058,13 +68717,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/odpv6aahnr8bsqyh7rat",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1996,
         "endYear": 1999
       },
       {
@@ -63081,6 +68735,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lvwlw5esczobpo8xanne",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2013
+      },
       {
         "teamId": "IND",
         "startYear": 2014,
@@ -63149,13 +68808,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/boeig25llysegem2def0",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1991,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1991,
         "endYear": 2000
       },
       {
@@ -63180,7 +68834,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2003
       }
     ],
     "id": "mark-word"
@@ -63267,6 +68921,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "rafael-bush"
+  },
+  {
+    "fullName": "Cedric Mack",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ect15lvxl6zdupdgglkg",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1983,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "NO",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "cedric-mack"
   },
   {
     "fullName": "Cedric Thornton",
@@ -63485,8 +69168,13 @@ export const GENERATED_PLAYERS = [
     "fullName": "Josh Gordon",
     "position": "WR",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/atwcq5nczzb5k85fince",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wwqz2ujrj7wp86tyaxof",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2014
+      },
       {
         "teamId": "CLE",
         "startYear": 2016,
@@ -63642,6 +69330,25 @@ export const GENERATED_PLAYERS = [
     "id": "mykal-walker"
   },
   {
+    "fullName": "Orlando Huff",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/whvn0lrxdn5mzdniylog",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 2001,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2006
+      }
+    ],
+    "id": "orlando-huff"
+  },
+  {
     "fullName": "Shawn Lee",
     "position": "DL",
     "difficulty": "impossible",
@@ -63746,7 +69453,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1988
       },
@@ -63839,6 +69546,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYG",
         "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2009,
         "endYear": 2009
       },
       {
@@ -63952,7 +69669,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gi93mlbdgethtwyg8z7p",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1991
       },
@@ -63976,7 +69693,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -63984,23 +69701,28 @@ export const GENERATED_PLAYERS = [
     "id": "altie-taylor"
   },
   {
-    "fullName": "Anthony Edwards",
-    "position": "WR",
+    "fullName": "Andy Parker",
+    "position": "TE",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/chltcquj2mhn8mfylrgc",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/r7guom5y83wt3lsgw1jc",
     "teamStints": [
       {
-        "teamId": "PHI",
-        "startYear": 1989,
-        "endYear": 1990
+        "teamId": "LV",
+        "startYear": 1984,
+        "endYear": 1988
       },
       {
-        "teamId": "ARI",
-        "startYear": 1994,
-        "endYear": 1998
+        "teamId": "LAC",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1990
       }
     ],
-    "id": "anthony-edwards"
+    "id": "andy-parker"
   },
   {
     "fullName": "Art Malone",
@@ -64041,6 +69763,25 @@ export const GENERATED_PLAYERS = [
     "id": "billy-masters"
   },
   {
+    "fullName": "Billy Waddy",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e87hbudunnf0zekwbsqt",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1977,
+        "endYear": 1982
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1984,
+        "endYear": 1984
+      }
+    ],
+    "id": "billy-waddy"
+  },
+  {
     "fullName": "Bo Cornell",
     "position": "RB",
     "difficulty": "impossible",
@@ -64079,6 +69820,25 @@ export const GENERATED_PLAYERS = [
     "id": "bob-berry"
   },
   {
+    "fullName": "Bobby Humphery",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/habw1vaak3axpdzytdxh",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1984,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "bobby-humphery"
+  },
+  {
     "fullName": "Brad Muster",
     "position": "RB",
     "difficulty": "impossible",
@@ -64103,6 +69863,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/idmjdvvb2zzbef35wgvm",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2007
+      },
       {
         "teamId": "CIN",
         "startYear": 2008,
@@ -64228,12 +69993,41 @@ export const GENERATED_PLAYERS = [
         "endYear": 1982
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1983,
         "endYear": 1983
       }
     ],
     "id": "curtis-brown"
+  },
+  {
+    "fullName": "Curtis Dickey",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e9wmuxaybikgvjnjgtik",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1980,
+        "endYear": 1984
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1986,
+        "endYear": 1986
+      }
+    ],
+    "id": "curtis-dickey"
   },
   {
     "fullName": "Danny Stubbs",
@@ -64310,7 +70104,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bphxkrqjkwi87hl47ign",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1981,
         "endYear": 1984
       },
@@ -64357,6 +70151,25 @@ export const GENERATED_PLAYERS = [
     "id": "dave-osborn"
   },
   {
+    "fullName": "Derek Russell",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/roiuhxxhqtxteudgplko",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1991,
+        "endYear": 1994
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1995,
+        "endYear": 1997
+      }
+    ],
+    "id": "derek-russell"
+  },
+  {
     "fullName": "Dexter Carter",
     "position": "RB",
     "difficulty": "impossible",
@@ -64387,7 +70200,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vpxvn1k38nyezvjhjgwg",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1971,
         "endYear": 1973
       },
@@ -64419,13 +70232,32 @@ export const GENERATED_PLAYERS = [
     "id": "don-woods"
   },
   {
+    "fullName": "Earl Cooper",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jop1r0vhfgvlqcv3yp3p",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1980,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1986,
+        "endYear": 1986
+      }
+    ],
+    "id": "earl-cooper"
+  },
+  {
     "fullName": "Earl Morrall",
     "position": "QB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tu0czgfywu5r5ybfgwzo",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -64449,7 +70281,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1984
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1985,
         "endYear": 1985
       }
@@ -64638,25 +70470,6 @@ export const GENERATED_PLAYERS = [
     "id": "golden-richards"
   },
   {
-    "fullName": "Greg Baty",
-    "position": "TE",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wk7j3hpjkh9x0ybtxrac",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1986,
-        "endYear": 1987
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1990,
-        "endYear": 1994
-      }
-    ],
-    "id": "greg-baty"
-  },
-  {
     "fullName": "Gregg Garrity",
     "position": "WR",
     "difficulty": "impossible",
@@ -64676,32 +70489,13 @@ export const GENERATED_PLAYERS = [
     "id": "gregg-garrity"
   },
   {
-    "fullName": "Harvey Williams",
-    "position": "RB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/n9ji0r2hesiujqxqtiul",
-    "teamStints": [
-      {
-        "teamId": "KC",
-        "startYear": 1991,
-        "endYear": 1993
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1995,
-        "endYear": 1998
-      }
-    ],
-    "id": "harvey-williams"
-  },
-  {
     "fullName": "Ike Harris",
     "position": "WR",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/baedfhmjwf3lepdpcqiz",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1975,
         "endYear": 1977
       },
@@ -64811,7 +70605,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v1wmukxsen2gb6nczdrx",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1973
       },
@@ -64821,7 +70615,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1976
       }
@@ -64846,6 +70640,44 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jim-riggs"
+  },
+  {
+    "fullName": "Jim Smith",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/antpcpugjbycthjhgicl",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1977,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1985
+      }
+    ],
+    "id": "jim-smith"
+  },
+  {
+    "fullName": "Joe Rose",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ow0dwox1bpgadbzyuk5r",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 1980,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "joe-rose"
   },
   {
     "fullName": "John Brockington",
@@ -64903,6 +70735,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ken-brown"
+  },
+  {
+    "fullName": "Kenny King",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xtpielom7uqyojclylvf",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1985
+      }
+    ],
+    "id": "kenny-king"
   },
   {
     "fullName": "Kenny Young",
@@ -65039,6 +70890,25 @@ export const GENERATED_PLAYERS = [
     "id": "lewis-tillman"
   },
   {
+    "fullName": "Lynn Cain",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hehjobp4p1ixfyk6ikvu",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 1979,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1985,
+        "endYear": 1985
+      }
+    ],
+    "id": "lynn-cain"
+  },
+  {
     "fullName": "Marv Hubbard",
     "position": "RB",
     "difficulty": "impossible",
@@ -65077,32 +70947,13 @@ export const GENERATED_PLAYERS = [
     "id": "mercury-morris"
   },
   {
-    "fullName": "Mike Barber",
-    "position": "TE",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/luyvmprztvgexjsvd5ol",
-    "teamStints": [
-      {
-        "teamId": "HOU",
-        "startYear": 1976,
-        "endYear": 1981
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1985,
-        "endYear": 1985
-      }
-    ],
-    "id": "mike-barber"
-  },
-  {
     "fullName": "Mike Rozier",
     "position": "RB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z3q6xg9zozdh94w9epli",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1990
       },
@@ -65356,7 +71207,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wruwmgqsmbvfiixrn7gn",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1970
       },
@@ -65391,44 +71242,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "rueben-mayes"
-  },
-  {
-    "fullName": "Steve Dils",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ih0z25eoj7ommwssthmv",
-    "teamStints": [
-      {
-        "teamId": "MIN",
-        "startYear": 1979,
-        "endYear": 1984
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 1988,
-        "endYear": 1988
-      }
-    ],
-    "id": "steve-dils"
-  },
-  {
-    "fullName": "Steve Fuller",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pwpriz9wpd0epedysmbl",
-    "teamStints": [
-      {
-        "teamId": "KC",
-        "startYear": 1979,
-        "endYear": 1982
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 1984,
-        "endYear": 1986
-      }
-    ],
-    "id": "steve-fuller"
   },
   {
     "fullName": "Steve Ramsey",
@@ -65566,7 +71379,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1977
       },
@@ -65724,13 +71537,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Christian Covington",
-    "position": "DL",
+    "position": "NT",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xkmudekjo1ukjaubbszf",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kbjzplxibstqlwmzmt4u",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -66128,7 +71941,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1978,
         "endYear": 1978
       },
@@ -66138,12 +71951,36 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1979,
         "endYear": 1979
       }
     ],
     "id": "al-chandler"
+  },
+  {
+    "fullName": "Alfred Jackson",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z4bnu6xexhgyszxeqslq",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1995,
+        "endYear": 1996
+      }
+    ],
+    "id": "alfred-jackson"
   },
   {
     "fullName": "Alonzo Highsmith",
@@ -66152,7 +71989,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ituhvchdspx8wbdg5m8y",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1989
       },
@@ -66176,7 +72013,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mq6qhwiizj3m5bfxlhhb",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1974,
         "endYear": 1974
       },
@@ -66186,7 +72023,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1976,
         "endYear": 1978
       },
@@ -66268,7 +72105,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1973,
         "endYear": 1974
       },
@@ -66452,7 +72289,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       }
     ],
@@ -66465,7 +72302,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kj1zkswy7yvmjybptdyd",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -66481,6 +72318,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "cid-edwards"
+  },
+  {
+    "fullName": "Cleo Montgomery",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xsm3trvhar2oev9swayk",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1981,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1981,
+        "endYear": 1985
+      }
+    ],
+    "id": "cleo-montgomery"
   },
   {
     "fullName": "Danny Abramowicz",
@@ -66542,12 +72403,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1974,
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -66617,6 +72478,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2014
       }
     ],
     "id": "elbert-mack"
@@ -66651,6 +72517,30 @@ export const GENERATED_PLAYERS = [
     "id": "gary-davis"
   },
   {
+    "fullName": "Gaston Green",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qivwkmudjkfnxe5s0og7",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1990
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "gaston-green"
+  },
+  {
     "fullName": "Gerald Alexander",
     "position": "FS",
     "difficulty": "impossible",
@@ -66683,6 +72573,50 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "gerald-alexander"
+  },
+  {
+    "fullName": "Greg Boyd",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/abl2qgy2rnq9oimdtcjn",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1973,
+        "endYear": 1973
+      },
+      {
+        "teamId": "NO",
+        "startYear": 1974,
+        "endYear": 1974
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1977,
+        "endYear": 1978
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1980,
+        "endYear": 1982
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1984,
+        "endYear": 1984
+      }
+    ],
+    "id": "greg-boyd"
   },
   {
     "fullName": "Greg McCrary",
@@ -66759,7 +72693,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1985
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1986
       },
@@ -66844,52 +72778,28 @@ export const GENERATED_PLAYERS = [
     "id": "jamaal-anderson"
   },
   {
-    "fullName": "Jay Schroeder",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s7029osiaxseohwol3la",
-    "teamStints": [
-      {
-        "teamId": "WAS",
-        "startYear": 1984,
-        "endYear": 1987
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 1994,
-        "endYear": 1994
-      }
-    ],
-    "id": "jay-schroeder"
-  },
-  {
-    "fullName": "Jessie Hester",
+    "fullName": "Jamie Holland",
     "position": "WR",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gq1tmzhuosz6woghskel",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ijlaiagrokxgbhbq5pib",
     "teamStints": [
       {
-        "teamId": "ATL",
-        "startYear": 1988,
-        "endYear": 1988
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1989
       },
       {
-        "teamId": "IND",
+        "teamId": "LV",
         "startYear": 1990,
-        "endYear": 1993
+        "endYear": 1991
       },
       {
-        "teamId": "LAR",
-        "startYear": 1995,
-        "endYear": 1995
+        "teamId": "CLE",
+        "startYear": 1992,
+        "endYear": 1992
       }
     ],
-    "id": "jessie-hester"
+    "id": "jamie-holland"
   },
   {
     "fullName": "Jim Jensen",
@@ -66932,7 +72842,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1970
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1974
       },
@@ -66943,6 +72853,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jim-mcfarland"
+  },
+  {
+    "fullName": "Johnny Bailey",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pwqohhj9uejzarxslddx",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1990,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1995
+      }
+    ],
+    "id": "johnny-bailey"
   },
   {
     "fullName": "Johnny Mitchell",
@@ -67033,7 +72967,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       },
@@ -67130,7 +73064,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1987
       }
@@ -67303,36 +73237,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1982,
         "endYear": 1983
       }
     ],
     "id": "mike-shumann"
-  },
-  {
-    "fullName": "Mike Young",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g7htzltcb2avfcpubhki",
-    "teamStints": [
-      {
-        "teamId": "DEN",
-        "startYear": 1989,
-        "endYear": 1992
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1994,
-        "endYear": 1994
-      }
-    ],
-    "id": "mike-young"
   },
   {
     "fullName": "Olanda Truitt",
@@ -67383,59 +73293,6 @@ export const GENERATED_PLAYERS = [
     "id": "perry-williams"
   },
   {
-    "fullName": "Phil McConkey",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ha7ib4vdf1qtsdyvkpk9",
-    "teamStints": [
-      {
-        "teamId": "NYG",
-        "startYear": 1984,
-        "endYear": 1985
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1986,
-        "endYear": 1986
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1986,
-        "endYear": 1988
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1989,
-        "endYear": 1989
-      }
-    ],
-    "id": "phil-mcconkey"
-  },
-  {
-    "fullName": "Preston Dennard",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mmv6szii4urtzxthplnw",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1978,
-        "endYear": 1981
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1985,
-        "endYear": 1985
-      }
-    ],
-    "id": "preston-dennard"
-  },
-  {
     "fullName": "Red Bryant",
     "position": "DT",
     "difficulty": "impossible",
@@ -67453,7 +73310,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -67711,7 +73568,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l99b5wbir2u4odtinlhs",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1979,
         "endYear": 1980
       },
@@ -67721,7 +73578,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1981,
         "endYear": 1981
       },
@@ -67749,28 +73606,28 @@ export const GENERATED_PLAYERS = [
     "id": "theotis-brown"
   },
   {
-    "fullName": "Troy Stradford",
+    "fullName": "Tim Tyrrell",
     "position": "RB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mb82fgilnwwzuehmkxgo",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mhnd7aaaro5n4l4byzyw",
     "teamStints": [
       {
-        "teamId": "MIA",
-        "startYear": 1987,
-        "endYear": 1990
+        "teamId": "ATL",
+        "startYear": 1984,
+        "endYear": 1986
       },
       {
-        "teamId": "KC",
-        "startYear": 1991,
-        "endYear": 1991
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1988
       },
       {
-        "teamId": "DET",
-        "startYear": 1992,
-        "endYear": 1992
+        "teamId": "PIT",
+        "startYear": 1989,
+        "endYear": 1989
       }
     ],
-    "id": "troy-stradford"
+    "id": "tim-tyrrell"
   },
   {
     "fullName": "Tyji Armstrong",
@@ -67808,7 +73665,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1974,
         "endYear": 1974
       },
@@ -67819,54 +73676,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "vic-washington"
-  },
-  {
-    "fullName": "Vince Ferragamo",
-    "position": "QB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tc2qspexlyzkc3dqreog",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1977,
-        "endYear": 1980
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1985,
-        "endYear": 1985
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1985,
-        "endYear": 1986
-      }
-    ],
-    "id": "vince-ferragamo"
-  },
-  {
-    "fullName": "Willie Miller",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/htokrpmb9tuhenpgkyy4",
-    "teamStints": [
-      {
-        "teamId": "CLE",
-        "startYear": 1975,
-        "endYear": 1976
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1976,
-        "endYear": 1976
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1978,
-        "endYear": 1981
-      }
-    ],
-    "id": "willie-miller"
   },
   {
     "fullName": "Anthony Smith",
@@ -67881,6 +73690,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "JAX",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
         "startYear": 2009,
         "endYear": 2009
       },
@@ -68065,6 +73879,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nwdcpjkal7ye5lew1wts",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 1985,
+        "endYear": 1992
+      },
+      {
         "teamId": "PIT",
         "startYear": 1993,
         "endYear": 1995
@@ -68086,6 +73905,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kevin-greene"
+  },
+  {
+    "fullName": "Shantee Orr",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mvqcbhwcbnsuh6m6q91s",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "shantee-orr"
   },
   {
     "fullName": "Alan Page",
@@ -68155,23 +73998,42 @@ export const GENERATED_PLAYERS = [
     "id": "art-still"
   },
   {
-    "fullName": "Brad Van Pelt",
+    "fullName": "Barry Krauss",
     "position": "LB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mfnxwgcg8jpfws6ufyl4",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vvg6wjboszaytgpxfa37",
     "teamStints": [
       {
-        "teamId": "NYG",
-        "startYear": 1973,
-        "endYear": 1983
+        "teamId": "IND",
+        "startYear": 1979,
+        "endYear": 1988
       },
       {
-        "teamId": "CLE",
-        "startYear": 1986,
-        "endYear": 1986
+        "teamId": "MIA",
+        "startYear": 1989,
+        "endYear": 1990
       }
     ],
-    "id": "brad-van-pelt"
+    "id": "barry-krauss"
+  },
+  {
+    "fullName": "Bill Pickel",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c0s3n6smd8qc0xslx4lz",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1990
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1991,
+        "endYear": 1994
+      }
+    ],
+    "id": "bill-pickel"
   },
   {
     "fullName": "Bruce Laird",
@@ -68180,7 +74042,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/neh3bfh41epuqljeotv0",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1972,
         "endYear": 1981
       },
@@ -68277,25 +74139,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "darius-phillips"
-  },
-  {
-    "fullName": "Dave Waymer",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cru3vme0xcqkhu8wycqj",
-    "teamStints": [
-      {
-        "teamId": "NO",
-        "startYear": 1980,
-        "endYear": 1989
-      },
-      {
-        "teamId": "SF",
-        "startYear": 1990,
-        "endYear": 1991
-      }
-    ],
-    "id": "dave-waymer"
   },
   {
     "fullName": "DeAndre Houston-Carson",
@@ -68434,25 +74277,6 @@ export const GENERATED_PLAYERS = [
     "id": "dick-conn"
   },
   {
-    "fullName": "Donnell Thompson",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ez39x1ckfmzr8kiyz2fh",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1981,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1992
-      }
-    ],
-    "id": "donnell-thompson"
-  },
-  {
     "fullName": "Dorsey Levens",
     "position": "RB",
     "difficulty": "hard",
@@ -68482,6 +74306,25 @@ export const GENERATED_PLAYERS = [
     "id": "dorsey-levens"
   },
   {
+    "fullName": "Eddie Anderson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/taowb92byxcvxqsp0jpp",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1997
+      }
+    ],
+    "id": "eddie-anderson"
+  },
+  {
     "fullName": "Fred Dryer",
     "position": "DL",
     "difficulty": "impossible",
@@ -68499,6 +74342,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "fred-dryer"
+  },
+  {
+    "fullName": "Freddie Joe Nunn",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b1sat7s5w99mhn6pqoqk",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1985,
+        "endYear": 1993
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1994,
+        "endYear": 1996
+      }
+    ],
+    "id": "freddie-joe-nunn"
   },
   {
     "fullName": "Gary Plummer",
@@ -68655,6 +74517,25 @@ export const GENERATED_PLAYERS = [
     "id": "james-pierre"
   },
   {
+    "fullName": "Jim Youngblood",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lsoeohtmoadr8kjekmf0",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1973,
+        "endYear": 1984
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1984,
+        "endYear": 1984
+      }
+    ],
+    "id": "jim-youngblood"
+  },
+  {
     "fullName": "Joe Klecko",
     "position": "DL",
     "difficulty": "impossible",
@@ -68672,6 +74553,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "joe-klecko"
+  },
+  {
+    "fullName": "Linden King",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/riaec3wopxjjqbwpyahl",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1978,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1986,
+        "endYear": 1989
+      }
+    ],
+    "id": "linden-king"
   },
   {
     "fullName": "Marquand Manuel",
@@ -68782,7 +74682,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ji7ln4en83id86vjl4ho",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1995
       },
@@ -69217,6 +75117,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2005,
         "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2012
       }
     ],
     "id": "brendon-ayanbadejo"
@@ -69385,6 +75290,30 @@ export const GENERATED_PLAYERS = [
     "id": "darryl-grant"
   },
   {
+    "fullName": "Dave Duerson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fuilnprtjkg9vmnwrldy",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1983,
+        "endYear": 1989
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1993
+      }
+    ],
+    "id": "dave-duerson"
+  },
+  {
     "fullName": "Dave Pureifory",
     "position": "DL",
     "difficulty": "impossible",
@@ -69407,6 +75336,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dave-pureifory"
+  },
+  {
+    "fullName": "Dexter Manley",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rlpgt481dne3ce7kjv3v",
+    "teamStints": [
+      {
+        "teamId": "WAS",
+        "startYear": 1981,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "dexter-manley"
   },
   {
     "fullName": "Don Griffin",
@@ -69462,6 +75415,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qyu3pkp7vsgzabdzw1dx",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2009
+      },
       {
         "teamId": "LAC",
         "startYear": 2010,
@@ -69535,7 +75493,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1980,
         "endYear": 1980
       },
@@ -69561,6 +75519,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "gary-johnson"
+  },
+  {
+    "fullName": "Greg Meisner",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p0y4xhzgzwp5v6scfthd",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1981,
+        "endYear": 1988
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1989,
+        "endYear": 1990
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "greg-meisner"
   },
   {
     "fullName": "Joel Williams",
@@ -69658,6 +75640,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "les-miller"
+  },
+  {
+    "fullName": "Lorenzo Lynch",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/becntluvvavvb7rojqen",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1987,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1990,
+        "endYear": 1995
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1996,
+        "endYear": 1997
+      }
+    ],
+    "id": "lorenzo-lynch"
   },
   {
     "fullName": "Marquez Valdes-Scantling",
@@ -69795,6 +75801,40 @@ export const GENERATED_PLAYERS = [
     "id": "ray-brown"
   },
   {
+    "fullName": "Reuben Davis",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yyz1slhrgsc2wzquzomg",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1988,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1994,
+        "endYear": 1998
+      }
+    ],
+    "id": "reuben-davis"
+  },
+  {
     "fullName": "Robert Jackson",
     "position": "LB",
     "difficulty": "impossible",
@@ -69822,6 +75862,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "robert-jackson"
+  },
+  {
+    "fullName": "Tim Fox",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jdmydp4lk5lxjlstj601",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1976,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1982,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1985,
+        "endYear": 1986
+      }
+    ],
+    "id": "tim-fox"
   },
   {
     "fullName": "Toi Cook",
@@ -69896,6 +75960,30 @@ export const GENERATED_PLAYERS = [
     "id": "william-white"
   },
   {
+    "fullName": "Winston Moss",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l41hcicgc97rmefoyzaq",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1987,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1991,
+        "endYear": 1994
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1995,
+        "endYear": 1997
+      }
+    ],
+    "id": "winston-moss"
+  },
+  {
     "fullName": "Darnell Mooney",
     "position": "WR",
     "difficulty": "medium",
@@ -69956,7 +76044,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Tony Banks",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hqkmwrxcl87hziuhdcdv",
     "teamStints": [
       {
@@ -69973,6 +76061,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2005
       }
     ],
     "id": "tony-banks"
@@ -70096,7 +76189,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -70161,6 +76254,25 @@ export const GENERATED_PLAYERS = [
     "id": "broderick-thomas"
   },
   {
+    "fullName": "Dan Williams",
+    "position": "NT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mcrlckkkrnvsp5l75lr5",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2014
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2015,
+        "endYear": 2016
+      }
+    ],
+    "id": "dan-williams"
+  },
+  {
     "fullName": "David Brandon",
     "position": "LB",
     "difficulty": "impossible",
@@ -70205,6 +76317,40 @@ export const GENERATED_PLAYERS = [
     "id": "david-brandon"
   },
   {
+    "fullName": "Dennis Harrison",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ymhxg8rxxoazf0fjpy5f",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 1978,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "dennis-harrison"
+  },
+  {
     "fullName": "Earl Edwards",
     "position": "DL",
     "difficulty": "impossible",
@@ -70234,38 +76380,72 @@ export const GENERATED_PLAYERS = [
     "id": "earl-edwards"
   },
   {
-    "fullName": "Eric Williams",
-    "position": "LB",
+    "fullName": "Elvis Patterson",
+    "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hmw93sfpqa0wkqajksvv",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/smihdmtkipp7xglm9gi7",
     "teamStints": [
       {
-        "teamId": "LAR",
-        "startYear": 1977,
-        "endYear": 1981
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 1983,
-        "endYear": 1984
-      },
-      {
-        "teamId": "LAC",
+        "teamId": "NYG",
         "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 1985,
         "endYear": 1986
       },
       {
-        "teamId": "DET",
+        "teamId": "LAC",
         "startYear": 1987,
         "endYear": 1987
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1993
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1993,
+        "endYear": 1993
       }
     ],
-    "id": "eric-williams"
+    "id": "elvis-patterson"
+  },
+  {
+    "fullName": "Ernie Jones",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xzievdfozkxjfd0h8lnz",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 1976,
+        "endYear": 1976
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1977,
+        "endYear": 1979
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "ernie-jones"
   },
   {
     "fullName": "Gareon Conley",
@@ -70304,45 +76484,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "hunter-renfrow"
-  },
-  {
-    "fullName": "Johnie Cooks",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pwc9fuqm8a83sszq7rs9",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1982,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1987
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1988,
-        "endYear": 1988
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1988,
-        "endYear": 1988
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1989,
-        "endYear": 1991
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1991,
-        "endYear": 1991
-      }
-    ],
-    "id": "johnie-cooks"
   },
   {
     "fullName": "Justin McCareins",
@@ -70495,6 +76636,65 @@ export const GENERATED_PLAYERS = [
     "id": "michael-bennett-2"
   },
   {
+    "fullName": "Mike Williams",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ckvfjoahwflg8sfvtmaq",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1975,
+        "endYear": 1978
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1981,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1981,
+        "endYear": 1982
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1983,
+        "endYear": 1984
+      }
+    ],
+    "id": "mike-williams-3"
+  },
+  {
     "fullName": "Orlando Ruff",
     "position": "LB",
     "difficulty": "impossible",
@@ -70509,6 +76709,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2003,
         "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "orlando-ruff"
@@ -70591,6 +76796,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
       }
     ],
     "id": "peppi-zellner"
@@ -70602,7 +76812,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lekwyz4xcziqdxbsee2n",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1973,
         "endYear": 1978
       },
@@ -70641,7 +76851,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1976
       },
@@ -70651,7 +76861,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1977,
         "endYear": 1981
       }
@@ -70686,6 +76896,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "trayvon-mullen"
+  },
+  {
+    "fullName": "Tyronne Stowe",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/evgquoij8wlxjhbnrkjx",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1987,
+        "endYear": 1990
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1995,
+        "endYear": 1996
+      }
+    ],
+    "id": "tyronne-stowe"
   },
   {
     "fullName": "Aaron Colvin",
@@ -70819,6 +77058,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jbjvrm7hnjhkk7bljd8a",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
         "teamId": "MIA",
         "startYear": 2014,
         "endYear": 2016
@@ -70900,6 +77144,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2003,
         "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "michael-hawthorne"
@@ -70912,7 +77161,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1990,
         "endYear": 1994
       },
       {
@@ -70928,7 +77177,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1998,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "CAR",
@@ -71002,6 +77251,25 @@ export const GENERATED_PLAYERS = [
     "id": "ropati-pitoitua"
   },
   {
+    "fullName": "Adam Carriker",
+    "position": "NT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ydtpyqlzxf5ido63wmjm",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2008
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2010,
+        "endYear": 2012
+      }
+    ],
+    "id": "adam-carriker"
+  },
+  {
     "fullName": "Al Cowlings",
     "position": "DL",
     "difficulty": "impossible",
@@ -71013,7 +77281,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1973,
         "endYear": 1974
       },
@@ -71073,40 +77341,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "anthony-parker"
-  },
-  {
-    "fullName": "Bob Nelson",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/loy9jd7pzargeyex9oba",
-    "teamStints": [
-      {
-        "teamId": "BUF",
-        "startYear": 1975,
-        "endYear": 1977
-      },
-      {
-        "teamId": "SF",
-        "startYear": 1979,
-        "endYear": 1979
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1986,
-        "endYear": 1986
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1988,
-        "endYear": 1990
-      }
-    ],
-    "id": "bob-nelson"
   },
   {
     "fullName": "Bobby Houston",
@@ -71198,7 +77432,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1978,
         "endYear": 1978
       },
@@ -71229,49 +77463,10 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       }
     ],
     "id": "devin-bush-2"
-  },
-  {
-    "fullName": "Greg Boyd",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/abl2qgy2rnq9oimdtcjn",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1973,
-        "endYear": 1973
-      },
-      {
-        "teamId": "NO",
-        "startYear": 1974,
-        "endYear": 1974
-      },
-      {
-        "teamId": "NE",
-        "startYear": 1977,
-        "endYear": 1978
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1980,
-        "endYear": 1982
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "SF",
-        "startYear": 1984,
-        "endYear": 1984
-      }
-    ],
-    "id": "greg-boyd"
   },
   {
     "fullName": "Jesse Solomon",
@@ -71438,6 +77633,40 @@ export const GENERATED_PLAYERS = [
     "id": "rashid-shaheed"
   },
   {
+    "fullName": "Robert Massey",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rlzlrxqyopoqmr1rscgm",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 1989,
+        "endYear": 1990
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1994,
+        "endYear": 1995
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 1996,
+        "endYear": 1996
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "robert-massey"
+  },
+  {
     "fullName": "Stephen Weatherly",
     "position": "DL",
     "difficulty": "hard",
@@ -71483,6 +77712,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 1993
       },
       {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
         "teamId": "NYG",
         "startYear": 1995,
         "endYear": 1995
@@ -71494,6 +77728,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tommy-maddox"
+  },
+  {
+    "fullName": "Willie Broughton",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ptysndt5y8jgzp6y0d5y",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1985,
+        "endYear": 1986
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1989,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1993
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "NO",
+        "startYear": 1995,
+        "endYear": 1996
+      }
+    ],
+    "id": "willie-broughton"
   },
   {
     "fullName": "Carlos Watkins",
@@ -71535,6 +77808,25 @@ export const GENERATED_PLAYERS = [
     "id": "carlos-watkins"
   },
   {
+    "fullName": "Chris Brown",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h4qcaktzf1wa11jgc9zv",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "chris-brown"
+  },
+  {
     "fullName": "Colin Cole",
     "position": "DT",
     "difficulty": "impossible",
@@ -71567,6 +77859,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "colin-cole"
+  },
+  {
+    "fullName": "Daven Holly",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/myou74x1nt33exoxpmh4",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2007
+      }
+    ],
+    "id": "daven-holly"
   },
   {
     "fullName": "Ed McCaffrey",
@@ -71662,13 +77973,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Kareem Martin",
-    "position": "LB",
+    "position": "DE",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wuqvh3a9yqqgimxwrmzn",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -71702,6 +78013,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-devito"
+  },
+  {
+    "fullName": "Roderick Green",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/io9jxg2g9loipwgsapbm",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2006,
+        "endYear": 2008
+      }
+    ],
+    "id": "roderick-green"
   },
   {
     "fullName": "Theo Riddick",
@@ -71781,6 +78111,25 @@ export const GENERATED_PLAYERS = [
     "id": "darrius-heyward-bey"
   },
   {
+    "fullName": "Davone Bess",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s48y8mu0chhsigt5kuit",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 2008,
+        "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "davone-bess"
+  },
+  {
     "fullName": "Donnie Spragan",
     "position": "LB",
     "difficulty": "impossible",
@@ -71806,13 +78155,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Ethan Westbrooks",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pqwouewum8g8cf4gaxmq",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -72416,12 +78765,41 @@ export const GENERATED_PLAYERS = [
         "endYear": 2002
       },
       {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "MIN",
         "startYear": 2004,
         "endYear": 2004
       }
     ],
     "id": "steve-martin"
+  },
+  {
+    "fullName": "Stewart Bradley",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yeumukdguu5tt7enfbmw",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2007,
+        "endYear": 2008
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "stewart-bradley"
   },
   {
     "fullName": "Al Harris",
@@ -72446,6 +78824,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "al-harris-2"
+  },
+  {
+    "fullName": "Aundray Bruce",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pbijjuljh7qglcpjj853",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 1988,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1998
+      }
+    ],
+    "id": "aundray-bruce"
   },
   {
     "fullName": "B.J. Goodson",
@@ -72555,7 +78952,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1978,
         "endYear": 1981
       }
@@ -72569,6 +78966,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yx3wawkjsqdsyvsh8psw",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
         "teamId": "SF",
         "startYear": 2008,
         "endYear": 2008
@@ -72577,6 +78979,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2009,
         "endYear": 2010
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "bryant-johnson"
@@ -72668,6 +79075,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2002,
         "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "dale-carter"
@@ -72978,6 +79390,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2007,
         "endYear": 2008
       },
       {
@@ -72999,13 +79421,32 @@ export const GENERATED_PLAYERS = [
     "id": "jovan-haye"
   },
   {
+    "fullName": "Ken Harvey",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h90obpir7asoqhqqzcgy",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1994,
+        "endYear": 1998
+      }
+    ],
+    "id": "ken-harvey"
+  },
+  {
     "fullName": "Ken Houston",
     "position": "DB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i1cbjgmbk3okezcqjzfr",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1972
       },
@@ -73042,23 +79483,23 @@ export const GENERATED_PLAYERS = [
     "id": "laurence-maroney"
   },
   {
-    "fullName": "Lyle Alzado",
-    "position": "DL",
+    "fullName": "LeRoy Irvin",
+    "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cqw7fny2wssmveq8m3rq",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gzhas1ulupo9kg3uronh",
     "teamStints": [
       {
-        "teamId": "DEN",
-        "startYear": 1971,
-        "endYear": 1978
+        "teamId": "LAR",
+        "startYear": 1980,
+        "endYear": 1989
       },
       {
-        "teamId": "CLE",
-        "startYear": 1979,
-        "endYear": 1981
+        "teamId": "DET",
+        "startYear": 1990,
+        "endYear": 1990
       }
     ],
-    "id": "lyle-alzado"
+    "id": "leroy-irvin"
   },
   {
     "fullName": "M.J. Stewart",
@@ -73123,13 +79564,32 @@ export const GENERATED_PLAYERS = [
     "id": "michael-walter"
   },
   {
+    "fullName": "Mike Harden",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/glkgy46lxw0jlbnpzpg2",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1980,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1990
+      }
+    ],
+    "id": "mike-harden"
+  },
+  {
     "fullName": "Nate Wright",
     "position": "DB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qhkxwkoykztqv9eh4yjd",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1970
       },
@@ -73326,7 +79786,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qndwoyun2cqo3y1hbmg0",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1972,
         "endYear": 1979
       },
@@ -73383,6 +79843,25 @@ export const GENERATED_PLAYERS = [
     "id": "stevan-ridley"
   },
   {
+    "fullName": "Terry McDaniel",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vmq93yzfymm5myeko9ch",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1988,
+        "endYear": 1997
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1998,
+        "endYear": 1998
+      }
+    ],
+    "id": "terry-mcdaniel"
+  },
+  {
     "fullName": "Terry Schmidt",
     "position": "DB",
     "difficulty": "impossible",
@@ -73416,9 +79895,33 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "thomas-keiser"
+  },
+  {
+    "fullName": "Vann McElroy",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jet5q8wozkbt5ufeine3",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1982,
+        "endYear": 1990
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1990,
+        "endYear": 1992
+      }
+    ],
+    "id": "vann-mcelroy"
   },
   {
     "fullName": "Whitney Paul",
@@ -73706,6 +80209,25 @@ export const GENERATED_PLAYERS = [
     "id": "jermaine-kearse"
   },
   {
+    "fullName": "Mark Clayton",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uldvbkuemila91mfp5th",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2011
+      }
+    ],
+    "id": "mark-clayton-2"
+  },
+  {
     "fullName": "Mike Sellers",
     "position": "TE",
     "difficulty": "hard",
@@ -73749,13 +80271,32 @@ export const GENERATED_PLAYERS = [
     "id": "ryan-nece"
   },
   {
+    "fullName": "Aaron Cox",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i7t2v4jq8bta5adktk9u",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1992
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "aaron-cox"
+  },
+  {
     "fullName": "Adger Armstrong",
     "position": "RB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/u6qeqb6qml00d9srzbuz",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1982
       },
@@ -73793,7 +80334,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pmvjy786kzv4wyhtgsso",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1972
       },
@@ -73880,25 +80421,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "billy-campfield"
-  },
-  {
-    "fullName": "Billy Waddy",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e87hbudunnf0zekwbsqt",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1977,
-        "endYear": 1981
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1984,
-        "endYear": 1984
-      }
-    ],
-    "id": "billy-waddy"
   },
   {
     "fullName": "Bo Rather",
@@ -74036,7 +80558,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/twdsphh4epitoulfkvqa",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1983,
         "endYear": 1985
       },
@@ -74084,7 +80606,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sbl5q8rudhwmoxbnme7z",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1986,
         "endYear": 1986
       },
@@ -74103,7 +80625,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hgihaxfknx7kbrre27m2",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1984
       },
@@ -74170,7 +80692,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yg2xwz7tamnbhcxjhdny",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -74207,30 +80729,6 @@ export const GENERATED_PLAYERS = [
     "id": "charlie-west"
   },
   {
-    "fullName": "Chris Martin",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dtwwqjxqfx32untjxqyh",
-    "teamStints": [
-      {
-        "teamId": "NO",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1984,
-        "endYear": 1988
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1988,
-        "endYear": 1992
-      }
-    ],
-    "id": "chris-martin"
-  },
-  {
     "fullName": "Cleveland Franklin",
     "position": "RB",
     "difficulty": "impossible",
@@ -74242,12 +80740,31 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1979,
         "endYear": 1982
       }
     ],
     "id": "cleveland-franklin"
+  },
+  {
+    "fullName": "Cleveland Gary",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/exyvghdj2ppjh7mr9e1l",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1989,
+        "endYear": 1993
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "cleveland-gary"
   },
   {
     "fullName": "D.J. Dozier",
@@ -74323,13 +80840,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/to5tgllv2mf0slyt4pdk",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1991,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1991,
         "endYear": 1998
       },
       {
@@ -74347,7 +80859,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gsbn9ncddqtfxqzv7vhb",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1978,
         "endYear": 1982
       },
@@ -74599,23 +81111,28 @@ export const GENERATED_PLAYERS = [
     "id": "eddie-hill"
   },
   {
-    "fullName": "Eric Dickerson",
-    "position": "RB",
+    "fullName": "Emile Harry",
+    "position": "WR",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jhnq2bvn8ryvxiwlfhk8",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e4at938xcnarolzathar",
     "teamStints": [
       {
-        "teamId": "IND",
-        "startYear": 1987,
-        "endYear": 1991
+        "teamId": "KC",
+        "startYear": 1986,
+        "endYear": 1986
       },
       {
-        "teamId": "ATL",
-        "startYear": 1993,
-        "endYear": 1993
+        "teamId": "KC",
+        "startYear": 1988,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1992
       }
     ],
-    "id": "eric-dickerson"
+    "id": "emile-harry"
   },
   {
     "fullName": "Eric Ogbogu",
@@ -74666,6 +81183,35 @@ export const GENERATED_PLAYERS = [
     "id": "frank-grant"
   },
   {
+    "fullName": "Fred Stokes",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p9sgqr9ua3kqiou5zhrl",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1989,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1995
+      },
+      {
+        "teamId": "NO",
+        "startYear": 1996,
+        "endYear": 1996
+      }
+    ],
+    "id": "fred-stokes"
+  },
+  {
     "fullName": "Fred Willis",
     "position": "RB",
     "difficulty": "impossible",
@@ -74677,7 +81223,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1972,
         "endYear": 1976
       }
@@ -74747,13 +81293,32 @@ export const GENERATED_PLAYERS = [
     "id": "george-wonsley"
   },
   {
+    "fullName": "Gordon Jones",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ameqo1hpljs9wswxfs1o",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1979,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1984
+      }
+    ],
+    "id": "gordon-jones"
+  },
+  {
     "fullName": "Greg LaFleur",
     "position": "TE",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eqejnhk2jztwr8f1yup8",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1981,
         "endYear": 1985
       },
@@ -74763,7 +81328,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1986
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1986,
         "endYear": 1986
       }
@@ -74788,6 +81353,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "harry-sydney"
+  },
+  {
+    "fullName": "Herman Edwards",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ibrkwyhfrh7rzzmvwroq",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 1977,
+        "endYear": 1985
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1986
+      }
+    ],
+    "id": "herman-edwards"
   },
   {
     "fullName": "Herman Fontenot",
@@ -74964,7 +81553,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ydmnmero5fc4dk7p3eik",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1984,
         "endYear": 1989
       },
@@ -75050,10 +81639,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Jimmy Kennedy",
-    "position": "NT",
+    "position": "DT",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oszourxktzsalltzkk4n",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2006
+      },
       {
         "teamId": "CHI",
         "startYear": 2007,
@@ -75100,6 +81694,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "john-settle"
+  },
+  {
+    "fullName": "Johnie Cooks",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pwc9fuqm8a83sszq7rs9",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1982,
+        "endYear": 1987
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "johnie-cooks"
   },
   {
     "fullName": "Keith Cash",
@@ -75152,7 +81780,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2011,
         "endYear": 2016
       },
       {
@@ -75180,7 +81808,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cx8hdvbvxn5m912qkrty",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1983,
         "endYear": 1986
       },
@@ -75266,7 +81894,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1970
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1971,
         "endYear": 1972
       },
@@ -75332,6 +81960,30 @@ export const GENERATED_PLAYERS = [
     "id": "michael-dean-perry"
   },
   {
+    "fullName": "Mike Fanning",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mt0j12pn9nsm6o61rfgp",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1975,
+        "endYear": 1982
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1984,
+        "endYear": 1984
+      }
+    ],
+    "id": "mike-fanning"
+  },
+  {
     "fullName": "Mike Thomas",
     "position": "RB",
     "difficulty": "impossible",
@@ -75349,55 +82001,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-thomas"
-  },
-  {
-    "fullName": "Mike Williams",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ckvfjoahwflg8sfvtmaq",
-    "teamStints": [
-      {
-        "teamId": "LAC",
-        "startYear": 1975,
-        "endYear": 1978
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1979,
-        "endYear": 1979
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1979,
-        "endYear": 1979
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1981,
-        "endYear": 1981
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1981,
-        "endYear": 1982
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1982,
-        "endYear": 1984
-      }
-    ],
-    "id": "mike-williams-3"
   },
   {
     "fullName": "Mike Williams",
@@ -75540,31 +82143,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1983
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1984,
         "endYear": 1985
       }
     ],
     "id": "perry-harrington"
-  },
-  {
-    "fullName": "Randy McMillan",
-    "position": "RB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jkzlpkc2kzffnayh1vfw",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1981,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1986
-      }
-    ],
-    "id": "randy-mcmillan"
   },
   {
     "fullName": "Rich Miano",
@@ -75634,28 +82218,42 @@ export const GENERATED_PLAYERS = [
     "id": "robbie-martin"
   },
   {
-    "fullName": "Ron Wolfley",
+    "fullName": "Robert Delpino",
     "position": "RB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sr3r7nwaw5u5r6prqkr0",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q7r4u4fzpjugkpuba9tf",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1985,
-        "endYear": 1987
+        "startYear": 1988,
+        "endYear": 1992
       },
       {
-        "teamId": "CLE",
-        "startYear": 1992,
+        "teamId": "DEN",
+        "startYear": 1993,
         "endYear": 1993
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1995,
-        "endYear": 1995
       }
     ],
-    "id": "ron-wolfley"
+    "id": "robert-delpino"
+  },
+  {
+    "fullName": "Rod Phillips",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qu8ba53ofybvv3dvztqt",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1975,
+        "endYear": 1978
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1979,
+        "endYear": 1980
+      }
+    ],
+    "id": "rod-phillips"
   },
   {
     "fullName": "Roy Gerela",
@@ -75664,7 +82262,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lbfcpjcdqifw9y2pwku1",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1970
       },
@@ -75714,6 +82312,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2007,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2010,
         "endYear": 2010
       },
       {
@@ -75802,25 +82410,6 @@ export const GENERATED_PLAYERS = [
     "id": "scott-laidlaw"
   },
   {
-    "fullName": "Shane Lechler",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/we3oe5jqnrb4ag3d4pqu",
-    "teamStints": [
-      {
-        "teamId": "LV",
-        "startYear": 2002,
-        "endYear": 2012
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 2016,
-        "endYear": 2018
-      }
-    ],
-    "id": "shane-lechler"
-  },
-  {
     "fullName": "Shannon Sharpe",
     "position": "TE",
     "difficulty": "hard",
@@ -75875,7 +82464,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z92vjnq8hpvsjdaczf12",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1982,
         "endYear": 1986
       },
@@ -75899,7 +82488,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1974,
         "endYear": 1978
       }
@@ -75999,6 +82588,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2013
+      },
+      {
         "teamId": "DAL",
         "startYear": 2014,
         "endYear": 2016
@@ -76038,7 +82632,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qeqfewr3sikilhhuxgn0",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1977
       },
@@ -76121,6 +82715,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tony-davis"
+  },
+  {
+    "fullName": "Tony Woods",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bgsqy0uwzikg1fd1g9u6",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 1987,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1994,
+        "endYear": 1996
+      }
+    ],
+    "id": "tony-woods"
   },
   {
     "fullName": "Vaughn Hebron",
@@ -76245,7 +82863,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       }
     ],
-    "id": "dan-williams"
+    "id": "dan-williams-2"
   },
   {
     "fullName": "DeShawn Shead",
@@ -76504,6 +83122,25 @@ export const GENERATED_PLAYERS = [
     "id": "marquise-goodwin"
   },
   {
+    "fullName": "Michael Adams",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c6ustof4db1od2scnmv6",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2012
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "michael-adams"
+  },
+  {
     "fullName": "Micheal Clemons",
     "position": "DL",
     "difficulty": "hard",
@@ -76577,6 +83214,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/caobq3htrmnmuokkyvxp",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2008
+      },
+      {
         "teamId": "ATL",
         "startYear": 2009,
         "endYear": 2009
@@ -76601,7 +83243,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1973
       },
@@ -76611,7 +83253,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1977
       },
@@ -76621,7 +83263,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1978,
         "endYear": 1981
       }
@@ -76635,7 +83277,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vlgnmce4gwm4ouolmkcj",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1990,
         "endYear": 1994
       },
@@ -76743,6 +83385,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "carl-barisich"
+  },
+  {
+    "fullName": "Cliff Hicks",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g70icd9x5bvmzvt2fuda",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1989
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1993,
+        "endYear": 1994
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "cliff-hicks"
   },
   {
     "fullName": "Cre'von LeBlanc",
@@ -76890,35 +83571,6 @@ export const GENERATED_PLAYERS = [
     "id": "jerry-boyarsky"
   },
   {
-    "fullName": "Joe Kelly",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s0ouignpyda0jywoustu",
-    "teamStints": [
-      {
-        "teamId": "CIN",
-        "startYear": 1986,
-        "endYear": 1989
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1990,
-        "endYear": 1992
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1995,
-        "endYear": 1995
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1996,
-        "endYear": 1996
-      }
-    ],
-    "id": "joe-kelly"
-  },
-  {
     "fullName": "Johnny Thomas",
     "position": "DB",
     "difficulty": "impossible",
@@ -76992,6 +83644,35 @@ export const GENERATED_PLAYERS = [
     "id": "keith-millard"
   },
   {
+    "fullName": "Mike Charles",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bi5cvjeznrrtv6hbg07z",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 1983,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "mike-charles"
+  },
+  {
     "fullName": "Najee Mustafaa",
     "position": "DB",
     "difficulty": "impossible",
@@ -77055,6 +83736,35 @@ export const GENERATED_PLAYERS = [
     "id": "nate-allen-2"
   },
   {
+    "fullName": "Pat Terrell",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jrhpe4m3nrahfjalbh66",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1990,
+        "endYear": 1993
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 1995,
+        "endYear": 1997
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1998,
+        "endYear": 1998
+      }
+    ],
+    "id": "pat-terrell"
+  },
+  {
     "fullName": "Ray Seals",
     "position": "LB",
     "difficulty": "impossible",
@@ -77087,6 +83797,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ray-seals"
+  },
+  {
+    "fullName": "Richard Brown",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dt9dm81vd5kolikcch68",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1994,
+        "endYear": 1996
+      }
+    ],
+    "id": "richard-brown"
   },
   {
     "fullName": "Romeo Doubs",
@@ -77230,7 +83974,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1970
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1971,
         "endYear": 1974
       },
@@ -77292,6 +84036,35 @@ export const GENERATED_PLAYERS = [
     "id": "terry-tautolo"
   },
   {
+    "fullName": "Thomas Benson",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xi7c14bydorqom3wwuja",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 1984,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1986,
+        "endYear": 1987
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1992
+      }
+    ],
+    "id": "thomas-benson"
+  },
+  {
     "fullName": "Brennan Scarlett",
     "position": "LB",
     "difficulty": "impossible",
@@ -77316,6 +84089,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jqdwuhtcovhdnqno0mhg",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2012
+      },
       {
         "teamId": "SF",
         "startYear": 2013,
@@ -77505,6 +84283,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z3x0kdm8pc6wo4luvel1",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "SEA",
         "startYear": 2014,
         "endYear": 2014
@@ -77610,6 +84393,25 @@ export const GENERATED_PLAYERS = [
     "id": "darren-carrington"
   },
   {
+    "fullName": "Freddie Jones",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gfqlhiqdcrxyuzbemvjw",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1997,
+        "endYear": 2001
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2004
+      }
+    ],
+    "id": "freddie-jones"
+  },
+  {
     "fullName": "Jakeem Grant",
     "position": "WR",
     "difficulty": "medium",
@@ -77637,6 +84439,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jakeem-grant"
+  },
+  {
+    "fullName": "John Booty",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oxtkb143pyyhlanhhljx",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1988,
+        "endYear": 1990
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "john-booty"
   },
   {
     "fullName": "Justin Gage",
@@ -77688,9 +84524,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ckkub4qhtny9uumyzdh5",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
         "teamId": "SEA",
         "startYear": 2005,
         "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2010
       },
       {
         "teamId": "JAX",
@@ -77704,6 +84550,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kevin-bentley"
+  },
+  {
+    "fullName": "Michael Brim",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nnn8bjyhci9c79gmxirn",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1993,
+        "endYear": 1995
+      }
+    ],
+    "id": "michael-brim"
   },
   {
     "fullName": "Mickey Washington",
@@ -77977,6 +84862,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eum1rejvq4lewlsivgnj",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2014
+      },
+      {
         "teamId": "IND",
         "startYear": 2015,
         "endYear": 2015
@@ -78062,6 +84952,25 @@ export const GENERATED_PLAYERS = [
     "id": "henri-crockett"
   },
   {
+    "fullName": "Jason Simmons",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ciqqcqlp9ab2juhqh48n",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1998,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2007
+      }
+    ],
+    "id": "jason-simmons"
+  },
+  {
     "fullName": "Jaye Howard",
     "position": "DT",
     "difficulty": "impossible",
@@ -78093,7 +85002,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1994,
         "endYear": 2000
       },
       {
@@ -78135,6 +85044,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pzdvzp8ykkl1syghhpj0",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2006
+      },
+      {
         "teamId": "SF",
         "startYear": 2007,
         "endYear": 2010
@@ -78169,7 +85083,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1970
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1970
       },
@@ -78224,7 +85138,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2017
       },
       {
@@ -78253,7 +85167,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1993,
         "endYear": 1995
       },
       {
@@ -78312,55 +85226,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kalif-raymond"
-  },
-  {
-    "fullName": "Karl Wilson",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/metzulr8c2hrguda3nx3",
-    "teamStints": [
-      {
-        "teamId": "LAC",
-        "startYear": 1987,
-        "endYear": 1988
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1990,
-        "endYear": 1990
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1992,
-        "endYear": 1992
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "SF",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1994,
-        "endYear": 1994
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "karl-wilson"
   },
   {
     "fullName": "Mack Hollins",
@@ -78461,13 +85326,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Nate Orchard",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k3vpevrxem1vlwteoumv",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uooodwpwkhmibmzsgsfg",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -78576,6 +85441,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "rodney-bailey"
@@ -78814,6 +85684,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "NO",
         "startYear": 2007,
         "endYear": 2009
@@ -79047,25 +85922,6 @@ export const GENERATED_PLAYERS = [
     "id": "bill-maas"
   },
   {
-    "fullName": "Bob Golic",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ot4eli9ohqljvdmzgfod",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1979,
-        "endYear": 1981
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1982,
-        "endYear": 1988
-      }
-    ],
-    "id": "bob-golic"
-  },
-  {
     "fullName": "Bob Matheson",
     "position": "LB",
     "difficulty": "impossible",
@@ -79104,6 +85960,25 @@ export const GENERATED_PLAYERS = [
     "id": "bruce-mcnorton"
   },
   {
+    "fullName": "Burgess Owens",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ikysregbz4af9qfnd088",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1973,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1982
+      }
+    ],
+    "id": "burgess-owens"
+  },
+  {
     "fullName": "Carl Eller",
     "position": "DL",
     "difficulty": "impossible",
@@ -79123,11 +85998,35 @@ export const GENERATED_PLAYERS = [
     "id": "carl-eller"
   },
   {
+    "fullName": "Charles DeJurnett",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iu2kszd5kcd7v4zvszkc",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1976,
+        "endYear": 1980
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1982,
+        "endYear": 1986
+      }
+    ],
+    "id": "charles-dejurnett"
+  },
+  {
     "fullName": "Charlie Anderson",
     "position": "OLB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sdt92ppzzvg6pqcrksmp",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2004,
+        "endYear": 2007
+      },
       {
         "teamId": "MIA",
         "startYear": 2008,
@@ -79259,25 +86158,6 @@ export const GENERATED_PLAYERS = [
     "id": "deshaun-foster"
   },
   {
-    "fullName": "Dexter Manley",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rlpgt481dne3ce7kjv3v",
-    "teamStints": [
-      {
-        "teamId": "WAS",
-        "startYear": 1981,
-        "endYear": 1989
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1991,
-        "endYear": 1991
-      }
-    ],
-    "id": "dexter-manley"
-  },
-  {
     "fullName": "Dwaine Board",
     "position": "DL",
     "difficulty": "impossible",
@@ -79300,25 +86180,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dwaine-board"
-  },
-  {
-    "fullName": "Ed Brady",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hbfzpnyv75clj09m88ff",
-    "teamStints": [
-      {
-        "teamId": "CIN",
-        "startYear": 1986,
-        "endYear": 1991
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1992,
-        "endYear": 1995
-      }
-    ],
-    "id": "ed-brady"
   },
   {
     "fullName": "Ed Reynolds",
@@ -79357,6 +86218,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "eric-williams-2"
+  },
+  {
+    "fullName": "Garth Jax",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a7cf3bhvcmkn5hqedx1y",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1986,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1995
+      }
+    ],
+    "id": "garth-jax"
   },
   {
     "fullName": "Gene Atkins",
@@ -79408,31 +86288,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1978,
         "endYear": 1981
       }
     ],
     "id": "herb-orvis"
-  },
-  {
-    "fullName": "Herman Edwards",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ibrkwyhfrh7rzzmvwroq",
-    "teamStints": [
-      {
-        "teamId": "PHI",
-        "startYear": 1977,
-        "endYear": 1985
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 1986,
-        "endYear": 1986
-      }
-    ],
-    "id": "herman-edwards"
   },
   {
     "fullName": "Jack Gregory",
@@ -79470,7 +86331,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1980
       }
@@ -79520,6 +86381,50 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jason-baker"
+  },
+  {
+    "fullName": "Jeff Faulkner",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hoj7jfdkii1qhwljsibc",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1992
+      },
+      {
+        "teamId": "NO",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1996,
+        "endYear": 1996
+      }
+    ],
+    "id": "jeff-faulkner"
   },
   {
     "fullName": "Jeff Lageman",
@@ -79579,32 +86484,13 @@ export const GENERATED_PLAYERS = [
     "id": "jim-turner"
   },
   {
-    "fullName": "Jim Youngblood",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lsoeohtmoadr8kjekmf0",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1973,
-        "endYear": 1981
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1984,
-        "endYear": 1984
-      }
-    ],
-    "id": "jim-youngblood"
-  },
-  {
     "fullName": "Joe Ehrmann",
     "position": "DL",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/d3atet7d7jlupib84vjn",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1973,
         "endYear": 1980
       },
@@ -79628,7 +86514,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1980
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1981,
         "endYear": 1981
       }
@@ -79680,7 +86566,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dlnpbf6j6pbdkgtqrpw9",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1984,
         "endYear": 1990
       },
@@ -79704,12 +86590,31 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1979
       }
     ],
     "id": "john-zook"
+  },
+  {
+    "fullName": "Johnnie Johnson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/leitspb10cqqdcxdzcvp",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1980,
+        "endYear": 1989
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "johnnie-johnson"
   },
   {
     "fullName": "Keith Ferguson",
@@ -79771,7 +86676,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1986
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1989
       }
@@ -79814,7 +86719,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1990
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1991,
         "endYear": 1993
       }
@@ -79836,6 +86741,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "lenny-walls"
@@ -79934,6 +86844,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mark-washington"
+  },
+  {
+    "fullName": "Michael Stewart",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ywxg3bzjdkj0mthlvskn",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1993
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1994,
+        "endYear": 1996
+      }
+    ],
+    "id": "michael-stewart"
   },
   {
     "fullName": "Michael Wilhoite",
@@ -80098,25 +87027,6 @@ export const GENERATED_PLAYERS = [
     "id": "reggie-wilkes"
   },
   {
-    "fullName": "Reuben Davis",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yyz1slhrgsc2wzquzomg",
-    "teamStints": [
-      {
-        "teamId": "TB",
-        "startYear": 1988,
-        "endYear": 1992
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1994,
-        "endYear": 1998
-      }
-    ],
-    "id": "reuben-davis"
-  },
-  {
     "fullName": "Richard Wood",
     "position": "LB",
     "difficulty": "impossible",
@@ -80155,6 +87065,25 @@ export const GENERATED_PLAYERS = [
     "id": "ricky-reynolds"
   },
   {
+    "fullName": "Rod Perry",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ff3n3i3fzw5fvrct17fk",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1975,
+        "endYear": 1982
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1983,
+        "endYear": 1984
+      }
+    ],
+    "id": "rod-perry"
+  },
+  {
     "fullName": "Ross Browner",
     "position": "DL",
     "difficulty": "impossible",
@@ -80180,7 +87109,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yawp28whjkkktmmsuzpl",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1976,
         "endYear": 1983
       },
@@ -80220,6 +87149,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "sony-michel"
+  },
+  {
+    "fullName": "Steve Breaston",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cozv5t87e6m17icz7dqk",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2010
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "steve-breaston"
   },
   {
     "fullName": "Steve Furness",
@@ -80289,6 +87237,35 @@ export const GENERATED_PLAYERS = [
     "id": "tavierre-thomas"
   },
   {
+    "fullName": "Terrence Wilkins",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pak7fhp34hbccl4wtgc7",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1999,
+        "endYear": 2001
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "terrence-wilkins"
+  },
+  {
     "fullName": "Tony Peters",
     "position": "DB",
     "difficulty": "impossible",
@@ -80335,6 +87312,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tony-richardson"
+  },
+  {
+    "fullName": "Vince Newsome",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tuyyfqlzoj6pcg2wmsxe",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1990
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1991,
+        "endYear": 1992
+      }
+    ],
+    "id": "vince-newsome"
   },
   {
     "fullName": "William Perry",
@@ -80411,7 +87407,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Kelly Holcomb",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/twyprbkmfzcmsnmyuh90",
     "teamStints": [
       {
@@ -80422,7 +87418,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "BUF",
@@ -80486,6 +87482,25 @@ export const GENERATED_PLAYERS = [
     "id": "quincy-carter"
   },
   {
+    "fullName": "Tyler Allgeier",
+    "position": "RB",
+    "difficulty": "medium",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/osk8e6vpyxuzkrsalopb",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2022,
+        "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "tyler-allgeier"
+  },
+  {
     "fullName": "Aaron Jones",
     "position": "LB",
     "difficulty": "impossible",
@@ -80536,7 +87551,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Anthony Becht",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fffb8tbtlmzhxgntrrna",
     "teamStints": [
       {
@@ -80548,6 +87563,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2005,
         "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2009
       },
       {
         "teamId": "KC",
@@ -80612,7 +87637,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fpotm4uxyeae6kwofhbu",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1979
       },
@@ -80760,38 +87785,38 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 1999,
         "endYear": 2001
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "chad-cota"
   },
   {
-    "fullName": "Dennis Harrison",
-    "position": "DL",
+    "fullName": "Dave Zastudil",
+    "position": "P",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ymhxg8rxxoazf0fjpy5f",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h15ktbiagctphhbq4hp8",
     "teamStints": [
       {
-        "teamId": "PHI",
-        "startYear": 1978,
-        "endYear": 1984
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2005
       },
       {
-        "teamId": "ATL",
-        "startYear": 1986,
-        "endYear": 1986
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2009
       },
       {
-        "teamId": "SF",
-        "startYear": 1986,
-        "endYear": 1986
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 1987,
-        "endYear": 1987
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2014
       }
     ],
-    "id": "dennis-harrison"
+    "id": "dave-zastudil"
   },
   {
     "fullName": "Don Smith",
@@ -80890,6 +87915,30 @@ export const GENERATED_PLAYERS = [
     "id": "felix-wright"
   },
   {
+    "fullName": "Ivory Sully",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qzdk92spd8wjnlygvczo",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1979,
+        "endYear": 1984
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1985,
+        "endYear": 1986
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "ivory-sully"
+  },
+  {
     "fullName": "James Reed",
     "position": "DL",
     "difficulty": "impossible",
@@ -80933,13 +87982,37 @@ export const GENERATED_PLAYERS = [
     "id": "jeris-white"
   },
   {
+    "fullName": "Jerry Gray",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qstfl0elyrer3hv5h8xv",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1985,
+        "endYear": 1991
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "jerry-gray"
+  },
+  {
     "fullName": "Jim Bailey",
     "position": "DL",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/szmq51rfe90yfdefmt2g",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1974
       },
@@ -80992,7 +88065,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/m1kh8fv0pwof7fzvog1u",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1973,
         "endYear": 1973
       },
@@ -81063,13 +88136,37 @@ export const GENERATED_PLAYERS = [
     "id": "keith-taylor"
   },
   {
+    "fullName": "Kenny Hill",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kdylbzj8ghwlbqutbize",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1981,
+        "endYear": 1983
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1984,
+        "endYear": 1988
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "kenny-hill"
+  },
+  {
     "fullName": "Kurt Allerman",
     "position": "LB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a5s2vjhjpwrhm7apmjp5",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1977,
         "endYear": 1979
       },
@@ -81079,7 +88176,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1982,
         "endYear": 1984
       },
@@ -81092,33 +88189,23 @@ export const GENERATED_PLAYERS = [
     "id": "kurt-allerman"
   },
   {
-    "fullName": "Lonnie Young",
-    "position": "DB",
+    "fullName": "L.J. Smith",
+    "position": "TE",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/m4vszkenxbhgam3zrupi",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e2frps7e7cjdgufbtjl3",
     "teamStints": [
       {
-        "teamId": "LAR",
-        "startYear": 1985,
-        "endYear": 1987
+        "teamId": "PHI",
+        "startYear": 2003,
+        "endYear": 2008
       },
       {
-        "teamId": "NYJ",
-        "startYear": 1991,
-        "endYear": 1993
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1994,
-        "endYear": 1994
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1995,
-        "endYear": 1996
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2009
       }
     ],
-    "id": "lonnie-young"
+    "id": "l-j-smith"
   },
   {
     "fullName": "Matt Haack",
@@ -81176,7 +88263,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ikse0njgggzfpgreqxbk",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1975
       },
@@ -81200,7 +88287,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mvkuwh5gdnxoielc8dqw",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1982
       },
@@ -81216,30 +88303,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-dawson"
-  },
-  {
-    "fullName": "Mike Fanning",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mt0j12pn9nsm6o61rfgp",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1975,
-        "endYear": 1981
-      },
-      {
-        "teamId": "DET",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1984,
-        "endYear": 1984
-      }
-    ],
-    "id": "mike-fanning"
   },
   {
     "fullName": "Mike Pennel",
@@ -81325,6 +88388,35 @@ export const GENERATED_PLAYERS = [
     "id": "neal-colzie"
   },
   {
+    "fullName": "Odis McKinney",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p7eos0putwsj4ti10p0a",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1978,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1984
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1986
+      }
+    ],
+    "id": "odis-mckinney"
+  },
+  {
     "fullName": "Paul Grasmanis",
     "position": "DL",
     "difficulty": "impossible",
@@ -81365,7 +88457,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1977,
         "endYear": 1979
       },
@@ -81408,7 +88500,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xnczrieszwryvlonqr3q",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1975
       },
@@ -81570,6 +88662,25 @@ export const GENERATED_PLAYERS = [
     "id": "tim-newton"
   },
   {
+    "fullName": "Tom Knight",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fqoxy8zt57r7iwzjheok",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1997,
+        "endYear": 2001
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2003
+      }
+    ],
+    "id": "tom-knight"
+  },
+  {
     "fullName": "Toni Fritsch",
     "position": "K",
     "difficulty": "hard",
@@ -81591,7 +88702,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1980
       }
@@ -81608,6 +88719,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2000,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
       },
       {
         "teamId": "CAR",
@@ -81787,6 +88903,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "darren-hambrick"
@@ -81817,13 +88938,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Kevin Johnson",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gva3rrox0rphgqpgjf0k",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/angbwdo262bne7lhuobx",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -81868,6 +88989,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "KC",
         "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2006,
         "endYear": 2006
       }
     ],
@@ -82011,6 +89142,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xvwaij6nxd1we6wzqwjz",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "CHI",
         "startYear": 2006,
         "endYear": 2007
@@ -82030,7 +89166,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cs3gvdgzm6dvr2egurrw",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1972
       },
@@ -82080,35 +89216,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brian-davis"
-  },
-  {
-    "fullName": "Cedric Mack",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ect15lvxl6zdupdgglkg",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1983,
-        "endYear": 1987
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1991,
-        "endYear": 1991
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1992,
-        "endYear": 1992
-      },
-      {
-        "teamId": "NO",
-        "startYear": 1992,
-        "endYear": 1993
-      }
-    ],
-    "id": "cedric-mack"
   },
   {
     "fullName": "Christian Harris",
@@ -82198,6 +89305,64 @@ export const GENERATED_PLAYERS = [
     "id": "darrien-gordon"
   },
   {
+    "fullName": "Dave Lewis",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hpb8gmh4bqf4qf1j1wm9",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 1970,
+        "endYear": 1973
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1977,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1983
+      }
+    ],
+    "id": "dave-lewis"
+  },
+  {
+    "fullName": "Donald Evans",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fvimguqpmzxnshwg9zzx",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 1990,
+        "endYear": 1993
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1994,
+        "endYear": 1995
+      }
+    ],
+    "id": "donald-evans"
+  },
+  {
     "fullName": "Donald Lee",
     "position": "TE",
     "difficulty": "hard",
@@ -82228,7 +89393,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rbtf12snh4j6qdq1sbtg",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1971,
         "endYear": 1973
       },
@@ -82285,33 +89450,33 @@ export const GENERATED_PLAYERS = [
     "id": "jerome-henderson"
   },
   {
-    "fullName": "Johnny Hekker",
-    "position": "P",
-    "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gtstrg1omtitvnelgbyh",
+    "fullName": "Jim Cheyunski",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b0o4wol3rqk4nhcv9qjn",
     "teamStints": [
       {
-        "teamId": "LAR",
-        "startYear": 2016,
-        "endYear": 2021
+        "teamId": "NE",
+        "startYear": 1970,
+        "endYear": 1972
       },
       {
-        "teamId": "CAR",
-        "startYear": 2022,
-        "endYear": 2024
+        "teamId": "BUF",
+        "startYear": 1973,
+        "endYear": 1974
       },
       {
-        "teamId": "TEN",
-        "startYear": 2025,
-        "endYear": 2025
+        "teamId": "IND",
+        "startYear": 1975,
+        "endYear": 1976
       },
       {
-        "teamId": "MIN",
-        "startYear": 2026,
-        "endYear": null
+        "teamId": "GB",
+        "startYear": 1977,
+        "endYear": 1977
       }
     ],
-    "id": "johnny-hekker"
+    "id": "jim-cheyunski"
   },
   {
     "fullName": "Ken Stone",
@@ -82335,7 +89500,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1977,
         "endYear": 1980
       }
@@ -82372,6 +89537,45 @@ export const GENERATED_PLAYERS = [
     "id": "mat-mcbriar"
   },
   {
+    "fullName": "Odie Harris",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v4h7ovbu5c99gbimn7ll",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1988,
+        "endYear": 1990
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1994
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "odie-harris"
+  },
+  {
     "fullName": "Riley Dixon",
     "position": "P",
     "difficulty": "hard",
@@ -82404,6 +89608,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "riley-dixon"
+  },
+  {
+    "fullName": "Roland Mitchell",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mykzmcu4ft9imqlgarn9",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1991,
+        "endYear": 1994
+      }
+    ],
+    "id": "roland-mitchell"
   },
   {
     "fullName": "Steve Preece",
@@ -82502,6 +89735,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2011
       }
     ],
     "id": "derrick-ward"
@@ -82558,7 +89796,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2023,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "l-j-collier"
@@ -82572,7 +89810,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "DET",
@@ -82728,6 +89966,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2023,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "andrew-billings"
@@ -82861,7 +90104,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -82870,13 +90113,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Danny Shelton",
-    "position": "DL",
+    "position": "NT",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gdnebqlim09o1dpbs1dz",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nfwolstt4lyn2i7ct5b1",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -82977,7 +90220,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1982,
         "endYear": 1982
       },
@@ -83065,6 +90308,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "MIN",
         "startYear": 2014,
         "endYear": 2014
@@ -83076,6 +90324,74 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jasper-brinkley"
+  },
+  {
+    "fullName": "Jeff Severson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ajjked8emlczepcvi5wr",
+    "teamStints": [
+      {
+        "teamId": "WAS",
+        "startYear": 1972,
+        "endYear": 1972
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1973,
+        "endYear": 1974
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1975,
+        "endYear": 1975
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1976,
+        "endYear": 1977
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1979,
+        "endYear": 1979
+      }
+    ],
+    "id": "jeff-severson"
+  },
+  {
+    "fullName": "Jim Skow",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wgefsbjzibfri929b2t0",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 1986,
+        "endYear": 1989
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "jim-skow"
   },
   {
     "fullName": "Lonnie Johnson",
@@ -83332,7 +90648,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1994
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1995,
         "endYear": 1995
       },
@@ -83389,6 +90705,25 @@ export const GENERATED_PLAYERS = [
     "id": "steve-weatherford"
   },
   {
+    "fullName": "Trent Richardson",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e8vkwxe73kj1p4v1ij5e",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2013
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2013,
+        "endYear": 2014
+      }
+    ],
+    "id": "trent-richardson"
+  },
+  {
     "fullName": "Troy Edwards",
     "position": "WR",
     "difficulty": "impossible",
@@ -83398,6 +90733,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 1999,
         "endYear": 2001
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
@@ -83544,13 +90884,8 @@ export const GENERATED_PLAYERS = [
         "endYear": 1994
       },
       {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1995,
         "endYear": 2003
       }
     ],
@@ -83565,10 +90900,15 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "DAL",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
         "startYear": 2004,
         "endYear": 2004
       },
@@ -83624,6 +90964,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2004
       }
     ],
     "id": "rich-coady"
@@ -83781,11 +91126,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Darren Fells",
     "position": "TE",
     "difficulty": "medium",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k9wphsxmikgerwiokwzi",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eh0rbweg4wbzgzpvprnv",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -83860,6 +91205,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2005,
         "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2011
       },
       {
         "teamId": "DEN",
@@ -83938,10 +91288,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Ma'ake Kemoeatu",
-    "position": "DT",
+    "position": "NT",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yoxcojo4mnrsdteh9v7w",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2005
+      },
       {
         "teamId": "CAR",
         "startYear": 2006,
@@ -83951,9 +91306,58 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "ma-ake-kemoeatu"
+  },
+  {
+    "fullName": "Mark Merrill",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qblopnveeee9huu9ajlv",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1978,
+        "endYear": 1978
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1981,
+        "endYear": 1982
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1983,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1984,
+        "endYear": 1984
+      }
+    ],
+    "id": "mark-merrill"
   },
   {
     "fullName": "Matt Ammendola",
@@ -84025,10 +91429,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Terrence Brooks",
-    "position": "DB",
+    "position": "FS",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fifjyles3uzooops7ofk",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o21l87qgeibe1alrmzym",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
+        "endYear": 2015
+      },
       {
         "teamId": "PHI",
         "startYear": 2016,
@@ -84131,6 +91540,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2002
       },
       {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
         "teamId": "NYJ",
         "startYear": 2005,
         "endYear": 2005
@@ -84194,6 +91608,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "HOU",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "TB",
         "startYear": 2016,
         "endYear": 2016
@@ -84253,6 +91672,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "manti-te-o"
+  },
+  {
+    "fullName": "Steve Slaton",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o7d06in3cz3cm51iivg0",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2011
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "steve-slaton"
   },
   {
     "fullName": "Ty Johnson",
@@ -84341,25 +91779,6 @@ export const GENERATED_PLAYERS = [
     "id": "bryan-cook"
   },
   {
-    "fullName": "Burgess Owens",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ikysregbz4af9qfnd088",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 1973,
-        "endYear": 1979
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1980,
-        "endYear": 1981
-      }
-    ],
-    "id": "burgess-owens"
-  },
-  {
     "fullName": "Chester Marcol",
     "position": "K",
     "difficulty": "hard",
@@ -84371,7 +91790,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1980
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1980
       }
@@ -84420,6 +91839,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dave-edwards"
+  },
+  {
+    "fullName": "David Galloway",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ed43vbfsgzxaueanz5ux",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1982,
+        "endYear": 1989
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "david-galloway"
   },
   {
     "fullName": "David Logan",
@@ -84509,7 +91947,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1985
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1986,
         "endYear": 1986
       }
@@ -84574,6 +92012,25 @@ export const GENERATED_PLAYERS = [
     "id": "gary-burley"
   },
   {
+    "fullName": "Gary Green",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eddzsdtweelnt5qzs7x4",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 1977,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1984,
+        "endYear": 1985
+      }
+    ],
+    "id": "gary-green"
+  },
+  {
     "fullName": "Gary Reasons",
     "position": "LB",
     "difficulty": "impossible",
@@ -84618,7 +92075,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/f3lam5rcbea8uxm7on9l",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1982
       },
@@ -84719,7 +92176,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sog3czbmyrfeo0pubt44",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1979,
         "endYear": 1985
       },
@@ -84729,7 +92186,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1986
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1987
       }
@@ -84799,6 +92256,25 @@ export const GENERATED_PLAYERS = [
     "id": "john-mendenhall"
   },
   {
+    "fullName": "John Outlaw",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b9mmto0jtizfgojd0pkf",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1970,
+        "endYear": 1972
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1973,
+        "endYear": 1978
+      }
+    ],
+    "id": "john-outlaw"
+  },
+  {
     "fullName": "John Turner",
     "position": "DB",
     "difficulty": "impossible",
@@ -84853,7 +92329,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gnks2p7bui8tgjznj9lo",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1984,
         "endYear": 1992
       },
@@ -84872,7 +92348,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dp0gtjmsx0fn8o1c03yy",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1990,
         "endYear": 1994
       },
@@ -84891,13 +92367,23 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tcotahbkwz2zdmres0r6",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1983,
         "endYear": 1987
       },
       {
         "teamId": "BUF",
         "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1989,
         "endYear": 1991
       }
     ],
@@ -84915,7 +92401,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1975,
         "endYear": 1978
       }
@@ -85015,7 +92501,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ejyqicrttocn4qzhwu8i",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1975
       },
@@ -85031,6 +92517,44 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mark-cotney"
+  },
+  {
+    "fullName": "Michael Downs",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hmwe8mhvm9pkzdwebcgs",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1981,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "michael-downs"
+  },
+  {
+    "fullName": "Mike Davis",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/t6cdos1gbq91hlqukiln",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1978,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "mike-davis-2"
   },
   {
     "fullName": "Mike Douglass",
@@ -85071,6 +92595,25 @@ export const GENERATED_PLAYERS = [
     "id": "mike-fox"
   },
   {
+    "fullName": "Mike Wilcher",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/siipisfww5hhfqpmphvf",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "mike-wilcher"
+  },
+  {
     "fullName": "Moise Fokou",
     "position": "OLB",
     "difficulty": "impossible",
@@ -85098,6 +92641,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "moise-fokou"
+  },
+  {
+    "fullName": "Monte Jackson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xlsxlaauv6g9bmbgcbeq",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1975,
+        "endYear": 1977
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1978,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1983
+      }
+    ],
+    "id": "monte-jackson"
   },
   {
     "fullName": "Nick Harris",
@@ -85135,17 +92702,36 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kpgziiyutsxtvicusf8p",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1971,
         "endYear": 1976
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1977,
         "endYear": 1979
       }
     ],
     "id": "norm-thompson"
+  },
+  {
+    "fullName": "Otis Wilson",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/khvppdt7mrvnyzq6a6vs",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1980,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "otis-wilson"
   },
   {
     "fullName": "Phil Wise",
@@ -85234,6 +92820,25 @@ export const GENERATED_PLAYERS = [
     "id": "richard-neal"
   },
   {
+    "fullName": "Riki Ellison",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bnjhurgbrszu8rtekbyc",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1983,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1992
+      }
+    ],
+    "id": "riki-ellison"
+  },
+  {
     "fullName": "Robert Blackmon",
     "position": "DB",
     "difficulty": "impossible",
@@ -85251,25 +92856,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "robert-blackmon"
-  },
-  {
-    "fullName": "Rod Perry",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ff3n3i3fzw5fvrct17fk",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1975,
-        "endYear": 1981
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1983,
-        "endYear": 1984
-      }
-    ],
-    "id": "rod-perry"
   },
   {
     "fullName": "Ron McDole",
@@ -85291,23 +92877,23 @@ export const GENERATED_PLAYERS = [
     "id": "ron-mcdole"
   },
   {
-    "fullName": "Sean Jones",
-    "position": "DL",
+    "fullName": "Shane Conlan",
+    "position": "LB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pzrfhrlxxlxvym6zssl2",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oy3rqkclqqthtn7bzid7",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1988,
-        "endYear": 1993
+        "teamId": "BUF",
+        "startYear": 1987,
+        "endYear": 1992
       },
       {
-        "teamId": "GB",
-        "startYear": 1994,
-        "endYear": 1996
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1995
       }
     ],
-    "id": "sean-jones-2"
+    "id": "shane-conlan"
   },
   {
     "fullName": "Skip Vanderbundt",
@@ -85335,7 +92921,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rpnwu7puaengeyxh0wgv",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1980,
         "endYear": 1986
       },
@@ -85346,25 +92932,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "stafford-mays"
-  },
-  {
-    "fullName": "Tim Fox",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jdmydp4lk5lxjlstj601",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1976,
-        "endYear": 1981
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1982,
-        "endYear": 1984
-      }
-    ],
-    "id": "tim-fox"
   },
   {
     "fullName": "Tim Tebow",
@@ -85440,7 +93007,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1983
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1984,
         "endYear": 1985
       }
@@ -85480,25 +93047,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tony-carter"
-  },
-  {
-    "fullName": "Tony Woods",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bgsqy0uwzikg1fd1g9u6",
-    "teamStints": [
-      {
-        "teamId": "SEA",
-        "startYear": 1987,
-        "endYear": 1992
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1994,
-        "endYear": 1996
-      }
-    ],
-    "id": "tony-woods"
   },
   {
     "fullName": "Vaughan Johnson",
@@ -85719,6 +93267,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/drqyhwqbkrxrckhxkug2",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2013,
+        "endYear": 2014
+      },
+      {
         "teamId": "LV",
         "startYear": 2014,
         "endYear": 2015
@@ -85759,13 +93312,18 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Seneca Wallace",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ytykneqxk0xwqhcrbq9a",
     "teamStints": [
       {
         "teamId": "SEA",
         "startYear": 2003,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2011
       },
       {
         "teamId": "GB",
@@ -85781,6 +93339,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "medium",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nc4aoax8j5mnnrjewu7p",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2015
+      },
       {
         "teamId": "ATL",
         "startYear": 2016,
@@ -85963,6 +93526,30 @@ export const GENERATED_PLAYERS = [
     "id": "casey-merrill"
   },
   {
+    "fullName": "Cliff Thrift",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vwmmfcrgwuypsndbd5u0",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1979,
+        "endYear": 1984
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1986
+      }
+    ],
+    "id": "cliff-thrift"
+  },
+  {
     "fullName": "D.J. Johnson",
     "position": "DB",
     "difficulty": "impossible",
@@ -85990,6 +93577,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "d-j-johnson"
+  },
+  {
+    "fullName": "Dave Stalls",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mysr3zbmxaeyrn0ktsn5",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1977,
+        "endYear": 1979
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1980,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1985
+      }
+    ],
+    "id": "dave-stalls"
   },
   {
     "fullName": "David Howard",
@@ -86080,6 +93701,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bmknyivfp6aevb6yrm1m",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2009
+      },
+      {
         "teamId": "TEN",
         "startYear": 2011,
         "endYear": 2011
@@ -86144,6 +93770,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "george-cumby"
+  },
+  {
+    "fullName": "Gerald Robinson",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/enbl5v7e9qqcaofuqrcz",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1986,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1989,
+        "endYear": 1990
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1994
+      }
+    ],
+    "id": "gerald-robinson"
   },
   {
     "fullName": "Giorgio Tavecchio",
@@ -86213,6 +93863,30 @@ export const GENERATED_PLAYERS = [
     "id": "isiah-pacheco"
   },
   {
+    "fullName": "James Washington",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z7uapqywipf0llegwzqo",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1990,
+        "endYear": 1994
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "james-washington"
+  },
+  {
     "fullName": "Jarvis Jenkins",
     "position": "DE",
     "difficulty": "impossible",
@@ -86266,6 +93940,59 @@ export const GENERATED_PLAYERS = [
     "id": "jesse-campbell"
   },
   {
+    "fullName": "Jim Laughlin",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ep6ycdyd86udex2jxd5t",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 1980,
+        "endYear": 1982
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1984,
+        "endYear": 1986
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "jim-laughlin"
+  },
+  {
+    "fullName": "Jimmie Jones",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wkyk2wgw4ewuz2n2vssc",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1990,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1996
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "jimmie-jones"
+  },
+  {
     "fullName": "John Leypoldt",
     "position": "K",
     "difficulty": "impossible",
@@ -86306,7 +94033,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1976
       },
@@ -86412,7 +94139,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1974,
         "endYear": 1977
       }
@@ -86509,6 +94236,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kevin-murphy"
+  },
+  {
+    "fullName": "Kirby Jackson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/asv4zclv6avxgg3zzjkz",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1988,
+        "endYear": 1993
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "kirby-jackson"
   },
   {
     "fullName": "Leonard Wheeler",
@@ -86613,7 +94364,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yrelqfgl5p2uxoqybza9",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1987
       },
@@ -86653,6 +94404,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "milton-mack"
+  },
+  {
+    "fullName": "Nick Eason",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xkbecs7spae27so0qrka",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2006
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2007,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "nick-eason"
   },
   {
     "fullName": "Nick Mike-Mayer",
@@ -86719,7 +94494,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1975
       },
@@ -86730,6 +94505,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "pete-barnes"
+  },
+  {
+    "fullName": "Phillip Taylor",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ozhhfiqzpzwp2bxizjpq",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2014
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2017,
+        "endYear": 2018
+      }
+    ],
+    "id": "phillip-taylor"
   },
   {
     "fullName": "Pio Sagapolutele",
@@ -86804,6 +94598,30 @@ export const GENERATED_PLAYERS = [
     "id": "rhett-hall"
   },
   {
+    "fullName": "Richard Bishop",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wwnr9ywddsutq06rprk7",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 1976,
+        "endYear": 1981
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1983
+      }
+    ],
+    "id": "richard-bishop"
+  },
+  {
     "fullName": "Rick Graf",
     "position": "LB",
     "difficulty": "impossible",
@@ -86815,7 +94633,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1990
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1991,
         "endYear": 1992
       },
@@ -86852,6 +94670,25 @@ export const GENERATED_PLAYERS = [
     "id": "rick-kingrea"
   },
   {
+    "fullName": "Shaun King",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zzxt4aw9qbfahfhixu7v",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1999,
+        "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "shaun-king"
+  },
+  {
     "fullName": "Steve Kiner",
     "position": "LB",
     "difficulty": "impossible",
@@ -86873,7 +94710,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1974,
         "endYear": 1978
       }
@@ -86897,9 +94734,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "JAX",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2004
       },
       {
         "teamId": "NO",
@@ -86950,7 +94797,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1980,
         "endYear": 1981
       },
@@ -86960,7 +94807,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1982
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1982,
         "endYear": 1982
       },
@@ -86984,7 +94831,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1982
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1982,
         "endYear": 1986
       },
@@ -87022,7 +94869,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k4bw1foogv8la9oypiih",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1981,
         "endYear": 1984
       },
@@ -87038,6 +94885,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "willie-tullis"
+  },
+  {
+    "fullName": "Wymon Henderson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sjlb0nwokjhbknlp2cvd",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 1989,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1994
+      }
+    ],
+    "id": "wymon-henderson"
   },
   {
     "fullName": "Zach Wilson",
@@ -87155,6 +95026,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2012,
         "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "john-carlson"
@@ -87165,6 +95041,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/acm0ymhqdzqxdibwjphv",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
+      },
       {
         "teamId": "MIA",
         "startYear": 2015,
@@ -87247,6 +95128,25 @@ export const GENERATED_PLAYERS = [
     "id": "ramon-humber"
   },
   {
+    "fullName": "Shaun Cody",
+    "position": "NT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h7yfatovskrp1ursgkr9",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2012
+      }
+    ],
+    "id": "shaun-cody"
+  },
+  {
     "fullName": "Alex Collins",
     "position": "RB",
     "difficulty": "hard",
@@ -87277,13 +95177,18 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/m8oocp4p9nskilnakgnw",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2013
+      },
+      {
         "teamId": "DAL",
         "startYear": 2014,
         "endYear": 2015
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -87298,6 +95203,93 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brandon-weeden"
+  },
+  {
+    "fullName": "Brett Faryniarz",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dvao2z9fqrh4ng9kjwki",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1991
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "brett-faryniarz"
+  },
+  {
+    "fullName": "Cal Peterson",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/t5a7zrnoxls6usbibo2m",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1974,
+        "endYear": 1975
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1976,
+        "endYear": 1976
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1979,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1982,
+        "endYear": 1982
+      }
+    ],
+    "id": "cal-peterson"
+  },
+  {
+    "fullName": "Carl Carter",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/grqt2mmcopdh6u1sd12q",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1986,
+        "endYear": 1989
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1990,
+        "endYear": 1991
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "carl-carter"
   },
   {
     "fullName": "Cedric Figaro",
@@ -87445,6 +95437,50 @@ export const GENERATED_PLAYERS = [
     "id": "dedrick-dodge"
   },
   {
+    "fullName": "Greg Westbrooks",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zqjxuyo0a2vg84htotan",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 1975,
+        "endYear": 1977
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1978,
+        "endYear": 1978
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1978,
+        "endYear": 1978
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1979,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1981
+      }
+    ],
+    "id": "greg-westbrooks"
+  },
+  {
     "fullName": "Henry Jones",
     "position": "DB",
     "difficulty": "impossible",
@@ -87467,40 +95503,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "henry-jones"
-  },
-  {
-    "fullName": "Jeff Severson",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ajjked8emlczepcvi5wr",
-    "teamStints": [
-      {
-        "teamId": "WAS",
-        "startYear": 1972,
-        "endYear": 1972
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1973,
-        "endYear": 1974
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1975,
-        "endYear": 1975
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1976,
-        "endYear": 1977
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1979,
-        "endYear": 1979
-      }
-    ],
-    "id": "jeff-severson"
   },
   {
     "fullName": "Jerrol Williams",
@@ -87530,35 +95532,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jerrol-williams"
-  },
-  {
-    "fullName": "Jim Cheyunski",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b0o4wol3rqk4nhcv9qjn",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1971,
-        "endYear": 1972
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1973,
-        "endYear": 1974
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 1975,
-        "endYear": 1976
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1977,
-        "endYear": 1977
-      }
-    ],
-    "id": "jim-cheyunski"
   },
   {
     "fullName": "Jim Miller",
@@ -87593,64 +95566,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jim-miller"
-  },
-  {
-    "fullName": "Jim Skow",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wgefsbjzibfri929b2t0",
-    "teamStints": [
-      {
-        "teamId": "CIN",
-        "startYear": 1986,
-        "endYear": 1989
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1990,
-        "endYear": 1990
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1991,
-        "endYear": 1991
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1992,
-        "endYear": 1992
-      }
-    ],
-    "id": "jim-skow"
-  },
-  {
-    "fullName": "John Booty",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oxtkb143pyyhlanhhljx",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 1988,
-        "endYear": 1990
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1991,
-        "endYear": 1992
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1994,
-        "endYear": 1994
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "john-booty"
   },
   {
     "fullName": "Justin Evans",
@@ -87765,6 +95680,45 @@ export const GENERATED_PLAYERS = [
     "id": "larry-marshall"
   },
   {
+    "fullName": "Matt Turk",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g9hjqcjp518hlr6albuw",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2010
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "matt-turk"
+  },
+  {
     "fullName": "Matt Vanderbeek",
     "position": "LB",
     "difficulty": "impossible",
@@ -87843,40 +95797,6 @@ export const GENERATED_PLAYERS = [
     "id": "maurice-harvey"
   },
   {
-    "fullName": "Michael Brim",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nnn8bjyhci9c79gmxirn",
-    "teamStints": [
-      {
-        "teamId": "MIN",
-        "startYear": 1989,
-        "endYear": 1989
-      },
-      {
-        "teamId": "DET",
-        "startYear": 1989,
-        "endYear": 1989
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1990,
-        "endYear": 1990
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1991,
-        "endYear": 1992
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 1993,
-        "endYear": 1995
-      }
-    ],
-    "id": "michael-brim"
-  },
-  {
     "fullName": "Mike Croel",
     "position": "LB",
     "difficulty": "impossible",
@@ -87904,35 +95824,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "mike-croel"
-  },
-  {
-    "fullName": "Odie Harris",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v4h7ovbu5c99gbimn7ll",
-    "teamStints": [
-      {
-        "teamId": "TB",
-        "startYear": 1988,
-        "endYear": 1990
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1991,
-        "endYear": 1992
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 1994,
-        "endYear": 1994
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "odie-harris"
   },
   {
     "fullName": "Olamide Zaccheaus",
@@ -87967,35 +95858,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "olamide-zaccheaus"
-  },
-  {
-    "fullName": "Paul Butcher",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yv4w2pdp8igxt1pk86vk",
-    "teamStints": [
-      {
-        "teamId": "DET",
-        "startYear": 1986,
-        "endYear": 1988
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1993,
-        "endYear": 1994
-      },
-      {
-        "teamId": "CAR",
-        "startYear": 1995,
-        "endYear": 1995
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1996,
-        "endYear": 1996
-      }
-    ],
-    "id": "paul-butcher"
   },
   {
     "fullName": "Rashad Weaver",
@@ -88062,6 +95924,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o8vpnpaor4vbfovmxsuo",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
         "teamId": "GB",
         "startYear": 2005,
         "endYear": 2005
@@ -88073,6 +95940,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "robert-thomas"
+  },
+  {
+    "fullName": "Robert Williams",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/taapdalkmzvcqjvxwiga",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1987,
+        "endYear": 1991
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1992
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 1992,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "robert-williams"
   },
   {
     "fullName": "Rod Smith",
@@ -88107,6 +96008,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "rod-smith"
+  },
+  {
+    "fullName": "Sam Anno",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fn4o6slj6eulbwxrztvx",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "TB",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "sam-anno"
   },
   {
     "fullName": "Skip McClendon",
@@ -88146,6 +96076,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "skip-mcclendon"
+  },
+  {
+    "fullName": "Steve Heiden",
+    "position": "TE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gbtrxatwcauhazpjejcr",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1999,
+        "endYear": 2001
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2009
+      }
+    ],
+    "id": "steve-heiden"
   },
   {
     "fullName": "T.Y. McGill",
@@ -88292,35 +96241,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "will-dissly"
-  },
-  {
-    "fullName": "Willie Broughton",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ptysndt5y8jgzp6y0d5y",
-    "teamStints": [
-      {
-        "teamId": "IND",
-        "startYear": 1985,
-        "endYear": 1986
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 1989,
-        "endYear": 1990
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1994,
-        "endYear": 1994
-      },
-      {
-        "teamId": "NO",
-        "startYear": 1995,
-        "endYear": 1996
-      }
-    ],
-    "id": "willie-broughton"
   },
   {
     "fullName": "Albert Wilson",
@@ -88517,10 +96437,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Larry Grant",
-    "position": "ILB",
+    "position": "LB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xaqfttcm5bfmupwxdwix",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2010
+      },
       {
         "teamId": "SF",
         "startYear": 2011,
@@ -88735,7 +96660,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1976,
         "endYear": 1976
       },
@@ -88851,7 +96776,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1982,
         "endYear": 1982
       }
@@ -88893,6 +96818,59 @@ export const GENERATED_PLAYERS = [
     "id": "josh-jones"
   },
   {
+    "fullName": "Keith Rucker",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rt0meta2xijjooh85gn8",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1992,
+        "endYear": 1993
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1994,
+        "endYear": 1995
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 1996,
+        "endYear": 1996
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1997,
+        "endYear": 1997
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1997,
+        "endYear": 1997
+      }
+    ],
+    "id": "keith-rucker"
+  },
+  {
+    "fullName": "LaRod Stephens-Howling",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ohayv3pdgsxrtfig8bgm",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "larod-stephens-howling"
+  },
+  {
     "fullName": "Larry Centers",
     "position": "RB",
     "difficulty": "hard",
@@ -88900,7 +96878,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1990,
         "endYear": 1998
       },
       {
@@ -88922,45 +96900,6 @@ export const GENERATED_PLAYERS = [
     "id": "larry-centers"
   },
   {
-    "fullName": "Mark Merrill",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qblopnveeee9huu9ajlv",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 1978,
-        "endYear": 1978
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 1979,
-        "endYear": 1979
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1979,
-        "endYear": 1979
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1981,
-        "endYear": 1982
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1982,
-        "endYear": 1982
-      },
-      {
-        "teamId": "BUF",
-        "startYear": 1983,
-        "endYear": 1984
-      }
-    ],
-    "id": "mark-merrill"
-  },
-  {
     "fullName": "Mike Bragg",
     "position": "P",
     "difficulty": "impossible",
@@ -88972,7 +96911,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1980,
         "endYear": 1980
       }
@@ -89076,6 +97015,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "roy-lopez"
@@ -89112,7 +97056,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -89471,6 +97415,25 @@ export const GENERATED_PLAYERS = [
     "id": "leigh-torrence"
   },
   {
+    "fullName": "Sherrick McManis",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/btf33jteyvknqo0djxtm",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2012,
+        "endYear": 2020
+      }
+    ],
+    "id": "sherrick-mcmanis"
+  },
+  {
     "fullName": "Terance Mathis",
     "position": "WR",
     "difficulty": "hard",
@@ -89558,30 +97521,6 @@ export const GENERATED_PLAYERS = [
     "id": "darius-holland"
   },
   {
-    "fullName": "Dave Lewis",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hpb8gmh4bqf4qf1j1wm9",
-    "teamStints": [
-      {
-        "teamId": "CIN",
-        "startYear": 1970,
-        "endYear": 1973
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1977,
-        "endYear": 1981
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1982,
-        "endYear": 1982
-      }
-    ],
-    "id": "dave-lewis"
-  },
-  {
     "fullName": "David Mayo",
     "position": "MLB",
     "difficulty": "impossible",
@@ -89641,6 +97580,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "LAR",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "LV",
         "startYear": 2015,
         "endYear": 2016
@@ -89692,6 +97636,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2005,
         "endYear": 2005
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2009
       },
       {
         "teamId": "KC",
@@ -90041,7 +97990,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       }
     ],
@@ -90056,7 +98005,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NYJ",
         "startYear": 2007,
+        "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
       },
       {
         "teamId": "MIA",
@@ -90088,6 +98052,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
         "teamId": "IND",
         "startYear": 2012,
         "endYear": 2014
@@ -90097,13 +98066,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Josh Mauro",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l0hwkcjms5ncoppejkn7",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dsnqho672kqis1vajzhq",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -90128,6 +98097,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "josh-mauro"
+  },
+  {
+    "fullName": "Kaluka Maiava",
+    "position": "ILB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rccc18isxgtcppjs7g6d",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2013,
+        "endYear": 2014
+      }
+    ],
+    "id": "kaluka-maiava"
   },
   {
     "fullName": "Kavell Conner",
@@ -90347,13 +98335,32 @@ export const GENERATED_PLAYERS = [
     "id": "allan-ellis"
   },
   {
+    "fullName": "Anthony Smith",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qv48sxxsk78gedmbzygw",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1991,
+        "endYear": 1997
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2026,
+        "endYear": null
+      }
+    ],
+    "id": "anthony-smith-2"
+  },
+  {
     "fullName": "Audray McMillian",
     "position": "DB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k98f8nsulfi3qbsg1qte",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1987
       },
@@ -90364,25 +98371,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "audray-mcmillian"
-  },
-  {
-    "fullName": "Aundray Bruce",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pbijjuljh7qglcpjj853",
-    "teamStints": [
-      {
-        "teamId": "ATL",
-        "startYear": 1988,
-        "endYear": 1991
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1995,
-        "endYear": 1998
-      }
-    ],
-    "id": "aundray-bruce"
   },
   {
     "fullName": "Bill Bradley",
@@ -90396,7 +98384,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1977,
         "endYear": 1977
       }
@@ -90453,7 +98441,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1974,
         "endYear": 1978
       }
@@ -90507,11 +98495,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Breshad Perriman",
     "position": "WR",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bne5jiks934q5elln42g",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zpwov1n42bi5lsqdlxhh",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -90725,23 +98713,23 @@ export const GENERATED_PLAYERS = [
     "id": "dante-jones"
   },
   {
-    "fullName": "Dave Duerson",
+    "fullName": "David Fulcher",
     "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fuilnprtjkg9vmnwrldy",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ph6mtedgygqfprfrq7gc",
     "teamStints": [
       {
-        "teamId": "CHI",
-        "startYear": 1983,
-        "endYear": 1989
+        "teamId": "CIN",
+        "startYear": 1986,
+        "endYear": 1992
       },
       {
-        "teamId": "NYG",
-        "startYear": 1990,
-        "endYear": 1990
+        "teamId": "LV",
+        "startYear": 1993,
+        "endYear": 1993
       }
     ],
-    "id": "dave-duerson"
+    "id": "david-fulcher"
   },
   {
     "fullName": "Dick Jauron",
@@ -90839,42 +98827,13 @@ export const GENERATED_PLAYERS = [
     "id": "don-goode"
   },
   {
-    "fullName": "Donnie Jones",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qds7simibz6lt6ckf5yo",
-    "teamStints": [
-      {
-        "teamId": "SEA",
-        "startYear": 2004,
-        "endYear": 2004
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 2005,
-        "endYear": 2006
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2013,
-        "endYear": 2017
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 2018,
-        "endYear": 2018
-      }
-    ],
-    "id": "donnie-jones"
-  },
-  {
     "fullName": "Doug Smith",
     "position": "DL",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ddewqqxtkytpeppkdm2s",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1987
       },
@@ -90884,7 +98843,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1987
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1988,
         "endYear": 1992
       }
@@ -90935,6 +98894,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qtxat8xwaclkqfkj5lrq",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2013
+      },
       {
         "teamId": "CAR",
         "startYear": 2014,
@@ -91016,13 +98980,32 @@ export const GENERATED_PLAYERS = [
     "id": "ervin-randle"
   },
   {
+    "fullName": "Frank Wattelet",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s8prythag7gr6sjwkmb5",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 1981,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1988
+      }
+    ],
+    "id": "frank-wattelet"
+  },
+  {
     "fullName": "Glenn Montgomery",
     "position": "DL",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/erjv3jyzqud9iuraaniw",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1989,
         "endYear": 1995
       },
@@ -91173,6 +99156,30 @@ export const GENERATED_PLAYERS = [
     "id": "james-harrell"
   },
   {
+    "fullName": "Jim Collins",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tn6ofooihei577gdokbf",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1981,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "jim-collins"
+  },
+  {
     "fullName": "Jim Haslett",
     "position": "LB",
     "difficulty": "impossible",
@@ -91222,6 +99229,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "LAC",
         "startYear": 2003,
         "endYear": 2003
@@ -91252,25 +99264,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "john-holt"
-  },
-  {
-    "fullName": "John Outlaw",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b9mmto0jtizfgojd0pkf",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1971,
-        "endYear": 1972
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1973,
-        "endYear": 1978
-      }
-    ],
-    "id": "john-outlaw"
   },
   {
     "fullName": "John Skorupan",
@@ -91457,7 +99450,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fblrc2oczxo1b1mwhwf5",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1986
       },
@@ -91523,13 +99516,32 @@ export const GENERATED_PLAYERS = [
     "id": "len-walterscheid"
   },
   {
+    "fullName": "Leon White",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zykdhkrrkpkaptvxelwh",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 1986,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1993
+      }
+    ],
+    "id": "leon-white"
+  },
+  {
     "fullName": "Liffort Hobley",
     "position": "DB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nhqgowury60rdnhkfuts",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1985,
         "endYear": 1985
       },
@@ -91710,7 +99722,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/trf8x7omhqc2hw0r3iho",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       },
@@ -91720,7 +99732,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1983
       }
@@ -91739,12 +99751,50 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1978
       }
     ],
     "id": "mike-sensibaugh"
+  },
+  {
+    "fullName": "Milt McColl",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hwbizpfru41lipjq7vyy",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1981,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1988,
+        "endYear": 1988
+      }
+    ],
+    "id": "milt-mccoll"
+  },
+  {
+    "fullName": "Niko Noga",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/f3i8m7bobses6l7yupqx",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1984,
+        "endYear": 1988
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1989,
+        "endYear": 1991
+      }
+    ],
+    "id": "niko-noga"
   },
   {
     "fullName": "Norris Thomas",
@@ -91871,6 +99921,25 @@ export const GENERATED_PLAYERS = [
     "id": "ralph-mcgill"
   },
   {
+    "fullName": "Reggie Kinlaw",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xlr6nppk3k2pexlsrrm3",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1979,
+        "endYear": 1984
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1985,
+        "endYear": 1986
+      }
+    ],
+    "id": "reggie-kinlaw"
+  },
+  {
     "fullName": "Renaldo Turnbull",
     "position": "DL",
     "difficulty": "impossible",
@@ -91896,7 +99965,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kzsjxxhlu8zqc7kifcnt",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1984,
         "endYear": 1990
       },
@@ -91971,6 +100040,25 @@ export const GENERATED_PLAYERS = [
     "id": "ron-cox"
   },
   {
+    "fullName": "Ron Fellows",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cszsqo7g4itxzj0eu15e",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1981,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1988
+      }
+    ],
+    "id": "ron-fellows"
+  },
+  {
     "fullName": "Ron Holmes",
     "position": "DL",
     "difficulty": "impossible",
@@ -91996,7 +100084,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/asnzukdggzm1tj6zquct",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -92006,7 +100094,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1972,
         "endYear": 1972
       },
@@ -92046,6 +100134,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "TB",
         "startYear": 2013,
+        "endYear": 2014
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
         "endYear": 2014
       },
       {
@@ -92097,7 +100190,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1989
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1990,
         "endYear": 1990
       }
@@ -92244,6 +100337,25 @@ export const GENERATED_PLAYERS = [
     "id": "vestee-jackson"
   },
   {
+    "fullName": "Willie Teal",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nerd3tzqtxe2ochftarr",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1980,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "willie-teal"
+  },
+  {
     "fullName": "Amos Zereoue",
     "position": "RB",
     "difficulty": "impossible",
@@ -92296,6 +100408,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2012
       },
       {
         "teamId": "MIA",
@@ -92443,6 +100560,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "ARI",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "IND",
         "startYear": 2012,
         "endYear": 2012
@@ -92536,6 +100658,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kevin-dyson"
+  },
+  {
+    "fullName": "Kevin Kolb",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ebtp5o1rj5hosmncg7iz",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2007,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "kevin-kolb"
   },
   {
     "fullName": "Kevin Pierre-Louis",
@@ -92714,6 +100855,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2008
+      },
+      {
         "teamId": "CIN",
         "startYear": 2009,
         "endYear": 2009
@@ -92761,6 +100907,30 @@ export const GENERATED_PLAYERS = [
     "id": "al-noga"
   },
   {
+    "fullName": "Alex Gordon",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xxcuasm3kqwshf5qatcd",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1987,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1991,
+        "endYear": 1993
+      }
+    ],
+    "id": "alex-gordon"
+  },
+  {
     "fullName": "Andy Hawkins",
     "position": "LB",
     "difficulty": "impossible",
@@ -92783,6 +100953,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "andy-hawkins"
+  },
+  {
+    "fullName": "Anthony Bell",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bu6taxp1zcyyjyp8991j",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1986,
+        "endYear": 1990
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "anthony-bell"
   },
   {
     "fullName": "Autry Beamon",
@@ -92934,6 +101128,30 @@ export const GENERATED_PLAYERS = [
     "id": "byron-darby"
   },
   {
+    "fullName": "Calvin Jones",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rweov71eahovoo6v9x2i",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1973,
+        "endYear": 1976
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1994,
+        "endYear": 1996
+      },
+      {
+        "teamId": "GB",
+        "startYear": 1996,
+        "endYear": 1996
+      }
+    ],
+    "id": "calvin-jones"
+  },
+  {
     "fullName": "Carl Howard",
     "position": "DB",
     "difficulty": "impossible",
@@ -92974,12 +101192,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1975,
         "endYear": 1979
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1980
       }
@@ -93019,6 +101237,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "chris-moore"
+  },
+  {
+    "fullName": "Chuck Cecil",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rs31zumdqpftz63ygymc",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 1988,
+        "endYear": 1992
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "chuck-cecil"
   },
   {
     "fullName": "Chuck Crist",
@@ -93122,6 +101364,40 @@ export const GENERATED_PLAYERS = [
     "id": "derrick-nnadi"
   },
   {
+    "fullName": "Dirk Johnson",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/liuoswqetnmkknz3y0am",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2003,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "dirk-johnson"
+  },
+  {
     "fullName": "Don Reese",
     "position": "DL",
     "difficulty": "impossible",
@@ -93146,30 +101422,6 @@ export const GENERATED_PLAYERS = [
     "id": "don-reese"
   },
   {
-    "fullName": "Donald Evans",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fvimguqpmzxnshwg9zzx",
-    "teamStints": [
-      {
-        "teamId": "PHI",
-        "startYear": 1988,
-        "endYear": 1988
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 1990,
-        "endYear": 1993
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1994,
-        "endYear": 1995
-      }
-    ],
-    "id": "donald-evans"
-  },
-  {
     "fullName": "Duane Benson",
     "position": "LB",
     "difficulty": "impossible",
@@ -93186,7 +101438,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1973
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1974,
         "endYear": 1976
       }
@@ -93242,38 +101494,33 @@ export const GENERATED_PLAYERS = [
     "id": "ed-nelson"
   },
   {
-    "fullName": "Elvis Patterson",
-    "position": "DB",
+    "fullName": "Elvis Franks",
+    "position": "DL",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/smihdmtkipp7xglm9gi7",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o51oqf6lps8q7ogyalas",
     "teamStints": [
       {
-        "teamId": "NYG",
-        "startYear": 1984,
+        "teamId": "CLE",
+        "startYear": 1980,
+        "endYear": 1984
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1986,
         "endYear": 1986
       },
       {
-        "teamId": "LAC",
-        "startYear": 1987,
-        "endYear": 1987
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1987,
-        "endYear": 1987
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1988,
-        "endYear": 1989
-      },
-      {
-        "teamId": "DAL",
-        "startYear": 1993,
-        "endYear": 1993
+        "teamId": "LV",
+        "startYear": 1986,
+        "endYear": 1986
       }
     ],
-    "id": "elvis-patterson"
+    "id": "elvis-franks"
   },
   {
     "fullName": "Ernie Price",
@@ -93305,13 +101552,42 @@ export const GENERATED_PLAYERS = [
     "id": "ernie-price"
   },
   {
+    "fullName": "Frank Stams",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ov5xyx4offfcelhm5gfb",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1992,
+        "endYear": 1994
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1995,
+        "endYear": 1995
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "frank-stams"
+  },
+  {
     "fullName": "George Webster",
     "position": "LB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qtlm0hqlpfs9xzvslo2k",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1972
       },
@@ -93327,45 +101603,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "george-webster"
-  },
-  {
-    "fullName": "Greg Westbrooks",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zqjxuyo0a2vg84htotan",
-    "teamStints": [
-      {
-        "teamId": "NO",
-        "startYear": 1975,
-        "endYear": 1977
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1978,
-        "endYear": 1978
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1978,
-        "endYear": 1979
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1979,
-        "endYear": 1979
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1980,
-        "endYear": 1980
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1980,
-        "endYear": 1981
-      }
-    ],
-    "id": "greg-westbrooks"
   },
   {
     "fullName": "Harlon Barnett",
@@ -93424,6 +101661,64 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "hayden-hurst"
+  },
+  {
+    "fullName": "Henry Rolling",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/skhaeg6klqdwessfmp3a",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1990,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1994
+      }
+    ],
+    "id": "henry-rolling"
+  },
+  {
+    "fullName": "Jayme Mitchell",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qwavqgs9j6sii8u5jivq",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "jayme-mitchell"
   },
   {
     "fullName": "Jermaine Wiggins",
@@ -93500,12 +101795,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1971
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1972,
         "endYear": 1972
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1975
       },
@@ -93516,30 +101811,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jim-tolbert"
-  },
-  {
-    "fullName": "Jimmie Jones",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wkyk2wgw4ewuz2n2vssc",
-    "teamStints": [
-      {
-        "teamId": "DAL",
-        "startYear": 1990,
-        "endYear": 1993
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1997,
-        "endYear": 1997
-      }
-    ],
-    "id": "jimmie-jones"
   },
   {
     "fullName": "Jimmy Gunn",
@@ -93582,7 +101853,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -93659,7 +101930,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1993
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1994,
         "endYear": 1995
       },
@@ -93670,54 +101941,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kenny-davidson"
-  },
-  {
-    "fullName": "Kenny Hill",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kdylbzj8ghwlbqutbize",
-    "teamStints": [
-      {
-        "teamId": "LV",
-        "startYear": 1981,
-        "endYear": 1981
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1984,
-        "endYear": 1988
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1989,
-        "endYear": 1989
-      }
-    ],
-    "id": "kenny-hill"
-  },
-  {
-    "fullName": "Larry Anderson",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fuayxzsxtokergrf2dry",
-    "teamStints": [
-      {
-        "teamId": "PIT",
-        "startYear": 1978,
-        "endYear": 1981
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 1982,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1984
-      }
-    ],
-    "id": "larry-anderson"
   },
   {
     "fullName": "Larry Ball",
@@ -93747,54 +101970,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "larry-ball"
-  },
-  {
-    "fullName": "Lionel Washington",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qt1y6himlxnfozdekhvl",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1983,
-        "endYear": 1986
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1997,
-        "endYear": 1997
-      }
-    ],
-    "id": "lionel-washington"
-  },
-  {
-    "fullName": "Lorenzo Lynch",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/becntluvvavvb7rojqen",
-    "teamStints": [
-      {
-        "teamId": "CHI",
-        "startYear": 1987,
-        "endYear": 1989
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 1994,
-        "endYear": 1995
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1996,
-        "endYear": 1997
-      }
-    ],
-    "id": "lorenzo-lynch"
   },
   {
     "fullName": "Marcell Harris",
@@ -93895,7 +102070,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1970
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1971,
         "endYear": 1972
       },
@@ -93937,30 +102112,6 @@ export const GENERATED_PLAYERS = [
     "id": "ray-phillips"
   },
   {
-    "fullName": "Richard Brown",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dt9dm81vd5kolikcch68",
-    "teamStints": [
-      {
-        "teamId": "LAC",
-        "startYear": 1990,
-        "endYear": 1990
-      },
-      {
-        "teamId": "CLE",
-        "startYear": 1991,
-        "endYear": 1993
-      },
-      {
-        "teamId": "MIN",
-        "startYear": 1994,
-        "endYear": 1996
-      }
-    ],
-    "id": "richard-brown"
-  },
-  {
     "fullName": "Richard Harris",
     "position": "DL",
     "difficulty": "impossible",
@@ -93983,6 +102134,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "richard-harris"
+  },
+  {
+    "fullName": "Ricky Hunley",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/msbmqvmk4madwvuy2hyy",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1990
+      }
+    ],
+    "id": "ricky-hunley"
   },
   {
     "fullName": "Robert Tonyan",
@@ -94019,30 +102194,6 @@ export const GENERATED_PLAYERS = [
     "id": "robert-tonyan"
   },
   {
-    "fullName": "Robert Williams",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/taapdalkmzvcqjvxwiga",
-    "teamStints": [
-      {
-        "teamId": "DAL",
-        "startYear": 1987,
-        "endYear": 1993
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1993,
-        "endYear": 1993
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1993,
-        "endYear": 1993
-      }
-    ],
-    "id": "robert-williams"
-  },
-  {
     "fullName": "Roger Jones",
     "position": "DB",
     "difficulty": "impossible",
@@ -94072,30 +102223,6 @@ export const GENERATED_PLAYERS = [
     "id": "roger-jones"
   },
   {
-    "fullName": "Roland Mitchell",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mykzmcu4ft9imqlgarn9",
-    "teamStints": [
-      {
-        "teamId": "BUF",
-        "startYear": 1987,
-        "endYear": 1988
-      },
-      {
-        "teamId": "ATL",
-        "startYear": 1990,
-        "endYear": 1990
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1991,
-        "endYear": 1994
-      }
-    ],
-    "id": "roland-mitchell"
-  },
-  {
     "fullName": "Ron Acks",
     "position": "LB",
     "difficulty": "impossible",
@@ -94123,11 +102250,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Ryan Griffin",
     "position": "TE",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ntkwyyft1r9xefhlc66m",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/izjfxtmk2dhzhrlwpt9g",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2018
       },
       {
@@ -94142,30 +102269,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ryan-griffin"
-  },
-  {
-    "fullName": "Sam Anno",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fn4o6slj6eulbwxrztvx",
-    "teamStints": [
-      {
-        "teamId": "MIN",
-        "startYear": 1987,
-        "endYear": 1988
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1989,
-        "endYear": 1991
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1992,
-        "endYear": 1993
-      }
-    ],
-    "id": "sam-anno"
   },
   {
     "fullName": "Sam Howell",
@@ -94261,7 +102364,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1971
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1972,
         "endYear": 1977
       }
@@ -94298,6 +102401,30 @@ export const GENERATED_PLAYERS = [
     "id": "spencer-shrader"
   },
   {
+    "fullName": "Steve Busick",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/esjklosxvsbmdf4ud9fy",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 1981,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "steve-busick"
+  },
+  {
     "fullName": "Tai Streets",
     "position": "WR",
     "difficulty": "impossible",
@@ -94328,7 +102455,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1974,
         "endYear": 1979
       },
@@ -94363,30 +102490,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tyrone-legette"
-  },
-  {
-    "fullName": "Tyronne Stowe",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/evgquoij8wlxjhbnrkjx",
-    "teamStints": [
-      {
-        "teamId": "PIT",
-        "startYear": 1987,
-        "endYear": 1990
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1994,
-        "endYear": 1994
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1995,
-        "endYear": 1996
-      }
-    ],
-    "id": "tyronne-stowe"
   },
   {
     "fullName": "Van Jakes",
@@ -94459,7 +102562,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -94524,6 +102627,25 @@ export const GENERATED_PLAYERS = [
     "id": "braxton-berrios"
   },
   {
+    "fullName": "Dejuan Groce",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ao9xvbune2cvigcmqnzw",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2005
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "dejuan-groce"
+  },
+  {
     "fullName": "DeRon Jenkins",
     "position": "DB",
     "difficulty": "impossible",
@@ -94546,6 +102668,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "deron-jenkins"
+  },
+  {
+    "fullName": "Frank Sanders",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v3rh05ps0k9d8wahpyxc",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1995,
+        "endYear": 2002
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2003
+      }
+    ],
+    "id": "frank-sanders"
   },
   {
     "fullName": "Kayvon Webster",
@@ -94626,6 +102767,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hhkalpixkxw4rlfxwamg",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2009
+      },
       {
         "teamId": "DAL",
         "startYear": 2010,
@@ -94878,7 +103024,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -94901,7 +103047,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zr12jdbdoerycf8ojopn",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1980,
         "endYear": 1981
       },
@@ -94992,6 +103138,25 @@ export const GENERATED_PLAYERS = [
     "id": "bob-stein"
   },
   {
+    "fullName": "Brad Maynard",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hnmyqljakbuycwcxw8ez",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2002,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "brad-maynard"
+  },
+  {
     "fullName": "Brandian Ross",
     "position": "CB",
     "difficulty": "impossible",
@@ -95066,7 +103231,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1991
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1992,
         "endYear": 1992
       },
@@ -95076,7 +103241,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1992
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1993,
         "endYear": 1993
       },
@@ -95086,7 +103251,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1994
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1995,
         "endYear": 1995
       }
@@ -95273,43 +103438,23 @@ export const GENERATED_PLAYERS = [
     "id": "gerald-nichols"
   },
   {
-    "fullName": "Henry Waechter",
-    "position": "DL",
+    "fullName": "Isaiah Kacyvenski",
+    "position": "LB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k1as0htkddxeeocbsaxq",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sfqqplgdzivoj3etuu97",
     "teamStints": [
       {
-        "teamId": "CHI",
-        "startYear": 1982,
-        "endYear": 1982
+        "teamId": "SEA",
+        "startYear": 2000,
+        "endYear": 2006
       },
       {
-        "teamId": "BAL",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 1985,
-        "endYear": 1986
-      },
-      {
-        "teamId": "WAS",
-        "startYear": 1987,
-        "endYear": 1987
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
       }
     ],
-    "id": "henry-waechter"
+    "id": "isaiah-kacyvenski"
   },
   {
     "fullName": "Jamel White",
@@ -95320,12 +103465,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2004
       },
       {
         "teamId": "TB",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "jamel-white"
@@ -95384,6 +103539,25 @@ export const GENERATED_PLAYERS = [
     "id": "josh-morgan"
   },
   {
+    "fullName": "Justin Lucas",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jis7dhr3r6mph1o6o1q4",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1999,
+        "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "justin-lucas"
+  },
+  {
     "fullName": "Larry Woods",
     "position": "DL",
     "difficulty": "impossible",
@@ -95424,6 +103598,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
         "teamId": "DAL",
         "startYear": 2011,
         "endYear": 2011
@@ -95437,38 +103616,33 @@ export const GENERATED_PLAYERS = [
     "id": "laurent-robinson"
   },
   {
-    "fullName": "Mark Bell",
-    "position": "DL",
+    "fullName": "Lucious Smith",
+    "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c5yjzgqi7tp3sny70yzu",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/praejpmvxnzyqgu4czke",
     "teamStints": [
-      {
-        "teamId": "SEA",
-        "startYear": 1979,
-        "endYear": 1980
-      },
       {
         "teamId": "LAR",
         "startYear": 1980,
-        "endYear": 1981
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1982,
         "endYear": 1982
       },
       {
-        "teamId": "BAL",
+        "teamId": "KC",
         "startYear": 1983,
         "endYear": 1983
       },
       {
-        "teamId": "IND",
+        "teamId": "BUF",
         "startYear": 1984,
         "endYear": 1984
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1984,
+        "endYear": 1985
       }
     ],
-    "id": "mark-bell"
+    "id": "lucious-smith"
   },
   {
     "fullName": "Michael Koenen",
@@ -95712,38 +103886,38 @@ export const GENERATED_PLAYERS = [
     "id": "rashad-fenton"
   },
   {
-    "fullName": "Robert Massey",
+    "fullName": "Rod Hill",
     "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rlzlrxqyopoqmr1rscgm",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/el0qdmpq0xayanfj3kyc",
     "teamStints": [
       {
-        "teamId": "NO",
-        "startYear": 1989,
-        "endYear": 1990
+        "teamId": "DAL",
+        "startYear": 1982,
+        "endYear": 1983
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 1984,
+        "endYear": 1986
       },
       {
         "teamId": "DET",
-        "startYear": 1994,
-        "endYear": 1995
+        "startYear": 1986,
+        "endYear": 1986
       },
       {
-        "teamId": "JAX",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 1997,
-        "endYear": 1997
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1987
       }
     ],
-    "id": "robert-massey"
+    "id": "rod-hill"
   },
   {
     "fullName": "Sage Rosenfels",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hzwobipt3ftcvvhf04x3",
     "teamStints": [
       {
@@ -95755,6 +103929,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2002,
         "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2008
       },
       {
         "teamId": "MIN",
@@ -95835,7 +104014,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1979,
         "endYear": 1980
       }
@@ -95859,7 +104038,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1976
       },
@@ -95869,46 +104048,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1977,
         "endYear": 1977
       }
     ],
     "id": "steve-okoniewski"
-  },
-  {
-    "fullName": "Tate Randle",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nsuksixyvbdibvl6rz22",
-    "teamStints": [
-      {
-        "teamId": "HOU",
-        "startYear": 1982,
-        "endYear": 1982
-      },
-      {
-        "teamId": "BAL",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1986
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1987,
-        "endYear": 1987
-      }
-    ],
-    "id": "tate-randle"
   },
   {
     "fullName": "Terdell Sands",
@@ -95993,38 +104138,14 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "tim-rattay"
-  },
-  {
-    "fullName": "Vernon Maxwell",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p2uwz9cqatgnatylktop",
-    "teamStints": [
-      {
-        "teamId": "BAL",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "IND",
-        "startYear": 1984,
-        "endYear": 1984
-      },
-      {
-        "teamId": "DET",
-        "startYear": 1985,
-        "endYear": 1987
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1989,
-        "endYear": 1989
-      }
-    ],
-    "id": "vernon-maxwell"
   },
   {
     "fullName": "Vinnie Clark",
@@ -96072,9 +104193,9 @@ export const GENERATED_PLAYERS = [
         "endYear": 1987
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1987,
-        "endYear": 1987
+        "endYear": 1988
       },
       {
         "teamId": "BUF",
@@ -96169,7 +104290,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1991,
         "endYear": 1999
       },
       {
@@ -96267,14 +104388,33 @@ export const GENERATED_PLAYERS = [
     "id": "jay-riemersma"
   },
   {
+    "fullName": "Jerious Norwood",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qw084awtby41mgiyoabo",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2006,
+        "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "jerious-norwood"
+  },
+  {
     "fullName": "John Hughes",
-    "position": "DL",
+    "position": "DT",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q5frdajyzvjj7icsbzbf",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2016
       },
       {
@@ -96372,9 +104512,14 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2011,
         "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
-    "id": "steve-smith-2"
+    "id": "steve-smith-3"
   },
   {
     "fullName": "Brandon Siler",
@@ -96528,7 +104673,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -96593,6 +104738,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2003,
         "endYear": 2004
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "jim-nelson"
@@ -96857,7 +105007,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -97012,6 +105162,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2006,
         "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
       }
     ],
     "id": "robert-royal"
@@ -97252,7 +105407,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "A.J. Feeley",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bszdpaemb7klxpgf2vkx",
     "teamStints": [
       {
@@ -97279,6 +105434,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2011
       }
     ],
     "id": "a-j-feeley"
@@ -97306,6 +105466,45 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "antwan-lake"
+  },
+  {
+    "fullName": "Ben Graham",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rn4n6km2mxgvzg117oim",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 2005,
+        "endYear": 2007
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "ben-graham"
   },
   {
     "fullName": "Calvin Pryor",
@@ -97448,6 +105647,25 @@ export const GENERATED_PLAYERS = [
     "id": "jeff-george"
   },
   {
+    "fullName": "Jordan Cameron",
+    "position": "TE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oyhmlsxyzwbznmeqnf9i",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2014
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2015,
+        "endYear": 2016
+      }
+    ],
+    "id": "jordan-cameron"
+  },
+  {
     "fullName": "Joshua Dobbs",
     "position": "QB",
     "difficulty": "hard",
@@ -97531,6 +105749,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ygt99dtmdeqkxq2unfbh",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2010
+      },
       {
         "teamId": "KC",
         "startYear": 2011,
@@ -97623,7 +105846,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iphiqynjs8f4fu4modku",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1991,
         "endYear": 1993
       },
@@ -97749,6 +105972,16 @@ export const GENERATED_PLAYERS = [
         "endYear": 2000
       },
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "NO",
         "startYear": 2006,
         "endYear": 2008
@@ -97805,6 +106038,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "devin-duvernay"
@@ -97868,6 +106106,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sd1rdixhcutyp2epoc95",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2006
+      },
       {
         "teamId": "DET",
         "startYear": 2007,
@@ -97977,6 +106220,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "aaron-elling"
@@ -98012,7 +106260,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -98042,6 +106290,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "alphonso-carreker"
+  },
+  {
+    "fullName": "Alvin Wright",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dteyim1ghl4nehzileba",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1986,
+        "endYear": 1992
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "alvin-wright"
   },
   {
     "fullName": "Angelo King",
@@ -98155,7 +106422,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vqlm0fybc3dpdv5wh9q3",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1981,
         "endYear": 1986
       },
@@ -98251,7 +106518,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bc8aha9vlrzag9q6fi2t",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1989,
         "endYear": 1994
       },
@@ -98374,25 +106641,6 @@ export const GENERATED_PLAYERS = [
     "id": "christian-elliss"
   },
   {
-    "fullName": "Cliff Thrift",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vwmmfcrgwuypsndbd5u0",
-    "teamStints": [
-      {
-        "teamId": "LAC",
-        "startYear": 1979,
-        "endYear": 1984
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 1985,
-        "endYear": 1985
-      }
-    ],
-    "id": "cliff-thrift"
-  },
-  {
     "fullName": "Corliss Waitman",
     "position": "P",
     "difficulty": "impossible",
@@ -98480,25 +106728,6 @@ export const GENERATED_PLAYERS = [
     "id": "darryl-pollard"
   },
   {
-    "fullName": "Dave Stalls",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mysr3zbmxaeyrn0ktsn5",
-    "teamStints": [
-      {
-        "teamId": "DAL",
-        "startYear": 1977,
-        "endYear": 1979
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1980,
-        "endYear": 1983
-      }
-    ],
-    "id": "dave-stalls"
-  },
-  {
     "fullName": "David Frye",
     "position": "LB",
     "difficulty": "impossible",
@@ -98516,25 +106745,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "david-frye"
-  },
-  {
-    "fullName": "David Galloway",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ed43vbfsgzxaueanz5ux",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1982,
-        "endYear": 1987
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1990,
-        "endYear": 1990
-      }
-    ],
-    "id": "david-galloway"
   },
   {
     "fullName": "David Grayson",
@@ -98623,6 +106833,35 @@ export const GENERATED_PLAYERS = [
     "id": "derion-kendrick"
   },
   {
+    "fullName": "Dwaine Carpenter",
+    "position": "FS",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/j6tuab76h3jdhoox6nso",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "dwaine-carpenter"
+  },
+  {
     "fullName": "Ed O'Neil",
     "position": "LB",
     "difficulty": "impossible",
@@ -98648,7 +106887,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ipznlc9iiaqjcgxpxk8b",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1976,
         "endYear": 1981
       },
@@ -98696,7 +106935,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gcaj4alyc7eaepra8vnn",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1986,
         "endYear": 1991
       },
@@ -98769,25 +107008,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "garin-veris"
-  },
-  {
-    "fullName": "Gary Jeter",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i5txyjprureulz6gpasv",
-    "teamStints": [
-      {
-        "teamId": "NYG",
-        "startYear": 1977,
-        "endYear": 1982
-      },
-      {
-        "teamId": "NE",
-        "startYear": 1989,
-        "endYear": 1989
-      }
-    ],
-    "id": "gary-jeter"
   },
   {
     "fullName": "Gary Jones",
@@ -98906,7 +107126,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1981
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1982,
         "endYear": 1982
       },
@@ -98974,6 +107194,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jay-ajayi"
+  },
+  {
+    "fullName": "Jay Taylor",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ygfg6fjek9zzdxch1elf",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1992
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1993,
+        "endYear": 1995
+      }
+    ],
+    "id": "jay-taylor"
   },
   {
     "fullName": "Jim Kearney",
@@ -99149,7 +107388,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rrtywu13e5f26xfhsneu",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1983,
         "endYear": 1988
       },
@@ -99168,7 +107407,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g9tnduhvtj5ka1mgm0nm",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1978,
         "endYear": 1982
       },
@@ -99224,23 +107463,23 @@ export const GENERATED_PLAYERS = [
     "id": "kerry-glenn"
   },
   {
-    "fullName": "Kirby Jackson",
+    "fullName": "Larry Anderson",
     "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/asv4zclv6avxgg3zzjkz",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fuayxzsxtokergrf2dry",
     "teamStints": [
       {
-        "teamId": "BUF",
-        "startYear": 1988,
-        "endYear": 1993
+        "teamId": "PIT",
+        "startYear": 1978,
+        "endYear": 1981
       },
       {
-        "teamId": "SEA",
-        "startYear": 1994,
-        "endYear": 1994
+        "teamId": "IND",
+        "startYear": 1982,
+        "endYear": 1984
       }
     ],
-    "id": "kirby-jackson"
+    "id": "larry-anderson"
   },
   {
     "fullName": "Larry Braziel",
@@ -99249,7 +107488,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e21qby7wsk6crtb9bujk",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1979,
         "endYear": 1981
       },
@@ -99262,18 +107501,37 @@ export const GENERATED_PLAYERS = [
     "id": "larry-braziel"
   },
   {
+    "fullName": "Larry Kelm",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tt11ozqooyacfbsyzdsv",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1987,
+        "endYear": 1992
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "larry-kelm"
+  },
+  {
     "fullName": "Lee Brooks",
     "position": "DL",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uh1gpssgbzw3ga5bbgkp",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1972
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1976
       }
@@ -99298,6 +107556,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "lewis-billups"
+  },
+  {
+    "fullName": "Marcus Turner",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/svwlmjmivoofvc5cvqpw",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1989,
+        "endYear": 1991
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1992,
+        "endYear": 1995
+      }
+    ],
+    "id": "marcus-turner"
   },
   {
     "fullName": "Mark Nichols",
@@ -99335,7 +107612,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -99360,25 +107637,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "michael-haynes-2"
-  },
-  {
-    "fullName": "Mike Charles",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bi5cvjeznrrtv6hbg07z",
-    "teamStints": [
-      {
-        "teamId": "MIA",
-        "startYear": 1983,
-        "endYear": 1986
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1987,
-        "endYear": 1989
-      }
-    ],
-    "id": "mike-charles"
   },
   {
     "fullName": "Mike Reid",
@@ -99435,7 +107693,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1977
       }
@@ -99443,42 +107701,38 @@ export const GENERATED_PLAYERS = [
     "id": "mike-weger"
   },
   {
-    "fullName": "Mike Zordich",
-    "position": "DB",
+    "fullName": "Mitch Berger",
+    "position": "P",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bfaxgj0zhueeionkegjx",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 1987,
-        "endYear": 1988
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 1994,
-        "endYear": 1998
-      }
-    ],
-    "id": "mike-zordich"
-  },
-  {
-    "fullName": "Monte Jackson",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xlsxlaauv6g9bmbgcbeq",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mqdccgnykzgp26fl4uuj",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1975,
-        "endYear": 1977
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
-        "teamId": "LV",
-        "startYear": 1978,
-        "endYear": 1981
+        "teamId": "NO",
+        "startYear": 2003,
+        "endYear": 2005
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2009,
+        "endYear": 2009
       }
     ],
-    "id": "monte-jackson"
+    "id": "mitch-berger"
   },
   {
     "fullName": "Myron Guyton",
@@ -99498,25 +107752,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "myron-guyton"
-  },
-  {
-    "fullName": "Niko Noga",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/f3i8m7bobses6l7yupqx",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1984,
-        "endYear": 1987
-      },
-      {
-        "teamId": "DET",
-        "startYear": 1989,
-        "endYear": 1991
-      }
-    ],
-    "id": "niko-noga"
   },
   {
     "fullName": "Prentice McCray",
@@ -99554,7 +107789,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1984
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1984,
         "endYear": 1984
       }
@@ -99668,31 +107903,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1977
       }
     ],
     "id": "rich-sowells"
-  },
-  {
-    "fullName": "Richard Bishop",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wwnr9ywddsutq06rprk7",
-    "teamStints": [
-      {
-        "teamId": "NE",
-        "startYear": 1976,
-        "endYear": 1981
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 1982,
-        "endYear": 1982
-      }
-    ],
-    "id": "richard-bishop"
   },
   {
     "fullName": "Richard Rodgers",
@@ -99754,7 +107970,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1980,
         "endYear": 1983
       }
@@ -99877,25 +108093,6 @@ export const GENERATED_PLAYERS = [
     "id": "sam-hunt"
   },
   {
-    "fullName": "Shane Conlan",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oy3rqkclqqthtn7bzid7",
-    "teamStints": [
-      {
-        "teamId": "BUF",
-        "startYear": 1987,
-        "endYear": 1992
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "shane-conlan"
-  },
-  {
     "fullName": "Shelton Robinson",
     "position": "LB",
     "difficulty": "impossible",
@@ -99945,7 +108142,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1977
       },
@@ -99955,7 +108152,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1977
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1978,
         "endYear": 1979
       }
@@ -99969,7 +108166,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zxnoxnkr3woztnpgeern",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1988
       },
@@ -100004,6 +108201,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tony-elliott"
+  },
+  {
+    "fullName": "Torin Dorn",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wpjfkwibsdwunkktruy8",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1994
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1995,
+        "endYear": 1996
+      }
+    ],
+    "id": "torin-dorn"
   },
   {
     "fullName": "Troy Dye",
@@ -100122,31 +108338,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1982
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1983,
         "endYear": 1983
       }
     ],
     "id": "wilson-whitley"
-  },
-  {
-    "fullName": "Winston Moss",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l41hcicgc97rmefoyzaq",
-    "teamStints": [
-      {
-        "teamId": "TB",
-        "startYear": 1987,
-        "endYear": 1990
-      },
-      {
-        "teamId": "SEA",
-        "startYear": 1995,
-        "endYear": 1997
-      }
-    ],
-    "id": "winston-moss"
   },
   {
     "fullName": "Dean Marlowe",
@@ -100250,6 +108447,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "jack-gibbens"
@@ -100293,6 +108495,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2010
       }
     ],
     "id": "karl-paymah"
@@ -100589,6 +108796,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hary8s6dxf5sjtqctymx",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2013
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "MIN",
         "startYear": 2014,
         "endYear": 2014
@@ -100709,7 +108926,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a8xdzojdjkkyl806vxjv",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -100719,60 +108936,12 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1976
       }
     ],
     "id": "bubba-smith"
-  },
-  {
-    "fullName": "Cal Peterson",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/t5a7zrnoxls6usbibo2m",
-    "teamStints": [
-      {
-        "teamId": "DAL",
-        "startYear": 1974,
-        "endYear": 1975
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1976,
-        "endYear": 1976
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1979,
-        "endYear": 1981
-      }
-    ],
-    "id": "cal-peterson"
-  },
-  {
-    "fullName": "Calvin Jones",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rweov71eahovoo6v9x2i",
-    "teamStints": [
-      {
-        "teamId": "DEN",
-        "startYear": 1973,
-        "endYear": 1976
-      },
-      {
-        "teamId": "LV",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
-        "teamId": "GB",
-        "startYear": 1996,
-        "endYear": 1996
-      }
-    ],
-    "id": "calvin-jones"
   },
   {
     "fullName": "Ced Wilson",
@@ -100862,30 +109031,6 @@ export const GENERATED_PLAYERS = [
     "id": "chris-mccain"
   },
   {
-    "fullName": "Cliff Hicks",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g70icd9x5bvmzvt2fuda",
-    "teamStints": [
-      {
-        "teamId": "BUF",
-        "startYear": 1990,
-        "endYear": 1992
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1993,
-        "endYear": 1994
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1995,
-        "endYear": 1995
-      }
-    ],
-    "id": "cliff-hicks"
-  },
-  {
     "fullName": "Cornelius Washington",
     "position": "DE",
     "difficulty": "impossible",
@@ -100911,12 +109056,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i5xm6rgxhoiggdznsu46",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1972,
         "endYear": 1972
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1973,
         "endYear": 1975
       },
@@ -100975,6 +109120,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dana-hall"
+  },
+  {
+    "fullName": "Darin Jordan",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/clrjuuuzwgvvjgh4uhrj",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "SF",
+        "startYear": 1991,
+        "endYear": 1994
+      }
+    ],
+    "id": "darin-jordan"
   },
   {
     "fullName": "Darrick Brownlow",
@@ -101046,7 +109215,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e7ojkbur9ilsmduwtouy",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1975,
         "endYear": 1975
       },
@@ -101062,6 +109231,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dave-pear"
+  },
+  {
+    "fullName": "David Braxton",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zrjmegdrmwdhxwz73yzi",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1989,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 1994,
+        "endYear": 1994
+      }
+    ],
+    "id": "david-braxton"
   },
   {
     "fullName": "David Grant",
@@ -101118,7 +109321,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jtuwyucge0a1lzokgsq7",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1975,
         "endYear": 1978
       },
@@ -101163,6 +109366,59 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dino-mangiero"
+  },
+  {
+    "fullName": "Don Bessillieu",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/muhnwwk7obad1gxkyewr",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 1979,
+        "endYear": 1981
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1985
+      }
+    ],
+    "id": "don-bessillieu"
+  },
+  {
+    "fullName": "Donald Frank",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g5liy95xf6vabd93jej4",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 1990,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 1995,
+        "endYear": 1995
+      }
+    ],
+    "id": "donald-frank"
   },
   {
     "fullName": "Doug Beaudoin",
@@ -101285,30 +109541,6 @@ export const GENERATED_PLAYERS = [
     "id": "eddie-sutter"
   },
   {
-    "fullName": "Fred Stokes",
-    "position": "DL",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p9sgqr9ua3kqiou5zhrl",
-    "teamStints": [
-      {
-        "teamId": "WAS",
-        "startYear": 1989,
-        "endYear": 1992
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1995,
-        "endYear": 1995
-      },
-      {
-        "teamId": "NO",
-        "startYear": 1996,
-        "endYear": 1996
-      }
-    ],
-    "id": "fred-stokes"
-  },
-  {
     "fullName": "Gary Baldinger",
     "position": "DL",
     "difficulty": "impossible",
@@ -101357,6 +109589,35 @@ export const GENERATED_PLAYERS = [
     "id": "george-hinkle"
   },
   {
+    "fullName": "Greg Hill",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z4kebx4zxktlz4bmpftm",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "KC",
+        "startYear": 1988,
+        "endYear": 1988
+      }
+    ],
+    "id": "greg-hill"
+  },
+  {
     "fullName": "Gregg Briggs",
     "position": "DB",
     "difficulty": "impossible",
@@ -101392,7 +109653,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kn54qsanovam89c9cfs3",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1972,
         "endYear": 1975
       },
@@ -101439,6 +109700,45 @@ export const GENERATED_PLAYERS = [
     "id": "harry-colon"
   },
   {
+    "fullName": "Henry Waechter",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k1as0htkddxeeocbsaxq",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1984,
+        "endYear": 1984
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 1985,
+        "endYear": 1986
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "henry-waechter"
+  },
+  {
     "fullName": "Herb Welch",
     "position": "DB",
     "difficulty": "impossible",
@@ -101482,30 +109782,6 @@ export const GENERATED_PLAYERS = [
     "id": "hunter-smith"
   },
   {
-    "fullName": "Ivory Sully",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qzdk92spd8wjnlygvczo",
-    "teamStints": [
-      {
-        "teamId": "LAR",
-        "startYear": 1979,
-        "endYear": 1981
-      },
-      {
-        "teamId": "TB",
-        "startYear": 1985,
-        "endYear": 1986
-      },
-      {
-        "teamId": "DET",
-        "startYear": 1987,
-        "endYear": 1987
-      }
-    ],
-    "id": "ivory-sully"
-  },
-  {
     "fullName": "Izel Jenkins",
     "position": "DB",
     "difficulty": "impossible",
@@ -101541,7 +109817,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1974
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1975,
         "endYear": 1976
       },
@@ -101757,7 +110033,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1992
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1993,
         "endYear": 1994
       },
@@ -101792,6 +110068,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kelvin-pritchett"
+  },
+  {
+    "fullName": "Lester Lyles",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rq4zewihksnvoqel40at",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1985,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1989,
+        "endYear": 1990
+      }
+    ],
+    "id": "lester-lyles"
   },
   {
     "fullName": "Lester Williams",
@@ -101908,11 +110208,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Malcolm Brown",
     "position": "RB",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/saroibi2giakpauwanjg",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zxnjheichwlnvvu5qdyl",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2020
       },
       {
@@ -101927,6 +110227,64 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "malcolm-brown"
+  },
+  {
+    "fullName": "Malcolm Taylor",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zxttcwaoyovmnrs31w8g",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1982,
+        "endYear": 1983
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1986,
+        "endYear": 1986
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1988
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "malcolm-taylor"
+  },
+  {
+    "fullName": "Mark Bell",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c5yjzgqi7tp3sny70yzu",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 1979,
+        "endYear": 1980
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1980,
+        "endYear": 1981
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1983,
+        "endYear": 1984
+      }
+    ],
+    "id": "mark-bell"
   },
   {
     "fullName": "Mark Gunn",
@@ -102008,7 +110366,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1993
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1995,
         "endYear": 1995
       }
@@ -102141,37 +110499,13 @@ export const GENERATED_PLAYERS = [
     "id": "phillip-gaines"
   },
   {
-    "fullName": "Rafael Robinson",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/apkupnvn91sh71lnst8i",
-    "teamStints": [
-      {
-        "teamId": "SEA",
-        "startYear": 1992,
-        "endYear": 1995
-      },
-      {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 1997
-      }
-    ],
-    "id": "rafael-robinson"
-  },
-  {
     "fullName": "Roy Hilton",
     "position": "DL",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eqk0nzbnxeskeprlpfwb",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1973
       },
@@ -102187,6 +110521,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "roy-hilton"
+  },
+  {
+    "fullName": "Sean McNanie",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eculcjykolteqycrrc7e",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1988,
+        "endYear": 1988
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1990,
+        "endYear": 1990
+      }
+    ],
+    "id": "sean-mcnanie"
   },
   {
     "fullName": "Sean Vanhorse",
@@ -102338,13 +110696,71 @@ export const GENERATED_PLAYERS = [
     "id": "steve-emtman"
   },
   {
+    "fullName": "Tate Randle",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nsuksixyvbdibvl6rz22",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1982,
+        "endYear": 1982
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1983,
+        "endYear": 1983
+      },
+      {
+        "teamId": "IND",
+        "startYear": 1984,
+        "endYear": 1986
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "tate-randle"
+  },
+  {
+    "fullName": "Ted Watts",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zs3gjrqccqwzaz9oe3d6",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1981,
+        "endYear": 1984
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 1985,
+        "endYear": 1985
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "ted-watts"
+  },
+  {
     "fullName": "Terry Brown",
     "position": "DB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dvzfaeki2mvmbduv7bby",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1970
       },
@@ -102373,7 +110789,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1973,
         "endYear": 1975
       },
@@ -102383,7 +110799,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1976
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       }
@@ -102402,7 +110818,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1980,
         "endYear": 1980
       },
@@ -102439,6 +110855,25 @@ export const GENERATED_PLAYERS = [
     "id": "tom-keating"
   },
   {
+    "fullName": "Tom Zbikowski",
+    "position": "SS",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bhmwo4wrkumnvak6wnbj",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2011
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "tom-zbikowski"
+  },
+  {
     "fullName": "Tory Epps",
     "position": "DL",
     "difficulty": "impossible",
@@ -102471,6 +110906,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tory-epps"
+  },
+  {
+    "fullName": "Tracey Eaton",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v4yqjumlrpq6p3bn776j",
+    "teamStints": [
+      {
+        "teamId": "TEN",
+        "startYear": 1988,
+        "endYear": 1989
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1990,
+        "endYear": 1990
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 1991,
+        "endYear": 1993
+      }
+    ],
+    "id": "tracey-eaton"
   },
   {
     "fullName": "Troy Johnson",
@@ -102550,6 +111009,30 @@ export const GENERATED_PLAYERS = [
     "id": "tyrone-keys"
   },
   {
+    "fullName": "Vernon Maxwell",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p2uwz9cqatgnatylktop",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 1983,
+        "endYear": 1984
+      },
+      {
+        "teamId": "DET",
+        "startYear": 1985,
+        "endYear": 1987
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 1989,
+        "endYear": 1989
+      }
+    ],
+    "id": "vernon-maxwell"
+  },
+  {
     "fullName": "Wan'Dale Robinson",
     "position": "WR",
     "difficulty": "hard",
@@ -102623,13 +111106,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Albert McClellan",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dlpq9ctkqeiiynhwol33",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2011,
         "endYear": 2018
       },
       {
@@ -102944,6 +111427,30 @@ export const GENERATED_PLAYERS = [
     "id": "mike-harris"
   },
   {
+    "fullName": "Mike Sims-Walker",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dveqo6qxj5bskzhval0i",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "mike-sims-walker"
+  },
+  {
     "fullName": "Nate Hairston",
     "position": "DB",
     "difficulty": "impossible",
@@ -103012,6 +111519,25 @@ export const GENERATED_PLAYERS = [
     "id": "rick-lyle"
   },
   {
+    "fullName": "Travis Minor",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/k8vrb6ttr62ebieqpqxl",
+    "teamStints": [
+      {
+        "teamId": "MIA",
+        "startYear": 2001,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2008
+      }
+    ],
+    "id": "travis-minor"
+  },
+  {
     "fullName": "Will Herring",
     "position": "OLB",
     "difficulty": "impossible",
@@ -103026,9 +111552,33 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2011,
         "endYear": 2013
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "will-herring"
+  },
+  {
+    "fullName": "A.J. Jefferson",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ug7wpvv28nfqjjrpepop",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
+        "teamId": "MIN",
+        "startYear": 2012,
+        "endYear": 2013
+      }
+    ],
+    "id": "a-j-jefferson"
   },
   {
     "fullName": "Darrel Williams",
@@ -103172,13 +111722,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Maurice Alexander",
-    "position": "DB",
+    "position": "SS",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qhwti7dor8d9rbbx82ah",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -103254,7 +111804,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yrouqfqf12yur6qpjaq6",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1970,
         "endYear": 1970
       },
@@ -103291,6 +111841,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2011,
         "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "tyler-thigpen"
@@ -103318,6 +111873,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "vaughn-booker"
+  },
+  {
+    "fullName": "Aaron Francisco",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/agt6bgudhdxc0hwyk9i8",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2009,
+        "endYear": 2010
+      }
+    ],
+    "id": "aaron-francisco"
   },
   {
     "fullName": "Chris Rumph",
@@ -103613,35 +112187,6 @@ export const GENERATED_PLAYERS = [
     "id": "dede-westbrook"
   },
   {
-    "fullName": "Dirk Johnson",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/liuoswqetnmkknz3y0am",
-    "teamStints": [
-      {
-        "teamId": "NO",
-        "startYear": 2002,
-        "endYear": 2002
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2003,
-        "endYear": 2006
-      },
-      {
-        "teamId": "CHI",
-        "startYear": 2007,
-        "endYear": 2007
-      },
-      {
-        "teamId": "TB",
-        "startYear": 2009,
-        "endYear": 2009
-      }
-    ],
-    "id": "dirk-johnson"
-  },
-  {
     "fullName": "E.J. Manuel",
     "position": "QB",
     "difficulty": "hard",
@@ -103672,9 +112217,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
         "teamId": "PIT",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2004
       }
     ],
     "id": "erik-flowers"
@@ -103692,6 +112247,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CAR",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
         "startYear": 2004,
         "endYear": 2004
       },
@@ -103956,6 +112516,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2012
+      },
+      {
         "teamId": "CIN",
         "startYear": 2013,
         "endYear": 2014
@@ -104020,6 +112585,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brandon-deaderick"
+  },
+  {
+    "fullName": "Darrick Vaughn",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ga2fr0cpa458solzk4hl",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2000,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
+      }
+    ],
+    "id": "darrick-vaughn"
   },
   {
     "fullName": "DeAndre Carter",
@@ -104364,6 +112948,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "reggie-swinton"
@@ -104476,7 +113065,17 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gbzujchd1dvqnefznflk",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
         "teamId": "MIA",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -104555,7 +113154,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1996,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "NO",
@@ -104580,6 +113179,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2007,
         "endYear": 2008
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2009
       },
       {
         "teamId": "LAC",
@@ -104617,6 +113221,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "keyunta-dawson"
+  },
+  {
+    "fullName": "Matt Ware",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i260wiw936btuo64q8e7",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2010
+      }
+    ],
+    "id": "matt-ware"
   },
   {
     "fullName": "Micheal Spurlock",
@@ -105152,6 +113775,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NO",
         "startYear": 2025,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "jonah-williams"
@@ -105330,6 +113958,25 @@ export const GENERATED_PLAYERS = [
     "id": "tony-lippett"
   },
   {
+    "fullName": "Travis Johnson",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mox5v2yi8btapx7kaplq",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2009,
+        "endYear": 2010
+      }
+    ],
+    "id": "travis-johnson"
+  },
+  {
     "fullName": "Victor Dimukeje",
     "position": "LB",
     "difficulty": "impossible",
@@ -105366,25 +114013,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "albert-connell"
-  },
-  {
-    "fullName": "Alex Gordon",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xxcuasm3kqwshf5qatcd",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 1987,
-        "endYear": 1989
-      },
-      {
-        "teamId": "CIN",
-        "startYear": 1991,
-        "endYear": 1993
-      }
-    ],
-    "id": "alex-gordon"
   },
   {
     "fullName": "Alonzo Mitz",
@@ -105475,7 +114103,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       }
     ],
@@ -105562,6 +114190,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "antonio-london"
+  },
+  {
+    "fullName": "Archie Reese",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/swvqdhn0anoqq1l45zaq",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 1978,
+        "endYear": 1981
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1982,
+        "endYear": 1983
+      }
+    ],
+    "id": "archie-reese"
   },
   {
     "fullName": "Brad Culpepper",
@@ -105712,6 +114359,30 @@ export const GENERATED_PLAYERS = [
     "id": "carlos-jenkins"
   },
   {
+    "fullName": "Chris Bahr",
+    "position": "K",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mtqqli2jm0my416zh4rr",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 1976,
+        "endYear": 1979
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1980,
+        "endYear": 1980
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1987,
+        "endYear": 1987
+      }
+    ],
+    "id": "chris-bahr"
+  },
+  {
     "fullName": "Chris Hanson",
     "position": "P",
     "difficulty": "impossible",
@@ -105731,23 +114402,23 @@ export const GENERATED_PLAYERS = [
     "id": "chris-hanson"
   },
   {
-    "fullName": "Chuck Cecil",
-    "position": "DB",
+    "fullName": "Chris Washington",
+    "position": "LB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rs31zumdqpftz63ygymc",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qtzshjnjdiubry6hba9r",
     "teamStints": [
       {
-        "teamId": "GB",
-        "startYear": 1988,
-        "endYear": 1992
+        "teamId": "TB",
+        "startYear": 1984,
+        "endYear": 1988
       },
       {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1995
+        "teamId": "ARI",
+        "startYear": 1990,
+        "endYear": 1990
       }
     ],
-    "id": "chuck-cecil"
+    "id": "chris-washington"
   },
   {
     "fullName": "Chuck Walker",
@@ -105756,7 +114427,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rvtdcnz4xj7tullwglct",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1971
       },
@@ -105766,7 +114437,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1972
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1972,
         "endYear": 1972
       },
@@ -105809,7 +114480,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1980
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1981,
         "endYear": 1981
       },
@@ -105839,6 +114510,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "danny-noonan"
+  },
+  {
+    "fullName": "Dave Browning",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/unvwhygdwfwwf7ujejk1",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1978,
+        "endYear": 1982
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1983,
+        "endYear": 1983
+      }
+    ],
+    "id": "dave-browning"
   },
   {
     "fullName": "Dave Graf",
@@ -106031,6 +114721,25 @@ export const GENERATED_PLAYERS = [
     "id": "dewey-selmon"
   },
   {
+    "fullName": "Dexter Davis",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pldeysasx1hkkljwws3w",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1996
+      }
+    ],
+    "id": "dexter-davis"
+  },
+  {
     "fullName": "Dextor Clinkscale",
     "position": "DB",
     "difficulty": "impossible",
@@ -106061,12 +114770,12 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/satoiarw72xzdlznkkiz",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1974,
         "endYear": 1975
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1977,
         "endYear": 1979
       },
@@ -106122,23 +114831,23 @@ export const GENERATED_PLAYERS = [
     "id": "efren-herrera"
   },
   {
-    "fullName": "Elvis Franks",
-    "position": "DL",
+    "fullName": "Eric Harris",
+    "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o51oqf6lps8q7ogyalas",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uqovlq3zpgoty0jcjwel",
     "teamStints": [
       {
-        "teamId": "CLE",
+        "teamId": "KC",
         "startYear": 1980,
-        "endYear": 1984
+        "endYear": 1982
       },
       {
-        "teamId": "NYJ",
-        "startYear": 1986,
-        "endYear": 1986
+        "teamId": "LAR",
+        "startYear": 1983,
+        "endYear": 1985
       }
     ],
-    "id": "elvis-franks"
+    "id": "eric-harris"
   },
   {
     "fullName": "Ernest Gibson",
@@ -106179,23 +114888,23 @@ export const GENERATED_PLAYERS = [
     "id": "evan-cooper"
   },
   {
-    "fullName": "Freddie Joe Nunn",
-    "position": "LB",
+    "fullName": "Fulton Walker",
+    "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b1sat7s5w99mhn6pqoqk",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bhgc9rfkczzqwmivbbh9",
     "teamStints": [
       {
-        "teamId": "LAR",
-        "startYear": 1985,
-        "endYear": 1987
+        "teamId": "MIA",
+        "startYear": 1981,
+        "endYear": 1985
       },
       {
-        "teamId": "IND",
-        "startYear": 1994,
-        "endYear": 1996
+        "teamId": "LV",
+        "startYear": 1985,
+        "endYear": 1986
       }
     ],
-    "id": "freddie-joe-nunn"
+    "id": "fulton-walker"
   },
   {
     "fullName": "George Greene",
@@ -106215,25 +114924,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "george-greene"
-  },
-  {
-    "fullName": "Greg Hill",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z4kebx4zxktlz4bmpftm",
-    "teamStints": [
-      {
-        "teamId": "HOU",
-        "startYear": 1983,
-        "endYear": 1983
-      },
-      {
-        "teamId": "KC",
-        "startYear": 1984,
-        "endYear": 1988
-      }
-    ],
-    "id": "greg-hill"
   },
   {
     "fullName": "Guy Frazier",
@@ -106293,23 +114983,23 @@ export const GENERATED_PLAYERS = [
     "id": "jack-fox"
   },
   {
-    "fullName": "James Washington",
-    "position": "DB",
+    "fullName": "Jackie Shipp",
+    "position": "LB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/z7uapqywipf0llegwzqo",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/w7mtt8vjl1msdgtexmis",
     "teamStints": [
       {
-        "teamId": "DAL",
-        "startYear": 1990,
-        "endYear": 1994
+        "teamId": "MIA",
+        "startYear": 1984,
+        "endYear": 1988
       },
       {
-        "teamId": "WAS",
-        "startYear": 1995,
-        "endYear": 1995
+        "teamId": "LV",
+        "startYear": 1989,
+        "endYear": 1989
       }
     ],
-    "id": "james-washington"
+    "id": "jackie-shipp"
   },
   {
     "fullName": "Jamie Rivers",
@@ -106318,7 +115008,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/j4yaqq0t2kjilnrkzdyb",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1970,
         "endYear": 1973
       },
@@ -106356,7 +115046,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v1i6gudbuvmqnkydsjdx",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1981,
         "endYear": 1985
       },
@@ -106714,7 +115404,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lhreuweoveewasdyhrlz",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1977,
         "endYear": 1978
       },
@@ -106914,6 +115604,30 @@ export const GENERATED_PLAYERS = [
     "id": "mike-thomas-2"
   },
   {
+    "fullName": "Mike Wise",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tjoyhiejosfjbntz5d7u",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1986,
+        "endYear": 1990
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 1991,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1991,
+        "endYear": 1991
+      }
+    ],
+    "id": "mike-wise"
+  },
+  {
     "fullName": "Nemiah Wilson",
     "position": "DB",
     "difficulty": "impossible",
@@ -106950,6 +115664,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "oliver-davis"
+  },
+  {
+    "fullName": "Rafael Robinson",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/apkupnvn91sh71lnst8i",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 1992,
+        "endYear": 1995
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1996,
+        "endYear": 1997
+      }
+    ],
+    "id": "rafael-robinson"
   },
   {
     "fullName": "Ralph Ortega",
@@ -107020,7 +115753,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dzm8rtuw1m6took2f5rh",
     "teamStints": [
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1970,
         "endYear": 1973
       },
@@ -107071,6 +115804,25 @@ export const GENERATED_PLAYERS = [
     "id": "rick-woods"
   },
   {
+    "fullName": "Rickey Dixon",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/t2c0cew3ftqtossx47on",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 1988,
+        "endYear": 1992
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1993,
+        "endYear": 1993
+      }
+    ],
+    "id": "rickey-dixon"
+  },
+  {
     "fullName": "Rob Johnson",
     "position": "QB",
     "difficulty": "impossible",
@@ -107105,6 +115857,25 @@ export const GENERATED_PLAYERS = [
     "id": "rob-johnson"
   },
   {
+    "fullName": "Robert Young",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/q1lwpcohw58igecemeey",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1991,
+        "endYear": 1995
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 1996,
+        "endYear": 1996
+      }
+    ],
+    "id": "robert-young"
+  },
+  {
     "fullName": "Rod Kush",
     "position": "DB",
     "difficulty": "impossible",
@@ -107116,7 +115887,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1984
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1985,
         "endYear": 1985
       }
@@ -107160,6 +115931,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "royce-berry"
+  },
+  {
+    "fullName": "Russell Carter",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zxsntkttd9g2kcqeu6zs",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 1984,
+        "endYear": 1987
+      },
+      {
+        "teamId": "LV",
+        "startYear": 1988,
+        "endYear": 1989
+      }
+    ],
+    "id": "russell-carter"
   },
   {
     "fullName": "Rusty Chambers",
@@ -107227,6 +116017,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "scott-nicolas"
+  },
+  {
+    "fullName": "Scott Stephen",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/slpem2rwz1ubbp7kjmmf",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 1987,
+        "endYear": 1991
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1992
+      }
+    ],
+    "id": "scott-stephen"
   },
   {
     "fullName": "Sealver Siliga",
@@ -107321,25 +116130,6 @@ export const GENERATED_PLAYERS = [
     "id": "stephen-alexander"
   },
   {
-    "fullName": "Steve Busick",
-    "position": "LB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/esjklosxvsbmdf4ud9fy",
-    "teamStints": [
-      {
-        "teamId": "DEN",
-        "startYear": 1981,
-        "endYear": 1985
-      },
-      {
-        "teamId": "LAC",
-        "startYear": 1987,
-        "endYear": 1987
-      }
-    ],
-    "id": "steve-busick"
-  },
-  {
     "fullName": "Terry Beeson",
     "position": "LB",
     "difficulty": "impossible",
@@ -107395,6 +116185,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tim-gordon"
+  },
+  {
+    "fullName": "Toby Wright",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o1tmyvjwiyzupr5kkufg",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1998
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1999,
+        "endYear": 1999
+      }
+    ],
+    "id": "toby-wright"
   },
   {
     "fullName": "Tom Cousineau",
@@ -107454,25 +116263,6 @@ export const GENERATED_PLAYERS = [
     "id": "willie-hall"
   },
   {
-    "fullName": "Wymon Henderson",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sjlb0nwokjhbknlp2cvd",
-    "teamStints": [
-      {
-        "teamId": "MIN",
-        "startYear": 1987,
-        "endYear": 1988
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 1989,
-        "endYear": 1992
-      }
-    ],
-    "id": "wymon-henderson"
-  },
-  {
     "fullName": "Anthony Dixon",
     "position": "RB",
     "difficulty": "impossible",
@@ -107498,13 +116288,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ywstkti1hyakyne4njr6",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1994,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1994,
         "endYear": 1999
       },
       {
@@ -107642,10 +116427,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Kalvin Pearson",
-    "position": "FS",
+    "position": "CB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ptbukuglro2z8kggjik9",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2002
+      },
       {
         "teamId": "TB",
         "startYear": 2005,
@@ -107762,13 +116552,18 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vzmf3p3k4ywfa5vjn9za",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "TEN",
         "startYear": 2015,
         "endYear": 2015
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -107847,6 +116642,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2002,
         "endYear": 2005
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2006
       },
       {
         "teamId": "DET",
@@ -108108,6 +116908,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "MIA",
         "startYear": 2013,
         "endYear": 2013
@@ -108186,7 +116991,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 1994,
+        "startYear": 1992,
         "endYear": 1997
       },
       {
@@ -108215,6 +117020,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "PHI",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
         "startYear": 2010,
         "endYear": 2010
       }
@@ -108263,7 +117073,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1993,
         "endYear": 1995
       },
       {
@@ -108318,6 +117128,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2012,
         "endYear": 2014
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "DAL",
@@ -108503,8 +117318,23 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tzagnaxc5mk9gsgdfzch",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
         "teamId": "SEA",
         "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2008,
         "endYear": 2008
       },
       {
@@ -108514,6 +117344,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "charlie-frye"
+  },
+  {
+    "fullName": "Dominique Franks",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jegridlledy1424tybuc",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
+        "endYear": 2014
+      }
+    ],
+    "id": "dominique-franks"
   },
   {
     "fullName": "Eric Stokes",
@@ -108535,6 +117384,25 @@ export const GENERATED_PLAYERS = [
     "id": "eric-stokes"
   },
   {
+    "fullName": "Jeff King",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qhwgsgrmhstkrrgxllij",
+    "teamStints": [
+      {
+        "teamId": "CAR",
+        "startYear": 2006,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "jeff-king"
+  },
+  {
     "fullName": "Jermaine Lewis",
     "position": "WR",
     "difficulty": "impossible",
@@ -108544,6 +117412,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BAL",
         "startYear": 1996,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
@@ -108560,13 +117433,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ska8n8shr2etljdtbzds",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1992,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1992,
         "endYear": 1999
       },
       {
@@ -108673,7 +117541,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "DET",
@@ -108712,7 +117580,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       }
     ],
     "id": "mark-smith"
@@ -108819,6 +117687,44 @@ export const GENERATED_PLAYERS = [
     "id": "shawn-price"
   },
   {
+    "fullName": "Troy Hambrick",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bo2zhv6axwvce6mb0g5l",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2000,
+        "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "troy-hambrick"
+  },
+  {
+    "fullName": "Victor Adeyanju",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i8npfprcpd92yeityymc",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "victor-adeyanju"
+  },
+  {
     "fullName": "Alex Carrington",
     "position": "DE",
     "difficulty": "impossible",
@@ -108828,6 +117734,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "BUF",
         "startYear": 2010,
         "endYear": 2013
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2014,
+        "endYear": 2014
       },
       {
         "teamId": "BUF",
@@ -108897,10 +117808,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Derrick Martin",
-    "position": "FS",
+    "position": "CB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qrcew4kbn9aujdenm8bp",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2008
+      },
       {
         "teamId": "GB",
         "startYear": 2009,
@@ -108942,7 +117858,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -108957,6 +117873,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "drew-stanton"
+  },
+  {
+    "fullName": "Greg Jones",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ksydsc7chyysjq0p0htj",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "JAX",
+        "startYear": 2007,
+        "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "greg-jones"
   },
   {
     "fullName": "Jeff Locke",
@@ -108994,6 +117934,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tvhdusodeltfkxhyrhgb",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
         "teamId": "IND",
         "startYear": 2012,
         "endYear": 2012
@@ -109024,7 +117969,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -109133,6 +118078,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2003,
         "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2008
       }
     ],
     "id": "lorenzo-neal"
@@ -109146,7 +118096,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "CAR",
@@ -109164,13 +118114,13 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Mark Campbell",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ptumwqyseaaoawuvd9p4",
     "teamStints": [
       {
         "teamId": "CLE",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "BUF",
@@ -109191,6 +118141,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/neokahiaiw92tuovyn9s",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2005
+      },
       {
         "teamId": "MIA",
         "startYear": 2006,
@@ -109253,6 +118208,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2001,
         "endYear": 2002
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2003
       }
     ],
     "id": "ray-lucas"
@@ -109347,10 +118307,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Zach Diles",
-    "position": "OLB",
+    "position": "MLB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ldjfwunzr9l7iepbx9pk",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2010
+      },
       {
         "teamId": "TB",
         "startYear": 2011,
@@ -109365,6 +118330,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2012,
         "endYear": 2013
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "zach-diles"
@@ -109410,13 +118385,13 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Brandon Manumaleuna",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pea5lmdbjmnnjwqxgobi",
     "teamStints": [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2005
       },
       {
         "teamId": "LAC",
@@ -109741,14 +118716,33 @@ export const GENERATED_PLAYERS = [
     "id": "stefan-charles"
   },
   {
-    "fullName": "Xavier Williams",
-    "position": "DL",
+    "fullName": "Tony Fisher",
+    "position": "RB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qxz3ln7lmwubkgqngczh",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qkkiiatu4riyomiprxzo",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "tony-fisher"
+  },
+  {
+    "fullName": "Xavier Williams",
+    "position": "NT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hftxadl5vsffvsy9mofs",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -109783,7 +118777,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
@@ -109799,11 +118793,40 @@ export const GENERATED_PLAYERS = [
     "id": "anthony-mitchell"
   },
   {
+    "fullName": "Anthony Sherman",
+    "position": "FB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ue0kpbo7b9trtkeuhvjx",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2013,
+        "endYear": 2020
+      }
+    ],
+    "id": "anthony-sherman"
+  },
+  {
     "fullName": "Bobby Rainey",
     "position": "RB",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vf2lmyxgjhrah1hfed1x",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
+      },
       {
         "teamId": "TB",
         "startYear": 2013,
@@ -109832,6 +118855,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2010
       },
       {
         "teamId": "DEN",
@@ -109954,6 +118982,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "KC",
         "startYear": 2014,
         "endYear": 2014
@@ -109979,6 +119012,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "MIA",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "ARI",
         "startYear": 2005,
         "endYear": 2005
       }
@@ -110016,12 +119054,56 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "SEA",
         "startYear": 2006,
         "endYear": 2006
       }
     ],
     "id": "pete-hunter"
+  },
+  {
+    "fullName": "Reggie Hodges",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/irdyx4z6d6v565mxly23",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "TEN",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "reggie-hodges"
   },
   {
     "fullName": "Ryan Santoso",
@@ -110207,6 +119289,25 @@ export const GENERATED_PLAYERS = [
     "id": "theo-jackson"
   },
   {
+    "fullName": "Von Hutchins",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g5kiajlvlhcux9nsuzw0",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2007
+      }
+    ],
+    "id": "von-hutchins"
+  },
+  {
     "fullName": "Brian Williams",
     "position": "LB",
     "difficulty": "impossible",
@@ -110319,6 +119420,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jkmpgkno52mxhhjk2ose",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2007
+      },
+      {
         "teamId": "CIN",
         "startYear": 2008,
         "endYear": 2008
@@ -110383,11 +119489,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "J.J. Nelson",
     "position": "WR",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/x8bfxa6fyss270khiurh",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rdpp1eiaqse92yvujbs0",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -110534,6 +119640,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "r-kal-truluck"
@@ -110730,7 +119841,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -110745,6 +119856,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "benny-cunningham"
+  },
+  {
+    "fullName": "Blake Gillikin",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oebldsxcejx2pdmq0gvq",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2020,
+        "endYear": 2023
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2023,
+        "endYear": null
+      }
+    ],
+    "id": "blake-gillikin"
   },
   {
     "fullName": "Darrel Young",
@@ -110777,7 +119907,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wfkvlrwkinvheuktie4z",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1974,
         "endYear": 1974
       },
@@ -110787,7 +119917,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1975,
         "endYear": 1975
       },
@@ -110880,6 +120010,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "james-washington-2"
+  },
+  {
+    "fullName": "Jerry DeLoach",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dqpg5kxicgnyi9bosw4e",
+    "teamStints": [
+      {
+        "teamId": "WAS",
+        "startYear": 2001,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2005
+      }
+    ],
+    "id": "jerry-deloach"
   },
   {
     "fullName": "Johnny Townsend",
@@ -111029,6 +120178,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "CHI",
         "startYear": 2014,
         "endYear": 2014
@@ -111037,6 +120191,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2014,
         "endYear": 2014
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2015
       },
       {
         "teamId": "SF",
@@ -111050,6 +120209,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "shaun-draughn"
+  },
+  {
+    "fullName": "Tim Bulman",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o1lspd0ptvvptjfvhffq",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "tim-bulman"
   },
   {
     "fullName": "Tyler Huntley",
@@ -111088,7 +120271,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       },
       {
@@ -111128,6 +120311,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2006,
         "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2008
       },
       {
         "teamId": "LV",
@@ -111419,6 +120607,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2005
       }
     ],
     "id": "pat-johnson"
@@ -111504,30 +120697,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ambry-thomas"
-  },
-  {
-    "fullName": "Ben Graham",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rn4n6km2mxgvzg117oim",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 2005,
-        "endYear": 2008
-      },
-      {
-        "teamId": "NO",
-        "startYear": 2008,
-        "endYear": 2008
-      },
-      {
-        "teamId": "DET",
-        "startYear": 2011,
-        "endYear": 2012
-      }
-    ],
-    "id": "ben-graham"
   },
   {
     "fullName": "Cam Lewis",
@@ -111656,7 +120825,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bpompxrbpkdhq0ia6ogo",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1973,
         "endYear": 1973
       },
@@ -111710,6 +120879,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "derrick-blaylock"
+  },
+  {
+    "fullName": "Derrick Frost",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/it1uqezmlfdcatlq1n1f",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2005,
+        "endYear": 2007
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "derrick-frost"
   },
   {
     "fullName": "Duke Williams",
@@ -111783,6 +120976,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2006,
         "endYear": 2010
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2013
       },
       {
         "teamId": "LAC",
@@ -111900,11 +121103,50 @@ export const GENERATED_PLAYERS = [
     "id": "rod-streater"
   },
   {
+    "fullName": "Sean Landeta",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ck6so8zwqjsmxhdabvog",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 1987,
+        "endYear": 1987
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "sean-landeta"
+  },
+  {
     "fullName": "Shiloh Keo",
-    "position": "SS",
+    "position": "DB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gfwxapy3hno4ewpowrcm",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2014
+      },
       {
         "teamId": "DEN",
         "startYear": 2015,
@@ -111917,6 +121159,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "shiloh-keo"
+  },
+  {
+    "fullName": "Simon Fraser",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l05susv9xsub8byzhlwb",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2007
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "simon-fraser"
   },
   {
     "fullName": "Todd Sauerbrun",
@@ -111946,6 +121207,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "todd-sauerbrun"
+  },
+  {
+    "fullName": "Brandon Jackson",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uy3xpotebhao3y1ohedi",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 2007,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "brandon-jackson"
   },
   {
     "fullName": "Cade McNown",
@@ -112174,7 +121454,17 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lmnola0pmzwchwanxapy",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
         "teamId": "PHI",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
         "startYear": 2010,
         "endYear": 2010
       },
@@ -112291,6 +121581,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "ramik-wilson"
+  },
+  {
+    "fullName": "Reggie Walker",
+    "position": "ILB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uxcjg1fh6h3wwfl0esxi",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2013,
+        "endYear": 2014
+      }
+    ],
+    "id": "reggie-walker"
   },
   {
     "fullName": "Stephone Anthony",
@@ -112534,6 +121843,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SF",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2015
       },
       {
         "teamId": "IND",
@@ -113079,7 +122393,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2012,
         "endYear": 2016
       },
       {
@@ -113113,6 +122427,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "carnell-lake"
+  },
+  {
+    "fullName": "Darryl Sharpton",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gmakrpgjcwhkhtmhrwil",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2014,
+        "endYear": 2014
+      }
+    ],
+    "id": "darryl-sharpton"
   },
   {
     "fullName": "Derek Hagan",
@@ -113170,6 +122503,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2008
+      },
+      {
         "teamId": "NE",
         "startYear": 2010,
         "endYear": 2011
@@ -113183,6 +122521,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gunq4pae9yx2zlfz7qil",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2013
+      },
       {
         "teamId": "CIN",
         "startYear": 2014,
@@ -113325,13 +122668,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zjmcceoqblgnq7mo6lbs",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1994,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1994,
         "endYear": 1997
       },
       {
@@ -113370,6 +122708,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "merton-hanks"
+  },
+  {
+    "fullName": "Raonall Smith",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xlo7h470zlqnbnwlhk1i",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2007
+      }
+    ],
+    "id": "raonall-smith"
   },
   {
     "fullName": "Ray-Ray McCloud",
@@ -113427,6 +122784,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2007
       },
       {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
         "teamId": "KC",
         "startYear": 2008,
         "endYear": 2009
@@ -113465,9 +122827,24 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "MIA",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2009
       }
     ],
     "id": "sam-gado"
@@ -113620,6 +122997,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
         "teamId": "CIN",
         "startYear": 2006,
         "endYear": 2006
@@ -113651,7 +123033,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2003
       }
     ],
     "id": "barron-tanner"
@@ -113665,7 +123047,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "ATL",
@@ -113674,6 +123056,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "chris-redman"
+  },
+  {
+    "fullName": "DeAngelo Tyson",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dobpaaopdzslsvpp4h0c",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2014
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "deangelo-tyson"
   },
   {
     "fullName": "Derrick Ransom",
@@ -113685,6 +123086,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "KC",
         "startYear": 1998,
         "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2003
       },
       {
         "teamId": "JAX",
@@ -113704,6 +123110,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 2007,
         "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2011
       },
       {
         "teamId": "TB",
@@ -113768,6 +123179,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ebafywiuxaoelkbjx6t3",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      {
         "teamId": "DET",
         "startYear": 2010,
         "endYear": 2010
@@ -113820,6 +123236,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a3rx3o6kxmzwxscjfilj",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2006,
+        "endYear": 2008
+      },
       {
         "teamId": "KC",
         "startYear": 2009,
@@ -113892,6 +123313,25 @@ export const GENERATED_PLAYERS = [
     "id": "michael-robinson"
   },
   {
+    "fullName": "Ryan Moats",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/affmtf1dhfy1ptszq6o1",
+    "teamStints": [
+      {
+        "teamId": "PHI",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2009
+      }
+    ],
+    "id": "ryan-moats"
+  },
+  {
     "fullName": "Shilique Calhoun",
     "position": "LB",
     "difficulty": "impossible",
@@ -113922,9 +123362,9 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vt7echmvywb7mo5oksxb",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1987,
-        "endYear": 1987
+        "endYear": 1992
       },
       {
         "teamId": "SF",
@@ -113933,6 +123373,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tim-mcdonald"
+  },
+  {
+    "fullName": "Anthony Maddox",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vwcvwwspy5ao1mbdq4pz",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2007
+      }
+    ],
+    "id": "anthony-maddox"
   },
   {
     "fullName": "Austin Bryant",
@@ -114363,25 +123822,6 @@ export const GENERATED_PLAYERS = [
     "id": "siran-neal"
   },
   {
-    "fullName": "Blake Gillikin",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oebldsxcejx2pdmq0gvq",
-    "teamStints": [
-      {
-        "teamId": "NO",
-        "startYear": 2020,
-        "endYear": 2023
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 2023,
-        "endYear": 2025
-      }
-    ],
-    "id": "blake-gillikin"
-  },
-  {
     "fullName": "Brad Nortman",
     "position": "P",
     "difficulty": "impossible",
@@ -114413,7 +123853,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -114447,11 +123887,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Cody Davis",
     "position": "DB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bomgyvbr8dlo5ra6ojyn",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pdijtrs1tnltal8g6cmx",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2017
       },
       {
@@ -114593,6 +124033,25 @@ export const GENERATED_PLAYERS = [
     "id": "deshone-kizer"
   },
   {
+    "fullName": "Eric Westmoreland",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/paudtksja3kvje4hwaby",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2001,
+        "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "eric-westmoreland"
+  },
+  {
     "fullName": "George Coghill",
     "position": "DB",
     "difficulty": "impossible",
@@ -114679,6 +124138,25 @@ export const GENERATED_PLAYERS = [
     "id": "jacob-hester"
   },
   {
+    "fullName": "James Allen",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tw4x6i01gorfsuoommkb",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 1997,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
+      }
+    ],
+    "id": "james-allen"
+  },
+  {
     "fullName": "Jarvis Brownlee Jr.",
     "position": "DB",
     "difficulty": "impossible",
@@ -114696,6 +124174,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jarvis-brownlee-jr"
+  },
+  {
+    "fullName": "Karl Williams",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fxxpdof3sotnhaan83yo",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 1996,
+        "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "karl-williams"
   },
   {
     "fullName": "Kevin Lockett",
@@ -114905,6 +124402,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "LV",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "roland-williams"
@@ -114963,6 +124465,25 @@ export const GENERATED_PLAYERS = [
     "id": "scott-mcgarrahan"
   },
   {
+    "fullName": "Scott Player",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zzhrpz8oqrxddhee6m10",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
+      }
+    ],
+    "id": "scott-player"
+  },
+  {
     "fullName": "Stanley Pritchett",
     "position": "RB",
     "difficulty": "impossible",
@@ -115005,6 +124526,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "NO",
         "startYear": 2006,
+        "endYear": 2008
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
         "endYear": 2008
       },
       {
@@ -115079,6 +124605,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gbieo8cplp1xktwniaal",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
+      },
       {
         "teamId": "NO",
         "startYear": 2013,
@@ -115176,6 +124707,25 @@ export const GENERATED_PLAYERS = [
     "id": "van-tuinei"
   },
   {
+    "fullName": "Zac Stacy",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oo0cmp2wjrwqz3arii0f",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2013,
+        "endYear": 2014
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2015,
+        "endYear": 2015
+      }
+    ],
+    "id": "zac-stacy"
+  },
+  {
     "fullName": "Brandon Jones",
     "position": "WR",
     "difficulty": "impossible",
@@ -115214,6 +124764,25 @@ export const GENERATED_PLAYERS = [
     "id": "d-j-hackett"
   },
   {
+    "fullName": "Danario Alexander",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vvu1dtofttohpfwiolyo",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "danario-alexander"
+  },
+  {
     "fullName": "Dedric Ward",
     "position": "WR",
     "difficulty": "impossible",
@@ -115231,6 +124800,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "NE",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
         "startYear": 2003,
         "endYear": 2003
       },
@@ -115320,6 +124894,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2005,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "joe-tafoya"
@@ -115493,6 +125072,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2006
       }
     ],
     "id": "obafemi-ayanbadejo"
@@ -115512,6 +125096,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "WAS",
@@ -115555,6 +125144,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2003
       }
     ],
     "id": "riddick-parker"
@@ -115821,6 +125415,30 @@ export const GENERATED_PLAYERS = [
     "id": "chris-cook"
   },
   {
+    "fullName": "Curome Cox",
+    "position": "FS",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rfsbbf4ndeksdyatd1ni",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2007,
+        "endYear": 2007
+      }
+    ],
+    "id": "curome-cox"
+  },
+  {
     "fullName": "Darrell Baker",
     "position": "DB",
     "difficulty": "impossible",
@@ -115850,6 +125468,25 @@ export const GENERATED_PLAYERS = [
     "id": "darrell-baker"
   },
   {
+    "fullName": "DaShon Polk",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/esiiduwj6rn07o5iydxk",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 2000,
+        "endYear": 2003
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2004,
+        "endYear": 2006
+      }
+    ],
+    "id": "dashon-polk"
+  },
+  {
     "fullName": "Elijah Alexander",
     "position": "LB",
     "difficulty": "impossible",
@@ -115877,6 +125514,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "elijah-alexander"
+  },
+  {
+    "fullName": "Garrett Graham",
+    "position": "TE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/f1su4sbfwyp4xp2iy3jj",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2015
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "garrett-graham"
   },
   {
     "fullName": "Irv Smith",
@@ -116158,28 +125814,28 @@ export const GENERATED_PLAYERS = [
     "id": "matt-darr"
   },
   {
-    "fullName": "Mitch Berger",
-    "position": "P",
+    "fullName": "Matt Leinart",
+    "position": "QB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mqdccgnykzgp26fl4uuj",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y1vcveczcmnterc5qphn",
     "teamStints": [
       {
-        "teamId": "NO",
-        "startYear": 2003,
-        "endYear": 2005
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 2008,
-        "endYear": 2008
-      },
-      {
-        "teamId": "DEN",
-        "startYear": 2009,
+        "teamId": "ARI",
+        "startYear": 2006,
         "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
-    "id": "mitch-berger"
+    "id": "matt-leinart"
   },
   {
     "fullName": "Myron Bell",
@@ -116232,9 +125888,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
         "teamId": "MIN",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "ross-kolodziej"
@@ -116321,7 +125987,22 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PHI",
         "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2007
       },
       {
         "teamId": "DET",
@@ -116844,6 +126525,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2002,
         "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2008
       }
     ],
     "id": "daniel-wilcox"
@@ -116919,6 +126605,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "donald-parham"
+  },
+  {
+    "fullName": "Duane Carrell",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qi4qqgtvlx5spqlr7pi9",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 1974,
+        "endYear": 1974
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 1975,
+        "endYear": 1975
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 1976,
+        "endYear": 1977
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 1977,
+        "endYear": 1977
+      }
+    ],
+    "id": "duane-carrell"
   },
   {
     "fullName": "Elijah Mitchell",
@@ -117012,6 +126727,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2005
       },
       {
         "teamId": "NYG",
@@ -117149,6 +126869,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
         "teamId": "DET",
         "startYear": 2006,
         "endYear": 2008
@@ -117182,19 +126907,14 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yjhswayiab8hgvygzsvi",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1996,
         "endYear": 1998
       },
       {
         "teamId": "CLE",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       }
     ],
     "id": "lenoy-jones"
@@ -117384,6 +127104,25 @@ export const GENERATED_PLAYERS = [
     "id": "vernon-fox"
   },
   {
+    "fullName": "Arlen Harris",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xgo9ljfqhrqw3cacywyf",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2005
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "arlen-harris"
+  },
+  {
     "fullName": "Bryan McCann",
     "position": "CB",
     "difficulty": "impossible",
@@ -117392,6 +127131,21 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DAL",
         "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
         "endYear": 2011
       },
       {
@@ -117403,6 +127157,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "bryan-mccann"
@@ -117505,6 +127264,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tuarj8tj0cyrqr70cfga",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
         "teamId": "SEA",
         "startYear": 2012,
         "endYear": 2012
@@ -117516,6 +127285,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "DET",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "BAL",
         "startYear": 2014,
         "endYear": 2014
       }
@@ -117657,6 +127431,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2008,
         "endYear": 2011
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
       },
       {
         "teamId": "CIN",
@@ -117950,6 +127729,25 @@ export const GENERATED_PLAYERS = [
     "id": "orleans-darkwa"
   },
   {
+    "fullName": "Quentin Harris",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e40z5nb4bswz2rwnpvu5",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "quentin-harris"
+  },
+  {
     "fullName": "Robert Bean",
     "position": "DB",
     "difficulty": "impossible",
@@ -118007,6 +127805,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "travis-prentice"
@@ -118127,6 +127930,25 @@ export const GENERATED_PLAYERS = [
     "id": "demontre-hurst"
   },
   {
+    "fullName": "Haruki Nakamura",
+    "position": "SS",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jv1fxkwsjuuuus1ef9zl",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2011
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "haruki-nakamura"
+  },
+  {
     "fullName": "Jordan Pugh",
     "position": "FS",
     "difficulty": "impossible",
@@ -118190,6 +128012,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/guf4yzrzgnpmx7uonpqs",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "NE",
         "startYear": 2015,
@@ -118897,7 +128724,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Vonta Leach",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/n9zjncpra3ifhujp6fum",
     "teamStints": [
       {
@@ -118914,6 +128741,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2013
       }
     ],
     "id": "vonta-leach"
@@ -119033,6 +128870,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "brian-johnson"
+  },
+  {
+    "fullName": "Chris Gardocki",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kcmjgepucpdyxqjy8r1j",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2003
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2004,
+        "endYear": 2006
+      }
+    ],
+    "id": "chris-gardocki"
   },
   {
     "fullName": "Corwin Brown",
@@ -119165,13 +129021,28 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "James Whitley",
-    "position": "SS",
+    "position": "CB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xifgxx4zqoiftm8uwdh1",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
         "teamId": "GB",
         "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2004,
         "endYear": 2004
       },
       {
@@ -119189,7 +129060,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/j6uyaxt5iooocvwjbjuy",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1975,
         "endYear": 1975
       },
@@ -119213,6 +129084,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      {
         "teamId": "KC",
         "startYear": 2011,
         "endYear": 2011
@@ -119222,10 +129098,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Johnson Bademosi",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mhmomwtopuiv5pyoxdp5",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/s1at5znt6ppdjmhlyewq",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "DET",
         "startYear": 2016,
@@ -119617,6 +129498,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2014
       },
       {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "LV",
         "startYear": 2015,
         "endYear": 2015
@@ -119633,6 +129519,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jeremy-ross"
+  },
+  {
+    "fullName": "Justin Gilbert",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tpfrsiel25grekvx4gv6",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2015
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "justin-gilbert"
   },
   {
     "fullName": "Justin Jackson",
@@ -119746,6 +129651,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qikom0sqarsx06xny7co",
     "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1993,
+        "endYear": 1993
+      },
       {
         "teamId": "JAX",
         "startYear": 1995,
@@ -119878,6 +129788,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "SEA",
         "startYear": 2010,
         "endYear": 2010
@@ -119947,7 +129862,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "WAS",
@@ -119995,6 +129910,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "zach-moore"
+  },
+  {
+    "fullName": "Alex Hall",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zw1eozupom8ou4uqr4xo",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2009
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "alex-hall"
   },
   {
     "fullName": "Antwaun Woods",
@@ -120083,6 +130022,30 @@ export const GENERATED_PLAYERS = [
     "id": "brayden-narveson"
   },
   {
+    "fullName": "Bryan Barker",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ppydumh0icqagm0wiebm",
+    "teamStints": [
+      {
+        "teamId": "WAS",
+        "startYear": 2002,
+        "endYear": 2003
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "bryan-barker"
+  },
+  {
     "fullName": "Carlos Polk",
     "position": "LB",
     "difficulty": "impossible",
@@ -120135,6 +130098,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2011,
         "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
       },
       {
         "teamId": "CAR",
@@ -120275,35 +130243,6 @@ export const GENERATED_PLAYERS = [
     "id": "drew-kaser"
   },
   {
-    "fullName": "Duane Carrell",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qi4qqgtvlx5spqlr7pi9",
-    "teamStints": [
-      {
-        "teamId": "DAL",
-        "startYear": 1974,
-        "endYear": 1974
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1975,
-        "endYear": 1975
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 1976,
-        "endYear": 1977
-      },
-      {
-        "teamId": "LAR",
-        "startYear": 1977,
-        "endYear": 1977
-      }
-    ],
-    "id": "duane-carrell"
-  },
-  {
     "fullName": "Frank Ferrara",
     "position": "DL",
     "difficulty": "impossible",
@@ -120406,6 +130345,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g3hlqbn08gzx7cneob5i",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2012
+      },
+      {
         "teamId": "SF",
         "startYear": 2013,
         "endYear": 2013
@@ -120482,30 +130426,6 @@ export const GENERATED_PLAYERS = [
     "id": "josh-martin"
   },
   {
-    "fullName": "Matt Turk",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g9hjqcjp518hlr6albuw",
-    "teamStints": [
-      {
-        "teamId": "NYJ",
-        "startYear": 2002,
-        "endYear": 2002
-      },
-      {
-        "teamId": "MIA",
-        "startYear": 2003,
-        "endYear": 2004
-      },
-      {
-        "teamId": "JAX",
-        "startYear": 2011,
-        "endYear": 2011
-      }
-    ],
-    "id": "matt-turk"
-  },
-  {
     "fullName": "Nick Rose",
     "position": "K",
     "difficulty": "hard",
@@ -120545,6 +130465,35 @@ export const GENERATED_PLAYERS = [
     "id": "nick-rose"
   },
   {
+    "fullName": "Paul Ernster",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hzp4p7zwakl6kvroiscy",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "PIT",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "paul-ernster"
+  },
+  {
     "fullName": "Raekwon Davis",
     "position": "DL",
     "difficulty": "impossible",
@@ -120570,13 +130519,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ngnhi5wtsz89liohrvp3",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1996,
         "endYear": 1997
       },
       {
@@ -120724,6 +130668,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
+      },
+      {
         "teamId": "SF",
         "startYear": 2011,
         "endYear": 2011
@@ -120846,7 +130795,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -121239,6 +131188,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "CIN",
         "startYear": 2006,
         "endYear": 2006
@@ -121331,6 +131285,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o26uwppjakpopj5v9irt",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "GB",
         "startYear": 2016,
         "endYear": 2018
@@ -121408,7 +131367,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bv8aa1khwpokepn2nb7w",
     "teamStints": [
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1987,
         "endYear": 1987
       },
@@ -121476,7 +131435,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1975
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1976,
         "endYear": 1976
       },
@@ -121649,6 +131608,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2008
+      },
+      {
         "teamId": "BUF",
         "startYear": 2009,
         "endYear": 2009
@@ -121701,13 +131665,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Xavier Cooper",
-    "position": "DL",
+    "position": "DE",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sjpbunvkabnnwhiwgngt",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -121742,7 +131706,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2025,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "zach-carter"
@@ -121774,6 +131738,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
         "teamId": "DET",
         "startYear": 2006,
         "endYear": 2008
@@ -121794,7 +131763,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2020
       }
     ],
@@ -121840,6 +131809,30 @@ export const GENERATED_PLAYERS = [
     "id": "byron-cowart"
   },
   {
+    "fullName": "Chris Givens",
+    "position": "WR",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/crnbi2k4ju3dnvyftpau",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2015
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "chris-givens"
+  },
+  {
     "fullName": "Colby Bockwoldt",
     "position": "OLB",
     "difficulty": "impossible",
@@ -121854,6 +131847,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TEN",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "colby-bockwoldt"
@@ -121868,6 +131866,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2005,
         "endYear": 2008
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2010
       },
       {
         "teamId": "IND",
@@ -122059,6 +132062,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "CAR",
         "startYear": 2014,
         "endYear": 2018
@@ -122098,7 +132106,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1993,
         "endYear": 1996
       },
       {
@@ -122124,12 +132132,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "NYJ",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2005
       },
       {
         "teamId": "NO",
@@ -122367,6 +132380,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ulusd8v57limsjkx7a9y",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1994
+      },
       {
         "teamId": "SF",
         "startYear": 1995,
@@ -122655,7 +132673,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "NE",
@@ -123317,7 +133335,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2005
       },
       {
         "teamId": "LAC",
@@ -123406,11 +133424,35 @@ export const GENERATED_PLAYERS = [
     "id": "benny-snell"
   },
   {
+    "fullName": "Bernard Scott",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qui3hyqvk5k44phgo0ns",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "bernard-scott"
+  },
+  {
     "fullName": "Brady Quinn",
     "position": "QB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ezqavugaagjzhsqhoicz",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2009
+      },
       {
         "teamId": "DEN",
         "startYear": 2010,
@@ -123425,9 +133467,33 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "brady-quinn"
+  },
+  {
+    "fullName": "Brandon Green",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ejpxanzzmb0xwvqekq7o",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2006
+      }
+    ],
+    "id": "brandon-green"
   },
   {
     "fullName": "Christine Michael",
@@ -123902,6 +133968,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2015
       },
       {
+        "teamId": "LAR",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
         "teamId": "CIN",
         "startYear": 2016,
         "endYear": 2016
@@ -124293,11 +134364,35 @@ export const GENERATED_PLAYERS = [
     "id": "darren-bennett"
   },
   {
+    "fullName": "Dennis Johnson",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jvyuw7lwdnkmma3td8l6",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2003
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "dennis-johnson-2"
+  },
+  {
     "fullName": "Deonte Thompson",
     "position": "WR",
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bvfgozqccoo627wuitkb",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2014
+      },
       {
         "teamId": "BUF",
         "startYear": 2014,
@@ -124332,23 +134427,23 @@ export const GENERATED_PLAYERS = [
     "id": "deonte-thompson"
   },
   {
-    "fullName": "Derrick Frost",
+    "fullName": "Drew Butler",
     "position": "P",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/it1uqezmlfdcatlq1n1f",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i2uzaqlreybleb2ey4yq",
     "teamStints": [
       {
-        "teamId": "WAS",
-        "startYear": 2005,
-        "endYear": 2007
+        "teamId": "PIT",
+        "startYear": 2012,
+        "endYear": 2012
       },
       {
-        "teamId": "GB",
-        "startYear": 2008,
-        "endYear": 2008
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2016
       }
     ],
-    "id": "derrick-frost"
+    "id": "drew-butler"
   },
   {
     "fullName": "Ernie Logan",
@@ -124717,25 +134812,6 @@ export const GENERATED_PLAYERS = [
     "id": "montavious-stanley"
   },
   {
-    "fullName": "Paul Ernster",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hzp4p7zwakl6kvroiscy",
-    "teamStints": [
-      {
-        "teamId": "DEN",
-        "startYear": 2005,
-        "endYear": 2007
-      },
-      {
-        "teamId": "PIT",
-        "startYear": 2008,
-        "endYear": 2008
-      }
-    ],
-    "id": "paul-ernster"
-  },
-  {
     "fullName": "Pressley Harvin",
     "position": "P",
     "difficulty": "impossible",
@@ -124879,35 +134955,6 @@ export const GENERATED_PLAYERS = [
     "id": "ryan-torain"
   },
   {
-    "fullName": "Sean Landeta",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ck6so8zwqjsmxhdabvog",
-    "teamStints": [
-      {
-        "teamId": "NYG",
-        "startYear": 1987,
-        "endYear": 1987
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2002,
-        "endYear": 2002
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2005,
-        "endYear": 2005
-      },
-      {
-        "teamId": "NYG",
-        "startYear": 2006,
-        "endYear": 2006
-      }
-    ],
-    "id": "sean-landeta"
-  },
-  {
     "fullName": "Steve O'Neal",
     "position": "P",
     "difficulty": "impossible",
@@ -125008,6 +135055,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tjsmxoohvdb1pcnkp7gw",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
+      },
       {
         "teamId": "DEN",
         "startYear": 2012,
@@ -125132,6 +135184,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "aaron-berry"
@@ -125235,6 +135292,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
         "teamId": "KC",
         "startYear": 2012,
         "endYear": 2012
@@ -125330,6 +135392,25 @@ export const GENERATED_PLAYERS = [
     "id": "corey-nelson"
   },
   {
+    "fullName": "Dane Looker",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yaekv9wmvkduhdzsvdrb",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 2000,
+        "endYear": 2000
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2008
+      }
+    ],
+    "id": "dane-looker"
+  },
+  {
     "fullName": "Darius Reynaud",
     "position": "WR",
     "difficulty": "impossible",
@@ -125357,6 +135438,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "darius-reynaud"
+  },
+  {
+    "fullName": "David Anderson",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vgqehge1oceyp7qyu1du",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2011
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "david-anderson"
   },
   {
     "fullName": "Dwayne Haskins",
@@ -125692,6 +135792,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zdfywwd0yvsd6okfa5sr",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2015
+      },
+      {
         "teamId": "DEN",
         "startYear": 2016,
         "endYear": 2017
@@ -125703,6 +135808,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "marlon-brown"
+  },
+  {
+    "fullName": "Ovie Mughelli",
+    "position": "FB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/l7pa6jzidcukztqfhcq2",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2006
+      },
+      {
+        "teamId": "ATL",
+        "startYear": 2007,
+        "endYear": 2011
+      }
+    ],
+    "id": "ovie-mughelli"
   },
   {
     "fullName": "Phillip Hunt",
@@ -125727,6 +135851,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "phillip-hunt"
+  },
+  {
+    "fullName": "Quentin Moses",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ojve5fp64prq7adiydls",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2007,
+        "endYear": 2010
+      }
+    ],
+    "id": "quentin-moses"
   },
   {
     "fullName": "Roydell Williams",
@@ -125783,6 +135926,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dtbjfn1kodhcmlt4cahw",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 1988,
+        "endYear": 1994
+      },
+      {
         "teamId": "NO",
         "startYear": 1995,
         "endYear": 1997
@@ -125815,6 +135963,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "anton-palepoi"
@@ -125864,13 +136017,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Carl Davis",
-    "position": "DL",
+    "position": "NT",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fxgddl7ilja9z5ufgaiv",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/m7hq0kxxsvlpygx5amrs",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -125910,6 +136063,40 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "carl-davis"
+  },
+  {
+    "fullName": "Chansi Stuckey",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/smitiykmbdjg63nwoizi",
+    "teamStints": [
+      {
+        "teamId": "NYJ",
+        "startYear": 2007,
+        "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "NYJ",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "chansi-stuckey"
   },
   {
     "fullName": "Christian Ringo",
@@ -126005,6 +136192,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bn4xwskquhtuxoxfhrox",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
         "teamId": "NO",
         "startYear": 2003,
         "endYear": 2004
@@ -126043,6 +136240,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/atra5outunyi3dikmjez",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2012
+      },
       {
         "teamId": "PHI",
         "startYear": 2013,
@@ -126252,8 +136454,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2015
+      },
+      {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -126342,6 +136549,30 @@ export const GENERATED_PLAYERS = [
     "id": "kevin-ogletree"
   },
   {
+    "fullName": "Kyle Richardson",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c9wgbnzdkdyt84dagy6r",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "CIN",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "kyle-richardson"
+  },
+  {
     "fullName": "Larry Swider",
     "position": "P",
     "difficulty": "impossible",
@@ -126358,7 +136589,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1980,
         "endYear": 1980
       }
@@ -126465,11 +136696,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Maxx Williams",
     "position": "TE",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vttrtcna6kapymi1d6o3",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p0j7ax3rqhrzn5nvmc06",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2018
       },
       {
@@ -126486,6 +136717,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fgfwj67pbxmp1bpjm7ti",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2011
+      },
       {
         "teamId": "NE",
         "startYear": 2012,
@@ -126535,7 +136771,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1978,
         "endYear": 1978
       },
@@ -126545,7 +136781,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1979
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1979,
         "endYear": 1979
       },
@@ -126653,30 +136889,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "pharoh-cooper"
-  },
-  {
-    "fullName": "Reggie Hodges",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/irdyx4z6d6v565mxly23",
-    "teamStints": [
-      {
-        "teamId": "PHI",
-        "startYear": 2005,
-        "endYear": 2005
-      },
-      {
-        "teamId": "NYJ",
-        "startYear": 2008,
-        "endYear": 2008
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 2009,
-        "endYear": 2009
-      }
-    ],
-    "id": "reggie-hodges"
   },
   {
     "fullName": "Rick Engles",
@@ -127022,6 +137234,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2003,
+        "endYear": 2005
       }
     ],
     "id": "cameron-cleeland"
@@ -127046,6 +137263,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ARI",
         "startYear": 1999,
         "endYear": 2000
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2004
       }
     ],
     "id": "corey-sears"
@@ -127063,6 +137285,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "MIA",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "LAR",
         "startYear": 2014,
         "endYear": 2014
       }
@@ -127360,13 +137587,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Jamie Meder",
-    "position": "DL",
+    "position": "DT",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mcg6qbqxaiyim10mlgte",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2018
       },
       {
@@ -127697,6 +137924,25 @@ export const GENERATED_PLAYERS = [
     "id": "malik-mcdowell"
   },
   {
+    "fullName": "Mark Bruener",
+    "position": "TE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hmywleip3n6bwfgvatsi",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1995,
+        "endYear": 2003
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2004,
+        "endYear": 2008
+      }
+    ],
+    "id": "mark-bruener"
+  },
+  {
     "fullName": "Matt McCrane",
     "position": "K",
     "difficulty": "hard",
@@ -127789,6 +138035,25 @@ export const GENERATED_PLAYERS = [
     "id": "ramos-mcdonald"
   },
   {
+    "fullName": "Tim Johnson",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vlck0i0ks1zmmmuangd8",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "tim-johnson-2"
+  },
+  {
     "fullName": "Tiquan Underwood",
     "position": "WR",
     "difficulty": "impossible",
@@ -127811,6 +138076,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tiquan-underwood"
+  },
+  {
+    "fullName": "Troy Evans",
+    "position": "ILB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xlewudmilcay7vln4sgy",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2006
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2007,
+        "endYear": 2009
+      }
+    ],
+    "id": "troy-evans"
   },
   {
     "fullName": "Zach Mettenberger",
@@ -127853,9 +138137,19 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Austin Davis",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wmquxjs1nuwferz7o9q2",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2014
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2015,
+        "endYear": 2015
+      },
       {
         "teamId": "DEN",
         "startYear": 2016,
@@ -127950,7 +138244,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "MIA",
@@ -128067,6 +138361,25 @@ export const GENERATED_PLAYERS = [
     "id": "daniel-muir"
   },
   {
+    "fullName": "David Vobora",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xx0nbnu3n8rh9ztdzvjo",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
+        "teamId": "SEA",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "david-vobora"
+  },
+  {
     "fullName": "Derek Rivers",
     "position": "DL",
     "difficulty": "impossible",
@@ -128142,6 +138455,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "geronimo-allison"
+  },
+  {
+    "fullName": "Jason Wright",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/spdj4r3hg5r04ylndxzq",
+    "teamStints": [
+      {
+        "teamId": "ATL",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2010
+      }
+    ],
+    "id": "jason-wright"
   },
   {
     "fullName": "Jerome McDougle",
@@ -128520,6 +138857,35 @@ export const GENERATED_PLAYERS = [
     "id": "ty-zentner"
   },
   {
+    "fullName": "Vernand Morency",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b10fmvvqsjncmmzc5r6g",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2007,
+        "endYear": 2007
+      }
+    ],
+    "id": "vernand-morency"
+  },
+  {
     "fullName": "Ben Banogu",
     "position": "DL",
     "difficulty": "impossible",
@@ -128622,6 +138988,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a4ijk8zs4l7m3deikdib",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2008
+      },
       {
         "teamId": "CIN",
         "startYear": 2009,
@@ -128815,6 +139186,35 @@ export const GENERATED_PLAYERS = [
     "id": "greg-scruggs"
   },
   {
+    "fullName": "Hamza Abdullah",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jucikqcrbovbzuqeee1f",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 2005,
+        "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2011
+      }
+    ],
+    "id": "hamza-abdullah"
+  },
+  {
     "fullName": "Jamar Williams",
     "position": "MLB",
     "difficulty": "impossible",
@@ -128883,10 +139283,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Jed Collins",
-    "position": "FB",
+    "position": "RB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qbkykf4phf6wm37mecpf",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2008,
+        "endYear": 2008
+      },
       {
         "teamId": "NO",
         "startYear": 2011,
@@ -128960,6 +139365,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jaytetd30prsjk0sofj6",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
         "teamId": "SEA",
         "startYear": 2005,
         "endYear": 2007
@@ -128992,6 +139402,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "keith-adams"
@@ -129060,6 +139475,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2013,
         "endYear": 2014
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2015,
+        "endYear": 2015
       },
       {
         "teamId": "CHI",
@@ -129139,6 +139559,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DET",
         "startYear": 2008,
         "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
       },
       {
         "teamId": "CHI",
@@ -129387,9 +139812,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
         "teamId": "JAX",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2008
       },
       {
         "teamId": "JAX",
@@ -129398,6 +139833,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "todd-bouman"
+  },
+  {
+    "fullName": "Troy Smith",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/of29l0d8dptqlagnvmhl",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "troy-smith"
   },
   {
     "fullName": "Tye Smith",
@@ -129578,6 +140032,25 @@ export const GENERATED_PLAYERS = [
     "id": "ben-heeney"
   },
   {
+    "fullName": "Ben Taylor",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/is14zxeeyx1wuxwbytmk",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2005
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "ben-taylor"
+  },
+  {
     "fullName": "Brad Jackson",
     "position": "LB",
     "difficulty": "impossible",
@@ -129719,6 +140192,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2003
       },
       {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
         "teamId": "KC",
         "startYear": 2005,
         "endYear": 2006
@@ -129811,6 +140289,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "gavin-escobar"
+  },
+  {
+    "fullName": "Gerome Sapp",
+    "position": "FS",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/imc5ktlcfdv9csqsxn1j",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2007
+      }
+    ],
+    "id": "gerome-sapp"
   },
   {
     "fullName": "Hercules Mata'afa",
@@ -130037,10 +140539,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Marcus Roberson",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/m57l07a338cbpnrop6hn",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2014,
+        "endYear": 2015
+      },
       {
         "teamId": "BUF",
         "startYear": 2016,
@@ -130163,11 +140670,35 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       }
     ],
     "id": "scott-solomon"
+  },
+  {
+    "fullName": "Tim Carter",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ggrxzm6mfgj339gghnqv",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 2002,
+        "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "tim-carter"
   },
   {
     "fullName": "Tito Wooten",
@@ -130373,10 +140904,25 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Chris Ogbonnaya",
-    "position": "FB",
+    "position": "RB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/asbf4eskpit7fggsiazo",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2013
+      },
       {
         "teamId": "CAR",
         "startYear": 2014,
@@ -130612,6 +141158,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2024,
         "endYear": 2025
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2026,
+        "endYear": null
       }
     ],
     "id": "ihmir-smith-marsette"
@@ -130668,6 +141219,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jason-glenn"
+  },
+  {
+    "fullName": "Jerame Tuman",
+    "position": "TE",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pmb6mm1ymwyzliiqm4fn",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 1999,
+        "endYear": 2007
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "jerame-tuman"
   },
   {
     "fullName": "Jerel Worthy",
@@ -130782,6 +141352,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uujvde2mvms4fpfetdmu",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2003
+      },
+      {
         "teamId": "MIA",
         "startYear": 2004,
         "endYear": 2004
@@ -130841,6 +141416,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "luke-gifford"
+  },
+  {
+    "fullName": "Mike Karney",
+    "position": "FB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a7tbw5gaulltswknyx3r",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2004,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2010
+      }
+    ],
+    "id": "mike-karney"
   },
   {
     "fullName": "Miles Boykin",
@@ -131168,13 +141762,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lv5vlqyi6plhn10yf7my",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1995,
         "endYear": 1998
       },
       {
@@ -131211,6 +141800,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fpkdvnu4uzvwxhwaryzm",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2014
+      },
+      {
         "teamId": "JAX",
         "startYear": 2015,
         "endYear": 2015
@@ -131240,7 +141834,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1993
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1994,
         "endYear": 1994
       },
@@ -131268,30 +141862,16 @@ export const GENERATED_PLAYERS = [
     "id": "billy-joe-tolliver"
   },
   {
-    "fullName": "Bryan Barker",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ppydumh0icqagm0wiebm",
-    "teamStints": [
-      {
-        "teamId": "WAS",
-        "startYear": 2002,
-        "endYear": 2003
-      },
-      {
-        "teamId": "GB",
-        "startYear": 2004,
-        "endYear": 2004
-      }
-    ],
-    "id": "bryan-barker"
-  },
-  {
     "fullName": "Bryan Braman",
     "position": "OLB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kqmagzpldnz3zwvkes8l",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2013
+      },
       {
         "teamId": "PHI",
         "startYear": 2014,
@@ -131322,7 +141902,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1978
       },
       {
-        "teamId": "BAL",
+        "teamId": "IND",
         "startYear": 1979,
         "endYear": 1979
       }
@@ -131462,6 +142042,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "daniel-bellinger"
+  },
+  {
+    "fullName": "David Tyree",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jdwv4lgsjgsme2xyxfht",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "david-tyree"
   },
   {
     "fullName": "Dezmon Briscoe",
@@ -131743,6 +142342,25 @@ export const GENERATED_PLAYERS = [
     "id": "john-gilmore"
   },
   {
+    "fullName": "Joseph Fauria",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e6tne3enp0difyhuwlqj",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2013,
+        "endYear": 2014
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2015,
+        "endYear": 2015
+      }
+    ],
+    "id": "joseph-fauria"
+  },
+  {
     "fullName": "Julian Stanford",
     "position": "OLB",
     "difficulty": "impossible",
@@ -131833,7 +142451,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2016
       }
     ],
@@ -132074,9 +142692,33 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2008,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
       }
     ],
     "id": "sam-aiken"
+  },
+  {
+    "fullName": "Spencer Lanning",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fs56vzwpahenlqxrlt58",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2014
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2015,
+        "endYear": 2015
+      }
+    ],
+    "id": "spencer-lanning"
   },
   {
     "fullName": "Sterling Hofrichter",
@@ -132123,13 +142765,18 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/h8x0pbhc1s5dwjuzipsb",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2013
+      },
+      {
         "teamId": "ATL",
         "startYear": 2014,
         "endYear": 2014
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -132297,6 +142944,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "SEA",
         "startYear": 2006,
         "endYear": 2006
@@ -132328,7 +142980,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2025,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "zonovan-knight"
@@ -132574,12 +143226,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2004
       },
       {
         "teamId": "GB",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "james-jackson"
@@ -132618,6 +143275,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2003,
         "endYear": 2009
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2010
       }
     ],
     "id": "jason-mckie"
@@ -132777,9 +143439,33 @@ export const GENERATED_PLAYERS = [
         "teamId": "LAC",
         "startYear": 2008,
         "endYear": 2010
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2011
       }
     ],
     "id": "kris-wilson"
+  },
+  {
+    "fullName": "Lee Suggs",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wiaissqfdb8dp3iagdrl",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2005
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "lee-suggs"
   },
   {
     "fullName": "Malik Herring",
@@ -133348,6 +144034,25 @@ export const GENERATED_PLAYERS = [
     "id": "j-t-o-sullivan"
   },
   {
+    "fullName": "Jake Ballard",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pqwrskwkqbzzkf33gxvr",
+    "teamStints": [
+      {
+        "teamId": "NYG",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "jake-ballard"
+  },
+  {
     "fullName": "Jarrett Boykin",
     "position": "WR",
     "difficulty": "impossible",
@@ -133386,6 +144091,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2003,
         "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
       },
       {
         "teamId": "SEA",
@@ -133463,6 +144173,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2008,
         "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2009
       }
     ],
     "id": "lajuan-ramsey"
@@ -133474,7 +144189,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qqwycnjlplkderuuqdpw",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1987
       },
@@ -133509,6 +144224,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "michael-mauti"
+  },
+  {
+    "fullName": "Nick Murphy",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b96liygnh9qclff7lbps",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "nick-murphy"
   },
   {
     "fullName": "Patrick Lee",
@@ -133879,6 +144618,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xlj2p2svtub52gxxbkpa",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
         "teamId": "NE",
         "startYear": 2011,
         "endYear": 2011
@@ -133946,13 +144690,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Bryce Hager",
-    "position": "LB",
+    "position": "MLB",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xf1pwm7gljbpe9ri5ucp",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/y6vab0kwgq8mghurpiy7",
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2020
       },
       {
@@ -134000,6 +144744,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "c-j-brewer"
+  },
+  {
+    "fullName": "Cecil Sapp",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tuqjmknw3iiuyvw6irav",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 2003,
+        "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "cecil-sapp"
   },
   {
     "fullName": "Chad Muma",
@@ -134112,6 +144875,16 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2002,
         "endYear": 2003
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2008
       },
       {
         "teamId": "NO",
@@ -134238,6 +145011,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "frank-chamberlin"
@@ -134248,6 +145026,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ulhmhnfruo7vkabyifzq",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2012,
+        "endYear": 2012
+      },
       {
         "teamId": "KC",
         "startYear": 2013,
@@ -134291,6 +145074,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIN",
         "startYear": 1999,
         "endYear": 2000
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "john-burrough"
@@ -134524,6 +145312,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2015
+      },
+      {
         "teamId": "NO",
         "startYear": 2015,
         "endYear": 2015
@@ -134657,6 +145450,30 @@ export const GENERATED_PLAYERS = [
     "id": "ronald-fields"
   },
   {
+    "fullName": "Terry Jones",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xpkmqum1pyvmin6pkdh4",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "terry-jones"
+  },
+  {
     "fullName": "Winston Guy",
     "position": "SS",
     "difficulty": "impossible",
@@ -134687,6 +145504,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tudwv8wsrihfiyuc6d8j",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2008
+      },
+      {
         "teamId": "DET",
         "startYear": 2009,
         "endYear": 2009
@@ -134695,6 +145517,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
       },
       {
         "teamId": "LV",
@@ -134844,6 +145671,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2004,
         "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2007
       }
     ],
     "id": "cedric-killings"
@@ -134863,6 +145695,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2002,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "charles-lee"
@@ -134882,6 +145719,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CAR",
         "startYear": 1999,
         "endYear": 2001
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "LV",
@@ -134954,6 +145796,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2010
       }
     ],
     "id": "derreck-robinson"
@@ -135074,11 +145921,35 @@ export const GENERATED_PLAYERS = [
     "id": "elijhaa-penny"
   },
   {
+    "fullName": "Ethan Kelley",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ezxmugfifdbi1qcq7u1q",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2007
+      }
+    ],
+    "id": "ethan-kelley"
+  },
+  {
     "fullName": "Evan Moore",
     "position": "TE",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/odr6gybx3rdemncpjh9j",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2011
+      },
       {
         "teamId": "SEA",
         "startYear": 2012,
@@ -135167,6 +146038,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jrisi7xq9ugwob6uu6kr",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 2012,
+        "endYear": 2013
+      },
+      {
         "teamId": "JAX",
         "startYear": 2013,
         "endYear": 2013
@@ -135185,6 +146061,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wroqbg3hrs99xqpymyyd",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2003
+      },
       {
         "teamId": "TEN",
         "startYear": 2004,
@@ -135311,6 +146192,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2004
       },
       {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "NO",
         "startYear": 2006,
         "endYear": 2006
@@ -135398,7 +146284,7 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Ryan Mallett",
     "position": "QB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tvn03oot2ttdoog5x0qr",
     "teamStints": [
       {
@@ -135407,8 +146293,13 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2015
+      },
+      {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       }
     ],
@@ -135445,13 +146336,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xtigw83t4au3mvgeomzm",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1996,
         "endYear": 2000
       },
       {
@@ -135477,6 +146363,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2005,
         "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
       },
       {
         "teamId": "ATL",
@@ -135551,7 +146442,17 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/niawtttubz9vr6gcglj3",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
         "teamId": "DEN",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
         "startYear": 2007,
         "endYear": 2007
       },
@@ -135724,6 +146625,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "TB",
         "startYear": 2008,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
       },
       {
         "teamId": "MIA",
@@ -135901,9 +146807,14 @@ export const GENERATED_PLAYERS = [
         "teamId": "CHI",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
-    "id": "greg-jones"
+    "id": "greg-jones-2"
   },
   {
     "fullName": "Herman Moore",
@@ -135985,6 +146896,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
         "teamId": "SEA",
         "startYear": 2008,
         "endYear": 2008
@@ -136009,13 +146925,18 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "JAX",
         "startYear": 2012,
         "endYear": 2012
       },
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2013,
         "endYear": 2016
       },
       {
@@ -136112,6 +147033,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "josh-woods"
+  },
+  {
+    "fullName": "Justin Tuggle",
+    "position": "MLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/osmcmksbt74we8tcru6l",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2015
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2016,
+        "endYear": 2016
+      }
+    ],
+    "id": "justin-tuggle"
   },
   {
     "fullName": "K.J. Henry",
@@ -136260,6 +147200,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pj2lbdhplppzlywlzsbr",
     "teamStints": [
       {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
         "teamId": "TB",
         "startYear": 2005,
         "endYear": 2008
@@ -136407,12 +147352,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
         "startYear": 2003,
         "endYear": 2006
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2010
       }
     ],
     "id": "nick-sorensen"
@@ -136522,25 +147472,6 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "scott-frost"
-  },
-  {
-    "fullName": "Steve Jackson",
-    "position": "DB",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/u6vpsblldaisu32vxpvq",
-    "teamStints": [
-      {
-        "teamId": "HOU",
-        "startYear": 1991,
-        "endYear": 1996
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 1999
-      }
-    ],
-    "id": "steve-jackson"
   },
   {
     "fullName": "Steven Terrell",
@@ -136753,7 +147684,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1994,
         "endYear": 1995
       },
       {
@@ -136773,6 +147704,44 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "austin-robbins"
+  },
+  {
+    "fullName": "Ben Emanuel",
+    "position": "S",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tdrxhgmo8d9nwny3iscf",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "ben-emanuel"
+  },
+  {
+    "fullName": "Brian Schaefering",
+    "position": "NT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/se1wwqjdnxu2rm4dhcgz",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "brian-schaefering"
   },
   {
     "fullName": "Brooks Bollinger",
@@ -136864,6 +147833,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dane-cruikshank"
+  },
+  {
+    "fullName": "Demetrius Williams",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xntwqlnegaqr47enwajy",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "demetrius-williams"
   },
   {
     "fullName": "Fernando Smith",
@@ -137107,6 +148095,16 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ibstffbyrr1gduqcj3ps",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2013
+      },
+      {
         "teamId": "DET",
         "startYear": 2015,
         "endYear": 2015
@@ -137126,6 +148124,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bry5wpbtawtppqp0aikt",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
         "teamId": "NO",
         "startYear": 2012,
         "endYear": 2012
@@ -137142,6 +148145,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jerome-murphy"
+  },
+  {
+    "fullName": "Jeromy Miles",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/tjzs7aqqd6kuqqe61bvk",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2014
+      }
+    ],
+    "id": "jeromy-miles"
   },
   {
     "fullName": "Joejuan Williams",
@@ -137305,7 +148327,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -137391,7 +148413,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -137597,12 +148619,12 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Andrew Glover",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oqp41bj93zjllmudwfrf",
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1991,
         "endYear": 1996
       },
       {
@@ -137638,6 +148660,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2008,
         "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
       },
       {
         "teamId": "IND",
@@ -137694,7 +148721,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1994,
         "endYear": 1996
       },
       {
@@ -137711,6 +148738,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nf350uhs4tvralojpuha",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2013
+      },
       {
         "teamId": "TEN",
         "startYear": 2014,
@@ -137775,6 +148807,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ls3lsossj9hbemiod2ux",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2011,
+        "endYear": 2014
+      },
+      {
         "teamId": "NYG",
         "startYear": 2014,
         "endYear": 2014
@@ -137808,13 +148845,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Corey Moore",
-    "position": "DB",
+    "position": "S",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rtpdzarniwu6x4viobef",
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -137826,11 +148863,54 @@ export const GENERATED_PLAYERS = [
     "id": "corey-moore"
   },
   {
+    "fullName": "David Reed",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/si1ityf354bhjpq0kock",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2012
+      },
+      {
+        "teamId": "IND",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "david-reed"
+  },
+  {
+    "fullName": "Devard Darling",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mclnv8pgxvkcobazg6lf",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2004,
+        "endYear": 2007
+      },
+      {
+        "teamId": "KC",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "devard-darling"
+  },
+  {
     "fullName": "Edgar Jones",
-    "position": "OLB",
+    "position": "DE",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qomqcmxxprbqmkp0nh23",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2011
+      },
       {
         "teamId": "KC",
         "startYear": 2012,
@@ -138172,13 +149252,28 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Moran Norris",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i4wjezya4qunmvhibnfp",
     "teamStints": [
       {
         "teamId": "NO",
         "startYear": 2001,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2005
       },
       {
         "teamId": "SF",
@@ -138221,6 +149316,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "myles-adams"
+  },
+  {
+    "fullName": "Raymond Walls",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xsw1kn9mwmnhcqhysxxu",
+    "teamStints": [
+      {
+        "teamId": "IND",
+        "startYear": 2001,
+        "endYear": 2001
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "raymond-walls"
   },
   {
     "fullName": "Reggie Barlow",
@@ -138743,6 +149867,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2013
       },
       {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
         "teamId": "NE",
         "startYear": 2015,
         "endYear": 2015
@@ -138759,6 +149888,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "damaris-johnson"
+  },
+  {
+    "fullName": "Dan Kreider",
+    "position": "RB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dmxuhoow7t3vwvc6ahdj",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2000,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "dan-kreider"
   },
   {
     "fullName": "Dan Stryzinski",
@@ -138778,6 +149931,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "dan-stryzinski"
+  },
+  {
+    "fullName": "David Pittman",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ajrw1mjgy78gvenyyv1r",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "david-pittman"
   },
   {
     "fullName": "Dexter Reid",
@@ -138823,25 +150000,6 @@ export const GENERATED_PLAYERS = [
     "id": "dezmen-southward"
   },
   {
-    "fullName": "Drew Butler",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/i2uzaqlreybleb2ey4yq",
-    "teamStints": [
-      {
-        "teamId": "PIT",
-        "startYear": 2012,
-        "endYear": 2012
-      },
-      {
-        "teamId": "ARI",
-        "startYear": 2016,
-        "endYear": 2016
-      }
-    ],
-    "id": "drew-butler"
-  },
-  {
     "fullName": "Eric King",
     "position": "CB",
     "difficulty": "impossible",
@@ -138860,6 +150018,16 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "DET",
         "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "DET",
+        "startYear": 2010,
         "endYear": 2010
       }
     ],
@@ -138949,7 +150117,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1980
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1987,
         "endYear": 1987
       }
@@ -139016,13 +150184,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Ibraheim Campbell",
-    "position": "DB",
+    "position": "SS",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hk9m7ofs3erack0z9lhy",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ybhysatv7kuwq1k6gfp1",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -139154,6 +150322,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2000,
         "endYear": 2001
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "jeff-ogden"
@@ -139191,7 +150364,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2023,
-        "endYear": 2025
+        "endYear": null
       }
     ],
     "id": "joey-blount"
@@ -139317,23 +150490,23 @@ export const GENERATED_PLAYERS = [
     "id": "kai-kroeger"
   },
   {
-    "fullName": "Kyle Richardson",
+    "fullName": "Kevin Stemke",
     "position": "P",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c9wgbnzdkdyt84dagy6r",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b3qvx4klmvgcihxqvm2r",
     "teamStints": [
       {
-        "teamId": "MIN",
+        "teamId": "LV",
         "startYear": 2002,
         "endYear": 2002
       },
       {
-        "teamId": "CIN",
-        "startYear": 2003,
-        "endYear": 2003
+        "teamId": "LAR",
+        "startYear": 2004,
+        "endYear": 2004
       }
     ],
-    "id": "kyle-richardson"
+    "id": "kevin-stemke"
   },
   {
     "fullName": "LaDairis Jackson",
@@ -139489,25 +150662,6 @@ export const GENERATED_PLAYERS = [
     "id": "mike-michel"
   },
   {
-    "fullName": "Nick Murphy",
-    "position": "P",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b96liygnh9qclff7lbps",
-    "teamStints": [
-      {
-        "teamId": "KC",
-        "startYear": 2004,
-        "endYear": 2004
-      },
-      {
-        "teamId": "PHI",
-        "startYear": 2005,
-        "endYear": 2005
-      }
-    ],
-    "id": "nick-murphy"
-  },
-  {
     "fullName": "Noah Herron",
     "position": "RB",
     "difficulty": "impossible",
@@ -139583,6 +150737,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "qadree-ollison"
+  },
+  {
+    "fullName": "Richmond McGee",
+    "position": "P",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xmlitgvjx5crao5aofts",
+    "teamStints": [
+      {
+        "teamId": "CHI",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "richmond-mcgee"
   },
   {
     "fullName": "Sam Irwin-Hill",
@@ -140152,6 +151325,30 @@ export const GENERATED_PLAYERS = [
     "id": "griff-whalen"
   },
   {
+    "fullName": "Jameel Cook",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ysfgk2cbvrffk27enxjq",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 2001,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
+        "teamId": "TB",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "jameel-cook"
+  },
+  {
     "fullName": "Jaydon Mickens",
     "position": "WR",
     "difficulty": "hard",
@@ -140345,6 +151542,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2003
       },
       {
         "teamId": "NE",
@@ -140852,6 +152054,44 @@ export const GENERATED_PLAYERS = [
     "id": "albert-okwuegbunam"
   },
   {
+    "fullName": "Alex Bannister",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/osxb78971uwayjem7u2v",
+    "teamStints": [
+      {
+        "teamId": "SEA",
+        "startYear": 2001,
+        "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "alex-bannister"
+  },
+  {
+    "fullName": "Armegis Spearman",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vodnjbdsibjqzg3bdfus",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2000,
+        "endYear": 2002
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
+      }
+    ],
+    "id": "armegis-spearman"
+  },
+  {
     "fullName": "Artie Ulmer",
     "position": "LB",
     "difficulty": "impossible",
@@ -140925,10 +152165,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Brynden Trawick",
-    "position": "DB",
+    "position": "FS",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nkngfmpgltgeze1gokdk",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2015
+      },
       {
         "teamId": "LV",
         "startYear": 2016,
@@ -141002,10 +152247,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Daren Bates",
-    "position": "LB",
+    "position": "OLB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mj5z3knorwvmtfiyya1z",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2013,
+        "endYear": 2015
+      },
       {
         "teamId": "LV",
         "startYear": 2016,
@@ -141061,6 +152311,11 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "ATL",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "HOU",
         "startYear": 2006,
         "endYear": 2006
       }
@@ -141250,7 +152505,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1994,
         "endYear": 1996
       },
       {
@@ -141289,7 +152544,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       }
     ],
@@ -141471,12 +152726,36 @@ export const GENERATED_PLAYERS = [
         "endYear": 2011
       },
       {
+        "teamId": "LAR",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
         "teamId": "IND",
         "startYear": 2012,
         "endYear": 2012
       }
     ],
     "id": "kellen-heard"
+  },
+  {
+    "fullName": "Ken Dorsey",
+    "position": "QB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wdcxbnp85r8yplbmkwk3",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 2003,
+        "endYear": 2005
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2008
+      }
+    ],
+    "id": "ken-dorsey"
   },
   {
     "fullName": "Marcus McCauley",
@@ -141685,6 +152964,54 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "porter-gustin"
+  },
+  {
+    "fullName": "Quincy Butler",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mvrn8egsthtb8bdsgq0o",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2010
+      }
+    ],
+    "id": "quincy-butler"
+  },
+  {
+    "fullName": "Quinton Culberson",
+    "position": "MLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/sdjxgpwsp0o9qnr9n4i8",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "quinton-culberson"
   },
   {
     "fullName": "Raheem Blackshear",
@@ -142083,6 +153410,25 @@ export const GENERATED_PLAYERS = [
     "id": "chris-odom"
   },
   {
+    "fullName": "David Carter",
+    "position": "NT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/c4x0bbpovw9qtfeh4zzu",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "david-carter"
+  },
+  {
     "fullName": "Deadrin Senat",
     "position": "DL",
     "difficulty": "impossible",
@@ -142272,6 +153618,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mg6e3spfi0x2znzxr918",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 1994,
+        "endYear": 1994
+      },
+      {
         "teamId": "NO",
         "startYear": 1995,
         "endYear": 1995
@@ -142455,6 +153806,25 @@ export const GENERATED_PLAYERS = [
     "id": "john-metchie"
   },
   {
+    "fullName": "Jonathan Dwyer",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/eajdgcyybichzdxjd8iu",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
+      }
+    ],
+    "id": "jonathan-dwyer"
+  },
+  {
     "fullName": "Keaton Mitchell",
     "position": "RB",
     "difficulty": "hard",
@@ -142472,6 +153842,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "keaton-mitchell"
+  },
+  {
+    "fullName": "Kenneth Darby",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gdwt5cnxwjspmw9g8sxe",
+    "teamStints": [
+      {
+        "teamId": "TB",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2008,
+        "endYear": 2010
+      }
+    ],
+    "id": "kenneth-darby"
   },
   {
     "fullName": "Lavelle Hawkins",
@@ -142697,6 +154086,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "CHI",
         "startYear": 2014,
         "endYear": 2014
@@ -142847,7 +154241,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -142926,6 +154320,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "bo-schobel"
@@ -142936,6 +154335,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/hus9yzux5rhkyfd27sog",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2011
+      },
       {
         "teamId": "JAX",
         "startYear": 2011,
@@ -143089,6 +154493,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "IND",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
       }
     ],
     "id": "deji-karim"
@@ -143265,6 +154674,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2006
       },
       {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "PHI",
         "startYear": 2007,
         "endYear": 2007
@@ -143294,12 +154708,41 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "WAS",
         "startYear": 2010,
         "endYear": 2011
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2012
       }
     ],
     "id": "john-beck"
+  },
+  {
+    "fullName": "John Busing",
+    "position": "S",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kn9i1xsloptpvtlxrlqx",
+    "teamStints": [
+      {
+        "teamId": "CIN",
+        "startYear": 2006,
+        "endYear": 2008
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "john-busing"
   },
   {
     "fullName": "Jonathan Carter",
@@ -143330,6 +154773,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PHI",
         "startYear": 2009,
         "endYear": 2009
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2012
       },
       {
         "teamId": "DEN",
@@ -143409,6 +154857,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "BUF",
         "startYear": 2009,
         "endYear": 2009
@@ -143455,6 +154908,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "MIA",
         "startYear": 2000,
         "endYear": 2000
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "kevin-williams-3"
@@ -143706,6 +155164,49 @@ export const GENERATED_PLAYERS = [
     "id": "reuben-foster"
   },
   {
+    "fullName": "Richard Owens",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nmacqyd68jsk1tgswvyr",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 2004,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
+      }
+    ],
+    "id": "richard-owens"
+  },
+  {
+    "fullName": "Rob Housler",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lnu7z4mvnadgcnppqbxz",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2014
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2015,
+        "endYear": 2015
+      },
+      {
+        "teamId": "CHI",
+        "startYear": 2015,
+        "endYear": 2016
+      }
+    ],
+    "id": "rob-housler"
+  },
+  {
     "fullName": "Shad Meier",
     "position": "TE",
     "difficulty": "impossible",
@@ -143948,6 +155449,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/lew10iaodjokcyhdqatr",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "NYG",
         "startYear": 2004,
         "endYear": 2004
@@ -144010,13 +155516,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Ed Stinson",
-    "position": "DL",
+    "position": "DT",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gazqlcxwkxxrxyd26cya",
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -144052,11 +155558,40 @@ export const GENERATED_PLAYERS = [
     "id": "equanimeous-st-brown"
   },
   {
+    "fullName": "Harold Morrow",
+    "position": "RB",
+    "difficulty": "hard",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rlafcfxdxiqj7avhoccb",
+    "teamStints": [
+      {
+        "teamId": "MIN",
+        "startYear": 1996,
+        "endYear": 2002
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "harold-morrow"
+  },
+  {
     "fullName": "Howard Griffith",
     "position": "RB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pdlcmruxpeaz8jausch1",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1993,
+        "endYear": 1994
+      },
       {
         "teamId": "CAR",
         "startYear": 1995,
@@ -144079,7 +155614,17 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "LAR",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
       },
       {
         "teamId": "NYJ",
@@ -144130,9 +155675,19 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Jim Dray",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p8pyujltnfdj3qnbh7yi",
     "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2015
+      },
       {
         "teamId": "BUF",
         "startYear": 2016,
@@ -144311,6 +155866,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2004,
         "endYear": 2008
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2009
       }
     ],
     "id": "khary-campbell"
@@ -144357,6 +155917,49 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "kris-richard"
+  },
+  {
+    "fullName": "Larry Foster",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/gdobpov0wzbvs873rsow",
+    "teamStints": [
+      {
+        "teamId": "DET",
+        "startYear": 2000,
+        "endYear": 2002
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2003,
+        "endYear": 2003
+      }
+    ],
+    "id": "larry-foster"
+  },
+  {
+    "fullName": "Lawrence Vickers",
+    "position": "FB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uvonbussoelwmmrjalfc",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2010
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
+        "teamId": "DAL",
+        "startYear": 2012,
+        "endYear": 2012
+      }
+    ],
+    "id": "lawrence-vickers"
   },
   {
     "fullName": "Marquess Wilson",
@@ -144579,7 +156182,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2000,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "BUF",
@@ -144785,10 +156388,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Xavier Adibi",
-    "position": "MLB",
+    "position": "OLB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/cbdspam7d3jp6fdoyjdg",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2010
+      },
       {
         "teamId": "MIN",
         "startYear": 2011,
@@ -144846,6 +156454,25 @@ export const GENERATED_PLAYERS = [
     "id": "anthony-johnson-jr"
   },
   {
+    "fullName": "Avion Black",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bptsxz56q171z7r7mtna",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 2000,
+        "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
+      }
+    ],
+    "id": "avion-black"
+  },
+  {
     "fullName": "Billy Joe Hobert",
     "position": "QB",
     "difficulty": "impossible",
@@ -144853,7 +156480,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1993,
         "endYear": 1996
       },
       {
@@ -145458,7 +157085,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -145770,6 +157397,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "DEN",
         "startYear": 2007,
         "endYear": 2007
@@ -145929,13 +157561,23 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Terrelle Smith",
     "position": "RB",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dnahwwhrnee4dfwx2lwd",
     "teamStints": [
       {
         "teamId": "NO",
         "startYear": 2000,
         "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2008
       },
       {
         "teamId": "DET",
@@ -146174,6 +157816,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2009
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2009
+      },
+      {
         "teamId": "CIN",
         "startYear": 2010,
         "endYear": 2017
@@ -146214,6 +157861,11 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "PIT",
         "startYear": 2002,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
         "endYear": 2006
       },
       {
@@ -146446,6 +158098,25 @@ export const GENERATED_PLAYERS = [
     "id": "erik-swoope"
   },
   {
+    "fullName": "Ferric Collons",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/v8lsxxgvzbw647ovk99h",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 1993,
+        "endYear": 1993
+      },
+      {
+        "teamId": "NE",
+        "startYear": 1995,
+        "endYear": 1999
+      }
+    ],
+    "id": "ferric-collons"
+  },
+  {
     "fullName": "Jaelen Strong",
     "position": "WR",
     "difficulty": "impossible",
@@ -146453,7 +158124,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "HOU",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2017
       },
       {
@@ -146477,7 +158148,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1994,
         "endYear": 1998
       },
       {
@@ -146901,9 +158572,24 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rvq63xyplycjcoqgkqag",
     "teamStints": [
       {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
         "teamId": "BUF",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
       },
       {
         "teamId": "PHI",
@@ -147027,6 +158713,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "treylon-burks"
+  },
+  {
+    "fullName": "Alfred Malone",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ywg3ucnaxkuybe6ama1o",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
+        "teamId": "GB",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "alfred-malone"
   },
   {
     "fullName": "Andy Isabella",
@@ -147247,6 +158952,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/g9xhdanrpvnxwrqhran5",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2013,
+        "endYear": 2013
+      },
       {
         "teamId": "MIN",
         "startYear": 2014,
@@ -147494,6 +159204,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2002
       },
       {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
         "teamId": "TB",
         "startYear": 2004,
         "endYear": 2004
@@ -147513,7 +159228,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1987
       },
       {
-        "teamId": "LAR",
+        "teamId": "ARI",
         "startYear": 1987,
         "endYear": 1987
       }
@@ -147666,7 +159381,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1987
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1987,
         "endYear": 1987
       }
@@ -147809,6 +159524,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/jq7bii8blus6jqth0fjg",
     "teamStints": [
       {
+        "teamId": "HOU",
+        "startYear": 2005,
+        "endYear": 2005
+      },
+      {
         "teamId": "JAX",
         "startYear": 2006,
         "endYear": 2007
@@ -147844,6 +159564,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "khyri-thornton"
+  },
+  {
+    "fullName": "Lamont Brightful",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uvklsamihotikck5ykoz",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2002,
+        "endYear": 2003
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "lamont-brightful"
   },
   {
     "fullName": "Marvell Tell",
@@ -147913,6 +159652,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "WAS",
         "startYear": 2002,
         "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2003
       }
     ],
     "id": "orantes-grant"
@@ -147948,6 +159692,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "CLE",
+        "startYear": 2009,
+        "endYear": 2012
+      },
+      {
         "teamId": "SF",
         "startYear": 2013,
         "endYear": 2014
@@ -147981,13 +159730,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/anhijmc0vm0tph76fjjy",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1995,
         "endYear": 2000
       },
       {
@@ -148193,7 +159937,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2003
       },
       {
         "teamId": "SF",
@@ -148226,6 +159970,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tank-tyler"
+  },
+  {
+    "fullName": "Tavares Gooden",
+    "position": "ILB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/olvakiipytjudv89ewsu",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
+      }
+    ],
+    "id": "tavares-gooden"
   },
   {
     "fullName": "Taywan Taylor",
@@ -148504,6 +160272,35 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "blue-adams"
+  },
+  {
+    "fullName": "Brandon McKinney",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/e9b6ekknqqymoij4igu2",
+    "teamStints": [
+      {
+        "teamId": "LAC",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAC",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2011
+      }
+    ],
+    "id": "brandon-mckinney"
   },
   {
     "fullName": "Chris Doering",
@@ -148961,6 +160758,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/khz5y6n8bjartzhpz1pm",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
+      },
       {
         "teamId": "NE",
         "startYear": 2012,
@@ -149502,6 +161304,25 @@ export const GENERATED_PLAYERS = [
     "id": "russ-yeast"
   },
   {
+    "fullName": "Scott Paxson",
+    "position": "DT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b38ekcsc6pwo4vjsmt9k",
+    "teamStints": [
+      {
+        "teamId": "PIT",
+        "startYear": 2008,
+        "endYear": 2008
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "scott-paxson"
+  },
+  {
     "fullName": "Sean McGrath",
     "position": "TE",
     "difficulty": "hard",
@@ -149596,6 +161417,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tommy-hendricks"
+  },
+  {
+    "fullName": "Tony Curtis",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/dpg0q9yx5tgtaf3ffdbw",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2006,
+        "endYear": 2008
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "tony-curtis"
   },
   {
     "fullName": "Trenton Thompson",
@@ -149779,11 +161619,11 @@ export const GENERATED_PLAYERS = [
     "fullName": "Darius Jennings",
     "position": "WR",
     "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pc0ssnfz4i14mcbtqt13",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/a5hbv77h2qaienl37ptf",
     "teamStints": [
       {
         "teamId": "CLE",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -150048,6 +161888,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2001
       },
       {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
         "teamId": "IND",
         "startYear": 2003,
         "endYear": 2003
@@ -150088,6 +161933,106 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jamal-robertson"
+  },
+  {
+    "fullName": "Jeff Tarpinian",
+    "position": "LB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/pswt6xhajmpbxf9ujhif",
+    "teamStints": [
+      {
+        "teamId": "NE",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2014
+      }
+    ],
+    "id": "jeff-tarpinian"
+  },
+  {
+    "fullName": "Jereme Perry",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rwyk9mqypdvhi9v5jdib",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "MIA",
+        "startYear": 2007,
+        "endYear": 2007
+      }
+    ],
+    "id": "jereme-perry"
+  },
+  {
+    "fullName": "Joe Morgan",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xbylwiooxrpv38gourpe",
+    "teamStints": [
+      {
+        "teamId": "NO",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2014,
+        "endYear": 2015
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2015,
+        "endYear": 2015
+      }
+    ],
+    "id": "joe-morgan"
+  },
+  {
+    "fullName": "Jon Alston",
+    "position": "OLB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zvfoyegwfec4joajq58s",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
+        "teamId": "LV",
+        "startYear": 2007,
+        "endYear": 2009
+      }
+    ],
+    "id": "jon-alston"
+  },
+  {
+    "fullName": "Junior Ioane",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xicistt7wgq4v5c2sagp",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 2000,
+        "endYear": 2002
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2005
+      }
+    ],
+    "id": "junior-ioane"
   },
   {
     "fullName": "Kelvin Joseph",
@@ -150254,6 +162199,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "SEA",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2008
       },
       {
         "teamId": "KC",
@@ -150423,6 +162373,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ovqvn8ei0thwn7si83n8",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
+      },
       {
         "teamId": "HOU",
         "startYear": 2016,
@@ -150751,6 +162706,30 @@ export const GENERATED_PLAYERS = [
     "id": "bert-emanuel"
   },
   {
+    "fullName": "Billy Bajema",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/foqcyf8umstrjndcqjwq",
+    "teamStints": [
+      {
+        "teamId": "SF",
+        "startYear": 2005,
+        "endYear": 2008
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2013
+      }
+    ],
+    "id": "billy-bajema"
+  },
+  {
     "fullName": "Brandon Williams",
     "position": "DB",
     "difficulty": "impossible",
@@ -150806,6 +162785,11 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "MIA",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "ARI",
         "startYear": 2014,
         "endYear": 2014
       },
@@ -150948,25 +162932,6 @@ export const GENERATED_PLAYERS = [
     "id": "chris-manhertz"
   },
   {
-    "fullName": "Chris Sanders",
-    "position": "WR",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zrcqcc9sv8cxe94rrsjw",
-    "teamStints": [
-      {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 2002
-      }
-    ],
-    "id": "chris-sanders"
-  },
-  {
     "fullName": "Conrad Hamilton",
     "position": "DB",
     "difficulty": "impossible",
@@ -151026,13 +162991,13 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Daniel Brown",
-    "position": "TE",
+    "position": "WR",
     "difficulty": "hard",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/o9i0xejsk3ywrq0sk88j",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/fnhg5hbp5sjn3uuanqua",
     "teamStints": [
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -151130,6 +163095,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "ATL",
         "startYear": 2004,
         "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
       }
     ],
     "id": "eric-johnson-3"
@@ -151239,6 +163209,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "hunter-goodwin"
+  },
+  {
+    "fullName": "J.J. Moses",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/rsxn7lriqzxv64eotkis",
+    "teamStints": [
+      {
+        "teamId": "GB",
+        "startYear": 2002,
+        "endYear": 2002
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "j-j-moses"
   },
   {
     "fullName": "Jammi German",
@@ -151378,6 +163372,30 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "joe-walker"
+  },
+  {
+    "fullName": "John Nix",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/b4yij4uqjwcsfaveyraw",
+    "teamStints": [
+      {
+        "teamId": "DAL",
+        "startYear": 2001,
+        "endYear": 2002
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2003
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
+      }
+    ],
+    "id": "john-nix"
   },
   {
     "fullName": "Jon Baldwin",
@@ -151727,6 +163745,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NE",
         "startYear": 2002,
         "endYear": 2002
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2002,
+        "endYear": 2002
       }
     ],
     "id": "o-j-brigance"
@@ -151734,9 +163757,19 @@ export const GENERATED_PLAYERS = [
   {
     "fullName": "Phillip Supernaw",
     "position": "TE",
-    "difficulty": "impossible",
+    "difficulty": "hard",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wltyuqbgmkisakjqkua5",
     "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
+        "endYear": 2014
+      },
       {
         "teamId": "KC",
         "startYear": 2014,
@@ -151752,10 +163785,20 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Robert Nelson",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/zyslkltrgch6jxx3krkz",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2014,
+        "endYear": 2014
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2015,
+        "endYear": 2015
+      },
       {
         "teamId": "HOU",
         "startYear": 2016,
@@ -151822,7 +163865,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "BAL",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "JAX",
@@ -151894,6 +163937,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "tanner-mcevoy"
+  },
+  {
+    "fullName": "Teyo Johnson",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vkjwtjxcaxdeemn4qwcj",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "teyo-johnson"
   },
   {
     "fullName": "Tim Ward",
@@ -152061,6 +164123,11 @@ export const GENERATED_PLAYERS = [
         "endYear": 2005
       },
       {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2006
+      },
+      {
         "teamId": "SF",
         "startYear": 2007,
         "endYear": 2007
@@ -152160,7 +164227,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "CLE",
         "startYear": 2001,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "NE",
@@ -152193,7 +164260,7 @@ export const GENERATED_PLAYERS = [
       },
       {
         "teamId": "BAL",
-        "startYear": 2016,
+        "startYear": 2015,
         "endYear": 2016
       },
       {
@@ -152234,6 +164301,11 @@ export const GENERATED_PLAYERS = [
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ovijvmrmt333plngqjsc",
     "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2005,
+        "endYear": 2005
+      },
       {
         "teamId": "NO",
         "startYear": 2006,
@@ -152340,6 +164412,25 @@ export const GENERATED_PLAYERS = [
     "id": "darwin-thompson"
   },
   {
+    "fullName": "David Allen",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/ynozvrxhctiibfpp2gpe",
+    "teamStints": [
+      {
+        "teamId": "JAX",
+        "startYear": 2003,
+        "endYear": 2004
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "david-allen"
+  },
+  {
     "fullName": "Deven Thompkins",
     "position": "WR",
     "difficulty": "impossible",
@@ -152404,12 +164495,46 @@ export const GENERATED_PLAYERS = [
         "endYear": 2012
       },
       {
+        "teamId": "ARI",
+        "startYear": 2013,
+        "endYear": 2013
+      },
+      {
         "teamId": "TEN",
         "startYear": 2014,
         "endYear": 2014
       }
     ],
     "id": "dontay-moch"
+  },
+  {
+    "fullName": "Dyshod Carter",
+    "position": "DB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/bcizmnl0c8hghh67nauz",
+    "teamStints": [
+      {
+        "teamId": "CLE",
+        "startYear": 2001,
+        "endYear": 2001
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2004,
+        "endYear": 2004
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "dyshod-carter"
   },
   {
     "fullName": "Easton Stick",
@@ -152590,6 +164715,25 @@ export const GENERATED_PLAYERS = [
     "id": "jeremy-stewart"
   },
   {
+    "fullName": "Jerrell Powe",
+    "position": "NT",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/p4thdptqbne0z5uxpbln",
+    "teamStints": [
+      {
+        "teamId": "KC",
+        "startYear": 2011,
+        "endYear": 2013
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2014,
+        "endYear": 2014
+      }
+    ],
+    "id": "jerrell-powe"
+  },
+  {
     "fullName": "Jonathan Smith",
     "position": "WR",
     "difficulty": "impossible",
@@ -152730,7 +164874,7 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/unzaoujofzks7c5uxreo",
     "teamStints": [
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1993,
         "endYear": 1993
       },
@@ -152741,6 +164885,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "manny-martin"
+  },
+  {
+    "fullName": "Matt Willis",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/mw1ccnlauktpvqri2a0o",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "DEN",
+        "startYear": 2009,
+        "endYear": 2012
+      }
+    ],
+    "id": "matt-willis"
   },
   {
     "fullName": "Mike Jordan",
@@ -152882,6 +165045,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "PIT",
         "startYear": 2004,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2009
       }
     ],
     "id": "sean-morey"
@@ -153139,6 +165307,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYG",
         "startYear": 2005,
         "endYear": 2006
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "tim-hasselbeck"
@@ -153192,6 +165365,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "NYJ",
         "startYear": 2006,
         "endYear": 2006
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
       }
     ],
     "id": "trevor-johnson"
@@ -153204,7 +165382,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "ARI",
-        "startYear": 2016,
+        "startYear": 2014,
         "endYear": 2017
       },
       {
@@ -153410,10 +165588,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Arthur Brown",
-    "position": "LB",
+    "position": "ILB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/vkdjou1tnrmctxq703rw",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2013,
+        "endYear": 2015
+      },
       {
         "teamId": "JAX",
         "startYear": 2016,
@@ -153778,6 +165961,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "JAX",
         "startYear": 2010,
         "endYear": 2010
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2010,
+        "endYear": 2010
       }
     ],
     "id": "eric-alexander"
@@ -153808,9 +165996,19 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xhulhxigpuo1fhfbplsz",
     "teamStints": [
       {
+        "teamId": "BAL",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
         "teamId": "DAL",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2008
       },
       {
         "teamId": "MIA",
@@ -153859,6 +166057,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2007,
         "endYear": 2008
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2009,
+        "endYear": 2009
       }
     ],
     "id": "glenn-martinez"
@@ -154099,6 +166302,35 @@ export const GENERATED_PLAYERS = [
     "id": "leshon-johnson"
   },
   {
+    "fullName": "Madison Hedgecock",
+    "position": "FB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/blaas99whnah5rvfaisy",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2005,
+        "endYear": 2006
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "NYG",
+        "startYear": 2008,
+        "endYear": 2010
+      }
+    ],
+    "id": "madison-hedgecock"
+  },
+  {
     "fullName": "Maema Njongmeta",
     "position": "LB",
     "difficulty": "impossible",
@@ -154201,6 +166433,11 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kha6st3eblt02jcdibxn",
     "teamStints": [
       {
+        "teamId": "ARI",
+        "startYear": 1991,
+        "endYear": 1993
+      },
+      {
         "teamId": "NE",
         "startYear": 1994,
         "endYear": 1997
@@ -154248,6 +166485,25 @@ export const GENERATED_PLAYERS = [
     "id": "mike-labinjo"
   },
   {
+    "fullName": "Nate Poole",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/enwjzta1aqe74w1np3bl",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2002,
+        "endYear": 2004
+      },
+      {
+        "teamId": "NO",
+        "startYear": 2005,
+        "endYear": 2005
+      }
+    ],
+    "id": "nate-poole"
+  },
+  {
     "fullName": "Nicolas Luchey",
     "position": "RB",
     "difficulty": "impossible",
@@ -154267,6 +166523,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2005,
         "endYear": 2005
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2006,
+        "endYear": 2006
       }
     ],
     "id": "nicolas-luchey"
@@ -154313,6 +166574,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "quincy-stewart"
+  },
+  {
+    "fullName": "Rashad Carmichael",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yxmq6jqhvcjb0x2nugpz",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2011,
+        "endYear": 2012
+      },
+      {
+        "teamId": "PHI",
+        "startYear": 2013,
+        "endYear": 2014
+      }
+    ],
+    "id": "rashad-carmichael"
   },
   {
     "fullName": "Ricardo Louis",
@@ -154404,6 +166684,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "shi-smith"
+  },
+  {
+    "fullName": "Stanley McClover",
+    "position": "DE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/wy0dhqo9j9i86eq1g111",
+    "teamStints": [
+      {
+        "teamId": "CAR",
+        "startYear": 2006,
+        "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2008,
+        "endYear": 2008
+      }
+    ],
+    "id": "stanley-mcclover"
   },
   {
     "fullName": "Taylor Jacobs",
@@ -154936,6 +167235,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "GB",
         "startYear": 2007,
         "endYear": 2007
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2007,
+        "endYear": 2008
       }
     ],
     "id": "craig-nall"
@@ -155231,9 +167535,19 @@ export const GENERATED_PLAYERS = [
         "endYear": 2008
       },
       {
+        "teamId": "BAL",
+        "startYear": 2008,
+        "endYear": 2010
+      },
+      {
         "teamId": "JAX",
         "startYear": 2012,
         "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
+        "startYear": 2014,
+        "endYear": 2014
       }
     ],
     "id": "jalen-parmele"
@@ -155266,6 +167580,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "jeremiah-george"
+  },
+  {
+    "fullName": "Joe Klopfenstein",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/qyi8rko4uzvb2beecue5",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2006,
+        "endYear": 2008
+      },
+      {
+        "teamId": "BUF",
+        "startYear": 2009,
+        "endYear": 2009
+      }
+    ],
+    "id": "joe-klopfenstein"
   },
   {
     "fullName": "Kam Kelly",
@@ -155360,10 +167693,20 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Louis Leonard",
-    "position": "DE",
+    "position": "DT",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/uoa2hpzgqgjoj4t4p33j",
     "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 2007,
+        "endYear": 2007
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2007,
+        "endYear": 2008
+      },
       {
         "teamId": "CAR",
         "startYear": 2009,
@@ -155432,25 +167775,6 @@ export const GENERATED_PLAYERS = [
     "id": "matt-dickerson"
   },
   {
-    "fullName": "Michael Roan",
-    "position": "TE",
-    "difficulty": "impossible",
-    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/kyy5ydodbmwwe13to04d",
-    "teamStints": [
-      {
-        "teamId": "HOU",
-        "startYear": 1995,
-        "endYear": 1996
-      },
-      {
-        "teamId": "TEN",
-        "startYear": 1997,
-        "endYear": 2000
-      }
-    ],
-    "id": "michael-roan"
-  },
-  {
     "fullName": "Nick Williams",
     "position": "WR",
     "difficulty": "hard",
@@ -155492,7 +167816,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LV",
-        "startYear": 1995,
+        "startYear": 1991,
         "endYear": 1996
       },
       {
@@ -155619,6 +167943,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DEN",
         "startYear": 2003,
         "endYear": 2003
+      },
+      {
+        "teamId": "CLE",
+        "startYear": 2003,
+        "endYear": 2003
       }
     ],
     "id": "roosevelt-williams"
@@ -155733,7 +168062,7 @@ export const GENERATED_PLAYERS = [
     "teamStints": [
       {
         "teamId": "LAR",
-        "startYear": 1995,
+        "startYear": 1993,
         "endYear": 1995
       },
       {
@@ -155847,6 +168176,25 @@ export const GENERATED_PLAYERS = [
     "id": "will-redmond"
   },
   {
+    "fullName": "Alfonso Smith",
+    "position": "RB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/iekv37llp0u4uob0sby6",
+    "teamStints": [
+      {
+        "teamId": "ARI",
+        "startYear": 2010,
+        "endYear": 2013
+      },
+      {
+        "teamId": "SF",
+        "startYear": 2014,
+        "endYear": 2014
+      }
+    ],
+    "id": "alfonso-smith"
+  },
+  {
     "fullName": "Anthony Schwartz",
     "position": "WR",
     "difficulty": "impossible",
@@ -155867,10 +168215,15 @@ export const GENERATED_PLAYERS = [
   },
   {
     "fullName": "Asa Jackson",
-    "position": "DB",
+    "position": "CB",
     "difficulty": "impossible",
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xsllahfd4ilqlozs2ngd",
     "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2012,
+        "endYear": 2015
+      },
       {
         "teamId": "ARI",
         "startYear": 2016,
@@ -156040,6 +168393,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "CIN",
         "startYear": 2013,
         "endYear": 2013
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2014,
+        "endYear": 2015
       }
     ],
     "id": "christo-bilukidi"
@@ -156302,6 +168660,44 @@ export const GENERATED_PLAYERS = [
     "id": "demone-harris"
   },
   {
+    "fullName": "Derek Schouman",
+    "position": "TE",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/khby35br1mxgycwakqhp",
+    "teamStints": [
+      {
+        "teamId": "BUF",
+        "startYear": 2007,
+        "endYear": 2009
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2010,
+        "endYear": 2010
+      }
+    ],
+    "id": "derek-schouman"
+  },
+  {
+    "fullName": "DeVier Posey",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/neyvfbqn4cma8ecy22hb",
+    "teamStints": [
+      {
+        "teamId": "HOU",
+        "startYear": 2012,
+        "endYear": 2014
+      },
+      {
+        "teamId": "BAL",
+        "startYear": 2018,
+        "endYear": 2018
+      }
+    ],
+    "id": "devier-posey"
+  },
+  {
     "fullName": "Doug Costin",
     "position": "DL",
     "difficulty": "impossible",
@@ -156482,7 +168878,7 @@ export const GENERATED_PLAYERS = [
         "endYear": 1995
       },
       {
-        "teamId": "HOU",
+        "teamId": "TEN",
         "startYear": 1995,
         "endYear": 1995
       },
@@ -156517,6 +168913,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "james-williams-2"
+  },
+  {
+    "fullName": "Jason Phillips",
+    "position": "ILB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/nb1dslsnor4iy9ibgcyu",
+    "teamStints": [
+      {
+        "teamId": "BAL",
+        "startYear": 2010,
+        "endYear": 2011
+      },
+      {
+        "teamId": "CAR",
+        "startYear": 2011,
+        "endYear": 2012
+      }
+    ],
+    "id": "jason-phillips"
   },
   {
     "fullName": "Javon Wims",
@@ -156609,7 +169024,7 @@ export const GENERATED_PLAYERS = [
       {
         "teamId": "ARI",
         "startYear": 1999,
-        "endYear": 2001
+        "endYear": 2002
       },
       {
         "teamId": "DEN",
@@ -157167,6 +169582,25 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "robert-harris"
+  },
+  {
+    "fullName": "Roc Alexander",
+    "position": "CB",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/oqplkh48bllf4vwygxcv",
+    "teamStints": [
+      {
+        "teamId": "DEN",
+        "startYear": 2004,
+        "endYear": 2005
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2006,
+        "endYear": 2006
+      }
+    ],
+    "id": "roc-alexander"
   },
   {
     "fullName": "Rod Davis",
@@ -157795,7 +170229,17 @@ export const GENERATED_PLAYERS = [
         "endYear": 2010
       },
       {
+        "teamId": "ARI",
+        "startYear": 2011,
+        "endYear": 2011
+      },
+      {
         "teamId": "WAS",
+        "startYear": 2012,
+        "endYear": 2012
+      },
+      {
+        "teamId": "ARI",
         "startYear": 2012,
         "endYear": 2012
       },
@@ -157988,13 +170432,8 @@ export const GENERATED_PLAYERS = [
     "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/apylgdubf5jmeuhqu2lm",
     "teamStints": [
       {
-        "teamId": "HOU",
-        "startYear": 1996,
-        "endYear": 1996
-      },
-      {
         "teamId": "TEN",
-        "startYear": 1997,
+        "startYear": 1996,
         "endYear": 1998
       },
       {
@@ -158192,6 +170631,44 @@ export const GENERATED_PLAYERS = [
       }
     ],
     "id": "leonard-myers"
+  },
+  {
+    "fullName": "Marc Boutte",
+    "position": "DL",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/yzrwzb1w5j7bfatvotpw",
+    "teamStints": [
+      {
+        "teamId": "LAR",
+        "startYear": 1992,
+        "endYear": 1993
+      },
+      {
+        "teamId": "WAS",
+        "startYear": 1994,
+        "endYear": 1999
+      }
+    ],
+    "id": "marc-boutte"
+  },
+  {
+    "fullName": "Nick Miller",
+    "position": "WR",
+    "difficulty": "impossible",
+    "headshotUrl": "https://static.www.nfl.com/image/private/f_auto,q_auto/league/xtpyy56tx67ptquwxadq",
+    "teamStints": [
+      {
+        "teamId": "LV",
+        "startYear": 2009,
+        "endYear": 2011
+      },
+      {
+        "teamId": "LAR",
+        "startYear": 2011,
+        "endYear": 2011
+      }
+    ],
+    "id": "nick-miller"
   },
   {
     "fullName": "Patrick Laird",
@@ -158419,6 +170896,11 @@ export const GENERATED_PLAYERS = [
         "teamId": "DAL",
         "startYear": 2001,
         "endYear": 2001
+      },
+      {
+        "teamId": "HOU",
+        "startYear": 2002,
+        "endYear": 2002
       },
       {
         "teamId": "DAL",

@@ -49,18 +49,34 @@ const VALID_TEAM_IDS = new Set([
 ]);
 
 const TEAM_ALIASES = new Map([
+  ["AZ", "ARI"],
+  ["ARZ", "ARI"],
+  ["BLT", "BAL"],
+  ["BOS", "NE"],
+  ["CLV", "CLE"],
+  ["HST", "HOU"],
   ["JAC", "JAX"],
   ["LA", "LAR"],
+  ["PHO", "ARI"],
+  ["RAI", "LV"],
+  ["RAM", "LAR"],
+  ["SL", "LAR"],
   ["STL", "LAR"],
   ["SD", "LAC"],
   ["OAK", "LV"],
   ["WSH", "WAS"],
   ["WFT", "WAS"]
 ]);
+const UNRECOGNIZED_TEAM_IDS = new Set();
 
-function normalizeTeam(team) {
+function normalizeTeam(team, season) {
+  if (team === "BAL" && season <= 1983) return "IND";
+  if (team === "HOU" && season <= 1996) return "TEN";
+  if (team === "STL" && season <= 1987) return "ARI";
   const normalized = TEAM_ALIASES.get(team) ?? team;
-  return VALID_TEAM_IDS.has(normalized) ? normalized : null;
+  if (VALID_TEAM_IDS.has(normalized)) return normalized;
+  if (team) UNRECOGNIZED_TEAM_IDS.add(team);
+  return null;
 }
 
 function parseCsv(text) {
@@ -407,7 +423,7 @@ async function main() {
     for (const row of rows.sort((left, right) => toNumber(left.week) - toNumber(right.week))) {
       const key = playerKey(row);
       const season = toNumber(row.season);
-      const teamId = normalizeTeam(row.team);
+      const teamId = normalizeTeam(row.team, season);
       if (!key || !season || !teamId) continue;
 
       const playerSeasonTeams = statSeasonTeams.get(key) ?? new Map();
@@ -423,7 +439,7 @@ async function main() {
     for (const row of rows) {
       const key = playerKey(row);
       const season = toNumber(row.season);
-      const teamId = normalizeTeam(row.team);
+      const teamId = normalizeTeam(row.team, season);
       const fullName = row.full_name || row.player_display_name;
       const position = row.position;
 
@@ -493,6 +509,9 @@ async function main() {
     generated.sort((left, right) => right.prominence - left.prominence || left.fullName.localeCompare(right.fullName))
   ).map(({ prominence: _prominence, ...player }) => player);
 
+  if (UNRECOGNIZED_TEAM_IDS.size > 0) {
+    throw new Error(`Unrecognized roster team IDs: ${[...UNRECOGNIZED_TEAM_IDS].sort().join(", ")}`);
+  }
   if (sorted.length < 50) {
     throw new Error(`Generated catalog is too small (${sorted.length} players)`);
   }
