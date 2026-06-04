@@ -15,7 +15,7 @@ import {
   type DailyChallengeProgress,
   type DailyHintStep
 } from "@/lib/daily-challenge";
-import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
+import { NFL_TEAMS } from "@/lib/nfl-teams";
 import type { PlayerCatalogEntry, PlayerSearchResult, TeamStint } from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
@@ -140,14 +140,17 @@ function DailyStopCard({
   }
 
   const team = NFL_TEAMS[stint.teamId];
+  // Era-correct overrides (relocations/renames), falling back to current identity.
+  const logoUrl = stint.logoUrl ?? team.logoUrl;
+  const label = `${stint.city ?? team.city} ${stint.name ?? team.name}`;
   return (
     <article
       className="flex w-[120px] flex-col items-center justify-center gap-1 border-4 p-1.5 text-center sm:w-[148px] sm:gap-1.5 sm:p-2"
       style={{ borderColor: team.primary, backgroundColor: "#58a045" }}
     >
-      <img src={team.logoUrl} alt="" width={56} height={56} className="h-10 w-10 object-contain sm:h-12 sm:w-12" />
+      <img src={logoUrl} alt="" width={56} height={56} className="h-10 w-10 object-contain sm:h-12 sm:w-12" />
       <p className="font-readable text-[#0a2a14] flex items-center justify-center text-sm leading-tight sm:text-base" style={{ minHeight: "2.5em" }}>
-        {formatTeamLabel(stint.teamId)}
+        {label}
       </p>
       {showYears ? (
         <p className="font-pixel text-white text-[0.5rem] leading-tight sm:text-[0.55rem]">

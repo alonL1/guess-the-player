@@ -67,9 +67,60 @@ const TEAM_ALIASES = new Map([
   ["SD", "LAC"],
   ["OAK", "LV"],
   ["WSH", "WAS"],
-  ["WFT", "WAS"]
+  ["WFT", "WAS"],
+  ["PHX", "ARI"],
+  ["LVR", "LV"]
 ]);
 const UNRECOGNIZED_TEAM_IDS = new Set();
+
+// Historical logos ESPN's CDN actually hosts (verified). Older eras without a
+// hosted logo fall back to the franchise's current logo in the UI.
+const STL_RAMS_LOGO = "https://a.espncdn.com/i/teamlogos/nfl/500/stl.png";
+const RAIDERS_SHIELD_LOGO = "https://a.espncdn.com/i/teamlogos/nfl/500/oak.png";
+const SD_CHARGERS_LOGO = "https://a.espncdn.com/i/teamlogos/nfl/500/sd.png";
+
+// Franchise eras for relocations/renames since 1970. Each entry's `end` is the
+// last season (inclusive) of that era. The CURRENT identity is implicit (any
+// season after the last listed `end`) and matches NFL_TEAMS, so current-era
+// stints carry no overrides. Only franchises that changed city or name appear.
+const FRANCHISE_ERAS = {
+  IND: [{ end: 1983, city: "Baltimore", name: "Colts" }],
+  ARI: [
+    { end: 1987, city: "St. Louis", name: "Cardinals" },
+    { end: 1993, city: "Phoenix", name: "Cardinals" }
+  ],
+  LAR: [
+    { end: 1994, city: "Los Angeles", name: "Rams" },
+    { end: 2015, city: "St. Louis", name: "Rams", logoUrl: STL_RAMS_LOGO }
+  ],
+  LV: [
+    { end: 1981, city: "Oakland", name: "Raiders", logoUrl: RAIDERS_SHIELD_LOGO },
+    { end: 1994, city: "Los Angeles", name: "Raiders", logoUrl: RAIDERS_SHIELD_LOGO },
+    { end: 2019, city: "Oakland", name: "Raiders", logoUrl: RAIDERS_SHIELD_LOGO }
+  ],
+  LAC: [{ end: 2016, city: "San Diego", name: "Chargers", logoUrl: SD_CHARGERS_LOGO }],
+  TEN: [
+    { end: 1996, city: "Houston", name: "Oilers" },
+    { end: 1998, city: "Tennessee", name: "Oilers" }
+  ],
+  WAS: [
+    { end: 2019, city: "Washington", name: "Redskins" },
+    { end: 2021, city: "Washington", name: "Football Team" }
+  ],
+  NE: [{ end: 1970, city: "Boston", name: "Patriots" }]
+};
+
+function resolveEra(teamId, season) {
+  const eras = FRANCHISE_ERAS[teamId];
+  if (!eras) return { key: teamId };
+  for (let index = 0; index < eras.length; index += 1) {
+    if (season <= eras[index].end) {
+      const { city, name, logoUrl } = eras[index];
+      return { key: `${teamId}:${index}`, city, name, logoUrl };
+    }
+  }
+  return { key: teamId };
+}
 
 function normalizeTeam(team, season) {
   if (team === "BAL" && season <= 1983) return "IND";
@@ -357,22 +408,48 @@ function classifyDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeas
 function buildStints(seasonTeams, latestRosterSeason, careerStatus) {
   const ordered = [...seasonTeams.entries()]
     .sort(([leftYear], [rightYear]) => leftYear - rightYear)
-    .flatMap(([season, teams]) => teams.map((teamId) => ({ season, teamId })));
+    .flatMap(([season, teams]) => teams.map((teamId) => ({ season, teamId, era: resolveEra(teamId, season) })));
 
   const stints = [];
   for (const item of ordered) {
     const previous = stints.at(-1);
-    if (previous && previous.teamId === item.teamId && item.season <= previous.endYear + 1) {
+    // Break a stint when the franchise changes OR the era changes (relocation /
+    // rename), so each card shows a single correct city + name + logo.
+    if (
+      previous &&
+      previous.teamId === item.teamId &&
+      previous.eraKey === item.era.key &&
+      item.season <= previous.endYear + 1
+    ) {
       previous.endYear = item.season;
     } else {
-      stints.push({ teamId: item.teamId, startYear: item.season, endYear: item.season });
+      stints.push({
+        teamId: item.teamId,
+        startYear: item.season,
+        endYear: item.season,
+        eraKey: item.era.key,
+        city: item.era.city,
+        name: item.era.name,
+        logoUrl: item.era.logoUrl
+      });
     }
   }
 
-  return stints.map((stint, index) => ({
-    ...stint,
-    endYear: index === stints.length - 1 && stint.endYear >= latestRosterSeason && careerStatus === "signed" ? null : stint.endYear
-  }));
+  return stints.map((stint, index) => {
+    const out = {
+      teamId: stint.teamId,
+      startYear: stint.startYear,
+      endYear:
+        index === stints.length - 1 && stint.endYear >= latestRosterSeason && careerStatus === "signed"
+          ? null
+          : stint.endYear
+    };
+    // Only historical eras carry overrides; current-era stints stay bare.
+    if (stint.city) out.city = stint.city;
+    if (stint.name) out.name = stint.name;
+    if (stint.logoUrl) out.logoUrl = stint.logoUrl;
+    return out;
+  });
 }
 
 function dedupeIds(players) {

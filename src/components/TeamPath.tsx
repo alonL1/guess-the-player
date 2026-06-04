@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
+import { NFL_TEAMS } from "@/lib/nfl-teams";
 import type { TeamStint } from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
@@ -35,6 +35,10 @@ export function TeamPath({
     <div className={`flex flex-wrap items-stretch justify-center ${wrapGap}`}>
       {teamStints.map((stint, index) => {
         const team = NFL_TEAMS[stint.teamId];
+        // Era-correct overrides (relocations/renames) fall back to the current
+        // franchise identity when absent.
+        const logoUrl = stint.logoUrl ?? team.logoUrl;
+        const label = `${stint.city ?? team.city} ${stint.name ?? team.name}`;
         return (
           <Fragment key={`${stint.teamId}-${index}-${stint.startYear}`}>
             {index > 0 ? (
@@ -49,12 +53,12 @@ export function TeamPath({
               className={`flex flex-col items-center justify-center border-4 text-center ${cardSize}`}
               style={{ borderColor: isDanger ? "#7a1620" : team.primary, backgroundColor: cardBg }}
             >
-              <img src={team.logoUrl} alt="" width={56} height={56} className={`${logoSize} object-contain`} />
+              <img src={logoUrl} alt="" width={56} height={56} className={`${logoSize} object-contain`} />
               <p
                 className={`font-readable flex items-center justify-center leading-tight ${nameSize}`}
                 style={{ minHeight: nameMinHeight, color: nameColor }}
               >
-                {formatTeamLabel(stint.teamId)}
+                {label}
               </p>
               {showYears ? (
                 <p className={`font-pixel ${yearsClass} leading-tight ${yearsSize}`}>

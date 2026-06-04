@@ -58,6 +58,12 @@ export interface TeamStint {
   teamId: TeamId;
   startYear: number;
   endYear: number | null;
+  // Era-correct display overrides for relocations/renames (e.g. a 2010 stint on
+  // the LAR franchise shows "St. Louis Rams"). Absent when the stint is in the
+  // franchise's current era — the UI then falls back to NFL_TEAMS[teamId].
+  city?: string;
+  name?: string;
+  logoUrl?: string;
 }
 
 export interface PlayerCatalogEntry {
