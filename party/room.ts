@@ -123,7 +123,7 @@ function getPlayerFilters(
 function normalizeSettings(settings: RoomSettings): RoomSettings {
   const careerStartYear = Math.min(Math.max(settings.careerStartYear, CATALOG_YEAR_RANGE.min), CATALOG_YEAR_RANGE.max);
   const shouldMigrateDefaultCurrentYear =
-    settings.careerYearMode === DEFAULT_ROOM_SETTINGS.careerYearMode &&
+    settings.careerYearMode === "full_career" &&
     careerStartYear === DEFAULT_ROOM_SETTINGS.careerStartYear &&
     settings.careerEndYear >= CATALOG_YEAR_RANGE.max - 1;
   const rawCareerEndYear = shouldMigrateDefaultCurrentYear ? CATALOG_YEAR_RANGE.max : settings.careerEndYear;

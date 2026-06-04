@@ -133,7 +133,7 @@ function YearRangeSlider({
   const yearLabel = `${safeStartYear}-${safeEndYear === maxYear ? "Current" : safeEndYear}`;
   const description =
     mode === "current"
-      ? "Only active players in the current catalog are eligible."
+      ? "Only signed players and recent free agents are eligible."
       : mode === "entered"
         ? "Only players who entered the league inside this range are eligible."
         : mode === "retired"

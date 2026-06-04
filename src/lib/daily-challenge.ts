@@ -1,4 +1,4 @@
-import { CATALOG, findPlayerById } from "@/lib/catalog";
+import { CATALOG, findPlayerById, isCurrentPlayer } from "@/lib/catalog";
 import { DAILY_CHALLENGE_SCHEDULE } from "@/lib/daily-challenge-schedule";
 import type { Difficulty, PlayerCatalogEntry } from "@/lib/types";
 
@@ -41,10 +41,6 @@ function getUtcDayStart(date: Date) {
 
 export function getCareerEndYear(player: Pick<PlayerCatalogEntry, "teamStints">, currentYear = new Date().getUTCFullYear()) {
   return Math.max(...player.teamStints.map((stint) => stint.endYear ?? currentYear));
-}
-
-export function isCurrentPlayer(player: Pick<PlayerCatalogEntry, "teamStints">) {
-  return player.teamStints.some((stint) => stint.endYear === null);
 }
 
 export function isDefenseOrSpecialTeams(position: string) {

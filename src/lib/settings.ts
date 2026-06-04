@@ -8,7 +8,7 @@ export const DEFAULT_ROOM_SETTINGS: RoomSettings = {
   mode: "kahoot",
   showYears: true,
   showPosition: true,
-  careerYearMode: "full_career",
+  careerYearMode: "current",
   careerStartYear: 1999,
   careerEndYear: CATALOG_YEAR_RANGE.max,
   teamId: "all",

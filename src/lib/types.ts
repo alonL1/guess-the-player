@@ -6,6 +6,8 @@ export type CareerYearMode = "entered" | "retired" | "full_career" | "current";
 
 export type PositionGroup = "all" | "offense" | "defense" | "special_teams";
 
+export type CareerStatus = "signed" | "free_agent" | "retired";
+
 export type LeaveIntent = "leave" | "end_room";
 
 export type RoomClosedReason = "host_ended" | "room_empty" | "idle_timeout" | "max_lifetime";
@@ -64,6 +66,7 @@ export interface PlayerCatalogEntry {
   position: string;
   normalizedName: string;
   difficulty: Difficulty;
+  careerStatus: CareerStatus;
   headshotUrl: string;
   teamStints: TeamStint[];
   uniqueTeamCount: number;

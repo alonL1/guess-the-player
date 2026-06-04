@@ -13,6 +13,8 @@ const OFFENSIVE_POSITIONS = new Set(["QB", "RB", "FB", "WR", "TE"]);
 const DEFENSIVE_POSITIONS = new Set(["DL", "DE", "DT", "NT", "EDGE", "LB", "ILB", "OLB", "MLB", "CB", "DB", "S", "FS", "SS"]);
 const SPECIAL_TEAMS_POSITIONS = new Set(["K", "P"]);
 const POSITIONS = new Set([...OFFENSIVE_POSITIONS, ...DEFENSIVE_POSITIONS, ...SPECIAL_TEAMS_POSITIONS]);
+const RETIRED_STATUS_CODES = new Set(["RET"]);
+const FREE_AGENT_STATUS_CODES = new Set(["UFA", "RFA", "U01", "U02"]);
 const VALID_TEAM_IDS = new Set([
   "ARI",
   "ATL",
@@ -152,6 +154,16 @@ async function fetchSeasonRows(kind, season) {
   }
 }
 
+async function fetchPlayerRows() {
+  try {
+    return await fetchCsv("https://github.com/nflverse/nflverse-data/releases/download/players/players.csv");
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.warn(`Skipping master player statuses: ${message}`);
+    return [];
+  }
+}
+
 function toNumber(value) {
   const parsed = Number(value);
   return Number.isFinite(parsed) ? parsed : 0;
@@ -210,6 +222,34 @@ function getRecencyBoost(lastSeason, latestRosterSeason) {
   if (yearsAgo <= 6) return 30;
   if (yearsAgo <= 10) return 10;
   return 0;
+}
+
+function hasStatusCode(row, codes) {
+  return [row?.status, row?.ngs_status, row?.ngs_status_short_description, row?.status_description_abbr]
+    .filter(Boolean)
+    .some((value) => {
+      const normalized = String(value).toUpperCase();
+      return codes.has(normalized) || [...codes].some((code) => normalized.includes(code));
+    });
+}
+
+function classifyCareerStatus(player, masterPlayer, latestRosterSeason) {
+  if (hasStatusCode(masterPlayer, RETIRED_STATUS_CODES) || hasStatusCode(player.latestRosterRow, RETIRED_STATUS_CODES)) {
+    return "retired";
+  }
+  if (
+    player.latestRosterSeason >= latestRosterSeason - 1 &&
+    (hasStatusCode(masterPlayer, FREE_AGENT_STATUS_CODES) || hasStatusCode(player.latestRosterRow, FREE_AGENT_STATUS_CODES))
+  ) {
+    return "free_agent";
+  }
+  if (player.latestRosterSeason >= latestRosterSeason) {
+    return "signed";
+  }
+  if (player.latestRosterSeason >= latestRosterSeason - 1 && masterPlayer) {
+    return "free_agent";
+  }
+  return "retired";
 }
 
 function isDefensivePosition(position) {
@@ -314,7 +354,7 @@ function classifyDifficulty({ prominence, seasonCount, uniqueTeamCount, lastSeas
   return difficulty;
 }
 
-function buildStints(seasonTeams, latestRosterSeason) {
+function buildStints(seasonTeams, latestRosterSeason, careerStatus) {
   const ordered = [...seasonTeams.entries()]
     .sort(([leftYear], [rightYear]) => leftYear - rightYear)
     .flatMap(([season, teams]) => teams.map((teamId) => ({ season, teamId })));
@@ -331,7 +371,7 @@ function buildStints(seasonTeams, latestRosterSeason) {
 
   return stints.map((stint, index) => ({
     ...stint,
-    endYear: index === stints.length - 1 && stint.endYear >= latestRosterSeason ? null : stint.endYear
+    endYear: index === stints.length - 1 && stint.endYear >= latestRosterSeason && careerStatus === "signed" ? null : stint.endYear
   }));
 }
 
@@ -350,13 +390,15 @@ function dedupeIds(players) {
 
 async function main() {
   const seasons = Array.from({ length: CURRENT_YEAR - START_SEASON + 1 }, (_, index) => START_SEASON + index);
-  const [rosterRowsBySeason, statRowsBySeason] = await Promise.all([
+  const [rosterRowsBySeason, statRowsBySeason, masterPlayerRows] = await Promise.all([
     Promise.all(seasons.map((season) => fetchSeasonRows("rosters", season))),
-    Promise.all(seasons.map((season) => fetchSeasonRows("stats", season)))
+    Promise.all(seasons.map((season) => fetchSeasonRows("stats", season))),
+    fetchPlayerRows()
   ]);
   const latestRosterSeason = rosterRowsBySeason.reduce((latest, rows, index) => {
     return rows.length > 0 ? seasons[index] : latest;
   }, START_SEASON);
+  const masterPlayers = new Map(masterPlayerRows.map((row) => [playerKey(row), row]).filter(([key]) => key));
 
   const stats = new Map();
   for (const rows of statRowsBySeason) {
@@ -450,9 +492,15 @@ async function main() {
         fullName,
         headshotUrl: row.headshot_url || "",
         position,
-        seasonTeams: new Map()
+        seasonTeams: new Map(),
+        latestRosterSeason: 0,
+        latestRosterRow: null
       };
       if (!current.headshotUrl && row.headshot_url) current.headshotUrl = row.headshot_url;
+      if (season >= current.latestRosterSeason) {
+        current.latestRosterSeason = season;
+        current.latestRosterRow = row;
+      }
       if (!current.seasonTeams.has(season)) {
         current.seasonTeams.set(season, [...(statSeasonTeams.get(key)?.get(season) ?? [])]);
       }
@@ -464,7 +512,8 @@ async function main() {
 
   const generated = [];
   for (const player of players.values()) {
-    const teamStints = buildStints(player.seasonTeams, latestRosterSeason);
+    const careerStatus = classifyCareerStatus(player, masterPlayers.get(player.key), latestRosterSeason);
+    const teamStints = buildStints(player.seasonTeams, latestRosterSeason, careerStatus);
     const uniqueTeamCount = new Set(teamStints.map((stint) => stint.teamId)).size;
     const stat = stats.get(player.key);
     const seasonCount = player.seasonTeams.size;
@@ -499,6 +548,7 @@ async function main() {
         position: player.position,
         usedLongevityFallback
       }),
+      careerStatus,
       headshotUrl: player.headshotUrl || undefined,
       teamStints,
       prominence: Math.round(prominence)
@@ -521,8 +571,8 @@ async function main() {
 
 import type { PlayerCatalogEntry } from "./types";
 
-type GeneratedPlayer = Omit<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount"> &
-  Partial<Pick<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount">>;
+type GeneratedPlayer = Omit<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount" | "careerStatus"> &
+  Partial<Pick<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount" | "careerStatus">>;
 
 export const GENERATED_PLAYERS = ${JSON.stringify(sorted, null, 2)} as const satisfies readonly GeneratedPlayer[];
 `;

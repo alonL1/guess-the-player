@@ -3,8 +3,8 @@ import { isPositionInGroup } from "@/lib/positions";
 import type { CareerYearMode, Difficulty, PlayerCatalogEntry, PlayerSearchResult, PositionGroup, TeamId } from "@/lib/types";
 import { createUiAvatarUrl, normalizeSearchText } from "@/lib/utils";
 
-type GeneratedPlayer = Omit<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount"> &
-  Partial<Pick<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount">>;
+type GeneratedPlayer = Omit<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount" | "careerStatus"> &
+  Partial<Pick<PlayerCatalogEntry, "headshotUrl" | "normalizedName" | "uniqueTeamCount" | "careerStatus">>;
 
 const RAW_PLAYERS: readonly GeneratedPlayer[] = GENERATED_PLAYERS;
 const CURRENT_CATALOG_YEAR = new Date().getUTCFullYear();
@@ -23,6 +23,7 @@ function countUniqueTeams(player: Pick<PlayerCatalogEntry, "teamStints">) {
 
 export const CATALOG: PlayerCatalogEntry[] = RAW_PLAYERS.map((player) => ({
   ...player,
+  careerStatus: player.careerStatus ?? (player.teamStints.some((stint) => stint.endYear === null) ? "signed" : "retired"),
   normalizedName: normalizeSearchText(player.fullName),
   headshotUrl: player.headshotUrl || createUiAvatarUrl(player.fullName),
   uniqueTeamCount: player.uniqueTeamCount || countUniqueTeams(player)
@@ -48,8 +49,8 @@ function getCareerEndYear(player: PlayerCatalogEntry) {
   return Math.max(...player.teamStints.map((stint) => stint.endYear ?? CURRENT_CATALOG_YEAR));
 }
 
-function isCurrentPlayer(player: PlayerCatalogEntry) {
-  return player.teamStints.some((stint) => stint.endYear === null);
+export function isCurrentPlayer(player: Pick<PlayerCatalogEntry, "careerStatus">) {
+  return player.careerStatus === "signed" || player.careerStatus === "free_agent";
 }
 
 function matchesFilters(player: PlayerCatalogEntry, filters: PlayerFilters) {
@@ -72,7 +73,7 @@ function matchesFilters(player: PlayerCatalogEntry, filters: PlayerFilters) {
     filters.careerYearMode === "entered"
       ? careerStartsInsideRange
       : filters.careerYearMode === "retired"
-        ? careerEndsInsideRange
+        ? !isCurrentPlayer(player) && careerEndsInsideRange
         : fullCareerInsideRange;
   return matchesYears && matchesTeam;
 }

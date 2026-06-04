@@ -2,16 +2,11 @@ import { useMemo, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 
 import { CATALOG, findPlayersByName } from "@/lib/catalog";
-import type { PlayerCatalogEntry } from "@/lib/types";
 import { TeamPath } from "@/components/TeamPath";
 
 function isLocalhost() {
   if (typeof window === "undefined") return false;
   return ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
-}
-
-function isCurrent(player: PlayerCatalogEntry) {
-  return player.teamStints.some((stint) => stint.endYear === null);
 }
 
 export function CatalogInspector() {
@@ -71,7 +66,7 @@ export function CatalogInspector() {
               >
                 <span className="font-readable text-chalk block text-base sm:text-lg">{player.fullName}</span>
                 <span className="font-pixel text-helmet mt-2 block text-[0.5rem] sm:text-[0.55rem]">
-                  {player.position} · {player.difficulty} · {isCurrent(player) ? "Current" : "Inactive"}
+                  {player.position} · {player.difficulty} · {player.careerStatus.replace("_", " ")}
                 </span>
               </button>
             ))}
@@ -95,6 +90,7 @@ export function CatalogInspector() {
                   <div className="mt-3 flex flex-wrap gap-2">
                     <span className="pixel-tag pixel-tag-yellow">{selected.position}</span>
                     <span className="pixel-tag pixel-tag-blue capitalize">{selected.difficulty}</span>
+                    <span className="pixel-tag capitalize">{selected.careerStatus.replace("_", " ")}</span>
                     <span className="pixel-tag">{selected.uniqueTeamCount} teams</span>
                   </div>
                 </div>

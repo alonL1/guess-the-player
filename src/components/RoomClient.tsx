@@ -146,7 +146,7 @@ function YearRangeSlider({
   const maxYear = CATALOG_YEAR_RANGE.max;
   const safeStartYear = Math.min(Math.max(startYear, minYear), maxYear);
   const shouldDisplayLegacyDefaultAsCurrent =
-    mode === DEFAULT_ROOM_SETTINGS.careerYearMode &&
+    mode === "full_career" &&
     safeStartYear === DEFAULT_ROOM_SETTINGS.careerStartYear &&
     endYear >= maxYear - 1;
   const rawSafeEndYear = shouldDisplayLegacyDefaultAsCurrent ? maxYear : endYear;
@@ -157,7 +157,7 @@ function YearRangeSlider({
   const yearLabel = `${safeStartYear}-${safeEndYear === maxYear ? "Current" : safeEndYear}`;
   const description =
     mode === "current"
-      ? "Only active players in the current catalog are eligible."
+      ? "Only signed players and recent free agents are eligible."
       : mode === "entered"
         ? "Only players who entered the league inside this range are eligible."
         : mode === "retired"
