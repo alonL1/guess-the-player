@@ -30,14 +30,27 @@ export type DailyChallenge = {
   player: PlayerCatalogEntry;
 };
 
-function parseUtcDate(dateInput: string) {
-  const [year, month, day] = dateInput.split("-").map(Number);
-  return Date.UTC(year, month - 1, day);
+// The daily rolls over at midnight US Eastern (not UTC), so the puzzle changes
+// at the same wall-clock moment for the bulk of the audience.
+const DAILY_TIME_ZONE = "America/New_York";
+
+// The Eastern calendar date for an instant, expressed as whole days since the
+// Unix epoch. Two instants on the same Eastern day share an index.
+function getZonedDayIndex(date: Date) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: DAILY_TIME_ZONE,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(date);
+  const value = (type: string) => Number(parts.find((part) => part.type === type)?.value);
+  return Math.floor(Date.UTC(value("year"), value("month") - 1, value("day")) / DAY_MS);
 }
 
-function getUtcDayStart(date: Date) {
-  return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
-}
+const EPOCH_DAY_INDEX = (() => {
+  const [year, month, day] = DAILY_CHALLENGE_EPOCH_DATE.split("-").map(Number);
+  return Math.floor(Date.UTC(year, month - 1, day) / DAY_MS);
+})();
 
 export function getCareerEndYear(player: Pick<PlayerCatalogEntry, "teamStints">, currentYear = new Date().getUTCFullYear()) {
   return Math.max(...player.teamStints.map((stint) => stint.endYear ?? currentYear));
@@ -48,15 +61,16 @@ export function isDefenseOrSpecialTeams(position: string) {
 }
 
 export function isDailyEligible(player: PlayerCatalogEntry, currentYear = new Date().getUTCFullYear()) {
-  if (player.teamStints.length < 4) return false;
-  if (player.difficulty !== "medium" && player.difficulty !== "hard") return false;
+  if (player.teamStints.length < 3) return false;
 
-  const current = isCurrentPlayer(player);
-  const recent = current || getCareerEndYear(player, currentYear) >= currentYear - RECENT_SEASON_WINDOW;
-  if (!recent) return false;
-
-  if (player.difficulty === "medium") return true;
-  return !isDefenseOrSpecialTeams(player.position) || current;
+  // Easy: any era (no recency restriction). Medium: current or retired within the
+  // last 10 years. Hard: current players only. Impossible: never.
+  if (player.difficulty === "easy") return true;
+  if (player.difficulty === "medium") {
+    return isCurrentPlayer(player) || getCareerEndYear(player, currentYear) >= currentYear - RECENT_SEASON_WINDOW;
+  }
+  if (player.difficulty === "hard") return isCurrentPlayer(player);
+  return false;
 }
 
 export function getDailyCandidatePool(currentYear = new Date().getUTCFullYear()) {
@@ -68,9 +82,7 @@ export function getUnscheduledDailyCandidates(currentYear = new Date().getUTCFul
 }
 
 export function getChallengeNumberForDate(date = new Date()) {
-  const epoch = parseUtcDate(DAILY_CHALLENGE_EPOCH_DATE);
-  const dayStart = getUtcDayStart(date);
-  return Math.floor((dayStart - epoch) / DAY_MS) + 1;
+  return getZonedDayIndex(date) - EPOCH_DAY_INDEX + 1;
 }
 
 export function getDailyStorageKey(challengeNumber: number) {
@@ -96,7 +108,7 @@ export function getDailyChallengeForDate(date = new Date()): DailyChallenge | nu
   const player = findPlayerById(playerId);
   if (!player || !isDailyEligible(player)) return null;
 
-  const dayStart = new Date(getUtcDayStart(date));
+  const dayStart = new Date(getZonedDayIndex(date) * DAY_MS);
   return {
     challengeNumber,
     date: dayStart,
