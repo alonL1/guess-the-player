@@ -17,6 +17,8 @@ import type {
   TeamId
 } from "@/lib/types";
 import { TeamPath } from "@/components/TeamPath";
+import { PlayerDetailCard } from "@/components/PlayerDetailCard";
+import { normalizeSearchText } from "@/lib/utils";
 
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
 const COUNTDOWN_MS = 3000;
@@ -251,6 +253,7 @@ export function SoloClient() {
   // showing the wrong pick on reveal).
   const [myWrongGuessIds, setMyWrongGuessIds] = useState<string[]>([]);
   const [now, setNow] = useState<number | null>(null);
+  const [expandedRound, setExpandedRound] = useState<number | null>(null);
   const playerFilters = useMemo(
     () => getPlayerFilters(settings),
     [settings.careerEndYear, settings.careerStartYear, settings.careerYearMode, settings.positionGroup, settings.teamId]
@@ -264,6 +267,14 @@ export function SoloClient() {
   const totalScore = results.reduce((sum, result) => sum + result.score, 0);
   const correctCount = results.filter((result) => result.outcome === "correct").length;
   const missedCount = results.length - correctCount;
+  // Lowest-familiarity player the user actually guessed correctly — the "sickest pull".
+  const sickestPull = useMemo(() => {
+    const correct = results.filter((result) => result.outcome === "correct");
+    if (correct.length === 0) return null;
+    return correct.reduce((lowest, result) =>
+      result.player.familiarity < lowest.player.familiarity ? result : lowest
+    ).player;
+  }, [results]);
   const timerLabel = getTimerLabel(round, now);
   const countdownLabel = getCountdownLabel(round, now);
   const currentCap = round && settings.mode === "kahoot" ? calculateCurrentCap(round.wrongGuessCount) : 1000;
@@ -657,8 +668,9 @@ export function SoloClient() {
                 }}
                 onKeyDown={(event) => {
                   if (event.key !== "Enter") return;
-                  const normalized = guessQuery.trim().toLowerCase();
-                  const exactMatch = searchResults.find((result) => result.fullName.toLowerCase() === normalized);
+                  const normalized = normalizeSearchText(guessQuery);
+                  if (!normalized) return;
+                  const exactMatch = searchResults.find((result) => normalizeSearchText(result.fullName) === normalized);
                   if (exactMatch) {
                     event.preventDefault();
                     submitGuess(exactMatch.id);
@@ -880,34 +892,64 @@ export function SoloClient() {
             </div>
           </div>
 
-          <div className="pixel-panel p-4 sm:p-6">
-            <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Round Breakdown</p>
-            <div className="mt-4 grid gap-2">
-              {results.map((result) => (
-                <div key={result.roundNumber} className="border-4 border-yardline bg-endzone p-3">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="min-w-0">
-                      <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.55rem]">RND {result.roundNumber}</p>
-                      <p className="font-readable text-chalk mt-1 truncate text-base sm:text-lg">{result.player.fullName}</p>
-                    </div>
-                    <div className="shrink-0 text-right">
-                      <p className="font-pixel text-helmet text-sm sm:text-lg">+{result.score}</p>
-                      <p
-                        className={clsx(
-                          "font-pixel mt-1 text-[0.45rem] capitalize sm:text-[0.55rem]",
-                          result.outcome === "correct"
-                            ? "text-good"
-                            : result.outcome === "revealed"
-                              ? "text-helmet"
-                              : "text-jersey-red"
-                        )}
-                      >
-                        {result.outcome}
-                      </p>
-                    </div>
-                  </div>
+          <div className="grid gap-4">
+            {sickestPull ? (
+              <div className="pixel-panel-flat border-helmet p-4 sm:p-5">
+                <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">🔥 Sickest Pull</p>
+                <p className="font-readable text-chalk-dim mt-1 text-sm sm:text-base">
+                  Your most obscure correct guess.
+                </p>
+                <div className="mt-4">
+                  <PlayerDetailCard player={sickestPull} />
                 </div>
-              ))}
+              </div>
+            ) : null}
+
+            <div className="pixel-panel p-4 sm:p-6">
+              <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Round Breakdown</p>
+              <div className="mt-4 grid gap-2">
+                {results.map((result) => {
+                  const expanded = expandedRound === result.roundNumber;
+                  return (
+                    <div key={result.roundNumber} className="border-4 border-yardline bg-endzone">
+                      <button
+                        type="button"
+                        onClick={() => setExpandedRound(expanded ? null : result.roundNumber)}
+                        className="flex w-full flex-wrap items-center justify-between gap-2 p-3 text-left hover:border-helmet"
+                      >
+                        <div className="min-w-0">
+                          <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.55rem]">
+                            RND {result.roundNumber} {expanded ? "▲" : "▼"}
+                          </p>
+                          <p className="font-readable text-chalk mt-1 truncate text-base sm:text-lg">
+                            {result.player.fullName}
+                          </p>
+                        </div>
+                        <div className="shrink-0 text-right">
+                          <p className="font-pixel text-helmet text-sm sm:text-lg">+{result.score}</p>
+                          <p
+                            className={clsx(
+                              "font-pixel mt-1 text-[0.45rem] capitalize sm:text-[0.55rem]",
+                              result.outcome === "correct"
+                                ? "text-good"
+                                : result.outcome === "revealed"
+                                  ? "text-helmet"
+                                  : "text-jersey-red"
+                            )}
+                          >
+                            {result.outcome}
+                          </p>
+                        </div>
+                      </button>
+                      {expanded ? (
+                        <div className="border-t-4 border-yardline p-3 sm:p-4">
+                          <PlayerDetailCard player={result.player} />
+                        </div>
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </section>

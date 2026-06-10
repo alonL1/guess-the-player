@@ -9,6 +9,7 @@ import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
 import { formatPositionGroup, POSITION_GROUP_OPTIONS } from "@/lib/positions";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
 import { TeamPath } from "@/components/TeamPath";
+import { PlayerDetailCard } from "@/components/PlayerDetailCard";
 import {
   clearRoomMembership,
   getNickname,
@@ -29,7 +30,7 @@ import type {
   RoomSnapshot,
   TeamId
 } from "@/lib/types";
-import { formatYearRange } from "@/lib/utils";
+import { normalizeSearchText } from "@/lib/utils";
 
 const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || "127.0.0.1:1999";
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
@@ -397,6 +398,84 @@ function LeaderboardCard({
             </div>
           );
         })}
+      </div>
+    </div>
+  );
+}
+
+function FinishedSummary({ room, participantId }: { room: RoomSnapshot; participantId: string }) {
+  const history = room.roundHistory ?? [];
+  const [expandedRound, setExpandedRound] = useState<number | null>(null);
+  if (history.length === 0) return null;
+
+  // Sickest pull: the lowest-familiarity player that anyone guessed correctly,
+  // attributed to the first participant who got it.
+  const pulls = history.filter((entry) => entry.correctOrder.length > 0);
+  const sickest = pulls.length
+    ? pulls.reduce((lowest, entry) => (entry.player.familiarity < lowest.player.familiarity ? entry : lowest))
+    : null;
+  const sickestNickname = sickest
+    ? room.players.find((p) => p.participantId === sickest.correctOrder[0])?.nickname ?? "A player"
+    : null;
+
+  return (
+    <div className="grid gap-4">
+      {sickest ? (
+        <div className="pixel-panel-flat border-helmet p-4 sm:p-5">
+          <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">🔥 Sickest Pull</p>
+          <p className="font-readable text-chalk mt-1 text-sm sm:text-base">
+            <span className="text-good">{sickestNickname}</span> got the sickest pull with {sickest.player.fullName}.
+          </p>
+          <div className="mt-4">
+            <PlayerDetailCard player={sickest.player} />
+          </div>
+        </div>
+      ) : null}
+
+      <div className="pixel-panel p-4 sm:p-6">
+        <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Game Summary</p>
+        <div className="mt-4 grid gap-2">
+          {history.map((entry, index) => {
+            const roundNumber = index + 1;
+            const expanded = expandedRound === roundNumber;
+            const gotIt = entry.correctOrder.includes(participantId);
+            const myScore = entry.roundScores[participantId] ?? 0;
+            return (
+              <div key={roundNumber} className="border-4 border-yardline bg-endzone">
+                <button
+                  type="button"
+                  onClick={() => setExpandedRound(expanded ? null : roundNumber)}
+                  className="flex w-full flex-wrap items-center justify-between gap-2 p-3 text-left hover:border-helmet"
+                >
+                  <div className="min-w-0">
+                    <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.55rem]">
+                      RND {roundNumber} {expanded ? "▲" : "▼"}
+                    </p>
+                    <p className="font-readable text-chalk mt-1 truncate text-base sm:text-lg">
+                      {entry.player.fullName}
+                    </p>
+                  </div>
+                  <div className="shrink-0 text-right">
+                    <p className="font-pixel text-helmet text-sm sm:text-lg">+{myScore}</p>
+                    <p
+                      className={clsx(
+                        "font-pixel mt-1 text-[0.45rem] sm:text-[0.55rem]",
+                        gotIt ? "text-good" : "text-jersey-red"
+                      )}
+                    >
+                      {gotIt ? "got it" : "missed"}
+                    </p>
+                  </div>
+                </button>
+                {expanded ? (
+                  <div className="border-t-4 border-yardline p-3 sm:p-4">
+                    <PlayerDetailCard player={entry.player} />
+                  </div>
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
@@ -1293,10 +1372,10 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     }}
                     onKeyDown={(event) => {
                       if (event.key !== "Enter") return;
-                      const normalized = guessQuery.trim().toLowerCase();
+                      const normalized = normalizeSearchText(guessQuery);
                       if (!normalized) return;
                       const exactMatch = searchResults.find(
-                        (result) => result.fullName.toLowerCase() === normalized
+                        (result) => normalizeSearchText(result.fullName) === normalized
                       );
                       if (exactMatch) {
                         event.preventDefault();
@@ -1500,6 +1579,8 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
           {(room.status === "round_leaderboard" || room.status === "finished") && room.round?.reveal ? (
             <LeaderboardCard room={room} participantId={participantId} pending={pending} onContinue={continueFlow} />
           ) : null}
+
+          {room.status === "finished" ? <FinishedSummary room={room} participantId={participantId} /> : null}
         </section>
       ) : null}
 

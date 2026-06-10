@@ -72,6 +72,9 @@ export interface PlayerCatalogEntry {
   position: string;
   normalizedName: string;
   difficulty: Difficulty;
+  // Continuous recognizability score behind `difficulty`. Lower = more obscure;
+  // used to pick the end-of-game "sickest pull".
+  familiarity: number;
   careerStatus: CareerStatus;
   headshotUrl: string;
   teamStints: TeamStint[];
@@ -134,6 +137,9 @@ export interface RoomSnapshot {
   round: RoundState | null;
   canStart: boolean;
   roundsPlayed: number;
+  // Every completed round's result — present only on the finished snapshot, for
+  // the end-of-game summary and "sickest pull".
+  roundHistory?: RoundResult[];
 }
 
 export interface PlayerSearchResult {

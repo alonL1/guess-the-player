@@ -80,6 +80,15 @@ type ActiveRoundRecord = {
   endedBecause: RoundResult["endedBecause"] | null;
 };
 
+// Slim per-round record kept for the whole match (hydrated to full players only
+// in the finished snapshot) so the end-of-game summary survives reconnects.
+type RoundHistoryRecord = {
+  playerId: string;
+  roundScores: Record<string, number>;
+  correctOrder: string[];
+  endedBecause: RoundResult["endedBecause"];
+};
+
 type AlarmType =
   | "countdownEnd"
   | "roundEnd"
@@ -145,6 +154,7 @@ export default class RoomParty implements Party.Server {
   playerDeckIds: string[] = [];
   roundsPlayed = 0;
   currentRound: ActiveRoundRecord | null = null;
+  roundHistory: RoundHistoryRecord[] = [];
   cachedPlayers = new Map<string, PlayerCatalogEntry>();
   canStart = false;
   createdAt = 0;
@@ -167,6 +177,7 @@ export default class RoomParty implements Party.Server {
       this.playerDeckIds = saved.playerDeckIds ?? [];
       this.roundsPlayed = saved.roundsPlayed;
       this.currentRound = saved.currentRound;
+      this.roundHistory = saved.roundHistory ?? [];
       this.canStart = saved.canStart;
       this.createdAt = saved.createdAt;
       this.lastActivityAt = saved.lastActivityAt;
@@ -483,6 +494,7 @@ export default class RoomParty implements Party.Server {
     ).map((player) => player.id);
     this.roundsPlayed = 0;
     this.currentRound = null;
+    this.roundHistory = [];
     for (const p of this.participants.values()) {
       p.score = 0;
       this.resetParticipantRoundState(p);
@@ -701,6 +713,17 @@ export default class RoomParty implements Party.Server {
     for (const p of this.participants.values()) {
       if (p.roundScore === null) p.roundScore = 0;
     }
+
+    // Record this round for the end-of-game summary / "sickest pull".
+    const completedRoundScores: Record<string, number> = {};
+    for (const p of this.participants.values()) completedRoundScores[p.id] = p.roundScore ?? 0;
+    this.roundHistory.push({
+      playerId: this.currentRound.playerId,
+      roundScores: completedRoundScores,
+      correctOrder: [...this.currentRound.correctOrder],
+      endedBecause
+    });
+
     this.status = "round_reveal";
     // Broadcast first so every client flips to the reveal immediately; the
     // storage-backed alarm clear can happen after. A stray roundEnd alarm that
@@ -715,6 +738,7 @@ export default class RoomParty implements Party.Server {
     this.usedPlayerIds = [];
     this.playerDeckIds = [];
     this.currentRound = null;
+    this.roundHistory = [];
     for (const p of this.participants.values()) {
       p.score = 0;
       this.resetParticipantRoundState(p);
@@ -849,6 +873,24 @@ export default class RoomParty implements Party.Server {
         ? this.buildRoundResult()
         : null;
 
+    // Only ship the full round history (hydrated to full players) at game over,
+    // to keep mid-game snapshots lean.
+    const roundHistory =
+      this.status === "finished"
+        ? this.roundHistory
+            .map((record): RoundResult | null => {
+              const player = this.cachedPlayers.get(record.playerId) ?? findPlayerById(record.playerId);
+              if (!player) return null;
+              return {
+                player,
+                roundScores: record.roundScores,
+                correctOrder: record.correctOrder,
+                endedBecause: record.endedBecause
+              };
+            })
+            .filter((entry): entry is RoundResult => entry !== null)
+        : undefined;
+
     return {
       roomCode: this.roomCode,
       status: this.status,
@@ -876,7 +918,8 @@ export default class RoomParty implements Party.Server {
           }
         : null,
       canStart: this.canStart,
-      roundsPlayed: this.roundsPlayed
+      roundsPlayed: this.roundsPlayed,
+      roundHistory
     };
   }
 
@@ -970,6 +1013,7 @@ export default class RoomParty implements Party.Server {
       playerDeckIds: this.playerDeckIds,
       roundsPlayed: this.roundsPlayed,
       currentRound: this.currentRound,
+      roundHistory: this.roundHistory,
       cachedPlayerIds: [...this.cachedPlayers.keys()],
       canStart: this.canStart,
       createdAt: this.createdAt,
@@ -999,6 +1043,7 @@ type SerializedState = {
   playerDeckIds?: string[];
   roundsPlayed: number;
   currentRound: ActiveRoundRecord | null;
+  roundHistory?: RoundHistoryRecord[];
   cachedPlayerIds: string[];
   canStart: boolean;
   createdAt: number;

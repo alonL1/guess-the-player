@@ -5,6 +5,9 @@ export function normalizeSearchText(input: string) {
     .toLowerCase()
     .normalize("NFD")
     .replace(COMBINING_MARKS_RANGE, "")
+    // Drop periods/apostrophes entirely so initials and possessives collapse
+    // ("K.J." → "kj", "Le'Veon" → "leveon") and match compact queries.
+    .replace(/[.'’]/g, "")
     .replace(/[^a-z0-9\s]/g, " ")
     .replace(/\s+/g, " ")
     .trim();

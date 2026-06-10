@@ -17,7 +17,7 @@ import {
 } from "@/lib/daily-challenge";
 import { NFL_TEAMS } from "@/lib/nfl-teams";
 import type { PlayerCatalogEntry, PlayerSearchResult, TeamStint } from "@/lib/types";
-import { formatYearRange } from "@/lib/utils";
+import { formatYearRange, normalizeSearchText } from "@/lib/utils";
 
 const DAILY_SHARE_URL = "https://nfl.pathguessr.app/daily";
 const SHARE_POPUP_DELAY_MS = 2400;
@@ -482,8 +482,9 @@ export function DailyChallenge() {
                   }}
                   onKeyDown={(event) => {
                     if (event.key !== "Enter") return;
-                    const normalized = guessQuery.trim().toLowerCase();
-                    const exactMatch = searchResults.find((result) => result.fullName.toLowerCase() === normalized);
+                    const normalized = normalizeSearchText(guessQuery);
+                    if (!normalized) return;
+                    const exactMatch = searchResults.find((result) => normalizeSearchText(result.fullName) === normalized);
                     if (exactMatch) {
                       event.preventDefault();
                       submitGuess(exactMatch.id);
