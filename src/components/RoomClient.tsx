@@ -35,6 +35,10 @@ import { normalizeSearchText } from "@/lib/utils";
 const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || "127.0.0.1:1999";
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
 
+function clampRoundCount(value: number) {
+  return Math.min(20, Math.max(1, value));
+}
+
 function buildInviteUrl(roomCode: string) {
   if (typeof window === "undefined") return `/rooms/${roomCode}`;
   return `${window.location.origin}/rooms/${roomCode}`;
@@ -594,6 +598,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const [now, setNow] = useState<number | null>(null);
   const [settingsExpanded, setSettingsExpanded] = useState(false);
   const [rosterExpanded, setRosterExpanded] = useState(false);
+  const [roundInput, setRoundInput] = useState("");
   const [pending, startTransition] = useTransition();
 
   const timerLabel = getTimerLabel(room, now);
@@ -601,6 +606,11 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
   const self = room?.players.find((player) => player.participantId === participantId) ?? null;
   const correctCount = room?.players.filter((player) => player.answeredCorrectly).length ?? 0;
   const visibleSearchResults = room?.status === "round_active" && deferredGuessQuery.trim() ? searchResults : [];
+
+  useEffect(() => {
+    if (room) setRoundInput(String(room.settings.roundCount));
+  }, [room?.settings.roundCount]);
+
   const playerFilters = useMemo(
     () => (room ? getPlayerFilters(room.settings) : null),
     [
@@ -1082,15 +1092,30 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                     <div className="mt-5 grid gap-3 sm:gap-4 sm:grid-cols-2">
                       <SettingCard label="Rounds">
                         <input
-                          key={room.settings.roundCount}
                           type="number"
                           min={1}
                           max={20}
-                          defaultValue={room.settings.roundCount}
+                          value={roundInput}
                           disabled={!self?.isHost}
+                          onChange={(event) => {
+                            const nextValue = event.target.value;
+                            setRoundInput(nextValue);
+                            if (nextValue.trim() === "") return;
+                            const parsed = Number(nextValue);
+                            if (!Number.isFinite(parsed)) return;
+                            const clamped = clampRoundCount(parsed);
+                            if (clamped !== room.settings.roundCount) {
+                              updateSettings({ roundCount: clamped });
+                            }
+                          }}
                           onBlur={(event) => {
+                            if (event.target.value.trim() === "") {
+                              setRoundInput(String(room.settings.roundCount));
+                              return;
+                            }
                             const parsed = Number(event.target.value);
-                            const clamped = Math.min(20, Math.max(1, isNaN(parsed) || parsed < 1 ? 1 : parsed));
+                            const clamped = clampRoundCount(Number.isFinite(parsed) ? parsed : room.settings.roundCount);
+                            setRoundInput(String(clamped));
                             if (clamped !== room.settings.roundCount) {
                               updateSettings({ roundCount: clamped });
                             }

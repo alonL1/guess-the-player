@@ -23,6 +23,10 @@ import { normalizeSearchText } from "@/lib/utils";
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
 const COUNTDOWN_MS = 3000;
 
+function clampRoundCount(value: number) {
+  return Math.min(20, Math.max(1, value));
+}
+
 type SoloStatus = "setup" | "countdown" | "active" | "reveal" | "summary";
 
 type SoloSettings = Pick<
@@ -241,6 +245,7 @@ function SettingToggle({
 
 export function SoloClient() {
   const [settings, setSettings] = useState<SoloSettings>(INITIAL_SETTINGS);
+  const [roundInput, setRoundInput] = useState(String(INITIAL_SETTINGS.roundCount));
   const [status, setStatus] = useState<SoloStatus>("setup");
   const [deck, setDeck] = useState<PlayerCatalogEntry[]>([]);
   const [round, setRound] = useState<SoloRound | null>(null);
@@ -285,6 +290,10 @@ export function SoloClient() {
     const handle = window.setInterval(() => setNow(Date.now()), 250);
     return () => window.clearInterval(handle);
   }, []);
+
+  useEffect(() => {
+    setRoundInput(String(settings.roundCount));
+  }, [settings.roundCount]);
 
   useEffect(() => {
     if (status !== "countdown" || !round?.countdownEndsAt) return;
@@ -477,10 +486,24 @@ export function SoloClient() {
                   type="number"
                   min={1}
                   max={20}
-                  value={settings.roundCount}
+                  value={roundInput}
                   onChange={(event) => {
-                    const parsed = Number(event.target.value);
-                    updateSettings({ roundCount: Math.min(20, Math.max(1, Number.isNaN(parsed) ? 1 : parsed)) });
+                    const nextValue = event.target.value;
+                    setRoundInput(nextValue);
+                    if (nextValue.trim() === "") return;
+                    const parsed = Number(nextValue);
+                    if (!Number.isFinite(parsed)) return;
+                    updateSettings({ roundCount: clampRoundCount(parsed) });
+                  }}
+                  onBlur={() => {
+                    if (roundInput.trim() === "") {
+                      setRoundInput(String(settings.roundCount));
+                      return;
+                    }
+                    const parsed = Number(roundInput);
+                    const clamped = clampRoundCount(Number.isFinite(parsed) ? parsed : settings.roundCount);
+                    setRoundInput(String(clamped));
+                    if (clamped !== settings.roundCount) updateSettings({ roundCount: clamped });
                   }}
                   className="pixel-input"
                 />
