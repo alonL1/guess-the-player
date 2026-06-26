@@ -22,6 +22,14 @@ import { formatYearRange, normalizeSearchText } from "@/lib/utils";
 const DAILY_SHARE_URL = "https://nfl.pathguessr.app/daily";
 const SHARE_POPUP_DELAY_MS = 2400;
 
+function preserveViewportPositionAfterRender() {
+  const left = window.scrollX;
+  const top = window.scrollY;
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => window.scrollTo(left, top));
+  });
+}
+
 type DailyFeedback = {
   kind: "correct" | "wrong" | "missed";
   message: string;
@@ -471,12 +479,13 @@ export function DailyChallenge() {
           ) : null}
 
           {!completed ? (
-            <div className="mx-auto mt-5 max-w-2xl">
+            <div className="search-panel mx-auto mt-5 max-w-2xl">
               <label className="font-pixel text-chalk block text-[0.55rem] sm:text-[0.65rem]">
                 Guess the player
                 <input
                   value={guessQuery}
                   onChange={(event) => {
+                    preserveViewportPositionAfterRender();
                     setGuessQuery(event.target.value);
                     if (!event.target.value.trim()) setFeedback(null);
                   }}

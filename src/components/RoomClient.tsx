@@ -39,6 +39,14 @@ function clampRoundCount(value: number) {
   return Math.min(20, Math.max(1, value));
 }
 
+function preserveViewportPositionAfterRender() {
+  const left = window.scrollX;
+  const top = window.scrollY;
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => window.scrollTo(left, top));
+  });
+}
+
 function buildInviteUrl(roomCode: string) {
   if (typeof window === "undefined") return `/rooms/${roomCode}`;
   return `${window.location.origin}/rooms/${roomCode}`;
@@ -1387,11 +1395,12 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
               </div>
 
               <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-                <div className="pixel-panel p-3 sm:p-4">
+                <div className="search-panel pixel-panel p-3 sm:p-4">
                   <input
                     value={guessQuery}
                     onChange={(event) => {
                       const nextValue = event.target.value;
+                      preserveViewportPositionAfterRender();
                       setGuessQuery(nextValue);
                       if (!nextValue.trim()) setSearchResults([]);
                     }}

@@ -27,6 +27,14 @@ function clampRoundCount(value: number) {
   return Math.min(20, Math.max(1, value));
 }
 
+function preserveViewportPositionAfterRender() {
+  const left = window.scrollX;
+  const top = window.scrollY;
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => window.scrollTo(left, top));
+  });
+}
+
 type SoloStatus = "setup" | "countdown" | "active" | "reveal" | "summary";
 
 type SoloSettings = Pick<
@@ -681,11 +689,12 @@ export function SoloClient() {
           </div>
 
           <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="pixel-panel p-3 sm:p-4">
+            <div className="search-panel pixel-panel p-3 sm:p-4">
               <input
                 value={guessQuery}
                 onChange={(event) => {
                   const nextValue = event.target.value;
+                  preserveViewportPositionAfterRender();
                   setGuessQuery(nextValue);
                   if (!nextValue.trim()) setSearchResults([]);
                 }}
