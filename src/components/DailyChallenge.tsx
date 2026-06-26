@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { Fragment, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 import { findPlayerById, searchAllPlayers } from "@/lib/catalog";
 import {
@@ -8,7 +8,9 @@ import {
   buildDailyShareText,
   createInitialDailyProgress,
   difficultyLabel,
-  getDailyChallengeForDate,
+  getChallengeNumberForDate,
+  getDailyChallengeByNumber,
+  getDateForChallengeNumber,
   getDailyStorageKey,
   getNextHintStep,
   getRevealButtonLabel,
@@ -68,7 +70,7 @@ function readStoredProgress(key: string, player: PlayerCatalogEntry): DailyChall
   }
 }
 
-function useDailyProgress(challenge: ReturnType<typeof getDailyChallengeForDate>) {
+function useDailyProgress(challenge: ReturnType<typeof getDailyChallengeByNumber>) {
   const storageKey = challenge ? getDailyStorageKey(challenge.challengeNumber) : "";
   const [progress, setProgress] = useState<DailyChallengeProgress | null>(() =>
     challenge ? readStoredProgress(storageKey, challenge.player) : null
@@ -293,15 +295,201 @@ function ShareDialog({
   );
 }
 
+type CalendarDayStatus = "unplayed" | "playing" | "solved" | "failed";
+
+function readCalendarDayStatus(challengeNumber: number): CalendarDayStatus {
+  if (typeof window === "undefined") return "unplayed";
+
+  try {
+    const stored = window.localStorage.getItem(getDailyStorageKey(challengeNumber));
+    if (!stored) return "unplayed";
+
+    const parsed = JSON.parse(stored) as Partial<DailyChallengeProgress>;
+    if (parsed.status === "solved") return "solved";
+    if (parsed.status === "gave_up" || parsed.status === "missed") return "failed";
+    return "playing";
+  } catch {
+    return "unplayed";
+  }
+}
+
+function monthLabel(date: Date) {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC"
+  }).format(date);
+}
+
+function calendarChallengeNumber(year: number, monthIndex: number, day: number) {
+  // Noon UTC keeps the Eastern daily date aligned for archive calendar clicks.
+  return getChallengeNumberForDate(new Date(Date.UTC(year, monthIndex, day, 12)));
+}
+
+function CalendarDialog({
+  latestChallengeNumber,
+  selectedChallengeNumber,
+  statusRefreshKey,
+  onPick,
+  onClose
+}: {
+  latestChallengeNumber: number;
+  selectedChallengeNumber: number;
+  statusRefreshKey: string;
+  onPick: (challengeNumber: number) => void;
+  onClose: () => void;
+}) {
+  const selectedDate = getDateForChallengeNumber(selectedChallengeNumber);
+  const latestDate = getDateForChallengeNumber(latestChallengeNumber);
+  const earliestDate = getDateForChallengeNumber(1);
+  const [visibleMonth, setVisibleMonth] = useState(() => Date.UTC(selectedDate.getUTCFullYear(), selectedDate.getUTCMonth(), 1));
+  const visibleDate = new Date(visibleMonth);
+  const previousMonth = Date.UTC(visibleDate.getUTCFullYear(), visibleDate.getUTCMonth() - 1, 1);
+  const nextMonth = Date.UTC(visibleDate.getUTCFullYear(), visibleDate.getUTCMonth() + 1, 1);
+  const canGoBack = previousMonth >= Date.UTC(earliestDate.getUTCFullYear(), earliestDate.getUTCMonth(), 1);
+  const canGoForward = nextMonth <= Date.UTC(latestDate.getUTCFullYear(), latestDate.getUTCMonth(), 1);
+  const firstWeekday = visibleDate.getUTCDay();
+  const daysInMonth = new Date(Date.UTC(visibleDate.getUTCFullYear(), visibleDate.getUTCMonth() + 1, 0)).getUTCDate();
+  const cells = [
+    ...Array.from({ length: firstWeekday }, (_, index) => ({ key: `blank-${index}`, day: 0 })),
+    ...Array.from({ length: daysInMonth }, (_, index) => ({ key: `day-${index + 1}`, day: index + 1 }))
+  ];
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-endzone/85 px-3 sm:px-4">
+      <div className="pixel-panel-accent w-full max-w-lg p-4 sm:p-5">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▦ Daily Archive</p>
+            <p className="font-readable text-chalk-dim mt-2 text-base sm:text-lg">Pick any past challenge and keep your local history.</p>
+          </div>
+          <button type="button" onClick={onClose} className="pixel-button pixel-button-ghost shrink-0 px-3 py-2 text-[0.55rem]">
+            ✕
+          </button>
+        </div>
+
+        <div className="mt-4 flex items-center justify-between gap-3">
+          <button
+            type="button"
+            onClick={() => setVisibleMonth(previousMonth)}
+            disabled={!canGoBack}
+            className="pixel-button pixel-button-ghost min-h-0 px-3 py-2 text-[0.55rem]"
+          >
+            ◀
+          </button>
+          <p className="font-pixel text-chalk text-center text-[0.65rem] sm:text-sm">{monthLabel(visibleDate)}</p>
+          <button
+            type="button"
+            onClick={() => setVisibleMonth(nextMonth)}
+            disabled={!canGoForward}
+            className="pixel-button pixel-button-ghost min-h-0 px-3 py-2 text-[0.55rem]"
+          >
+            ▶
+          </button>
+        </div>
+
+        <div className="mt-4 grid grid-cols-7 gap-1.5 text-center">
+          {["S", "M", "T", "W", "T", "F", "S"].map((day, index) => (
+            <span key={`${day}-${index}`} className="font-pixel text-helmet text-[0.5rem]">
+              {day}
+            </span>
+          ))}
+          {cells.map((cell) => {
+            if (!cell.day) return <span key={cell.key} aria-hidden className="h-11 sm:h-12" />;
+
+            const challengeNumber = calendarChallengeNumber(visibleDate.getUTCFullYear(), visibleDate.getUTCMonth(), cell.day);
+            const challenge = getDailyChallengeByNumber(challengeNumber);
+            const available = Boolean(challenge) && challengeNumber >= 1 && challengeNumber <= latestChallengeNumber;
+            const status = available ? readCalendarDayStatus(challengeNumber) : "unplayed";
+            const selected = challengeNumber === selectedChallengeNumber;
+            const dateKey = `${statusRefreshKey}-${challengeNumber}`;
+
+            return (
+              <button
+                key={`${cell.key}-${dateKey}`}
+                type="button"
+                onClick={() => {
+                  if (!available) return;
+                  onPick(challengeNumber);
+                  onClose();
+                }}
+                disabled={!available}
+                className={clsx(
+                  "font-pixel flex h-11 items-center justify-center border-4 text-[0.6rem] sm:h-12 sm:text-[0.7rem]",
+                  status === "solved" && "border-good bg-good text-endzone",
+                  status === "failed" && "border-jersey-red bg-jersey-red text-white",
+                  status === "playing" && "border-helmet bg-helmet text-endzone",
+                  status === "unplayed" && "border-yardline bg-endzone text-chalk",
+                  selected && "outline-4 outline-offset-2 outline-helmet",
+                  !available && "cursor-not-allowed opacity-25"
+                )}
+              >
+                {cell.day}
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+          <span className="font-readable border-4 border-good bg-good px-2 py-1 text-center text-lg text-endzone">Solved</span>
+          <span className="font-readable border-4 border-jersey-red bg-jersey-red px-2 py-1 text-center text-lg text-white">Missed</span>
+          <span className="font-readable border-4 border-helmet bg-helmet px-2 py-1 text-center text-lg text-endzone">Started</span>
+          <span className="font-readable border-4 border-yardline bg-endzone px-2 py-1 text-center text-lg text-chalk">Untouched</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CalendarIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 48 40"
+      className="absolute"
+      style={{
+        top: 5,
+        left: 6,
+        width: "calc(100% - 12px)",
+        height: "calc(100% - 12px)"
+      }}
+      shapeRendering="crispEdges"
+      preserveAspectRatio="none"
+    >
+        <path fill="currentColor" d="M0 7h47v32H0z" />
+        <path fill="#ffd23f" d="M0 7h47v10H0z" />
+        <path fill="#0a2a14" d="M9 0h7v13H9zM32 0h7v13h-7z" />
+        <path fill="currentColor" d="M11 0h3v10h-3zM34 0h3v10h-3z" />
+        <path
+          fill="#0a2a14"
+          d="M7 21h7v6H7zM20 21h7v6h-7zM33 21h7v6h-7zM7 31h7v6H7zM20 31h7v6h-7zM33 31h7v6h-7z"
+        />
+    </svg>
+  );
+}
+
 export function DailyChallenge() {
-  const challenge = useMemo(() => getDailyChallengeForDate(), []);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const latestChallengeNumber = useMemo(() => Math.max(1, getChallengeNumberForDate()), []);
+  const selectedChallengeNumber = useMemo(() => {
+    const requestedChallenge = Number(searchParams.get("challenge"));
+    if (Number.isInteger(requestedChallenge) && requestedChallenge >= 1 && requestedChallenge <= latestChallengeNumber) {
+      return requestedChallenge;
+    }
+    return latestChallengeNumber;
+  }, [latestChallengeNumber, searchParams]);
+  const challenge = useMemo(() => getDailyChallengeByNumber(selectedChallengeNumber), [selectedChallengeNumber]);
   const [progress, setProgress] = useDailyProgress(challenge);
   const [guessQuery, setGuessQuery] = useState("");
   const [feedback, setFeedback] = useState<DailyFeedback | null>(null);
   const [shareOpen, setShareOpen] = useState(false);
+  const [calendarOpen, setCalendarOpen] = useState(false);
   const shareTimerRef = useRef<number | null>(null);
   const deferredGuessQuery = useDeferredValue(guessQuery);
   const searchResults = useMemo(() => searchAllPlayers(deferredGuessQuery.trim(), 8), [deferredGuessQuery]);
+  const statusRefreshKey = progress
+    ? `${progress.status}-${progress.revealedStopCount}-${progress.yearsRevealed}-${progress.positionRevealed}-${progress.guessCount}`
+    : "empty";
 
   useEffect(() => {
     return () => {
@@ -310,6 +498,16 @@ export function DailyChallenge() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    setGuessQuery("");
+    setFeedback(null);
+    setShareOpen(false);
+    if (shareTimerRef.current !== null) {
+      window.clearTimeout(shareTimerRef.current);
+      shareTimerRef.current = null;
+    }
+  }, [selectedChallengeNumber]);
 
   if (!challenge || !progress) {
     return (
@@ -331,7 +529,8 @@ export function DailyChallenge() {
   const player = challenge.player;
   const completed = progress.status !== "playing";
   const visibleResults = completed ? [] : searchResults;
-  const shareText = buildDailyShareText({ challenge, progress, url: DAILY_SHARE_URL });
+  const dailyShareUrl = selectedChallengeNumber === latestChallengeNumber ? DAILY_SHARE_URL : `${DAILY_SHARE_URL}?challenge=${selectedChallengeNumber}`;
+  const shareText = buildDailyShareText({ challenge, progress, url: dailyShareUrl });
   const resultLine = buildDailyResultEmojis(player, progress);
   const revealButtonLabel = getRevealButtonLabel(player, progress);
   const outcomeText = progress.status === "solved" ? "Solved" : progress.status === "missed" ? "Missed" : "Gave up";
@@ -449,12 +648,28 @@ export function DailyChallenge() {
   return (
     <main className="mx-auto min-h-screen w-full max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <Link to="/" className="pixel-button pixel-button-ghost px-3 py-2 text-[0.55rem]">
+        <Link to="/" className="pixel-button pixel-button-ghost h-12 min-h-0 px-3 py-0 text-[0.55rem]">
           ◀ Home
         </Link>
-        <button type="button" onClick={() => setShareOpen(true)} disabled={!completed} className="pixel-button pixel-button-secondary px-3 py-2 text-[0.55rem]">
-          Share
-        </button>
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setCalendarOpen(true)}
+            className="pixel-button pixel-button-ghost relative h-12 w-14 min-h-0 overflow-hidden p-0"
+            aria-label="Open daily archive calendar"
+            title="Daily archive"
+          >
+            <CalendarIcon />
+          </button>
+          <button
+            type="button"
+            onClick={() => setShareOpen(true)}
+            disabled={!completed}
+            className="pixel-button pixel-button-secondary h-12 min-h-0 px-3 py-0 text-[0.55rem]"
+          >
+            Share
+          </button>
+        </div>
       </div>
 
       <section className="mx-auto mt-5 max-w-5xl">
@@ -615,6 +830,21 @@ export function DailyChallenge() {
 
       {shareOpen && completed ? (
         <ShareDialog shareText={shareText} resultLine={resultLine} outcomeText={outcomeText} onClose={() => setShareOpen(false)} />
+      ) : null}
+      {calendarOpen ? (
+        <CalendarDialog
+          latestChallengeNumber={latestChallengeNumber}
+          selectedChallengeNumber={selectedChallengeNumber}
+          statusRefreshKey={statusRefreshKey}
+          onPick={(challengeNumber) => {
+            if (challengeNumber === latestChallengeNumber) {
+              setSearchParams({});
+            } else {
+              setSearchParams({ challenge: String(challengeNumber) });
+            }
+          }}
+          onClose={() => setCalendarOpen(false)}
+        />
       ) : null}
     </main>
   );

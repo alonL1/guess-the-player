@@ -9,6 +9,9 @@ const RECENT_SEASON_WINDOW = 10;
 const DEFENSE_POSITIONS = new Set(["CB", "DB", "DE", "DL", "DT", "EDGE", "FS", "ILB", "LB", "MLB", "NT", "OLB", "S", "SAF", "SS"]);
 const SPECIAL_TEAMS_POSITIONS = new Set(["K", "P", "LS"]);
 const SCHEDULED_DAILY_IDS = new Set<string>(DAILY_CHALLENGE_SCHEDULE);
+const DAILY_ID_ALIASES: Record<string, string> = {
+  "ced-wilson": "cedrick-wilson-jr"
+};
 
 export type DailyHintStep = "team" | "years" | "position";
 
@@ -85,6 +88,10 @@ export function getChallengeNumberForDate(date = new Date()) {
   return getZonedDayIndex(date) - EPOCH_DAY_INDEX + 1;
 }
 
+export function getDateForChallengeNumber(challengeNumber: number) {
+  return new Date((EPOCH_DAY_INDEX + challengeNumber - 1) * DAY_MS);
+}
+
 export function getDailyStorageKey(challengeNumber: number) {
   return `nfl-path-guesser:daily:${challengeNumber}`;
 }
@@ -100,15 +107,22 @@ export function formatDailyDate(date: Date) {
 
 export function getDailyChallengeForDate(date = new Date()): DailyChallenge | null {
   const challengeNumber = getChallengeNumberForDate(date);
+  return getDailyChallengeByNumber(challengeNumber);
+}
+
+export function getDailyChallengeByNumber(challengeNumber: number): DailyChallenge | null {
   if (challengeNumber < 1) return null;
 
   const playerId = DAILY_CHALLENGE_SCHEDULE[challengeNumber - 1];
   if (!playerId) return null;
 
-  const player = findPlayerById(playerId);
-  if (!player || !isDailyEligible(player)) return null;
+  const player = findPlayerById(playerId) ?? findPlayerById(DAILY_ID_ALIASES[playerId] ?? "");
+  // Once a daily ID is committed to the schedule, keep that date playable even
+  // if later catalog scoring changes would move the player out of the current
+  // eligibility pool. The schedule itself is the source of truth for dailies.
+  if (!player) return null;
 
-  const dayStart = new Date(getZonedDayIndex(date) * DAY_MS);
+  const dayStart = getDateForChallengeNumber(challengeNumber);
   return {
     challengeNumber,
     date: dayStart,

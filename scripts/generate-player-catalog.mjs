@@ -564,10 +564,12 @@ function computeFamiliarity({ peak, careerProminence, seasonCount, uniqueTeamCou
   const preStatBonus = preStatSeasons * 6;
   core += preStatBonus;
 
-  // Still nothing (punters with no tracked volume, very short old careers):
-  // fall back to a modest longevity proxy so they aren't all impossible.
+  // Still basically nothing (punters with no tracked volume can pick up tiny
+  // return/kicking crumbs): fall back to a modest longevity proxy so real
+  // multi-year specialists don't disappear just because punting volume is not
+  // represented in the stat feed.
   let longevityFallback = 0;
-  if (core === 0 && seasonCount >= 6) {
+  if (core < 1 && seasonCount >= 6) {
     longevityFallback = seasonCount * 4 + uniqueTeamCount * 3;
     core = longevityFallback;
   }
