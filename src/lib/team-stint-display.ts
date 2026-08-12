@@ -1,4 +1,4 @@
-import { NFL_TEAMS } from "@/lib/nfl-teams";
+import { ACTIVE_SPORT } from "@/lib/sports";
 import type { TeamStint } from "@/lib/types";
 
 type ResolvedIdentity = {
@@ -8,7 +8,15 @@ type ResolvedIdentity = {
 };
 
 export function getTeamStintDisplay(stint: TeamStint) {
-  const team = NFL_TEAMS[stint.teamId];
+  const team = ACTIVE_SPORT.teams[stint.teamId];
+  if (!team) {
+    return {
+      label: stint.teamId,
+      logoUrls: [] as string[],
+      primary: "#ffffff",
+      secondary: "#111111"
+    };
+  }
   const rawIdentities = stint.identities ?? [stint];
   const identities = rawIdentities
     .map<ResolvedIdentity>((identity) => ({
@@ -27,8 +35,11 @@ export function getTeamStintDisplay(stint: TeamStint) {
     );
 
   const namesMatch = identities.every((identity) => identity.name === identities[0]?.name);
+  const cities = identities
+    .flatMap((identity) => identity.city.split("/").map((city) => city.trim()))
+    .filter((city, index, all) => city && all.indexOf(city) === index);
   const label = namesMatch
-    ? `${identities.map((identity) => identity.city).join(" / ")} ${identities[0]?.name ?? team.name}`
+    ? `${cities.join(" / ")} ${identities[0]?.name ?? team.name}`
     : identities.map((identity) => `${identity.city} ${identity.name}`).join(" / ");
   const logoUrls = identities
     .map((identity) => identity.logoUrl)

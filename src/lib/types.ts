@@ -4,7 +4,16 @@ export type GameMode = "kahoot" | "sudden_death";
 
 export type CareerYearMode = "entered" | "retired" | "full_career" | "current";
 
-export type PositionGroup = "all" | "offense" | "defense" | "special_teams";
+export type SportId = "nfl" | "nba";
+
+export type PositionGroup =
+  | "all"
+  | "offense"
+  | "defense"
+  | "special_teams"
+  | "guards"
+  | "wings"
+  | "bigs";
 
 export type CareerStatus = "signed" | "free_agent" | "retired";
 
@@ -20,53 +29,20 @@ export type RoomStatus =
   | "round_leaderboard"
   | "finished";
 
-export type TeamId =
-  | "ARI"
-  | "ATL"
-  | "BAL"
-  | "BUF"
-  | "CAR"
-  | "CHI"
-  | "CIN"
-  | "CLE"
-  | "DAL"
-  | "DEN"
-  | "DET"
-  | "GB"
-  | "HOU"
-  | "IND"
-  | "JAX"
-  | "KC"
-  | "LAC"
-  | "LAR"
-  | "LV"
-  | "MIA"
-  | "MIN"
-  | "NE"
-  | "NO"
-  | "NYG"
-  | "NYJ"
-  | "PHI"
-  | "PIT"
-  | "SEA"
-  | "SF"
-  | "TB"
-  | "TEN"
-  | "WAS";
+export type TeamId = string;
 
 export interface TeamStint {
   teamId: TeamId;
   startYear: number;
   endYear: number | null;
-  // Era-correct display overrides for relocations/renames (e.g. a 2010 stint on
-  // the LAR franchise shows "St. Louis Rams"). Absent when the stint is in the
-  // franchise's current era — the UI then falls back to NFL_TEAMS[teamId].
+  // Era-correct display overrides for relocations and renames. Absent when the
+  // stint uses the franchise's current identity.
   city?: string;
   name?: string;
   logoUrl?: string;
   // A continuous stop can span multiple identities of the same franchise.
   // Entries are chronological; missing fields use the franchise's current
-  // identity from NFL_TEAMS.
+  // identity from the active sport's team registry.
   identities?: Array<{
     city?: string;
     name?: string;

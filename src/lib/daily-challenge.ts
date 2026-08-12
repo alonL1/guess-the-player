@@ -1,14 +1,17 @@
 import { CATALOG, findPlayerById, isCurrentPlayer } from "@/lib/catalog";
 import { DAILY_CHALLENGE_SCHEDULE } from "@/lib/daily-challenge-schedule";
+import { NBA_DAILY_CHALLENGE_SCHEDULE } from "@/lib/nba-daily-challenge-schedule";
+import { ACTIVE_SPORT, IS_NBA } from "@/lib/sports";
 import type { Difficulty, PlayerCatalogEntry } from "@/lib/types";
 
-export const DAILY_CHALLENGE_EPOCH_DATE = "2026-05-27";
+export const DAILY_CHALLENGE_EPOCH_DATE = IS_NBA ? "2026-08-12" : "2026-05-27";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const RECENT_SEASON_WINDOW = 10;
 const DEFENSE_POSITIONS = new Set(["CB", "DB", "DE", "DL", "DT", "EDGE", "FS", "ILB", "LB", "MLB", "NT", "OLB", "S", "SAF", "SS"]);
 const SPECIAL_TEAMS_POSITIONS = new Set(["K", "P", "LS"]);
-const SCHEDULED_DAILY_IDS = new Set<string>(DAILY_CHALLENGE_SCHEDULE);
+const ACTIVE_DAILY_SCHEDULE: readonly string[] = IS_NBA ? NBA_DAILY_CHALLENGE_SCHEDULE : DAILY_CHALLENGE_SCHEDULE;
+const SCHEDULED_DAILY_IDS = new Set<string>(ACTIVE_DAILY_SCHEDULE);
 const DAILY_ID_ALIASES: Record<string, string> = {
   "ced-wilson": "cedrick-wilson-jr"
 };
@@ -64,6 +67,11 @@ export function isDefenseOrSpecialTeams(position: string) {
 }
 
 export function isDailyEligible(player: PlayerCatalogEntry, currentYear = new Date().getUTCFullYear()) {
+  if (IS_NBA) {
+    if (player.teamStints.length < 4) return false;
+    if (player.difficulty !== "medium" && player.difficulty !== "hard") return false;
+    return isCurrentPlayer(player) || getCareerEndYear(player, currentYear) >= currentYear - RECENT_SEASON_WINDOW;
+  }
   if (player.teamStints.length < 3) return false;
 
   // Easy: any era (no recency restriction). Medium: current or retired within the
@@ -93,7 +101,7 @@ export function getDateForChallengeNumber(challengeNumber: number) {
 }
 
 export function getDailyStorageKey(challengeNumber: number) {
-  return `nfl-path-guesser:daily:${challengeNumber}`;
+  return `${ACTIVE_SPORT.id}-path-guesser:daily:${challengeNumber}`;
 }
 
 export function formatDailyDate(date: Date) {
@@ -113,7 +121,7 @@ export function getDailyChallengeForDate(date = new Date()): DailyChallenge | nu
 export function getDailyChallengeByNumber(challengeNumber: number): DailyChallenge | null {
   if (challengeNumber < 1) return null;
 
-  const playerId = DAILY_CHALLENGE_SCHEDULE[challengeNumber - 1];
+  const playerId = ACTIVE_DAILY_SCHEDULE[challengeNumber - 1];
   if (!playerId) return null;
 
   const player = findPlayerById(playerId) ?? findPlayerById(DAILY_ID_ALIASES[playerId] ?? "");
@@ -200,7 +208,7 @@ export function buildDailyShareText({
   url: string;
 }) {
   return [
-    `NFL Path Guesser #${challenge.challengeNumber}`,
+    `${ACTIVE_SPORT.title} #${challenge.challengeNumber}`,
     challenge.dateLabel,
     difficultyLabel(challenge.player.difficulty),
     buildDailyResultEmojis(challenge.player, progress),

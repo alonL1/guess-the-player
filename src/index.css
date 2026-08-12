@@ -3,29 +3,52 @@
 
 /* ---------- Tailwind 4 theme tokens (exposes utilities like bg-turf, text-helmet) ---------- */
 @theme inline {
-  --color-turf: #1a5c2e;
-  --color-turf-shadow: #0f3d1d;
-  --color-turf-line: #2d8f4a;
-  --color-yardline: #f5f5f5;
-  --color-helmet: #ffd23f;
-  --color-jersey-red: #e63946;
-  --color-jersey-blue: #2e5cff;
-  --color-endzone: #0a2a14;
-  --color-chalk: #ffffff;
-  --color-chalk-dim: #d8e8d3;
-  --color-good: #4ade80;
+  --color-turf: var(--sport-surface);
+  --color-turf-shadow: var(--sport-shadow);
+  --color-turf-line: var(--sport-line);
+  --color-yardline: var(--sport-white);
+  --color-helmet: var(--sport-accent);
+  --color-jersey-red: var(--sport-primary);
+  --color-jersey-blue: var(--sport-secondary);
+  --color-endzone: var(--sport-panel);
+  --color-chalk: var(--sport-white);
+  --color-chalk-dim: var(--sport-muted);
+  --color-good: var(--sport-good);
   --font-pixel: "Press Start 2P", "Courier New", monospace;
   --font-readable: "VT323", "Courier New", monospace;
 }
 
 /* ---------- Fluid type scale (clamp = smooth scaling, no breakpoint steps) ---------- */
 :root {
+  --sport-surface: #1a5c2e;
+  --sport-shadow: #0f3d1d;
+  --sport-line: #2d8f4a;
+  --sport-white: #f5f5f5;
+  --sport-accent: #ffd23f;
+  --sport-primary: #e63946;
+  --sport-secondary: #2e5cff;
+  --sport-panel: #0a2a14;
+  --sport-muted: #d8e8d3;
+  --sport-good: #4ade80;
   --fs-hero: clamp(1.5rem, 5vw + 0.5rem, 3.25rem);
   --fs-title: clamp(1.125rem, 2.5vw + 0.5rem, 2rem);
   --fs-h2: clamp(0.875rem, 1.5vw + 0.5rem, 1.25rem);
   --fs-label: clamp(0.625rem, 0.6vw + 0.45rem, 0.8125rem);
   --fs-body: clamp(1rem, 0.5vw + 0.875rem, 1.25rem);
   --fs-display: clamp(3.5rem, 14vw + 1rem, 8rem);
+}
+
+:root[data-sport="nba"] {
+  --sport-surface: #25282d;
+  --sport-shadow: #0b0d10;
+  --sport-line: #c68b50;
+  --sport-white: #f7f2e8;
+  --sport-accent: #ffc72c;
+  --sport-primary: #d63b45;
+  --sport-secondary: #2878c8;
+  --sport-panel: #17191e;
+  --sport-muted: #d8dce6;
+  --sport-good: #54d98c;
 }
 
 * {
@@ -39,9 +62,25 @@ body {
   text-size-adjust: 100%;
 }
 
+body[data-sport="nba"] {
+  background-color: #25282d;
+  background-image:
+    linear-gradient(90deg, transparent calc(50% - 2px), rgba(247, 242, 232, 0.42) calc(50% - 2px), rgba(247, 242, 232, 0.42) calc(50% + 2px), transparent calc(50% + 2px)),
+    radial-gradient(circle at 50% 50%, transparent 0, transparent 82px, rgba(255, 199, 44, 0.3) 83px, rgba(255, 199, 44, 0.3) 87px, transparent 88px),
+    linear-gradient(90deg, rgba(214, 59, 69, 0.08), transparent 42%, transparent 58%, rgba(40, 120, 200, 0.08));
+  background-size: 100% 100%, 100% 100%, 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 html {
   min-height: 100%;
   background-color: #1a5c2e;
+}
+
+html[data-sport="nba"] {
+  background-color: #171b25;
 }
 
 body {
@@ -154,22 +193,22 @@ img {
 
   /* Pixel panel — replaces glass-panel */
   .pixel-panel {
-    background: #0a2a14;
-    border: 4px solid #f5f5f5;
+    background: var(--sport-panel);
+    border: 4px solid var(--sport-white);
     border-radius: 0;
-    box-shadow: 6px 6px 0 0 #0f3d1d;
+    box-shadow: 6px 6px 0 0 var(--sport-shadow);
     color: #ffffff;
   }
   .pixel-panel-accent {
-    background: #0a2a14;
-    border: 4px solid #ffd23f;
+    background: var(--sport-panel);
+    border: 4px solid var(--sport-accent);
     border-radius: 0;
-    box-shadow: 6px 6px 0 0 #0f3d1d;
+    box-shadow: 6px 6px 0 0 var(--sport-shadow);
     color: #ffffff;
   }
   .pixel-panel-flat {
-    background: #0a2a14;
-    border: 3px solid #f5f5f5;
+    background: var(--sport-panel);
+    border: 3px solid var(--sport-white);
     border-radius: 0;
     color: #ffffff;
   }
@@ -182,11 +221,11 @@ img {
     gap: 0.5rem;
     padding: 0.75rem 1rem;
     min-height: 44px;
-    background: #f5f5f5;
-    color: #0a2a14;
-    border: 4px solid #0a2a14;
+    background: var(--sport-white);
+    color: var(--sport-panel);
+    border: 4px solid var(--sport-panel);
     border-radius: 0;
-    box-shadow: 4px 4px 0 0 #0a2a14;
+    box-shadow: 4px 4px 0 0 var(--sport-panel);
     font-family: "VT323", "Courier New", monospace;
     font-size: calc(var(--fs-body) * 1.1) !important;
     font-weight: 400;
@@ -202,12 +241,12 @@ img {
   }
   .pixel-button:active:not(:disabled) {
     transform: translate(4px, 4px);
-    box-shadow: 0 0 0 0 #0a2a14;
+    box-shadow: 0 0 0 0 var(--sport-panel);
   }
   .pixel-button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
-    box-shadow: 4px 4px 0 0 #0a2a14;
+    box-shadow: 4px 4px 0 0 var(--sport-panel);
     transform: none;
   }
   .pixel-button-primary {
@@ -235,8 +274,8 @@ img {
     box-shadow: 4px 4px 0 0 #15296b;
   }
   .pixel-button-accent {
-    background: #ffd23f;
-    color: #0a2a14;
+    background: var(--sport-accent);
+    color: var(--sport-panel);
     border-color: #8a6e10;
     box-shadow: 4px 4px 0 0 #8a6e10;
   }
@@ -249,19 +288,19 @@ img {
   .pixel-button-ghost {
     background: transparent;
     color: #ffffff;
-    border-color: #f5f5f5;
-    box-shadow: 4px 4px 0 0 #0a2a14;
+    border-color: var(--sport-white);
+    box-shadow: 4px 4px 0 0 var(--sport-panel);
   }
   .pixel-button-ghost:active:not(:disabled) {
-    box-shadow: 0 0 0 0 #0a2a14;
+    box-shadow: 0 0 0 0 var(--sport-panel);
   }
 
   /* Pixel input — sunken sharp-edged text box */
   .pixel-input {
     width: 100%;
-    background: #0a2a14;
+    background: var(--sport-panel);
     color: #ffffff;
-    border: 3px solid #f5f5f5;
+    border: 3px solid var(--sport-white);
     border-radius: 0;
     padding: 0.75rem 1rem;
     min-height: 44px;
@@ -274,7 +313,7 @@ img {
     color: rgba(245, 245, 245, 0.45);
   }
   .pixel-input:focus {
-    border-color: #ffd23f;
+    border-color: var(--sport-accent);
   }
   .pixel-input:disabled {
     opacity: 0.55;
@@ -290,9 +329,9 @@ img {
   }
   .pixel-select {
     width: 100%;
-    background: #0a2a14;
+    background: var(--sport-panel);
     color: #ffffff;
-    border: 3px solid #f5f5f5;
+    border: 3px solid var(--sport-white);
     border-radius: 0;
     padding: 0.75rem 1rem;
     min-height: 44px;
@@ -303,15 +342,15 @@ img {
     appearance: none;
     -webkit-appearance: none;
     background-image:
-      linear-gradient(45deg, transparent 50%, #ffd23f 50%),
-      linear-gradient(135deg, #ffd23f 50%, transparent 50%);
+      linear-gradient(45deg, transparent 50%, var(--sport-accent) 50%),
+      linear-gradient(135deg, var(--sport-accent) 50%, transparent 50%);
     background-position: calc(100% - 16px) 50%, calc(100% - 10px) 50%;
     background-size: 6px 6px;
     background-repeat: no-repeat;
     padding-right: 2rem;
   }
   .pixel-select:focus {
-    border-color: #ffd23f;
+    border-color: var(--sport-accent);
   }
   .pixel-select:disabled {
     opacity: 0.55;
@@ -323,9 +362,9 @@ img {
     display: inline-flex;
     align-items: center;
     padding: 0.25rem 0.5rem;
-    border: 2px solid #f5f5f5;
+    border: 2px solid var(--sport-white);
     border-radius: 0;
-    background: #0a2a14;
+    background: var(--sport-panel);
     color: #ffffff;
     font-family: "Press Start 2P", "Courier New", monospace;
     font-size: 0.5rem;
@@ -334,33 +373,33 @@ img {
     line-height: 1.4;
   }
   .pixel-tag-yellow {
-    background: #ffd23f;
-    color: #0a2a14;
-    border-color: #0a2a14;
+    background: var(--sport-accent);
+    color: var(--sport-panel);
+    border-color: var(--sport-panel);
   }
   .pixel-tag-red {
     background: #e63946;
     color: #ffffff;
-    border-color: #0a2a14;
+    border-color: var(--sport-panel);
   }
   .pixel-tag-blue {
     background: #2e5cff;
     color: #ffffff;
-    border-color: #0a2a14;
+    border-color: var(--sport-panel);
   }
   .pixel-tag-green {
     background: #4ade80;
-    color: #0a2a14;
-    border-color: #0a2a14;
+    color: var(--sport-panel);
+    border-color: var(--sport-panel);
   }
 
   /* Scoreboard — black panel with helmet-yellow border for big number displays */
   .scoreboard {
     background: #050a08;
-    border: 5px solid #ffd23f;
+    border: 5px solid var(--sport-accent);
     border-radius: 0;
-    box-shadow: 6px 6px 0 0 #0f3d1d;
-    color: #ffd23f;
+    box-shadow: 6px 6px 0 0 var(--sport-shadow);
+    color: var(--sport-accent);
   }
 }
 
@@ -452,25 +491,25 @@ img {
 .year-range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background: #ffd23f;
-  border: 3px solid #0a2a14;
+  background: var(--sport-accent);
+  border: 3px solid var(--sport-panel);
   border-radius: 0;
   cursor: grab;
   height: 1.25rem;
   pointer-events: auto;
   width: 1.25rem;
-  box-shadow: 2px 2px 0 0 #0a2a14;
+  box-shadow: 2px 2px 0 0 var(--sport-panel);
 }
 
 .year-range-input::-moz-range-thumb {
-  background: #ffd23f;
-  border: 3px solid #0a2a14;
+  background: var(--sport-accent);
+  border: 3px solid var(--sport-panel);
   border-radius: 0;
   cursor: grab;
   height: 1.25rem;
   pointer-events: auto;
   width: 1.25rem;
-  box-shadow: 2px 2px 0 0 #0a2a14;
+  box-shadow: 2px 2px 0 0 var(--sport-panel);
 }
 
 /* Hide native number-input spinners — they look out of place with the pixel theme */

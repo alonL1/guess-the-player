@@ -1,3 +1,5 @@
+import { IS_NBA } from "@/lib/sports";
+
 const COMBINING_MARKS_RANGE = /[̀-ͯ]/g;
 
 export function normalizeSearchText(input: string) {
@@ -23,6 +25,11 @@ export function createUiAvatarUrl(name: string) {
 }
 
 export function formatYearRange(startYear: number, endYear: number | null) {
+  if (IS_NBA) {
+    if (endYear === null) return `${startYear}–present`;
+    if (startYear === endYear) return `${startYear}`;
+    return `${startYear}–${endYear}`;
+  }
   return `${startYear} - ${endYear ?? "Current"}`;
 }
 

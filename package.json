@@ -8,13 +8,24 @@
   },
   "scripts": {
     "dev": "concurrently -k -n vite,party -c cyan,magenta \"vite\" \"partykit dev\"",
+    "dev:nba": "concurrently -k -n vite,party -c cyan,magenta \"VITE_SPORT=nba vite --port 5174\" \"partykit dev -c partykit.nba.json -p 2000\"",
     "generate:catalog": "node scripts/generate-player-catalog.mjs",
+    "generate:catalog:nba": "node scripts/generate-nba-player-catalog.mjs",
+    "validate:catalog:nba": "node scripts/validate-nba-catalog.mjs",
+    "difficulty:nba": "node scripts/nba-difficulty-counts.mjs",
+    "difficulty:nba:current": "node scripts/nba-difficulty-counts.mjs --current",
     "prebuild": "npm run generate:catalog",
     "build": "tsc -b && vite build",
+    "build:nfl": "npm run build",
+    "prebuild:nba": "npm run validate:catalog:nba",
+    "build:nba": "tsc -b && VITE_SPORT=nba vite build --outDir dist-nba",
     "preview": "vite preview",
     "predeploy:party": "npm run generate:catalog",
     "deploy:party": "partykit deploy",
-    "deploy:client": "wrangler pages deploy dist"
+    "predeploy:party:nba": "npm run generate:catalog:nba && npm run validate:catalog:nba",
+    "deploy:party:nba": "partykit deploy -c partykit.nba.json",
+    "deploy:client": "wrangler pages deploy dist",
+    "deploy:client:nba": "wrangler pages deploy dist-nba"
   },
   "dependencies": {
     "clsx": "^2.1.1",

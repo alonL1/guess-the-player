@@ -3,7 +3,7 @@ import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { CATALOG_YEAR_RANGE, buildBalancedPlayerDeck, findPlayerById, getEligiblePlayers, searchPlayers } from "@/lib/catalog";
-import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
+import { ACTIVE_SPORT, formatActiveTeamLabel } from "@/lib/sports";
 import { calculateCurrentCap, calculateScore } from "@/lib/scoring";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
 import { formatPositionGroup, POSITION_GROUP_OPTIONS } from "@/lib/positions";
@@ -433,7 +433,7 @@ export function SoloClient() {
         <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
           <div className="min-w-0">
             <Link to="/" className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">
-              ◀ NFL Path Guesser
+              ◀ {ACTIVE_SPORT.title}
             </Link>
             <h1 className="font-pixel text-helmet mt-2 text-xs sm:text-lg">SOLO RUN</h1>
           </div>
@@ -565,9 +565,9 @@ export function SoloClient() {
                   className="pixel-select"
                 >
                   <option value="all">All teams</option>
-                  {(Object.keys(NFL_TEAMS) as TeamId[]).map((teamId) => (
+                  {(Object.keys(ACTIVE_SPORT.teams) as TeamId[]).map((teamId) => (
                     <option key={teamId} value={teamId}>
-                      {formatTeamLabel(teamId)}
+                      {formatActiveTeamLabel(teamId)}
                     </option>
                   ))}
                 </select>

@@ -18,10 +18,11 @@ import {
   type DailyHintStep
 } from "@/lib/daily-challenge";
 import { getTeamStintDisplay } from "@/lib/team-stint-display";
+import { ACTIVE_SPORT, IS_NBA } from "@/lib/sports";
 import type { PlayerCatalogEntry, PlayerSearchResult, TeamStint } from "@/lib/types";
 import { formatYearRange, normalizeSearchText } from "@/lib/utils";
 
-const DAILY_SHARE_URL = "https://nfl.pathguessr.app/daily";
+const DAILY_SHARE_URL = ACTIVE_SPORT.shareUrl;
 const SHARE_POPUP_DELAY_MS = 2400;
 
 function preserveViewportPositionAfterRender() {
@@ -158,14 +159,14 @@ function DailyStopCard({
   return (
     <article
       className="flex w-[120px] flex-col items-center justify-center gap-1 border-4 p-1.5 text-center sm:w-[148px] sm:gap-1.5 sm:p-2"
-      style={{ borderColor: display.primary, backgroundColor: "#58a045" }}
+      style={{ borderColor: display.primary, backgroundColor: IS_NBA ? "#d99a5b" : "#58a045" }}
     >
       <div className="flex items-center justify-center gap-1">
         {display.logoUrls.map((logoUrl) => (
           <img key={logoUrl} src={logoUrl} alt="" width={56} height={56} className={`${logoSize} object-contain`} />
         ))}
       </div>
-      <p className="font-readable text-[#0a2a14] flex items-center justify-center text-sm leading-tight sm:text-base" style={{ minHeight: "2.5em" }}>
+      <p className="font-readable flex items-center justify-center text-sm leading-tight sm:text-base" style={{ minHeight: "2.5em", color: IS_NBA ? "#161922" : "#0a2a14" }}>
         {display.label}
       </p>
       {showYears ? (
@@ -586,7 +587,7 @@ export function DailyChallenge() {
     if (playerId === player.id) {
       setFeedback({
         kind: "correct",
-        message: "Touchdown! You got it!",
+        message: ACTIVE_SPORT.correctMessage,
         detail: `${player.fullName} was today's player.`
       });
       setProgress((current) =>
@@ -683,7 +684,7 @@ export function DailyChallenge() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="font-pixel text-helmet text-[0.55rem] sm:text-xs">▼ Daily Challenge #{challenge.challengeNumber}</p>
-              <h1 className="font-pixel text-chalk mt-2 text-lg leading-tight sm:text-2xl">NFL Path Guesser</h1>
+              <h1 className="font-pixel text-chalk mt-2 text-lg leading-tight sm:text-2xl">{ACTIVE_SPORT.title}</h1>
               <p className="font-readable text-chalk-dim mt-2 text-lg sm:text-xl">{challenge.dateLabel}</p>
             </div>
             <DifficultyTile difficulty={player.difficulty} />

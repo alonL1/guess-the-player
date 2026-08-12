@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" shape-rendering="crispEdges">
+  <rect width="1200" height="630" fill="#171b25"/>
+  <rect y="452" width="1200" height="178" fill="#a85f35"/>
+  <path d="M0 505h1200M600 452v178M430 630a170 170 0 0 1 340 0" fill="none" stroke="#f7f2e8" stroke-width="8" opacity=".75"/>
+  <circle cx="600" cy="508" r="34" fill="#e66b2e" stroke="#ffc72c" stroke-width="8"/>
+  <path d="M566 508h68M600 474v68M576 484q24 24 48 48M624 484q-24 24-48 48" stroke="#171b25" stroke-width="5" fill="none"/>
+  <text x="600" y="194" text-anchor="middle" fill="#ffc72c" font-family="Courier New,monospace" font-weight="700" font-size="70">NBA PATH GUESSER</text>
+  <text x="600" y="276" text-anchor="middle" fill="#f7f2e8" font-family="Courier New,monospace" font-size="42">GUESS THE PLAYER FROM THE CAREER PATH</text>
+  <rect x="370" y="330" width="460" height="68" fill="#d63b45" stroke="#f7f2e8" stroke-width="6"/>
+  <text x="600" y="378" text-anchor="middle" fill="#fff" font-family="Courier New,monospace" font-weight="700" font-size="38">DAILY • SOLO • MULTIPLAYER</text>
+</svg>

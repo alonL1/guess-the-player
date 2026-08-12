@@ -1,39 +1,65 @@
-# NFL Path Guesser
+# Path Guesser
 
-Realtime NFL player guessing battles. Built with Vite + React on the client and PartyKit (Cloudflare Durable Objects) on the backend.
+Realtime career-path guessing games for the NFL and NBA. Both editions share the Vite + React client and PartyKit room engine while keeping separate catalogs, visual themes, Daily Challenges, domains, and PartyKit deployments.
 
 ## Local development
 
 1. `npm install`
-2. `npm run dev` — runs Vite (http://localhost:5173) and `partykit dev` (http://localhost:1999) concurrently
-3. Open http://localhost:5173
+2. Run one edition:
+   - `npm run dev` - NFL client at http://localhost:5173 and PartyKit at http://localhost:1999
+   - `npm run dev:nba` - NBA client at http://localhost:5174 and PartyKit at http://localhost:2000
+3. The localhost-only catalog inspector is available at `/catalog` in either edition.
 
-The default `VITE_PARTYKIT_HOST` points at `127.0.0.1:1999` if not set, so local dev works without any env file.
+The clients use those local PartyKit ports when `VITE_PARTYKIT_HOST` is not set.
 
 ## Player catalog
 
-The player pool is generated from nflverse roster and regular-season player stat CSV releases instead of being hand-curated. `npm run generate:catalog` writes `src/lib/generated-player-catalog.ts`; `npm run build` and `npm run deploy:party` refresh it automatically before building/deploying.
+The NFL pool is generated from nflverse roster and regular-season player-stat releases. `npm run generate:catalog` writes `src/lib/generated-player-catalog.ts`.
+
+The NBA pool combines historical FiveThirtyEight RAPTOR records, dated ESPN box-score appearances published by sportsdataverse, ESPN player-core status data, and ESPN's live team rosters. The live-roster overlay captures offseason signings before a player appears in a game for the new team. `npm run generate:catalog:nba` writes the NBA catalog, debug breakdown, and stable Daily Challenge schedule. It keeps only players with at least two NBA franchises and displays season-spanning years as calendar membership years: a 2003-04 through 2009-10 stint is `2003–2010`.
+
+NBA catalog tools:
+
+- `npm run validate:catalog:nba` - validate IDs, franchises, stints, and the Daily schedule
+- `npm run difficulty:nba` - show all-player difficulty and position-group counts
+- `npm run difficulty:nba:current` - show the same distribution for current/free-agent players
+
+Generated catalog files are committed so Cloudflare Pages builds are deterministic. NBA source downloads are cached locally in `.cache/nba-catalog`; that cache is intentionally not committed.
 
 ## Deployment
 
 **One-time setup:**
 1. Create a Cloudflare account.
-2. Enable the **Workers Paid plan** ($5/mo — required for Durable Objects). In the Cloudflare dashboard, **set the spend cap to $5** so billing can never exceed the plan base.
-3. `npx partykit login` — authenticates the CLI with Cloudflare.
+2. `npx partykit login` - authenticate the CLI with Cloudflare.
+3. Create separate Cloudflare Pages projects for the NFL and NBA domains.
 
-**Each deploy:**
-- `npm run deploy:party` — pushes party code, prints the host URL (e.g. `nfl-path-guesser.<user>.partykit.dev`)
-- Set `VITE_PARTYKIT_HOST` to that URL in your Cloudflare Pages env vars
-- `npm run build && npm run deploy:client` — uploads the static build to Pages (or use the Pages GitHub integration for auto-deploy on push)
+**NFL deploy:**
+
+- `npm run deploy:party`
+- Set the NFL Pages project's `VITE_PARTYKIT_HOST` to the printed NFL PartyKit host.
+- `npm run build && npm run deploy:client`
+
+**NBA deploy:**
+
+- `npm run deploy:party:nba`
+- Set the NBA Pages project's `VITE_PARTYKIT_HOST` to the printed NBA PartyKit host.
+- Use `npm run build:nba` with output directory `dist-nba`, then `npm run deploy:client:nba`.
+- The production domain is `https://nba.pathguessr.app`; configure that subdomain on the NBA Pages project.
+
+The two PartyKit projects must stay separate (`nfl-path-guesser` and `nba-path-guesser`) so rooms and lobby listings never cross leagues.
 
 ## Cost & safety
 
-Rooms auto-close when empty for 60 s, when idle in lobby for 30 minutes, or after 4 hours total lifetime — so a forgotten room cannot accrue charges indefinitely. Hibernated Durable Objects cost $0. Worst-case billing is capped at $5/mo via the Cloudflare dashboard setting above.
+Rooms auto-close when empty for 60 seconds, when idle in the lobby for 30 minutes, or after four hours total lifetime. Check the current Cloudflare and PartyKit plan limits before launch; the app does not assume a particular paid tier.
 
 ## Scripts
 
-- `npm run dev` — Vite + PartyKit dev servers
-- `npm run build` — typecheck + Vite production build
-- `npm run preview` — preview the built client locally
-- `npm run deploy:party` — deploy PartyKit code to Cloudflare
-- `npm run deploy:client` — deploy the static client to Cloudflare Pages
+- `npm run dev` - NFL Vite + PartyKit servers
+- `npm run dev:nba` - NBA Vite + PartyKit servers
+- `npm run build` / `npm run build:nba` - production builds
+- `npm run deploy:party` / `npm run deploy:party:nba` - realtime server deploys
+- `npm run deploy:client` / `npm run deploy:client:nba` - Cloudflare Pages deploys
+
+## Data and marks
+
+Player data and headshots come from the upstream datasets and URLs named above. Team names and logos are trademarks of their respective owners; historical marks are display metadata, not bundled source artwork. Review upstream terms and trademark requirements before commercial launch.

@@ -5,7 +5,7 @@ import PartySocket from "partysocket";
 
 import { CATALOG_YEAR_RANGE, findPlayerById, getEligiblePlayers, searchPlayers as searchPlayersLocal } from "@/lib/catalog";
 import type { AckResponse, ClientMessage, GuessResult, ServerMessage } from "@/lib/messages";
-import { NFL_TEAMS, formatTeamLabel } from "@/lib/nfl-teams";
+import { ACTIVE_SPORT, formatActiveTeamLabel } from "@/lib/sports";
 import { formatPositionGroup, POSITION_GROUP_OPTIONS } from "@/lib/positions";
 import { DEFAULT_ROOM_SETTINGS } from "@/lib/settings";
 import { TeamPath } from "@/components/TeamPath";
@@ -32,7 +32,7 @@ import type {
 } from "@/lib/types";
 import { normalizeSearchText } from "@/lib/utils";
 
-const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || "127.0.0.1:1999";
+const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || (ACTIVE_SPORT.id === "nba" ? "127.0.0.1:2000" : "127.0.0.1:1999");
 const DIFFICULTY_OPTIONS: Difficulty[] = ["easy", "medium", "hard", "impossible"];
 
 function clampRoundCount(value: number) {
@@ -859,7 +859,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     if (room && eligiblePlayers.length < room.settings.roundCount) {
       setStartBlocker({
         heading: "Player pool is too small",
-        message: `This setup only has ${eligiblePlayers.length} eligible NFL players, but the match needs ${room.settings.roundCount} rounds. Widen the career years, choose more difficulties, switch Team or Position Group back to All, or lower the round count.`
+        message: `This setup only has ${eligiblePlayers.length} eligible ${ACTIVE_SPORT.league} players, but the match needs ${room.settings.roundCount} rounds. Widen the career years, choose more difficulties, switch Team or Position Group back to All, or lower the round count.`
       });
       return;
     }
@@ -929,7 +929,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
     try {
       const nav = navigator as Navigator & { share?: (data: ShareData) => Promise<void> };
       if (nav.share) {
-        await nav.share({ title: "NFL Path Guesser", text: "Join my NFL guessing room", url });
+        await nav.share({ title: ACTIVE_SPORT.title, text: `Join my ${ACTIVE_SPORT.league} guessing room`, url });
       } else {
         await navigator.clipboard.writeText(url);
         setMessage("Invite link copied to clipboard");
@@ -974,7 +974,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
               to="/"
               className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]"
             >
-              ◀ NFL Path Guesser
+              ◀ {ACTIVE_SPORT.title}
             </Link>
             <span className="hidden text-helmet/40 sm:inline">|</span>
             <h1 className="font-pixel text-helmet text-xs sm:text-lg">ROOM {roomCode}</h1>
@@ -1202,9 +1202,9 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                           className="pixel-select"
                         >
                           <option value="all">All teams</option>
-                          {(Object.keys(NFL_TEAMS) as TeamId[]).map((teamId) => (
+                          {(Object.keys(ACTIVE_SPORT.teams) as TeamId[]).map((teamId) => (
                             <option key={teamId} value={teamId}>
-                              {formatTeamLabel(teamId)}
+                              {formatActiveTeamLabel(teamId)}
                             </option>
                           ))}
                         </select>
@@ -1303,7 +1303,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <p className="font-readable text-chalk text-base">
-                    {room.canStart ? "Ready to start" : "Need 2+ participants and enough eligible NFL players"}
+                    {room.canStart ? "Ready to start" : `Need 2+ participants and enough eligible ${ACTIVE_SPORT.league} players`}
                   </p>
                   {self?.isHost ? (
                     <button

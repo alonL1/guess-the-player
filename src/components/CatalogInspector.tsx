@@ -5,6 +5,7 @@ import { Link, Navigate } from "react-router-dom";
 import { CATALOG, isCurrentPlayer } from "@/lib/catalog";
 import { TeamPath } from "@/components/TeamPath";
 import { formatPositionGroup, isPositionInGroup, POSITION_GROUP_OPTIONS } from "@/lib/positions";
+import { ACTIVE_SPORT, IS_NBA } from "@/lib/sports";
 import type { Difficulty, PositionGroup } from "@/lib/types";
 import { normalizeSearchText } from "@/lib/utils";
 import type { PlayerDebug } from "@/lib/generated-player-debug";
@@ -32,6 +33,7 @@ function StatRow({ label, value }: { label: string; value: string | number }) {
 
 function getThresholdGroup(position: string, thresholds: Thresholds | null) {
   if (!thresholds) return null;
+  if (IS_NBA) return { label: "NBA", values: thresholds.offense };
   if (isPositionInGroup(position, "offense")) return { label: "Offense", values: thresholds.offense };
   if (isPositionInGroup(position, "defense")) return { label: "Defense", values: thresholds.defense };
   return { label: "Special teams", values: thresholds.specialTeams };
@@ -61,8 +63,9 @@ function DifficultyBreakdown({
         <span className="pixel-tag pixel-tag-yellow capitalize">{difficulty}</span>
       </div>
       <p className="font-pixel text-chalk-dim mt-2 text-[0.45rem] leading-relaxed sm:text-[0.55rem]">
-        Difficulty uses fixed familiarity thresholds by side of the ball, so random draws stay random while defense must
-        clear stricter cut lines.{" "}
+        {IS_NBA
+          ? "Difficulty uses fixed familiarity thresholds built from peak production, career production, impact, longevity, team stops, and recency. "
+          : "Difficulty uses fixed familiarity thresholds by side of the ball, so random draws stay random while defense must clear stricter cut lines. "}
         {thresholdGroup
           ? `${thresholdGroup.label}: easy >= ${thresholdGroup.values.easy} · medium >= ${thresholdGroup.values.medium} · hard >= ${thresholdGroup.values.hard} · impossible >= ${thresholdGroup.values.impossible}.`
           : ""}
@@ -71,9 +74,9 @@ function DifficultyBreakdown({
       {/* The equation */}
       <p className="font-pixel text-helmet mt-4 text-[0.5rem] sm:text-[0.55rem]">Score equation</p>
       <div className="mt-2">
-        <StatRow label={`quality (posFactor ${debug.positionFactor} × core ${debug.core})`} value={debug.quality} />
+        <StatRow label={IS_NBA ? "production + peak + impact" : `quality (posFactor ${debug.positionFactor} × core ${debug.core})`} value={debug.quality} />
         <StatRow
-          label={`+ context (longevity ${debug.longevity} + teams ${debug.teamBonus} + recency ${debug.recency}, × gate ${debug.productionGate})`}
+          label={IS_NBA ? `+ context (longevity ${debug.longevity} + teams ${debug.teamBonus} + recency ${debug.recency})` : `+ context (longevity ${debug.longevity} + teams ${debug.teamBonus} + recency ${debug.recency}, × gate ${debug.productionGate})`}
           value={debug.context}
         />
         {debug.recentDefensiveImpact > 0 ? (
@@ -89,7 +92,7 @@ function DifficultyBreakdown({
       </div>
 
       {/* Core production */}
-      <p className="font-pixel text-helmet mt-4 text-[0.5rem] sm:text-[0.55rem]">Core production (peak·0.7 + avg·1.15)</p>
+      <p className="font-pixel text-helmet mt-4 text-[0.5rem] sm:text-[0.55rem]">{IS_NBA ? "NBA familiarity components" : "Core production (peak·0.7 + avg·1.15)"}</p>
       <div className="mt-2">
         <StatRow label="peak (best single season)" value={debug.peak} />
         <StatRow label="career total prominence" value={debug.careerProminence} />
@@ -188,7 +191,7 @@ export function CatalogInspector() {
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div className="min-w-0">
             <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">⚙ Localhost only</p>
-            <h1 className="font-pixel text-helmet mt-2 text-xs sm:text-lg">Player Catalog Inspector</h1>
+            <h1 className="font-pixel text-helmet mt-2 text-xs sm:text-lg">{ACTIVE_SPORT.inspectorTitle} Inspector</h1>
           </div>
           <Link to="/" className="pixel-button pixel-button-ghost min-h-0 px-3 py-2 text-[0.55rem]">
             ↩ Home
@@ -206,7 +209,7 @@ export function CatalogInspector() {
                 setQuery(event.target.value);
                 setSelectedId(null);
               }}
-              placeholder="TOM BRADY"
+              placeholder={IS_NBA ? "LEBRON JAMES" : "TOM BRADY"}
               autoComplete="off"
               autoCorrect="off"
               autoCapitalize="none"
@@ -234,7 +237,7 @@ export function CatalogInspector() {
               </select>
             </label>
             <label className="font-pixel text-helmet block text-[0.5rem] sm:text-[0.625rem]">
-              Side
+              {IS_NBA ? "Position group" : "Side"}
               <select
                 value={positionGroupFilter}
                 onChange={(event) => {

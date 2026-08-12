@@ -2,8 +2,9 @@ import { useEffect, useState, useTransition } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 
 import { getNickname, getOrCreateSessionId, setNickname as persistNickname } from "@/lib/session";
+import { ACTIVE_SPORT } from "@/lib/sports";
 
-const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || "127.0.0.1:1999";
+const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || (ACTIVE_SPORT.id === "nba" ? "127.0.0.1:2000" : "127.0.0.1:1999");
 const ROOM_CODE_PATTERN = /^[A-Z0-9]{6}$/;
 
 function isLocalhost() {
@@ -143,23 +144,23 @@ export function LandingPage() {
           className="font-pixel text-helmet uppercase leading-tight"
           style={{
             fontSize: "var(--fs-hero)",
-            textShadow: "4px 4px 0 #0a2a14, 8px 8px 0 #0f3d1d"
+            textShadow: "4px 4px 0 var(--sport-panel), 8px 8px 0 var(--sport-shadow)"
           }}
         >
-          NFL Path Guesser
+          {ACTIVE_SPORT.title}
         </h1>
         <p
           className="font-readable text-helmet mt-4"
           style={{
             fontSize: "var(--fs-body)",
             textShadow:
-              "-2px 0 0 #0a2a14, 2px 0 0 #0a2a14, 0 -2px 0 #0a2a14, 0 2px 0 #0a2a14, -2px -2px 0 #0a2a14, 2px -2px 0 #0a2a14, -2px 2px 0 #0a2a14, 2px 2px 0 #0a2a14"
+              "-2px 0 0 var(--sport-panel), 2px 0 0 var(--sport-panel), 0 -2px 0 var(--sport-panel), 0 2px 0 var(--sport-panel), -2px -2px 0 var(--sport-panel), 2px -2px 0 var(--sport-panel), -2px 2px 0 var(--sport-panel), 2px 2px 0 var(--sport-panel)"
           }}
         >
           Guess the player from the career path
         </p>
         <p className="font-pixel text-helmet blink mt-3 text-[0.55rem] sm:text-xs">
-          ▶ Test your ball knowledge!
+          ▶ {ACTIVE_SPORT.knowledgePrompt}
         </p>
 
         <div className="mt-8 grid gap-3 sm:inline-grid sm:grid-cols-2">
@@ -186,7 +187,7 @@ export function LandingPage() {
             <input
               value={nickname}
               onChange={(event) => setNicknameState(event.target.value)}
-              placeholder="GRIDIRON GURU"
+              placeholder={ACTIVE_SPORT.nicknamePlaceholder}
               className="pixel-input mt-2"
             />
           </label>
@@ -229,6 +230,15 @@ export function LandingPage() {
             </Link>
           ) : null}
         </div>
+
+        <nav className="mt-6 flex items-center gap-2" aria-label="Choose sport">
+          <a href="https://nfl.pathguessr.app" className={`pixel-button min-h-0 px-3 py-2 text-[0.55rem] ${ACTIVE_SPORT.id === "nfl" ? "pixel-button-accent" : "pixel-button-ghost"}`}>
+            NFL
+          </a>
+          <a href="https://nba.pathguessr.app" className={`pixel-button min-h-0 px-3 py-2 text-[0.55rem] ${ACTIVE_SPORT.id === "nba" ? "pixel-button-accent" : "pixel-button-ghost"}`}>
+            NBA
+          </a>
+        </nav>
       </section>
 
       {joinDialogOpen ? (

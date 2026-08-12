@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 import { getTeamStintDisplay } from "@/lib/team-stint-display";
+import { IS_NBA } from "@/lib/sports";
 import type { TeamStint } from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
@@ -16,8 +17,8 @@ export function TeamPath({
   tone?: "default" | "danger";
 }) {
   const isDanger = tone === "danger";
-  const cardBg = isDanger ? "#c0392b" : "#58a045";
-  const nameColor = isDanger ? "#ffffff" : "#0a2a14";
+  const cardBg = isDanger ? "#c0392b" : IS_NBA ? "#d99a5b" : "#58a045";
+  const nameColor = isDanger ? "#ffffff" : IS_NBA ? "#161922" : "#0a2a14";
   const yearsClass = isDanger ? "text-white/80" : "text-white";
   const arrowClass = isDanger ? "text-jersey-red" : "text-helmet";
 
