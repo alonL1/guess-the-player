@@ -505,7 +505,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -906,7 +906,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -1104,7 +1104,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -1519,7 +1519,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -3502,7 +3502,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -4731,7 +4731,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -5809,7 +5809,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -6929,7 +6929,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -7678,7 +7678,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -7832,7 +7832,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -8956,7 +8956,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -9983,7 +9983,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -11418,7 +11418,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -13049,7 +13049,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -13460,7 +13460,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -13615,7 +13615,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -13926,7 +13926,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -15386,7 +15386,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -18253,7 +18253,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -18540,7 +18540,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -18557,7 +18557,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -18917,7 +18917,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -19642,7 +19642,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -19659,7 +19659,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -19752,7 +19752,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -21642,7 +21642,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -22133,7 +22133,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -22570,7 +22570,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -23152,7 +23152,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -23944,7 +23944,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -25144,7 +25144,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -25351,7 +25351,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -26069,7 +26069,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -26167,7 +26167,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -27801,7 +27801,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -30240,7 +30240,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -30468,7 +30468,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -31055,7 +31055,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -31866,7 +31866,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -31927,7 +31927,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -32560,7 +32560,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -32631,7 +32631,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -32751,7 +32751,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -33511,7 +33511,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -33951,7 +33951,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -36465,7 +36465,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -38943,7 +38943,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -39607,7 +39607,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -39766,7 +39766,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -40077,7 +40077,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -40192,7 +40192,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -40400,7 +40400,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -40932,7 +40932,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -43821,7 +43821,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -44672,7 +44672,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -45951,7 +45951,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -47116,7 +47116,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -47538,7 +47538,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -50116,7 +50116,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -50133,7 +50133,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -50721,7 +50721,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -51436,7 +51436,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           },
           {
             "city": "Charlotte",
@@ -53797,7 +53797,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -54353,7 +54353,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -55826,7 +55826,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -57755,7 +57755,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -58427,7 +58427,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -58621,7 +58621,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -59488,7 +59488,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -59956,7 +59956,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -62570,7 +62570,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -63627,7 +63627,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -65203,7 +65203,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       }
@@ -65227,7 +65227,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -65901,7 +65901,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -66142,7 +66142,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -67594,7 +67594,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -67662,7 +67662,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -68340,7 +68340,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -69987,7 +69987,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -74111,7 +74111,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -74167,7 +74167,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -75010,7 +75010,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },
@@ -75485,7 +75485,7 @@ export const GENERATED_NBA_PLAYERS = [
           {
             "city": "Charlotte",
             "name": "Bobcats",
-            "logoUrl": "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif"
+            "logoUrl": "/historical/charlotte-bobcats.gif"
           }
         ]
       },

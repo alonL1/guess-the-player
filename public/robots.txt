@@ -3,4 +3,4 @@ Allow: /
 Disallow: /catalog
 Disallow: /rooms/
 
-Sitemap: https://pathguessr.app/sitemap.xml
+Sitemap: https://nfl.pathguessr.app/sitemap.xml

@@ -64,7 +64,7 @@ const CURRENT_TEAMS = {
 
 const FRANCHISE_ERAS = {
   BKN: [{ end: 2012, city: "New Jersey", name: "Nets", logoUrl: "https://content.sportslogos.net/logos/6/215/full/hvkhsaffs9x9zre7gku4vmnte.gif" }],
-  CHA: [{ end: 2014, city: "Charlotte", name: "Bobcats", logoUrl: "https://content.sportslogos.net/logos/6/258/full/tytgxvgwe3r0hwqaehb3lxef7.gif" }],
+  CHA: [{ end: 2014, city: "Charlotte", name: "Bobcats", logoUrl: "/historical/charlotte-bobcats.gif" }],
   LAC: [
     { end: 1978, city: "Buffalo", name: "Braves", logoUrl: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Buffalo_Braves_%28black_and_orange_varient%29_logo.svg" },
     { end: 1984, city: "San Diego", name: "Clippers", logoUrl: "https://content.sportslogos.net/logos/6/254/full/5465.gif" }
