@@ -64,6 +64,14 @@ export interface TeamStint {
   city?: string;
   name?: string;
   logoUrl?: string;
+  // A continuous stop can span multiple identities of the same franchise.
+  // Entries are chronological; missing fields use the franchise's current
+  // identity from NFL_TEAMS.
+  identities?: Array<{
+    city?: string;
+    name?: string;
+    logoUrl?: string;
+  }>;
 }
 
 export interface PlayerCatalogEntry {

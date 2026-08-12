@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import { NFL_TEAMS } from "@/lib/nfl-teams";
+import { getTeamStintDisplay } from "@/lib/team-stint-display";
 import type { TeamStint } from "@/lib/types";
 import { formatYearRange } from "@/lib/utils";
 
@@ -34,11 +34,17 @@ export function TeamPath({
   return (
     <div className={`flex flex-wrap items-stretch justify-center ${wrapGap}`}>
       {teamStints.map((stint, index) => {
-        const team = NFL_TEAMS[stint.teamId];
-        // Era-correct overrides (relocations/renames) fall back to the current
-        // franchise identity when absent.
-        const logoUrl = stint.logoUrl ?? team.logoUrl;
-        const label = `${stint.city ?? team.city} ${stint.name ?? team.name}`;
+        const display = getTeamStintDisplay(stint);
+        const displayedLogoSize =
+          display.logoUrls.length > 2
+            ? compact
+              ? "h-5 w-5 sm:h-6 sm:w-6"
+              : "h-8 w-8 sm:h-9 sm:w-9"
+            : display.logoUrls.length > 1
+              ? compact
+                ? "h-6 w-6 sm:h-7 sm:w-7"
+                : "h-9 w-9 sm:h-10 sm:w-10"
+              : logoSize;
         return (
           <Fragment key={`${stint.teamId}-${index}-${stint.startYear}`}>
             {index > 0 ? (
@@ -51,14 +57,18 @@ export function TeamPath({
             ) : null}
             <article
               className={`flex flex-col items-center justify-center border-4 text-center ${cardSize}`}
-              style={{ borderColor: isDanger ? "#7a1620" : team.primary, backgroundColor: cardBg }}
+              style={{ borderColor: isDanger ? "#7a1620" : display.primary, backgroundColor: cardBg }}
             >
-              <img src={logoUrl} alt="" width={56} height={56} className={`${logoSize} object-contain`} />
+              <div className="flex items-center justify-center gap-1">
+                {display.logoUrls.map((logoUrl) => (
+                  <img key={logoUrl} src={logoUrl} alt="" width={56} height={56} className={`${displayedLogoSize} object-contain`} />
+                ))}
+              </div>
               <p
                 className={`font-readable flex items-center justify-center leading-tight ${nameSize}`}
                 style={{ minHeight: nameMinHeight, color: nameColor }}
               >
-                {label}
+                {display.label}
               </p>
               {showYears ? (
                 <p className={`font-pixel ${yearsClass} leading-tight ${yearsSize}`}>

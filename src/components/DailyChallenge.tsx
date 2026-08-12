@@ -17,7 +17,7 @@ import {
   type DailyChallengeProgress,
   type DailyHintStep
 } from "@/lib/daily-challenge";
-import { NFL_TEAMS } from "@/lib/nfl-teams";
+import { getTeamStintDisplay } from "@/lib/team-stint-display";
 import type { PlayerCatalogEntry, PlayerSearchResult, TeamStint } from "@/lib/types";
 import { formatYearRange, normalizeSearchText } from "@/lib/utils";
 
@@ -149,18 +149,24 @@ function DailyStopCard({
     );
   }
 
-  const team = NFL_TEAMS[stint.teamId];
-  // Era-correct overrides (relocations/renames), falling back to current identity.
-  const logoUrl = stint.logoUrl ?? team.logoUrl;
-  const label = `${stint.city ?? team.city} ${stint.name ?? team.name}`;
+  const display = getTeamStintDisplay(stint);
+  const logoSize = display.logoUrls.length > 2
+    ? "h-8 w-8 sm:h-9 sm:w-9"
+    : display.logoUrls.length > 1
+      ? "h-9 w-9 sm:h-10 sm:w-10"
+      : "h-10 w-10 sm:h-12 sm:w-12";
   return (
     <article
       className="flex w-[120px] flex-col items-center justify-center gap-1 border-4 p-1.5 text-center sm:w-[148px] sm:gap-1.5 sm:p-2"
-      style={{ borderColor: team.primary, backgroundColor: "#58a045" }}
+      style={{ borderColor: display.primary, backgroundColor: "#58a045" }}
     >
-      <img src={logoUrl} alt="" width={56} height={56} className="h-10 w-10 object-contain sm:h-12 sm:w-12" />
+      <div className="flex items-center justify-center gap-1">
+        {display.logoUrls.map((logoUrl) => (
+          <img key={logoUrl} src={logoUrl} alt="" width={56} height={56} className={`${logoSize} object-contain`} />
+        ))}
+      </div>
       <p className="font-readable text-[#0a2a14] flex items-center justify-center text-sm leading-tight sm:text-base" style={{ minHeight: "2.5em" }}>
-        {label}
+        {display.label}
       </p>
       {showYears ? (
         <p className="font-pixel text-white text-[0.5rem] leading-tight sm:text-[0.55rem]">

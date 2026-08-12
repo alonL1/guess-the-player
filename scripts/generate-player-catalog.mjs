@@ -647,15 +647,20 @@ function buildStints(seasonTeams, latestRosterSeason, careerStatus) {
   const stints = [];
   for (const item of ordered) {
     const previous = stints.at(-1);
-    // Break a stint when the franchise changes OR the era changes (relocation /
-    // rename), so each card shows a single correct city + name + logo.
-    if (
-      previous &&
-      previous.teamId === item.teamId &&
-      previous.eraKey === item.era.key &&
-      item.season <= previous.endYear + 1
-    ) {
+    const identity = {
+      city: item.era.city,
+      name: item.era.name,
+      logoUrl: item.era.logoUrl
+    };
+    // A relocation or rename is still one continuous franchise stop. Keep the
+    // identity changes for display, but only start a new stint when the player
+    // actually changes franchises (or returns after a gap).
+    if (previous && previous.teamId === item.teamId && item.season <= previous.endYear + 1) {
       previous.endYear = item.season;
+      if (previous.eraKey !== item.era.key) {
+        previous.eraKey = item.era.key;
+        previous.identities.push(identity);
+      }
     } else {
       stints.push({
         teamId: item.teamId,
@@ -664,7 +669,8 @@ function buildStints(seasonTeams, latestRosterSeason, careerStatus) {
         eraKey: item.era.key,
         city: item.era.city,
         name: item.era.name,
-        logoUrl: item.era.logoUrl
+        logoUrl: item.era.logoUrl,
+        identities: [identity]
       });
     }
   }
@@ -678,10 +684,21 @@ function buildStints(seasonTeams, latestRosterSeason, careerStatus) {
           ? null
           : stint.endYear
     };
-    // Only historical eras carry overrides; current-era stints stay bare.
-    if (stint.city) out.city = stint.city;
-    if (stint.name) out.name = stint.name;
-    if (stint.logoUrl) out.logoUrl = stint.logoUrl;
+    // Keep the legacy single-identity fields pointed at the most recent era.
+    // Current-era entries are empty and therefore fall back to NFL_TEAMS.
+    const latestIdentity = stint.identities.at(-1);
+    if (latestIdentity.city) out.city = latestIdentity.city;
+    if (latestIdentity.name) out.name = latestIdentity.name;
+    if (latestIdentity.logoUrl) out.logoUrl = latestIdentity.logoUrl;
+    if (stint.identities.length > 1) {
+      out.identities = stint.identities.map((identity) => {
+        const variant = {};
+        if (identity.city) variant.city = identity.city;
+        if (identity.name) variant.name = identity.name;
+        if (identity.logoUrl) variant.logoUrl = identity.logoUrl;
+        return variant;
+      });
+    }
     return out;
   });
 }
