@@ -965,7 +965,7 @@ export default class RoomParty implements Party.Server {
 
   private async notifyLobby(action: "upsert" | "remove") {
     try {
-      const lobby = this.room.context.parties.lobby.get("global");
+      const lobby = this.room.context.parties.nbaLobby.get("global");
       if (action === "upsert") {
         const host = this.hostParticipantId ? this.participants.get(this.hostParticipantId) : null;
         const entry: LobbyEntry = {

@@ -23,7 +23,7 @@
     "predeploy:party": "npm run generate:catalog",
     "deploy:party": "partykit deploy",
     "predeploy:party:nba": "npm run generate:catalog:nba && npm run validate:catalog:nba",
-    "deploy:party:nba": "partykit deploy -c partykit.nba.json",
+    "deploy:party:nba": "partykit deploy",
     "deploy:client": "wrangler pages deploy dist",
     "deploy:client:nba": "wrangler pages deploy dist-nba"
   },

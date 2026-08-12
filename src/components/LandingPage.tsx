@@ -5,6 +5,7 @@ import { getNickname, getOrCreateSessionId, setNickname as persistNickname } fro
 import { ACTIVE_SPORT } from "@/lib/sports";
 
 const PARTYKIT_HOST = import.meta.env.VITE_PARTYKIT_HOST || (ACTIVE_SPORT.id === "nba" ? "127.0.0.1:2000" : "127.0.0.1:1999");
+const LOBBY_PARTY = ACTIVE_SPORT.id === "nba" ? "nbaLobby" : "lobby";
 const ROOM_CODE_PATTERN = /^[A-Z0-9]{6}$/;
 
 function isLocalhost() {
@@ -35,7 +36,7 @@ type LobbyEntry = {
 
 async function fetchOpenRooms(): Promise<LobbyEntry[]> {
   try {
-    const response = await fetch(partyHttp("/parties/lobby/global"));
+    const response = await fetch(partyHttp(`/parties/${LOBBY_PARTY}/global`));
     if (!response.ok) return [];
     const body = (await response.json()) as { rooms?: LobbyEntry[] };
     return body.rooms ?? [];

@@ -687,6 +687,7 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
     const socket = new PartySocket({
       host: PARTYKIT_HOST,
+      party: ACTIVE_SPORT.id === "nba" ? "nba" : "main",
       room: roomCode,
       query: {
         sessionId,
