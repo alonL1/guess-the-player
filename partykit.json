@@ -5,7 +5,7 @@
   "parties": {
     "lobby": "party/lobby.ts",
     "nba": "party/nba-room.ts",
-    "nbaLobby": "party/lobby.ts"
+    "nbalobby": "party/lobby.ts"
   },
   "compatibilityDate": "2025-01-01"
 }

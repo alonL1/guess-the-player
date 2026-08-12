@@ -46,7 +46,7 @@ Generated catalog files are committed so Cloudflare Pages builds are determinist
 - Use `npm run build:nba` with output directory `dist-nba`, then `npm run deploy:client:nba`.
 - The production domain is `https://nba.pathguessr.app`; configure that subdomain on the NBA Pages project.
 
-Both editions share the provisioned `nfl-path-guesser` PartyKit hostname, but use isolated party namespaces: NFL uses `main`/`lobby`, while NBA uses `nba`/`nbaLobby`. Rooms and public lobby listings therefore never cross leagues.
+Both editions share the provisioned `nfl-path-guesser` PartyKit hostname, but use isolated party namespaces: NFL uses `main`/`lobby`, while NBA uses `nba`/`nbalobby`. Rooms and public lobby listings therefore never cross leagues.
 
 ## Cost & safety
 
