@@ -488,6 +488,33 @@ export function SoloClient() {
           </div>
 
           <div className="pixel-panel p-4 sm:p-5">
+            <div className="pb-4">
+              <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Difficulty</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {DIFFICULTY_OPTIONS.map((difficulty) => {
+                  const active = settings.difficulty.includes(difficulty);
+                  return (
+                    <button
+                      key={difficulty}
+                      type="button"
+                      onClick={() => {
+                        const nextDifficulty = active
+                          ? settings.difficulty.filter((value) => value !== difficulty)
+                          : [...settings.difficulty, difficulty];
+                        updateSettings({ difficulty: nextDifficulty });
+                      }}
+                      className={clsx(
+                        "pixel-button min-h-0 px-3 py-2 text-[0.55rem] capitalize",
+                        active ? "pixel-button-accent" : "pixel-button-ghost"
+                      )}
+                    >
+                      {difficulty}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
             <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
               <SettingCard label="Rounds">
                 <input
@@ -604,32 +631,6 @@ export function SoloClient() {
               />
             </div>
 
-            <div className="mt-4 py-2">
-              <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Difficulty</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {DIFFICULTY_OPTIONS.map((difficulty) => {
-                  const active = settings.difficulty.includes(difficulty);
-                  return (
-                    <button
-                      key={difficulty}
-                      type="button"
-                      onClick={() => {
-                        const nextDifficulty = active
-                          ? settings.difficulty.filter((value) => value !== difficulty)
-                          : [...settings.difficulty, difficulty];
-                        updateSettings({ difficulty: nextDifficulty });
-                      }}
-                      className={clsx(
-                        "pixel-button min-h-0 px-3 py-2 text-[0.55rem] capitalize",
-                        active ? "pixel-button-accent" : "pixel-button-ghost"
-                      )}
-                    >
-                      {difficulty}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
           </div>
         </section>
       ) : null}

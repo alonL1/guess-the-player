@@ -1098,7 +1098,35 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
 
                 {settingsExpanded ? (
                   <>
-                    <div className="mt-5 grid gap-3 sm:gap-4 sm:grid-cols-2">
+                    <div className="mt-5 pb-2">
+                      <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Difficulty</p>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {DIFFICULTY_OPTIONS.map((difficulty) => {
+                          const active = room.settings.difficulty.includes(difficulty);
+                          return (
+                            <button
+                              key={difficulty}
+                              type="button"
+                              disabled={!self?.isHost}
+                              onClick={() => {
+                                const nextDifficulty = active
+                                  ? room.settings.difficulty.filter((value) => value !== difficulty)
+                                  : [...room.settings.difficulty, difficulty];
+                                updateSettings({ difficulty: nextDifficulty });
+                              }}
+                              className={clsx(
+                                "pixel-button min-h-0 px-3 py-2 text-[0.55rem] capitalize",
+                                active ? "pixel-button-accent" : "pixel-button-ghost"
+                              )}
+                            >
+                              {difficulty}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div className="mt-3 grid gap-3 sm:gap-4 sm:grid-cols-2">
                       <SettingCard label="Rounds">
                         <input
                           type="number"
@@ -1243,34 +1271,6 @@ export function RoomClient({ roomCode }: { roomCode: string }) {
                         }
                         onChange={updateSettings}
                       />
-                    </div>
-
-                    <div className="mt-4 py-2">
-                      <p className="font-pixel text-helmet text-[0.5rem] sm:text-[0.625rem]">Difficulty</p>
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {DIFFICULTY_OPTIONS.map((difficulty) => {
-                          const active = room.settings.difficulty.includes(difficulty);
-                          return (
-                            <button
-                              key={difficulty}
-                              type="button"
-                              disabled={!self?.isHost}
-                              onClick={() => {
-                                const nextDifficulty = active
-                                  ? room.settings.difficulty.filter((value) => value !== difficulty)
-                                  : [...room.settings.difficulty, difficulty];
-                                updateSettings({ difficulty: nextDifficulty });
-                              }}
-                              className={clsx(
-                                "pixel-button min-h-0 px-3 py-2 text-[0.55rem] capitalize",
-                                active ? "pixel-button-accent" : "pixel-button-ghost"
-                              )}
-                            >
-                              {difficulty}
-                            </button>
-                          );
-                        })}
-                      </div>
                     </div>
 
                     <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-3">
