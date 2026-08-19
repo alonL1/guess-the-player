@@ -43,7 +43,7 @@ export const SPORTS: Record<SportId, SportDefinition> = {
     shareUrl: "https://nba.pathguessr.app/daily",
     teams: NBA_TEAMS,
     positionGroups: ["all", "guards", "wings", "bigs"],
-    nicknamePlaceholder: "COURTSIDE GENIUS",
+    nicknamePlaceholder: "PAINT PROFESSOR",
     knowledgePrompt: "Test your hoops knowledge!",
     correctMessage: "Swish! You got it!",
     countdownMessage: "Read the path. Beat the buzzer.",
